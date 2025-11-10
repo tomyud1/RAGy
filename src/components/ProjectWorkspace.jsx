@@ -18,6 +18,7 @@ const STEPS = [
 
 function ProjectWorkspace({ project, onProjectUpdate }) {
   const [currentStep, setCurrentStep] = useState(0);
+  const [maxStepReached, setMaxStepReached] = useState(0);
   const [projectData, setProjectData] = useState({
     files: [],
     chunkingMethod: null,
@@ -31,25 +32,50 @@ function ProjectWorkspace({ project, onProjectUpdate }) {
     loadProjectData();
   }, [project]);
 
+  // Save current step to sessionStorage when it changes
+  useEffect(() => {
+    if (hasInitialized) {
+      sessionStorage.setItem(`ragy_project_${project.id}_step`, currentStep.toString());
+      sessionStorage.setItem(`ragy_project_${project.id}_maxStep`, maxStepReached.toString());
+    }
+  }, [currentStep, maxStepReached, hasInitialized, project.id]);
+
   const loadProjectData = async () => {
     try {
       const response = await fetch(`/api/projects/${project.id}`);
       const data = await response.json();
       setProjectData(data);
-      
+
       // Only set initial step on first load, not on subsequent reloads
       // This prevents unwanted redirects when user manually navigates
       if (!hasInitialized) {
-        // Determine current step based on project state
-        if (data.vectorDbs?.length > 0) {
-          setCurrentStep(5); // Testing step
-        } else if (data.chunks) {
-          setCurrentStep(3); // Embedding model selection
-        } else if (data.files?.length > 0) {
-          setCurrentStep(1); // Chunking method
+        // First, check if we have a saved step in sessionStorage (from a refresh)
+        const savedStep = sessionStorage.getItem(`ragy_project_${project.id}_step`);
+        const savedMaxStep = sessionStorage.getItem(`ragy_project_${project.id}_maxStep`);
+
+        let initialStep = 0;
+        let initialMaxStep = 0;
+
+        if (savedStep !== null && savedMaxStep !== null) {
+          // Use saved step from sessionStorage (user refreshed the page)
+          initialStep = parseInt(savedStep, 10);
+          initialMaxStep = parseInt(savedMaxStep, 10);
         } else {
-          setCurrentStep(0); // Upload files
+          // Determine current step based on project state (first time visiting)
+          if (data.vectorDbs?.length > 0) {
+            initialStep = 5; // Testing step
+          } else if (data.chunks) {
+            initialStep = 3; // Embedding model selection
+          } else if (data.files?.length > 0) {
+            initialStep = 1; // Chunking method
+          } else {
+            initialStep = 0; // Upload files
+          }
+          initialMaxStep = initialStep;
         }
+
+        setCurrentStep(initialStep);
+        setMaxStepReached(initialMaxStep);
         setHasInitialized(true);
       }
     } catch (error) {
@@ -60,7 +86,9 @@ function ProjectWorkspace({ project, onProjectUpdate }) {
   const handleStepComplete = (stepData) => {
     setProjectData({ ...projectData, ...stepData });
     if (currentStep < STEPS.length - 1) {
-      setCurrentStep(currentStep + 1);
+      const nextStep = currentStep + 1;
+      setCurrentStep(nextStep);
+      setMaxStepReached(Math.max(maxStepReached, nextStep));
     }
     onProjectUpdate();
   };
@@ -72,8 +100,8 @@ function ProjectWorkspace({ project, onProjectUpdate }) {
   };
 
   const handleStepClick = (stepIndex) => {
-    // Allow navigation to any completed step or current step
-    if (stepIndex <= currentStep) {
+    // Allow navigation to any step up to the highest step reached
+    if (stepIndex <= maxStepReached) {
       setCurrentStep(stepIndex);
     }
   };
@@ -143,7 +171,7 @@ function ProjectWorkspace({ project, onProjectUpdate }) {
 
   return (
     <div style={{ maxWidth: '1400px', margin: '0 auto', width: '100%' }} className="animate-fade-in">
-      <StepIndicator steps={STEPS} currentStep={currentStep} onStepClick={handleStepClick} />
+      <StepIndicator steps={STEPS} currentStep={currentStep} maxStepReached={maxStepReached} onStepClick={handleStepClick} />
       
       <div style={{
         background: 'var(--bg-secondary)',

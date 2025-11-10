@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FileText, ChevronDown, ChevronUp, RefreshCw, CheckCircle, Trash2, AlertTriangle } from 'lucide-react';
+import { TEXT_SIZES, FONT_WEIGHTS } from '../../constants/ui';
 
 function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
   const [chunkData, setChunkData] = useState(null);
@@ -17,14 +18,38 @@ function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
   const loadChunks = async () => {
     try {
       const response = await fetch(`/api/projects/${project.id}/chunks`);
+
+      // If chunks don't exist (404), go back to chunking step
+      if (response.status === 404) {
+        console.log('No chunks found, redirecting to chunking step');
+        onBack();
+        return;
+      }
+
+      if (!response.ok) {
+        throw new Error(`Failed to load chunks: ${response.status}`);
+      }
+
       const data = await response.json();
+
+      // Check if chunks exist and are valid
+      if (!data || !data.chunks || data.chunks.length === 0) {
+        console.log('No chunks in response, redirecting to chunking step');
+        onBack();
+        return;
+      }
+
       setChunkData(data);
     } catch (error) {
       console.error('Failed to load chunks:', error);
+      // On error, redirect back to chunking step
+      onBack();
     }
   };
 
   const handleRandomSample = () => {
+    if (!chunkData || !chunkData.chunks) return;
+
     setSamplingRandom(true);
     setTimeout(() => {
       const randomPage = Math.floor(Math.random() * Math.ceil(chunkData.chunks.length / chunksPerPage));
@@ -57,7 +82,7 @@ function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
     }
   };
 
-  if (!chunkData) {
+  if (!chunkData || !chunkData.chunks) {
     return (
       <div style={{ textAlign: 'center', padding: '3rem' }}>
         <div className="animate-spin" style={{ display: 'inline-block', marginBottom: '1rem' }}>
@@ -121,7 +146,7 @@ function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
               fontSize: '0.875rem',
               color: 'var(--text-secondary)',
             }}>
-              ⚠️ <strong>Note:</strong> This will not delete your original PDF files, only the processed chunks.
+              ⚠️ <strong>Note:</strong> This will NOT delete your original PDF files, only the processed chunks.
             </div>
             
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'flex-end' }}>
@@ -134,7 +159,8 @@ function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
                   border: 'none',
                   borderRadius: '8px',
                   color: 'var(--text-primary)',
-                  fontWeight: '600',
+                  fontWeight: FONT_WEIGHTS.semibold,
+                  fontSize: TEXT_SIZES.buttonLarge,
                   cursor: deleting ? 'not-allowed' : 'pointer',
                   opacity: deleting ? 0.5 : 1,
                 }}
@@ -150,7 +176,8 @@ function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
                   border: 'none',
                   borderRadius: '8px',
                   color: 'white',
-                  fontWeight: '600',
+                  fontWeight: FONT_WEIGHTS.semibold,
+                  fontSize: TEXT_SIZES.buttonLarge,
                   cursor: deleting ? 'not-allowed' : 'pointer',
                   display: 'flex',
                   alignItems: 'center',
@@ -191,7 +218,8 @@ function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
             border: '1px solid rgba(239, 68, 68, 0.3)',
             borderRadius: '8px',
             color: 'rgb(239, 68, 68)',
-            fontWeight: '600',
+            fontWeight: FONT_WEIGHTS.semibold,
+            fontSize: TEXT_SIZES.buttonLarge,
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
@@ -471,13 +499,14 @@ function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
             border: 'none',
             borderRadius: '8px',
             color: 'var(--text-primary)',
-            fontWeight: '600',
+            fontWeight: FONT_WEIGHTS.semibold,
+            fontSize: TEXT_SIZES.buttonLarge,
             cursor: 'pointer',
           }}
         >
           Back to Chunking
         </button>
-        
+
         <button
           onClick={() => onComplete({ chunks: chunkData })}
           style={{
@@ -486,8 +515,8 @@ function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
             border: 'none',
             borderRadius: '8px',
             color: 'var(--text-primary)',
-            fontWeight: '600',
-            fontSize: '1rem',
+            fontWeight: FONT_WEIGHTS.semibold,
+            fontSize: TEXT_SIZES.buttonLarge,
             cursor: 'pointer',
             transition: 'all 0.2s',
           }}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Scissors, Upload, CheckCircle, Loader, Info, RefreshCw, AlertTriangle } from 'lucide-react';
+import { TEXT_SIZES, FONT_WEIGHTS } from '../../constants/ui';
 
 // Tooltip component
 function Tooltip({ text, children }) {
@@ -107,12 +108,9 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
           setProgress(job.progress);
           reconnectToJob(job.jobId);
         } else if (job.status === 'completed') {
-          // Chunking completed while user was away
+          // Chunking completed while user was away - just show success message
           setJobStatus('completed');
-          setTimeout(() => {
-            // Auto-proceed to next step after showing success message
-            onComplete({ chunkingMethod: job.method, chunks: { chunks: [] } });
-          }, 2000);
+          // Don't auto-proceed - let user click Next button
         } else if (job.status === 'failed') {
           // Chunking failed
           setJobStatus('failed');
@@ -151,9 +149,8 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
         ws.close();
         setChunking(false);
         setJobStatus('completed');
-        setTimeout(() => {
-          onComplete({ chunkingMethod: selectedMethod, chunks: message.data.chunks });
-        }, 1500);
+        setExistingJob({ ...existingJob, status: 'completed', chunks: message.data.chunks });
+        // Don't auto-proceed - let user click Next button
       } else if (message.type === 'chunking-error') {
         console.error('Chunking error:', message.data);
         ws.close();
@@ -219,9 +216,8 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
           ws.close();
           setChunking(false);
           setJobStatus('completed');
-          setTimeout(() => {
-            onComplete({ chunkingMethod: selectedMethod, chunks: message.data.chunks });
-          }, 1500);
+          setExistingJob({ ...existingJob, status: 'completed', chunks: message.data.chunks });
+          // Don't auto-proceed - let user click Next button
         } else if (message.type === 'chunking-error') {
           console.error('Chunking error:', message.data);
           ws.close();
@@ -1052,46 +1048,77 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
             border: 'none',
             borderRadius: '8px',
             color: 'var(--text-primary)',
-            fontWeight: '600',
-            fontSize: '1rem',
+            fontWeight: FONT_WEIGHTS.semibold,
+            fontSize: TEXT_SIZES.buttonLarge,
             cursor: chunking ? 'not-allowed' : 'pointer',
             opacity: chunking ? 0.5 : 1,
           }}
         >
           Back
         </button>
-        
-        <button
-          onClick={handleStartChunking}
-          disabled={chunking}
-          style={{
-            padding: '0.875rem 2rem',
-            background: chunking ? 'var(--bg-tertiary)' : 'var(--accent-primary)',
-            border: 'none',
-            borderRadius: '8px',
-            color: 'var(--text-primary)',
-            fontWeight: '600',
-            fontSize: '1rem',
-            cursor: chunking ? 'not-allowed' : 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            transition: 'all 0.2s',
-          }}
-          onMouseEnter={(e) => {
-            if (!chunking) {
+
+        {jobStatus === 'completed' ? (
+          <button
+            onClick={() => onComplete({
+              chunkingMethod: existingJob?.method || selectedMethod,
+              chunks: existingJob?.chunks || { chunks: [] }
+            })}
+            style={{
+              padding: '0.875rem 2rem',
+              background: 'var(--accent-primary)',
+              border: 'none',
+              borderRadius: '8px',
+              color: 'var(--text-primary)',
+              fontWeight: FONT_WEIGHTS.semibold,
+              fontSize: TEXT_SIZES.buttonLarge,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              transition: 'all 0.2s',
+            }}
+            onMouseEnter={(e) => {
               e.currentTarget.style.background = 'var(--accent-hover)';
-            }
-          }}
-          onMouseLeave={(e) => {
-            if (!chunking) {
+            }}
+            onMouseLeave={(e) => {
               e.currentTarget.style.background = 'var(--accent-primary)';
-            }
-          }}
-        >
-          {chunking && <Loader size={20} className="animate-spin" />}
-          {chunking ? 'Chunking Documents...' : 'Start Chunking'}
-        </button>
+            }}
+          >
+            Next: Preview Chunks
+          </button>
+        ) : (
+          <button
+            onClick={handleStartChunking}
+            disabled={chunking}
+            style={{
+              padding: '0.875rem 2rem',
+              background: chunking ? 'var(--bg-tertiary)' : 'var(--accent-primary)',
+              border: 'none',
+              borderRadius: '8px',
+              color: 'var(--text-primary)',
+              fontWeight: FONT_WEIGHTS.semibold,
+              fontSize: TEXT_SIZES.buttonLarge,
+              cursor: chunking ? 'not-allowed' : 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              transition: 'all 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              if (!chunking) {
+                e.currentTarget.style.background = 'var(--accent-hover)';
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (!chunking) {
+                e.currentTarget.style.background = 'var(--accent-primary)';
+              }
+            }}
+          >
+            {chunking && <Loader size={20} className="animate-spin" />}
+            {chunking ? 'Chunking Documents...' : 'Start Chunking'}
+          </button>
+        )}
       </div>
     </div>
   );

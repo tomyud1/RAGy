@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Loader, CheckCircle, AlertCircle, Zap } from 'lucide-react';
+import { TEXT_SIZES, FONT_WEIGHTS } from '../../constants/ui';
 
 function EmbeddingProgressStep({ project, embeddingModel, onComplete, onBack }) {
   const [status, setStatus] = useState('starting'); // starting, processing, completed, error
@@ -317,14 +318,15 @@ function EmbeddingProgressStep({ project, embeddingModel, onComplete, onBack }) 
             border: 'none',
             borderRadius: '8px',
             color: 'var(--text-primary)',
-            fontWeight: '600',
+            fontWeight: FONT_WEIGHTS.semibold,
+            fontSize: TEXT_SIZES.buttonLarge,
             cursor: status === 'processing' ? 'not-allowed' : 'pointer',
             opacity: status === 'processing' ? 0.5 : 1,
           }}
         >
           Back
         </button>
-        
+
         {status === 'error' && (
           <button
             onClick={startEmbedding}
@@ -334,7 +336,8 @@ function EmbeddingProgressStep({ project, embeddingModel, onComplete, onBack }) 
               border: 'none',
               borderRadius: '8px',
               color: 'var(--text-primary)',
-              fontWeight: '600',
+              fontWeight: FONT_WEIGHTS.semibold,
+              fontSize: TEXT_SIZES.buttonLarge,
               cursor: 'pointer',
             }}
           >

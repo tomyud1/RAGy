@@ -207,7 +207,8 @@ function RAGTestingStep({ project, vectorDbs, onBack }) {
               border: 'none',
               borderRadius: '8px',
               color: 'var(--text-primary)',
-              fontWeight: '600',
+              fontWeight: FONT_WEIGHTS.semibold,
+              fontSize: TEXT_SIZES.buttonLarge,
               cursor: query.trim() && selectedDbs.length > 0 && !searching ? 'pointer' : 'not-allowed',
               whiteSpace: 'nowrap',
             }}

@@ -1,11 +1,19 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Upload, File, X, AlertCircle } from 'lucide-react';
+import { TEXT_SIZES, FONT_WEIGHTS } from '../../constants/ui';
 
 function FileUploadStep({ project, files, onComplete }) {
   const [uploadedFiles, setUploadedFiles] = useState(files || []);
   const [uploading, setUploading] = useState(false);
   const [dragActive, setDragActive] = useState(false);
   const fileInputRef = useRef(null);
+
+  // Sync uploadedFiles with files prop when it changes (e.g., after project data loads)
+  useEffect(() => {
+    if (files) {
+      setUploadedFiles(files);
+    }
+  }, [files]);
 
   const handleDrag = (e) => {
     e.preventDefault();
@@ -220,8 +228,8 @@ function FileUploadStep({ project, files, onComplete }) {
             border: 'none',
             borderRadius: '8px',
             color: 'var(--text-primary)',
-            fontWeight: '600',
-            fontSize: '1rem',
+            fontWeight: FONT_WEIGHTS.semibold,
+            fontSize: TEXT_SIZES.buttonLarge,
             cursor: uploadedFiles.length > 0 && !uploading ? 'pointer' : 'not-allowed',
             transition: 'all 0.2s',
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
