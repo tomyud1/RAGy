@@ -1,0 +1,7 @@
+{
+  "model": "Xenova/bge-base-en-v1.5",
+  "dimension": 768,
+  "totalDocuments": 8425,
+  "createdAt": "2025-11-09T21:03:05.423Z",
+  "distanceMetric": "cosine"
+}

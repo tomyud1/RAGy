@@ -1,0 +1,7 @@
+{
+  "model": "Xenova/all-mpnet-base-v2",
+  "dimension": 768,
+  "totalDocuments": 8425,
+  "createdAt": "2025-11-09T21:32:40.638Z",
+  "distanceMetric": "cosine"
+}

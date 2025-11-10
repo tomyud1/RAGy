@@ -1,0 +1,28 @@
+{
+  "name": "rag-system-standalone",
+  "version": "1.0.0",
+  "description": "RAG System with Multi-Model Embedding Comparison",
+  "type": "module",
+  "scripts": {
+    "server": "node server.js",
+    "rag:setup": "node --expose-gc server/scripts/setup-rag.js",
+    "rag:setup:clear": "node --expose-gc server/scripts/setup-rag.js --clear",
+    "rag:migrate": "node server/scripts/migrate-vector-db.js",
+    "rag:embed:bge": "node --expose-gc server/scripts/generate-embeddings-bge.js",
+    "rag:embed:mpnet": "node --expose-gc server/scripts/generate-embeddings-gte.js",
+    "rag:monitor": "node server/scripts/monitor-rag.js",
+    "rag:test": "node server/scripts/test-rag.js",
+    "rag:test:parser": "node server/scripts/test-parser.js",
+    "rag:test:chunking": "node server/scripts/test-semantic-chunking.js",
+    "rag:sample": "node server/scripts/sample-chunks.js"
+  },
+  "dependencies": {
+    "@xenova/transformers": "^2.17.2",
+    "hnswlib-node": "^3.0.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "keywords": ["rag", "embeddings", "vector-database", "semantic-search"],
+  "author": "",
+  "license": "MIT"
+}

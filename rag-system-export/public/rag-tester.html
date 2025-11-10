@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG System Tester</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d30 100%);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      color: white;
+      margin-bottom: 2rem;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 1rem;
+    }
+
+    .stats-badge {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      backdrop-filter: blur(10px);
+      font-size: 0.9rem;
+    }
+
+    .search-section {
+      background: #252526;
+      border: 1px solid #3e3e42;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      margin-bottom: 2rem;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .search-input {
+      flex: 1;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      border: 2px solid #3e3e42;
+      background: #1e1e1e;
+      color: #e4e4e4;
+      border-radius: 12px;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: #6c757d;
+    }
+
+    .search-button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(135deg, #495057 0%, #6c757d 100%);
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      white-space: nowrap;
+    }
+
+    .search-button:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+    }
+
+    .search-button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .slider-group {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      color: #e4e4e4;
+      font-size: 0.95rem;
+    }
+
+    .similarity-slider {
+      flex: 1;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 6px;
+      background: linear-gradient(to right, #6c757d 0%, #6c757d 37.5%, #3e3e42 37.5%, #3e3e42 100%);
+      outline: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .similarity-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #6c757d;
+      cursor: pointer;
+      border: 2px solid #e4e4e4;
+    }
+
+    .similarity-slider::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #6c757d;
+      cursor: pointer;
+      border: 2px solid #e4e4e4;
+    }
+
+    .example-queries {
+      padding-top: 1.5rem;
+      border-top: 1px solid #3e3e42;
+    }
+
+    .example-label {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-bottom: 0.75rem;
+    }
+
+    .example-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .example-button {
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      background: #1e1e1e;
+      color: #e4e4e4;
+      border: 1px solid #3e3e42;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .example-button:hover {
+      background: #495057;
+      color: white;
+      border-color: #6c757d;
+    }
+
+    .results-section {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .comparison-table {
+      background: #252526;
+      border: 1px solid #3e3e42;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .comparison-table h3 {
+      margin-bottom: 1rem;
+      color: #e4e4e4;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      background: #1e1e1e;
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+      color: #aaa;
+      border-bottom: 2px solid #3e3e42;
+    }
+
+    td {
+      padding: 1rem;
+      color: #e4e4e4;
+      border-bottom: 1px solid #3e3e42;
+    }
+
+    .status-success {
+      background: #28a745;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .status-fail {
+      background: #dc3545;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .model-results {
+      background: #252526;
+      border: 1px solid #3e3e42;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .model-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #3e3e42;
+    }
+
+    .model-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #e4e4e4;
+    }
+
+    .model-badge {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .documents-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .document-card {
+      padding: 1.5rem;
+      border: 2px solid #3e3e42;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+      background: #1e1e1e;
+    }
+
+    .document-card:hover {
+      border-color: #6c757d;
+      box-shadow: 0 4px 12px rgba(108, 117, 125, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .document-card.expanded {
+      border-color: #6c757d;
+      background: #2d2d30;
+    }
+
+    .doc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 0.75rem;
+    }
+
+    .doc-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      flex: 1;
+      color: #e4e4e4;
+    }
+
+    .doc-similarity {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #6c757d;
+      padding: 0.25rem 0.75rem;
+      background: rgba(108, 117, 125, 0.15);
+      border-radius: 8px;
+    }
+
+    .doc-meta {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.85rem;
+      color: #aaa;
+      flex-wrap: wrap;
+    }
+
+    .doc-tag {
+      padding: 0.25rem 0.5rem;
+      background: #2d2d30;
+      color: #e4e4e4;
+      border-radius: 4px;
+    }
+
+    .doc-preview {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+
+    .doc-full-text {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 2px solid #3e3e42;
+      display: none;
+    }
+
+    .document-card.expanded .doc-full-text {
+      display: block;
+    }
+
+    .doc-full-text pre {
+      background: #0d0d0d;
+      color: #e4e4e4;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      border: 1px solid #3e3e42;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+      font-size: 1.1rem;
+    }
+
+    .loading-spinner {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-top: 3px solid white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-left: 0.5rem;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>🧪 RAG System Tester</h1>
+      <p class="subtitle">Compare embedding models side-by-side</p>
+      <div class="stats-badge" id="statsBar">
+        <span id="statsContent">Loading...</span>
+      </div>
+    </header>
+
+    <section class="search-section">
+      <div class="input-group">
+        <input type="text" id="queryInput" class="search-input" placeholder="e.g., How do I make a character jump in 2D?">
+        <button id="searchButton" class="search-button">🔍 Search</button>
+      </div>
+      <div class="slider-group">
+        <span>Min Similarity: <strong id="similarityValue">55%</strong></span>
+        <input type="range" id="similaritySlider" class="similarity-slider" min="30" max="80" value="55">
+      </div>
+      <div class="slider-group">
+        <span>Max Results: <strong id="limitValue">5</strong> docs</span>
+        <input type="range" id="limitSlider" class="similarity-slider" min="3" max="15" value="5">
+      </div>
+      <div class="example-queries">
+        <div class="example-label">Try these queries:</div>
+        <div class="example-buttons">
+          <button class="example-button" data-query="How do I make a character jump?">Character Jump</button>
+          <button class="example-button" data-query="How do I detect when two objects collide?">Collision Detection</button>
+          <button class="example-button" data-query="What is a signal in GDScript?">GDScript Signal</button>
+          <button class="example-button" data-query="How do I load a scene?">Load Scene</button>
+          <button class="example-button" data-query="How do I get player input?">Player Input</button>
+          <button class="example-button" data-query="What is @onready in GDScript?">@onready</button>
+          <button class="example-button" data-query="How do I move a sprite?">Move Sprite</button>
+          <button class="example-button" data-query="What is Transform2D?">Transform2D</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section hidden" id="results">
+      <!-- Results will be injected here -->
+    </section>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:3001/api/rag';
+    let availableModels = [];
+    let isSingleModel = false;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const queryInput = document.getElementById('queryInput');
+      const searchButton = document.getElementById('searchButton');
+      const similaritySlider = document.getElementById('similaritySlider');
+      const similarityValue = document.getElementById('similarityValue');
+      const limitSlider = document.getElementById('limitSlider');
+      const limitValue = document.getElementById('limitValue');
+      const exampleButtons = document.querySelectorAll('.example-button');
+
+      let minSimilarity = parseFloat(similaritySlider.value) / 100;
+      let maxResults = parseInt(limitSlider.value);
+
+      // Initial load
+      loadStats();
+
+      // Event Listeners
+      similaritySlider.addEventListener('input', (e) => {
+        minSimilarity = parseFloat(e.target.value) / 100;
+        similarityValue.textContent = `${e.target.value}%`;
+        updateSliderBackground(e.target);
+      });
+
+      limitSlider.addEventListener('input', (e) => {
+        maxResults = parseInt(e.target.value);
+        limitValue.textContent = e.target.value;
+        updateSliderBackground(e.target);
+      });
+
+      // Update slider backgrounds on load
+      updateSliderBackground(similaritySlider);
+      updateSliderBackground(limitSlider);
+
+      function updateSliderBackground(slider) {
+        const min = parseFloat(slider.min);
+        const max = parseFloat(slider.max);
+        const val = parseFloat(slider.value);
+        const percentage = ((val - min) / (max - min)) * 100;
+        slider.style.background = `linear-gradient(to right, #6c757d 0%, #6c757d ${percentage}%, #3e3e42 ${percentage}%, #3e3e42 100%)`;
+      }
+
+      searchButton.addEventListener('click', () => performSearch(queryInput.value, minSimilarity, maxResults, searchButton));
+      queryInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          performSearch(queryInput.value, minSimilarity, maxResults, searchButton);
+        }
+      });
+
+      exampleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          queryInput.value = button.dataset.query;
+          queryInput.focus();
+        });
+      });
+
+      // Functions
+      async function performSearch(query, minSimilarity, limit, button) {
+        if (!query.trim()) return;
+
+        button.disabled = true;
+        button.innerHTML = '⏳ Searching...<span class="loading-spinner"></span>';
+
+        try {
+          // Use compareAll mode if multiple models, single model mode if only one
+          const requestBody = isSingleModel 
+            ? { query, limit, minSimilarity, model: availableModels[0] }
+            : { query, limit, minSimilarity, compareAll: true };
+
+          const response = await fetch(`${API_URL}/query`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(requestBody)
+          });
+
+          const data = await response.json();
+          console.log('RAG Response:', data);
+          displayResults(data);
+        } catch (error) {
+          alert('Error: ' + error.message);
+        } finally {
+          button.disabled = false;
+          const buttonText = isSingleModel ? '🔍 Search' : (availableModels.length > 1 ? `🔍 Compare ${availableModels.length} Models` : '🔍 Search');
+          button.textContent = buttonText;
+        }
+      }
+
+      async function loadStats() {
+        try {
+          const response = await fetch(`${API_URL}/stats`);
+          const stats = await response.json();
+          availableModels = stats.availableModels || [];
+          isSingleModel = availableModels.length === 1;
+          
+          // Update button text based on available models
+          const searchButton = document.getElementById('searchButton');
+          if (isSingleModel) {
+            searchButton.textContent = '🔍 Search';
+          } else if (availableModels.length > 1) {
+            searchButton.textContent = `🔍 Compare ${availableModels.length} Models`;
+          }
+
+          // Update subtitle dynamically
+          const subtitle = document.querySelector('.subtitle');
+          if (availableModels.length === 0) {
+            subtitle.textContent = 'No models available - Generate embeddings first';
+          } else if (isSingleModel) {
+            subtitle.textContent = `Using ${availableModels[0]} model`;
+          } else {
+            subtitle.textContent = 'Compare embedding models side-by-side';
+          }
+          
+          const statsContent = stats.models
+            .filter(m => m.initialized)
+            .map(m => `<span>${m.modelKey}: ${m.totalDocuments.toLocaleString()} docs</span>`)
+            .join('');
+          
+          document.getElementById('statsContent').innerHTML = statsContent || 'No models available - Run embedding scripts';
+        } catch (error) {
+          console.error('Error loading stats:', error);
+          document.getElementById('statsContent').textContent = 'Error loading stats';
+        }
+      }
+
+      function escapeHtml(text) {
+        if (!text) return '';
+        return text
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#039;');
+      }
+
+      function displayResults(data) {
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.classList.remove('hidden');
+
+        // Handle single model response (non-compare mode)
+        if (!data.compareMode) {
+          displaySingleModelResults(data, resultsDiv);
+          return;
+        }
+
+        // Handle compare mode (multiple models)
+        if (!data.results) {
+          resultsDiv.innerHTML = '<div class="no-results">No results to display</div>';
+          return;
+        }
+
+        // Build comparison table (only show if multiple models)
+        const modelKeys = Object.keys(data.results);
+        const comparisonRows = modelKeys.map(modelKey => {
+          const result = data.results[modelKey];
+          if (result.error) {
+            return `
+              <tr>
+                <td><strong>${modelKey}</strong></td>
+                <td><span class="status-fail">❌ Error</span></td>
+                <td colspan="4">${escapeHtml(result.error)}</td>
+              </tr>
+            `;
+          }
+
+          return `
+            <tr>
+              <td><strong>${modelKey}</strong></td>
+              <td><span class="${result.status === 'success' ? 'status-success' : 'status-fail'}">${result.status === 'success' ? '✅ Success' : '❌ No Results'}</span></td>
+              <td>${result.totalSelected}/${result.totalRetrieved}</td>
+              <td>${result.tokenCount}</td>
+              <td>${result.duration}ms</td>
+              <td>${result.avgSimilarity}%</td>
+            </tr>
+          `;
+        }).join('');
+
+        let html = modelKeys.length > 1 ? `
+          <div class="comparison-table">
+            <h3>📊 Model Comparison Summary</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Status</th>
+                  <th>Docs</th>
+                  <th>Tokens</th>
+                  <th>Time</th>
+                  <th>Avg Similarity</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${comparisonRows}
+              </tbody>
+            </table>
+          </div>
+        ` : '';
+
+        // Build individual model results
+        modelKeys.forEach(modelKey => {
+          const result = data.results[modelKey];
+          if (result.error) {
+            return; // Skip error models in detailed view
+          }
+
+          html += `
+            <div class="model-results">
+              <div class="model-header">
+                <div class="model-name">${modelKey}</div>
+                <div class="model-badge">
+                  <span>📄 ${result.totalSelected} docs</span>
+                  <span>🎫 ${result.tokenCount} tokens</span>
+                  <span>⏱️ ${result.duration}ms</span>
+                </div>
+              </div>
+
+              ${result.documents.length > 0 ? `
+                <div class="documents-grid">
+                  ${result.documents.map((doc, i) => `
+                    <div class="document-card" onclick="toggleDoc(this)">
+                      <div class="doc-header">
+                        <div class="doc-title">${escapeHtml(doc.title)}</div>
+                        <div class="doc-similarity">${doc.similarity}%</div>
+                      </div>
+                      <div class="doc-meta">
+                        <span class="doc-tag">${doc.category}</span>
+                        <span>•</span>
+                        <span class="doc-tag">${doc.docType}</span>
+                        ${doc.section !== 'N/A' ? `
+                          <span>•</span>
+                          <span class="doc-tag">${escapeHtml(doc.section)}</span>
+                        ` : ''}
+                        <span>•</span>
+                        <span class="doc-tag">🎫 ${doc.tokens} tokens</span>
+                      </div>
+                      <div class="doc-preview">${escapeHtml(doc.preview)}...</div>
+                      <div class="doc-full-text">
+                        <h4 style="margin-bottom: 0.75rem; color: #aaa;">Full Content (${doc.tokens} tokens, ${doc.fullText.length} chars)</h4>
+                        <pre>${escapeHtml(doc.fullText)}</pre>
+                      </div>
+                      <div style="text-align: center; font-size: 0.8rem; color: #999; margin-top: 0.5rem;">
+                        👆 Click to expand/collapse
+                      </div>
+                    </div>
+                  `).join('')}
+                </div>
+              ` : '<div class="no-results">No documents retrieved above similarity threshold</div>'}
+            </div>
+          `;
+        });
+
+        resultsDiv.innerHTML = html;
+      }
+
+      function displaySingleModelResults(data, resultsDiv) {
+        const avgSimilarity = data.documents && data.documents.length > 0
+          ? Math.round(data.documents.reduce((sum, d) => sum + d.similarity, 0) / data.documents.length)
+          : 0;
+
+        let html = `
+          <div class="comparison-table">
+            <h3>📊 Query Statistics</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Query</th>
+                  <th>Model</th>
+                  <th>Status</th>
+                  <th>Docs</th>
+                  <th>Tokens</th>
+                  <th>Time</th>
+                  <th>Avg Similarity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="max-width: 250px; overflow: hidden; text-overflow: ellipsis;">${escapeHtml(data.query)}</td>
+                  <td><strong>${data.model || 'Unknown'}</strong></td>
+                  <td><span class="${data.status === 'success' ? 'status-success' : 'status-fail'}">${data.status === 'success' ? '✅ Success' : '❌ No Results'}</span></td>
+                  <td>${data.totalSelected || 0}/${data.totalRetrieved || 0}</td>
+                  <td>${data.tokenCount || 0}</td>
+                  <td>${data.duration || 0}ms</td>
+                  <td>${data.avgSimilarity || avgSimilarity}%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        `;
+
+        // Show documents
+        if (data.documents && data.documents.length > 0) {
+          html += `
+            <div class="model-results">
+              <div class="model-header">
+                <div class="model-name">${data.model || 'Results'}</div>
+                <div class="model-badge">
+                  <span>📄 ${data.documents.length} docs</span>
+                  <span>🎫 ${data.tokenCount || 0} tokens</span>
+                  <span>⏱️ ${data.duration || 0}ms</span>
+                </div>
+              </div>
+              <div class="documents-grid">
+                ${data.documents.map((doc, i) => `
+                  <div class="document-card" onclick="toggleDoc(this)">
+                    <div class="doc-header">
+                      <div class="doc-title">${escapeHtml(doc.title)}</div>
+                      <div class="doc-similarity">${doc.similarity}%</div>
+                    </div>
+                    <div class="doc-meta">
+                      <span class="doc-tag">${doc.category}</span>
+                      <span>•</span>
+                      <span class="doc-tag">${doc.docType}</span>
+                      ${doc.section !== 'N/A' ? `
+                        <span>•</span>
+                        <span class="doc-tag">${escapeHtml(doc.section)}</span>
+                      ` : ''}
+                      <span>•</span>
+                      <span class="doc-tag">🎫 ${doc.tokens} tokens</span>
+                    </div>
+                    <div class="doc-preview">${escapeHtml(doc.preview)}...</div>
+                    <div class="doc-full-text">
+                      <h4 style="margin-bottom: 0.75rem; color: #aaa;">Full Content (${doc.tokens} tokens, ${doc.fullText.length} chars)</h4>
+                      <pre>${escapeHtml(doc.fullText)}</pre>
+                    </div>
+                    <div style="text-align: center; font-size: 0.8rem; color: #999; margin-top: 0.5rem;">
+                      👆 Click to expand/collapse
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `;
+        } else {
+          html += '<div class="no-results">No documents retrieved above similarity threshold</div>';
+        }
+
+        resultsDiv.innerHTML = html;
+      }
+
+      window.toggleDoc = (cardElement) => {
+        cardElement.classList.toggle('expanded');
+      };
+    });
+  </script>
+</body>
+</html>

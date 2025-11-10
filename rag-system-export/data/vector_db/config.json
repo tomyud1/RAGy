@@ -1,0 +1,8 @@
+{
+  "model": "Xenova/all-MiniLM-L6-v2",
+  "dimension": 384,
+  "totalDocuments": 8425,
+  "createdAt": "2025-11-09T20:15:34.861Z",
+  "distanceMetric": "cosine",
+  "migratedFrom": "original-vector-db"
+}
