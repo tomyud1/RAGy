@@ -10,16 +10,44 @@ const PYTHON_SCRIPT = path.join(__dirname, '../python/docling_chunker.py');
 
 export class ChunkingService {
   static broadcastFunction = null;
+  static runningProcesses = new Map(); // Track running processes by projectId
 
   static setBroadcastFunction(fn) {
     this.broadcastFunction = fn;
   }
 
-  static async chunkDocuments(projectId, method, config, jobId = null) {
+  static async chunkDocuments(projectId, method, config, jobId = null, resume = false) {
     if (method === 'docling-hybrid') {
-      return this.chunkWithDocling(projectId, config, jobId);
+      return this.chunkWithDocling(projectId, config, jobId, resume);
     } else {
       throw new Error(`Unsupported chunking method: ${method}`);
+    }
+  }
+
+  static async stopChunking(projectId) {
+    const processInfo = this.runningProcesses.get(projectId);
+    if (!processInfo) {
+      return { success: false, error: 'No running process found' };
+    }
+
+    try {
+      // Forcefully kill the process and all its children immediately
+      // Use negative PID to kill the entire process group (parent + all children)
+      try {
+        process.kill(-processInfo.process.pid, 'SIGKILL');
+        console.log(`[Chunking] Killed process group ${processInfo.process.pid}`);
+      } catch (groupKillError) {
+        // If process group kill fails, kill the main process
+        processInfo.process.kill('SIGKILL');
+        console.log(`[Chunking] Killed main process ${processInfo.process.pid}`);
+      }
+
+      // Clean up process tracking
+      this.runningProcesses.delete(projectId);
+
+      return { success: true, message: 'Process terminated immediately. Previous completed parts have been saved.' };
+    } catch (error) {
+      return { success: false, error: error.message };
     }
   }
 
@@ -32,35 +60,44 @@ export class ChunkingService {
     }
   }
 
-  static async chunkWithDocling(projectId, config, jobId = null) {
+  static async chunkWithDocling(projectId, config, jobId = null, resume = false) {
     const inputDir = ProjectService.getRawFilesPath(projectId);
     const outputDir = ProjectService.getChunkedDataPath(projectId);
     const outputFile = path.join(outputDir, 'chunks.json');
-    
+
     // Ensure output directory exists
     await fs.mkdir(outputDir, { recursive: true });
-    
+
     return new Promise((resolve, reject) => {
       const maxTokens = config.maxTokens || 512;
       const mergePeers = config.mergePeers !== undefined ? config.mergePeers : true;
-      
+
       // Enrichment options (new!)
       const enableFormula = config.enableFormula !== undefined ? config.enableFormula : true; // Default to true
       const enablePictureClassification = config.enablePictureClassification || false;
       const enablePictureDescription = config.enablePictureDescription || false;
+      const pictureDescriptionMaxTokens = config.pictureDescriptionMaxTokens || 100; // Default 100 tokens per image
       const enableCodeEnrichment = config.enableCodeEnrichment || false;
       const enableOcr = config.enableOcr !== undefined ? config.enableOcr : true; // Default to true
       const enableTableStructure = config.enableTableStructure !== undefined ? config.enableTableStructure : true; // Default to true
-      
+
+      // Batch size options (performance tuning)
+      const visionBatchSize = config.visionBatchSize || 4; // Default 4 for vision model
+      const processingBatchSize = config.processingBatchSize || 4; // Default 4 for OCR/layout/table
+
       console.log('[Chunking] Enrichment settings:', {
         formulas: enableFormula,
         pictureClassification: enablePictureClassification,
         pictureDescription: enablePictureDescription,
+        pictureDescriptionMaxTokens: pictureDescriptionMaxTokens,
         codeEnrichment: enableCodeEnrichment,
         ocr: enableOcr,
-        tableStructure: enableTableStructure
+        tableStructure: enableTableStructure,
+        visionBatchSize: visionBatchSize,
+        processingBatchSize: processingBatchSize,
+        resume: resume
       });
-      
+
       const pythonProcess = spawn('python3', [
         '-u',  // Unbuffered output
         PYTHON_SCRIPT,
@@ -73,9 +110,21 @@ export class ChunkingService {
         enablePictureDescription.toString(),
         enableCodeEnrichment.toString(),
         enableOcr.toString(),
-        enableTableStructure.toString()
+        enableTableStructure.toString(),
+        pictureDescriptionMaxTokens.toString(),
+        resume.toString(), // Resume parameter
+        visionBatchSize.toString(), // Vision model batch size
+        processingBatchSize.toString() // OCR/layout/table batch size
       ], {
-        env: { ...process.env, PYTHONUNBUFFERED: '1' }
+        env: { ...process.env, PYTHONUNBUFFERED: '1' },
+        detached: true // Create process group so we can kill all children at once
+      });
+
+      // Track running process
+      this.runningProcesses.set(projectId, {
+        process: pythonProcess,
+        jobId: jobId,
+        startTime: Date.now()
       });
       
       let output = '';
@@ -133,28 +182,36 @@ export class ChunkingService {
       });
       
       pythonProcess.on('close', async (code) => {
+        // Clean up process tracking
+        this.runningProcesses.delete(projectId);
+
         if (code !== 0) {
           console.error('Python stderr:', errorOutput);
           reject(new Error(`Chunking process exited with code ${code}`));
           return;
         }
-        
+
         try {
           const result = JSON.parse(output);
-          
+
           if (!result.success) {
-            reject(new Error(result.error || 'Chunking failed'));
+            // Check if resumable
+            if (result.resumable) {
+              reject(new Error(result.error || 'Chunking stopped'));
+            } else {
+              reject(new Error(result.error || 'Chunking failed'));
+            }
             return;
           }
-          
+
           // Load the generated chunks
           const chunksData = JSON.parse(await fs.readFile(outputFile, 'utf-8'));
-          
+
           // Save to project
           await ProjectService.saveProjectChunks(projectId, chunksData.chunks, 'docling-hybrid');
-          
+
           console.log(`Chunking complete: ${chunksData.chunks.length} chunks generated`);
-          
+
           resolve({
             success: true,
             chunks: chunksData,

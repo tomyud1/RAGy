@@ -1,4 +1,6 @@
 import express from 'express';
+import { exec } from 'child_process';
+import path from 'path';
 import { ProjectService } from '../services/project.service.js';
 
 const router = express.Router();
@@ -77,6 +79,47 @@ router.delete('/:projectId', async (req, res) => {
   } catch (error) {
     console.error('Failed to delete project:', error);
     res.status(500).json({ error: 'Failed to delete project' });
+  }
+});
+
+// Open chunks file in file system
+router.get('/:projectId/open-chunks-file', async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const chunksPath = path.join(ProjectService.getChunkedDataPath(projectId), 'chunks.json');
+
+    // Open file in default application based on OS
+    const platform = process.platform;
+    let command;
+
+    if (platform === 'darwin') {
+      // macOS - reveal in Finder
+      command = `open -R "${chunksPath}"`;
+    } else if (platform === 'win32') {
+      // Windows - open Explorer and select file
+      command = `explorer /select,"${chunksPath}"`;
+    } else {
+      // Linux - open containing folder
+      const dirPath = path.dirname(chunksPath);
+      command = `xdg-open "${dirPath}"`;
+    }
+
+    exec(command, (error) => {
+      if (error) {
+        console.error('Failed to open file:', error);
+        return res.status(500).json({
+          success: false,
+          error: 'Failed to open file in file system'
+        });
+      }
+      res.json({ success: true, message: 'File opened in file system' });
+    });
+  } catch (error) {
+    console.error('Failed to open chunks file:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to open chunks file'
+    });
   }
 });
 
