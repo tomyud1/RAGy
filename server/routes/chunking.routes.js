@@ -60,6 +60,11 @@ router.post('/start', async (req, res) => {
     // Generate a job ID for WebSocket progress tracking
     const jobId = uuidv4();
 
+    // If starting fresh (not resuming), clear previous summary
+    if (!resume) {
+      await ProjectService.clearLastChunkingSummary(projectId);
+    }
+
     // Save job to project metadata
     await ProjectService.saveChunkingJob(projectId, {
       jobId,
@@ -78,12 +83,12 @@ router.post('/start', async (req, res) => {
       .then(async result => {
         console.log(`Broadcasting completion for job ${jobId}`);
         
-        // Update job status to completed
+        // Update job status to completed (persists until rechunking)
         await ProjectService.updateChunkingJob(projectId, {
           status: 'completed',
           completedAt: new Date().toISOString(),
         });
-        
+
         // Broadcast completion
         if (ChunkingService.broadcastFunction) {
           ChunkingService.broadcastFunction(jobId, {
@@ -94,11 +99,6 @@ router.post('/start', async (req, res) => {
         } else {
           console.warn('No broadcast function available');
         }
-        
-        // Clear job after 30 seconds (in case user needs to see completion status)
-        setTimeout(async () => {
-          await ProjectService.clearChunkingJob(projectId);
-        }, 30000);
       })
       .catch(async error => {
         console.error('Chunking failed:', error);

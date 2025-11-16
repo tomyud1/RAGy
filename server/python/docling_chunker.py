@@ -29,6 +29,7 @@ try:
     from docling.datamodel.base_models import InputFormat
     import pypdf
     import psutil
+    from image_processor import process_document_with_images, insert_image_descriptions_in_markdown, inject_image_descriptions_into_chunks
 except ImportError as e:
     print(json.dumps({
         "success": False,
@@ -116,10 +117,11 @@ def send_conversion_heartbeat(idx, total_files, filename, total_pages, interval=
 
         elapsed = int(time.time() - start_time)
 
-        # Calculate estimates
-        estimated_total_seconds = int(total_pages * SECONDS_PER_PAGE) if total_pages > 0 else 0
-        remaining_seconds = max(0, estimated_total_seconds - elapsed)
-        progress_percent = min(95, (elapsed / estimated_total_seconds * 100)) if estimated_total_seconds > 0 else 0
+        # Note: We can't accurately estimate progress since Docling's convert() is a black box
+        # Just show elapsed time and that the process is active
+        estimated_total_seconds = None  # Removed misleading estimate
+        remaining_seconds = None  # Unknown
+        progress_percent = None  # Can't calculate without real progress from Docling
 
         # Get memory and CPU usage to prove process is active
         try:
@@ -157,7 +159,7 @@ def send_conversion_heartbeat(idx, total_files, filename, total_pages, interval=
             "elapsed": elapsed,
             "estimated_total": estimated_total_seconds,
             "remaining": remaining_seconds,
-            "percent": round(progress_percent, 1),
+            "percent": None,  # Removed misleading estimate (Docling is a black box)
             "heartbeat": True,
             "cpu_percent": round(cpu_percent, 1),
             "memory_mb": round(memory_mb, 1),
@@ -349,7 +351,7 @@ def append_chunks_to_file(output_file, chunks, is_first_write=False):
         return False
 
 
-def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, enable_formula=True, enable_picture_classification=False, enable_picture_description=False, enable_code_enrichment=False, enable_ocr=True, enable_table_structure=True, picture_description_max_tokens=100, resume=False, vision_batch_size=4, processing_batch_size=4):
+def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, enable_formula=True, enable_picture_classification=False, enable_picture_description=False, enable_code_enrichment=False, enable_ocr=True, enable_table_structure=True, picture_description_max_tokens=800, resume=False, vision_batch_size=4, processing_batch_size=4, vision_backend='auto', conversion_output_folder='conversions/', vision_model='smolvlm'):
     """
     Process documents in input_dir and save chunks to output_file INCREMENTALLY
 
@@ -364,7 +366,7 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
         enable_code_enrichment: Extract and format code blocks with syntax preservation
         enable_ocr: Extract text from scanned documents and images
         enable_table_structure: Extract and preserve table structure
-        picture_description_max_tokens: Max tokens to generate per image description (50-200, lower=faster)
+        picture_description_max_tokens: Max tokens to generate per image description (default 800, recommended for quality)
         resume: If True, resume from saved progress
         vision_batch_size: Batch size for vision model (1-32, default 4, higher=faster but more VRAM)
         processing_batch_size: Batch size for OCR/layout/table (1-32, default 4, higher=faster but more RAM)
@@ -415,36 +417,23 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
         
         # Enable picture description (generates captions using vision models)
         if enable_picture_description:
-            # Use lightweight SmolVLM model with optimized batch size for M3 GPU
-            try:
-                from docling.datamodel.pipeline_options import smolvlm_picture_description
+            # Always disable Docling's built-in picture description
+            # We use hybrid approach (PyMuPDF + SmolVLM/Gemini) for more control and Gemini support
+            pipeline_options.do_picture_description = False
 
-                # CRITICAL: Use configurable batch size to balance speed vs memory
-                # Large batches load many images into RAM/VRAM simultaneously
-                # For large documents (100+ pages), large batch sizes can cause OOM
-                # Default batch_size is 8, we use user-defined (default 4) for customization
-                optimized_vlm_config = PictureDescriptionVlmOptions(
-                    batch_size=vision_batch_size,   # User-defined (default: 4)
-                    scale=2,  # Keep default
-                    picture_area_threshold=0.05,  # Keep default
-                    repo_id='HuggingFaceTB/SmolVLM-256M-Instruct',
-                    prompt='Describe this image in a few sentences.',
-                    generation_config={
-                        'max_new_tokens': picture_description_max_tokens,  # User-configurable
-                        'do_sample': False
-                    }
-                )
-
-                pipeline_options.do_picture_description = True
-                pipeline_options.picture_description_options = optimized_vlm_config
+            if vision_model == 'gemini-2.0-flash':
                 print(json.dumps({
-                    "info": "Picture description enabled using SmolVLM (256M model)",
-                    "batch_size": vision_batch_size,
+                    "info": "Picture description enabled using Gemini 2.0 Flash (OpenAI-compatible endpoint)",
                     "max_tokens_per_image": picture_description_max_tokens,
-                    "note": f"Batch size {vision_batch_size} - balance speed vs memory usage"
+                    "note": "Images will be processed using Google Gemini API with automatic rate limiting (cloud-based)"
                 }), file=sys.stderr, flush=True)
-            except ImportError:
-                print(json.dumps({"warning": "Picture description requested but SmolVLM not available"}), file=sys.stderr, flush=True)
+            else:
+                print(json.dumps({
+                    "info": "Picture description enabled using SmolVLM (local processing)",
+                    "backend": vision_backend,
+                    "max_tokens_per_image": picture_description_max_tokens,
+                    "note": f"Images will be processed using {vision_backend} backend"
+                }), file=sys.stderr, flush=True)
         
         # Enable code enrichment for code blocks
         if enable_code_enrichment:
@@ -509,9 +498,21 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
             max_tokens=max_tokens,
             merge_peers=merge_peers
         )
-        
+
         all_chunks = []
         processed_files = []
+        chunks_by_document = {}  # Track chunks per document for conversions folder
+
+        # Track detailed statistics for summary
+        processing_stats = {
+            "files_by_type": {},  # e.g., {"pdf": {"count": 1, "pages": 62}, "images": {"count": 5}}
+            "total_conversion_time": 0,
+            "start_time": time.time(),
+            "output_files": {
+                "images": 0,
+                "markdown_files": 0
+            }
+        }
         
         # Find all supported documents
         input_path = Path(input_dir)
@@ -594,17 +595,28 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
             if idx < start_file_idx:
                 continue
             try:
+                # Track file type statistics
+                file_ext = doc_path.suffix.lower()
+                file_type = file_ext.replace('.', '')
+
+                if file_type not in processing_stats["files_by_type"]:
+                    processing_stats["files_by_type"][file_type] = {"count": 0, "pages": 0}
+                processing_stats["files_by_type"][file_type]["count"] += 1
+
                 # Get page count for PDFs and check if splitting is needed
                 page_count = None
                 pdf_chunks = [str(doc_path)]  # Default: process whole file
 
                 if doc_path.suffix.lower() == '.pdf':
                     page_count = get_pdf_page_count(str(doc_path))
+                    if page_count:
+                        processing_stats["files_by_type"][file_type]["pages"] += page_count
 
                     # Split large PDFs (>200 pages) if AI descriptions are enabled
                     # This prevents out-of-memory issues on large documents
-                    if page_count and page_count > 200 and enable_picture_description:
-                        pdf_chunks = split_pdf(str(doc_path), pages_per_chunk=100)
+                    # Use smaller chunks (10 pages) for better progress tracking since Docling is a black box
+                    if page_count and page_count > 20:
+                        pdf_chunks = split_pdf(str(doc_path), pages_per_chunk=10)
 
                 total_chunks = len(pdf_chunks)
 
@@ -691,6 +703,85 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
                     }
                     print(json.dumps(converted_progress), file=sys.stderr, flush=True)
                     sys.stderr.flush()
+                    
+                    # === IMAGE PROCESSING & MARKDOWN EXPORT ===
+                    # Extract images and generate descriptions (if enabled)
+                    extracted_images = []
+                    image_descriptions = {}
+
+                    if chunk_path.endswith('.pdf'):
+                        try:
+                            extracted_images, image_descriptions = process_document_with_images(
+                                chunk_path,
+                                conversion_output_folder,
+                                enable_description=enable_picture_description,
+                                max_tokens=picture_description_max_tokens,
+                                vision_backend=vision_backend,
+                                vision_model=vision_model
+                            )
+                            # Track extracted images
+                            processing_stats["output_files"]["images"] += len(extracted_images)
+
+                            # Verify descriptions were generated if enabled
+                            if enable_picture_description and extracted_images and not image_descriptions:
+                                error_msg = f"Failed to generate image descriptions for {len(extracted_images)} images. Check API key and logs."
+                                print(json.dumps({"error": error_msg}), file=sys.stderr, flush=True)
+                                raise ValueError(error_msg)
+                            elif enable_picture_description and extracted_images and image_descriptions:
+                                print(json.dumps({
+                                    "info": f"✓ Generated {len(image_descriptions)} image descriptions successfully"
+                                }), file=sys.stderr, flush=True)
+                        except Exception as e:
+                            # If image descriptions were explicitly enabled, this is a critical error
+                            if enable_picture_description:
+                                print(json.dumps({"error": f"Image description failed: {str(e)}"}),
+                                      file=sys.stderr, flush=True)
+                                raise  # Re-raise to stop conversion
+                            else:
+                                # If descriptions were not enabled, just log warning and continue
+                                print(json.dumps({"warning": f"Image extraction failed: {e}"}),
+                                      file=sys.stderr, flush=True)
+                    
+                    # Export full markdown (before chunking)
+                    try:
+                        markdown_text = doc.export_to_markdown()
+
+                        # Insert image descriptions at correct positions
+                        if extracted_images and image_descriptions:
+                            print(json.dumps({
+                                "info": f"Inserting {len(image_descriptions)} image descriptions into markdown..."
+                            }), file=sys.stderr, flush=True)
+
+                            markdown_text = insert_image_descriptions_in_markdown(
+                                markdown_text,
+                                extracted_images,
+                                image_descriptions
+                            )
+
+                            print(json.dumps({
+                                "info": "✓ Image descriptions inserted successfully"
+                            }), file=sys.stderr, flush=True)
+                        
+                        # Save full markdown to conversions folder
+                        doc_name = Path(chunk_path).stem
+                        output_base = Path(conversion_output_folder) / doc_name
+                        output_base.mkdir(parents=True, exist_ok=True)
+                        
+                        md_filename = f"full_document_chunk{chunk_idx}.md" if total_chunks > 1 else "full_document.md"
+                        md_path = output_base / md_filename
+
+                        with open(md_path, 'w', encoding='utf-8') as f:
+                            f.write(markdown_text)
+
+                        # Track markdown files created
+                        processing_stats["output_files"]["markdown_files"] += 1
+
+                        print(json.dumps({"info": f"Saved full markdown to: {md_path}"}),
+                              file=sys.stderr, flush=True)
+                        
+                    except Exception as e:
+                        print(json.dumps({"warning": f"Failed to export markdown: {e}"}), 
+                              file=sys.stderr, flush=True)
 
                     # Chunk this PDF chunk and collect results
                     chunk_count = 0
@@ -735,6 +826,23 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
                             "tokens": len(chunk_text.split())  # Rough estimate
                         })
 
+                    # === CRITICAL: INJECT IMAGE DESCRIPTIONS INTO CHUNKS ===
+                    # This ensures image descriptions are in the final semantic chunks used by RAG
+                    if extracted_images and image_descriptions:
+                        print(json.dumps({
+                            "info": f"💉 Injecting {len(image_descriptions)} image descriptions into {len(pdf_chunk_results)} semantic chunks..."
+                        }), file=sys.stderr, flush=True)
+
+                        pdf_chunk_results = inject_image_descriptions_into_chunks(
+                            pdf_chunk_results,
+                            extracted_images,
+                            image_descriptions
+                        )
+
+                        print(json.dumps({
+                            "info": "✓ Image descriptions injected into semantic chunks successfully"
+                        }), file=sys.stderr, flush=True)
+
                     # SAVE INCREMENTALLY after each PDF chunk
                     # This prevents data loss if process crashes
                     is_first = (idx == 1 and chunk_idx == 1 and len(completed_chunk_paths) == 0)
@@ -742,6 +850,99 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
 
                     if save_success:
                         all_chunks.extend(pdf_chunk_results)
+
+                        # Track chunks for this specific PDF chunk (for conversions folder)
+                        # Use chunk_path stem to match where images and markdown were saved
+                        chunk_base_name = Path(chunk_path).stem
+                        if chunk_base_name not in chunks_by_document:
+                            chunks_by_document[chunk_base_name] = {
+                                "chunks": [],
+                                "original_document": doc_path.name
+                            }
+                        chunks_by_document[chunk_base_name]["chunks"].extend(pdf_chunk_results)
+
+                        print(json.dumps({
+                            "debug": f"Tracked {len(pdf_chunk_results)} chunks for {chunk_base_name}. Total in dict: {len(chunks_by_document)}"
+                        }), file=sys.stderr, flush=True)
+
+                        # === SAVE CHUNKS TO CONVERSION FOLDER IMMEDIATELY ===
+                        # Don't wait until the end - save as each part completes
+                        try:
+                            output_base = Path(conversion_output_folder) / chunk_base_name
+                            output_base.mkdir(parents=True, exist_ok=True)
+
+                            # Save chunk-specific chunks.json
+                            chunks_copy_path = output_base / "chunks.json"
+                            doc_chunks_data = {
+                                "method": "docling-hybrid",
+                                "chunks": pdf_chunk_results,
+                                "total_chunks": len(pdf_chunk_results),
+                                "original_document": doc_path.name,
+                                "pdf_chunk": chunk_base_name,
+                                "config": {
+                                    "max_tokens": max_tokens,
+                                    "merge_peers": merge_peers,
+                                    "enable_picture_description": enable_picture_description,
+                                    "picture_description_max_tokens": picture_description_max_tokens,
+                                    "vision_model": vision_model,
+                                    "enable_formula": enable_formula,
+                                    "enable_ocr": enable_ocr,
+                                    "enable_table_structure": enable_table_structure
+                                }
+                            }
+
+                            with open(chunks_copy_path, 'w', encoding='utf-8') as f:
+                                json.dump(doc_chunks_data, f, indent=2)
+
+                            print(json.dumps({
+                                "info": f"✓ Saved {len(pdf_chunk_results)} semantic chunks to {chunks_copy_path}"
+                            }), file=sys.stderr, flush=True)
+
+                            # Determine markdown filename
+                            import re
+                            chunk_match = re.search(r'_chunk(\d+)_', chunk_base_name)
+                            if chunk_match:
+                                chunk_num = int(chunk_match.group(1))
+                                md_filename = f"full_document_chunk{chunk_num}.md"
+                            else:
+                                md_filename = "full_document.md"
+
+                            # Create metadata file
+                            metadata = {
+                                "original_document": doc_path.name,
+                                "pdf_chunk": chunk_base_name,
+                                "total_chunks": len(pdf_chunk_results),
+                                "config": {
+                                    "max_tokens": max_tokens,
+                                    "merge_peers": merge_peers,
+                                    "enable_picture_description": enable_picture_description,
+                                    "picture_description_max_tokens": picture_description_max_tokens,
+                                    "vision_model": vision_model,
+                                    "enable_formula": enable_formula,
+                                    "enable_ocr": enable_ocr,
+                                    "enable_table_structure": enable_table_structure
+                                },
+                                "outputs": {
+                                    "full_markdown": str(output_base / md_filename),
+                                    "images_folder": str(output_base / "images"),
+                                    "semantic_chunks": str(chunks_copy_path)
+                                }
+                            }
+
+                            metadata_path = output_base / "metadata.json"
+                            with open(metadata_path, 'w', encoding='utf-8') as f:
+                                json.dump(metadata, f, indent=2)
+
+                            print(json.dumps({"info": f"📁 Saved all outputs to: {output_base}/"}),
+                                  file=sys.stderr, flush=True)
+
+                        except Exception as e:
+                            import traceback
+                            print(json.dumps({
+                                "warning": f"Failed to save to conversion folder (non-critical): {e}",
+                                "traceback": traceback.format_exc()
+                            }), file=sys.stderr, flush=True)
+                            # Don't crash the whole process - this is just a copy
 
                         # Mark this chunk as completed
                         completed_chunk_paths.append(chunk_path)
@@ -803,6 +1004,10 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
         # Clear progress file since we completed successfully
         clear_progress(output_file)
 
+        # Calculate final statistics
+        processing_stats["total_conversion_time"] = time.time() - processing_stats["start_time"]
+        processing_stats["total_chunks"] = len(all_chunks)
+
         # Just send completion status
         finalizing_progress = {
             "type": "progress",
@@ -810,17 +1015,153 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
             "total": total_files,
             "file": "All files processed",
             "status": "completed",
-            "total_chunks": len(all_chunks)
+            "total_chunks": len(all_chunks),
+            "processing_stats": processing_stats
         }
         print(json.dumps(finalizing_progress), file=sys.stderr, flush=True)
         sys.stderr.flush()
 
         # File is already saved incrementally!
+        # Now update it with final processing stats
+        try:
+            with open(output_file, 'r') as f:
+                final_data = json.load(f)
+
+            final_data["processing_summary"] = {
+                "files_processed": processing_stats["files_by_type"],
+                "total_conversion_time_seconds": round(processing_stats["total_conversion_time"], 2),
+                "total_conversion_time_formatted": f"{int(processing_stats['total_conversion_time'] // 3600)}:{int((processing_stats['total_conversion_time'] % 3600) // 60):02d}:{int(processing_stats['total_conversion_time'] % 60):02d}",
+                "output_files": processing_stats["output_files"],
+                "total_chunks": processing_stats["total_chunks"],
+                "completed_at": time.strftime("%Y-%m-%d %H:%M:%S")
+            }
+
+            with open(output_file, 'w') as f:
+                json.dump(final_data, f, indent=2)
+
+        except Exception as e:
+            print(json.dumps({"warning": f"Failed to add processing stats to chunks.json: {e}"}),
+                  file=sys.stderr, flush=True)
+
+        # === CHUNKS ALREADY SAVED TO CONVERSIONS FOLDER ===
+        # Note: chunks.json and metadata.json are now saved immediately after each part is processed
+        # (see lines 868-945 above)
+        # This eliminates the wait time at the end and makes outputs available incrementally
+
+        print(json.dumps({
+            "info": "✅ All outputs already saved to conversion folders during processing",
+            "total_parts_processed": len(chunks_by_document)
+        }), file=sys.stderr, flush=True)
+
+        # Keep this legacy code commented for now in case we need to re-enable end-of-job saving
+        """
+        try:
+            import shutil
+
+            print(json.dumps({
+                "info": f"📦 Preparing to save chunks to conversions folder...",
+                "chunks_by_document_keys": list(chunks_by_document.keys()),
+                "total_tracked_chunks": sum(len(data["chunks"]) for data in chunks_by_document.values())
+            }), file=sys.stderr, flush=True)
+
+            # Save chunks.json to conversions folder for each PDF chunk
+            # This saves chunks to the same folder where images and markdown were saved
+            for chunk_base_name, chunk_data in chunks_by_document.items():
+                output_base = Path(conversion_output_folder) / chunk_base_name
+                output_base.mkdir(parents=True, exist_ok=True)
+
+                # Get chunks for this specific PDF chunk
+                doc_chunks = chunk_data["chunks"]
+                original_doc = chunk_data["original_document"]
+
+                # Save chunk-specific chunks to conversions folder
+                chunks_copy_path = output_base / "chunks.json"
+                doc_chunks_data = {
+                    "method": "docling-hybrid",
+                    "chunks": doc_chunks,
+                    "total_chunks": len(doc_chunks),
+                    "original_document": original_doc,
+                    "pdf_chunk": chunk_base_name,
+                    "config": {
+                        "max_tokens": max_tokens,
+                        "merge_peers": merge_peers,
+                        "enable_picture_description": enable_picture_description,
+                        "picture_description_max_tokens": picture_description_max_tokens,
+                        "vision_model": vision_model,
+                        "enable_formula": enable_formula,
+                        "enable_ocr": enable_ocr,
+                        "enable_table_structure": enable_table_structure
+                    }
+                }
+
+                with open(chunks_copy_path, 'w', encoding='utf-8') as f:
+                    json.dump(doc_chunks_data, f, indent=2)
+
+                print(json.dumps({
+                    "info": f"✓ Saved {len(doc_chunks)} chunks to {chunks_copy_path}"
+                }), file=sys.stderr, flush=True)
+
+                # Determine markdown filename based on folder structure
+                # Check if this is a split document (has _chunkXXX in name)
+                import re
+                chunk_match = re.search(r'_chunk(\d+)_', chunk_base_name)
+                if chunk_match:
+                    chunk_num = int(chunk_match.group(1))
+                    md_filename = f"full_document_chunk{chunk_num}.md"
+                else:
+                    md_filename = "full_document.md"
+
+                # Create metadata file
+                metadata = {
+                    "original_document": original_doc,
+                    "pdf_chunk": chunk_base_name,
+                    "processed_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+                    "total_semantic_chunks": len(doc_chunks),
+                    "config": {
+                        "max_tokens": max_tokens,
+                        "enable_picture_description": enable_picture_description,
+                        "picture_description_max_tokens": picture_description_max_tokens,
+                        "vision_model": vision_model,
+                        "vision_backend": vision_backend,
+                        "enable_formula": enable_formula,
+                        "enable_ocr": enable_ocr,
+                        "enable_table_structure": enable_table_structure
+                    },
+                    "outputs": {
+                        "full_markdown": str(output_base / md_filename),
+                        "images_folder": str(output_base / "images"),
+                        "semantic_chunks": str(chunks_copy_path)
+                    }
+                }
+
+                metadata_path = output_base / "metadata.json"
+                with open(metadata_path, 'w', encoding='utf-8') as f:
+                    json.dump(metadata, f, indent=2)
+
+                print(json.dumps({"info": f"📁 All outputs saved to: {output_base}/"}),
+                      file=sys.stderr, flush=True)
+
+        except Exception as e:
+            import traceback
+            print(json.dumps({
+                "error": f"Failed to save outputs to conversions folder: {e}",
+                "traceback": traceback.format_exc()
+            }), file=sys.stderr, flush=True)
+        """
+
+        print(json.dumps({
+            "info": "✅ Conversion completed successfully",
+            "chunks_tracked_in_dict": len(chunks_by_document),
+            "total_semantic_chunks": len(all_chunks)
+        }), file=sys.stderr, flush=True)
+
         return {
             "success": True,
             "chunks_count": len(all_chunks),
             "files_processed": len(processed_files),
-            "output_file": output_file
+            "output_file": output_file,
+            "conversion_output_folder": conversion_output_folder,
+            "processing_stats": processing_stats
         }
         
     except Exception as e:
@@ -848,12 +1189,15 @@ def main():
     enable_code_enrichment = sys.argv[8].lower() == 'true' if len(sys.argv) > 8 else False
     enable_ocr = sys.argv[9].lower() == 'true' if len(sys.argv) > 9 else True  # Default to True for OCR
     enable_table_structure = sys.argv[10].lower() == 'true' if len(sys.argv) > 10 else True  # Default to True for tables
-    picture_description_max_tokens = int(sys.argv[11]) if len(sys.argv) > 11 else 100  # Default 100 tokens per image
+    picture_description_max_tokens = int(sys.argv[11]) if len(sys.argv) > 11 else 800  # Default 800 tokens per image (recommended for quality)
     resume = sys.argv[12].lower() == 'true' if len(sys.argv) > 12 else False  # Resume from saved progress
     vision_batch_size = int(sys.argv[13]) if len(sys.argv) > 13 else 4  # Default 4 for vision model
     processing_batch_size = int(sys.argv[14]) if len(sys.argv) > 14 else 4  # Default 4 for OCR/layout/table
+    vision_backend = sys.argv[15] if len(sys.argv) > 15 else 'auto'  # 'auto', 'transformers', 'mlx'
+    conversion_output_folder = sys.argv[16] if len(sys.argv) > 16 else 'conversions/'  # Default folder
+    vision_model = sys.argv[17] if len(sys.argv) > 17 else 'smolvlm'  # 'smolvlm' or 'gemini-2.0-flash'
 
-    result = chunk_documents(input_dir, output_file, max_tokens, merge_peers, enable_formula, enable_picture_classification, enable_picture_description, enable_code_enrichment, enable_ocr, enable_table_structure, picture_description_max_tokens, resume, vision_batch_size, processing_batch_size)
+    result = chunk_documents(input_dir, output_file, max_tokens, merge_peers, enable_formula, enable_picture_classification, enable_picture_description, enable_code_enrichment, enable_ocr, enable_table_structure, picture_description_max_tokens, resume, vision_batch_size, processing_batch_size, vision_backend, conversion_output_folder, vision_model)
     print(json.dumps(result))
 
 

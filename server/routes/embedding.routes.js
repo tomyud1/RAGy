@@ -10,31 +10,45 @@ export function setBroadcastFunction(fn) {
   broadcastFn = fn;
 }
 
+// Get available devices for GPU acceleration
+router.get('/devices', async (req, res) => {
+  try {
+    const devices = await EmbeddingService.getAvailableDevices();
+    res.json({ success: true, devices });
+  } catch (error) {
+    console.error('Failed to get available devices:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message || 'Failed to get available devices'
+    });
+  }
+});
+
 // Start embedding generation
 router.post('/start', async (req, res) => {
   try {
-    const { projectId, modelId } = req.body;
-    
+    const { projectId, modelId, devicePreference = 'auto' } = req.body;
+
     if (!projectId) {
       return res.status(400).json({ error: 'Project ID is required' });
     }
-    
+
     if (!modelId) {
       return res.status(400).json({ error: 'Model ID is required' });
     }
-    
+
     if (!broadcastFn) {
       return res.status(500).json({ error: 'WebSocket not initialized' });
     }
-    
-    const result = await EmbeddingService.startEmbedding(projectId, modelId, broadcastFn);
-    
+
+    const result = await EmbeddingService.startEmbedding(projectId, modelId, devicePreference, broadcastFn);
+
     res.json({ success: true, ...result });
   } catch (error) {
     console.error('Failed to start embedding:', error);
-    res.status(500).json({ 
-      success: false, 
-      error: error.message || 'Failed to start embedding' 
+    res.status(500).json({
+      success: false,
+      error: error.message || 'Failed to start embedding'
     });
   }
 });

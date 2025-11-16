@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ProjectSelector from './components/ProjectSelector';
-import ProjectWorkspace from './components/ProjectWorkspace';
-import Header from './components/Header';
+import MainLayout from './components/MainLayout';
 
 function App() {
   const [currentProject, setCurrentProject] = useState(null);
@@ -103,35 +102,39 @@ function App() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <Header currentProject={currentProject} onBackToProjects={goBackToProjects} />
-      
-      <main style={{ 
-        flex: 1, 
-        padding: '3rem 2rem',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: currentProject ? 'flex-start' : 'center',
-        minHeight: 'calc(100vh - 80px)',
-      }}>
-        {isLoadingProject ? (
-          <div style={{ textAlign: 'center', color: 'var(--text-secondary)' }}>
-            <div style={{ fontSize: '1rem' }}>Loading...</div>
-          </div>
-        ) : !currentProject ? (
+    <div style={{ minHeight: '100vh' }}>
+      {isLoadingProject ? (
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: '100vh',
+          color: 'var(--text-secondary)',
+        }}>
+          <div style={{ fontSize: '1rem' }}>Loading...</div>
+        </div>
+      ) : !currentProject ? (
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          minHeight: '100vh',
+          padding: '3rem 2rem',
+        }}>
           <ProjectSelector
             projects={projects}
             onSelectProject={selectProject}
             onCreateProject={createProject}
           />
-        ) : (
-          <ProjectWorkspace
-            project={currentProject}
-            onProjectUpdate={loadProjects}
-          />
-        )}
-      </main>
+        </div>
+      ) : (
+        <MainLayout
+          project={currentProject}
+          onBackToProjects={goBackToProjects}
+          onProjectUpdate={loadProjects}
+        />
+      )}
     </div>
   );
 }

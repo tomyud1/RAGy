@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Cpu, Info, ArrowRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Cpu, Info, ArrowRight, Zap, Monitor, Sparkles } from 'lucide-react';
 import { TEXT_SIZES, FONT_WEIGHTS } from '../../constants/ui';
 
 const EMBEDDING_MODELS = [
@@ -34,9 +34,69 @@ const EMBEDDING_MODELS = [
 
 function EmbeddingModelStep({ project, chunks, hasExistingVectorDbs, onComplete, onBack, onSkipToTesting }) {
   const [selectedModel, setSelectedModel] = useState('all-MiniLM-L6-v2');
+  const [selectedDevice, setSelectedDevice] = useState('auto');
+  const [availableDevices, setAvailableDevices] = useState(null);
+  const [loadingDevices, setLoadingDevices] = useState(true);
+
+  useEffect(() => {
+    fetchAvailableDevices();
+  }, []);
+
+  const fetchAvailableDevices = async () => {
+    try {
+      const response = await fetch('/api/embedding/devices');
+      const data = await response.json();
+
+      if (data.success) {
+        setAvailableDevices(data.devices);
+      }
+    } catch (error) {
+      console.error('Failed to fetch available devices:', error);
+      // Fallback devices if API fails
+      setAvailableDevices({
+        auto: { available: true, name: 'Auto-detect', description: 'Automatically select the best available device' },
+        cpu: { available: true, name: 'CPU', description: 'CPU processing (slowest, always available)' },
+        metal: { available: false, name: 'Apple Silicon (Metal)', description: 'Not available on this system' },
+        cuda: { available: false, name: 'NVIDIA GPU (CUDA)', description: 'Not available on this system' }
+      });
+    } finally {
+      setLoadingDevices(false);
+    }
+  };
 
   const handleContinue = () => {
-    onComplete({ embeddingModel: selectedModel });
+    onComplete({
+      embeddingModel: selectedModel,
+      devicePreference: selectedDevice
+    });
+  };
+
+  const getDeviceIcon = (deviceKey) => {
+    switch (deviceKey) {
+      case 'auto':
+        return Zap;
+      case 'metal':
+        return Cpu;
+      case 'cuda':
+        return Sparkles;
+      default:
+        return Monitor;
+    }
+  };
+
+  const getDeviceDisplayName = (deviceKey) => {
+    switch (deviceKey) {
+      case 'auto':
+        return 'Auto-detect';
+      case 'metal':
+        return 'Apple Silicon (Metal)';
+      case 'cuda':
+        return 'NVIDIA GPU (CUDA)';
+      case 'cpu':
+        return 'CPU Only';
+      default:
+        return deviceKey;
+    }
   };
 
   return (
@@ -136,6 +196,128 @@ function EmbeddingModelStep({ project, chunks, hasExistingVectorDbs, onComplete,
         ))}
       </div>
 
+      {/* Device Selection */}
+      <div style={{ marginBottom: '2rem' }}>
+        <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.5rem' }}>
+          Choose Acceleration Device
+        </h3>
+        <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem', fontSize: '0.875rem' }}>
+          Select which hardware to use for embedding generation
+        </p>
+
+        {loadingDevices ? (
+          <div style={{
+            padding: '2rem',
+            textAlign: 'center',
+            color: 'var(--text-secondary)',
+            background: 'var(--bg-primary)',
+            border: '1px solid var(--border)',
+            borderRadius: '8px'
+          }}>
+            Loading available devices...
+          </div>
+        ) : (
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '1rem'
+          }}>
+            {availableDevices && Object.entries(availableDevices).map(([key, device]) => {
+              const DeviceIcon = getDeviceIcon(key);
+              const isAvailable = device.available;
+              const isSelected = selectedDevice === key;
+
+              return (
+                <div
+                  key={key}
+                  onClick={() => isAvailable && setSelectedDevice(key)}
+                  style={{
+                    padding: '1.25rem',
+                    background: isSelected ? 'var(--bg-tertiary)' : 'var(--bg-primary)',
+                    border: isSelected
+                      ? '2px solid var(--accent-primary)'
+                      : isAvailable
+                        ? '1px solid var(--border)'
+                        : '1px dashed var(--border)',
+                    borderRadius: '12px',
+                    cursor: isAvailable ? 'pointer' : 'not-allowed',
+                    opacity: isAvailable ? 1 : 0.5,
+                    transition: 'all 0.2s',
+                    position: 'relative',
+                  }}
+                  onMouseEnter={(e) => {
+                    if (isAvailable && !isSelected) {
+                      e.currentTarget.style.borderColor = 'var(--accent-light)';
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (isAvailable && !isSelected) {
+                      e.currentTarget.style.borderColor = 'var(--border)';
+                    }
+                  }}
+                >
+                  {key === 'auto' && (
+                    <div style={{
+                      position: 'absolute',
+                      top: '0.75rem',
+                      right: '0.75rem',
+                      padding: '0.25rem 0.5rem',
+                      background: 'var(--accent-primary)',
+                      borderRadius: '8px',
+                      fontSize: '0.65rem',
+                      fontWeight: '600',
+                    }}>
+                      RECOMMENDED
+                    </div>
+                  )}
+
+                  <div style={{ display: 'flex', alignItems: 'start', gap: '0.75rem' }}>
+                    <DeviceIcon
+                      size={24}
+                      style={{
+                        color: isSelected ? 'var(--accent-primary)' : 'var(--text-secondary)',
+                        marginTop: '0.125rem',
+                        flexShrink: 0
+                      }}
+                    />
+
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <div style={{
+                        fontSize: '1rem',
+                        fontWeight: '600',
+                        marginBottom: '0.5rem',
+                        color: isAvailable ? 'var(--text-primary)' : 'var(--text-secondary)'
+                      }}>
+                        {device.name}
+                      </div>
+
+                      <div style={{
+                        fontSize: '0.8rem',
+                        color: 'var(--text-secondary)',
+                        lineHeight: '1.4'
+                      }}>
+                        {device.description}
+                      </div>
+
+                      {!isAvailable && (
+                        <div style={{
+                          marginTop: '0.5rem',
+                          fontSize: '0.75rem',
+                          color: 'var(--text-tertiary)',
+                          fontStyle: 'italic'
+                        }}>
+                          Not available
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
       {/* Info Box */}
       <div style={{
         background: 'var(--bg-primary)',
@@ -207,22 +389,28 @@ function EmbeddingModelStep({ project, chunks, hasExistingVectorDbs, onComplete,
           
           <button
             onClick={handleContinue}
+            disabled={loadingDevices}
             style={{
               padding: '0.875rem 2rem',
-              background: 'var(--accent-primary)',
+              background: loadingDevices ? 'var(--bg-tertiary)' : 'var(--accent-primary)',
               border: 'none',
               borderRadius: '8px',
-              color: 'var(--text-primary)',
+              color: loadingDevices ? 'var(--text-secondary)' : 'var(--text-primary)',
               fontSize: TEXT_SIZES.buttonLarge,
               fontWeight: FONT_WEIGHTS.semibold,
-              cursor: 'pointer',
+              cursor: loadingDevices ? 'not-allowed' : 'pointer',
               transition: 'all 0.2s',
+              opacity: loadingDevices ? 0.6 : 1,
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'var(--accent-hover)';
+              if (!loadingDevices) {
+                e.currentTarget.style.background = 'var(--accent-hover)';
+              }
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'var(--accent-primary)';
+              if (!loadingDevices) {
+                e.currentTarget.style.background = 'var(--accent-primary)';
+              }
             }}
           >
             Start Embedding

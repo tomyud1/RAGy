@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Loader, CheckCircle, AlertCircle, Zap } from 'lucide-react';
+import { Loader, CheckCircle, AlertCircle, Zap, X } from 'lucide-react';
 import { TEXT_SIZES, FONT_WEIGHTS } from '../../constants/ui';
 
-function EmbeddingProgressStep({ project, embeddingModel, onComplete, onBack }) {
+function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'auto', onComplete, onBack }) {
   const [status, setStatus] = useState('starting'); // starting, processing, completed, error
   const [progress, setProgress] = useState(0);
   const [stats, setStats] = useState({
@@ -45,6 +45,7 @@ function EmbeddingProgressStep({ project, embeddingModel, onComplete, onBack }) 
         body: JSON.stringify({
           projectId: project.id,
           modelId: embeddingModel,
+          devicePreference: devicePreference,
         }),
       });
       
@@ -134,6 +135,32 @@ function EmbeddingProgressStep({ project, embeddingModel, onComplete, onBack }) 
     return `${mins}m ${secs}s`;
   };
 
+  const handleCancel = async () => {
+    if (!jobIdRef.current) return;
+
+    try {
+      setStatus('cancelling');
+      const response = await fetch(`/api/embedding/cancel/${jobIdRef.current}`, {
+        method: 'POST'
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        if (wsRef.current) {
+          wsRef.current.close();
+        }
+        setStatus('error');
+        setError('Embedding cancelled by user');
+        jobIdRef.current = null;
+      } else {
+        console.error('Failed to cancel job:', data.error);
+      }
+    } catch (error) {
+      console.error('Error cancelling job:', error);
+    }
+  };
+
   return (
     <div>
       <h2 style={{ fontSize: '1.75rem', fontWeight: '600', marginBottom: '0.5rem' }}>
@@ -163,38 +190,44 @@ function EmbeddingProgressStep({ project, embeddingModel, onComplete, onBack }) 
         {status === 'processing' && (
           <>
             <Zap size={48} style={{ color: 'var(--accent-primary)', margin: '0 auto 1rem' }} />
-            <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>Processing Chunks</h3>
-            
+            <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>
+              {progress < 50 ? 'Generating Embeddings with GPU...' : 'Indexing Embeddings'}
+            </h3>
+
             {/* Chunks info */}
             <p style={{ color: 'var(--text-secondary)', marginBottom: '0.25rem', fontSize: '0.95rem' }}>
-              {stats.processedChunks} / {stats.totalChunks} chunks embedded
+              {stats.processedChunks} / {stats.totalChunks} chunks {progress >= 50 ? 'indexed' : 'processed'}
             </p>
-            
+
             {/* Batch info */}
-            <p style={{ color: 'var(--text-secondary)', marginBottom: '0.5rem', fontSize: '0.875rem', opacity: 0.8 }}>
-              Batch {stats.currentBatch} / {stats.totalBatches}
-            </p>
-            
-            {/* Speed and Avg on same line */}
-            <div style={{ 
-              display: 'flex', 
-              gap: '2rem', 
-              justifyContent: 'center', 
-              marginBottom: '1.5rem',
-              fontSize: '0.875rem',
-              color: 'var(--text-secondary)',
-            }}>
-              <span>
-                Speed: <strong style={{ color: 'var(--text-primary)' }}>
-                  {stats.speed ? `${stats.speed.toFixed(1)} chunks/s` : 'Calculating...'}
-                </strong>
-              </span>
-              <span>
-                Avg: <strong style={{ color: 'var(--text-primary)' }}>
-                  {stats.avgTimePerChunk ? `${stats.avgTimePerChunk.toFixed(0)}ms` : 'Calculating...'}
-                </strong>
-              </span>
-            </div>
+            {stats.currentBatch > 0 && (
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '0.5rem', fontSize: '0.875rem', opacity: 0.8 }}>
+                Batch {stats.currentBatch} / {stats.totalBatches}
+              </p>
+            )}
+
+            {/* Speed and Avg on same line - only show when available */}
+            {stats.speed && stats.avgTimePerChunk && (
+              <div style={{
+                display: 'flex',
+                gap: '2rem',
+                justifyContent: 'center',
+                marginBottom: '1.5rem',
+                fontSize: '0.875rem',
+                color: 'var(--text-secondary)',
+              }}>
+                <span>
+                  Speed: <strong style={{ color: 'var(--text-primary)' }}>
+                    {stats.speed.toFixed(1)} chunks/s
+                  </strong>
+                </span>
+                <span>
+                  Avg: <strong style={{ color: 'var(--text-primary)' }}>
+                    {stats.avgTimePerChunk.toFixed(0)}ms
+                  </strong>
+                </span>
+              </div>
+            )}
             
             {/* Segmented Progress Bar - group batches for visual clarity */}
             <div style={{
@@ -311,7 +344,7 @@ function EmbeddingProgressStep({ project, embeddingModel, onComplete, onBack }) 
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <button
           onClick={onBack}
-          disabled={status === 'processing'}
+          disabled={status === 'processing' || status === 'starting' || status === 'cancelling'}
           style={{
             padding: '0.875rem 2rem',
             background: 'var(--bg-tertiary)',
@@ -320,12 +353,60 @@ function EmbeddingProgressStep({ project, embeddingModel, onComplete, onBack }) 
             color: 'var(--text-primary)',
             fontWeight: FONT_WEIGHTS.semibold,
             fontSize: TEXT_SIZES.buttonLarge,
-            cursor: status === 'processing' ? 'not-allowed' : 'pointer',
-            opacity: status === 'processing' ? 0.5 : 1,
+            cursor: (status === 'processing' || status === 'starting' || status === 'cancelling') ? 'not-allowed' : 'pointer',
+            opacity: (status === 'processing' || status === 'starting' || status === 'cancelling') ? 0.5 : 1,
           }}
         >
           Back
         </button>
+
+        {(status === 'processing' || status === 'starting') && (
+          <button
+            onClick={handleCancel}
+            style={{
+              padding: '0.875rem 2rem',
+              background: 'var(--error)',
+              border: 'none',
+              borderRadius: '8px',
+              color: 'white',
+              fontWeight: FONT_WEIGHTS.semibold,
+              fontSize: TEXT_SIZES.buttonLarge,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              transition: 'all 0.2s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = '#dc2626';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'var(--error)';
+            }}
+          >
+            <X size={18} />
+            Cancel
+          </button>
+        )}
+
+        {status === 'cancelling' && (
+          <button
+            disabled
+            style={{
+              padding: '0.875rem 2rem',
+              background: 'var(--bg-tertiary)',
+              border: 'none',
+              borderRadius: '8px',
+              color: 'var(--text-secondary)',
+              fontWeight: FONT_WEIGHTS.semibold,
+              fontSize: TEXT_SIZES.buttonLarge,
+              cursor: 'not-allowed',
+              opacity: 0.6,
+            }}
+          >
+            Cancelling...
+          </button>
+        )}
 
         {status === 'error' && (
           <button

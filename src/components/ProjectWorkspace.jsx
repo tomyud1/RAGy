@@ -17,8 +17,15 @@ const STEPS = [
 ];
 
 function ProjectWorkspace({ project, onProjectUpdate }) {
-  const [currentStep, setCurrentStep] = useState(0);
-  const [maxStepReached, setMaxStepReached] = useState(0);
+  // Initialize from sessionStorage immediately to prevent flash of wrong step
+  const [currentStep, setCurrentStep] = useState(() => {
+    const saved = sessionStorage.getItem(`ragy_project_${project.id}_step`);
+    return saved !== null ? parseInt(saved, 10) : 0;
+  });
+  const [maxStepReached, setMaxStepReached] = useState(() => {
+    const saved = sessionStorage.getItem(`ragy_project_${project.id}_maxStep`);
+    return saved !== null ? parseInt(saved, 10) : 0;
+  });
   const [projectData, setProjectData] = useState({
     files: [],
     chunkingMethod: null,
@@ -29,8 +36,10 @@ function ProjectWorkspace({ project, onProjectUpdate }) {
   const [hasInitialized, setHasInitialized] = useState(false);
 
   useEffect(() => {
+    // Reset initialization state when project changes
+    setHasInitialized(false);
     loadProjectData();
-  }, [project]);
+  }, [project.id]); // Use project.id as dependency, not project object
 
   // Save current step to sessionStorage when it changes
   useEffect(() => {
@@ -49,19 +58,16 @@ function ProjectWorkspace({ project, onProjectUpdate }) {
       // Only set initial step on first load, not on subsequent reloads
       // This prevents unwanted redirects when user manually navigates
       if (!hasInitialized) {
-        // First, check if we have a saved step in sessionStorage (from a refresh)
+        // Check if we have a saved step in sessionStorage (from a refresh)
         const savedStep = sessionStorage.getItem(`ragy_project_${project.id}_step`);
         const savedMaxStep = sessionStorage.getItem(`ragy_project_${project.id}_maxStep`);
 
-        let initialStep = 0;
-        let initialMaxStep = 0;
-
-        if (savedStep !== null && savedMaxStep !== null) {
-          // Use saved step from sessionStorage (user refreshed the page)
-          initialStep = parseInt(savedStep, 10);
-          initialMaxStep = parseInt(savedMaxStep, 10);
-        } else {
+        // Only set step if sessionStorage is empty (first time visiting this project)
+        if (savedStep === null || savedMaxStep === null) {
           // Determine current step based on project state (first time visiting)
+          let initialStep = 0;
+          let initialMaxStep = 0;
+          
           if (data.vectorDbs?.length > 0) {
             initialStep = 5; // Testing step
           } else if (data.chunks) {
@@ -72,10 +78,11 @@ function ProjectWorkspace({ project, onProjectUpdate }) {
             initialStep = 0; // Upload files
           }
           initialMaxStep = initialStep;
+          
+          setCurrentStep(initialStep);
+          setMaxStepReached(initialMaxStep);
         }
-
-        setCurrentStep(initialStep);
-        setMaxStepReached(initialMaxStep);
+        // If sessionStorage exists, the state was already initialized correctly from useState
         setHasInitialized(true);
       }
     } catch (error) {
@@ -121,10 +128,11 @@ function ProjectWorkspace({ project, onProjectUpdate }) {
       case 'chunking':
         return (
           <ChunkingMethodStep
-            project={project}
+            project={{ ...project, ...projectData }}
             files={projectData.files}
             onComplete={handleStepComplete}
             onBack={handleStepBack}
+            onProjectDataUpdate={loadProjectData}
           />
         );
       case 'preview':
@@ -152,6 +160,7 @@ function ProjectWorkspace({ project, onProjectUpdate }) {
           <EmbeddingProgressStep
             project={project}
             embeddingModel={projectData.embeddingModel}
+            devicePreference={projectData.devicePreference || 'auto'}
             onComplete={handleStepComplete}
             onBack={handleStepBack}
           />

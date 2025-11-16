@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs/promises';
 import { ProjectService } from './project.service.js';
+import settingsService from './settings.service.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -68,6 +69,11 @@ export class ChunkingService {
     // Ensure output directory exists
     await fs.mkdir(outputDir, { recursive: true });
 
+    // Get Gemini API key from settings service (same as chat)
+    const geminiApiKey = await settingsService.getApiKey('gemini');
+
+    console.log('[Chunking] Gemini API key loaded:', geminiApiKey ? `${geminiApiKey.substring(0, 10)}...` : 'NOT FOUND');
+
     return new Promise((resolve, reject) => {
       const maxTokens = config.maxTokens || 512;
       const mergePeers = config.mergePeers !== undefined ? config.mergePeers : true;
@@ -77,6 +83,9 @@ export class ChunkingService {
       const enablePictureClassification = config.enablePictureClassification || false;
       const enablePictureDescription = config.enablePictureDescription || false;
       const pictureDescriptionMaxTokens = config.pictureDescriptionMaxTokens || 100; // Default 100 tokens per image
+      const visionModel = config.visionModel || 'smolvlm'; // 'smolvlm' or 'gemini-2.0-flash'
+      const visionBackend = config.visionBackend || 'auto'; // 'auto', 'transformers', 'mlx' (for SmolVLM only)
+      const conversionOutputFolder = config.conversionOutputFolder || 'conversions/'; // Default folder
       const enableCodeEnrichment = config.enableCodeEnrichment || false;
       const enableOcr = config.enableOcr !== undefined ? config.enableOcr : true; // Default to true
       const enableTableStructure = config.enableTableStructure !== undefined ? config.enableTableStructure : true; // Default to true
@@ -90,6 +99,9 @@ export class ChunkingService {
         pictureClassification: enablePictureClassification,
         pictureDescription: enablePictureDescription,
         pictureDescriptionMaxTokens: pictureDescriptionMaxTokens,
+        visionModel: visionModel,
+        visionBackend: visionBackend,
+        conversionOutputFolder: conversionOutputFolder,
         codeEnrichment: enableCodeEnrichment,
         ocr: enableOcr,
         tableStructure: enableTableStructure,
@@ -97,7 +109,7 @@ export class ChunkingService {
         processingBatchSize: processingBatchSize,
         resume: resume
       });
-
+      
       const pythonProcess = spawn('python3', [
         '-u',  // Unbuffered output
         PYTHON_SCRIPT,
@@ -114,9 +126,16 @@ export class ChunkingService {
         pictureDescriptionMaxTokens.toString(),
         resume.toString(), // Resume parameter
         visionBatchSize.toString(), // Vision model batch size
-        processingBatchSize.toString() // OCR/layout/table batch size
+        processingBatchSize.toString(), // OCR/layout/table batch size
+        visionBackend, // Vision backend: 'auto', 'transformers', 'mlx' (for SmolVLM)
+        conversionOutputFolder, // Output folder for conversions
+        visionModel // Vision model: 'smolvlm' or 'gemini-2.0-flash'
       ], {
-        env: { ...process.env, PYTHONUNBUFFERED: '1' },
+        env: { 
+          ...process.env, 
+          PYTHONUNBUFFERED: '1',
+          GEMINI_API_KEY: geminiApiKey // Pass Gemini API key as environment variable
+        },
         detached: true // Create process group so we can kill all children at once
       });
 
@@ -207,10 +226,24 @@ export class ChunkingService {
           // Load the generated chunks
           const chunksData = JSON.parse(await fs.readFile(outputFile, 'utf-8'));
 
-          // Save to project
-          await ProjectService.saveProjectChunks(projectId, chunksData.chunks, 'docling-hybrid');
+          // Save to project - preserve processing_summary if present
+          const { chunks, processing_summary, ...otherMetadata } = chunksData;
 
-          console.log(`Chunking complete: ${chunksData.chunks.length} chunks generated`);
+          // Save conversion output folder first to avoid race condition
+          await ProjectService.updateProject(projectId, {
+            conversionOutputFolder: conversionOutputFolder
+          });
+
+          // Then save chunks and summary (this will preserve conversionOutputFolder)
+          await ProjectService.saveProjectChunks(
+            projectId,
+            chunks,
+            'docling-hybrid',
+            { processing_summary, ...otherMetadata }
+          );
+
+          console.log(`Chunking complete: ${chunks.length} chunks generated`);
+          console.log(`Conversion output folder: ${conversionOutputFolder}`);
 
           resolve({
             success: true,

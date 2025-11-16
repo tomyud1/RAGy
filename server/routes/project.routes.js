@@ -1,9 +1,16 @@
 import express from 'express';
 import { exec } from 'child_process';
 import path from 'path';
+import multer from 'multer';
 import { ProjectService } from '../services/project.service.js';
 
 const router = express.Router();
+
+// Configure multer for file uploads
+const upload = multer({
+  dest: 'uploads/',
+  limits: { fileSize: 100 * 1024 * 1024 }, // 100MB limit
+});
 
 // Get all projects
 router.get('/', async (req, res) => {
@@ -68,6 +75,42 @@ router.get('/:projectId/vector-dbs', async (req, res) => {
   } catch (error) {
     console.error('Failed to get vector databases:', error);
     res.status(500).json({ error: 'Failed to get vector databases' });
+  }
+});
+
+// Delete vector database
+router.delete('/:projectId/vector-dbs/:vectorDbId', async (req, res) => {
+  try {
+    const { projectId, vectorDbId } = req.params;
+    await ProjectService.deleteVectorDb(projectId, vectorDbId);
+    res.json({ success: true, message: 'Vector database deleted successfully' });
+  } catch (error) {
+    console.error('Failed to delete vector database:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message || 'Failed to delete vector database'
+    });
+  }
+});
+
+// Upload vector database from disk
+router.post('/upload-vector-db', upload.single('vectorDb'), async (req, res) => {
+  try {
+    const { projectId } = req.body;
+    const file = req.file;
+
+    if (!projectId || !file) {
+      return res.status(400).json({ error: 'Project ID and file are required' });
+    }
+
+    // TODO: Implement actual vector database import logic
+    // For now, we'll just return an error message
+    res.status(501).json({
+      error: 'Vector database upload from disk is not yet implemented. Please use the RAG System to create vector databases.',
+    });
+  } catch (error) {
+    console.error('Failed to upload vector database:', error);
+    res.status(500).json({ error: 'Failed to upload vector database' });
   }
 });
 

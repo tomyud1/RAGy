@@ -69,13 +69,16 @@ const CHUNKING_METHODS = [
   // Future methods can be added here
 ];
 
-function ChunkingMethodStep({ project, files, onComplete, onBack }) {
+function ChunkingMethodStep({ project, files, onComplete, onBack, onProjectDataUpdate }) {
   const [selectedMethod, setSelectedMethod] = useState('docling-hybrid');
   const [maxTokens, setMaxTokens] = useState(512);
   const [enableFormula, setEnableFormula] = useState(true); // Default to true for formulas!
   const [enablePictureClassification, setEnablePictureClassification] = useState(false);
   const [enablePictureDescription, setEnablePictureDescription] = useState(false);
   const [pictureDescriptionMaxTokens, setPictureDescriptionMaxTokens] = useState(100); // Default 100 tokens per image
+  const [visionModel, setVisionModel] = useState('smolvlm'); // 'smolvlm' or 'gemini-2.0-flash'
+  const [visionBackend, setVisionBackend] = useState('auto'); // 'auto', 'transformers', 'mlx' (for SmolVLM only)
+  const [conversionOutputFolder, setConversionOutputFolder] = useState('conversions/'); // Default folder
   const [enableCodeEnrichment, setEnableCodeEnrichment] = useState(false);
   const [enableOcr, setEnableOcr] = useState(true); // Default to true for OCR
   const [enableTableStructure, setEnableTableStructure] = useState(true); // Default to true for tables
@@ -90,10 +93,10 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
   const [resumableProgress, setResumableProgress] = useState(null);
   const [showResumeOption, setShowResumeOption] = useState(false);
   const [stopping, setStopping] = useState(false);
-  const [totalElapsedTime, setTotalElapsedTime] = useState(0); // Total time across all parts
-  const [currentPartStartTime, setCurrentPartStartTime] = useState(null);
+  const [conversionStartTime, setConversionStartTime] = useState(null); // Global start time for entire conversion
   const [conversionSummary, setConversionSummary] = useState(null); // Summary info about the conversion
   const [filesInfo, setFilesInfo] = useState([]); // Track all files being processed
+  const [processingSummary, setProcessingSummary] = useState(null); // Processing summary from chunks.json
 
   // Persist state to localStorage for page refresh recovery
   useEffect(() => {
@@ -108,6 +111,18 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
       localStorage.removeItem(persistKey);
     }
   }, [chunking, progress, project.id]);
+
+  // Auto-update timer display every second when conversion is running
+  useEffect(() => {
+    if (!conversionStartTime || !chunking) return;
+    
+    const intervalId = setInterval(() => {
+      // Force re-render to update the elapsed time display
+      setProgress(prev => ({ ...prev }));
+    }, 1000);
+    
+    return () => clearInterval(intervalId);
+  }, [conversionStartTime, chunking]);
 
   // Restore state from localStorage on mount
   useEffect(() => {
@@ -133,6 +148,48 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
     checkExistingJob();
     checkResumable();
   }, [project.id]);
+
+  // Load last chunking summary on mount (persisted summary)
+  useEffect(() => {
+    const loadLastSummary = async () => {
+      // Load from project config (persisted across restarts)
+      if (project.lastChunkingSummary) {
+        setProcessingSummary(project.lastChunkingSummary);
+      } else {
+        // Fallback: try loading from chunks.json
+        try {
+          const response = await fetch(`/api/projects/${project.id}/chunks`);
+          const data = await response.json();
+          if (data && data.processing_summary) {
+            setProcessingSummary(data.processing_summary);
+          }
+        } catch (error) {
+          // No chunks yet, that's okay
+        }
+      }
+    };
+
+    loadLastSummary();
+  }, [project.id, project.lastChunkingSummary]);
+
+  // Load processing summary when job is completed
+  useEffect(() => {
+    const loadProcessingSummary = async () => {
+      if (jobStatus === 'completed') {
+        try {
+          const response = await fetch(`/api/projects/${project.id}/chunks`);
+          const data = await response.json();
+          if (data && data.processing_summary) {
+            setProcessingSummary(data.processing_summary);
+          }
+        } catch (error) {
+          console.error('Failed to load processing summary:', error);
+        }
+      }
+    };
+
+    loadProcessingSummary();
+  }, [jobStatus, project.id]);
 
   const checkExistingJob = async () => {
     try {
@@ -203,55 +260,55 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
       if (message.type === 'chunking-progress') {
         const progressData = message.data;
 
-        // Build files info from progress data
-        if (progressData.file && progressData.total_pages) {
+        // Only update filesInfo when we discover a new file OR when a part completes
+        if (!progressData.heartbeat && progressData.file && progressData.total_pages) {
+          // Extract base filename (remove chunk info if present)
+          const baseFileName = progressData.file.replace(/_chunk\d+_.*\.pdf$/, '.pdf');
+
           setFilesInfo(prev => {
-            const existing = prev.find(f => f.fileName === progressData.file);
+            const existing = prev.find(f => f.fileName === baseFileName);
+
+            // Only add file if it doesn't exist yet (first discovery)
             if (!existing) {
               return [...prev, {
-                fileName: progressData.file,
+                fileName: baseFileName,
                 totalPages: progressData.total_pages,
                 totalParts: progressData.total_chunks || 1,
                 isSplit: (progressData.total_chunks || 1) > 1,
                 completedParts: 0,
-                currentPart: progressData.current_chunk || 1,
-                status: progressData.status
               }];
-            } else {
+            }
+
+            // Only update completedParts when a part is actually saved/completed
+            if (progressData.status === 'saved' || progressData.status === 'completed') {
               return prev.map(f =>
-                f.fileName === progressData.file
+                f.fileName === baseFileName
                   ? {
                       ...f,
-                      currentPart: progressData.current_chunk || f.currentPart,
-                      completedParts: progressData.completed_parts || f.completedParts,
-                      status: progressData.status
+                      completedParts: progressData.completed_parts || (progressData.current_chunk || f.completedParts),
                     }
                   : f
               );
             }
+
+            // No other updates - keep filesInfo stable
+            return prev;
           });
+
+          // Extract summary info on first progress update
+          if (!conversionSummary) {
+            setConversionSummary({
+              totalPages: progressData.total_pages,
+              fileName: progressData.file,
+              totalParts: progressData.total_chunks || 1,
+              isSplit: (progressData.total_chunks || 1) > 1,
+            });
+          }
         }
 
-        // Extract summary info on first progress update
-        if (!conversionSummary && progressData.total_pages) {
-          setConversionSummary({
-            totalPages: progressData.total_pages,
-            fileName: progressData.file,
-            totalParts: progressData.total_chunks || 1,
-            isSplit: (progressData.total_chunks || 1) > 1,
-          });
-        }
-
-        // Track when a new part starts converting
-        if (progressData.status === 'converting' && !currentPartStartTime) {
-          setCurrentPartStartTime(Date.now());
-        }
-
-        // When a part is saved, add its time to total and reset part timer
-        if (progressData.status === 'saved' && currentPartStartTime) {
-          const partDuration = Math.floor((Date.now() - currentPartStartTime) / 1000);
-          setTotalElapsedTime(prev => prev + partDuration);
-          setCurrentPartStartTime(null);
+        // Set timer if resuming and not already set
+        if (!conversionStartTime) {
+          setConversionStartTime(Date.now());
         }
 
         setProgress(progressData);
@@ -300,9 +357,8 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
         setStopping(false);
         setJobStatus(null);
         setProgress(null);
-        // Reset timing states
-        setCurrentPartStartTime(null);
-        // Don't reset totalElapsedTime as parts completed are saved
+        // Reset timing state
+        setConversionStartTime(null);
         // Recheck for resumable progress
         checkResumable();
       } else {
@@ -323,10 +379,13 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
 
     // Reset timing state for fresh start
     if (!resume) {
-      setTotalElapsedTime(0);
-      setCurrentPartStartTime(null);
+      setConversionStartTime(Date.now()); // Start timer immediately when user clicks start
       setConversionSummary(null);
       setFilesInfo([]);
+      setProcessingSummary(null); // Clear previous summary when starting fresh
+    } else if (!conversionStartTime) {
+      // If resuming and no start time set, set it now
+      setConversionStartTime(Date.now());
     }
 
     // Hide resume banner if resuming
@@ -373,55 +432,50 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
           console.log('[Frontend] Setting progress state:', message.data);
           const progressData = message.data;
 
-          // Build files info from progress data
-          if (progressData.file && progressData.total_pages) {
+          // Only update filesInfo when we discover a new file OR when a part completes
+          if (!progressData.heartbeat && progressData.file && progressData.total_pages) {
+            // Extract base filename (remove chunk info if present)
+            const baseFileName = progressData.file.replace(/_chunk\d+_.*\.pdf$/, '.pdf');
+
             setFilesInfo(prev => {
-              const existing = prev.find(f => f.fileName === progressData.file);
+              const existing = prev.find(f => f.fileName === baseFileName);
+
+              // Only add file if it doesn't exist yet (first discovery)
               if (!existing) {
                 return [...prev, {
-                  fileName: progressData.file,
+                  fileName: baseFileName,
                   totalPages: progressData.total_pages,
                   totalParts: progressData.total_chunks || 1,
                   isSplit: (progressData.total_chunks || 1) > 1,
                   completedParts: 0,
-                  currentPart: progressData.current_chunk || 1,
-                  status: progressData.status
                 }];
-              } else {
+              }
+
+              // Only update completedParts when a part is actually saved/completed
+              if (progressData.status === 'saved' || progressData.status === 'completed') {
                 return prev.map(f =>
-                  f.fileName === progressData.file
+                  f.fileName === baseFileName
                     ? {
                         ...f,
-                        currentPart: progressData.current_chunk || f.currentPart,
-                        completedParts: progressData.completed_parts || f.completedParts,
-                        status: progressData.status
+                        completedParts: progressData.completed_parts || (progressData.current_chunk || f.completedParts),
                       }
                     : f
                 );
               }
+
+              // No other updates - keep filesInfo stable
+              return prev;
             });
-          }
 
-          // Extract summary info on first progress update
-          if (!conversionSummary && progressData.total_pages) {
-            setConversionSummary({
-              totalPages: progressData.total_pages,
-              fileName: progressData.file,
-              totalParts: progressData.total_chunks || 1,
-              isSplit: (progressData.total_chunks || 1) > 1,
-            });
-          }
-
-          // Track when a new part starts converting
-          if (progressData.status === 'converting' && !currentPartStartTime) {
-            setCurrentPartStartTime(Date.now());
-          }
-
-          // When a part is saved, add its time to total and reset part timer
-          if (progressData.status === 'saved' && currentPartStartTime) {
-            const partDuration = Math.floor((Date.now() - currentPartStartTime) / 1000);
-            setTotalElapsedTime(prev => prev + partDuration);
-            setCurrentPartStartTime(null); // Reset for next part
+            // Extract summary info on first progress update
+            if (!conversionSummary) {
+              setConversionSummary({
+                totalPages: progressData.total_pages,
+                fileName: progressData.file,
+                totalParts: progressData.total_chunks || 1,
+                isSplit: (progressData.total_chunks || 1) > 1,
+              });
+            }
           }
 
           setProgress(progressData);
@@ -431,6 +485,11 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
           setChunking(false);
           setJobStatus('completed');
           setExistingJob({ ...existingJob, status: 'completed', chunks: message.data.chunks });
+
+          // Reload project data to get updated lastChunkingSummary
+          if (onProjectDataUpdate) {
+            onProjectDataUpdate();
+          }
           // Don't auto-proceed - let user click Next button
         } else if (message.type === 'chunking-error') {
           console.error('Chunking error:', message.data);
@@ -465,6 +524,9 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
             enablePictureClassification: enablePictureClassification,
             enablePictureDescription: enablePictureDescription,
             pictureDescriptionMaxTokens: pictureDescriptionMaxTokens,
+            visionModel: visionModel,
+            visionBackend: visionBackend,
+            conversionOutputFolder: conversionOutputFolder,
             enableCodeEnrichment: enableCodeEnrichment,
             enableOcr: enableOcr,
             enableTableStructure: enableTableStructure,
@@ -631,6 +693,81 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
           </button>
         </div>
       )}
+
+      {/* Conversion Output Folder */}
+      <div style={{ 
+        marginBottom: '2rem',
+        padding: '1rem',
+        background: 'var(--bg-secondary)',
+        borderRadius: '8px',
+        border: '1px solid var(--border)'
+      }}>
+        <h3 style={{ fontSize: '1rem', fontWeight: '600', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
+          📁 Conversion Output Location
+        </h3>
+        <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.75rem' }}>
+          All conversion outputs will be saved here: extracted images, full document markdown, and final chunks
+        </p>
+        <div style={{ 
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.75rem',
+          padding: '0.75rem',
+          background: 'var(--bg-primary)',
+          border: '1px solid var(--border)',
+          borderRadius: '6px'
+        }}>
+          <input
+            type="text"
+            value={conversionOutputFolder}
+            onChange={(e) => setConversionOutputFolder(e.target.value)}
+            placeholder="conversions/"
+            style={{
+              flex: 1,
+              fontSize: '0.85rem',
+              fontFamily: 'monospace',
+              padding: '0.5rem',
+              background: 'var(--bg-secondary)',
+              border: '1px solid var(--border)',
+              borderRadius: '4px',
+              color: 'var(--text-primary)'
+            }}
+          />
+          <button
+            onClick={async () => {
+              try {
+                const response = await fetch('/api/open-folder', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ folderPath: conversionOutputFolder })
+                });
+                const data = await response.json();
+                if (!data.success) {
+                  alert(`Failed to open folder: ${data.error}`);
+                }
+              } catch (error) {
+                alert(`Failed to open folder: ${error.message}`);
+              }
+            }}
+            title="Open folder in file system"
+            style={{
+              padding: '0.5rem 0.75rem',
+              background: 'var(--bg-tertiary)',
+              border: '1px solid var(--border)',
+              borderRadius: '4px',
+              color: 'var(--text-primary)',
+              fontSize: '0.8rem',
+              cursor: 'pointer',
+              fontWeight: '500'
+            }}
+          >
+            📁 Open Folder
+          </button>
+        </div>
+        <p style={{ fontSize: '0.7rem', color: 'var(--text-tertiary)', marginTop: '0.5rem', marginBottom: 0 }}>
+          💡 Outputs will be saved in: <code style={{ background: 'var(--bg-tertiary)', padding: '0.1rem 0.3rem', borderRadius: '3px' }}>{conversionOutputFolder}[document-name]/</code>
+        </p>
+      </div>
 
       <h2 style={{ fontSize: '1.5rem', fontWeight: '600', marginBottom: '0.25rem' }}>
         Choose Chunking Method
@@ -1001,34 +1138,150 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
                         • <strong>Speed:</strong> ~2-5s per image (GPU) vs ~10-20s per image (CPU)
                       </div>
                       {enablePictureDescription && (
-                        <div style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid var(--border)' }}>
-                          <label style={{ fontSize: '0.75rem', fontWeight: '600', display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
-                            Max Tokens per Image
-                          </label>
-                          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                            {[50, 75, 100, 150, 200].map((value) => (
-                              <button
-                                key={value}
-                                onClick={(e) => { e.stopPropagation(); setPictureDescriptionMaxTokens(value); }}
-                                style={{
-                                  padding: '0.35rem 0.75rem',
-                                  background: pictureDescriptionMaxTokens === value ? 'var(--accent-primary)' : 'var(--bg-primary)',
-                                  border: '1px solid var(--border)',
-                                  borderRadius: '4px',
-                                  color: 'var(--text-primary)',
-                                  fontSize: '0.7rem',
-                                  cursor: 'pointer',
-                                  fontWeight: pictureDescriptionMaxTokens === value ? '600' : '400',
-                                }}
-                              >
-                                {value}
-                              </button>
-                            ))}
+                        <>
+                          {/* Vision Model Selector */}
+                          <div style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid var(--border)' }}>
+                            <label style={{ fontSize: '0.75rem', fontWeight: '600', display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
+                              Vision Model
+                              <Tooltip text="SmolVLM: Free, runs locally on your machine. Fast on Apple Silicon with MLX. Gemini 2.0 Flash: Cloud API, requires internet and API key. Higher quality descriptions but costs money per image.">
+                                <span
+                                  style={{
+                                    marginLeft: '0.5rem',
+                                    cursor: 'help',
+                                    color: 'var(--text-tertiary)',
+                                    fontSize: '0.7rem'
+                                  }}
+                                >
+                                  ⓘ
+                                </span>
+                              </Tooltip>
+                            </label>
+                            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                              {[
+                                { value: 'smolvlm', label: 'SmolVLM (Local)', emoji: '💻' },
+                                { value: 'gemini-2.0-flash', label: 'Gemini 2.0 Flash', emoji: '☁️' }
+                              ].map((option) => (
+                                <button
+                                  key={option.value}
+                                  onClick={(e) => { e.stopPropagation(); setVisionModel(option.value); }}
+                                  style={{
+                                    padding: '0.35rem 0.75rem',
+                                    background: visionModel === option.value ? 'var(--accent-primary)' : 'var(--bg-primary)',
+                                    border: '1px solid var(--border)',
+                                    borderRadius: '4px',
+                                    color: 'var(--text-primary)',
+                                    fontSize: '0.7rem',
+                                    cursor: 'pointer',
+                                    fontWeight: visionModel === option.value ? '600' : '400',
+                                  }}
+                                >
+                                  {option.emoji} {option.label}
+                                </button>
+                              ))}
+                            </div>
+                            {visionModel === 'gemini-2.0-flash' && (
+                              <div style={{ 
+                                marginTop: '0.5rem', 
+                                padding: '0.5rem', 
+                                background: 'rgba(255, 193, 7, 0.1)', 
+                                border: '1px solid rgba(255, 193, 7, 0.3)',
+                                borderRadius: '4px'
+                              }}>
+                                <p style={{ fontSize: '0.65rem', color: 'var(--text-primary)', margin: 0, lineHeight: '1.4' }}>
+                                  <strong>⚠️ API Costs:</strong> Gemini 2.0 Flash Exp is currently free (experimental), but may transition to paid. Standard Gemini 2.5 Flash costs $0.30 per 1M tokens (~$0.0003 per image for detailed descriptions). Requires Gemini API key in Settings.
+                                </p>
+                              </div>
+                            )}
                           </div>
-                          <p style={{ fontSize: '0.65rem', color: 'var(--text-tertiary)', marginTop: '0.5rem', marginBottom: 0 }}>
-                            Lower = faster processing, higher = more detailed descriptions. Recommended: 50-100 for speed, 150-200 for detail.
-                          </p>
-                        </div>
+
+                          {/* SmolVLM Backend Selector (only shown for SmolVLM) */}
+                          {visionModel === 'smolvlm' && (
+                            <div style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid var(--border)' }}>
+                              <label style={{ fontSize: '0.75rem', fontWeight: '600', display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
+                                SmolVLM Backend
+                                <Tooltip text="Transformers: Universal, works on any hardware (CPU, GPU, M-series). MLX: Optimized for Apple Silicon (M1/M2/M3), 1.5-2x faster. Auto: Detects your hardware and selects the best option.">
+                                  <span
+                                    style={{
+                                      marginLeft: '0.5rem',
+                                      cursor: 'help',
+                                      color: 'var(--text-tertiary)',
+                                      fontSize: '0.7rem'
+                                    }}
+                                  >
+                                    ⓘ
+                                  </span>
+                                </Tooltip>
+                              </label>
+                              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                                {[
+                                  { value: 'auto', label: 'Auto-detect', emoji: '🎯' },
+                                  { value: 'transformers', label: 'Transformers', emoji: '🔧' },
+                                  { value: 'mlx', label: 'MLX (Apple)', emoji: '⚡' }
+                                ].map((option) => (
+                                  <button
+                                    key={option.value}
+                                    onClick={(e) => { e.stopPropagation(); setVisionBackend(option.value); }}
+                                    title={
+                                      option.value === 'auto' ? 'Automatically detects your hardware (MLX for M-series, Transformers otherwise)' :
+                                      option.value === 'mlx' ? 'Optimized for Apple Silicon (M1/M2/M3) - 1.5-2x faster than Transformers' :
+                                      'Universal backend - works on any hardware (CPU, GPU, Apple Silicon)'
+                                    }
+                                    style={{
+                                      padding: '0.35rem 0.75rem',
+                                      background: visionBackend === option.value ? 'var(--accent-primary)' : 'var(--bg-primary)',
+                                      border: '1px solid var(--border)',
+                                      borderRadius: '4px',
+                                      color: 'var(--text-primary)',
+                                      fontSize: '0.7rem',
+                                      cursor: 'pointer',
+                                      fontWeight: visionBackend === option.value ? '600' : '400',
+                                    }}
+                                  >
+                                    {option.emoji} {option.label}
+                                  </button>
+                                ))}
+                              </div>
+                              <p style={{ fontSize: '0.65rem', color: 'var(--text-tertiary)', marginTop: '0.5rem', marginBottom: 0 }}>
+                                {visionBackend === 'mlx' && '⚡ MLX is 1.5-2x faster on Apple Silicon (M1/M2/M3). Fallback to Transformers if MLX fails.'}
+                                {visionBackend === 'transformers' && '🔧 Works on all hardware. Reliable and well-tested.'}
+                                {visionBackend === 'auto' && '🎯 Recommended: Auto-detects best backend for your hardware.'}
+                              </p>
+                            </div>
+                          )}
+
+                          {/* Max Tokens per Image */}
+                          <div style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid var(--border)' }}>
+                            <label style={{ fontSize: '0.75rem', fontWeight: '600', display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
+                              Max Tokens per Image
+                            </label>
+                            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                              {[50, 100, 200, 300, 400, 500, 800].map((value) => (
+                                <button
+                                  key={value}
+                                  onClick={(e) => { e.stopPropagation(); setPictureDescriptionMaxTokens(value); }}
+                                  style={{
+                                    padding: '0.35rem 0.75rem',
+                                    background: pictureDescriptionMaxTokens === value ? 'var(--accent-primary)' : 'var(--bg-primary)',
+                                    border: '1px solid var(--border)',
+                                    borderRadius: '4px',
+                                    color: 'var(--text-primary)',
+                                    fontSize: '0.7rem',
+                                    cursor: 'pointer',
+                                    fontWeight: pictureDescriptionMaxTokens === value ? '600' : '400',
+                                  }}
+                                >
+                                  {value}
+                                </button>
+                              ))}
+                            </div>
+                            <p style={{ fontSize: '0.65rem', color: 'var(--text-tertiary)', marginTop: '0.5rem', marginBottom: 0 }}>
+                              {visionModel === 'smolvlm' ? 
+                                'Lower = faster processing, higher = more detailed descriptions. Recommended: 100-200 for balance, 300-500 for detail, 800 for maximum detail (slowest).' :
+                                'Token limit for Gemini descriptions. Gemini typically provides richer details even at lower token counts.'
+                              }
+                            </p>
+                          </div>
+                        </>
                       )}
                     </div>
                   </label>
@@ -1344,6 +1597,109 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
         ))}
       </div>
 
+      {/* Processing Summary Card - shown when chunking summary exists (persists across restarts) */}
+      {processingSummary && !chunking && (
+        <div style={{
+          background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(16, 185, 129, 0.05))',
+          border: '2px solid rgb(34, 197, 94)',
+          borderRadius: '12px',
+          padding: '1.5rem',
+          marginBottom: '1.5rem',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+            <CheckCircle size={24} style={{ color: 'rgb(34, 197, 94)' }} />
+            <h3 style={{ fontSize: '1.125rem', fontWeight: '600', color: 'var(--text-primary)', margin: 0 }}>
+              Chunking Complete
+            </h3>
+          </div>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gap: '1rem',
+            marginBottom: '1rem',
+          }}>
+            {/* Files Processed */}
+            <div style={{
+              background: 'var(--bg-primary)',
+              padding: '1rem',
+              borderRadius: '8px',
+              border: '1px solid var(--border)',
+            }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.5rem', fontWeight: '600' }}>
+                FILES PROCESSED
+              </div>
+              <div style={{ fontSize: '0.875rem', color: 'var(--text-primary)' }}>
+                {Object.entries(processingSummary.files_processed || {}).map(([type, info]) => (
+                  <div key={type} style={{ marginBottom: '0.25rem' }}>
+                    {info.count} {type.toUpperCase()}{info.count > 1 ? 's' : ''}
+                    {info.pages > 0 && ` (${info.pages} pages)`}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Conversion Time */}
+            <div style={{
+              background: 'var(--bg-primary)',
+              padding: '1rem',
+              borderRadius: '8px',
+              border: '1px solid var(--border)',
+            }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.5rem', fontWeight: '600' }}>
+                CONVERSION TIME
+              </div>
+              <div style={{ fontSize: '1.25rem', fontWeight: '600', color: 'var(--text-primary)' }}>
+                {processingSummary.total_conversion_time_formatted || '0:00:00'}
+              </div>
+            </div>
+
+            {/* Output Files */}
+            <div style={{
+              background: 'var(--bg-primary)',
+              padding: '1rem',
+              borderRadius: '8px',
+              border: '1px solid var(--border)',
+            }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.5rem', fontWeight: '600' }}>
+                OUTPUT FILES
+              </div>
+              <div style={{ fontSize: '0.875rem', color: 'var(--text-primary)' }}>
+                {processingSummary.output_files?.images > 0 && (
+                  <div>{processingSummary.output_files.images} extracted images</div>
+                )}
+                {processingSummary.output_files?.markdown_files > 0 && (
+                  <div>{processingSummary.output_files.markdown_files} markdown file(s)</div>
+                )}
+              </div>
+            </div>
+
+            {/* Total Chunks */}
+            <div style={{
+              background: 'var(--bg-primary)',
+              padding: '1rem',
+              borderRadius: '8px',
+              border: '1px solid var(--border)',
+            }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.5rem', fontWeight: '600' }}>
+                TOTAL CHUNKS
+              </div>
+              <div style={{ fontSize: '1.25rem', fontWeight: '600', color: 'var(--text-primary)' }}>
+                {processingSummary.total_chunks?.toLocaleString() || '0'}
+              </div>
+            </div>
+          </div>
+
+          <div style={{
+            fontSize: '0.75rem',
+            color: 'var(--text-secondary)',
+            fontStyle: 'italic',
+          }}>
+            Completed at: {processingSummary.completed_at}
+          </div>
+        </div>
+      )}
+
       {/* Or Upload Pre-chunked */}
       <div style={{
         background: 'var(--bg-primary)',
@@ -1522,11 +1878,14 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
                       <div style={{ fontSize: '0.7rem', color: 'var(--text-tertiary)', marginBottom: '0.5rem', fontWeight: '600' }}>
                         📦 Files to Split
                       </div>
-                      {filesInfo.filter(f => f.isSplit).map((file, idx) => (
-                        <div key={idx} style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: idx < filesInfo.filter(f => f.isSplit).length - 1 ? '0.25rem' : 0 }}>
-                          {file.fileName} → <strong style={{ color: 'var(--text-primary)' }}>~100 pages parts, {file.totalParts} parts total</strong>
-                        </div>
-                      ))}
+                      {filesInfo.filter(f => f.isSplit).map((file, idx) => {
+                        const pagesPerPart = Math.round(file.totalPages / file.totalParts);
+                        return (
+                          <div key={idx} style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: idx < filesInfo.filter(f => f.isSplit).length - 1 ? '0.25rem' : 0 }}>
+                            {file.fileName} → <strong style={{ color: 'var(--text-primary)' }}>~{pagesPerPart} pages per part, {file.totalParts} parts total</strong>
+                          </div>
+                        );
+                      })}
                       <div style={{ fontSize: '0.7rem', fontStyle: 'italic', color: 'var(--text-tertiary)', marginTop: '0.5rem' }}>
                         (Prevents memory issues during conversion)
                       </div>
@@ -1545,32 +1904,16 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
                       ✓ Files Done
                     </div>
                     {filesInfo.map((file, idx) => {
-                      const completedParts = file.completedParts || (file.currentPart - 1) || 0;
+                      const completedParts = file.completedParts || 0;
                       const fileType = file.fileName.toLowerCase().endsWith('.pdf') ? 'PDF' :
                                       file.fileName.toLowerCase().endsWith('.xlsx') || file.fileName.toLowerCase().endsWith('.xls') ? 'Excel' :
                                       'Document';
+                      const isDone = file.isSplit ? (completedParts === file.totalParts) : (completedParts > 0);
                       return (
-                        <div key={idx} style={{ marginBottom: idx < filesInfo.length - 1 ? '0.5rem' : 0 }}>
-                          <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
-                            {fileType}: {file.isSplit ? `(${completedParts}/${file.totalParts} parts)` : (file.status === 'completed' || file.status === 'saved') ? '✓ Done' : 'In progress'}
+                        <div key={idx} style={{ marginBottom: idx < filesInfo.length - 1 ? '0.25rem' : 0 }}>
+                          <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                            {fileType}: {file.isSplit ? `${completedParts}/${file.totalParts} parts` : (isDone ? '✓ Done' : 'In progress')}
                           </div>
-                          {file.isSplit && (
-                            <div style={{
-                              width: '100%',
-                              height: '4px',
-                              background: 'var(--bg-tertiary)',
-                              borderRadius: '2px',
-                              overflow: 'hidden',
-                            }}>
-                              <div style={{
-                                height: '100%',
-                                width: `${(completedParts / file.totalParts) * 100}%`,
-                                background: 'rgb(34, 197, 94)',
-                                transition: 'width 0.5s ease',
-                                borderRadius: '2px',
-                              }} />
-                            </div>
-                          )}
                         </div>
                       );
                     })}
@@ -1669,7 +2012,10 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
                     Total Elapsed
                   </div>
                   <div style={{ fontSize: '1.8rem', fontWeight: '700', color: 'var(--accent-primary)', fontFamily: 'monospace' }}>
-                    {Math.floor((totalElapsedTime + (progress.elapsed || 0)) / 60)}:{String((totalElapsedTime + (progress.elapsed || 0)) % 60).padStart(2, '0')}
+                    {(() => {
+                      const totalSeconds = conversionStartTime ? Math.floor((Date.now() - conversionStartTime) / 1000) : 0;
+                      return `${Math.floor(totalSeconds / 60)}:${String(totalSeconds % 60).padStart(2, '0')}`;
+                    })()}
                   </div>
                   <div style={{ fontSize: '0.6rem', color: 'var(--text-tertiary)' }}>
                     min:sec
@@ -2190,7 +2536,7 @@ function ChunkingMethodStep({ project, files, onComplete, onBack }) {
             </button>
           )}
 
-          {jobStatus === 'completed' ? (
+          {(jobStatus === 'completed' || processingSummary) ? (
             <button
               onClick={() => onComplete({
                 chunkingMethod: existingJob?.method || selectedMethod,

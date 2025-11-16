@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Database, Upload, TrendingUp, Clock, FileText } from 'lucide-react';
+import { Search, Database, Upload, TrendingUp, Clock, FileText, X } from 'lucide-react';
 import { TEXT_SIZES, FONT_WEIGHTS } from '../../constants/ui';
 
 function RAGTestingStep({ project, vectorDbs, onBack }) {
@@ -9,11 +9,21 @@ function RAGTestingStep({ project, vectorDbs, onBack }) {
   const [results, setResults] = useState(null);
   const [searching, setSearching] = useState(false);
   const [expandedResult, setExpandedResult] = useState(null);
-  
+  const [deleteConfirm, setDeleteConfirm] = useState(null); // { dbId, dbName }
+
   // Search parameters
   const [topK, setTopK] = useState(5); // Number of results
   const [minSimilarity, setMinSimilarity] = useState(0.55); // Minimum similarity threshold (0-1)
   const [minTokens, setMinTokens] = useState(0); // Minimum token count (0 = no filter)
+
+  // Helper to format time
+  const formatTime = (seconds) => {
+    if (!seconds) return 'N/A';
+    if (seconds < 60) return `${seconds.toFixed(1)}s`;
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}m ${secs}s`;
+  };
 
   useEffect(() => {
     loadVectorDbs();
@@ -89,11 +99,31 @@ function RAGTestingStep({ project, vectorDbs, onBack }) {
   };
 
   const toggleDbSelection = (dbId) => {
-    setSelectedDbs(prev => 
-      prev.includes(dbId) 
+    setSelectedDbs(prev =>
+      prev.includes(dbId)
         ? prev.filter(id => id !== dbId)
         : [...prev, dbId]
     );
+  };
+
+  const handleDeleteDb = async (dbId) => {
+    try {
+      const response = await fetch(`/api/projects/${project.id}/vector-dbs/${dbId}`, {
+        method: 'DELETE',
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setDeleteConfirm(null);
+        loadVectorDbs();
+      } else {
+        alert('Failed to delete vector database: ' + data.error);
+      }
+    } catch (error) {
+      console.error('Failed to delete:', error);
+      alert('Failed to delete vector database');
+    }
   };
 
   return (
@@ -134,11 +164,10 @@ function RAGTestingStep({ project, vectorDbs, onBack }) {
           </label>
         </div>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '1rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(255px, 1fr))', gap: '1rem' }}>
           {availableDbs.map((db) => (
             <div
               key={db.id}
-              onClick={() => toggleDbSelection(db.id)}
               style={{
                 padding: '1rem',
                 background: selectedDbs.includes(db.id) ? 'var(--bg-tertiary)' : 'var(--bg-primary)',
@@ -146,14 +175,71 @@ function RAGTestingStep({ project, vectorDbs, onBack }) {
                 borderRadius: '8px',
                 cursor: 'pointer',
                 transition: 'all 0.2s',
+                position: 'relative',
               }}
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
-                <Database size={20} style={{ color: 'var(--accent-primary)' }} />
-                <span style={{ fontWeight: '600' }}>{db.modelName}</span>
-              </div>
-              <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
-                {db.chunkCount} chunks • {db.dimensions}D
+              {/* Delete button */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setDeleteConfirm({ dbId: db.id, dbName: db.modelName });
+                }}
+                style={{
+                  position: 'absolute',
+                  top: '0.5rem',
+                  right: '0.5rem',
+                  width: '24px',
+                  height: '24px',
+                  background: 'var(--error)',
+                  border: 'none',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  opacity: 0.8,
+                  transition: 'opacity 0.2s',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.opacity = '1';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.opacity = '0.8';
+                }}
+              >
+                <X size={14} style={{ color: 'white' }} />
+              </button>
+
+              <div onClick={() => toggleDbSelection(db.id)} style={{ paddingRight: '2rem', textAlign: 'center' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                  <Database size={18} style={{ color: 'var(--accent-primary)' }} />
+                  <span style={{ fontWeight: '600', wordBreak: 'break-word', fontSize: '0.875rem' }}>{db.modelName}</span>
+                </div>
+
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: '1.3' }}>
+                  {/* Line 1: Chunks and Dimensions */}
+                  <div>
+                    <strong>{db.chunkCount.toLocaleString()}</strong> chunks • <strong>{db.dimensions}</strong>D
+                  </div>
+
+                  {/* Line 2: Time and Speed */}
+                  {(db.elapsedTimeSeconds || db.avgTimePerChunk) && (
+                    <div style={{ display: 'flex', gap: '0.75rem', marginTop: '0.25rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+                      {db.elapsedTimeSeconds && (
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                          <Clock size={11} />
+                          <strong>{formatTime(db.elapsedTimeSeconds)}</strong>
+                        </span>
+                      )}
+                      {db.avgTimePerChunk && (
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                          <TrendingUp size={11} />
+                          <strong>{db.avgTimePerChunk.toFixed(0)}ms</strong>/chunk
+                        </span>
+                      )}
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           ))}
@@ -572,7 +658,7 @@ function RAGTestingStep({ project, vectorDbs, onBack }) {
         >
           Back to Embedding
         </button>
-        
+
         <button
           onClick={() => {
             // Create another vector DB with different model
@@ -592,6 +678,76 @@ function RAGTestingStep({ project, vectorDbs, onBack }) {
           Create Another Vector DB
         </button>
       </div>
+
+      {/* Delete Confirmation Popup */}
+      {deleteConfirm && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0, 0, 0, 0.7)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000,
+          }}
+          onClick={() => setDeleteConfirm(null)}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: 'var(--bg-primary)',
+              borderRadius: '12px',
+              padding: '2rem',
+              maxWidth: '400px',
+              width: '90%',
+              border: '1px solid var(--border)',
+            }}
+          >
+            <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '1rem' }}>
+              Delete Vector Database?
+            </h3>
+            <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
+              Are you sure you want to delete <strong>{deleteConfirm.dbName}</strong>? This action cannot be undone.
+            </p>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'flex-end' }}>
+              <button
+                onClick={() => setDeleteConfirm(null)}
+                style={{
+                  padding: '0.75rem 1.5rem',
+                  background: 'var(--bg-tertiary)',
+                  border: 'none',
+                  borderRadius: '8px',
+                  color: 'var(--text-primary)',
+                  fontSize: TEXT_SIZES.medium,
+                  fontWeight: FONT_WEIGHTS.semibold,
+                  cursor: 'pointer',
+                }}
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => handleDeleteDb(deleteConfirm.dbId)}
+                style={{
+                  padding: '0.75rem 1.5rem',
+                  background: 'var(--error)',
+                  border: 'none',
+                  borderRadius: '8px',
+                  color: 'white',
+                  fontSize: TEXT_SIZES.medium,
+                  fontWeight: FONT_WEIGHTS.semibold,
+                  cursor: 'pointer',
+                }}
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

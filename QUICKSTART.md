@@ -169,3 +169,7 @@ For a typical 100-page textbook PDF:
 
 **Ready to go?** Create your first project and start querying! 🚀
 
+
+
+
+
