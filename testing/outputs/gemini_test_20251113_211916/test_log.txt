@@ -1,0 +1,60 @@
+============================================================
+GEMINI + DOCLING TEST - FULL OUTPUT
+============================================================
+Test PDF: file8973_chunk001_p1-10.pdf
+Output folder: /Users/tomeryud/projects/RAGy/testing/outputs/gemini_test_20251113_211916
+
+Configuring Docling pipeline...
+Pipeline configuration:
+  - enable_remote_services: True
+  - do_picture_description: True
+  - generate_picture_images: True
+  - API URL: https://generativelanguage.googleapis.com/v1beta/openai/chat/completions
+  - Model: gemini-2.0-flash
+
+Starting conversion...
+✅ Conversion complete!
+  Pages: 10
+
+Saving markdown export...
+  ✅ Saved to: document.md
+
+Saving JSON export...
+  ✅ Saved to: document.json
+
+Extracting images...
+  Picture 1:
+    ✅ Saved image: picture_1.png
+    Size: 80.0x80.0
+    Caption: (none)
+    Meta: (none)
+    Annotations: (none)
+  Picture 2:
+    ✅ Saved image: picture_2.png
+    Size: 80.0x79.0
+    Caption: (none)
+    Meta: (none)
+    Annotations: (none)
+
+Total pictures found: 2
+
+✅ Image info saved to: images_info.json
+
+============================================================
+SUMMARY
+============================================================
+Output folder: /Users/tomeryud/projects/RAGy/testing/outputs/gemini_test_20251113_211916
+Files created:
+  - document.json (265,092 bytes)
+  - document.md (26,308 bytes)
+  - images_info.json (430 bytes)
+  - picture_1.png (6,155 bytes)
+  - picture_2.png (6,021 bytes)
+  - test_log.txt (1,470 bytes)
+
+Pictures extracted: 2
+Pictures with descriptions: 0
+
+⚠️  WARNING: No image descriptions were generated!
+   Gemini API was not called by Docling
+============================================================

@@ -1,0 +1,494 @@
+{
+  "method": "docling-hybrid",
+  "chunks": [
+    {
+      "text": "An insulated cylindrical pipe exposed to convection from the outer surface and the thermal resistance network associated with it.\n\u00b7\nFIGURE 3-31 The variation of heat transfer rate with the outer radius of the insulation r 2 when r 1 , r cr .\nof the insulation layer but decreases the convection resistance of the surface because of the increase in the outer surface area for convection. The heat transfer from the pipe may increase or decrease, depending on which effect dominates.\nConsider a cylindrical pipe of outer radius r 1 whose outer surface temperature T 1 is maintained constant (Fig. 3-30). The pipe is now insulated with a material whose thermal conductivity is k and outer radius is r 2 . Heat is lost from the pipe to the surrounding medium at temperature T ` , with a convection heat transfer coefficient h. The rate of heat transfer from the insulated pipe to the surrounding air can be expressed as (Fig. 3-31)\n$$\\dot { Q } = \\frac { T _ { 1 } - T _ { \\infty } } { R _ { i n s } + R _ { c o n v } } = \\frac { T _ { 1 } - T _ { \\infty } } { \\frac { \\ln ( r _ { 2 } / r _ { 1 } ) } { 2 \\pi L k } + \\frac { 1 } { h ( 2 \\pi r _ { 2 } L ) } }$$\nThe variation of Q # with  the  outer  radius  of  the  insulation r 2 is  plotted  in Fig. 3-31. The value of r 2 at which Q # reaches a maximum is determined from the requirement that dQ # / dr 2 5 0 (zero slope). Performing the differentiation and solving for r 2 yields the critical radius of insulation for a cylindrical body to be\n$$r _ { \\text {cr, cylinder} } = \\frac { k } { h } \\quad ( m )$$\nNote that the critical radius of insulation depends on the thermal conductivity of the insulation k and the external convection heat transfer coefficient h. The rate of heat transfer from the cylinder increases with the addition of insulation for r 2 , r cr, reaches a maximum when r 2 5 r cr , and starts to decrease for r 2 . r cr . Thus, insulating the pipe may actually increase the rate of heat transfer from the pipe instead of decreasing it when r 2 , r cr .\nThe important question to answer at this point is whether we need to be concerned about the critical radius of insulation when insulating hot-water pipes or even hot-water tanks. Should we always check and make sure that the outer radius of insulation sufficiently exceeds the critical radius before we install any insulation? Probably not, as explained here.\nThe value of the critical radius r cr is the largest when k is large and h is small. Noting that the lowest value of h encountered in practice is about 5 W/m 2 \u00b7K for the case of natural convection of gases, and that the thermal conductivity of common insulating materials is about 0.05 W/m\u00b7K, the largest value of the critical radius we are likely to encounter is\n$$r _ { \\text {cr, max} } = \\frac { k _ { \\max , \\, \\text {simulation} } } { h _ { \\min } } \\approx \\frac { 0 . 0 5 W / m \\cdot K } { 5 W / m ^ { 2 } \\cdot K } = 0 . 0 1 \\, m = 1 \\, c m$$\nThis value would be even smaller when the radiation effects are considered. The critical radius would be much less in forced convection, often less than 1 mm, because of much larger h values associated with forced convection. Therefore, we can insulate hot-water or steam pipes freely without worrying about the possibility of increasing the heat transfer by insulating the pipes.\nThe radius of electric wires may be smaller than the critical radius. Therefore, the plastic electrical insulation may actually enhance the heat transfer\nfrom electric wires and thus keep their steady operating temperatures at lower and thus safer levels.\nThe discussions above can be repeated for a sphere, and it can be shown in a similar manner that the critical radius of insulation for a spherical shell is\n$$r _ { \\text {cr, sphere} } = \\frac { 2 k } { h }$$\nwhere k is the thermal conductivity of the insulation and h is the convection heat transfer coefficient on the outer surface.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/20' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=29.651, t=522.4120141601562, r=181.291, b=478.9420141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 129))]",
+          "self_ref='#/texts/21' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=99.779, t=458.6720141601562, r=101.779, b=451.49601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/48' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=29.651, t=269.35201416015616, r=166.271, b=223.84401416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 109))]",
+          "self_ref='#/texts/49' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.242, t=666.1960141601562, r=524.893, b=620.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 239))]",
+          "self_ref='#/texts/50' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.242, t=618.1960141601562, r=524.873, b=548.7750141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 445))]",
+          "self_ref='#/texts/51' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=278.724, t=534.7350141601562, r=522.244, b=496.3510141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 91))]",
+          "self_ref='#/texts/52' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.236, t=492.7350141601562, r=524.87, b=423.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 336))]",
+          "self_ref='#/texts/53' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=321.077, t=413.1480141601562, r=522.244, b=391.40001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 31))]",
+          "self_ref='#/texts/54' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.237, t=379.1960141601562, r=524.873, b=308.4460141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 465))]",
+          "self_ref='#/texts/55' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.235, t=307.1940141601562, r=524.882, b=249.77001416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 359))]",
+          "self_ref='#/texts/56' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.228, t=247.1960141601562, r=524.896, b=189.77401416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 364))]",
+          "self_ref='#/texts/57' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=255.392, t=183.1630141601562, r=465.094, b=157.33701416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 76))]",
+          "self_ref='#/texts/58' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.243, t=150.1960141601562, r=524.899, b=92.77201416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 380))]",
+          "self_ref='#/texts/59' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.243, t=90.18901416015615, r=524.867, b=68.76901416015619, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 153))]",
+          "self_ref='#/texts/61' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=666.1960141601562, r=380.767, b=644.7760141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 101))]",
+          "self_ref='#/texts/62' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=642.1930141601562, r=380.751, b=620.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 155))]",
+          "self_ref='#/texts/63' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=190.904, t=613.1580141601562, r=378.144, b=591.4000141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 27))]",
+          "self_ref='#/texts/64' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=582.1960141601562, r=380.772, b=560.7760141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 125))]"
+        ],
+        "headings": [
+          "FIGURE 3-30"
+        ]
+      },
+      "tokens": 789
+    },
+    {
+      "text": "A 3-mm-diameter and 5-m-long electric wire is tightly wrapped with a 2-mmthick plastic cover whose thermal conductivity is k 5 0.15 W/m\u00b7K. Electrical measurements indicate that a current of 10 A passes through the wire and there is a voltage drop of 8 V along the wire. If the insulated wire is exposed to a medium at T ` 5 30\u00b0C with a heat transfer coefficient of h 5 12 W/m 2 \u00b7K, determine the temperature at the interface of the wire and the plastic cover in steady operation. Also determine whether doubling the thickness of the plastic cover will increase or decrease this interface temperature.\nSOLUTION An electric wire is tightly wrapped with a plastic cover. The interface temperature and the effect of doubling the thickness of the plastic cover on the interface temperature are to be determined.\nAssumptions 1 Heat transfer is steady since there is no indication of any change with time. 2 Heat transfer is one-dimensional since there is thermal symmetry about the centerline and no variation in the axial direction. 3 Thermal conductivities are constant. 4 The thermal contact resistance at the interface is negligible. 5 Heat transfer coefficient incorporates the radiation effects, if any.\nProperties The  thermal  conductivity  of  plastic  is  given  to  be k 5 0.15 W/m\u00b7K.\nAnalysis Heat is generated in the wire and its temperature rises as a result of resistance heating. We assume heat is generated uniformly throughout the wire and is transferred to the surrounding medium in the radial direction. In steady operation, the rate of heat transfer becomes equal to the heat generated within the wire, which is determined to be\n$$\\dot { Q } = W _ { e } = V I = ( 8 \\, V ) ( 1 0 \\, A ) = 8 0 \\, W$$\nThe thermal resistance network for this problem involves a conduction resistance for the plastic cover and a convection resistance for the outer surface in series, as shown in Fig. 3-32. The values of these two resistances are\n$$A _ { 2 } = ( 2 \\pi r _ { 2 } ) L = 2 \\pi ( 0 . 0 0 3 5 \\, m ) ( 5 \\, m ) = 0 . 1 1 0 \\, m ^ { 2 }$$\n$$R _ { c o n v } = \\frac { 1 } { h A _ { 2 } } = \\frac { 1 } { ( 1 2 \\, W / m ^ { 2 } \\cdot K ) ( 0 . 1 1 0 \\, m ^ { 2 } ) } = 0 . 7 6 ^ { \\circ } C / W$$\n$$R _ { p l a s t i c } = \\frac { \\ln ( r _ { 2 } / r _ { 1 } ) } { 2 \\pi k L } = \\frac { \\ln ( 3 . 5 / 1 . 5 ) } { 2 \\pi ( 0 . 1 5 W / m \\cdot K ) ( 5 \\, m ) } = 0 1 8 ^ { \\circ } C / W$$\nFIGURE 3-32\nSchematic for Example 3-9.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/66' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=64.702, t=505.8340141601562, r=373.463, b=420.75801416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 600))]",
+          "self_ref='#/texts/67' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=64.701, t=405.5220141601562, r=373.437, b=374.75601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 205))]",
+          "self_ref='#/texts/68' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=64.701, t=370.8410141601562, r=373.464, b=307.7620141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 396))]",
+          "self_ref='#/texts/69' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=64.704, t=303.84701416015616, r=370.704, b=284.7670141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 85))]",
+          "self_ref='#/texts/70' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=64.704, t=280.85201416015616, r=373.452, b=228.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 353))]",
+          "self_ref='#/texts/71' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=146.932, t=228.13501416015617, r=290.57, b=209.75301416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 37))]",
+          "self_ref='#/texts/72' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=64.702, t=202.83401416015613, r=373.454, b=172.75601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 226))]",
+          "self_ref='#/texts/73' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=122.73, t=159.43001416015613, r=308.09, b=148.86101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 52))]",
+          "self_ref='#/texts/74' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=114.151, t=138.58801416015615, r=317.669, b=115.0810141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 58))]",
+          "self_ref='#/texts/75' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=107.862, t=103.46801416015614, r=327.554, b=80.59601416015619, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 83))]",
+          "self_ref='#/texts/76' parent=RefItem(cref='#/pictures/2') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=492.232, t=89.79201416015621, r=546.142, b=80.85901416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 11))]",
+          "self_ref='#/texts/103' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=432.272, t=77.52201416015623, r=546.142, b=68.5520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]"
+        ],
+        "headings": [
+          "EXAMPLE 3-9 Heat Loss from an Insulated Electric Wire"
+        ]
+      },
+      "tokens": 539
+    },
+    {
+      "text": "Presumed cooling fins on dinosaur stegosaurus.\n\u00a9 Alamy RF\nand therefore\n$$R _ { t o t a l } = R _ { p l a s t i c } + R _ { c o n v } = 0 . 7 6 + 0 . 1 8 = 0 . 9 4 \\circ C / W$$\nThen the interface temperature can be determined from\n$$\\dot { Q } = \\frac { T _ { 1 } - T _ { \\infty } } { R _ { t o t a l } } \\ \\longrightarrow \\ T _ { 1 } & = T _ { \\infty } + \\dot { Q } R _ { t o t a l } \\\\ & = 3 0 ^ { \\circ } C + ( 8 0 \\, W ) ( 0 . 9 4 ^ { \\circ } C / W ) = 1 0 5 ^ { \\circ } C$$\nNote that we did not involve the electrical wire directly in the thermal resistance network, since the wire involves heat generation.\nTo answer the second part of the question, we need to know the critical radius of insulation of the plastic cover. It is determined from Eq. 3-50 to be\n$$r _ { c r } = \\frac { k } { h } = \\frac { 0 . 1 5 \\ W / m \\cdot K } { 1 2 \\ W / m ^ { 2 } \\cdot K } = 0 . 0 1 2 5 \\ m = 1 2 . 5 \\ m m$$\nwhich is larger than the radius of the plastic cover. Therefore, increasing the thickness of the plastic cover will enhance heat transfer until the outer radius of the cover reaches 12.5 mm. As a result, the rate of heat transfer Q # will increase when the interface temperature T 1 is held constant, or T 1 will decrease when Q # is held constant, which is the case here.\nDiscussion It can be shown by repeating the calculations above for a 4-mmthick plastic cover that the interface temperature drops to 90.6\u00b0C when the thickness of the plastic cover is doubled. It can also be shown in a similar manner that the interface reaches a minimum temperature of 83\u00b0C when the outer radius of the plastic cover equals the critical radius.\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (1 images):\n==================================================\n\n**[Image: page3_img1.png - Page 3]**\nThe image shows a blue-toned model of a Stegosaurus dinosaur. The model is in profile, facing right, and is standing on a slightly blurred white surface. The dinosaur's defining features, such as the plates along its back and the spikes on its tail, are clearly visible. The model appears to be made of a textured material, possibly clay or a similar substance.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/106' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=30.142, t=100.58201416015618, r=171.522, b=80.11201416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 46))]",
+          "self_ref='#/texts/107' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=30.142, t=75.3550141601562, r=67.92, b=68.68501416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 10))]",
+          "self_ref='#/texts/108' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=205.752, t=658.1040141601562, r=257.997, b=650.0220141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 13))]",
+          "self_ref='#/texts/109' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=263.022, t=639.1780141601562, r=454.478, b=629.4510141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 53))]",
+          "self_ref='#/texts/110' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=205.752, t=620.1040141601562, r=424.974, b=612.0220141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 53))]",
+          "self_ref='#/texts/111' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=246.989, t=603.8100141601561, r=501.291, b=567.0570141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 89))]",
+          "self_ref='#/texts/112' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=205.752, t=553.1840141601562, r=511.762, b=534.1020141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 133))]",
+          "self_ref='#/texts/113' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=205.752, t=531.1840141601562, r=514.506, b=512.1020141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 151))]",
+          "self_ref='#/texts/114' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=266.572, t=500.9080141601562, r=450.929, b=479.0760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 56))]",
+          "self_ref='#/texts/115' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=205.752, t=467.1840141601562, r=514.529, b=415.10201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 372))]",
+          "self_ref='#/texts/116' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=205.742, t=401.6840141601562, r=514.511, b=349.6120141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 360))]"
+        ],
+        "headings": [
+          "FIGURE 3-33"
+        ]
+      },
+      "tokens": 481
+    },
+    {
+      "text": "The rate of heat transfer from a surface at a temperature Ts to the surrounding medium at T ` is given by Newton's law of cooling as\n$$\\dot { Q } _ { c o n v } = h A _ { s } ( T _ { s } - T _ { \\infty } )$$\nwhere As is the heat transfer surface area and h is the convection heat transfer coefficient. When the temperatures Ts and T ` are fixed by design considerations, as is often the case, there are two ways to increase the rate of heat transfer: to increase the convection heat transfer coefficient h or to increase the surface area A s . Increasing h may require the installation of a pump or fan, or replacing the existing one with a larger one, but this approach may or may not be practical. Besides, it may not be adequate. The alternative is to increase the surface area by attaching to the surface extended surfaces called fins made of highly conductive materials such as aluminum. Finned surfaces are manufactured by extruding, welding, or wrapping a thin metal sheet on a surface. Fins enhance heat transfer from a surface by exposing a larger surface area to convection and radiation.\nAn interesting application of fins from about 150 million years ago, the Jurassic era, is shown in Fig. 3-33. The dinosaur stegosaurus lived during\nthis era and it had two rows of big (and bizarre) bony plates down its back. For a long time, scientists thought that the plates were some kind of armor to protect the vegetarian from predators. We now know that a lot of blood flowed through the plates, and they may have acted like a car radiator. The heart pumped blood through the plates, and the plates acted like cooling fins to cool the blood down.\nFinned surfaces are commonly used in practice to enhance heat transfer, and they often increase the rate of heat transfer from a surface severalfold. The car radiator shown in Fig. 3-34 is an example of a finned surface. The closely packed thin metal sheets attached to the hot-water tubes increase the surface area for convection and thus the rate of convection heat transfer from the tubes to the air many times. There are a variety of innovative fin designs available in the market, and they seem to be limited only by imagination (Fig. 3-35).\nIn the analysis of fins, we consider steady operation with no heat generation in the fin, and we assume the thermal conductivity k of the material to remain constant. We also assume the convection heat transfer coefficient h to be constant and uniform over the entire surface of the fin for convenience in the analysis. We recognize that the convection heat transfer coefficient h , in general, varies along the fin as well as its circumference, and its value at a point is a strong function of the fluid motion at that point. The value of h is usually much lower at the fin base than it is at the fin tip because the fluid is surrounded by solid surfaces near the base, which seriously disrupt its motion to the point of 'suffocating' it, while the fluid near the fin tip has little contact with a solid surface and thus encounters little resistance to flow. Therefore, adding too many fins on a surface may actually decrease the overall heat transfer when the decrease in h offsets any gain resulting from the increase in the surface area.\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (1 images):\n==================================================\n\n**[Image: page4_img1.png - Page 4]**\nHere's a detailed description of the image:\n\nThe image shows a car radiator. The radiator is rectangular and appears to be made of metal. It has a dense, finned core, with vertical fins running from top to bottom. The top and bottom of the radiator have black plastic or metal headers. There are several black hose connections protruding from the bottom header. A small white cylindrical object is visible on the bottom right corner of the radiator. The image is in a blue tone.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/118' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.242, t=289.0760141601562, r=524.866, b=266.3670141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 132))]",
+          "self_ref='#/texts/119' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=320.502, t=264.1100141601562, r=402.085, b=246.16101416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 27))]",
+          "self_ref='#/texts/120' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.242, t=234.0760141601562, r=524.894, b=92.64701416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 890))]",
+          "self_ref='#/texts/121' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.242, t=90.06601416015621, r=524.876, b=68.63701416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 147))]",
+          "self_ref='#/texts/124' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.142, t=503.74601416015616, r=380.782, b=434.31801416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 404))]",
+          "self_ref='#/texts/125' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.142, t=431.7360141601562, r=380.811, b=350.3080141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 546))]",
+          "self_ref='#/texts/126' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.142, t=347.7260141601562, r=380.793, b=182.2880141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1041))]"
+        ],
+        "headings": [
+          "3-6 \u25a0 HEAT TRANSFER FROM FINNED SURFACES"
+        ]
+      },
+      "tokens": 690
+    },
+    {
+      "text": "Consider a volume element of a fin at location x having a length of D x , crosssectional area of Ac , and a perimeter of p , as shown in Fig. 3-36. Under steady conditions, the energy balance on this volume element can be expressed as\n$$\\begin{pmatrix} \\text {Rate of heat} \\\\ \\text {conduction into} \\\\ \\text {the element at x} \\end{pmatrix} = \\begin{pmatrix} \\text {Rate of heat} \\\\ \\text {conduction from the} \\\\ \\text {element at x + \\Delta x } \\end{pmatrix} + \\begin{pmatrix} \\text {Rate of heat} \\\\ \\text {conduction from} \\\\ \\text {the element } \\end{pmatrix}$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/128' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.142, t=152.74601416015616, r=380.754, b=119.32701416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 234))]",
+          "self_ref='#/texts/129' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=79.812, t=102.62801416015623, r=352.467, b=73.09301416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 154))]"
+        ],
+        "headings": [
+          "Fin Equation"
+        ]
+      },
+      "tokens": 100
+    },
+    {
+      "text": "The thin plate fins of a car radiator greatly increase the rate of heat transfer to the air.\nLeft: \u00a9 Yunus A. \u00c7engel, photo by James Kleiser, right:\u00a9 McGraw-Hill Education / Christopher Kerrigan\nFIGURE 3-35 Some innovative fin designs.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/131' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=407.009, t=590.7740141601562, r=548.639, b=558.8040141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 92))]",
+          "self_ref='#/texts/132' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=397.389, t=554.0470141601562, r=548.019, b=529.3770141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 101))]",
+          "self_ref='#/texts/133' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=430.026, t=340.8440141601562, r=546.136, b=319.60401416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 40))]"
+        ],
+        "headings": [
+          "FIGURE 3-34"
+        ]
+      },
+      "tokens": 39
+    },
+    {
+      "text": "Volume element of a fin at location x having a length of D x , cross-sectional area of Ac , and perimeter of p.\nwhere\n$$\\dot { Q } _ { c o n d , x } = \\dot { Q } _ { c o n d , x + \\Delta x } + \\dot { Q } _ { c o n v }$$\n$$\\dot { Q } _ { c o n v } = h ( p \\, \\Delta x ) ( T - T _ { \\infty } )$$\nSubstituting and dividing by D x , we obtain\n$$\\text {g and dv} \\arg b y \\ A x , \\text { we obtain} \\\\ \\frac { \\dot { Q } _ { \\text {cond,} } x + \\Delta _ { x } - \\dot { Q } _ { \\text {cond,} } x } { \\Delta x } + h p ( T - T _ { \\infty } ) = 0$$\nTaking the limit as D x S 0 gives\n$$\\Delta t \\rightarrow 0 \\text { gives} \\\\ \\frac { d \\dot { Q } _ { \\text {cond} } } { d x } + h p ( T - T _ { s o } ) = 0$$\nFrom Fourier's law of heat conduction we have\n$$\\dot { Q } _ { \\text {cond} } = - k A _ { c } \\frac { d T } { d x }$$\nwhere Ac is the cross-sectional area of the fin at location x. Substitution of this relation into Eq. 3-53 gives the differential equation governing heat transfer in fins,\n$$\\frac { d } { d x } \\left ( k A _ { c } \\frac { d T } { d x } \\right ) - h p ( T - T _ { \\infty } ) = 0$$\nIn general, the cross-sectional area Ac and the perimeter p of a fin vary with x , which makes this differential equation difficult to solve. In the special case of constant cross section and constant thermal conductivity, the differential equation Eq. 3-55 reduces to\n$$\\frac { d ^ { 2 } T } { d x ^ { 2 } } - \\frac { h p } { k A _ { c } } ( T - T _ { s } ) = 0 \\quad \\text {or} \\quad \\frac { d ^ { 2 } \\theta } { d x ^ { 2 } } - m ^ { 2 } \\theta = 0$$\nwhere\n$$m ^ { 2 } = \\frac { h p } { k A _ { c } }$$\nand u 5 T 2 T ` is  the temperature excess. At the fin base we have u b 5 Tb 2 T ` .\nEquation 3-56 is a linear, homogeneous, second-order differential equation with constant coefficients. A fundamental theory of differential equations states that such an equation has two linearly independent solution functions, and its general solution is the linear combination of those two solution functions. A careful examination of the differential equation reveals that subtracting a constant multiple of the solution function u from its second derivative yields zero. Thus we conclude that the function u and its second derivative must be constant multiples of each other. The only functions whose derivatives are constant multiples of the functions themselves are the exponential functions (or a linear combination of exponential functions such as sine and cosine hyperbolic functions). Therefore, the solution functions of the differential equation above are the exponential functions e 2 mx or e mx or constant multiples of them. This can be verified by direct substitution. For example, the second derivative of e 2 mx is m 2 e 2 mx ,  and its substitution into Eq. 3-56\nyields  zero.  Therefore,  the  general  solution  of  the  differential  equation Eq. 3-56 is\n$$\\theta ( x ) = C _ { 1 } e ^ { m x } + C _ { 2 } e ^ { - m x } & & ( 3 - 5 8 ) & 0 ^ { 0 } \\sqrt { 3 }$$\nwhere C 1 and C 2 are arbitrary constants whose values are to be determined from the boundary conditions at the base and at the tip of the fin. Note that we need only two conditions to determine C 1 and C 2 uniquely.\nThe temperature of the plate to which the fins are attached is normally known in advance. Therefore, at the fin base we have a specified temperature boundary condition, expressed as\nBoundary condition at fin base:\n$$\\theta ( 0 ) = \\theta _ { b } = T _ { b } - T _ { \\circ } \\\\$$\nAt the fin tip we have several possibilities, including infinitely long fins, negligible heat loss (idealized as an adiabatic tip), specified temperature, and convection (Fig. 3-37). Next, we consider each case separately.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/135' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=395.609, t=100.62401416015621, r=548.639, b=67.42901416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 111))]",
+          "self_ref='#/texts/138' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.242, t=630.1960141601562, r=223.893, b=620.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 5))]",
+          "self_ref='#/texts/139' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=304.192, t=656.7350141601562, r=418.496, b=638.4910141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 42))]",
+          "self_ref='#/texts/140' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=314.322, t=620.7350141601562, r=408.376, b=602.7810141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 33))]",
+          "self_ref='#/texts/141' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.242, t=594.1960141601562, r=378.212, b=584.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 44))]",
+          "self_ref='#/texts/142' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=283.989, t=584.3980141601562, r=522.244, b=552.2230141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 63))]",
+          "self_ref='#/texts/143' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.242, t=544.3640141601562, r=336.768, b=533.7700141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 33))]",
+          "self_ref='#/texts/144' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=311.387, t=535.4970141601561, r=522.244, b=504.40001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 40))]",
+          "self_ref='#/texts/145' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.242, t=495.1960141601562, r=397.994, b=485.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 45))]",
+          "self_ref='#/texts/146' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=328.354, t=479.7350141601562, r=522.244, b=456.40001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 29))]",
+          "self_ref='#/texts/147' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.242, t=447.1960141601562, r=524.864, b=425.7760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 171))]",
+          "self_ref='#/texts/148' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=298.332, t=418.1480141601562, r=522.244, b=396.40001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 47))]",
+          "self_ref='#/texts/149' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.242, t=387.1960141601562, r=524.884, b=341.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 268))]",
+          "self_ref='#/texts/150' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=266.87, t=336.1900141601562, r=522.244, b=311.69301416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 72))]",
+          "self_ref='#/texts/151' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.242, t=305.1960141601562, r=223.893, b=295.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 5))]",
+          "self_ref='#/texts/152' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=341.958, t=289.7470141601562, r=522.244, b=265.69301416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 20))]",
+          "self_ref='#/texts/153' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.242, t=259.1960141601562, r=522.241, b=236.48701416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 84))]",
+          "self_ref='#/texts/154' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.235, t=235.19401416015614, r=524.925, b=69.77501416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1081))]",
+          "self_ref='#/texts/157' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=666.1960141601562, r=380.756, b=644.7760141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 94))]",
+          "self_ref='#/texts/158' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=172.512, t=637.3440141601562, r=378.144, b=626.7810141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 38))]",
+          "self_ref='#/texts/159' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.14, t=618.1960141601562, r=380.776, b=583.4460141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 216))]",
+          "self_ref='#/texts/160' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.143, t=582.1950141601562, r=380.781, b=548.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 181))]",
+          "self_ref='#/texts/161' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=536.6790141601562, r=175.001, b=528.2300141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 31))]",
+          "self_ref='#/texts/162' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=227.622, t=536.6880141601562, r=378.144, b=526.9980141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 29))]",
+          "self_ref='#/texts/163' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=516.5560141601562, r=380.755, b=483.1350141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 222))]"
+        ],
+        "headings": [
+          "FIGURE 3-36"
+        ]
+      },
+      "tokens": 842
+    },
+    {
+      "text": "For a sufficiently long fin of uniform cross section ( Ac 5 constant), the temperature of the fin at the fin tip approaches the environment temperature T ` and thus u approaches zero. That is,\nBoundary condition at fin tip:\n$$\\theta ( L ) = T ( L ) - T _ { \\infty } = 0 \\quad \\text {as} \\quad L \\to \\infty$$\nThis condition is satisfied by the function e 2 mx , but not by the other prospective solution function e mx since it tends to infinity as x gets larger. Therefore, the general solution in this case will consist of a constant multiple of e 2 mx . The value of the constant multiple is determined from the requirement that at the fin base where x 5 0 the value of u is u b . Noting that e 2 mx 5 e 0 5 1, the proper value of the constant is u b , and the solution function we are looking for is u ( x ) 5 u be 2 mx . This function satisfies the differential equation as well as the requirements that the solution reduce to u b at the fin base and approach zero at the fin tip for large x. Noting that u 5 T 2 T ` and m 5 \" hp / kA c ,  the variation of temperature along the fin in this case can be expressed as\n$$V e r \\, l o g \\, f i n \\colon \\quad \\frac { T ( x ) - T _ { \\infty } } { T _ { b } - T _ { \\infty } } = e ^ { - x x } = e ^ { - x \\sqrt { h / k A _ { c } } } \\\\$$\n$$T _ { b } - T _ { \\infty }$$\nNote that the temperature along the fin in this case decreases exponentially from Tb to T ` , as shown in Fig. 3-38. The steady rate of heat transfer from the entire fin can be determined from Fourier's law of heat conduction\n$$V e r \\, l o g \\, f i n \\colon \\quad \\dot { Q } _ { \\text {long fin} } = - k A _ { c } \\frac { d T } { d x } \\Big | _ { x = 0 } = \\sqrt { h p k A _ { c } } \\left ( T _ { b } - T _ { z } \\right ) \\quad ( 3 - 6 1 )$$\nwhere p is the perimeter, Ac is the cross-sectional area of the fin, and x is the distance from the fin base. Alternatively, the rate of heat transfer from the fin could also be determined by considering heat transfer from a differential volume element of the fin and integrating it over the entire surface of the fin:\n$$\\dot { Q } _ { \\text {fin} } = \\int _ { A _ { f _ { \\min } } } h [ T ( x ) - T _ { \\infty } ] \\, d A _ { \\text {fin} } = \\int _ { A _ { f _ { \\min } } } h \\theta ( x ) \\, d A _ { \\text {fin} }$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/165' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=456.55601416015617, r=378.154, b=423.1360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 192))]",
+          "self_ref='#/texts/166' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=412.53901416015617, r=169.994, b=404.09001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 30))]",
+          "self_ref='#/texts/167' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=215.747, t=412.7000141601562, r=357.936, b=402.8580141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 39))]",
+          "self_ref='#/texts/168' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.131, t=394.8510141601562, r=380.812, b=274.0110141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 810))]",
+          "self_ref='#/texts/169' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=258.46001416015616, r=378.144, b=235.5840141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 68))]",
+          "self_ref='#/texts/170' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=161.022, t=244.03901416015617, r=194.25, b=233.2490141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 4))]",
+          "self_ref='#/texts/171' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.139, t=224.03601416015618, r=380.758, b=190.61601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 225))]",
+          "self_ref='#/texts/172' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=184.57501416015612, r=378.144, b=161.2400141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 80))]",
+          "self_ref='#/texts/173' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=152.03601416015613, r=380.8, b=106.61301416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 318))]",
+          "self_ref='#/texts/174' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=128.303, t=95.53501416015615, r=378.144, b=69.83301416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 78))]"
+        ],
+        "headings": [
+          "1 Infinitely Long Fin ( T fin tip 5 T ` )"
+        ]
+      },
+      "tokens": 571
+    },
+    {
+      "text": "Boundary conditions at the fin base and the fin tip.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/186' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=404.242, t=557.9320141601562, r=548.672, b=537.4620141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 52))]"
+        ],
+        "headings": [
+          "FIGURE 3-37"
+        ]
+      },
+      "tokens": 10
+    },
+    {
+      "text": "A long circular fin of uniform cross section and the variation of temperature along it.\n\u00b7",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/224' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=414.252, t=100.90201416015623, r=548.672, b=68.9320141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 87))]",
+          "self_ref='#/texts/227' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=116.892, t=665.0660141601562, r=118.892, b=657.8900141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]"
+        ],
+        "headings": [
+          "FIGURE 3-38"
+        ]
+      },
+      "tokens": 16
+    },
+    {
+      "text": "Under steady conditions, heat transfer from the exposed surfaces of the fin is equal to heat conduction to the fin at the base.\nThe two approaches described are equivalent and give the same result since, under steady conditions, the heat transfer from the exposed surfaces of the fin is equal to the heat transfer to the fin at the base (Fig. 3-39).",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/241' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.142, t=575.2720141601562, r=185.662, b=531.8020141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 127))]",
+          "self_ref='#/texts/242' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.244, t=666.1960141601562, r=524.873, b=632.7750141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 221))]"
+        ],
+        "headings": [
+          "FIGURE 3-39"
+        ]
+      },
+      "tokens": 62
+    },
+    {
+      "text": "Fins are not likely to be so long that their temperature approaches the surrounding temperature at the tip. A more realistic situation is for heat transfer from the fin tip to be negligible since the heat transfer from the fin is proportional to its surface area, and the surface area of the fin tip is usually a negligible fraction of the total fin area. Then the fin tip can be assumed to be adiabatic, and the condition at the fin tip can be expressed as\n$$\\ B o u n d a r y \\, c o n d i t i o n \\, a t \\, f i n \\, t i p \\colon & & \\frac { d \\theta } { d x } \\Big | _ { x = L } = 0$$\nThe condition at the fin base remains the same as expressed in Eq. 3-59. The application of the boundary conditions given by Eqs. 3-59 and 3-63 on the general solution (Eq. 3-58) requires that u (0) 5 u b 5 C 1 1 C 2 and mC 1 e mL 2 mC 2 e 2 mL 5 0, respectively. Solving these two equations simultaneously for C 1 and C 2 yields C 1 5 u b /(1 1 e 2 mL ) and C 2 5 u b /(1 1 e 2 2 mL ). Substituting the relations for C 1 and C 2 into Eq. 3-58 and using the definition of the hyperbolic cosine function cosh x 5 ( e x 1 e 2 x )/2 gives the desired relation for the temperature distribution:\n$$Adiabatic fin { i p } ; \\quad \\frac { 1 } { T } = \\frac { 1 } { 2 }$$\n$$\\frac { T ( x ) - T _ { \\infty } } { T _ { b } - T _ { \\infty } } = \\frac { \\cosh m ( L - x ) } { \\cosh m L }$$\nThe rate of heat transfer from the fin can be determined again from Fourier's law of heat conduction:\n$$\\ A d i a b a t i c { \\sin t } { p } \\colon \\dot { Q } _ { \\text {databasic tip} } = - k A _ { c } \\frac { d T } { d x } \\Big | _ { x = 0 } = \\sqrt { h p k A _ { c } } \\left ( T _ { b } - T _ { x } \\right ) \\tanh \\pi n L \\quad ( 3 - 6 5 )$$\nwhere the equation for the hyperbolic tangent function is\n$$\\tanh x = \\sinh x / \\cosh x = ( e ^ { x } - e ^ { - x } ) / ( e ^ { x } + e ^ { - x } ) .$$\nNote that the heat transfer relations for the very long fin and the fin with negligible heat loss at the tip differ by the factor tanh mL , which approaches 1 as L becomes very large.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/244' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=578.0360141601561, r=524.859, b=508.6100141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 457))]",
+          "self_ref='#/texts/245' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=491.6890141601562, r=522.244, b=469.9400141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 56))]",
+          "self_ref='#/texts/246' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.239, t=458.9560141601562, r=524.961, b=365.5360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 590))]",
+          "self_ref='#/texts/247' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=351.25801416015616, r=522.244, b=342.8100141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 25))]",
+          "self_ref='#/texts/248' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=323.908, t=359.03001416015616, r=436.598, b=333.8290141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 49))]",
+          "self_ref='#/texts/249' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=326.9560141601562, r=524.815, b=305.5360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 101))]",
+          "self_ref='#/texts/250' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=297.89501416015617, r=522.244, b=274.3910141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 97))]",
+          "self_ref='#/texts/251' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=268.9560141601562, r=436.781, b=259.53701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 57))]",
+          "self_ref='#/texts/252' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=271.002, t=252.11401416015622, r=449.481, b=242.74601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 58))]",
+          "self_ref='#/texts/253' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=233.9560141601562, r=524.864, b=200.53401416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 183))]"
+        ],
+        "headings": [
+          "2 Negligible Heat Loss from the Fin Tip (Adiabatic fin tip, Q # fin tip 5 0)"
+        ]
+      },
+      "tokens": 530
+    },
+    {
+      "text": "In this case the temperature at the end of the fin (the fin tip) is fixed at a specified temperature TL . This case could be considered as a generalization of the case of Infinitely Long Fin where the fin tip temperature was fixed at T q . The condition at the fin tip for this case is\n$$B o u n d a r y \\, c o n d a t i o n \\, a t \\, f i n \\, t i p \\colon & & \\theta ( L ) = \\theta _ { L } = T _ { L } - T _ { \\infty } & & ( 3 - 6 6 )$$\nThe fin base boundary condition remains the same as given in Eq. 3-59. Applying the boundary conditions given by Eqs. 3-59 and 3-66 on the   general solution (Eq. 3  -58) gives, after some lengthy algebra and using the definition\nof the hyperbolic sine function, sinh x 5 ( e x 2 e 2 x )/2, the desired temperature distribution:\nSpecified fin tip temperature:\n$$\\frac { T ( x ) - T _ { \\infty } } { T _ { b } - T _ { \\infty } } = \\frac { [ ( T _ { L } - T _ { \\infty } ) / ( T _ { b } - T _ { \\infty } ) \\sinh m x + \\sinh m ( L - . ) x ) } { \\sinh m L } \\quad ( 3 - 6 ) \\\\$$\nUsing the Fourier's law of heat conduction, the rate of heat transfer from the fin is\nSpecified fin tip temperature:\n$$\\dot { Q } _ { \\text {specified} } & = - k _ { c } \\frac { d T } { d x } \\Big | _ { x = 0 } \\\\ & = \\sqrt { h p k A _ { c } ( T _ { b } - T _ { \\infty } ) } \\frac { \\cosh m L - [ ( T _ { L } - T _ { \\infty } ) / ( T _ { b } - T _ { \\infty } ) ] } { \\sinh m L } \\\\ \\} \\dot { X } & = \\hat { 1 } + \\dot { E }$$\nNote that Eqs. 3-67 and 3-68 reduce to Eqs. 3-60 and 3-61 for the case of infinitely long fin ( L S ` ).",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/255' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.241, t=172.9560141601562, r=524.902, b=127.53601416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 285))]",
+          "self_ref='#/texts/256' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=119.26801416015621, r=522.244, b=108.47901416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 62))]",
+          "self_ref='#/texts/257' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=101.9560141601562, r=524.874, b=68.53501416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 229))]",
+          "self_ref='#/texts/259' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=667.2410141601562, r=380.72, b=644.6760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 98))]",
+          "self_ref='#/texts/260' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=634.3990141601562, r=165.757, b=625.9500141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 30))]",
+          "self_ref='#/texts/261' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=93.178, t=618.3820141601561, r=378.144, b=593.1690141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 93))]",
+          "self_ref='#/texts/262' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=589.3060141601562, r=378.141, b=579.8880141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 85))]",
+          "self_ref='#/texts/263' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=569.6090141601562, r=165.757, b=561.1600141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 30))]",
+          "self_ref='#/texts/264' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=63.291, t=553.6200141601562, r=378.144, b=503.7160141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 122))]",
+          "self_ref='#/texts/265' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=496.5760141601562, r=380.741, b=474.1480141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 104))]"
+        ],
+        "headings": [
+          "3 Specified Temperature ( T fin, tip 5 TL )"
+        ]
+      },
+      "tokens": 429
+    },
+    {
+      "text": "The fin tips, in practice, are exposed to the surroundings, and thus the proper boundary condition for the fin tip is convection that may also include the effects of radiation. Consider the case of convection only at the tip. The condition at the fin tip can be obtained from an energy balance at the fin tip ( Q # cond 5 Q # conv ) That is,\n$$- \\, k A _ { c } \\frac { d T } { d x } \\Big | _ { x = L } = h A _ { c } [ T ( L ) - T _ { \\infty } ]$$\n$$B o u n d a r y \\, c o n d i a t i o n \\, a t \\, f i n \\, t i p \\colon \\quad - k A _ { \\mathcal { C } } \\frac { a } { d x } \\Big | _ { x = L } = h A _ { c } [ T ( L ) - T _ { \\infty } ]$$\nThe boundary condition at the fin base is Eq. 3-59, which is the same as the three previous cases. Substituting the two boundary conditions given by Eqs. 3-59 and 3-69 in the general solution (Eq. 3-58), it may be shown, after some lengthy manipulation that the temperature distribution is\n$$C o n v e c t i o n f r o m f i n t i p \\colon \\frac { T ( x ) - T _ { \\infty } } { T _ { b } - T _ { \\infty } } = \\frac { \\cosh m ( L - x ) + ( h / m k ) \\sinh m ( L - x ) } { \\cosh m L + ( h / m k ) \\sinh m L } \\ \\ ( 3 - 7 0 )$$\nThe rate of heat transfer from the fin can be found by substituting the temperature gradient at the base of the fin, obtained from Eq. 3-70, into the Fourier's law of heat conduction. The result is\nConvection from fin tip:\n$$\\dot { Q } _ { c o n v e c t } & = - k A _ { c } \\frac { d T } { d x } \\Big | _ { x = 0 } \\\\ & = \\sqrt { h p k A _ { c } } ( T _ { b } - T _ { \\infty } ) \\frac { \\sinh m L + ( h / m k ) \\cosh m L } { \\cosh m L + ( h / m k ) \\sinh m L } \\\\$$\nThe solution to the general fin equation for the case of convection from fin tip is rather complex. An approximate, yet practical and accurate, way of accounting for the loss from the fin tip is to replace the fin length L in the relation for the insulated tip case by a corrected fin length defined as (Fig. 3-40)\nCorrected fin length:\n$$L _ { c } = L + \\frac { A _ { c } } { p }$$\n\u00b7\n( b ) Equivalent fin with insulated tip",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/267' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=445.80601416015617, r=380.782, b=379.42601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 341))]",
+          "self_ref='#/texts/268' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=203.777, t=373.6490141601562, r=374.98, b=351.90001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 41))]",
+          "self_ref='#/texts/269' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=366.9990141601562, r=378.145, b=350.19801416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 40))]",
+          "self_ref='#/texts/270' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=342.6960141601562, r=380.802, b=297.2730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 289))]",
+          "self_ref='#/texts/271' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=290.77001416015617, r=377.144, b=265.5690141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 132))]",
+          "self_ref='#/texts/272' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=258.6960141601562, r=380.714, b=225.27401416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 197))]",
+          "self_ref='#/texts/273' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=217.9590141601562, r=145.712, b=209.51001416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 24))]",
+          "self_ref='#/texts/274' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=77.246, t=203.19501416015623, r=378.144, b=153.79601416015612, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 127))]",
+          "self_ref='#/texts/275' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.143, t=144.65601416015625, r=380.774, b=99.23301416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 314))]",
+          "self_ref='#/texts/276' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=84.95801416015615, r=134.36, b=76.51001416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 21))]",
+          "self_ref='#/texts/277' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=220.705, t=92.72001416015621, r=378.144, b=70.34001416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 20))]",
+          "self_ref='#/texts/278' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=441.732, t=321.1660141601562, r=443.732, b=313.9900141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/279' parent=RefItem(cref='#/pictures/11') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=393.74, t=154.66601416015624, r=507.34, b=145.86601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 39))]"
+        ],
+        "headings": [
+          "4 Convection from Fin Tip"
+        ]
+      },
+      "tokens": 560
+    },
+    {
+      "text": "Corrected fin length Lc is defined such that heat transfer from a fin of length Lc with insulated tip is equal to heat transfer from the actual fin of length L with convection at the fin tip.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/297' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=391.872, t=123.52201416015623, r=548.342, b=68.5520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 191))]"
+        ],
+        "headings": [
+          "FIGURE 3-40"
+        ]
+      },
+      "tokens": 37
+    },
+    {
+      "text": "Fins enhance heat transfer from a surface by enhancing surface area.\nFIGURE 3-42 Ideal and actual temperature distribution along a fin.\nwhere Ac is the cross-sectional area and p is the perimeter of the fin at the tip. Multiplying the relation above by the perimeter gives A corrected 5 A fin (lateral) 1 A tip , which indicates that the fin area determined using the corrected length is equivalent to the sum of the lateral fin area plus the fin tip area.\nThe corrected length approximation gives very good results when the variation of temperature near the fin tip is small (which is the case when mL $ 1) and the heat transfer coefficient at the fin tip is about the same as that at the lateral surface of the fin. Therefore, fins subjected to convection at their tips can be treated as fins with insulated tips by replacing the actual fin length by the corrected length in Eqs. 3-64 and 3-65.\nUsing the proper relations for Ac and p , the corrected lengths for rectangular and cylindrical fins are easily determined to be\n$$L _ { c , \\, \\text {rectangular fin} } = L + \\frac { t } { 2 } \\quad \\text {and} \\quad L _ { c , \\, \\text {cylindrical fin} } = L + \\frac { D } { 4 }$$\nwhere t is the thickness of the rectangular fins and D is the diameter of the cylindrical fins.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/333' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=30.142, t=381.40201416015617, r=175.072, b=360.9320141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 68))]",
+          "self_ref='#/texts/343' parent=RefItem(cref='#/pictures/14') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=30.142, t=101.29201416015621, r=146.212, b=68.5520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 66))]",
+          "self_ref='#/texts/353' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=666.0860141601562, r=524.771, b=620.6660141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 320))]",
+          "self_ref='#/texts/354' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.144, t=618.0830141601562, r=524.829, b=548.7270141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 439))]",
+          "self_ref='#/texts/355' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.141, t=546.0860141601562, r=524.739, b=524.6660141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 128))]",
+          "self_ref='#/texts/356' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=259.592, t=517.0390141601562, r=460.127, b=495.22701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 65))]",
+          "self_ref='#/texts/357' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=486.0860141601562, r=524.782, b=464.6660141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 95))]"
+        ],
+        "headings": [
+          "FIGURE 3-41"
+        ]
+      },
+      "tokens": 246
+    },
+    {
+      "text": "Consider the surface of a plane wall at temperature Tb exposed to a medium at temperature T ` . Heat is lost from the surface to the surrounding medium by convection with a heat transfer coefficient of h. Disregarding radiation or accounting for its contribution in the convection coefficient h , heat transfer from a surface area As is expressed as Q . 5 hAs ( Ts 2 T ` ).\nNow let us consider a fin of constant cross-sectional area Ac 5 Ab and length L that is attached to the surface with a perfect contact (Fig. 3-41). This time heat is transferred from the surface to the fin by conduction and from the fin to the surrounding medium by convection with the same heat transfer coefficient h. The temperature of the fin is Tb at the fin base and gradually decreases toward the fin tip. Convection from the fin surface causes the temperature at any cross section to drop somewhat from the midsection toward the outer surfaces. However, the cross-sectional area of the fins is usually very small, and thus the temperature at any cross section can be considered to be uniform. Also, the fin tip can be assumed for convenience and simplicity to be adiabatic by using the corrected length for the fin instead of the actual length.\nIn the limiting case of zero thermal resistance or infinite thermal conductivity ( k S ` ), the temperature of the fin is uniform at the base value of Tb . The heat transfer from the fin is maximum in this case and can be expressed as\n$$\\dot { Q } _ { \\sin , \\max } = h A _ { \\sin } \\left ( T _ { b } - T _ { \\infty } \\right )$$\nIn reality, however, the temperature of the fin drops along the fin, and thus the heat transfer from the fin is less because of the decreasing temperature difference T ( x ) 2 T ` toward the fin tip, as shown in Fig. 3-42. To account for the effect of this decrease in temperature on heat transfer, we define a fin efficiency as\n$$\\text {energy as} \\\\ \\eta _ { \\sin } = \\frac { \\dot { Q } _ { \\text {fin} } } { \\dot { Q } _ { \\text {fin, max} } } = \\frac { \\text {Actual heat transfer from the fin} } { \\text {Ideal heat transfer from the fin} } \\quad ( 3 - 7 )$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/359' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.136, t=435.0860141601562, r=524.795, b=376.3770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 373))]",
+          "self_ref='#/texts/360' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.138, t=375.0860141601562, r=524.813, b=245.6580141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 852))]",
+          "self_ref='#/texts/361' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.136, t=243.07501416015617, r=524.765, b=209.66601416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 234))]",
+          "self_ref='#/texts/362' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=311.819, t=202.89501416015617, r=522.144, b=184.94101416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 41))]",
+          "self_ref='#/texts/363' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.135, t=173.22601416015618, r=524.78, b=115.80501416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 328))]",
+          "self_ref='#/texts/364' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=229.027, t=114.46001416015622, r=522.144, b=70.06701416015619, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 157))]"
+        ],
+        "headings": [
+          "Fin Efficiency"
+        ]
+      },
+      "tokens": 423
+    },
+    {
+      "text": "$$m = \\sqrt { 2 h / k t }$$\n$$m & = \\sqrt { 2 h / k t } \\\\ L _ { c } & = L + t / 2 \\\\ A _ { f i n } & = 2 w L _ { c }$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/369' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=59.269256591796875, t=613.2357330322266, r=108.98111724853516, b=602.3437957763672, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]",
+          "self_ref='#/texts/370' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.137, t=609.5030141601562, r=108.543, b=576.2890141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 42))]"
+        ],
+        "headings": [
+          "Straight rectangular fins"
+        ]
+      },
+      "tokens": 51
+    },
+    {
+      "text": "$$m & = \\sqrt { 2 h / k t } \\\\ A _ { f i n } & = 2 w \\sqrt { L ^ { 2 } + ( t / 2 ) ^ { 2 } }$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/372' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.241, t=542.5030141601562, r=146.357, b=516.3790141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 44))]"
+        ],
+        "headings": [
+          "Straight triangular fins"
+        ]
+      },
+      "tokens": 41
+    },
+    {
+      "text": "$$m & = \\sqrt { 2 h / k t } \\\\ A _ { \\text {fin} } & = w L [ C _ { 1 } + ( L / t ) \\ln ( t / L + C _ { 1 } ) ] \\\\ C _ { 1 } & = \\sqrt { 1 + ( t / L ) ^ { 2 } }$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/374' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.241, t=480.5860141601562, r=189.262, b=440.03901416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 86))]"
+        ],
+        "headings": [
+          "Straight parabolic fins"
+        ]
+      },
+      "tokens": 69
+    },
+    {
+      "text": "$$m & = \\sqrt { 2 h / k t } \\\\ r _ { 2 c } & = r _ { 2 } + t / 2 \\\\ A _ { \\sin } & = 2 \\pi ( r _ { 2 c } ^ { 2 } - r _ { 1 } ^ { 2 } )$$\n$$D$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/376' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.142, t=406.70301416015616, r=129.147, b=370.9710141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 63))]",
+          "self_ref='#/texts/377' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=129.172, t=380.7040141601562, r=132.169, b=372.63101416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]"
+        ],
+        "headings": [
+          "Circular fins of rectangular profile"
+        ]
+      },
+      "tokens": 62
+    },
+    {
+      "text": "$$m = \\sqrt { 4 h / k D }$$\n$$m & = \\sqrt { 4 h / k D } \\\\ L _ { c } & = L + D / 4 \\\\ A _ { \\sin } & = \\pi D L _ { c }$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/379' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=59.313621520996094, t=341.87249755859375, r=112.98455810546875, b=330.00445556640625, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]",
+          "self_ref='#/texts/380' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.137, t=337.7020141601562, r=112.539, b=304.48901416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 42))]"
+        ],
+        "headings": [
+          "Pin fins of rectangular profile"
+        ]
+      },
+      "tokens": 49
+    },
+    {
+      "text": "$$m & = \\sqrt { 4 h / k D } \\\\ A _ { f i n } & = \\frac { \\pi D } { 2 } \\sqrt { L ^ { 2 } + ( D / 2 ) ^ { 2 } }$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/382' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.241, t=268.24601416015616, r=153.587, b=236.5710141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 46))]"
+        ],
+        "headings": [
+          "Pin fins of triangular profile"
+        ]
+      },
+      "tokens": 47
+    },
+    {
+      "text": "$$m & = \\sqrt { 4 h / k D } \\\\ A _ { \\text {fin} } & = \\frac { \\pi L ^ { 3 } } { 8 D } [ C _ { 3 } C _ { 4 } - \\frac { L } { 2 D } \\ln ( 2 D C _ { 4 } / L + C _ { 3 } ) ] \\\\ C _ { 3 } & = 1 + 2 ( D / L ) ^ { 2 } \\\\ C _ { 4 } & = \\sqrt { 1 + ( D / L ) ^ { 2 } }$$\nPin fins of parabolic profile (blunt tip)\n$$m & = \\sqrt { 4 h / k D } \\\\ A _ { \\sin } & = \\frac { \\pi D ^ { 4 } } { 9 6 L ^ { 2 } } \\left \\{ [ 1 6 ( L / D ) ^ { 2 } + 1 ] ^ { 3 / 2 } - 1 \\right \\}$$\n$$\\eta _ { \\sin } = \\frac { \\tanh m L _ { c } } { m L _ { c } }$$\n$$\\eta _ { \\sin } = \\frac { 1 } { m L } \\frac { I _ { 1 } ( 2 m L ) } { I _ { 1 } ( 2 m L ) }$$\n$$\\eta _ { \\sin } = \\frac { 2 } { 1 + \\sqrt { ( 2 m L ) ^ { 2 } + 1 } }$$\n$$\\eta _ { \\text {fin} } = C _ { 2 } \\frac { K _ { 1 } ( m r _ { 1 } ) I _ { 1 } ( m r _ { 2 c } ) - I _ { 1 } ( m r _ { 1 } ) K _ { 1 } ( m r _ { 2 c } ) } { I _ { 0 } ( m r _ { 1 } ) K _ { 1 } ( m r _ { 2 c } ) + K _ { 0 } ( m r _ { 1 } ) I _ { 1 } ( m r _ { 2 c } ) }$$\n$$I _ { 0 } ( M I _ { 1 } / K _ { 1 } ( M I _ { 2 } ) ) = K _ { 0 } ( M I _ { 1 } ) I _ { 1 } ( M I _ { 2 } )$$\n$$C _ { 2 } = \\frac { 2 r _ { 1 } / m } { r _ { 2 c } ^ { 2 } - r _ { 1 } ^ { 2 } }$$\n$$\\eta _ { \\sin } = \\frac { \\tanh m L _ { c } } { m L _ { c } }$$\n$$\\eta _ { \\sin } = \\frac { 2 } { m L } \\frac { I _ { 0 } ( 2 m L ) } { I _ { 1 } ( 2 m L ) }$$\n$$i$$\n$$I _ { 2 } ( x ) = I _ { 0 } \\left ( x \\right ) - ( 2 / x ) I _ { 1 } \\left ( x \\right ) \\text { where } x = 2 m L$$\n$$\\eta _ { \\sin } = \\frac { 2 } { 1 + \\sqrt { ( 2 m L / 3 ) ^ { 2 } + 1 } }$$\n$$\\eta _ { \\sin } = \\frac { 3 } { 2 m L } \\frac { I _ { 2 } ( 4 m L / 3 ) } { I _ { 0 } ( 4 m L / 3 ) }$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "20/100",
+        "doc_items": [
+          "self_ref='#/texts/384' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.14, t=207.94301416015617, r=211.106, b=153.27901416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 118))]",
+          "self_ref='#/texts/385' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.142, t=137.21401416015624, r=167.134, b=118.15201416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 41))]",
+          "self_ref='#/texts/386' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.241, t=108.94501416015623, r=199.402, b=75.57101416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 67))]",
+          "self_ref='#/texts/387' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=241.742, t=620.2540141601562, r=299.099, b=596.8690141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 20))]",
+          "self_ref='#/texts/388' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=241.742, t=543.1940141601561, r=310.007, b=519.8290141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 36))]",
+          "self_ref='#/texts/389' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=241.742, t=471.0940141601562, r=338.667, b=446.9200141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 29))]",
+          "self_ref='#/texts/390' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=241.742, t=414.2540141601562, r=400.919, b=392.4210141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 107))]",
+          "self_ref='#/texts/391' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=279.352, t=396.0770141601562, r=397.892, b=390.8290141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 19))]",
+          "self_ref='#/texts/392' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=241.736, t=385.1940141601562, r=294.727, b=361.8290141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 31))]",
+          "self_ref='#/texts/393' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=241.742, t=332.2540141601562, r=299.099, b=308.8690141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 20))]",
+          "self_ref='#/texts/394' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=241.742, t=270.2540141601562, r=309.557, b=248.42101416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 34))]",
+          "self_ref='#/texts/395' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=284.602, t=252.07701416015618, r=287.527, b=246.8290141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/396' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=236.144, t=239.79401416015617, r=389.194, b=230.5790141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 56))]",
+          "self_ref='#/texts/397' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=241.738, t=205.09401416015612, r=345.637, b=180.92001416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 31))]",
+          "self_ref='#/texts/398' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=241.742, t=99.19401416015614, r=321.462, b=75.82901416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 42))]"
+        ],
+        "headings": [
+          "Pin fins of parabolic profile"
+        ]
+      },
+      "tokens": 678
+    }
+  ],
+  "total_chunks": 24,
+  "original_document": "file8973.pdf",
+  "pdf_chunk": "file8973_chunk020_p191-200",
+  "config": {
+    "max_tokens": 2048,
+    "merge_peers": true,
+    "enable_picture_description": true,
+    "picture_description_max_tokens": 800,
+    "vision_model": "gemini-2.0-flash",
+    "enable_formula": true,
+    "enable_ocr": true,
+    "enable_table_structure": true
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "method": "docling-hybrid",
+  "chunks": [
+    {
+      "text": "Fifth Edition\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (1 images):\n==================================================\n\n**[Image: page1_img1.jpeg - Page 1]**\nThe image is a textbook cover with the title \"Heat and Mass Transfer\" in large, gold font. Below the title, in a smaller, white font, is the subtitle \"Fundamentals & Applications\". Above the title, in a smaller, white font, is the text \"Fifth Edition\". At the bottom left of the cover, the authors are listed as \"Yunus A. \u00c7engel\" and \"Afshin J. Ghajar\" in white font. The right side of the cover features a visual of flames engulfing ice cubes on a reflective surface.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/0' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=41.29149841970311, t=387.9433492191406, r=94.57085064642375, b=380.6100158858073, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 13))]"
+        ],
+        "headings": null
+      },
+      "tokens": 100
+    },
+    {
+      "text": "Fundamentals & Applications\nYunus A. \u00c7engel Afshin J. Ghajar",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/2' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=39.882464870071914, t=257.9433492358073, r=141.93332605882918, b=224.10261411118043, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 27))]",
+          "self_ref='#/texts/3' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=39.92738823550312, t=105.47739538796185, r=121.90864298302513, b=75.94334930802955, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 32))]"
+        ],
+        "headings": [
+          "Heat and Mass Transfer"
+        ]
+      },
+      "tokens": 9
+    },
+    {
+      "text": "FUNDAMENTALS & APPLICATIONS",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/5' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=175.702, t=513.2020141601562, r=334.582, b=504.22201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 27))]"
+        ],
+        "headings": [
+          "H E A T   A N D   M A S S T R A N S F E R"
+        ]
+      },
+      "tokens": 3
+    },
+    {
+      "text": "Without ethics, everything happens as if we were all five billion passengers on a big machinery and nobody is driving the machinery. And it's going faster and faster, but we don't know where. -Jacques Cousteau Because you're able to do it and because you have the right to do it doesn't mean it's right to do it. -Laura Schlessinger A man without ethics is a wild beast loosed upon this world. -Manly Hall The concern for man and his destiny must always be the chief interest of all technical effort. Never forget it among your diagrams and equations. -Albert Einstein Cowardice asks the question, 'Is it safe?' Expediency asks the question, 'Is it politic?' Vanity asks the question, 'Is it popular?' But, conscience asks the question, 'Is it right?' And there comes a time when one must take a position that is neither safe, nor politic, nor popular but one must take it because one's conscience tells one that it is right. -Martin Luther King, Jr To educate a man in mind and not in morals is to educate a menace to society. -Theodore Roosevelt Politics which revolves around benefit is savagery. -Said Nursi The true test of civilization is, not the census, nor the size of the cities, nor the crops, but the kind of man that the country turns out. -Ralph W. Emerson The measure of a man's character is what he would do if he knew he never would be found out.\n-Thomas B. Macaulay",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/7' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.332, t=644.7820141601562, r=525.192, b=136.8020141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1363))]",
+          "self_ref='#/texts/8' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=418.212, t=130.08201416015618, r=522.142, b=120.48201416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 19))]"
+        ],
+        "headings": [
+          "Quotes on Ethics"
+        ]
+      },
+      "tokens": 248
+    },
+    {
+      "text": "FUNDAMENTALS & APPLICATIONS\nFIFTH EDITION\nYUNUS A. \u00c7ENGEL\nUniversity of Nevada, Reno",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/10' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=175.702, t=513.2020141601562, r=334.582, b=504.22201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 27))]",
+          "self_ref='#/texts/11' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=465.012, t=653.4000141601562, r=507.791, b=631.5210141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 13))]",
+          "self_ref='#/texts/12' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=465.012, t=527.3620141601561, r=547.534, b=517.5360141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 15))]",
+          "self_ref='#/texts/13' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=465.012, t=513.9640141601562, r=551.475, b=493.8850141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]"
+        ],
+        "headings": [
+          "H E A T   A N D   M A S S T R A N S F E R"
+        ]
+      },
+      "tokens": 12
+    },
+    {
+      "text": "Oklahoma State University, Stillwater",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/15' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=465.012, t=458.9640141601562, r=543.654, b=438.8850141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 37))]"
+        ],
+        "headings": [
+          "AFSHIN J. GHAJAR"
+        ]
+      },
+      "tokens": 4
+    },
+    {
+      "text": "Published by McGraw-Hill Education, 2 Penn Plaza, New York, NY 10121. Copyright \u00a9 2015 by McGraw-Hill Education. All rights reserved. Printed in the United States of America. Previous editions \u00a9 2011, 2007, and 2003. No part of this publication may be reproduced or distributed in any form or by any means, or stored in a database or retrieval system, without the prior written consent of McGraw-Hill Education, including, but not limited to, in any network or other electronic storage or transmission, or broadcast for distance learning.\nSome ancillaries, including electronic and print components, may not be available to customers outside the United States.\nThis book is printed on acid-free paper.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/17' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=580.2300141601562, r=393.312, b=522.5830141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 538))]",
+          "self_ref='#/texts/18' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=512.2040141601561, r=389.326, b=494.5750141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 121))]",
+          "self_ref='#/texts/19' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=484.1970141601562, r=170.459, b=476.5720141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 40))]"
+        ],
+        "headings": [
+          "HEAT AND MASS TRANSFER: FUNDAMENTALS & APPLICATIONS, FIFTH EDITION"
+        ]
+      },
+      "tokens": 110
+    },
+    {
+      "text": "ISBN 978-0-07-339818-1 MHID 0-07-339818-7\nSenior Vice President, Products & Markets: Kurt L. Strand\nVice President, General Manager: Marty Lange\nVice President, Content Production & Technology Services: Kimberly Meriwether David\nManaging Director: Thomas Timp\nGlobal Publisher: Raghothaman Srinivasan\nMarketing Manager: Nick McFadden\nDirector of Digital Content: Thomas M. Scaife\nProduct Developer: Lorraine Buczek\nDirector, Content Production: Terri Schiesl\nContent Project Manager: Jolynn Kilburg\nBuyer: Jennifer Pickel\nCover Designer: Studio Montage, St. Louis, MO.\nComposition: RPK Editorial Services, Inc.\nTypeface:\n10.5/12 Times LT Std Roman\nPrinter:\nR. R. Donnelley\nAll credits appearing on page or at the end of the book are considered to be an extension of the copyright page.\nLibrary of Congress Cataloging-in-Publication Data on File\nThe Internet addresses listed in the text were accurate at the time of publication. The inclusion of a website does not indicate an endorsement by the authors or McGraw-Hill, and McGraw-Hill does not guarantee the accuracy of the information presented at these sites.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/21' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=448.19101416015616, r=124.202, b=430.5620141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 41))]",
+          "self_ref='#/texts/22' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=419.8860141601562, r=225.03, b=412.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 57))]",
+          "self_ref='#/texts/23' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=409.8860141601562, r=188.55, b=402.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 44))]",
+          "self_ref='#/texts/24' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=399.8860141601562, r=321.894, b=392.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 83))]",
+          "self_ref='#/texts/25' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=389.8860141601562, r=145.246, b=382.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 30))]",
+          "self_ref='#/texts/26' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=379.8860141601562, r=175.478, b=372.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 40))]",
+          "self_ref='#/texts/27' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=369.8860141601562, r=155.446, b=362.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 32))]",
+          "self_ref='#/texts/28' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=359.8860141601562, r=184.798, b=352.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 45))]",
+          "self_ref='#/texts/29' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=349.8860141601562, r=153.678, b=342.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 34))]",
+          "self_ref='#/texts/30' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=339.8860141601562, r=174.582, b=332.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 43))]",
+          "self_ref='#/texts/31' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=329.8860141601562, r=169.022, b=322.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 39))]",
+          "self_ref='#/texts/32' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=319.8860141601562, r=108.126, b=312.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 22))]",
+          "self_ref='#/texts/33' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=309.8860141601562, r=194.134, b=302.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 46))]",
+          "self_ref='#/texts/34' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=299.8860141601562, r=172.59, b=292.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 41))]",
+          "self_ref='#/texts/35' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=289.8860141601562, r=70.126, b=282.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 9))]",
+          "self_ref='#/texts/36' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=70.126, t=289.87801416015617, r=163.246, b=282.7640141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]",
+          "self_ref='#/texts/37' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=279.8860141601562, r=62.142, b=272.71001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 8))]",
+          "self_ref='#/texts/38' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=62.142, t=279.87801416015617, r=112.798, b=272.7640141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 15))]",
+          "self_ref='#/texts/39' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=261.8860141601562, r=391.174, b=254.71001416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 112))]",
+          "self_ref='#/texts/40' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=114.366, t=243.85401416015623, r=317.926, b=236.76701416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 58))]",
+          "self_ref='#/texts/41' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=36.142, t=79.64601416015614, r=398.14, b=52.47001416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 267))]"
+        ],
+        "headings": [
+          "1 2 3 4 5 6 7 8 9 0 DOW/DOW 1 0 9 8 7 6 5 4"
+        ]
+      },
+      "tokens": 159
+    },
+    {
+      "text": "Yunus A. \u00c7engel is Professor Emeritus of Mechanical Engineering at the University of Nevada, Reno. He received his B.S. in mechanical engineering from Istanbul Technical University and his M.S. and Ph.D. in mechanical engineering from North Carolina State University. His areas of interest are renewable energy, energy efficiency, energy policies, heat transfer enhancement, and engineering education. He served as the director of the Industrial Assessment Center (IAC) at the University of Nevada, Reno, from 1996 to 2000. He has led teams of engineering students to numerous manufacturing facilities in Northern Nevada and California to perform industrial assessments, and has prepared energy conservation, waste minimization, and productivity enhancement reports for them. He has also served as an advisor for various government organizations and corporations.\nDr.  \u00c7engel  is  also  the  author  or  coauthor  of  the  widely  adopted  textbooks Thermodynamics: An Engineering Approach (8th  ed.,  2015), Fluid Mechanics: Fundamentals and Applications (3rd ed., 2014), Fundamentals of Thermal-Fluid Sciences (3rd ed., 2008), Introduction to Thermodynamics and Heat Transfer (2nd ed., 2008), and Differential Equations for Engineers and Scientists (1st ed., 2013), all published by McGraw-Hill. Some of his textbooks have been translated into Chinese, Japanese, Korean, Thai, Spanish, Portuguese, Turkish, Italian, Greek, and French.\nDr. \u00c7engel is the recipient of several outstanding teacher awards, and he has received the ASEE Meriam/Wiley Distinguished Author Award for excellence in authorship in 1992 and again in 2000. Dr. \u00c7engel is a registered Professional Engineer in the State of Nevada, and is a member of the American Society of Mechanical Engineers (ASME) and the American Society for Engineering Education (ASEE).\nAfshin J. Ghajar is Regents Professor and John Brammer Professor in the School of Mechanical and Aerospace Engineering at Oklahoma State University, Stillwater, Oklahoma, USA and a Honorary Professor of Xi'an Jiaotong University, Xi'an, China. He received his B.S., M.S., and Ph.D. all in Mechanical Engineering from Oklahoma State University. His expertise is in experimental heat transfer/ fluid mechanics and development of practical engineering correlations. Dr. Ghajar has made significant contributions to the field of thermal sciences through his experimental, empirical, and numerical works in heat transfer and stratification in sensible heat storage systems, heat transfer to non-Newtonian fluids, heat transfer in the transition region, and non-boiling heat transfer in two-phase flow. His current research is in two-phase flow heat transfer/pressure drop studies in pipes with different orientations, heat transfer/pressure drop in mini/micro tubes, and mixed convective heat transfer/pressure drop in the transition region (plain and enhanced tubes). Dr. Ghajar has been a Summer Research Fellow at Wright Patterson AFB (Dayton, Ohio) and Dow Chemical Company (Freeport, Texas). He and his co-workers have published over 200 reviewed research papers. He has delivered numerous keynote and invited lectures at major technical conferences and institutions. He has received several outstanding teaching, research, advising, and service awards from College of Engineering at Oklahoma State University. His latest award is the 75th Anniversary Medal of the ASME Heat Transfer Division ' in recognition of his service to the heat transfer community and contributions to the field '. Dr. Ghajar is a Fellow of the American Society of Mechanical Engineers (ASME), Heat Transfer Series Editor for CRC Press/Taylor & Francis and Editorin-Chief of Heat Transfer Engineering , an international journal aimed at practicing engineers and specialists in heat transfer published by Taylor and Francis .",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/44' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=604.4920141601561, r=380.662, b=482.3920141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 863))]",
+          "self_ref='#/texts/45' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=480.3620141601562, r=380.658, b=405.3920141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 572))]",
+          "self_ref='#/texts/46' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=403.3620141601562, r=380.649, b=350.3920141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 394))]",
+          "self_ref='#/texts/47' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.132, t=335.4920141601562, r=380.684, b=59.392014160156236, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1999))]"
+        ],
+        "headings": [
+          "A b o u t   t h e   A u t h o r s"
+        ]
+      },
+      "tokens": 552
+    },
+    {
+      "text": "```\nc h a p t e r   o n e INTRODUCTION AND BASIC CONCEPTS    1 c h a p t e r   t w o HEAT CONDUCTION EQUATION    67 c h a p t e r   t h r e e STEADY HEAT CONDUCTION    142 c h a p t e r   f o u r TRANSIENT HEAT CONDUCTION    237 c h a p t e r   f i v e NUMERICAL METHODS IN\u00a0HEAT CONDUCTION    307 c h a p t e r   s i x FUNDAMENTALS OF CONVECTION    379 c h a p t e r   s e v e n EXTERNAL FORCED CONVECTION    424 c h a p t e r   e i g h t INTERNAL FORCED CONVECTION    473 c h a p t e r   n i n e NATURAL CONVECTION    533 c h a p t e r   t e n BOILING AND CONDENSATION    598 c h a p t e r   e l e v e n HEAT EXCHANGERS    649 c h a p t e r   t w e l v e FUNDAMENTALS OF THERMAL RADIATION    715 c h a p t e r   t h i r t e e n RADIATION HEAT TRANSFER    767 c h a p t e r   f o u r t e e n MASS TRANSFER    835 c h a p t e r   f i f t e e n   ( w e b c h a p t e r ) COOLING OF ELECTRONIC EQUIPMENT c h a p t e r   s i x t e e n   ( w e b c h a p t e r ) HEATING AND COOLING OF BUILDINGS c h a p t e r   s e v e n t e e n   ( w e b c h a p t e r ) REFRIGERATION AND FREEZING OF FOODS a p p e n d i x   1 PROPERTY TABLES AND CHARTS (SI UNITS)    907 a p p e n d i x   2 PROPERTY TABLES AND CHARTS (ENGLISH UNITS)    935\n```\nPreface    xiii",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/49' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CODE: 'code'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=602.2140141601562, r=507.304, b=56.978014160156135, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1216))]",
+          "self_ref='#/texts/51' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=84.142, t=545.4960141601562, r=128.582, b=538.3120141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 15))]"
+        ],
+        "headings": [
+          "B r i e f   C o n t e n t s"
+        ]
+      },
+      "tokens": 352
+    },
+    {
+      "text": "c h, 1 = a p t e r o n e INTRODUCTION AND BASIC CONCEPTS 1 Thermodynamics and Heat Transfer 2 Application Areas of Heat Transfer 3. 1-1, 1 = Historical Background 3. 1-2, 1 = Engineering Heat Transfer 4 Modeling in Engineering 5. 1-3, 1 = Heat and Other Forms of Energy 6 Specific Heats of Gases, Liquids, and Solids 7. 1-4, 1 = The First Law of Thermodynamics 11 Energy Balance for Closed Systems ( Fixed Mass ) 12 Energy Balance for Steady-Flow Systems 12 Surface Energy Balance 13. 1-5, 1 = Heat Transfer Mechanisms 17. 1-6, 1 = Conduction 17 Thermal Conductivity 19 Thermal Diffusivity 22. 1-7, 1 = Convection 25. 1-8, 1 = Radiation 27. 1-9, 1 = Simultaneous Heat Transfer Mechanisms. 1-10, 1 = Prevention Through Design 35. 1-11, 1 = Problem-Solving Technique 38. 1-11, 1 = Engineering Software Packages 40 Engineering Equation Solver (EES) 41 A Remark on Significant Digits 42. 1-11, 1 = Topic of Special Interest: Thermal Comfort 43. 1-11, 1 = Summary 50 References and Suggested Reading 51 Problems 51",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/tables/0' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.DOCUMENT_INDEX: 'document_index'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=52.79313659667969, t=539.0929412841797, r=273.41522216796875, b=81.08819580078125, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]"
+        ],
+        "headings": [
+          "C o n t e n t s"
+        ]
+      },
+      "tokens": 180
+    },
+    {
+      "text": "Steady versus Transient Heat Transfer    69 Multidimensional Heat Transfer    70 Heat Generation    72",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/55' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=339.142, t=484.9200141601562, r=484.934, b=457.8770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 102))]"
+        ],
+        "headings": [
+          "2-1 Introduction    68"
+        ]
+      },
+      "tokens": 13
+    },
+    {
+      "text": "Heat Conduction Equation in a Large Plane Wall    73 Heat Conduction Equation in a Long Cylinder    75 Heat Conduction Equation in a Sphere    76 Combined One-Dimensional Heat Conduction Equation    77",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/57' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=339.142, t=422.9200141601562, r=542.302, b=385.8770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 201))]"
+        ],
+        "headings": [
+          "2-2 One-Dimensional Heat Conduction Equation    73"
+        ]
+      },
+      "tokens": 30
+    },
+    {
+      "text": "Rectangular Coordinates    79 Cylindrical Coordinates    81 Spherical Coordinates    81",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/59' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=339.142, t=362.9200141601562, r=439.158, b=335.8770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 87))]"
+        ],
+        "headings": [
+          "2-3 General Heat Conduction Equation    79"
+        ]
+      },
+      "tokens": 9
+    },
+    {
+      "text": "1  Specified Temperature Boundary Condition    84 2  Specified Heat Flux Boundary Condition    84 Special Case: Insulated Boundary    85 Another Special Case: Thermal Symmetry    85\n- 3  Convection Boundary Condition    86\n- 4  Radiation Boundary Condition    88\n- 5  Interface Boundary Conditions    89\n- 6  Generalized Boundary Conditions    89",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/61' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=339.142, t=312.9200141601562, r=511.19, b=275.8770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 181))]",
+          "self_ref='#/texts/62' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=339.142, t=272.9200141601562, r=471.622, b=265.8770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 38))]",
+          "self_ref='#/texts/63' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=339.142, t=262.9200141601562, r=466.294, b=255.8770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 37))]",
+          "self_ref='#/texts/64' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=339.142, t=252.92001416015614, r=467.622, b=245.8770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 38))]",
+          "self_ref='#/texts/65' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=339.142, t=242.92001416015614, r=477.838, b=235.8770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 40))]"
+        ],
+        "headings": [
+          "2-4 Boundary and Initial Conditions    82"
+        ]
+      },
+      "tokens": 48
+    },
+    {
+      "text": "- 2-6 Heat Generation in a Solid    104",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/67' parent=RefItem(cref='#/groups/2') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=309.142, t=203.09701416015616, r=477.368, b=193.0380141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 37))]"
+        ],
+        "headings": [
+          "2-5 Solution of Steady One-Dimensional Heat Conduction Problems    91"
+        ]
+      },
+      "tokens": 8
+    },
+    {
+      "text": "Classification of Differential Equations    117 Solutions of Differential Equations    118 General Solution to Selected Differential Equations    119\nSummary    121 References and Suggested Reading    122 Problems    122\nc h a p t e r t h r, 1 = c h a p t e r t h r. 3-1, 1 = Steady Heat Conduction in Plane Walls 143. 3-2, 1 = Thermal Contact Resistance 153. 3-3, 1 = Generalized Thermal Resistance Networks 158. 3-4, 1 = Heat Conduction in Cylinders and Spheres 161 Multilayered Cylinders and Spheres 163. 3-5, 1 = Critical Radius of Insulation 167. 3-6, 1 = Heat Transfer from Finned Surfaces 170 Fin Equation 171 Fin Efficiency 176 Fin Effectiveness 178 Proper Length of a Fin 181. 3-7, 1 = Bioheat Transfer Equation 187. c h a p t TRANSIENT, 1 = Heat Transfer through Walls and Roofs 197 Summary 207 References and Suggested Reading 209 Problems 209 e r f o u r HEAT CONDUCTION 237. 4-1, 1 = Lumped System Analysis 238 Criteria for Lumped System Analysis 239 Some Remarks on Heat Transfer in Lumped Systems 241 Transient Heat Conduction in Large Plane. 4-2 Walls, Spatial Nondimensionalized Transient Exact Problem Approximate, 1 = Long Cylinders, and Spheres with Effects 244 One-Dimensional Conduction Problem 245 Solution of One-Dimensional Transient Conduction 247 Analytical and Graphical Solutions 250 Transient Heat Conduction in Semi-Infinite Solids 261. 4-3, 1 = . , 1 = Contact of Two Semi-Infinite Solids 265. 4-4, 1 = Transient Heat Conduction in Multidimensional Systems 268 Topic of Special Interest:. , 1 = Refrigeration and Freezing of Foods 276\nControl of Microorganisms in Foods    276 Refrigeration and Freezing of Foods    278 Beef Products    279 Poultry Products    283\nSummary    287 References and Suggested Reading    289 Problems    289",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/71' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=339.142, t=143.92001416015614, r=529.862, b=116.87701416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 149))]",
+          "self_ref='#/texts/72' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=339.142, t=107.92001416015614, r=481.406, b=80.87701416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 70))]",
+          "self_ref='#/tables/1' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.DOCUMENT_INDEX: 'document_index'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=27.526521682739258, t=664.8664398193359, r=265.0489196777344, b=53.8216552734375, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]",
+          "self_ref='#/texts/76' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=315.142, t=666.0500141601561, r=456.95, b=629.0070141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 129))]",
+          "self_ref='#/texts/77' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=315.142, t=620.0500141601561, r=457.406, b=593.0070141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 70))]"
+        ],
+        "headings": [
+          "A Brief Review of Differential Equations    115"
+        ]
+      },
+      "tokens": 290
+    },
+    {
+      "text": "1  Limitations    309 2  Better Modeling    309 3  Flexibility    310 4  Complications    310 5  Human Nature    310\n- 5-2 Finite Difference Formulation of Differential Equations    311",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/81' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=315.142, t=506.0500141601562, r=399.166, b=459.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 116))]",
+          "self_ref='#/texts/82' parent=RefItem(cref='#/groups/3') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=285.142, t=453.22701416015616, r=446.365, b=431.1660141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 66))]"
+        ],
+        "headings": [
+          "5-1 Why Numerical Methods?    308"
+        ]
+      },
+      "tokens": 26
+    },
+    {
+      "text": "Boundary Conditions    316 Treating Insulated Boundary Nodes as Interior Nodes: The Mirror Image Concept    318",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/84' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=315.142, t=409.0500141601562, r=511.614, b=382.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 111))]"
+        ],
+        "headings": [
+          "5-3 One-Dimensional Steady Heat Conduction    314"
+        ]
+      },
+      "tokens": 15
+    },
+    {
+      "text": "Boundary Nodes    326 Irregular Boundaries    330",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/86' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=315.142, t=359.0500141601562, r=405.822, b=342.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 49))]"
+        ],
+        "headings": [
+          "5-4 Two-Dimensional Steady Heat Conduction    325"
+        ]
+      },
+      "tokens": 6
+    },
+    {
+      "text": "Transient Heat Conduction in a Plane Wall    336 Stability Criterion for Explicit Method: Limitation on D t 338 Two-Dimensional Transient Heat Conduction    347",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/88' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=315.142, t=319.0500141601562, r=522.142, b=292.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 160))]"
+        ],
+        "headings": [
+          "5-5 Transient Heat Conduction    334"
+        ]
+      },
+      "tokens": 23
+    },
+    {
+      "text": "Discretization Error    352 Round-Off Error    353 Controlling the Error in Numerical Methods    354\nSummary    355 References and Suggested Reading    356 Problems    357",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/90' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=315.142, t=257.0500141601562, r=481.382, b=230.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 100))]",
+          "self_ref='#/texts/91' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=315.142, t=221.0500141601562, r=457.406, b=194.00701416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 70))]"
+        ],
+        "headings": [
+          "Topic of Special Interest: Controlling the Numerical Error    352"
+        ]
+      },
+      "tokens": 22
+    },
+    {
+      "text": "Nusselt Number    382",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/95' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=315.142, t=122.05001416015614, r=392.038, b=115.00701416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 21))]"
+        ],
+        "headings": [
+          "6-1 Physical Mechanism of Convection    380"
+        ]
+      },
+      "tokens": 3
+    },
+    {
+      "text": "Viscous versus Inviscid Regions of Flow    384 Internal versus External Flow    384 Compressible versus Incompressible Flow    384 Laminar versus Turbulent Flow    385\n, 1 = Natural (or Unforced) versus Forced Flow Steady versus Unsteady Flow 385 One-, Two-, and Three-Dimensional Flows. , 2 = 385. , 3 = . , 4 = Summary 453 References and Suggested Reading 454 Problems 455. 6-3, 1 = Velocity Boundary Layer 387 Wall Shear Stress 388. 6-3, 2 = 386. 6-3, 3 = c h a p t e r e i g h t. 6-3, 4 = c h a p t e r e i g h t. 6-4, 1 = Thermal Boundary Layer 389 Prandtl Number 390. 6-4, 2 = . 6-4, 3 = INTERNAL FORCED CONVECTION 473 8-1 Introduction 474. 6-4, 4 = . 6-5, 1 = Laminar and Turbulent Flows 390 Reynolds Number 391. 6-5, 2 = . 6-5, 3 = 8-2. 6-5, 4 = Average Velocity and Temperature 475 Laminar and Turbulent Flow in Tubes 476. 6-6, 1 = Heat and Momentum Transfer in Turbulent Flow 392. 6-6, 2 = . 6-6, 3 = 8-3. 6-6, 4 = The Entrance Region 477 Entry Lengths 479. 6-7, 1 = Derivation of Differential Convection Equations 394 The Continuity Equation 395 The Momentum Equations 395. 6-7, 2 = . 6-7, 3 = 8-4. 6-7, 4 = General Thermal Analysis 480 Constant Surface Heat Flux ( q . s 5 constant) 481 Constant Surface Temperature ( T s 5 constant) 482. 6-8, 1 = Solutions of Convection Equations for a Flat Plate 401. 6-8, 2 = . 6-8, 3 = . 6-8, 4 = Pressure Drop 487 Temperature Profile and the Nusselt Number 489 Constant Surface Heat Flux 489 Constant Surface Temperature 490. 6-9, 1 = The Energy Equation 403 Nondimensionalized Convection Equations and Similarity 405. 6-9, 2 = . 6-9, 3 = . 6-9, 4 = Laminar Flow in Noncircular Tubes 491 Developing Laminar Flow in the Entrance Region 492. 6-10, 1 = Functional Forms of Friction and Convection Coefficients 406. 6-10, 2 = . 6-10, 3 = 8-6 Turbulent Flow in. 6-10, 4 = Tubes 496 Fully Developed Transitional Flow Heat Transfer 497. 6-11, 1 = Analogies Between Momentum and Heat Transfer 407. 6-11, 2 = . 6-11, 3 = Turbulent Flow in Noncircular Flow through Tube Annulus. 6-11, 4 = Rough Surfaces 498 Developing Turbulent Flow in the Entrance Region 500 Tubes 500 500. c h a p t e r s e v e n EXTERNAL FORCED CONVECTION 424, 1 = c h a p t e r s e v e n EXTERNAL FORCED CONVECTION 424. c h a p t e r s e v e n EXTERNAL FORCED CONVECTION 424, 2 = 425. c h a p t e r s e v e n EXTERNAL FORCED CONVECTION 424, 3 = References 517. c h a p t e r s e v e n EXTERNAL FORCED CONVECTION 424, 4 = Summary 518 References and Suggested Reading 519 Problems 520. 7-1 7-2, 1 = Drag and Heat Transfer in External Flow Friction and Pressure Drag 425 Heat Transfer 427. 7-1 7-2, 2 = . 7-1 7-2, 3 = c h a p t e r n i n e NATURAL CONVECTION 533. 7-1 7-2, 4 = 534. , 1 = Parallel Flow over Flat Plates 428 Friction Coefficient 429 Heat Transfer Coefficient 430 Flat Plate with Unheated Starting Length 432 Uniform Heat Flux 433. , 2 = 438. , 3 = 9-1 9-2. , 4 = Physical Mechanism of Natural Convection Equation of Motion and the Grashof Number The Grashof Number 539. 7-3, 1 = Flow across Cylinders and Spheres Effect of Surface Roughness 440 Heat Transfer Coefficient 442. 7-3, 2 = . 7-3, 3 = 9-3. 7-3, 4 = Natural Convection over Surfaces 540 Vertical Plates ( T s 5 constant) 541 .. 7-4, 1 = Flow across Tube Banks 446 Pressure Drop 449. 7-4, 2 = . 7-4, 3 = . 7-4, 4 = Vertical Plates ( q s 5 constant) 541 Vertical Cylinders 543",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "1/100",
+        "doc_items": [
+          "self_ref='#/texts/97' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=315.142, t=92.05001416015614, r=477.806, b=55.00701416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 167))]",
+          "self_ref='#/tables/2' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.DOCUMENT_INDEX: 'document_index'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=51.02738571166992, t=670.886344909668, r=542.8380126953125, b=52.9044189453125, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]"
+        ],
+        "headings": [
+          "6-2 Classification of Fluid Flows    384"
+        ]
+      },
+      "tokens": 682
+    }
+  ],
+  "total_chunks": 24,
+  "original_document": "file8973.pdf",
+  "pdf_chunk": "file8973_chunk001_p1-10",
+  "config": {
+    "max_tokens": 2048,
+    "merge_peers": true,
+    "enable_picture_description": true,
+    "picture_description_max_tokens": 800,
+    "vision_model": "gemini-2.0-flash",
+    "enable_formula": true,
+    "enable_ocr": true,
+    "enable_table_structure": true
+  }
+}

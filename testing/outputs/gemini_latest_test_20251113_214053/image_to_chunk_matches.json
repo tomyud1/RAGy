@@ -1,0 +1,16 @@
+[
+  {
+    "image_ref": "#/pictures/0",
+    "image_page": 4,
+    "chunk_num": 8,
+    "match_reason": "Proximity heuristic (chunk 8 \u2248 page 4)",
+    "description": "[API Error: object of type 'NoneType' has no len()]"
+  },
+  {
+    "image_ref": "#/pictures/1",
+    "image_page": 5,
+    "chunk_num": 10,
+    "match_reason": "Proximity heuristic (chunk 10 \u2248 page 5)",
+    "description": "[API Error: object of type 'NoneType' has no len()]"
+  }
+]

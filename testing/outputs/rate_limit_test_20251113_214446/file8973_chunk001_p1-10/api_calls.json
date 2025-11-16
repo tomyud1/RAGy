@@ -1,0 +1,16 @@
+[
+  {
+    "image_ref": "#/pictures/0",
+    "timestamp": 1763063104.38571,
+    "duration": 5.255553960800171,
+    "status": "success",
+    "description_length": 455
+  },
+  {
+    "image_ref": "#/pictures/1",
+    "timestamp": 1763063109.0296,
+    "duration": 4.643754959106445,
+    "status": "error",
+    "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details"
+  }
+]

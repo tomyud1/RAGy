@@ -1,0 +1,311 @@
+[
+  {
+    "file": "/mnt/data/openai_api_split_v2/00-preamble-and-overview.md",
+    "topic": "Preamble & Overview"
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/01-webhooks.md",
+    "topic": "Webhooks",
+    "chars": 35
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/02-platform-apis.md",
+    "topic": "Platform APIs",
+    "chars": 741
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/03-cookbook.md",
+    "topic": "Cookbook",
+    "chars": 20
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/04-forum.md",
+    "topic": "Forum",
+    "chars": 14
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/05-introduction.md",
+    "topic": "Introduction",
+    "chars": 284
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/06-authentication.md",
+    "topic": "Authentication",
+    "chars": 1096
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/07-debugging-requests.md",
+    "topic": "Debugging requests",
+    "chars": 1080
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/08-backward-compatibility.md",
+    "topic": "Backward compatibility",
+    "chars": 1294
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/09-responses.md",
+    "topic": "Responses",
+    "chars": 27328
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/10-conversations.md",
+    "topic": "Conversations",
+    "chars": 9480
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/11-videos.md",
+    "topic": "Videos",
+    "chars": 4900
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/12-streaming-events.md",
+    "topic": "Streaming events",
+    "chars": 38997
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/13-webhook-events.md",
+    "topic": "Webhook Events",
+    "chars": 8322
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/14-audio.md",
+    "topic": "Audio",
+    "chars": 26146
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/15-image-streaming.md",
+    "topic": "Image Streaming",
+    "chars": 6930
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/16-chatkit.md",
+    "topic": "ChatKit",
+    "chars": 10443
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/17-evals.md",
+    "topic": "Evals",
+    "chars": 54742
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/18-fine-tuning.md",
+    "topic": "Fine-tuning",
+    "chars": 25321
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/19-graders.md",
+    "topic": "Graders",
+    "chars": 9201
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/20-batch.md",
+    "topic": "Batch",
+    "chars": 17671
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/21-uploads.md",
+    "topic": "Uploads",
+    "chars": 6737
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/22-models.md",
+    "topic": "Models",
+    "chars": 17510
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/23-vector-store-files.md",
+    "topic": "Vector store files",
+    "chars": 8801
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/24-vector-store-file-batches.md",
+    "topic": "Vector store file batches",
+    "chars": 6735
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/25-containers.md",
+    "topic": "Containers",
+    "chars": 4432
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/26-container-files.md",
+    "topic": "Container Files",
+    "chars": 5153
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/27-realtime.md",
+    "topic": "Realtime",
+    "chars": 1917
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/28-client-secrets.md",
+    "topic": "Client secrets",
+    "chars": 4593
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/29-calls.md",
+    "topic": "Calls",
+    "chars": 5590
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/30-client-events.md",
+    "topic": "Client events",
+    "chars": 12674
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/31-server-events.md",
+    "topic": "Server events",
+    "chars": 41247
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/32-chat-completions.md",
+    "topic": "Chat Completions",
+    "chars": 28788
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/33-assistants.md",
+    "topic": "Assistants",
+    "chars": 3557
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/34-files.md",
+    "topic": "Files",
+    "chars": 13225
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/35-threads.md",
+    "topic": "Threads",
+    "chars": 4973
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/36-messages.md",
+    "topic": "Messages",
+    "chars": 9809
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/37-runs.md",
+    "topic": "Runs",
+    "chars": 30045
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/38-run-steps.md",
+    "topic": "Run steps",
+    "chars": 11507
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/39-administration.md",
+    "topic": "Administration",
+    "chars": 443
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/40-admin-api-keys.md",
+    "topic": "Admin API Keys",
+    "chars": 5597
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/41-invites.md",
+    "topic": "Invites",
+    "chars": 5121
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/42-users.md",
+    "topic": "Users",
+    "chars": 3692
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/43-projects.md",
+    "topic": "Projects",
+    "chars": 5060
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/44-project-users.md",
+    "topic": "Project users",
+    "chars": 5066
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/45-project-service-accounts.md",
+    "topic": "Project service accounts",
+    "chars": 5032
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/46-project-api-keys.md",
+    "topic": "Project API keys",
+    "chars": 4815
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/47-project-rate-limits.md",
+    "topic": "Project rate limits",
+    "chars": 4253
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/48-audit-logs.md",
+    "topic": "Audit logs",
+    "chars": 9366
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/49-usage.md",
+    "topic": "Usage",
+    "chars": 4889
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/50-embeddings.md",
+    "topic": "Embeddings",
+    "chars": 3062
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/51-moderations.md",
+    "topic": "Moderations",
+    "chars": 3063
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/52-images.md",
+    "topic": "Images",
+    "chars": 9857
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/53-vector-stores.md",
+    "topic": "Vector stores",
+    "chars": 6820
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/54-certificates.md",
+    "topic": "Certificates",
+    "chars": 12642
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/55-completions.md",
+    "topic": "Completions",
+    "chars": 5786
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/56-streaming.md",
+    "topic": "Streaming",
+    "chars": 2127
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/57-realtime-beta.md",
+    "topic": "Realtime Beta",
+    "chars": 30
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/58-legacy.md",
+    "topic": "Legacy",
+    "chars": 250
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/59-realtime-beta-session-tokens.md",
+    "topic": "Realtime Beta session tokens",
+    "chars": 12201
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/60-realtime-beta-client-events.md",
+    "topic": "Realtime Beta client events",
+    "chars": 12796
+  },
+  {
+    "file": "/mnt/data/openai_api_split_v2/61-realtime-beta-server-events.md",
+    "topic": "Realtime Beta server events",
+    "chars": 37544
+  }
+]

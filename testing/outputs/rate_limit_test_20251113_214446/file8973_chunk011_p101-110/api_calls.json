@@ -1,0 +1,114 @@
+[
+  {
+    "image_ref": "#/pictures/0",
+    "timestamp": 1763063810.101496,
+    "duration": 3.0521769523620605,
+    "status": "success",
+    "description_length": 1220
+  },
+  {
+    "image_ref": "#/pictures/1",
+    "timestamp": 1763063812.8751,
+    "duration": 2.7735068798065186,
+    "status": "success",
+    "description_length": 1402
+  },
+  {
+    "image_ref": "#/pictures/2",
+    "timestamp": 1763063817.8929238,
+    "duration": 5.017743825912476,
+    "status": "success",
+    "description_length": 1415
+  },
+  {
+    "image_ref": "#/pictures/3",
+    "timestamp": 1763063822.326459,
+    "duration": 4.433290004730225,
+    "status": "success",
+    "description_length": 1397
+  },
+  {
+    "image_ref": "#/pictures/4",
+    "timestamp": 1763063827.778722,
+    "duration": 5.45219087600708,
+    "status": "success",
+    "description_length": 1613
+  },
+  {
+    "image_ref": "#/pictures/5",
+    "timestamp": 1763063831.1983511,
+    "duration": 3.419577121734619,
+    "status": "success",
+    "description_length": 1598
+  },
+  {
+    "image_ref": "#/pictures/6",
+    "timestamp": 1763063834.887855,
+    "duration": 3.689434051513672,
+    "status": "success",
+    "description_length": 1067
+  },
+  {
+    "image_ref": "#/pictures/7",
+    "timestamp": 1763063838.849472,
+    "duration": 3.9614930152893066,
+    "status": "success",
+    "description_length": 1360
+  },
+  {
+    "image_ref": "#/pictures/8",
+    "timestamp": 1763063843.167458,
+    "duration": 4.317901134490967,
+    "status": "success",
+    "description_length": 1705
+  },
+  {
+    "image_ref": "#/pictures/9",
+    "timestamp": 1763063846.9069571,
+    "duration": 3.7394423484802246,
+    "status": "success",
+    "description_length": 1693
+  },
+  {
+    "image_ref": "#/pictures/10",
+    "timestamp": 1763063850.531837,
+    "duration": 3.6248180866241455,
+    "status": "success",
+    "description_length": 1551
+  },
+  {
+    "image_ref": "#/pictures/11",
+    "timestamp": 1763063854.16357,
+    "duration": 3.6316778659820557,
+    "status": "success",
+    "description_length": 1612
+  },
+  {
+    "image_ref": "#/pictures/12",
+    "timestamp": 1763063857.580489,
+    "duration": 3.4168479442596436,
+    "status": "success",
+    "description_length": 1697
+  },
+  {
+    "image_ref": "#/pictures/13",
+    "timestamp": 1763063860.367532,
+    "duration": 2.7869760990142822,
+    "status": "success",
+    "description_length": 1196
+  },
+  {
+    "image_ref": "#/pictures/14",
+    "timestamp": 1763063863.791533,
+    "duration": 3.4239249229431152,
+    "status": "success",
+    "description_length": 1713
+  },
+  {
+    "image_ref": "#/pictures/15",
+    "timestamp": 1763063869.2058141,
+    "duration": 5.41417121887207,
+    "status": "success",
+    "description_length": 1492
+  }
+]

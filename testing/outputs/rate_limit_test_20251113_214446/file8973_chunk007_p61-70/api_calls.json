@@ -1,0 +1,93 @@
+[
+  {
+    "image_ref": "#/pictures/0",
+    "timestamp": 1763063424.690827,
+    "duration": 4.699217796325684,
+    "status": "error",
+    "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details"
+  },
+  {
+    "image_ref": "#/pictures/1",
+    "timestamp": 1763063427.6261,
+    "duration": 2.9351189136505127,
+    "status": "success",
+    "description_length": 719
+  },
+  {
+    "image_ref": "#/pictures/2",
+    "timestamp": 1763063432.120724,
+    "duration": 4.4945478439331055,
+    "status": "error",
+    "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details"
+  },
+  {
+    "image_ref": "#/pictures/3",
+    "timestamp": 1763063438.383478,
+    "duration": 6.2620298862457275,
+    "status": "success",
+    "description_length": 1454
+  },
+  {
+    "image_ref": "#/pictures/4",
+    "timestamp": 1763063440.671006,
+    "duration": 2.287332773208618,
+    "status": "success",
+    "description_length": 837
+  },
+  {
+    "image_ref": "#/pictures/5",
+    "timestamp": 1763063444.89193,
+    "duration": 4.220867156982422,
+    "status": "success",
+    "description_length": 1499
+  },
+  {
+    "image_ref": "#/pictures/6",
+    "timestamp": 1763063447.992815,
+    "duration": 3.1007959842681885,
+    "status": "success",
+    "description_length": 1113
+  },
+  {
+    "image_ref": "#/pictures/7",
+    "timestamp": 1763063449.323184,
+    "duration": 1.3300268650054932,
+    "status": "success",
+    "description_length": 134
+  },
+  {
+    "image_ref": "#/pictures/8",
+    "timestamp": 1763063452.1096802,
+    "duration": 2.7863831520080566,
+    "status": "success",
+    "description_length": 1315
+  },
+  {
+    "image_ref": "#/pictures/9",
+    "timestamp": 1763063456.003484,
+    "duration": 3.8937089443206787,
+    "status": "success",
+    "description_length": 1510
+  },
+  {
+    "image_ref": "#/pictures/10",
+    "timestamp": 1763063460.478189,
+    "duration": 4.474474906921387,
+    "status": "success",
+    "description_length": 1437
+  },
+  {
+    "image_ref": "#/pictures/11",
+    "timestamp": 1763063466.0855029,
+    "duration": 5.607120752334595,
+    "status": "success",
+    "description_length": 1129
+  },
+  {
+    "image_ref": "#/pictures/12",
+    "timestamp": 1763063474.1405609,
+    "duration": 8.054937839508057,
+    "status": "success",
+    "description_length": 750
+  }
+]

@@ -1,0 +1,346 @@
+[
+  {
+    "chunk_num": 1,
+    "original_text": "x",
+    "enriched_text": "x",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 2,
+    "original_text": "Inclined Plates    543 Horizontal Plates    544 Horizontal Cylinders and Spheres    544",
+    "enriched_text": "Inclined Plates    543 Horizontal Plates    544 Horizontal Cylinders and Spheres    544",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 3,
+    "original_text": "Natural Convection Cooling of Finned Surfaces ( Ts 5 constant)    548 Natural Convection Cooling of Vertical PCBs ( q . s 5 constant)    549 Mass Flow Rate through the Space between Plates    550",
+    "enriched_text": "Natural Convection Cooling of Finned Surfaces ( Ts 5 constant)    548 Natural Convection Cooling of Vertical PCBs ( q . s 5 constant)    549 Mass Flow Rate through the Space between Plates    550",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 4,
+    "original_text": "Effective Thermal Conductivity    553 Horizontal Rectangular Enclosures    553 Inclined Rectangular Enclosures    554 Vertical Rectangular Enclosures    555 Concentric Cylinders    555 Concentric Spheres    556\nCombined Natural Convection and Radiation    556",
+    "enriched_text": "Effective Thermal Conductivity    553 Horizontal Rectangular Enclosures    553 Inclined Rectangular Enclosures    554 Vertical Rectangular Enclosures    555 Concentric Cylinders    555 Concentric Spheres    556\nCombined Natural Convection and Radiation    556",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 5,
+    "original_text": "Edge-of-Glass U -Factor of a Window    570 Frame U -Factor    571 Interior and Exterior Surface Heat Transfer Coefficients    571 Overall U -Factor of Windows    572\nSummary    577 References and Suggested Reading    578 Problems    579",
+    "enriched_text": "Edge-of-Glass U -Factor of a Window    570 Frame U -Factor    571 Interior and Exterior Surface Heat Transfer Coefficients    571 Overall U -Factor of Windows    572\nSummary    577 References and Suggested Reading    578 Problems    579",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 6,
+    "original_text": "Boiling Regimes and the Boiling Curve    601 Natural Convection Boiling (to Point A on the Boiling Curve)    601 Nucleate Boiling (between Points A and C )    602 Transition Boiling (between Points C and D )    603 Film Boiling (beyond Point D )    603 Heat Transfer Correlations in Pool Boiling    604 Nucleate Boiling    604 Peak Heat Flux    605 Minimum Heat Flux    607 Film Boiling    607\nEnhancement of Heat Transfer in Pool Boiling    608",
+    "enriched_text": "Boiling Regimes and the Boiling Curve    601 Natural Convection Boiling (to Point A on the Boiling Curve)    601 Nucleate Boiling (between Points A and C )    602 Transition Boiling (between Points C and D )    603 Film Boiling (beyond Point D )    603 Heat Transfer Correlations in Pool Boiling    604 Nucleate Boiling    604 Peak Heat Flux    605 Minimum Heat Flux    607 Film Boiling    607\nEnhancement of Heat Transfer in Pool Boiling    608",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 7,
+    "original_text": "Flow Regimes    616 Heat Transfer Correlations for Film Condensation    616\nEffect of Vapor Velocity    622\nThe Presence of Noncondensable Gases in Condensers    622",
+    "enriched_text": "Flow Regimes    616 Heat Transfer Correlations for Film Condensation    616\nEffect of Vapor Velocity    622\nThe Presence of Noncondensable Gases in Condensers    622",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 8,
+    "original_text": "Topic of Special Interest:\nNon-Boiling Two-Phase Flow Heat Transfer    629\nApplication of Reynolds Analogy to Non-Boiling Two-Phase Flow    634 References    635\nSummary    636 References and Suggested Reading    637 Problems    638",
+    "enriched_text": "Topic of Special Interest:\nNon-Boiling Two-Phase Flow Heat Transfer    629\nApplication of Reynolds Analogy to Non-Boiling Two-Phase Flow    634 References    635\nSummary    636 References and Suggested Reading    637 Problems    638",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 9,
+    "original_text": "Fouling Factor    656",
+    "enriched_text": "Fouling Factor    656",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 10,
+    "original_text": "Counter-Flow Heat Exchangers    664 Multipass and Cross-Flow Heat Exchangers: Use of a Correction Factor    665",
+    "enriched_text": "Counter-Flow Heat Exchangers    664 Multipass and Cross-Flow Heat Exchangers: Use of a Correction Factor    665",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 11,
+    "original_text": "Heat Transfer Rate    686 Cost    686 Pumping Power    686 Size and Weight    686 Type    687 Materials    687 Other Considerations    687\nTopic of Special Interest: The Human Cardiovascular System as a Counter-Current Heat Exchanger    689\nSummary    695 References and Suggested Reading    696 Problems    696",
+    "enriched_text": "Heat Transfer Rate    686 Cost    686 Pumping Power    686 Size and Weight    686 Type    687 Materials    687 Other Considerations    687\nTopic of Special Interest: The Human Cardiovascular System as a Counter-Current Heat Exchanger    689\nSummary    695 References and Suggested Reading    696 Problems    696",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 12,
+    "original_text": "12-1 Introduction    716\n12-2 Thermal Radiation    717",
+    "enriched_text": "12-1 Introduction    716\n12-2 Thermal Radiation    717",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 13,
+    "original_text": "Solid Angle    726 Intensity of Emitted Radiation    727 Incident Radiation    729 Radiosity    729\nSpectral Quantities    729",
+    "enriched_text": "Solid Angle    726 Intensity of Emitted Radiation    727 Incident Radiation    729 Radiosity    729\nSpectral Quantities    729",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 14,
+    "original_text": "Emissivity    732 Absorptivity, Reflectivity, and Transmissivity    736 Kirchhoff's Law    739 The Greenhouse Effect    742",
+    "enriched_text": "Emissivity    732 Absorptivity, Reflectivity, and Transmissivity    736 Kirchhoff's Law    739 The Greenhouse Effect    742",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 15,
+    "original_text": "Topic of Special Interest: Solar Heat Gain through Windows    747\nSummary    754 References and Suggested Reading    755\nProblems    756",
+    "enriched_text": "Topic of Special Interest: Solar Heat Gain through Windows    747\nSummary    754 References and Suggested Reading    755\nProblems    756",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 16,
+    "original_text": "- 1  The Reciprocity Relation    772\n- 2  The Summation Rule    775\n- 3  The Superposition Rule    777\n- 4  The Symmetry Rule    778\nView Factors between Infinitely Long Surfaces:\n- The Crossed-Strings Method    780",
+    "enriched_text": "- 1  The Reciprocity Relation    772\n- 2  The Summation Rule    775\n- 3  The Superposition Rule    777\n- 4  The Symmetry Rule    778\nView Factors between Infinitely Long Surfaces:\n- The Crossed-Strings Method    780",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 17,
+    "original_text": "Radiosity    784\nNet Radiation Heat Transfer to or from a Surface    785 Net Radiation Heat Transfer between Any Two Surfaces    786 Methods of Solving Radiation Problems    787 Radiation Heat Transfer in Two-Surface Enclosures    788 Radiation Heat Transfer in Three-Surface Enclosures    790",
+    "enriched_text": "Radiosity    784\nNet Radiation Heat Transfer to or from a Surface    785 Net Radiation Heat Transfer between Any Two Surfaces    786 Methods of Solving Radiation Problems    787 Radiation Heat Transfer in Two-Surface Enclosures    788 Radiation Heat Transfer in Three-Surface Enclosures    790",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 18,
+    "original_text": "Radiation Effect on Temperature Measurements    798",
+    "enriched_text": "Radiation Effect on Temperature Measurements    798",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 19,
+    "original_text": "Radiation Properties of a Participating Medium    802 Emissivity and Absorptivity of Gases and Gas Mixtures    803",
+    "enriched_text": "Radiation Properties of a Participating Medium    802 Emissivity and Absorptivity of Gases and Gas Mixtures    803",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 20,
+    "original_text": "Summary    814 References and Suggested Reading    815\nProblems    816",
+    "enriched_text": "Summary    814 References and Suggested Reading    815\nProblems    816\n\n**[Image #/pictures/0 Description]:** Here is a description of the image:\n\nThe image shows the blurred text \"PtD\" in a light blue color. The text is positioned against a light blue background with a mottled or textured appearance, suggesting a watercolor effect or similar pattern. The letters are capitalized and the overall impression is simple and clean, despite the blur.\n\n**[Image #/pictures/1 Description]:** Here's a breakdown of the image:\n\n*   **Pie Chart:** The main element is a pie chart. Most of the slices are grey, while one slice is colored light blue.\n*   **Symbols:** Superimposed on the pie chart are a euro (\u20ac) and dollar ($) symbol. They are stylized and colored in blue.\n*   **Shape:** The pie chart itself seems to have a hollow center, resembling a CD or DVD.\n\n**[Image #/pictures/2 Description]:** Here's a detailed description of the image, focusing on the visible text, graphics, and logos:\n\n*   **Overall Impression:** The image appears to be a logo or icon featuring a laptop computer with a large, stylized text overlay on the screen.\n\n*   **Laptop Representation:** The laptop is depicted in a stylized, slightly cartoonish manner, with a slightly angled view, showing the screen and part of the keyboard. The color scheme is primarily grayscale.\n\n*   **Text on Screen:** The dominant element is the large text \"EES\" displayed on the laptop screen. The letters are thick, bold, and sans-serif. They are in a very dark color, providing high contrast against the lighter screen background.\n\n*   **Color:** The background of the entire logo is a square of bright blue color.",
+    "images": [
+      "#/pictures/0",
+      "#/pictures/1",
+      "#/pictures/2"
+    ],
+    "match_quality": [
+      "Proximity (page 10)",
+      "Proximity (page 10)",
+      "Proximity (page 10)"
+    ]
+  },
+  {
+    "chunk_num": 21,
+    "original_text": "Temperature    838 Conduction    838 Heat Generation    838 Convection    839",
+    "enriched_text": "Temperature    838 Conduction    838 Heat Generation    838 Convection    839",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 22,
+    "original_text": "1  Mass Basis    839 2  Mole Basis    840 Special Case: Ideal Gas Mixtures    841 Fick's Law of Diffusion: Stationary Medium Consisting of Two Species    841",
+    "enriched_text": "1  Mass Basis    839 2  Mole Basis    840 Special Case: Ideal Gas Mixtures    841 Fick's Law of Diffusion: Stationary Medium Consisting of Two Species    841",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 23,
+    "original_text": "- 14-5 Steady Mass Diffusion Through a Wall    850\n- 14-6 Water Vapor Migration in Buildings    854",
+    "enriched_text": "- 14-5 Steady Mass Diffusion Through a Wall    850\n- 14-6 Water Vapor Migration in Buildings    854",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 24,
+    "original_text": "Special Case: Gas Mixtures at Constant Pressure and Temperature    865 Diffusion of Vapor through a Stationary Gas: Stefan Flow    866\nEquimolar Counterdiffusion    868",
+    "enriched_text": "Special Case: Gas Mixtures at Constant Pressure and Temperature    865 Diffusion of Vapor through a Stationary Gas: Stefan Flow    866\nEquimolar Counterdiffusion    868",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 25,
+    "original_text": "Analogy Between Friction, Heat Transfer, and Mass Transfer Coefficients    877 Special Case: Pr < Sc < 1 (Reynolds Analogy)    877 General Case: Pr \u00de Sc \u00de 1 (Chilton-Colburn Analogy)    878 Limitation on the Heat-Mass Convection Analogy    879\nMass Convection Relations    879",
+    "enriched_text": "Analogy Between Friction, Heat Transfer, and Mass Transfer Coefficients    877 Special Case: Pr < Sc < 1 (Reynolds Analogy)    877 General Case: Pr \u00de Sc \u00de 1 (Chilton-Colburn Analogy)    878 Limitation on the Heat-Mass Convection Analogy    879\nMass Convection Relations    879",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 26,
+    "original_text": "Summary    888 References and Suggested Reading    890\nProblems    890\nc h, 1 = a p t e r f i f t e e n. (web, 1 = c h a p t e r ). COOLING OF ELECTRONIC EQUIPMENT, 1 = COOLING OF ELECTRONIC EQUIPMENT. 15-1, 1 = Introduction and History. 15-2, 1 = Manufacturing of Electronic Equipment. 15-3, 1 = Cooling Load of Electronic Equipment. 15-4, 1 = Thermal Environment. 15-5, 1 = Electronics Cooling in Different Applications. 15-6, 1 = Conduction Cooling. 15-7, 1 = Air Cooling: Natural Convection and Radiation. 15-8, 1 = Air Cooling: Forced Convection. 15-19, 1 = Liquid Cooling. 15-10, 1 = Immersion Cooling. , 1 = Summary References and. , 1 = Suggested Reading Problems. c h, 1 = a p t e r s i x t e e n. (web, 1 = c h a p t e r ). HEATING AND COOLING OF BUILDINGS, 1 = HEATING AND COOLING OF BUILDINGS. 16-1, 1 = A Brief History. 16-2, 1 = Human Body and Thermal Comfort. 16-3, 1 = Heat Transfer from the Human Body. 16-4, 1 = Design Conditions for Heating and Cooling. 16-5, 1 = Heat Gain from People, Lights, and Appliances. 16-6, 1 = Heat Transfer through Walls and Roofs. 16-7, 1 = Heat Loss from Basement Walls and Floors. 16-8, 1 = Heat Transfer through Windows. 16-9, 1 = Solar Heat Gain through Windows. 16-10, 1 = Infiltration Heat Load and Weatherizing. 16-11, 1 = Annual Energy Consumption Summary. c h a, 1 = p t e r s e v e n t e e n. (web c h a p t e r ) REFRIGERATION AND FREEZING OF FOODS, 1 = (web c h a p t e r ) REFRIGERATION AND FREEZING OF FOODS. 17-1, 1 = Control of Microorganisms in Foods. 17-2, 1 = Refrigeration and Freezing of Foods",
+    "enriched_text": "Summary    888 References and Suggested Reading    890\nProblems    890\nc h, 1 = a p t e r f i f t e e n. (web, 1 = c h a p t e r ). COOLING OF ELECTRONIC EQUIPMENT, 1 = COOLING OF ELECTRONIC EQUIPMENT. 15-1, 1 = Introduction and History. 15-2, 1 = Manufacturing of Electronic Equipment. 15-3, 1 = Cooling Load of Electronic Equipment. 15-4, 1 = Thermal Environment. 15-5, 1 = Electronics Cooling in Different Applications. 15-6, 1 = Conduction Cooling. 15-7, 1 = Air Cooling: Natural Convection and Radiation. 15-8, 1 = Air Cooling: Forced Convection. 15-19, 1 = Liquid Cooling. 15-10, 1 = Immersion Cooling. , 1 = Summary References and. , 1 = Suggested Reading Problems. c h, 1 = a p t e r s i x t e e n. (web, 1 = c h a p t e r ). HEATING AND COOLING OF BUILDINGS, 1 = HEATING AND COOLING OF BUILDINGS. 16-1, 1 = A Brief History. 16-2, 1 = Human Body and Thermal Comfort. 16-3, 1 = Heat Transfer from the Human Body. 16-4, 1 = Design Conditions for Heating and Cooling. 16-5, 1 = Heat Gain from People, Lights, and Appliances. 16-6, 1 = Heat Transfer through Walls and Roofs. 16-7, 1 = Heat Loss from Basement Walls and Floors. 16-8, 1 = Heat Transfer through Windows. 16-9, 1 = Solar Heat Gain through Windows. 16-10, 1 = Infiltration Heat Load and Weatherizing. 16-11, 1 = Annual Energy Consumption Summary. c h a, 1 = p t e r s e v e n t e e n. (web c h a p t e r ) REFRIGERATION AND FREEZING OF FOODS, 1 = (web c h a p t e r ) REFRIGERATION AND FREEZING OF FOODS. 17-1, 1 = Control of Microorganisms in Foods. 17-2, 1 = Refrigeration and Freezing of Foods",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 27,
+    "original_text": "- 17-3 Thermal Properties of Food\n- 17-4 Refrigeration of Fruits and Vegetables\n- 17-5 Refrigeration of Meats, Poultry, and Fish\n- 17-6 Refrigeration of Eggs, Milk, and Bakery Products\n- 17-7 Refrigeration Load of Cold Storage Rooms\n- 17-8 Transportation of Refrigerated Foods\nSummary References and Suggested Reading Problems",
+    "enriched_text": "- 17-3 Thermal Properties of Food\n- 17-4 Refrigeration of Fruits and Vegetables\n- 17-5 Refrigeration of Meats, Poultry, and Fish\n- 17-6 Refrigeration of Eggs, Milk, and Bakery Products\n- 17-7 Refrigeration Load of Cold Storage Rooms\n- 17-8 Transportation of Refrigerated Foods\nSummary References and Suggested Reading Problems",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 28,
+    "original_text": "Table A-1, 1 = Molar mass, gas constant, and ideal-gas specific heats of some substances 908. Table A-2, 1 = Boiling and freezing point properties 909. Table A-3, 1 = Properties of solid metals 910-912. Table A-4, 1 = Properties of solid nonmetals 913. Table A-5, 1 = Properties of building materials 914-915. Table A-6, 1 = Properties of insulating materials 916. Table A-7, 1 = Properties of common foods 917-918. Table A-8, 1 = Properties of miscellaneous materials 919. Table A-9, 1 = Properties of saturated water 920. Table A-10, 1 = Properties of saturated refrigerant-134a 921. Table A-11, 1 = Properties of saturated ammonia 922. Table A-12, 1 = Properties of saturated propane 923. Table A-13, 1 = Properties of liquids 924. Table A-14, 1 = Properties of liquid metals 925. Table A-15, 1 = Properties of air at 1 atm pressure 926. Table A-16, 1 = Properties of gases at 1 atm pressure 927-928. Table A-17, 1 = Properties of the atmosphere at high altitude 929. Table A-18, 1 = Emissivities of surfaces 930-931. Table A-19, 1 = Solar radiative properties of materials 932. FIGURE A-20, 1 = The Moody chart for the friction factor for fully developed flow in circular pipes 933\nxiii",
+    "enriched_text": "Table A-1, 1 = Molar mass, gas constant, and ideal-gas specific heats of some substances 908. Table A-2, 1 = Boiling and freezing point properties 909. Table A-3, 1 = Properties of solid metals 910-912. Table A-4, 1 = Properties of solid nonmetals 913. Table A-5, 1 = Properties of building materials 914-915. Table A-6, 1 = Properties of insulating materials 916. Table A-7, 1 = Properties of common foods 917-918. Table A-8, 1 = Properties of miscellaneous materials 919. Table A-9, 1 = Properties of saturated water 920. Table A-10, 1 = Properties of saturated refrigerant-134a 921. Table A-11, 1 = Properties of saturated ammonia 922. Table A-12, 1 = Properties of saturated propane 923. Table A-13, 1 = Properties of liquids 924. Table A-14, 1 = Properties of liquid metals 925. Table A-15, 1 = Properties of air at 1 atm pressure 926. Table A-16, 1 = Properties of gases at 1 atm pressure 927-928. Table A-17, 1 = Properties of the atmosphere at high altitude 929. Table A-18, 1 = Emissivities of surfaces 930-931. Table A-19, 1 = Solar radiative properties of materials 932. FIGURE A-20, 1 = The Moody chart for the friction factor for fully developed flow in circular pipes 933\nxiii",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 29,
+    "original_text": "A p p e n d i x 2 PROPERTY TABLES AND CHARTS, 1 = A p p e n d i x 2 PROPERTY TABLES AND CHARTS. A p p e n d i x 2 PROPERTY TABLES AND CHARTS, 2 = Table A-8E. A p p e n d i x 2 PROPERTY TABLES AND CHARTS, 3 = Properties of miscellaneous materials 946. (ENGLISH UNITS) 935, 1 = (ENGLISH UNITS) 935. (ENGLISH UNITS) 935, 2 = Table A-9E. (ENGLISH UNITS) 935, 3 = Properties of saturated water 947. Table A-1E, 1 = Molar mass, gas constant, and ideal-gas specific heats of some substances 936. Table A-1E, 2 = Table A-11E Table A-12E. Table A-1E, 3 = refrigerant-134a 948 Properties of saturated ammonia 949 Properties of saturated propane 950. Table A-2E, 1 = Boiling and freezing point properties 937. Table A-2E, 2 = Table A-3E Table A-14E. Table A-2E, 3 = Properties of liquids 951 Properties of liquid metals 952. Table A-3E, 1 = Properties of solid metals 938-939. Table A-3E, 2 = Table A-15E. Table A-3E, 3 = Properties of air at 1 atm pressure 953. Table A-4E, 1 = Properties of solid nonmentals 940. Table A-4E, 2 = Table A-16E. Table A-4E, 3 = Properties of gases at 1 atm. Table A-5E Table A-6E, 1 = Properties of building materials 941-942 Properties of insulating materials 943. Table A-5E Table A-6E, 2 = Table A-17E. Table A-5E Table A-6E, 3 = pressure 954-955 Properties of the atmosphere at high altitude 956. Table A-7E, 1 = Properties of common foods 944-945. Table A-7E, 2 = INDEX. Table A-7E, 3 = 957",
+    "enriched_text": "A p p e n d i x 2 PROPERTY TABLES AND CHARTS, 1 = A p p e n d i x 2 PROPERTY TABLES AND CHARTS. A p p e n d i x 2 PROPERTY TABLES AND CHARTS, 2 = Table A-8E. A p p e n d i x 2 PROPERTY TABLES AND CHARTS, 3 = Properties of miscellaneous materials 946. (ENGLISH UNITS) 935, 1 = (ENGLISH UNITS) 935. (ENGLISH UNITS) 935, 2 = Table A-9E. (ENGLISH UNITS) 935, 3 = Properties of saturated water 947. Table A-1E, 1 = Molar mass, gas constant, and ideal-gas specific heats of some substances 936. Table A-1E, 2 = Table A-11E Table A-12E. Table A-1E, 3 = refrigerant-134a 948 Properties of saturated ammonia 949 Properties of saturated propane 950. Table A-2E, 1 = Boiling and freezing point properties 937. Table A-2E, 2 = Table A-3E Table A-14E. Table A-2E, 3 = Properties of liquids 951 Properties of liquid metals 952. Table A-3E, 1 = Properties of solid metals 938-939. Table A-3E, 2 = Table A-15E. Table A-3E, 3 = Properties of air at 1 atm pressure 953. Table A-4E, 1 = Properties of solid nonmentals 940. Table A-4E, 2 = Table A-16E. Table A-4E, 3 = Properties of gases at 1 atm. Table A-5E Table A-6E, 1 = Properties of building materials 941-942 Properties of insulating materials 943. Table A-5E Table A-6E, 2 = Table A-17E. Table A-5E Table A-6E, 3 = pressure 954-955 Properties of the atmosphere at high altitude 956. Table A-7E, 1 = Properties of common foods 944-945. Table A-7E, 2 = INDEX. Table A-7E, 3 = 957",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 30,
+    "original_text": "H eat  and  mass  transfer  is  a  basic  science  that  deals  with  the  rate  of transfer  of  thermal  energy.  It  has  a  broad  application  area  ranging from biological systems to common household appliances, residential and commercial buildings, industrial processes, electronic devices, and food processing. Students are assumed to have an adequate background in calculus and physics. The completion of first courses in thermodynamics, fluid mechanics, and differential equations prior to taking heat transfer is desirable. However, relevant concepts from these topics are introduced and reviewed as needed.",
+    "enriched_text": "H eat  and  mass  transfer  is  a  basic  science  that  deals  with  the  rate  of transfer  of  thermal  energy.  It  has  a  broad  application  area  ranging from biological systems to common household appliances, residential and commercial buildings, industrial processes, electronic devices, and food processing. Students are assumed to have an adequate background in calculus and physics. The completion of first courses in thermodynamics, fluid mechanics, and differential equations prior to taking heat transfer is desirable. However, relevant concepts from these topics are introduced and reviewed as needed.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 31,
+    "original_text": "This book is intended for undergraduate engineering students in their sophomore or junior year, and as a reference book for practicing engineers. The objectives of this text are\n- To cover the basic principles of heat transfer.\n- To present a wealth of real-world engineering examples to give students a feel for how heat transfer is applied in engineering practice.\n- To develop an intuitive understanding of heat transfer by emphasizing the physics and physical arguments.\nIt is our hope that this book, through its careful explanations of concepts and its use of numerous practical examples and figures, helps the students develop the necessary skills to bridge the gap between knowledge and the confidence for proper application of that knowledge.\nIn engineering practice, an understanding of the mechanisms of heat transfer is becoming increasingly important since heat transfer plays a crucial role in the design of vehicles, power plants, refrigerators, electronic devices, buildings, and bridges, among other things. Even a chef needs to have an intuitive understanding of the heat transfer mechanism in order to cook the food 'right' by adjusting the rate of heat transfer. We may not be aware of it, but we already use the principles of heat transfer when seeking thermal comfort. We insulate our bodies by putting on heavy coats in winter, and we minimize heat gain by radiation by staying in shady places in summer. We speed up the cooling of hot food by blowing on it and keep warm in cold weather by cuddling up and thus minimizing the exposed surface area. That is, we already use heat transfer whether we realize it or not.",
+    "enriched_text": "This book is intended for undergraduate engineering students in their sophomore or junior year, and as a reference book for practicing engineers. The objectives of this text are\n- To cover the basic principles of heat transfer.\n- To present a wealth of real-world engineering examples to give students a feel for how heat transfer is applied in engineering practice.\n- To develop an intuitive understanding of heat transfer by emphasizing the physics and physical arguments.\nIt is our hope that this book, through its careful explanations of concepts and its use of numerous practical examples and figures, helps the students develop the necessary skills to bridge the gap between knowledge and the confidence for proper application of that knowledge.\nIn engineering practice, an understanding of the mechanisms of heat transfer is becoming increasingly important since heat transfer plays a crucial role in the design of vehicles, power plants, refrigerators, electronic devices, buildings, and bridges, among other things. Even a chef needs to have an intuitive understanding of the heat transfer mechanism in order to cook the food 'right' by adjusting the rate of heat transfer. We may not be aware of it, but we already use the principles of heat transfer when seeking thermal comfort. We insulate our bodies by putting on heavy coats in winter, and we minimize heat gain by radiation by staying in shady places in summer. We speed up the cooling of hot food by blowing on it and keep warm in cold weather by cuddling up and thus minimizing the exposed surface area. That is, we already use heat transfer whether we realize it or not.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 32,
+    "original_text": "This text is the outcome of an attempt to have a textbook for a practically oriented heat transfer course for engineering students. The text covers the standard topics of heat transfer with an emphasis on physics and real-world applications. This approach is more in line with students' intuition, and makes learning the subject matter enjoyable.\nThe philosophy that contributed to the overwhelming popularity of the prior editions of this book has remained unchanged in this edition. Namely, our goal has been to offer an engineering textbook that\n- Communicates directly to the minds of tomorrow's engineers in a simple yet precise manner.\n- Leads students toward a clear understanding and firm grasp of the basic principles of heat transfer.\n- Encourages creative thinking and development of a deeper understanding and intuitive feel for heat transfer.\n- Is read by students with interest and enthusiasm rather than being used as an aid to solve problems.\nSpecial effort has been made to appeal to students' natural curiosity and to help them explore the various facets of the exciting subject area of heat transfer. The enthusiastic response we received from the users of prior editionsfrom small colleges to large universities all over the world-indicates that our objectives have largely been achieved. It is our philosophy that the best way to learn is by practice. Therefore, special effort is made throughout the book to reinforce material that was presented earlier.\nYesterday's engineer spent a major portion of his or her time substituting values into the formulas and obtaining numerical results. However, now formula manipulations and number crunching are being left mainly to the computers. Tomorrow's engineer will have to have a clear understanding and a firm grasp of the basic principles so that he or she can understand even the most complex problems, formulate them, and interpret the results. A conscious effort is made to emphasize these basic principles while also providing students with a perspective at how computational tools are used in engineering practice.",
+    "enriched_text": "This text is the outcome of an attempt to have a textbook for a practically oriented heat transfer course for engineering students. The text covers the standard topics of heat transfer with an emphasis on physics and real-world applications. This approach is more in line with students' intuition, and makes learning the subject matter enjoyable.\nThe philosophy that contributed to the overwhelming popularity of the prior editions of this book has remained unchanged in this edition. Namely, our goal has been to offer an engineering textbook that\n- Communicates directly to the minds of tomorrow's engineers in a simple yet precise manner.\n- Leads students toward a clear understanding and firm grasp of the basic principles of heat transfer.\n- Encourages creative thinking and development of a deeper understanding and intuitive feel for heat transfer.\n- Is read by students with interest and enthusiasm rather than being used as an aid to solve problems.\nSpecial effort has been made to appeal to students' natural curiosity and to help them explore the various facets of the exciting subject area of heat transfer. The enthusiastic response we received from the users of prior editionsfrom small colleges to large universities all over the world-indicates that our objectives have largely been achieved. It is our philosophy that the best way to learn is by practice. Therefore, special effort is made throughout the book to reinforce material that was presented earlier.\nYesterday's engineer spent a major portion of his or her time substituting values into the formulas and obtaining numerical results. However, now formula manipulations and number crunching are being left mainly to the computers. Tomorrow's engineer will have to have a clear understanding and a firm grasp of the basic principles so that he or she can understand even the most complex problems, formulate them, and interpret the results. A conscious effort is made to emphasize these basic principles while also providing students with a perspective at how computational tools are used in engineering practice.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 33,
+    "original_text": "Some of the primary changes in this fifth edition of the text include new and expanded coverage of heat transfer in biological systems, a new section on the general solutions to selected differential equations, and inclusion of example problems and end of chapter problems which incorporate the new Prevention through Design (PtD) concept. The concept of PtD involves proper use of design to promote safety and reduce accidents and injuries. We also have incorporated over 350 new problems. Each chapter, with the exception of Chapters 5 and 6, now contains one new solved example problem based on the concept of PtD, and a significant part of existing problems were modified. All the popular features of the previous editions are retained. The main body of all chapters, the organization of the text, and the tables and charts in the appendices remain mostly unchanged.\nThe fifth edition also includes McGraw-Hill's Connect \u00ae Engineering. This  online  homework  management  tool  allows  assignment  of  algorithmic problems for homework, quizzes and tests. It connects students with the tools and resources they'll need to achieve success. To learn more, visit www.mcgrawhillconnect.com\nMcGraw-Hill LearnSmart\u2122 is  also  available  as  an  integrated  feature of  McGraw-Hill Connect \u00ae  Engineering. It is  an  adaptive  learning  system designed to help students learn faster, study more efficiently, and retain more knowledge for greater success. LearnSmart assesses a student's knowledge of course content through a series of adaptive questions. It pinpoints concepts the student does not understand and maps out a personalized study plan for success. Visit the following site for a demonstration: www.mhlearnsmart.com",
+    "enriched_text": "Some of the primary changes in this fifth edition of the text include new and expanded coverage of heat transfer in biological systems, a new section on the general solutions to selected differential equations, and inclusion of example problems and end of chapter problems which incorporate the new Prevention through Design (PtD) concept. The concept of PtD involves proper use of design to promote safety and reduce accidents and injuries. We also have incorporated over 350 new problems. Each chapter, with the exception of Chapters 5 and 6, now contains one new solved example problem based on the concept of PtD, and a significant part of existing problems were modified. All the popular features of the previous editions are retained. The main body of all chapters, the organization of the text, and the tables and charts in the appendices remain mostly unchanged.\nThe fifth edition also includes McGraw-Hill's Connect \u00ae Engineering. This  online  homework  management  tool  allows  assignment  of  algorithmic problems for homework, quizzes and tests. It connects students with the tools and resources they'll need to achieve success. To learn more, visit www.mcgrawhillconnect.com\nMcGraw-Hill LearnSmart\u2122 is  also  available  as  an  integrated  feature of  McGraw-Hill Connect \u00ae  Engineering. It is  an  adaptive  learning  system designed to help students learn faster, study more efficiently, and retain more knowledge for greater success. LearnSmart assesses a student's knowledge of course content through a series of adaptive questions. It pinpoints concepts the student does not understand and maps out a personalized study plan for success. Visit the following site for a demonstration: www.mhlearnsmart.com",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 34,
+    "original_text": "To prepare students for the Fundamentals of Engineering Exam and to facilitate multiple-choice tests, over 200 multiple-choice problems are included in  the  end-of-chapter  problem  sets  of  this  edition  also.  They  are  placed under the title 'Fundamentals of Engineering (FE) Exam Problems' for easy recognition. These problems are intended to check the understanding of fundamentals and to help readers avoid common pitfalls. The EES solutions of these problems are available for instructors for ease of facilitation and easy modification.",
+    "enriched_text": "To prepare students for the Fundamentals of Engineering Exam and to facilitate multiple-choice tests, over 200 multiple-choice problems are included in  the  end-of-chapter  problem  sets  of  this  edition  also.  They  are  placed under the title 'Fundamentals of Engineering (FE) Exam Problems' for easy recognition. These problems are intended to check the understanding of fundamentals and to help readers avoid common pitfalls. The EES solutions of these problems are available for instructors for ease of facilitation and easy modification.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 35,
+    "original_text": "In 2007, the National Institute for Occupational Safety and Health launched the National Prevention through Design (PtD) initiative, with the mission to prevent or reduce work-related injuries, illnesses, and fatalities by including prevention considerations in all circumstances that impact individuals in the workplace. As such, the concept of PtD involves applying the means of reducing risks and preventing hazards in the design of equipment, tools, processes, and work facilities. The PtD concept is first introduced in Chapter 1. The idea of having example problems and end of chapter problems throughout the different chapters in the text is not only to simply provide discussions of interesting real world applications, but also to introduce the concepts of PtD to the minds of tomorrow's engineers whereby they may influence a change in culture toward more emphasis on safety designs.",
+    "enriched_text": "In 2007, the National Institute for Occupational Safety and Health launched the National Prevention through Design (PtD) initiative, with the mission to prevent or reduce work-related injuries, illnesses, and fatalities by including prevention considerations in all circumstances that impact individuals in the workplace. As such, the concept of PtD involves applying the means of reducing risks and preventing hazards in the design of equipment, tools, processes, and work facilities. The PtD concept is first introduced in Chapter 1. The idea of having example problems and end of chapter problems throughout the different chapters in the text is not only to simply provide discussions of interesting real world applications, but also to introduce the concepts of PtD to the minds of tomorrow's engineers whereby they may influence a change in culture toward more emphasis on safety designs.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 36,
+    "original_text": "Thermal Comfort is presented as a Topic of Special Interest in Chapter 1. This section is expanded and the term thermoregulation is introduced in this section. Thermoregulation means the body has mechanisms to act as a thermostat, when the core body temperature deviates from the normal resting value. Thermoregulation in the human body is achieved by keeping a tight balance between heat gain and heat loss. The 'Bioheat Transfer Equation' introduced in Chapter 3 is used to calculate the heat transfer between a human body and its surroundings. Thermoregulation can be adjusted by both behavioral changes and physiological changes. Behavioral changes could be relocating to a more desirable environment within the structure or putting on more clothing. Physiological changes include blood vessel diameter changes and the production of sweat. However, under normal conditions, few of these changes\nare needed because of the efficient organization of arteries and veins; they are arranged as a counter-current heat exchanger. This concept is presented in Chapter 11 as a Topic of Special Interest 'The Human Cardiovascular System as a Counter-Current Heat Exchanger'.",
+    "enriched_text": "Thermal Comfort is presented as a Topic of Special Interest in Chapter 1. This section is expanded and the term thermoregulation is introduced in this section. Thermoregulation means the body has mechanisms to act as a thermostat, when the core body temperature deviates from the normal resting value. Thermoregulation in the human body is achieved by keeping a tight balance between heat gain and heat loss. The 'Bioheat Transfer Equation' introduced in Chapter 3 is used to calculate the heat transfer between a human body and its surroundings. Thermoregulation can be adjusted by both behavioral changes and physiological changes. Behavioral changes could be relocating to a more desirable environment within the structure or putting on more clothing. Physiological changes include blood vessel diameter changes and the production of sweat. However, under normal conditions, few of these changes\nare needed because of the efficient organization of arteries and veins; they are arranged as a counter-current heat exchanger. This concept is presented in Chapter 11 as a Topic of Special Interest 'The Human Cardiovascular System as a Counter-Current Heat Exchanger'.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 37,
+    "original_text": "Owing to the rapid advancement in fabrication techniques, the use of the miniaturized devices and components is ever increasing. Whether it is in the application of miniature heat exchangers, fuel cells, pumps, compressors, turbines, sensors, or artificial blood vessels, a sound understanding of fluid flow in micro-scale channels and tubes is essential. Microscale Heat Transfer is presented as a Topic of Special Interest in Chapter 6. This edition expands the coverage of plain mini and micro tubes to spiral micro-fin tubes in Chapter 8.",
+    "enriched_text": "Owing to the rapid advancement in fabrication techniques, the use of the miniaturized devices and components is ever increasing. Whether it is in the application of miniature heat exchangers, fuel cells, pumps, compressors, turbines, sensors, or artificial blood vessels, a sound understanding of fluid flow in micro-scale channels and tubes is essential. Microscale Heat Transfer is presented as a Topic of Special Interest in Chapter 6. This edition expands the coverage of plain mini and micro tubes to spiral micro-fin tubes in Chapter 8.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 38,
+    "original_text": "The application chapters 'Cooling of Electronic Equipment' (Chapter 15), 'Heating and Cooling of Buildings' (Chapter 16), and 'Refrigeration and Freezing of Foods' (Chapter 17) are available for download via the text website; go to www.mhhe.com/cengel for detailed coverage of these topics.",
+    "enriched_text": "The application chapters 'Cooling of Electronic Equipment' (Chapter 15), 'Heating and Cooling of Buildings' (Chapter 16), and 'Refrigeration and Freezing of Foods' (Chapter 17) are available for download via the text website; go to www.mhhe.com/cengel for detailed coverage of these topics.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 39,
+    "original_text": "With the exception of the changes already mentioned, minor changes are made in the main body of the text. Over 350 new problems are added, and a significant number of the existing problems are revised. The noteworthy changes in various chapters are summarized here for those who are familiar with the previous edition.\n- In Chapter 1, the concept of Prevention through Design (PtD) has been introduced by Dr. Clement C. Tang of University of North Dakota. In  addition,  the  coverage of Thermal Comfort presented as a Topic of Special Interest has been expanded by Dr. David A. Rubenstein of Stony Brook University.\n- In Chapter 2, a new section 'General Solution to Selected Differential Equations' is added.\n- In Chapter 3, a new section 'Bioheat Transfer Equation' is added.\n- In Chapter 5, the section on 'Interactive SS-T-CONDUCT Software' which introduced the software and demonstrated its use has been deleted and moved to text website. This information and the software are available from the online learning center (www.mhhe.com/cengel) to the instructors and students. The software can be used to solve or to check the solutions of many of the one- and two-dimensional heat conduction problems with uniform energy generation in rectangular geometries.\n- In Chapter 8, a new subsection 'Fully Developed Transitional Flow Heat Transfer' is added. Also, the coverage of subsections on 'Pressure Drop in the Transition Region' and 'Heat Transfer in the Transition Region' of the Topic of Special Interest on Transitional Flow in Tubes has been expanded.\n- In Chapter 10, the coverage of the Topic of Special Interest on 'NonBoiling Two-Phase Flow Heat Transfer' has been expanded and a new\nsubsection on 'Application of Reynolds Analogy to Non-Boiling TwoPhase Flow' has been added.\n- In Chapter 11, the coverage of Heat Exchangers has been expanded and this chapter now has the Topic of Special Interest 'The Human Cardiovascular System as a Counter-Current Heat Exchanger' contributed by Dr. David A. Rubenstein of Stony Brook University.\n- In Chapter 14, the section on Water Vapor Migration in Buildings has been expanded.",
+    "enriched_text": "With the exception of the changes already mentioned, minor changes are made in the main body of the text. Over 350 new problems are added, and a significant number of the existing problems are revised. The noteworthy changes in various chapters are summarized here for those who are familiar with the previous edition.\n- In Chapter 1, the concept of Prevention through Design (PtD) has been introduced by Dr. Clement C. Tang of University of North Dakota. In  addition,  the  coverage of Thermal Comfort presented as a Topic of Special Interest has been expanded by Dr. David A. Rubenstein of Stony Brook University.\n- In Chapter 2, a new section 'General Solution to Selected Differential Equations' is added.\n- In Chapter 3, a new section 'Bioheat Transfer Equation' is added.\n- In Chapter 5, the section on 'Interactive SS-T-CONDUCT Software' which introduced the software and demonstrated its use has been deleted and moved to text website. This information and the software are available from the online learning center (www.mhhe.com/cengel) to the instructors and students. The software can be used to solve or to check the solutions of many of the one- and two-dimensional heat conduction problems with uniform energy generation in rectangular geometries.\n- In Chapter 8, a new subsection 'Fully Developed Transitional Flow Heat Transfer' is added. Also, the coverage of subsections on 'Pressure Drop in the Transition Region' and 'Heat Transfer in the Transition Region' of the Topic of Special Interest on Transitional Flow in Tubes has been expanded.\n- In Chapter 10, the coverage of the Topic of Special Interest on 'NonBoiling Two-Phase Flow Heat Transfer' has been expanded and a new\nsubsection on 'Application of Reynolds Analogy to Non-Boiling TwoPhase Flow' has been added.\n- In Chapter 11, the coverage of Heat Exchangers has been expanded and this chapter now has the Topic of Special Interest 'The Human Cardiovascular System as a Counter-Current Heat Exchanger' contributed by Dr. David A. Rubenstein of Stony Brook University.\n- In Chapter 14, the section on Water Vapor Migration in Buildings has been expanded.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 40,
+    "original_text": "The authors believe that the emphasis in undergraduate education should re  main on developing a sense of un  der  lying physical mechanisms and a mastery of solving practical problems that an engineer is likely to face in the real world.",
+    "enriched_text": "The authors believe that the emphasis in undergraduate education should re  main on developing a sense of un  der  lying physical mechanisms and a mastery of solving practical problems that an engineer is likely to face in the real world.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 41,
+    "original_text": "An observant  mind  should  have  no  difficulty  understanding  engineering sciences. After all, the principles of engineering sciences are based on our everyday experiences and experimental observations . The process of cooking, for example, serves as an excellent vehicle to demonstrate the basic principles of heat transfer.",
+    "enriched_text": "An observant  mind  should  have  no  difficulty  understanding  engineering sciences. After all, the principles of engineering sciences are based on our everyday experiences and experimental observations . The process of cooking, for example, serves as an excellent vehicle to demonstrate the basic principles of heat transfer.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 42,
+    "original_text": "The material in the text is introduced at a level that an average student can follow comfortably. It speaks to students, not over students. In fact, it is selfinstructive . The order of coverage is from simple to general .",
+    "enriched_text": "The material in the text is introduced at a level that an average student can follow comfortably. It speaks to students, not over students. In fact, it is selfinstructive . The order of coverage is from simple to general .",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 43,
+    "original_text": "Art is an important learning tool that helps students 'get the picture.' The fifth edition of Heat and Mass Transfer: Fundamentals & Applications contains more figures and illustrations than any other book in this category.",
+    "enriched_text": "Art is an important learning tool that helps students 'get the picture.' The fifth edition of Heat and Mass Transfer: Fundamentals & Applications contains more figures and illustrations than any other book in this category.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 44,
+    "original_text": "Each chapter begins with an Overview of  the  material  to  be  covered  and chapter-specific Learning Objectives . A Summary is included at the end of each chapter, providing a quick review of basic concepts and important relations, and pointing out the relevance of the material.",
+    "enriched_text": "Each chapter begins with an Overview of  the  material  to  be  covered  and chapter-specific Learning Objectives . A Summary is included at the end of each chapter, providing a quick review of basic concepts and important relations, and pointing out the relevance of the material.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 45,
+    "original_text": "Each chapter contains several worked-out examples that  clarify the material and illustrate the use of the basic principles. An intuitive and systematic approach is used in the solution of the example problems, while maintaining an informal conversational style. The problem is first stated, and the objectives are iden  ti  fied. The assumptions are then stated, together with their justi  fi  ca  tions. The properties needed to solve the problem are listed separately,\nif appropriate. This approach is also used consistently in the solutions presented in the instructor's solutions manual.",
+    "enriched_text": "Each chapter contains several worked-out examples that  clarify the material and illustrate the use of the basic principles. An intuitive and systematic approach is used in the solution of the example problems, while maintaining an informal conversational style. The problem is first stated, and the objectives are iden  ti  fied. The assumptions are then stated, together with their justi  fi  ca  tions. The properties needed to solve the problem are listed separately,\nif appropriate. This approach is also used consistently in the solutions presented in the instructor's solutions manual.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 46,
+    "original_text": "The end-of-chapter problems are grouped under specific topics to make problem selection easier for both instructors and students. Within each group of problems are:\n- Concept Questions , indicated by 'C,' to check the students' level of understanding of basic concepts.\n- Review Problems are more comprehensive in nature and are not directly tied to any specific section of a chapter-in some cases they require review of material learned in previous chapters.\n- Fundamentals of Engineering (FE) Exam Problems are designed to help students prepare for the Fundamentals of Engineering exam, as they prepare for their Professional Engineering license.\nThese problems are 'Prevention through Design' related problems.\nThese  problems  are  solved  using  EES,  and  complete  solutions together  with  parametric  studies  are  included  on  the  textbook's website.\nThese problems are comprehensive in nature and are intended to be solved with a computer, possibly using the EES software.\n- Design and Essay are intended to encourage students to make engineering judgments, to conduct independent exploration of topics of interest, and to communicate their findings in a professional manner.\nSeveral economics- and safety-related problems are incorporated throughout to enhance cost and safety awareness among engineering students. Answers to selected problems are listed immediately following the problem for convenience to students.",
+    "enriched_text": "The end-of-chapter problems are grouped under specific topics to make problem selection easier for both instructors and students. Within each group of problems are:\n- Concept Questions , indicated by 'C,' to check the students' level of understanding of basic concepts.\n- Review Problems are more comprehensive in nature and are not directly tied to any specific section of a chapter-in some cases they require review of material learned in previous chapters.\n- Fundamentals of Engineering (FE) Exam Problems are designed to help students prepare for the Fundamentals of Engineering exam, as they prepare for their Professional Engineering license.\nThese problems are 'Prevention through Design' related problems.\nThese  problems  are  solved  using  EES,  and  complete  solutions together  with  parametric  studies  are  included  on  the  textbook's website.\nThese problems are comprehensive in nature and are intended to be solved with a computer, possibly using the EES software.\n- Design and Essay are intended to encourage students to make engineering judgments, to conduct independent exploration of topics of interest, and to communicate their findings in a professional manner.\nSeveral economics- and safety-related problems are incorporated throughout to enhance cost and safety awareness among engineering students. Answers to selected problems are listed immediately following the problem for convenience to students.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 47,
+    "original_text": "In recognition of the fact that English units are still widely used in some industries, both SI and English units are used in this text, with an emphasis on SI. The material in this text can be covered using combined SI/English units or SI units alone, depending on the preference of the instructor. The property tables and charts in the appendices are presented in both units, except the ones that involve dimensionless quantities. Problems, tables, and charts in English units are designated by ' E ' after the number for easy recognition, and they can be ignored by SI users.",
+    "enriched_text": "In recognition of the fact that English units are still widely used in some industries, both SI and English units are used in this text, with an emphasis on SI. The material in this text can be covered using combined SI/English units or SI units alone, depending on the preference of the instructor. The property tables and charts in the appendices are presented in both units, except the ones that involve dimensionless quantities. Problems, tables, and charts in English units are designated by ' E ' after the number for easy recognition, and they can be ignored by SI users.",
+    "images": [],
+    "match_quality": []
+  },
+  {
+    "chunk_num": 48,
+    "original_text": "Most chapters contain a real world application, end-of-chapter optional section called 'Topic of Special Interest' where interesting applications of heat transfer are discussed such as Thermal Comfort in Chapter 1, Heat Transfer through the Walls and Roofs in Chapter 3, Microscale Heat Transfer in Chapter 6, Transitional Flow in Tubes in Chapter 8, Heat Transfer through Windows in",
+    "enriched_text": "Most chapters contain a real world application, end-of-chapter optional section called 'Topic of Special Interest' where interesting applications of heat transfer are discussed such as Thermal Comfort in Chapter 1, Heat Transfer through the Walls and Roofs in Chapter 3, Microscale Heat Transfer in Chapter 6, Transitional Flow in Tubes in Chapter 8, Heat Transfer through Windows in",
+    "images": [],
+    "match_quality": []
+  }
+]

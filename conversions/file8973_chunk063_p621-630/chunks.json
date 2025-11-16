@@ -1,0 +1,470 @@
+{
+  "method": "docling-hybrid",
+  "chunks": [
+    {
+      "text": "When you fi  nish studying this chapter, you should be able to:\n- \u25a0 Differentiate between evaporation and boiling, and gain familiarity with different types of boiling,\n- \u25a0 Develop a good understanding of the boiling curve, and the   different boiling regimes   corresponding to different regions of the boiling curve,\n- \u25a0 Calculate the heat fl  ux and its critical value associated with nucleate boiling, and examine the methods of boiling heat transfer enhancement,\n- \u25a0 Derive a relation for the heat transfer coeffi  cient in laminar fi  lm condensation over a vertical plate,\n- \u25a0 \u25a0\n- Calculate the heat fl  ux associated with condensation on inclined and horizontal plates, vertical and horizontal cylinders or spheres, and tube bundles,\n- Examine dropwise condensation and understand the uncertainties associated with them.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/2' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=30.142, t=513.2220141601562, r=165.072, b=492.2120141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 63))]",
+          "self_ref='#/texts/3' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=30.142, t=483.22201416015616, r=163.659, b=438.2120141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 102))]",
+          "self_ref='#/texts/4' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=30.142, t=432.22201416015616, r=176.734, b=375.2120141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 147))]",
+          "self_ref='#/texts/5' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=30.142, t=369.22201416015616, r=165.859, b=312.2120141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 146))]",
+          "self_ref='#/texts/6' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=30.142, t=306.22201416015616, r=174.219, b=261.2120141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 109))]",
+          "self_ref='#/texts/7' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=30.142, t=253.78201416015622, r=35.469, b=184.04101416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 3))]",
+          "self_ref='#/texts/8' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=58.139, t=255.22201416015616, r=174.769, b=198.21201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 153))]",
+          "self_ref='#/texts/9' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=58.139, t=192.22201416015616, r=177.529, b=159.21201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 84))]"
+        ],
+        "headings": [
+          "OBJECTIVES"
+        ]
+      },
+      "tokens": 131
+    },
+    {
+      "text": "W e know from thermodynamics that when the temperature of a liquid at a specified pressure is raised to the saturation temperature T sat at that pressure, boiling occurs. Likewise, when the temperature of a vapor is lowered to T sat , condensation occurs. In this chapter we study the rates of heat transfer during such liquid-to-vapor and vapor-to-liquid phase transformations.\nAlthough boiling and condensation exhibit some unique features, they are considered to be forms of convection heat transfer since they involve fluid motion (such as the rise of the bubbles to the top and the flow of condensate to the bottom). Boiling and condensation differ from other forms of convection in that they depend on the latent heat of vaporization h fg of the fluid and the surface tension s at the liquid-vapor interface, in addition to the properties of the fluid in each phase. Noting that under equilibrium conditions the temperature remains constant during a phase-change process at a fixed pressure, large amounts of heat (due to the large latent heat of vaporization released or absorbed) can be transferred during boiling and condensation essentially at constant temperature. In practice, however, it is necessary to maintain some difference between the surface temperature Ts and T sat for effective heat transfer. Heat transfer coefficients h associated with boiling and condensation are typically much higher than those encountered in other forms of convection processes that involve a single phase.\nWe start this chapter with a discussion of the boiling curve and the modes of pool boiling such as free convection boiling, nucleate boiling, and film boiling. We then discuss boiling in the presence of forced convection. In the second part of this chapter, we describe the physical mechanism of film condensation and discuss condensation heat transfer in several geometrical arrangements and orientations. Finally, we introduce dropwise condensation and discuss ways of maintaining it.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/11' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=197.002, t=516.2080141601562, r=524.772, b=436.7850141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 378))]",
+          "self_ref='#/texts/12' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.14, t=432.2060141601562, r=524.816, b=226.7880141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1123))]",
+          "self_ref='#/texts/13' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.143, t=222.21001416015622, r=524.789, b=128.8120141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 486))]"
+        ],
+        "headings": [
+          "BOILING AND CONDENSATION"
+        ]
+      },
+      "tokens": 312
+    },
+    {
+      "text": "Many familiar engineering applications involve condensation and boiling heat transfer. In a household refrigerator, for example, the refrigerant absorbs heat from the refrigerated space by boiling in the evaporator section and rejects heat to the kitchen air by condensing in the condenser section (the long coils behind or under the refrigerator). Also, in steam power plants, heat is transferred to the steam in the boiler where water is vaporized, and the waste heat is rejected from the steam in the condenser where the steam is condensed. Some electronic components are cooled by boiling by immersing them in a fluid with an appropriate boiling temperature.\nBoiling is a liquid-to-vapor phase change process just like evaporation, but there are significant differences between the two. Evaporation occurs at the liquid-vapor interface when the vapor pressure is less than the saturation pressure of the liquid at a given temperature. Water in a lake at 20\u00b0C, for example, evaporates to air at 20\u00b0C and 60 percent relative humidity since the saturation pressure of water at 20\u00b0C is 2.3 kPa and the vapor pressure of air at 20\u00b0C and 60 percent relative humidity is 1.4 kPa (evaporation rates are determined in Chapter 14). Other examples of evaporation are the drying of clothes, fruits, and vegetables; the evaporation of sweat to cool the human body; and the rejection of waste heat in wet cooling towers. Note that evaporation involves no bubble formation or bubble motion (Fig. 10-1).\nBoiling ,  on the other hand, occurs at the solid-liquid interface when a liquid is brought into contact with a surface maintained at a temperature T s sufficiently  above  the  saturation  temperature T sat of  the  liquid  (Fig.  10-2).  At 1 atm, for example, liquid water in contact with a solid surface at 110\u00b0C boils since the saturation temperature of water at 1 atm is 100\u00b0C. The boiling process is characterized by the rapid formation of vapor bubbles at the solid-liquid interface that detach from the surface when they reach a certain size and attempt to rise to the free surface of the liquid. When cooking, we do not say water is boiling until we see the bubbles rising to the top. Boiling is a complicated phenomenon because of the large number of variables involved in the process and the complex fluid motion patterns caused by the bubble formation and growth.\nAs a form of convection heat transfer, the boiling heat flux from a solid surface to the fluid is expressed from Newton's law of cooling as\n$$\\dot { q } _ { b o l i l i n g } = h ( T _ { s } - T _ { s a t } ) = h \\Delta T _ { e x c e s s } \\quad ( W / m ^ { 2 } )$$\nwhere D T excess 5 Ts 2 T sat is called the excess temperature, which represents the temperature excess of the surface above the saturation temperature of the fluid.\nIn the preceding chapters we considered forced and free convection heat transfer involving a single phase of a fluid. The analysis of such convection processes involves the thermophysical properties r , m , k , and cp of the fluid. The analysis of boiling heat transfer involves these properties of the liquid (indicated by the subscript l ) or vapor (indicated by the subscript v ) as well as the properties hfg (the latent heat of vaporization) and s (the surface tension). The hfg represents the energy absorbed as a unit mass of liquid vaporizes at a specified temperature or pressure and is the primary quantity of energy transferred during boiling heat transfer. The hfg values of water at various temperatures are given in Table A-9.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/18' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=644.3660141601562, r=380.784, b=538.9360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 662))]",
+          "self_ref='#/texts/19' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.153, t=536.3530141601561, r=380.801, b=406.91901416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 828))]",
+          "self_ref='#/texts/20' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.136, t=404.3360141601562, r=380.792, b=274.9350141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 876))]",
+          "self_ref='#/texts/21' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.146, t=272.35201416015616, r=380.775, b=250.9320141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 139))]",
+          "self_ref='#/texts/22' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=130.372, t=247.30901416015615, r=378.144, b=230.9510141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 61))]",
+          "self_ref='#/texts/23' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=221.36601416015617, r=380.779, b=187.94501416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 165))]",
+          "self_ref='#/texts/24' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.135, t=185.36201416015615, r=380.799, b=67.94601416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 740))]"
+        ],
+        "headings": [
+          "10-1 \u25a0 BOILING HEAT TRANSFER"
+        ]
+      },
+      "tokens": 627
+    },
+    {
+      "text": "A liquid-to-vapor phase change process is called evaporation if it originates at a liquid-vapor interface and boiling if it occurs at a solid-liquid interface.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/34' parent=RefItem(cref='#/pictures/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=398.952, t=416.7620141601562, r=548.642, b=361.79201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 159))]"
+        ],
+        "headings": [
+          "FIGURE 10-1"
+        ]
+      },
+      "tokens": 24
+    },
+    {
+      "text": "Boiling occurs when a liquid is brought into contact with a surface at a temperature above the saturation temperature of the liquid.\nFIGURE 10-3 Classification of boiling on the basis of the presence of bulk fluid motion.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/44' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=398.682, t=162.9320141601562, r=548.642, b=119.46201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 132))]",
+          "self_ref='#/texts/55' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=30.142, t=298.60201416015616, r=179.032, b=265.8620141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 88))]"
+        ],
+        "headings": [
+          "FIGURE 10-2"
+        ]
+      },
+      "tokens": 37
+    },
+    {
+      "text": "Classification of boiling on the basis of the presence of bulk liquid temperature.\nBubbles owe their existence to the surface-tension s at the liquid-vapor interface due to the attraction force on molecules at the interface toward the liquid phase. The surface tension decreases with increasing temperature and becomes zero at the critical temperature. This explains why no bubbles are formed during boiling at supercritical pressures and temperatures. Surface tension has the unit N/m.\nThe boiling processes in practice do not occur under equilibrium conditions, and normally the bubbles are not in thermodynamic equilibrium with the surrounding liquid. That is, the temperature and pressure of the vapor in a bubble are usually different than those of the liquid. The pressure difference between the liquid and the vapor is balanced by the surface tension at the interface. The temperature difference between the vapor in a bubble and the surrounding liquid is the driving force for heat transfer between the two phases. When the liquid is at a lower temperature than the bubble, heat is transferred from the bubble into the liquid, causing some of the vapor inside the bubble to condense and the bubble eventually to collapse. When the liquid is at a higher temperature than the bubble, heat is transferred from the liquid to the bubble, causing the bubble to grow and rise to the top under the influence of buoyancy.\nBoiling is classified as pool boiling or flow boiling, depending on the presence of bulk fluid motion (Fig. 10-3). Boiling is called pool boiling in the absence of bulk fluid flow and flow boiling (or forced convection boiling ) in the presence of it. In pool boiling, the fluid body is stationary, and any motion of the fluid is due to natural convection currents and the motion of the bubbles under the influence of buoyancy. The boiling of water in a pan on top of a stove is an example of pool boiling. Pool boiling of a fluid can also be achieved by placing a heating coil in the fluid. In flow boiling, the fluid is forced to move in a heated pipe or over a surface by external means such as a pump. Therefore, flow boiling is always accompanied by other convection effects.\nPool and flow boiling are further classified as subcooled boiling or saturated boiling, depending on the bulk liquid temperature (Fig. 10-4). Boiling is said to be subcooled (or local ) when the temperature of the main body of the liquid is below the saturation temperature T sat (i.e., the bulk of the liquid is subcooled) and saturated (or bulk ) when the temperature of the liquid is equal to T sat (i.e., the bulk of the liquid is saturated). At the early stages of boiling, the bubbles are confined to a narrow region near the hot surface. This is because the liquid adjacent to the hot surface vaporizes as a result of being heated above its saturation temperature. But these bubbles disappear soon after they move away from the hot surface as a result of heat transfer from the bubbles to the cooler liquid surrounding them. This happens when the bulk of the liquid is at a lower temperature than the saturation temperature. The bubbles serve as 'energy movers' from the hot surface into the liquid body by absorbing heat from the hot surface and releasing it into the liquid as they condense and collapse. Boiling in this case is confined to a region in the locality of the hot surface and is appropriately called local or subcooled boiling. When the entire liquid body reaches the saturation temperature, the bubbles start rising to the top. We can see bubbles throughout the bulk of the liquid, and boiling in this case is called the bulk or saturated boiling. Next, we consider different boiling regimes in detail.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/78' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=30.142, t=100.82201416015619, r=172.622, b=68.85201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 82))]",
+          "self_ref='#/texts/79' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.244, t=664.9660141601562, r=524.917, b=595.5400141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 403))]",
+          "self_ref='#/texts/80' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.233, t=592.9570141601562, r=524.905, b=439.5210141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 933))]",
+          "self_ref='#/texts/81' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.222, t=436.9380141601562, r=524.88, b=307.5040141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 780))]",
+          "self_ref='#/texts/82' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.222, t=304.9210141601562, r=524.895, b=67.52701416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1525))]"
+        ],
+        "headings": [
+          "FIGURE 10-4"
+        ]
+      },
+      "tokens": 639
+    },
+    {
+      "text": "So far we presented some general discussions on boiling. Now we turn our attention to the physical mechanisms involved in pool boiling, that is, the boiling of stationary fluids. In pool boiling, the fluid is not forced to flow by a mover such as a pump, and any motion of the fluid is due to natural convection currents and the motion of the bubbles under the influence of buoyancy.\nAs a familiar example of pool boiling, consider the boiling of tap water in a pan on top of a stove. The water is initially at about 15\u00b0C, far below the saturation temperature of 100\u00b0C at standard atmospheric pressure. At the early stages of boiling, you will not notice anything significant except some bubbles that stick to the surface of the pan. These bubbles are caused by the release of air molecules dissolved in liquid water and should not be confused with vapor bubbles. As the water temperature rises, you will notice chunks of liquid water rolling up and down as a result of natural convection currents, followed by the first vapor bubbles forming at the bottom surface of the pan. These bubbles get smaller as they detach from the surface and start rising, and eventually collapse in the cooler water above. This is subcooled boiling since the bulk of the liquid water has not reached saturation temperature yet. The intensity of bubble formation increases as the water temperature rises further, and you will notice waves of vapor bubbles coming from the bottom and rising to the top when the water temperature reaches the saturation temperature (100\u00b0C at standard atmospheric conditions). This full scale boiling is the saturated boiling.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/85' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.142, t=644.3660141601562, r=380.784, b=586.9420141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 383))]",
+          "self_ref='#/texts/86' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.142, t=584.3590141601562, r=380.797, b=394.9180141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1252))]"
+        ],
+        "headings": [
+          "10-2 \u25a0 POOL BOILING"
+        ]
+      },
+      "tokens": 278
+    },
+    {
+      "text": "Boiling is probably the most familiar form of heat transfer, yet it remains to be the least understood form. After hundreds of papers written on the subject, we still do not fully understand the process of bubble formation and we must still rely on empirical or semi-empirical relations to predict the rate of boiling heat transfer.\nThe pioneering work on boiling was done in 1934 by S. Nukiyama, who used electrically heated nichrome and platinum wires immersed in liquids in his experiments. Nukiyama noticed that boiling takes different forms, depending on the value of the excess temperature D T excess . Four different boiling regimes are observed: natural convection boiling, nucleate boiling, transition boiling, and film boiling (Fig. 10-5). These regimes are illustrated on the boiling curve in Fig. 10-6, which is a plot of boiling heat flux versus the excess temperature. Although the boiling curve given in this figure is for water, the general shape of the boiling curve remains the same for different fluids. The specific shape of the curve depends on the fluid-heating surface mate-rial combination and the fluid pressure, but it is practically independent of the geometry of the heating surface. We now describe each boiling regime in detail.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/88' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.142, t=365.36601416015617, r=380.802, b=319.94301416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 332))]",
+          "self_ref='#/texts/89' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.142, t=317.3600141601562, r=380.867, b=175.93501416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 925))]"
+        ],
+        "headings": [
+          "Boiling Regimes and the Boiling Curve"
+        ]
+      },
+      "tokens": 203
+    },
+    {
+      "text": "We know from thermodynamics that a pure substance at a specified pressure starts boiling when it reaches the saturation temperature at that pressure. But in practice we do not see any bubbles forming on the heating surface until the liquid is heated a few degrees above the saturation temperature (about 2 to 6\u00b0C for water). Therefore, the liquid is slightly superheated in this case (a metastable\nFIGURE 10-5 Different boiling regimes in pool boiling.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/91' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.142, t=126.36601416015617, r=380.783, b=68.94201416015619, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 397))]",
+          "self_ref='#/texts/92' parent=RefItem(cref='#/pictures/4') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=413.932, t=99.85201416015616, r=548.642, b=67.11201416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 54))]"
+        ],
+        "headings": [
+          "Natural Convection Boiling (to Point A on the Boiling Curve)"
+        ]
+      },
+      "tokens": 74
+    },
+    {
+      "text": "Typical boiling curve for water at 1 atm pressure.\ncondition) and evaporates when it rises to the free surface. The fluid motion in this mode of boiling is governed by natural convection currents, and heat transfer from the heating surface to the fluid is by natural convection. For the conditions of Fig. 10-6, natural convection boiling ends at an excess temperature of about 5\u00b0C.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/123' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=30.142, t=478.1320141601562, r=167.332, b=457.66201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 50))]",
+          "self_ref='#/texts/179' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.242, t=441.1960141601562, r=524.866, b=395.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 331))]"
+        ],
+        "headings": [
+          "FIGURE 10-6"
+        ]
+      },
+      "tokens": 64
+    },
+    {
+      "text": "The first bubbles start forming at point A of the boiling curve at various preferential sites on the heating surface. Point A is referred to as the onset of nucleate boiling (ONB) . The bubbles form at an increasing rate at an increasing number of nucleation sites as we move along the boiling curve toward point C. From Fig. 10-6, nucleate boiling exists in the range from about 5\u00b0C to about 30\u00b0C.\nThe nucleate boiling regime can be separated into two distinct regions. In region A -B (5\u00b0C #D T excess # 10\u00b0C), isolated bubbles are  formed at various preferential nucleation sites on the heated surface. But these bubbles are dissipated in the   liquid shortly after they separate from the surface. The space vacated by the rising bubbles is filled by the liquid in the vicinity of the heater surface, and the process is repeated. The stirring and agitation caused by the entrainment of the liquid to the heater surface is primarily responsible for the increased heat transfer coefficient and heat flux in this region of nucleate boiling.\nIn region B -C (10\u00b0C # D T excess # 30\u00b0C), the heater temperature is further increased, and bubbles form at such great rates at such a large number of nucleation sites that they form numerous continuous columns of vapor in the liquid. These bubbles move all the way up to the free surface, where they break up and release their vapor content. The large heat fluxes obtainable in this region are caused by the combined effect of liquid entrainment and evaporation.\nAt large values of D T excess ,  the  rate  of  evaporation  at  the  heater  surface reaches such high values that a large fraction of the heater surface is covered by bubbles, making it difficult for the liquid to reach the heater surface and wet it. Consequently, the heat flux increases at a lower rate with increasing D T excess , and reaches a maximum at point C. The heat flux at this point is called the critical (or maximum ) heat flux ( CHF ), q \u00b7 max . For water, the critical heat flux exceeds 1 MW/m 2 . From Newton's law of cooling, the heat transfer   coefficient\nat point C is h 5 q \u00b7 max / D T excess 5 (10 6 W/m 2 )/30 K 5 3.3 3 10 4 W/m 2 \u00b7K. For the entire nucleate boiling range of Fig. 10-6, the heat transfer coefficient ranges from about 2000 to 30,000 W/m 2 \u00b7K, which is within the range of values tabulated in Table 1-5 for boiling.\nNucleate boiling is the most desirable boiling regime in practice because high heat transfer rates can be achieved in this regime with relatively small values of D T excess , typically under 30\u00b0C for water. The photographs in Fig. 10-7 show the nature of bubble formation and bubble motion associated with boiling.\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (2 images):\n==================================================\n\n**[Image: page6_img1.jpeg - Page 6]**\nHere's a description of the image:\n\nThe image is a black and white photograph showing a cooking scene on a stovetop. A metal pot sits on an electric burner, which is part of a stovetop. The pot appears to contain a mixture of white and dark specks, possibly food being cooked. A wooden spoon is partially submerged in the contents of the pot, suggesting stirring. Another burner is visible to the side, with its coiled heating element exposed. A handle of another pot or pan is visible in the upper left corner of the image.\n\n**[Image: page6_img2.jpeg - Page 6]**\nThe image shows a clear glass beaker filled with a liquid, likely water, that is actively boiling. Bubbles of various sizes are visible throughout the liquid, indicating the boiling process. The beaker is sitting on a hot plate, which has a black top and a perforated metal base. The word \"Thermo\" is partially visible on the side of the hot plate.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/181' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.242, t=366.1960141601562, r=524.872, b=308.7710141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 398))]",
+          "self_ref='#/texts/182' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.237, t=306.1880141601562, r=524.867, b=212.7680141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 640))]",
+          "self_ref='#/texts/183' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.233, t=210.1960141601562, r=524.877, b=140.77001416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 463))]",
+          "self_ref='#/texts/184' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.237, t=138.1960141601562, r=524.893, b=56.77601416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 578))]",
+          "self_ref='#/texts/186' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=669.9860141601562, r=380.771, b=620.5760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 279))]",
+          "self_ref='#/texts/187' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.145, t=617.9930141601562, r=380.798, b=572.5760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 314))]"
+        ],
+        "headings": [
+          "Nucleate Boiling (between Points A and C )"
+        ]
+      },
+      "tokens": 660
+    },
+    {
+      "text": "As the heater temperature and thus the D T excess is increased past point C , the heat flux decreases, as shown in Fig. 10-6. This is because a large fraction of the heater surface is covered by a vapor film, which acts as an insulation due to the low thermal conductivity of the vapor relative to that of the liquid. In the transition boiling regime, both nucleate and film boiling partially occur. Nucleate boiling at point C is completely replaced by film boiling at point D. Operation in the transition boiling regime, which is also called the unstable film boiling regime, is avoided in practice. For water, transition boiling occurs over the excess temperature range from about 30\u00b0C to about 120\u00b0C.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/189' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.139, t=540.9960141601562, r=380.803, b=435.56601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 704))]"
+        ],
+        "headings": [
+          "Transition Boiling (between Points C and D )"
+        ]
+      },
+      "tokens": 122
+    },
+    {
+      "text": "In this region the heater surface is completely covered by a continuous stable vapor film. Point D , where the heat flux reaches a minimum, is called the Leidenfrost point , in honor of J. C. Leidenfrost, who observed in 1756 that liquid droplets on a very hot surface jump around and slowly boil away. The presence of a vapor film between the heater surface and the liquid is responsible for the low heat transfer rates in the film boiling region. The heat transfer rate increases with increasing excess temperature as a result of heat transfer from the heated surface to the liquid through the vapor film by radiation, which becomes significant at high temperatures.\nA typical boiling process does not follow the boiling curve beyond point C , as Nukiyama has observed during his experiments. Nukiyama noticed, with surprise, that when the power applied to the nichrome wire immersed in water exceeded q \u00b7 max even slightly, the wire temperature increased suddenly to the melting point of the wire (1500 K) and burnout occurred beyond his control. When he repeated the experiments with platinum wire, which has a much higher melting point (2045 K), he was able to avoid burnout and maintain heat fluxes higher than q \u00b7 max . When he gradually reduced power, he obtained the cooling curve shown in Fig. 10-8 with a sudden drop in excess temperature when q \u00b7 min is  reached. Note that the boiling process cannot follow the transition boiling part of the boiling curve past point C unless the power applied is reduced suddenly.\nThe burnout phenomenon in boiling can be explained as follows: In order to move beyond point C where q \u00b7 max occurs, we must increase the heater surface temperature Ts . To increase Ts , however, we must increase the heat flux. But the fluid cannot receive this increased energy at an excess temperature just beyond point C. Therefore, the heater surface ends up absorbing the increased energy, causing the heater surface temperature Ts to rise. But the fluid can receive even less energy at this increased excess temperature, causing the heater surface temperature Ts to rise even further. This continues until the\n(\na\n)\n( b )",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/191' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=402.99601416015616, r=380.801, b=297.5650141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 668))]",
+          "self_ref='#/texts/192' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.134, t=294.9820141601562, r=380.817, b=153.57501416015612, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 858))]",
+          "self_ref='#/texts/193' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=150.99201416015615, r=380.798, b=56.29101416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 615))]",
+          "self_ref='#/texts/194' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=466.362, t=541.6680141601562, r=469.026, b=534.7280141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/195' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=469.026, t=541.5960141601562, r=473.026, b=534.8400141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/196' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=473.026, t=541.6680141601562, r=475.69, b=534.7280141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/197' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=465.882, t=333.8580141601562, r=475.21, b=326.9180141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 5))]"
+        ],
+        "headings": [
+          "Film Boiling (beyond Point D )"
+        ]
+      },
+      "tokens": 372
+    },
+    {
+      "text": "Nature of bubble formation and bubble motion associated with boiling. (a) \u00a9 David Chasey/Getty Image RF ; (b) \u00a9 McGraw-Hill Education \u00b7\nFIGURE 10-8 The actual boiling curve obtained with heated platinum wire in water as the heat flux is increased and then decreased.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/199' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=390.862, t=313.0020141601562, r=548.642, b=267.9760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 135))]",
+          "self_ref='#/texts/200' parent=RefItem(cref='#/pictures/8') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=390.142, t=101.89201416015612, r=548.646, b=57.65201416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 130))]"
+        ],
+        "headings": [
+          "FIGURE 10-7"
+        ]
+      },
+      "tokens": 44
+    },
+    {
+      "text": "\u00b7",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/238' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=37.542, t=664.8760141601562, r=39.542, b=657.7000141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]"
+        ],
+        "headings": [
+          "BOILING AND   CONDENSATION"
+        ]
+      },
+      "tokens": 1
+    },
+    {
+      "text": "An attempt to increase the boiling heat flux beyond the critical value often causes the temperature of the heating element to jump suddenly to a value that is above the melting point, resulting in burnout.\n\u00b7\nFIGURE 10-10 Different relations are used to determine the heat flux in different boiling regimes.\nsurface temperature reaches a point at which it no longer rises and the heat supplied can be transferred to the fluid steadily. This is point E on the boiling curve, which corresponds to very high surface temperatures. Therefore, any attempt to increase the heat flux beyond q \u00b7 max will cause the operation point on the boiling curve to jump suddenly from point C to point E. However, surface temperature that corresponds to point E is beyond the melting point of most heater materials, and burnout occurs. Therefore, point C on the boiling curve is also called the burnout point , and the heat flux at this point the burnout heat flux (Fig. 10-9).\nMost boiling heat transfer equipment in practice operate slightly below q \u00b7 max to avoid any disastrous burnout. However, in cryogenic applications involving fluids with very low boiling points such as oxygen and nitrogen, point E usually falls below the melting point of the heater materials, and steady film boiling can be used in those cases without any danger of burnout.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/259' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.142, t=482.8120141601562, r=185.412, b=416.34201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 205))]",
+          "self_ref='#/texts/260' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=40.669, t=397.30601416015617, r=42.669, b=390.1300141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/261' parent=RefItem(cref='#/pictures/10') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.277, t=235.35201416015616, r=172.467, b=191.11201416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 98))]",
+          "self_ref='#/texts/281' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.241, t=666.1960141601562, r=524.899, b=560.7700141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 649))]",
+          "self_ref='#/texts/282' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=562.1770141601562, r=524.842, b=500.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 375))]"
+        ],
+        "headings": [
+          "FIGURE 10-9"
+        ]
+      },
+      "tokens": 226
+    },
+    {
+      "text": "Boiling regimes discussed above differ considerably in their character, and thus different heat transfer relations need to be used for different boiling regimes (Fig. 10-10). In the natural convection boiling regime ( D T excess # 5\u00b0C), boiling is governed by natural convection currents, and heat transfer rates in this case can be determined accurately using natural convection relations presented in Chapter 9.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/284' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=472.1960141601562, r=524.864, b=402.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 413))]"
+        ],
+        "headings": [
+          "Heat Transfer Correlations in Pool Boiling"
+        ]
+      },
+      "tokens": 63
+    },
+    {
+      "text": "In  the nucleate boiling regime (5\u00b0C # D T excess # 30\u00b0C), the rate of heat transfer strongly depends on the nature of nucleation (the number of active nucleation sites on the surface, the rate of bubble formation at each site, etc.), which is difficult to predict. The type and the condition of the heated surface also affect the heat transfer. These complications made it difficult to develop theoretical relations for heat transfer in the nucleate boiling regime, and we had to rely on relations based on experimental data. The most widely used correlation for the rate of heat transfer in the nucleate boiling regime was proposed in 1952 by Rohsenow, and expressed as\n$$\\dot { q } _ { n u c l e a t e } = \\mu _ { l } h _ { f _ { \\i } } \\left [ \\frac { g ( \\rho _ { l } - \\rho _ { v } ) } { \\sigma } \\right ] ^ { 1 / 2 } \\left [ \\frac { \\hat { c } _ { p l } ( T _ { s } - T _ { s u } ) } { C _ { s f } h _ { f _ { \\i } } \\Pr _ { l } ^ { n } } \\right ] ^ { 3 } \\quad ( 1 0 ^ { - 2 } )$$\nwhere\nq \u00b7 nucleate 5\nnucleate boiling heat flux, W/m 2\nm\nl 5 viscosity of the liquid, kg/m\u00b7s\nhfg 5 enthalpy of vaporization, J/kg\ng 5 gravitational acceleration, m/s 2\nr l 5 density of the liquid, kg/m 3\nr v 5 density of the vapor, kg/m 3\ns 5 surface tension of liquid-vapor interface, N/m\ncpl 5 specific heat of the liquid, J/kg\u00b7\u00b0C\nTs 5\nsurface temperature of the heater, \u00b0C\nT sat 5\nsaturation temperature of the fluid, \u00b0C\nCsf 5 experimental constant that depends on surface-fluid combination\nPr l 5 Prandtl number of the liquid\nn 5 experimental constant that depends on the fluid\nIt can be shown easily that using property values in the specified units in the Rohsenow equation produces the desired unit W/m 2 for the boiling heat flux, thus saving one from having to go through tedious unit manipulations (Fig. 10-11).\nThe surface tension at the vapor-liquid interface is given in Table 10-1 for water, and Table 10-2 for some other fluids. Experimentally determined values of the constant Csf and n (fluid-dependent experimental constant) are given in Table 10-3 for various fluid-surface combinations. These values can be used for any geometry since it is found that the rate of heat transfer during nucleate boiling is essentially independent of the geometry and orientation of the heated surface. The fluid properties in Eq. 10-2 are to be evaluated at the saturation temperature T sat .\nThe condition of the heater surface greatly affects heat transfer, and the Rohsenow equation given above is applicable to clean and relatively smooth surfaces. The results obtained using the Rohsenow equation can be in error by 6 100% for the heat transfer rate for a given excess temperature and by 6 30% for the excess temperature for a given heat transfer rate. Therefore, care should be exercised in the interpretation of the results.\nRecall from thermodynamics that the enthalpy of vaporization hfg of a pure substance decreases with increasing pressure (or temperature) and reaches zero at the critical point. Noting that hfg appears in the denominator of the Rohsenow equation, we should see a significant rise in the rate of heat transfer at high pressures during nucleate boiling. Values of hfg for different substances are listed in Tables A-2 and A-9 to A-12.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/286' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=374.1960141601562, r=524.888, b=268.76501416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 671))]",
+          "self_ref='#/texts/287' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=268.662, t=260.6080141601562, r=522.244, b=234.81301416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 97))]",
+          "self_ref='#/texts/288' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.242, t=233.31601416015621, r=223.893, b=223.89701416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 5))]",
+          "self_ref='#/texts/289' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=211.556, t=225.30401416015616, r=251.654, b=210.56601416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 14))]",
+          "self_ref='#/texts/290' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=251.654, t=222.24801416015617, r=390.965, b=211.89701416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 33))]",
+          "self_ref='#/texts/291' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=231.508, t=207.13201416015613, r=238.385, b=200.85801416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/292' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=238.382, t=209.31601416015621, r=379.123, b=198.61101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 35))]",
+          "self_ref='#/texts/293' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=229.719, t=197.31601416015621, r=379.68, b=186.61101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 36))]",
+          "self_ref='#/texts/294' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=235.032, t=186.24801416015612, r=384.545, b=175.89601416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 37))]",
+          "self_ref='#/texts/295' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=232.778, t=174.24801416015612, r=368.825, b=162.61101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 35))]",
+          "self_ref='#/texts/296' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=231.644, t=162.24801416015612, r=368.225, b=150.61101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 34))]",
+          "self_ref='#/texts/297' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=233.251, t=149.31601416015621, r=448.49, b=139.89701416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 50))]",
+          "self_ref='#/texts/298' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=230.311, t=137.31601416015621, r=397.593, b=126.61101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 42))]",
+          "self_ref='#/texts/299' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=231.787, t=125.30601416015622, r=251.654, b=114.61101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 4))]",
+          "self_ref='#/texts/300' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=251.654, t=125.31601416015621, r=408.922, b=115.89701416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 37))]",
+          "self_ref='#/texts/301' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=226.863, t=113.30601416015622, r=251.654, b=102.56601416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 7))]",
+          "self_ref='#/texts/302' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=251.654, t=113.31601416015621, r=414.204, b=103.89701416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 39))]",
+          "self_ref='#/texts/303' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=228.9, t=101.31601416015621, r=521.85, b=90.61101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 69))]",
+          "self_ref='#/texts/304' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=229.047, t=89.31601416015621, r=373.275, b=78.61101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 35))]",
+          "self_ref='#/texts/305' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=235.032, t=77.31401416015615, r=453.169, b=67.89601416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 51))]",
+          "self_ref='#/texts/308' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=666.1960141601562, r=380.773, b=632.7760141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 239))]",
+          "self_ref='#/texts/309' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.139, t=630.1930141601562, r=380.796, b=535.4460141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 572))]",
+          "self_ref='#/texts/310' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.143, t=534.1950141601562, r=380.76, b=464.7690141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 438))]",
+          "self_ref='#/texts/311' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.135, t=462.1960141601562, r=380.782, b=392.7760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 431))]"
+        ],
+        "headings": [
+          "Nucleate Boiling"
+        ]
+      },
+      "tokens": 628
+    },
+    {
+      "text": "In the design of boiling heat transfer equipment, it is extremely important for the designer to have a knowledge of the maximum heat flux in order to avoid the danger of burnout. The maximum (or critical ) heat flux in nucleate pool boiling was determined theoretically by S. S. Kutateladze in Russia in 1948 and N. Zuber in the United States in 1958 using quite different approaches, and is expressed as\n$$\\dot { q } _ { \\max } = C _ { r r } h _ { f _ { g } } [ \\sigma g \\rho ^ { 2 } v \\left ( \\rho _ { l } - \\rho _ { v } \\right ) ] ^ { 1 / 4 } \\quad ( 1 0 ^ { - 3 } )$$\nwhere Ccr is a constant whose value depends on the heater geometry. Exhaustive experimental studies by Lienhard and his coworkers indicated that the value of Ccr is about 0.15. Specific values of Ccr for different heater geometries are listed in Table 10-4. Note that the heaters are classified as being large or small based on the value of the parameter L *.\nEquation 10-3 will give the maximum heat flux in W/m 2  if the properties are used in the units specified earlier in their descriptions following Eq. 10-2. The maximum heat flux is independent of the fluid-heating surface combination, as well as the viscosity, thermal conductivity, and the specific heat of the liquid.\nNote that r v increases but s and hfg decrease with increasing pressure, and thus the change in q \u00b7 max with pressure depends on which effect dominates. The experimental studies of Cichelli and Bonilla indicate that q \u00b7 max increases with pressure up to about one-third of the critical pressure, and then starts to decrease and becomes zero at the critical pressure. Also note that q \u00b7 max is proportional to hfg , and large maximum heat fluxes can be obtained using fluids with a large enthalpy of vaporization, such as water.\n$$\\dot { q } = & \\left ( \\frac { k g } { m \\cdot s } \\right ) \\left ( \\frac { J } { k g } \\right ) \\\\ & \\times \\left ( \\frac { \\frac { m } { s ^ { 2 } } \\frac { k g } { m ^ { 3 } } } { m } \\right ) ^ { 1 / 2 } \\left ( \\frac { \\frac { J } { k g \\cdot ^ { \\circ } C } } { k g } \\right ) ^ { 3 } \\\\ & = \\frac { W } { m } \\left ( \\frac { 1 } { m ^ { 2 } } \\right ) ^ { 1 / 2 } ( 1 ) ^ { 3 } \\\\ & = W / m ^ { 2 }$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/313' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=363.1960141601562, r=380.793, b=293.77001416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 404))]",
+          "self_ref='#/texts/314' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=153.579, t=291.3850141601562, r=378.144, b=276.2810141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 56))]",
+          "self_ref='#/texts/315' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=269.1960141601562, r=380.807, b=211.77401416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 359))]",
+          "self_ref='#/texts/316' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.138, t=209.1960141601562, r=380.764, b=151.77201416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 319))]",
+          "self_ref='#/texts/317' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.136, t=149.1960141601562, r=380.79, b=67.77601416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 527))]",
+          "self_ref='#/texts/318' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=429.442, t=650.6890141601561, r=532.002, b=540.7480141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 123))]"
+        ],
+        "headings": [
+          "Peak Heat Flux"
+        ]
+      },
+      "tokens": 494
+    },
+    {
+      "text": "Equation 10-2 gives the boiling heat flux in W/m 2 when the quantities are expressed in the units specified in their descriptions.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/320' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=390.142, t=509.0220141601562, r=548.648, b=465.5520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 130))]"
+        ],
+        "headings": [
+          "FIGURE 10-11"
+        ]
+      },
+      "tokens": 22
+    },
+    {
+      "text": "Surface tension of liquid-vapor interface for water\nT , 8 C, 1 = s , N/m*. 0, 1 = 0.0757. 20, 1 = 0.0727. 40, 1 = 0.0696. 60, 1 = 0.0662. 80, 1 = 0.0627. 100, 1 = 0.0589. 120, 1 = 0.0550. 140, 1 = 0.0509. 160, 1 = 0.0466. 180, 1 = 0.0422. 200, 1 = 0.0377. 220, 1 = 0.0331. 240, 1 = 0.0284. 260, 1 = 0.0237. 280, 1 = 0.0190. 300, 1 = 0.0144. 320, 1 = 0.0099. 340, 1 = 0.0056. 360, 1 = 0.0019. 374, 1 = 0.0\n*Multiply by 0.06852 to convert to lbf/ft or by 2.2046 to convert to lbm/s 2 .",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/322' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=413.742, t=425.7740141601562, r=538.734, b=406.6940141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 51))]",
+          "self_ref='#/tables/0' parent=RefItem(cref='#/body') children=[RefItem(cref='#/texts/323')] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=409.9555358886719, t=406.1818542480469, r=541.515380859375, b=160.45928955078125, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]",
+          "self_ref='#/texts/323' parent=RefItem(cref='#/tables/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FOOTNOTE: 'footnote'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=407.742, t=152.83801416015615, r=542.443, b=138.55101416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 78))]"
+        ],
+        "headings": [
+          "TABLE 10-1"
+        ]
+      },
+      "tokens": 112
+    },
+    {
+      "text": "Values of the coefficient Ccr for use in Eq. 10-3 for maximum heat flux (dimensionless parameter L * 5 L [ g ( r l -r v )/ s ] 1/2 )\nLarge horizontal flat heater, C cr = 0.149. Large horizontal flat heater, Charac. Dimension of Heater, L = Width or diameter. Large horizontal flat heater, Range of L * = L * > 27. Small horizontal flat heater 1, C cr = 18.9 K 1. Small horizontal flat heater 1, Charac. Dimension of Heater, L = Width or diameter. Small horizontal flat heater 1, Range of L * = 9 < L * < 20. Large horizontal cylinder, C cr = 0.12. Large horizontal cylinder, Charac. Dimension of Heater, L = Radius. Large horizontal cylinder, Range of L * = L * > 1.2. Small horizontal cylinder, C cr = 0.12 L * -0.25. Small horizontal cylinder, Charac. Dimension of Heater, L = Radius. Small horizontal cylinder, Range of L * = 0.15 < L * < 1.2. Large sphere, C cr = 0.11. Large sphere, Charac. Dimension of Heater, L = Radius. Large sphere, Range of L * = L * > 4.26. Small sphere, C cr = 0.227 L * -0.5. Small sphere, Charac. Dimension of Heater, L = Radius. Small sphere, Range of L * = 0.15 < L * < 4.26\n1 K 1 5 s /[ g ( r l -r v ) A heater ]",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/327' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=37.205, t=184.3020141601562, r=510.499, b=174.27901416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 132))]",
+          "self_ref='#/tables/1' parent=RefItem(cref='#/body') children=[RefItem(cref='#/texts/328')] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=34.45718765258789, t=174.95904541015625, r=518.7537841796875, b=83.4478759765625, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]",
+          "self_ref='#/texts/328' parent=RefItem(cref='#/tables/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FOOTNOTE: 'footnote'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=31.205, t=76.20901416015613, r=106.183, b=68.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 38))]"
+        ],
+        "headings": [
+          "TABLE 10-4"
+        ]
+      },
+      "tokens": 243
+    },
+    {
+      "text": "Surface tension of some fluids (from Suryanarayana, 1995, originally based on data from Jasper, 1972)\nAmmonia, -75 to -40 8 C:, Surface Tension, s , N/m* ( T in 8 C) = 0.0264 1 0.000223 T. Benzene, 10 to 80 8 C:, Surface Tension, s , N/m* ( T in 8 C) = 0.0315 - 0.000129 T. Butane, -70 to -20 8 C:, Surface Tension, s , N/m* ( T in 8 C) = 0.0149 - 0.000121 T. Carbon dioxide, -30 to -20 8 C:, Surface Tension, s , N/m* ( T in 8 C) = 0.0043 - 0.000160 T. Ethyl alcohol, 10 to 70 8 C:, Surface Tension, s , N/m* ( T in 8 C) = 0.0241 - 0.000083 T. Mercury, 5 to 200 8 C:, Surface Tension, s , N/m* ( T in 8 C) = 0.4906 - 0.000205 T. Methyl alcohol, 10 to 60 8 C:, Surface Tension, s , N/m* ( T in 8 C) = 0.0240 - 0.000077 T. Pentane, 10 to 30 8 C:, Surface Tension, s , N/m* ( T in 8 C) = 0.0183 - 0.000110 T. Propane, -90 to -10 8 C:, Surface Tension, s , N/m* ( T in 8 C) = 0.0092 - 0.000087 T\n*Multiply by 0.06852 to convert to lbf/ft or by 2.2046 to convert to lbm/s 2 .",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/330' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=205.112, t=646.2340141601562, r=517.286, b=627.1540141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 101))]",
+          "self_ref='#/tables/2' parent=RefItem(cref='#/body') children=[RefItem(cref='#/texts/331')] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=202.5773468017578, t=627.2242965698242, r=518.5758666992188, b=502.1339416503906, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]",
+          "self_ref='#/texts/331' parent=RefItem(cref='#/tables/2') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FOOTNOTE: 'footnote'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=199.112, t=494.2980141601562, r=430.467, b=488.0120141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 78))]"
+        ],
+        "headings": [
+          "TABLE 10-2"
+        ]
+      },
+      "tokens": 223
+    },
+    {
+      "text": "Values of the coefficient Csf and n for various fluid-surface combinations\nWater-copper (polished), C sf = 0.0130. Water-copper (polished), n = 1.0. Water-copper (scored), C sf = 0.0068. Water-copper (scored), n = 1.0. Water-stainless steel (mechanically polished), C sf = 0.0130. Water-stainless steel (mechanically polished), n = 1.0. Water-stainless steel (ground and polished), C sf = 0.0060. Water-stainless steel (ground and polished), n = 1.0. Water-stainless steel (teflon pitted), C sf = 0.0058. Water-stainless steel (teflon pitted), n = 1.0. Water-stainless steel (chemically etched), C sf = 0.0130. Water-stainless steel (chemically etched), n = 1.0. Water-brass, C sf = 0.0060. Water-brass, n = 1.0. Water-nickel, C sf = 0.0060. Water-nickel, n = 1.0. Water-platinum, C sf = 0.0130. Water-platinum, n = 1.0. n -Pentane-copper (polished), C sf = 0.0154. n -Pentane-copper (polished), n = 1.7. n -Pentane-chromium, C sf = 0.0150. n -Pentane-chromium, n = 1.7. Benzene-chromium, C sf = 0.1010. Benzene-chromium, n = 1.7. Ethyl alcohol-chromium, C sf = 0.0027. Ethyl alcohol-chromium, n = 1.7. Carbon tetrachloride-copper, C sf = 0.0130. Carbon tetrachloride-copper, n = 1.7. Isopropanol-copper, C sf = 0.0025. Isopropanol-copper, n = 1.7",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/333' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=205.252, t=437.8740141601562, r=490.422, b=428.5590141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 74))]",
+          "self_ref='#/tables/3' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=202.56944274902344, t=433.56195068359375, r=520.76904296875, b=238.55780029296875, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]"
+        ],
+        "headings": [
+          "TABLE 10-3"
+        ]
+      },
+      "tokens": 186
+    },
+    {
+      "text": "Minimum heat flux, which occurs at the Leidenfrost point, is of practical interest since it represents the lower limit for the heat flux in the film boiling regime. Using the stability theory, Zuber (1958) derived the following expression for the minimum heat flux for a large horizontal plate,\n$$\\dot { q } _ { \\min } = 0 . 0 9 \\rho _ { v } \\, h _ { f _ { 8 } } \\left [ \\frac { \\sigma g ( \\rho _ { l } - \\rho _ { v } ) } { ( \\rho _ { l } + \\rho _ { v } ) ^ { 2 } } \\right ] ^ { 1 / 4 }$$\nwhere the constant 0.09 was determined by Berensen in 1961. He replaced the theoretically determined value of p 24 by 0.09 to match the experimental data better. Still, the relation above can be in error by 50 percent or more.\nOperation in the transition boiling regime (30\u00b0C # D T excess # 120\u00b0C) is normally avoided in the design of heat transfer equipment, and thus no major attempt has been made to develop general correlations for boiling heat transfer in this regime. However, the upper ( peak heat flux , q \u00b7 max ) and the lower ( minimum heat flux , q \u00b7 min ) limits of this region are of interest to heat transfer equipment designers.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/337' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=650.5460141601562, r=380.723, b=605.1230141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 294))]",
+          "self_ref='#/texts/338' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=150.662, t=596.6880141601562, r=378.134, b=572.2030141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 71))]",
+          "self_ref='#/texts/339' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.137, t=562.7660141601561, r=380.776, b=529.3460141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 226))]",
+          "self_ref='#/texts/340' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.136, t=526.7660141601561, r=380.76, b=457.3460141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 416))]"
+        ],
+        "headings": [
+          "Minimum Heat Flux"
+        ]
+      },
+      "tokens": 241
+    },
+    {
+      "text": "Using an analysis similar to Nusselt's theory on filmwise condensation presented in the next section, Bromley (1950) developed a theory for the prediction of heat flux for stable film boiling on the outside of a horizontal cylinder. The heat flux for film boiling on a horizontal cylinder or sphere of diameter D is given by\n$$\\dot { q } _ { f i m } = C _ { f i m } \\left [ \\frac { g k _ { v } ^ { 3 } \\rho _ { v } \\left ( \\rho _ { l } - \\rho _ { v } \\right ) [ h _ { f _ { \\beta } } + 0 . 4 c _ { p v } \\left ( T _ { s } - T _ { s a t } \\right ) ] } { \\mu _ { v } \\, D ( T _ { s } - T _ { s a t } ) } \\right ] ^ { \\imath / 4 } \\left ( T _ { s } - T _ { s a t } \\right ) \\, \\left ( 1 0 ^ { - 5 } \\right )$$\nwhere kv is the thermal conductivity of the vapor in W/m\u00b7K and\n$$C _ { f i l m } = \\begin{cases} 0 . 6 2 \\, \\text {for horizontal cylinders} \\\\ 0 . 6 7 \\, \\text {for spheres} \\end{cases}$$\nOther properties are as listed before in connection with Eq. 10-2. We used a modified latent heat of vaporization in Eq. 10-5 to account for the heat transfer associated with the superheating of the vapor.\nThe vapor properties are to be evaluated at the film temperature Tf 5 ( Ts 1 T sat )/2, which is the average temperature of the vapor film. The liquid properties and hfg are to be evaluated at the saturation temperature at the specified pressure. Again, this relation gives the film boiling heat flux in W/m 2 if the properties are used in the units specified earlier in their descriptions following Eq. 10-2.\nAt high surface temperatures (typically above 300\u00b0C), heat transfer across the vapor film by radiation becomes significant and needs to be considered (Fig. 10-12). Treating the vapor film as a transparent medium sandwiched between two large parallel plates and approximating the liquid as a blackbody, radiation heat transfer can be determined from\n$$\\dot { q } _ { r a d } = \\varepsilon \\sigma \\left ( T _ { s } ^ { 4 } - T _ { s a t } ^ { 4 } \\right )$$\nwhere e is the emissivity of the heating surface and s 5 5.67 3 10 2 8 W/m 2 \u00b7K 4 is the Stefan-Boltzman constant. Note that the temperature in this case must be expressed in K, not \u00b0C, and that surface tension and the Stefan-Boltzman constant share the same symbol.\nFIGURE 10-12\nAt high heater surface temperatures, radiation heat transfer becomes significant during film boiling.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "63/100",
+        "doc_items": [
+          "self_ref='#/texts/342' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=427.7660141601562, r=380.797, b=382.3430141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 324))]",
+          "self_ref='#/texts/343' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=84.76, t=378.09001416015616, r=378.134, b=352.4710141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 126))]",
+          "self_ref='#/texts/344' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=344.7660141601562, r=320.787, b=334.06101416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 62))]",
+          "self_ref='#/texts/345' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=140.022, t=321.50801416015616, r=290.754, b=299.68601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 59))]",
+          "self_ref='#/texts/346' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=292.5460141601562, r=380.743, b=259.1240141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 205))]",
+          "self_ref='#/texts/347' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.129, t=256.5460141601562, r=380.77, b=199.12601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 409))]",
+          "self_ref='#/texts/348' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.129, t=196.5430141601562, r=380.797, b=139.1190141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 348))]",
+          "self_ref='#/texts/349' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=175.277, t=136.2350141601562, r=378.134, b=120.65201416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 39))]",
+          "self_ref='#/texts/350' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=114.47801416015614, r=380.756, b=68.12301416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 266))]",
+          "self_ref='#/texts/363' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=486.672, t=241.01201416015618, r=546.142, b=232.0790141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 12))]",
+          "self_ref='#/texts/364' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=400.912, t=228.74201416015615, r=548.642, b=196.77201416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 101))]"
+        ],
+        "headings": [
+          "Film Boiling"
+        ]
+      },
+      "tokens": 512
+    }
+  ],
+  "total_chunks": 26,
+  "original_document": "file8973.pdf",
+  "pdf_chunk": "file8973_chunk063_p621-630",
+  "config": {
+    "max_tokens": 2048,
+    "merge_peers": true,
+    "enable_picture_description": true,
+    "picture_description_max_tokens": 800,
+    "vision_model": "gemini-2.0-flash",
+    "enable_formula": true,
+    "enable_ocr": true,
+    "enable_table_structure": true
+  }
+}

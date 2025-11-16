@@ -1,0 +1,20 @@
+{
+  "original_document": "file8973.pdf",
+  "pdf_chunk": "file8973_chunk017_p161-170",
+  "total_chunks": 16,
+  "config": {
+    "max_tokens": 2048,
+    "merge_peers": true,
+    "enable_picture_description": true,
+    "picture_description_max_tokens": 800,
+    "vision_model": "gemini-2.0-flash",
+    "enable_formula": true,
+    "enable_ocr": true,
+    "enable_table_structure": true
+  },
+  "outputs": {
+    "full_markdown": "conversions/file8973_chunk017_p161-170/full_document_chunk17.md",
+    "images_folder": "conversions/file8973_chunk017_p161-170/images",
+    "semantic_chunks": "conversions/file8973_chunk017_p161-170/chunks.json"
+  }
+}

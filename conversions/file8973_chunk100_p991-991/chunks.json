@@ -1,0 +1,32 @@
+{
+  "method": "docling-hybrid",
+  "chunks": [
+    {
+      "text": "Total hemispherical emissivity, 733, 1 = Vapor resistance, 856. Total solar radiance, 743, 1 = Vapor retarders, 854. Transient analysis, 859, 1 = Vapor velocity, effect of, 622. Transient heat conduction, 237-307, 334-352, 1 = Variables, differential equations, 115-116. boundary nodes, 326-330, 1 = Variable thermal conductivity, 112-115. control of microorganisms in food, 276-287, 1 = Velocity boundary layer, 387-389, 477. irregular boundaries, 330-334, 1 = boundary layer region, 388. large plane walls, long cylinders, spheres with spatial effects,, 1 = dynamic viscosity, 388. 244-260, 1 = friction coefficient, 389. lumped system analysis, 238-244, 1 = irrotational flow region, 388. in multidimensional systems, 268-276, 1 = kinematic viscosity, 388. one-dimensional solution, 247-260, 1 = Newtonian fluids, 388. in semi-infinite solids, 261-268, 1 = skin friction coefficient, 389. square mesh, 326, 1 = wall shear stress, 388. two-dimensional transient heat conduction, 347-352, 1 = Ventilation, 48. Transient mass diffusion, 859-861, 1 = Vertical cylinders, 543. penetration depth, 860, 1 = Vertical plates, heat transfer correlations for, 616-620. transient analysis, 859, 1 = Vertical plates ( q s = constant), 541, 543. Transitional boiling, 603, 1 = Vertical plates ( T s = constant), 541. Transitional flow in tubes, 507-517, 1 = Vertical rectangular enclosures, 555. heat transfer in transition region, 512-517, 1 = Vertical tubes, heat transfer correlations for, 621. pressure drop in transition region, 508-511, 1 = View factor, 768-771. pressure drop in transition region, mini and micro tubes, 517, 1 = View factor relations, radiation heat transfer,. Transmissivity, 736, 1 = 771-782 crossed string method, 780-782. Turbulent flow in noncircular tubes, 500 Turbulent flow in tubes, 496-507, 1 = reciprocity relation, 772-775. Colebrook equation, 498, 1 = summation rule, 775-776. developing turbulent flow in entrance region, 500, 1 = superimposition rule, 777-778. flow through tube annulus, 500-501, 1 = symmetry rule, 778-780. fully developed transitional flow heat transfer, 497-498, 1 = view factors between infinitely long surfaces,. heat transfer enhancement, 501, 1 = 780-782. Moody chart, 498-499, 1 = View factors between infinitely long surfaces,. nominal diameter, 499 pipe schedule, 499, 1 = 780-782 Viscous sublayer, 391. rough surfaces, 498-499, 1 = Viscous versus inviscid regions of flow, 384. turbulent flow in noncircular tubes, 500, 1 = Volume expansion coefficient, 534. Turbulent layer, 391, 1 = Volume flow rate, 14. Turbulent shear stress, 393, 1 = Volumetric phenomenon, 718-719. Turbulent stress, 393, 1 = . Turbulent thermal conductivity, 393, 1 = W. Turbulent viscosity, 393, 1 = Wake, 426. Two-dimensional transient heat conduction, 347-352 Two-surface enclosures, radiation heat transfer, 788-789, 1 = Wall shear stress, 388. , 1 = Water vapor migration in buildings, 854-858. U, 1 = relative humidity, 856. U -factor, 567, 1 = saturation pressure, 856. Ultraviolet radiation, 718, 1 = vapor barriers, 854 vapor pressure,. Uniform heat flux, 432, 1 = 856 vapor resistance, 856. Unit thermal resistance of clothing, 811, 1 = vapor retarders,. Upstream velocity, 424, 1 = 854. V, 1 = Wein's displacement law, 720. Vapor barriers, 854, 1 = X. Vapor pressure, 856, 1 = X-momentum equation, 396",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "100/100",
+        "doc_items": [
+          "self_ref='#/tables/0' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.DOCUMENT_INDEX: 'document_index'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=11.168930053710938, t=673.1139106750488, r=484.6502685546875, b=72.3282470703125, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]"
+        ],
+        "headings": [
+          "INDEX"
+        ]
+      },
+      "tokens": 507
+    }
+  ],
+  "total_chunks": 1,
+  "original_document": "file8973.pdf",
+  "pdf_chunk": "file8973_chunk100_p991-991",
+  "config": {
+    "max_tokens": 2048,
+    "merge_peers": true,
+    "enable_picture_description": true,
+    "picture_description_max_tokens": 800,
+    "vision_model": "gemini-2.0-flash",
+    "enable_formula": true,
+    "enable_ocr": true,
+    "enable_table_structure": true
+  }
+}

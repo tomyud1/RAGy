@@ -1,0 +1,212 @@
+[
+  {
+    "image_ref": "#/pictures/0",
+    "timestamp": 1763063592.2587452,
+    "duration": 3.2795772552490234,
+    "status": "success",
+    "description_length": 1459
+  },
+  {
+    "image_ref": "#/pictures/1",
+    "timestamp": 1763063596.204052,
+    "duration": 3.9451870918273926,
+    "status": "success",
+    "description_length": 554
+  },
+  {
+    "image_ref": "#/pictures/2",
+    "timestamp": 1763063600.818686,
+    "duration": 4.614567995071411,
+    "status": "success",
+    "description_length": 559
+  },
+  {
+    "image_ref": "#/pictures/3",
+    "timestamp": 1763063603.508302,
+    "duration": 2.6895511150360107,
+    "status": "success",
+    "description_length": 1044
+  },
+  {
+    "image_ref": "#/pictures/4",
+    "timestamp": 1763063609.949151,
+    "duration": 6.440760135650635,
+    "status": "success",
+    "description_length": 1617
+  },
+  {
+    "image_ref": "#/pictures/5",
+    "timestamp": 1763063614.171006,
+    "duration": 4.221745014190674,
+    "status": "success",
+    "description_length": 1094
+  },
+  {
+    "image_ref": "#/pictures/6",
+    "timestamp": 1763063616.693932,
+    "duration": 2.5228750705718994,
+    "status": "success",
+    "description_length": 306
+  },
+  {
+    "image_ref": "#/pictures/7",
+    "timestamp": 1763063619.7359,
+    "duration": 3.04190993309021,
+    "status": "success",
+    "description_length": 1189
+  },
+  {
+    "image_ref": "#/pictures/8",
+    "timestamp": 1763063622.482624,
+    "duration": 2.746657133102417,
+    "status": "success",
+    "description_length": 984
+  },
+  {
+    "image_ref": "#/pictures/9",
+    "timestamp": 1763063623.736574,
+    "duration": 1.2538938522338867,
+    "status": "success",
+    "description_length": 408
+  },
+  {
+    "image_ref": "#/pictures/10",
+    "timestamp": 1763063625.559703,
+    "duration": 1.8231029510498047,
+    "status": "success",
+    "description_length": 769
+  },
+  {
+    "image_ref": "#/pictures/11",
+    "timestamp": 1763063628.9628968,
+    "duration": 3.4031097888946533,
+    "status": "success",
+    "description_length": 1593
+  },
+  {
+    "image_ref": "#/pictures/12",
+    "timestamp": 1763063633.48244,
+    "duration": 4.519451856613159,
+    "status": "success",
+    "description_length": 1662
+  },
+  {
+    "image_ref": "#/pictures/13",
+    "timestamp": 1763063636.019923,
+    "duration": 2.5374460220336914,
+    "status": "success",
+    "description_length": 751
+  },
+  {
+    "image_ref": "#/pictures/14",
+    "timestamp": 1763063637.597719,
+    "duration": 1.5777490139007568,
+    "status": "success",
+    "description_length": 519
+  },
+  {
+    "image_ref": "#/pictures/15",
+    "timestamp": 1763063639.465299,
+    "duration": 1.8674969673156738,
+    "status": "success",
+    "description_length": 553
+  },
+  {
+    "image_ref": "#/pictures/16",
+    "timestamp": 1763063641.494742,
+    "duration": 2.0293869972229004,
+    "status": "success",
+    "description_length": 792
+  },
+  {
+    "image_ref": "#/pictures/17",
+    "timestamp": 1763063647.464343,
+    "duration": 5.969537973403931,
+    "status": "error",
+    "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details"
+  },
+  {
+    "image_ref": "#/pictures/18",
+    "timestamp": 1763063651.573002,
+    "duration": 4.108513116836548,
+    "status": "error",
+    "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details"
+  },
+  {
+    "image_ref": "#/pictures/19",
+    "timestamp": 1763063653.6952949,
+    "duration": 2.1222028732299805,
+    "status": "success",
+    "description_length": 935
+  },
+  {
+    "image_ref": "#/pictures/20",
+    "timestamp": 1763063659.294414,
+    "duration": 5.599016189575195,
+    "status": "success",
+    "description_length": 1521
+  },
+  {
+    "image_ref": "#/pictures/21",
+    "timestamp": 1763063665.929814,
+    "duration": 6.635295152664185,
+    "status": "success",
+    "description_length": 454
+  },
+  {
+    "image_ref": "#/pictures/22",
+    "timestamp": 1763063673.801616,
+    "duration": 7.8715879917144775,
+    "status": "success",
+    "description_length": 1365
+  },
+  {
+    "image_ref": "#/pictures/23",
+    "timestamp": 1763063675.383608,
+    "duration": 1.5817770957946777,
+    "status": "success",
+    "description_length": 407
+  },
+  {
+    "image_ref": "#/pictures/24",
+    "timestamp": 1763063691.596559,
+    "duration": 16.212732076644897,
+    "status": "error",
+    "error": "Error code: 429 - [{'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details"
+  },
+  {
+    "image_ref": "#/pictures/25",
+    "timestamp": 1763063693.666137,
+    "duration": 2.0694360733032227,
+    "status": "success",
+    "description_length": 495
+  },
+  {
+    "image_ref": "#/pictures/26",
+    "timestamp": 1763063696.6679192,
+    "duration": 3.0016632080078125,
+    "status": "success",
+    "description_length": 1544
+  },
+  {
+    "image_ref": "#/pictures/27",
+    "timestamp": 1763063700.270415,
+    "duration": 3.602452278137207,
+    "status": "success",
+    "description_length": 1635
+  },
+  {
+    "image_ref": "#/pictures/28",
+    "timestamp": 1763063702.364413,
+    "duration": 2.0937681198120117,
+    "status": "success",
+    "description_length": 722
+  },
+  {
+    "image_ref": "#/pictures/29",
+    "timestamp": 1763063709.747664,
+    "duration": 7.382864952087402,
+    "status": "success",
+    "description_length": 1597
+  }
+]

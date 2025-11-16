@@ -1,0 +1,392 @@
+{
+  "method": "docling-hybrid",
+  "chunks": [
+    {
+      "text": "Radiation heat exchange between surfaces depends on the orientation of the surfaces relative to each other, and this dependence on orientation is accounted for by the view factor .",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/8' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=30.142, t=549.3120141601562, r=181.232, b=494.34201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 180))]"
+        ],
+        "headings": [
+          "FIGURE 13-1"
+        ]
+      },
+      "tokens": 29
+    },
+    {
+      "text": "Geometry for the determination of the view factor between two surfaces.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/30' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=30.142, t=203.95201416015618, r=185.112, b=183.48201416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 71))]"
+        ],
+        "headings": [
+          "FIGURE 13-2"
+        ]
+      },
+      "tokens": 11
+    },
+    {
+      "text": "Radiation heat transfer between surfaces depends on the orientation of the surfaces relative to each other as well as their radiation properties and temperatures, as illustrated in Fig. 13-1. For example, a camper can make the most use of a campfire on a cold night by standing as close to the fire as possible and by blocking as much of the radiation coming from the fire by turning his or her front to the fire instead of the side. Likewise, a person can maximize the amount of solar radiation incident on him or her and take a sunbath by lying down on his or her back instead of standing.\nTo account for the effects of orientation on radiation heat transfer between two surfaces, we define a new parameter called the view factor, which is a purely geometric quantity and is independent of the surface properties and temperature. It is also called the shape factor, configuration factor, and angle factor. The view factor based on the assumption that the surfaces are diffuse emitters and diffuse reflectors is called the diffuse view factor, and the view factor based on the assumption that the surfaces are diffuse emitters but specular reflectors is called the specular view factor. In this book, we consider radiation exchange between diffuse surfaces only, and thus the term view factor simply means diffuse view factor.\nThe view factor from a surface i to a surface j is denoted by Fi S j or just Fij , and is defined as\nFij 5 the fraction of the radiation leaving surface i that strikes surface j directly\nThe notation Fi S j is instructive for beginners, since it emphasizes that the view factor is for radiation that travels from surface i to surface j. However, this notation becomes rather awkward when it has to be used many times in a problem. In such cases, it is convenient to replace it by its shorthand version Fij .\nThe view factor F 12 represents the fraction of radiation leaving surface 1 that strikes surface 2 directly, and F 21 represents the fraction of radiation leaving surface 2 that strikes surface 1 directly. Note that the radiation that strikes a surface does not need to be absorbed by that surface. Also, radiation that strikes a surface after being reflected by other surfaces is not considered in the evaluation of view factors.\nTo develop a general expression for the view factor, consider two differential surfaces dA 1 and dA 2 on two arbitrarily oriented surfaces A 1 and A 2 , respectively, as shown in Fig. 13-2. The distance between dA 1 and dA 2 is r, and the angles between the normals of the surfaces and the line that connects dA 1 and dA 2 are u 1 and u 2 , respectively. Surface 1 emits and reflects radiation diffusely in all directions with a constant intensity of I 1 , and the solid angle subtended by dA 2 when viewed by dA 1 is d v 21 .\nThe rate at which radiation leaves dA 1 in the direction of u 1 is I 1 cos u 1 dA 1 . Noting that d v 21 5 dA 2 cos u 2 / r 2 , the portion of this radiation that strikes dA 2 is\n$$\\dot { Q } _ { d A _ { 1 } \\rightarrow d _ { A _ { 2 } } } = & I _ { 1 } \\cos \\theta _ { 1 } \\, d A _ { 1 } \\, d \\omega _ { 2 1 } = I _ { 1 } \\cos \\theta _ { 1 } \\, d A _ { 1 } \\, \\frac { d A _ { 2 } \\cos \\theta _ { 2 } } { r ^ { 2 } } \\\\$$\nThe total rate at which radiation leaves dA 1 (via emission and reflection) in all directions is the radiosity (which is J 1 5 p I 1 ) times the surface area,\n$$\\dot { Q } _ { d A _ { 1 } } = J _ { 1 } \\, d A _ { 1 } = \\pi I _ { 1 } \\, d A _ { 1 }$$\nThen the differential view factor dF dA 1 S d A 2 , which is the fraction of radiation leaving dA 1 that strikes dA 2 directly, becomes\n$$d F _ { d A _ { 1 } \\rightarrow d A _ { 2 } } = \\frac { \\dot { Q } _ { d A _ { 1 } \\rightarrow d A _ { 2 } } } { \\dot { Q } _ { d A _ { 1 } } } = \\frac { \\cos \\theta _ { 1 } \\cos \\theta _ { 2 } } { \\pi r ^ { 2 } } \\, d A _ { 2 }$$\nThe differential view factor dFdA 2 S dA 1 can be determined from Eq. 13-3 by interchanging the subscripts 1 and 2.\nThe view factor from a differential area dA 1 to a finite area A 2 can be determined from the fact that the fraction of radiation leaving dA 1 that strikes A 2 is the sum of the fractions of radiation striking the differential areas dA 2 . Therefore, the view factor FdA 1 S A 2 is determined by integrating dFdA 1 S dA 2 over A 2 ,\n$$F _ { d A _ { 1 } \\rightarrow A _ { 2 } } = \\int _ { A _ { 1 } } \\frac { \\cos \\theta _ { 1 } \\cos \\theta _ { 2 } } { \\pi r ^ { 2 } } \\, d A _ { 2 }$$\nThe total rate at which radiation leaves the entire A 1 (via emission and reflection) in all directions is\n$$\\dot { Q } _ { A _ { 1 } } = J _ { 1 } A _ { 1 } = \\pi I _ { 1 } A _ { 1 }$$\nThe portion of this radiation that strikes dA 2 is determined by considering the radiation that leaves dA 1 and strikes dA 2 (given by Eq. 13-1), and integrating it over A 1 ,\n$$\\dot { Q } _ { A _ { 1 } \\to d A _ { 2 } } = \\int _ { A _ { 1 } } \\, \\dot { Q } _ { d _ { A _ { 1 } } \\to d _ { A _ { 2 } } } = \\int _ { A _ { 1 } } \\frac { I _ { 1 } \\cos \\theta _ { 1 } \\cos \\theta _ { 2 } \\, d A _ { 2 } } { r ^ { 2 } } \\, d A _ { 1 }$$\nIntegration of this relation over A 2 gives the radiation that strikes the entire A 2 ,\n$$\\dot { Q } _ { A _ { 1 } \\to A _ { 2 } } = \\int _ { A _ { 2 } } \\, \\dot { Q } _ { A _ { 1 } \\to d A _ { 2 } } = \\int _ { A _ { 2 } } \\int _ { A _ { 1 } } \\frac { I _ { 1 } \\cos \\theta _ { 1 } \\cos \\theta _ { 2 } } { r ^ { 2 } } \\, d A _ { 1 } \\, d A _ { 2 }$$\nDividing this by the total radiation leaving A 1 (from Eq. 13-5) gives the fraction of radiation leaving A 1 that strikes A 2 , which is the view factor FA 1 S A 2 (or F 12 for short),\n$$F _ { 1 2 } = F _ { A _ { 1 } \\rightarrow A _ { 2 } } = \\frac { \\dot { Q } _ { A _ { 1 } \\rightarrow A _ { 2 } } } { \\dot { Q } _ { A _ { 1 } } } = \\frac { 1 } { A _ { 1 } } \\int _ { A _ { 2 } } \\int _ { A _ { 1 } } \\frac { \\cos \\theta _ { 1 } \\cos \\theta _ { 2 } } { \\pi r ^ { 2 } } \\, d A _ { 1 } \\, d A _ { 2 } \\quad$$\nThe view factor FA 2 S A 1 is readily determined from Eq. 13-8 by interchanging the subscripts 1 and 2,\n$$F _ { 2 1 } = F _ { A _ { 2 } \\rightarrow A _ { 1 } } = \\frac { \\dot { Q } _ { A _ { 1 } \\rightarrow A _ { 1 } } } { \\dot { Q } _ { A _ { 2 } } } = \\frac { 1 } { A _ { 2 } } \\int _ { A _ { 2 } } \\iint _ { A _ { 1 } } \\frac { \\cos \\theta _ { 1 } \\cos \\theta _ { 2 } } { \\pi r ^ { 2 } } \\, d A _ { 1 } \\, d A _ { 2 } \\quad$$\nNote that I 1 is constant but r, u 1 , and u 2 are variables. Also, integrations can be performed in any order since the integration limits are constants. These relations confirm that the view factor between two surfaces depends on their relative orientation and the distance between them.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/32' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=644.3660141601562, r=524.812, b=550.9370141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 591))]",
+          "self_ref='#/texts/33' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=548.3540141601562, r=524.792, b=430.9220141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 735))]",
+          "self_ref='#/texts/34' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.149, t=428.36601416015617, r=522.147, b=406.9460141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 100))]",
+          "self_ref='#/texts/35' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=208.012, t=396.16901416015617, r=512.275, b=386.4930141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 85))]",
+          "self_ref='#/texts/36' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.14, t=376.36601416015617, r=524.797, b=329.6610141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 320))]",
+          "self_ref='#/texts/37' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.143, t=328.36601416015617, r=524.781, b=258.94101416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 430))]",
+          "self_ref='#/texts/38' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.133, t=256.3580141601562, r=524.774, b=173.61601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 526))]",
+          "self_ref='#/texts/39' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.149, t=172.36601416015617, r=524.772, b=149.61601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 178))]",
+          "self_ref='#/texts/40' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=252.216, t=141.90501416015616, r=522.144, b=118.57001416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 85))]",
+          "self_ref='#/texts/41' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=110.36601416015617, r=524.749, b=87.61601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 158))]",
+          "self_ref='#/texts/42' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=314.432, t=85.90501416015616, r=522.144, b=66.84301416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 39))]",
+          "self_ref='#/texts/44' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=666.1660141601562, r=380.771, b=643.4160141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 135))]",
+          "self_ref='#/texts/45' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=133.812, t=637.1090141601562, r=378.144, b=600.2330141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 76))]",
+          "self_ref='#/texts/46' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.138, t=590.3260141601562, r=380.776, b=568.9060141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 115))]",
+          "self_ref='#/texts/47' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.137, t=566.3260141601562, r=380.764, b=518.2250141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 332))]",
+          "self_ref='#/texts/48' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=156.514, t=508.4980141601562, r=378.144, b=484.4210141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 52))]",
+          "self_ref='#/texts/49' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.139, t=474.30601416015617, r=378.123, b=452.8860141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 106))]",
+          "self_ref='#/texts/50' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=179.096, t=446.3450141601562, r=378.144, b=426.82301416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 36))]",
+          "self_ref='#/texts/51' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.141, t=414.30601416015617, r=380.774, b=379.55601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 175))]",
+          "self_ref='#/texts/52' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=114.515, t=367.52501416015616, r=378.144, b=341.82301416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 89))]",
+          "self_ref='#/texts/53' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=332.80601416015617, r=378.147, b=322.05601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 87))]",
+          "self_ref='#/texts/54' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=111.855, t=307.52501416015616, r=378.144, b=281.82301416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 91))]",
+          "self_ref='#/texts/55' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=269.9860141601562, r=378.143, b=235.23601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 184))]",
+          "self_ref='#/texts/56' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=106.188, t=232.94801416015616, r=378.144, b=196.07301416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 100))]",
+          "self_ref='#/texts/57' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=186.16601416015624, r=380.781, b=164.74601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 103))]",
+          "self_ref='#/texts/58' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=104.653, t=161.12801416015623, r=378.144, b=124.25301416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 100))]",
+          "self_ref='#/texts/59' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.14, t=114.34601416015619, r=380.78, b=68.92301416015619, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 289))]"
+        ],
+        "headings": [
+          "13-1 \u25a0 THE VIEW FACTOR"
+        ]
+      },
+      "tokens": 1666
+    },
+    {
+      "text": "(\nc\n) Concave surface",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/87' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=40.594, t=477.41201416015616, r=43.258, b=470.2360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/88' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=43.258, t=478.97201416015616, r=46.81, b=470.1720141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/89' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=46.81, t=477.41201416015616, r=104.202, b=470.2360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 17))]"
+        ],
+        "headings": [
+          "RADIATION HEAT TRANSFER"
+        ]
+      },
+      "tokens": 5
+    },
+    {
+      "text": "The view factor from a surface to itself is zero for plane or convex surfaces and nonzero for concave surfaces.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/91' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=30.999, t=447.8320141601562, r=167.339, b=404.3620141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 111))]"
+        ],
+        "headings": [
+          "FIGURE 13-3"
+        ]
+      },
+      "tokens": 20
+    },
+    {
+      "text": "In a geometry that consists of two concentric spheres, the view factor F 1 S 2 5 1 since the entire radiation leaving the surface of the smaller sphere is intercepted by the larger sphere.\nCombining Eqs. 13-8 and 13-9 after multiplying the former by A 1 and the latter by A 2 gives\n$$A _ { 1 } F _ { 1 2 } = A _ { 2 } F _ { 2 1 }$$\nwhich is known as the reciprocity relation for view factors. It allows the calculation of a view factor from a knowledge of the other.\nThe view factor relations developed above are applicable to any two surfaces i and j provided that the surfaces are diffuse emitters and diffuse reflectors (so that the assumption of constant intensity is valid). For the special case of j 5 i, we have\n$$F _ { i \\rightarrow i } = t h e f r a c t i o n o f r a d i a t i o n l e a v i n g s u r f a c e i t h a t str i k e s i t s e l f d i r e c t l y$$\nNoting that in the absence of strong electromagnetic fields radiation beams travel in straight paths, the view factor from a surface to itself is zero unless the surface 'sees' itself. Therefore, Fi S i 5 0 for plane or convex surfaces and Fi S i \u00de 0 for concave surfaces, as illustrated in Fig. 13-3.\nThe value of the view factor ranges between zero and one. The limiting case Fi S j 5 0 indicates that the two surfaces do not have a direct view of each other, and thus radiation leaving surface i cannot strike surface j directly. The other limiting case Fi S j 5 1 indicates that surface j completely surrounds surface i , so that the entire radiation leaving surface i is intercepted by surface j. For example, in a geometry consisting of two concentric spheres, the entire radiation leaving the surface of the smaller sphere (surface 1) strikes the larger sphere (surface 2), and thus F 1 S 2 5 1, as illustrated in Fig. 13-4.\nThe view factor has proven to be very useful in radiation analysis because it allows us to express the fraction of radiation leaving a surface that strikes another surface in terms of the orientation of these two surfaces relative to each other. The underlying assumption in this process is that the radiation a surface receives from a source is directly proportional to the angle the surface subtends when viewed from the source. This would be the case only if the radiation coming off the source is uniform in all directions throughout its surface and the medium between the surfaces does not absorb, emit, or scatter radiation. That is, it is the case when the surfaces are isothermal and diffuse emitters and reflectors and the surfaces are separated by a nonparticipating medium such as a vacuum or air.\nThe view factor F 1 S 2 between two surfaces A 1 and A 2 can be determined in a systematic manner first by expressing the view factor between two differential areas dA 1 and dA 2 in terms of the spatial variables and then by performing the necessary integrations. However, this approach is not practical, since, even for simple geometries, the resulting integrations are usually very complex and difficult to perform.\nView factors for hundreds of common geometries are evaluated and the results are given in analytical, graphical, and tabular form in several publications. View factors for selected geometries are given in Tables 13-1 and 13-2 in analytical form and in Figs. 13-5 to 13-8 in graphical form. The view factors in Table 13-1 are for three-dimensional geometries. The view factors in Table 13-2, on the other hand, are for geometries that are infinitely long in the direction perpendicular to the plane of the paper and are therefore two-dimensional.\nView factor expressions for some common geometries of finite size (3-D)",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/104' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=30.142, t=213.52201416015617, r=172.222, b=147.0520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 188))]",
+          "self_ref='#/texts/105' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.138, t=666.1960141601562, r=524.766, b=643.4460141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 92))]",
+          "self_ref='#/texts/106' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=332.938, t=633.9990141601562, r=522.142, b=624.2810141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 27))]",
+          "self_ref='#/texts/107' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.142, t=616.1960141601562, r=522.136, b=594.7760141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 134))]",
+          "self_ref='#/texts/108' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.142, t=592.1930141601562, r=524.734, b=546.7700141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 251))]",
+          "self_ref='#/texts/109' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=217.372, t=532.9990141601562, r=502.914, b=523.3230141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 81))]",
+          "self_ref='#/texts/110' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.13, t=510.1960141601562, r=524.785, b=463.49101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 301))]",
+          "self_ref='#/texts/111' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.131, t=462.1950141601562, r=524.807, b=367.4460141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 629))]",
+          "self_ref='#/texts/112' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.136, t=366.1940141601562, r=524.762, b=236.76101416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 808))]",
+          "self_ref='#/texts/113' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.139, t=234.1960141601562, r=524.815, b=164.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 417))]",
+          "self_ref='#/texts/114' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.138, t=162.19001416015612, r=524.787, b=68.76101416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 545))]",
+          "self_ref='#/texts/118' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=60.312, t=645.5240141601562, r=343.713, b=637.4420141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 71))]"
+        ],
+        "headings": [
+          "FIGURE 13-4"
+        ]
+      },
+      "tokens": 692
+    },
+    {
+      "text": "Aligned parallel rectangles\nCoaxial parallel disks\nPerpendicular rectangles with a common edge\nRelation\n- -\nX\n=\nX\n/\nL\nand\nY\n=\nY\n/\nL\n- -\n$$F _ { i \\to j } = & \\frac { 2 } { \\pi \\overline { X } \\bar { Y } } \\left \\{ \\ln \\left [ \\frac { ( 1 + \\bar { X } ^ { 2 } ) ( 1 + \\bar { Y } ^ { 2 } ) } { 1 + \\bar { X } ^ { 2 } + \\bar { Y } ^ { 2 } } \\right ] ^ { 1 / 2 } + \\bar { X } ( 1 + \\bar { Y } ^ { 2 } ) ^ { 1 / 2 } \\tan ^ { - 1 } \\frac { \\bar { X } } { ( 1 + \\bar { Y } ^ { 2 } ) ^ { 1 / 2 } } \\\\ & + \\overline { Y } ( 1 + \\bar { X } ^ { 2 } ) ^ { 1 / 2 } \\tan ^ { - 1 } \\frac { \\bar { Y } } { ( 1 + \\bar { X } ^ { 2 } ) ^ { 1 / 2 } } \\quad - \\bar { X } \\tan ^ { - 1 } \\bar { X } - \\bar { Y } \\tan ^ { - 1 } \\bar { Y } \\right \\}$$\n$$R _ { i } & = r _ { i } / L a n d \\, R _ { j } = r _ { j } / L \\\\ & = 1 + \\frac { 1 + R _ { j } ^ { 2 } } { R _ { i } ^ { 2 } } \\\\ F _ { i \\to j } & = \\frac { 1 } { 2 } \\left \\{ \\left \\{ S ^ { 2 } - 4 \\left ( \\frac { r _ { j } } { r _ { i } } \\right ) ^ { 2 } \\right \\} ^ { 1 / 2 } \\right \\} \\\\ & \\quad \\text {For } r _ { i } = r _ { j } = r \\, R = r / L \\colon \\quad F _ { i \\to j } = F _ { j \\to i } = 1 + \\frac { 1 - \\sqrt { 4 R ^ { 2 } + 1 } } { 2 R ^ { 2 } }$$\nH = Z / X and W = Y / X\n$$H = & \\, 2 / X \\, \\text {and} \\, W = & \\, 1 / X \\\\ F _ { i \\rightarrow j } = & \\, \\frac { 1 } { \\pi W } \\left ( W \\tan ^ { - 1 } \\frac { 1 } { W } + H \\tan ^ { - 1 } \\frac { 1 } { H } \\right ) ^ { - } ( H ^ { 2 } + W ^ { 2 } ) ^ { 1 / 2 } \\tan ^ { - 1 } \\frac { 1 } { ( H ^ { 2 } + W ^ { 2 } ) ^ { 1 / 2 } } \\\\ & + 1 - \\left \\{ \\frac { ( 1 + W ^ { 2 } ) ( 1 + H ^ { 2 } ) } { 1 + W ^ { 2 } + H ^ { 2 } } \\left [ \\frac { W ^ { 2 } ( 1 + W ^ { 2 } + H ^ { 2 } ) } { ( 1 + W ^ { 2 } ) ( W ^ { 2 } + H ^ { 2 } ) } \\right ] ^ { W ^ { 2 } } \\right \\} \\\\ & \\times \\left [ \\frac { H ^ { 2 } ( 1 + H ^ { 2 } + W ^ { 2 } ) } { ( 1 + H ^ { 2 } ) ( H ^ { 2 } + W ^ { 2 } ) } \\right ] ^ { H ^ { 2 } } \\right \\}$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/120' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=60.562, t=593.0360141601561, r=146.762, b=585.8600141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 27))]",
+          "self_ref='#/texts/126' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=60.568, t=485.0360141601562, r=129.896, b=477.8600141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 22))]",
+          "self_ref='#/texts/134' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=60.576, t=361.04401416015617, r=139.44, b=344.8680141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 43))]",
+          "self_ref='#/texts/140' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=204.562, t=623.0120141601561, r=233.45, b=613.7880141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 8))]",
+          "self_ref='#/texts/141' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=216.562, t=598.0360141601561, r=222.162, b=590.8600141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 3))]",
+          "self_ref='#/texts/142' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=216.562, t=594.5960141601562, r=221.45, b=585.7960141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/143' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=221.45, t=593.0360141601561, r=229.962, b=585.8600141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/144' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=229.962, t=594.5960141601562, r=234.85, b=585.7960141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/145' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=234.85, t=593.0360141601561, r=237.074, b=585.8600141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/146' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=237.074, t=594.5960141601562, r=241.522, b=585.7960141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/147' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=241.522, t=593.0360141601561, r=257.074, b=585.8600141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 3))]",
+          "self_ref='#/texts/148' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=257.074, t=594.5960141601562, r=261.522, b=585.7960141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/149' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=261.522, t=593.0360141601561, r=270.034, b=585.8600141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/150' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=270.034, t=594.5960141601562, r=274.482, b=585.7960141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/151' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=274.482, t=593.0360141601561, r=276.706, b=585.8600141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/152' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=276.706, t=594.5960141601562, r=281.154, b=585.7960141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/153' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=257.15, t=597.9000141601562, r=262.75, b=590.7240141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 3))]",
+          "self_ref='#/texts/154' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=216.562, t=578.5360141601561, r=447.33, b=524.3040141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 242))]",
+          "self_ref='#/texts/155' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=206.016, t=476.5960141601562, r=426.954, b=388.1780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 209))]",
+          "self_ref='#/texts/156' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=216.576, t=362.60401416015617, r=285.512, b=353.80401416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 23))]",
+          "self_ref='#/texts/157' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=216.576, t=343.66401416015617, r=459.192, b=260.1440141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 272))]"
+        ],
+        "headings": [
+          "Geometry"
+        ]
+      },
+      "tokens": 754
+    },
+    {
+      "text": "Radiation analysis on an enclosure consisting of N surfaces requires the evaluation of N 2  view factors, and this evaluation process is probably the most time-consuming part of a radiation analysis. However, it is neither practical nor necessary to evaluate all of the view factors directly. Once a sufficient number of view factors are available, the rest of them can be determined by utilizing some fundamental relations for view factors, as discussed next.\n$$2 R ^ { 2 }$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/159' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.239, t=150.23601416015617, r=380.9, b=68.81001416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 460))]",
+          "self_ref='#/texts/160' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=396.85, t=393.5000141601562, r=405.738, b=384.7000141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 3))]"
+        ],
+        "headings": [
+          "13-2 \u25a0 VIEW FACTOR RELATIONS"
+        ]
+      },
+      "tokens": 79
+    },
+    {
+      "text": "View factor expressions for some infinitely long (2-D) geometries",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/163' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=204.122, t=645.6340141601562, r=456.554, b=637.5520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 65))]"
+        ],
+        "headings": [
+          "TABLE 13-2"
+        ]
+      },
+      "tokens": 9
+    },
+    {
+      "text": "The view factors Fi S j and Fj S i are not equal to each other unless the areas of the two surfaces are. That is,\n$$F _ { j \\to i } & = F _ { i \\to j } \\quad \\text {when} \\quad A _ { i } = A _ { j } \\\\ F _ { j \\to i } \\neq F _ { i \\to j } & \\quad \\text {when} \\quad A _ { i } \\neq A _ { j }$$\n2\nFIGURE 13-5 View factor between two aligned parallel rectangles of equal size.\nFIGURE 13-6\nView factor between two perpendicular rectangles with a common edge.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/306' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.139, t=122.53601416015613, r=524.773, b=101.11601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 113))]",
+          "self_ref='#/texts/307' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=291.659, t=93.34801416015614, r=428.619, b=67.1630141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 57))]",
+          "self_ref='#/texts/467' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=240.832, t=73.71201416015617, r=243.332, b=69.22701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/468' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=413.402, t=418.47201416015616, r=546.142, b=385.7320141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 78))]",
+          "self_ref='#/texts/469' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=492.232, t=100.87201416015614, r=546.142, b=91.93901416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 11))]",
+          "self_ref='#/texts/470' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=391.462, t=88.60201416015616, r=548.642, b=68.13201416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 68))]"
+        ],
+        "headings": [
+          "1 The Reciprocity Relation"
+        ]
+      },
+      "tokens": 114
+    },
+    {
+      "text": "FIGURE 13-7 View factor between two coaxial\nparallel disks.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/473' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.142, t=473.0720141601562, r=162.322, b=451.8320141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 43))]",
+          "self_ref='#/texts/474' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.142, t=449.3020141601562, r=85.692, b=440.3320141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 15))]"
+        ],
+        "headings": [
+          "RADIATION HEAT TRANSFER"
+        ]
+      },
+      "tokens": 9
+    },
+    {
+      "text": "View factors for two concentric cylinders of finite length: ( a ) outer cylinder to inner cylinder; ( b ) outer cylinder to itself.\nWe have shown earlier that the pair of view factors Fi S j and Fj S i are related to each other by\n$$A _ { i } F _ { i \\rightarrow j } = A _ { j } F _ { j \\rightarrow i }$$\nThis relation is referred to as the reciprocity relation or the reciprocity rule , and it enables us to determine the counterpart of a view factor from a knowledge of the view factor itself and the areas of the two surfaces. When determining the pair of view factors Fi S j and Fj S i , it makes sense to evaluate first the easier one directly and then the more difficult one by applying the reciprocity relation.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/619' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.142, t=89.53201416015622, r=512.822, b=80.5620141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 131))]",
+          "self_ref='#/texts/622' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.147, t=666.1660141601562, r=380.773, b=644.7460141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 98))]",
+          "self_ref='#/texts/623' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=183.295, t=633.9690141601562, r=378.152, b=624.2930141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 29))]",
+          "self_ref='#/texts/624' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.146, t=614.1660141601562, r=380.78, b=544.7450141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 413))]"
+        ],
+        "headings": [
+          "FIGURE 13-8"
+        ]
+      },
+      "tokens": 149
+    },
+    {
+      "text": "The radiation analysis of a surface normally requires the consideration of the radiation coming in or going out in all directions. Therefore, most radiation problems encountered in practice involve enclosed spaces. When formulating a radiation problem, we usually form an enclosure consisting of the surfaces interacting radiatively. Even openings are treated as imaginary surfaces with radiation properties equivalent to those of the opening.\nThe conservation of energy principle requires that the entire radiation leaving any surface i of an enclosure be intercepted by the surfaces of the enclosure. Therefore, the sum of the view factors from surface i of an enclosure to all surfaces of the enclosure, including to itself, must equal unity. This is known as the summation rule for an enclosure and is expressed as (Fig. 13-9)\n$$\\sum _ { j = 1 } ^ { N } F _ { i \\rightarrow j } = 1$$\nwhere N is the number of surfaces of the enclosure. For example, applying the summation rule to surface 1 of a three-surface enclosure yields\n$$\\sum _ { j = 1 } ^ { 3 } F _ { 1 \\to j } = F _ { 1 \\to 1 } + F _ { 1 \\to 2 } + F _ { 1 \\to 3 } = 1$$\nThe summation rule can be applied to each surface of an enclosure by varying i from 1 to N. Therefore, the summation rule applied to each of the N surfaces of an enclosure gives N relations for the determination of the view factors. Also, the reciprocity rule gives 1 2 N ( N 2 1) additional relations. Then the total number of view factors that need to be evaluated directly for an N -surface enclosure becomes\n$$N ^ { 2 } - [ N + \\frac { 1 } { 2 } N ( N - 1 ) ] = \\frac { 1 } { 2 } N ( N - 1 )$$\nFor example, for a six-surface enclosure, we need to determine only 1 2 3 6 (6 2 1) 5 15 of the 6 2 5 36 view factors directly. The remaining 21 view factors can be determined from the 21 equations that are obtained by applying the reciprocity and the summation rules.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/626' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.152, t=515.1660141601562, r=380.805, b=445.7400141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 443))]",
+          "self_ref='#/texts/627' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.152, t=443.15701416015617, r=380.813, b=373.7310141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 386))]",
+          "self_ref='#/texts/628' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=190.998, t=360.0640141601562, r=378.152, b=334.1050141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 28))]",
+          "self_ref='#/texts/629' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.152, t=319.1660141601562, r=380.786, b=297.74601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 141))]",
+          "self_ref='#/texts/630' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=139.865, t=282.1700141601562, r=295.791, b=258.1060141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 51))]",
+          "self_ref='#/texts/631' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.152, t=242.3460141601562, r=380.805, b=168.81601416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 411))]",
+          "self_ref='#/texts/632' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=146.179, t=148.16001416015615, r=288.501, b=136.61101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 44))]",
+          "self_ref='#/texts/633' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.151, t=128.0380141601562, r=380.779, b=80.63501416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 268))]"
+        ],
+        "headings": [
+          "2 The Summation Rule"
+        ]
+      },
+      "tokens": 382
+    },
+    {
+      "text": "Radiation leaving any surface i of an enclosure must be intercepted completely by the surfaces of the enclosure. Therefore, the sum of the view factors from surface i to each one of the surfaces of the enclosure must be unity.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/637' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=410.892, t=376.7120141601562, r=548.642, b=298.7420141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 226))]"
+        ],
+        "headings": [
+          "FIGURE 13-9"
+        ]
+      },
+      "tokens": 40
+    },
+    {
+      "text": "The geometry considered in Example 13-1.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/646' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=30.142, t=532.8020141601562, r=142.062, b=512.3320141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 40))]"
+        ],
+        "headings": [
+          "FIGURE 13-10"
+        ]
+      },
+      "tokens": 6
+    },
+    {
+      "text": "Determine the view factors associated with an enclosure formed by two concentric spheres, shown in Fig. 13-10.\nSOLUTION The view factors associated with two concentric spheres are to be determined.\nAssumptions The surfaces are diffuse emitters and reflectors.\nAnalysis The outer surface of the smaller sphere (surface 1) and inner surface of the larger sphere (surface 2) form a two-surface enclosure. Therefore, N 5 2 and this enclosure involves N 2 5 2 2 5 4 view factors, which are F 11 , F 12 , F 21 , and F 22 . In this two-surface enclosure, we need to determine only\n$$\\frac { 1 } { 2 } N ( N - 1 ) = \\frac { 1 } { 2 } \\times 2 ( 2 - 1 ) = 1$$\nview factor directly. The remaining three view factors can be determined by the application of the summation and reciprocity rules. But it turns out that we can determine not only one but two view factors directly in this case by a simple inspection:\nF 5\n11 0,\nsince no radiation leaving surface 1 strikes itself\nF 12 5\n1,\nsince all radiation leaving surface 1 strikes surface 2\nActually it would be sufficient to determine only one of these view factors by inspection, since we could always determine the other one from the summation rule applied to surface 1 as F 11 1 F 12 5 1.\nThe view factor F 21 is determined by applying the reciprocity relation to surfaces 1 and 2:\n$$A _ { 1 } F _ { 1 2 } = A _ { 2 } F _ { 2 1 }$$\n$$F _ { 2 1 } = \\frac { A _ { 1 } } { A _ { 2 } } \\, F _ { 1 2 } = \\frac { 4 \\pi r _ { 1 } ^ { 2 } } { 4 \\pi r _ { 2 } ^ { 2 } } \\times 1 = \\left ( \\frac { r _ { 1 } } { r _ { 2 } } \\right ) ^ { 2 }$$\nFinally, the view factor F 22 is determined by applying the summation rule to surface 2:\n$$F _ { 2 1 } + F _ { 2 2 } = 1$$\n$$F _ { 2 2 } = 1 - F _ { 2 1 } = 1 - \\left ( \\frac { r _ { 1 } } { r _ { 2 } } \\right ) ^ { 2 }$$\nDiscussion Note that when the outer sphere is much larger than the inner sphere ( r 2 @ r 1 ), F 22 approaches one. This is expected, since the fraction of radiation leaving the outer sphere that is intercepted by the inner sphere will be negligible in that case. Also note that the two spheres considered above do not need to be concentric. However, the radiation analysis will be most accurate for the case of concentric spheres, since the radiation is most likely to be uniform on the surfaces in that case.\nwhich yields and thus",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/648' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=206.242, t=627.2540141601562, r=512.22, b=608.1740141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 110))]",
+          "self_ref='#/texts/649' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=206.242, t=592.9420141601562, r=514.987, b=573.1740141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 86))]",
+          "self_ref='#/texts/650' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=206.242, t=569.2590141601562, r=449.926, b=561.1770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 61))]",
+          "self_ref='#/texts/651' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=206.233, t=557.2620141601561, r=514.992, b=514.9390141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 313))]",
+          "self_ref='#/texts/652' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=299.622, t=506.3800141601562, r=418.96, b=494.8310141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 35))]",
+          "self_ref='#/texts/653' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=206.242, t=481.5040141601562, r=515.002, b=440.4280141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 250))]",
+          "self_ref='#/texts/654' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=234.742, t=429.5690141601562, r=257.01, b=421.11401416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 3))]",
+          "self_ref='#/texts/655' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=240.542, t=429.57801416015616, r=268.886, b=419.8510141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 5))]",
+          "self_ref='#/texts/656' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=285.511, t=429.57801416015616, r=468.88, b=421.0570141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 51))]",
+          "self_ref='#/texts/657' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=234.4, t=415.5690141601562, r=256.671, b=405.8510141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 6))]",
+          "self_ref='#/texts/658' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=256.671, t=415.57801416015616, r=268.546, b=407.0570141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 2))]",
+          "self_ref='#/texts/659' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=285.171, t=415.57801416015616, r=484.091, b=407.0570141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 55))]",
+          "self_ref='#/texts/660' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=206.242, t=392.5040141601562, r=515.0, b=361.1890141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 201))]",
+          "self_ref='#/texts/661' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=206.237, t=359.50601416015616, r=512.238, b=340.42401416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 92))]",
+          "self_ref='#/texts/662' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=332.042, t=329.5690141601562, r=386.447, b=319.8510141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 19))]",
+          "self_ref='#/texts/663' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=291.782, t=289.1000141601562, r=426.619, b=263.5110141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 61))]",
+          "self_ref='#/texts/664' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=206.242, t=253.93401416015615, r=515.056, b=234.85401416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 88))]",
+          "self_ref='#/texts/665' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=332.222, t=224.00801416015622, r=386.256, b=214.2810141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 15))]",
+          "self_ref='#/texts/666' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=305.822, t=187.4800141601562, r=412.58, b=163.42101416015612, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 35))]",
+          "self_ref='#/texts/667' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=206.237, t=152.93401416015615, r=515.023, b=78.86201416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 510))]",
+          "self_ref='#/texts/668' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=206.242, t=306.5040141601562, r=254.5, b=298.4220141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 12)), ProvenanceItem(page_no=9, bbox=BoundingBox(l=206.242, t=204.93401416015615, r=240.496, b=196.85201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(13, 21))]"
+        ],
+        "headings": [
+          "EXAMPLE 13-1 View Factors Associated with Two Concentric Spheres"
+        ]
+      },
+      "tokens": 531
+    },
+    {
+      "text": "Sometimes the view factor associated with a given geometry is not available in standard tables and charts. In such cases, it is desirable to express the given geometry as the sum or difference of some geometries with known view factors, and then to apply the superposition rule , which can be expressed as the view factor from a surface i to a surface j is equal to the sum of the view factors from surface i to the parts of surface j. Note that the reverse of this is not true. That is, the view factor from a surface j to a surface i is not equal to the sum of the view factors from the parts of surface j to surface i.\nConsider the geometry in Fig. 13-11, which is infinitely long in the direction perpendicular to the plane of the paper. The radiation that leaves surface 1 and strikes the combined surfaces 2 and 3 is equal to the sum of the radiation that strikes surfaces 2 and 3. Therefore, the view factor from surface 1 to the combined surfaces of 2 and 3 is\n$$F _ { 1 \\rightarrow ( 2 , 3 ) } = F _ { 1 \\rightarrow 2 } + F _ { 1 \\rightarrow 3 } \\quad ( 1 3 - 1 3 )$$\nSuppose we need to find the view factor F 1 S 3 . A quick check of the view factor expressions and charts in this section reveals that such a view factor cannot be evaluated directly. However, the view factor F 1 S 3 can be determined from Eq. 13-13 after determining both F 1 S 2 and F 1 S (2, 3) from the chart in Table 13-2. Therefore, it may be possible to determine some difficult view factors with relative ease by expressing one or both of the areas as the sum or differences of areas and then applying the superposition rule.\nTo obtain a relation for the view factor F (2, 3) S 1 , we multiply Eq. 13-13 by A 1 ,\n$$A _ { 1 } F _ { 1 } \\rightarrow ( 2 , 3 ) = A _ { 1 } F _ { 1 } \\rightarrow 2 \\, ^ { + } \\, A _ { 1 } F _ { 1 } \\rightarrow 3$$\nand apply the reciprocity relation to each term to get\n$$( A _ { 2 } + A _ { 3 } ) F _ { ( 2 , 3 ) \\rightarrow 1 } = A _ { 2 } F _ { 2 \\rightarrow 1 } + A _ { 3 } F _ { 3 \\rightarrow 1 }$$\nor\n$$F _ { ( 2 , \\, 3 ) \\rightarrow 1 } = \\frac { A _ { 2 } \\, F _ { _ { 2 } \\rightarrow 1 } \\, + \\, A _ { 3 } \\, F _ { _ { 3 } \\rightarrow 1 } } { A _ { 2 } \\, + \\, A _ { 3 } }$$\nAreas that are expressed as the sum of more than two parts can be handled in a similar manner.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/671' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=650.5360141601561, r=380.775, b=557.1070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 621))]",
+          "self_ref='#/texts/672' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=554.5240141601562, r=380.772, b=497.1000141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 346))]",
+          "self_ref='#/texts/673' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=166.964, t=486.3390141601562, r=378.142, b=476.62101416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 40))]",
+          "self_ref='#/texts/674' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.138, t=466.5360141601562, r=380.778, b=385.1130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 533))]",
+          "self_ref='#/texts/675' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=63.142, t=382.5360141601562, r=378.147, b=371.7860141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 86))]",
+          "self_ref='#/texts/676' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=153.626, t=358.3390141601562, r=278.663, b=348.62101416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 44))]",
+          "self_ref='#/texts/677' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=334.5360141601562, r=274.306, b=325.1180141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 54))]",
+          "self_ref='#/texts/678' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=139.681, t=310.3480141601562, r=292.603, b=300.62101416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 54))]",
+          "self_ref='#/texts/679' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=286.5360141601562, r=62.889, b=277.1180141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 2))]",
+          "self_ref='#/texts/680' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=153.265, t=263.4500141601562, r=378.142, b=238.85101416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 58))]",
+          "self_ref='#/texts/681' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=229.03601416015618, r=380.744, b=207.61601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 94))]"
+        ],
+        "headings": [
+          "3 The Superposition Rule"
+        ]
+      },
+      "tokens": 541
+    },
+    {
+      "text": "Determine the fraction of the radiation leaving the base of the cylindrical enclosure shown in Fig. 13-12 that escapes through a coaxial ring opening at its top surface. The radius and the length of the enclosure are r 1 5 10 cm and L 5 10 cm, while the inner and outer radii of the ring are r 2 5 5 cm and r 3 5 8 cm, respectively.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/683' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=64.142, t=131.58401416015613, r=372.919, b=79.5040141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 332))]"
+        ],
+        "headings": [
+          "EXAMPLE 13-2 Fraction of Radiation Leaving through an Opening"
+        ]
+      },
+      "tokens": 69
+    },
+    {
+      "text": "The view factor from a surface to a composite surface is equal to the sum of the view factors from the surface to the parts of the composite surface.\nFIGURE 13-12\nThe cylindrical enclosure considered in Example 13-2.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "80/100",
+        "doc_items": [
+          "self_ref='#/texts/708' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=393.132, t=542.7920141601562, r=548.642, b=499.3220141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 149))]",
+          "self_ref='#/texts/709' parent=RefItem(cref='#/pictures/15') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=486.672, t=101.29201416015621, r=546.142, b=92.35901416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 12))]",
+          "self_ref='#/texts/719' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=429.492, t=89.02201416015623, r=546.142, b=68.5520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 53))]"
+        ],
+        "headings": [
+          "FIGURE 13-11"
+        ]
+      },
+      "tokens": 38
+    }
+  ],
+  "total_chunks": 19,
+  "original_document": "file8973.pdf",
+  "pdf_chunk": "file8973_chunk080_p791-800",
+  "config": {
+    "max_tokens": 2048,
+    "merge_peers": true,
+    "enable_picture_description": true,
+    "picture_description_max_tokens": 800,
+    "vision_model": "gemini-2.0-flash",
+    "enable_formula": true,
+    "enable_ocr": true,
+    "enable_table_structure": true
+  }
+}

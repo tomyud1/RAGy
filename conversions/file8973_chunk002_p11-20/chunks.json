@@ -1,0 +1,741 @@
+{
+  "method": "docling-hybrid",
+  "chunks": [
+    {
+      "text": "x",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/0' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=106.356, t=690.6860141601562, r=109.908, b=683.5400141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]"
+        ],
+        "headings": null
+      },
+      "tokens": 1
+    },
+    {
+      "text": "Inclined Plates    543 Horizontal Plates    544 Horizontal Cylinders and Spheres    544",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/2' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=60.14, t=666.0540141601562, r=193.932, b=639.0030141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 87))]"
+        ],
+        "headings": [
+          "CONTENTS"
+        ]
+      },
+      "tokens": 11
+    },
+    {
+      "text": "Natural Convection Cooling of Finned Surfaces ( Ts 5 constant)    548 Natural Convection Cooling of Vertical PCBs ( q . s 5 constant)    549 Mass Flow Rate through the Space between Plates    550",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/4' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=60.14, t=604.0500141601561, r=252.642, b=557.0070141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 195))]"
+        ],
+        "headings": [
+          "9-4 Natural Convection from Finned Surfaces and PCBs    548"
+        ]
+      },
+      "tokens": 33
+    },
+    {
+      "text": "Effective Thermal Conductivity    553 Horizontal Rectangular Enclosures    553 Inclined Rectangular Enclosures    554 Vertical Rectangular Enclosures    555 Concentric Cylinders    555 Concentric Spheres    556\nCombined Natural Convection and Radiation    556",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/6' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=60.142, t=534.0500141601561, r=197.934, b=477.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 210))]",
+          "self_ref='#/texts/7' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=60.142, t=474.0500141601562, r=232.182, b=467.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 48))]"
+        ],
+        "headings": [
+          "9-5 Natural Convection Inside Enclosures    552"
+        ]
+      },
+      "tokens": 28
+    },
+    {
+      "text": "Edge-of-Glass U -Factor of a Window    570 Frame U -Factor    571 Interior and Exterior Surface Heat Transfer Coefficients    571 Overall U -Factor of Windows    572\nSummary    577 References and Suggested Reading    578 Problems    579",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/10' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=60.142, t=417.1060141601562, r=265.95, b=379.9220141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 165))]",
+          "self_ref='#/texts/11' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=60.142, t=371.0500141601562, r=202.406, b=344.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 70))]"
+        ],
+        "headings": [
+          "Topic of Special Interest: Heat Transfer through Windows    566"
+        ]
+      },
+      "tokens": 34
+    },
+    {
+      "text": "Boiling Regimes and the Boiling Curve    601 Natural Convection Boiling (to Point A on the Boiling Curve)    601 Nucleate Boiling (between Points A and C )    602 Transition Boiling (between Points C and D )    603 Film Boiling (beyond Point D )    603 Heat Transfer Correlations in Pool Boiling    604 Nucleate Boiling    604 Peak Heat Flux    605 Minimum Heat Flux    607 Film Boiling    607\nEnhancement of Heat Transfer in Pool Boiling    608",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/16' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=60.142, t=246.0500141601562, r=267.153, b=149.00701416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 393))]",
+          "self_ref='#/texts/17' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=60.142, t=146.05001416015625, r=236.182, b=139.00701416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 51))]"
+        ],
+        "headings": [
+          "10-2 Pool Boiling    601"
+        ]
+      },
+      "tokens": 72
+    },
+    {
+      "text": "Flow Regimes    616 Heat Transfer Correlations for Film Condensation    616\nEffect of Vapor Velocity    622\nThe Presence of Noncondensable Gases in Condensers    622",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/21' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=60.142, t=86.05001416015614, r=246.382, b=69.00701416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 75))]",
+          "self_ref='#/texts/22' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=315.142, t=666.0500141601561, r=413.838, b=659.0070141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 31))]",
+          "self_ref='#/texts/23' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=315.142, t=656.0500141601561, r=522.139, b=649.0070141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 57))]"
+        ],
+        "headings": [
+          "10-5 Film Condensation    614"
+        ]
+      },
+      "tokens": 23
+    },
+    {
+      "text": "Topic of Special Interest:\nNon-Boiling Two-Phase Flow Heat Transfer    629\nApplication of Reynolds Analogy to Non-Boiling Two-Phase Flow    634 References    635\nSummary    636 References and Suggested Reading    637 Problems    638",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/26' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=315.145, t=600.5710141601562, r=421.594, b=591.2330141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]",
+          "self_ref='#/texts/27' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=315.145, t=588.5800141601562, r=522.148, b=579.1620141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 47))]",
+          "self_ref='#/texts/28' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=315.142, t=572.0500141601561, r=476.494, b=545.0070141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 86))]",
+          "self_ref='#/texts/29' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=315.142, t=536.0500141601561, r=457.406, b=509.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 70))]"
+        ],
+        "headings": [
+          "10-7 Dropwise Condensation    628"
+        ]
+      },
+      "tokens": 30
+    },
+    {
+      "text": "Fouling Factor    656",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/34' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=315.142, t=417.0500141601562, r=384.942, b=410.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 21))]"
+        ],
+        "headings": [
+          "11-2 The Overall Heat Transfer Coefficient    653"
+        ]
+      },
+      "tokens": 3
+    },
+    {
+      "text": "Counter-Flow Heat Exchangers    664 Multipass and Cross-Flow Heat Exchangers: Use of a Correction Factor    665",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/37' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=315.142, t=360.0500141601562, r=465.814, b=333.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 111))]"
+        ],
+        "headings": [
+          "11-4 The Log Mean Temperature Difference Method    662"
+        ]
+      },
+      "tokens": 15
+    },
+    {
+      "text": "Heat Transfer Rate    686 Cost    686 Pumping Power    686 Size and Weight    686 Type    687 Materials    687 Other Considerations    687\nTopic of Special Interest: The Human Cardiovascular System as a Counter-Current Heat Exchanger    689\nSummary    695 References and Suggested Reading    696 Problems    696",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/40' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=315.142, t=295.0500141601562, r=407.158, b=228.0070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 138))]",
+          "self_ref='#/texts/41' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=315.141, t=221.5760141601562, r=486.028, b=188.16501416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 101))]",
+          "self_ref='#/texts/42' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=315.142, t=180.05001416015625, r=457.406, b=153.00701416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 70))]"
+        ],
+        "headings": [
+          "11-6 Selection of Heat Exchangers    685"
+        ]
+      },
+      "tokens": 43
+    },
+    {
+      "text": "12-1 Introduction    716\n12-2 Thermal Radiation    717",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/45' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=285.142, t=93.22701416015616, r=393.307, b=83.16701416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 24))]",
+          "self_ref='#/texts/46' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=285.142, t=78.22701416015616, r=420.428, b=68.16701416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 29))]"
+        ],
+        "headings": [
+          "FUNDAMENTALS OF THERMAL RADIATION    715"
+        ]
+      },
+      "tokens": 7
+    },
+    {
+      "text": "Solid Angle    726 Intensity of Emitted Radiation    727 Incident Radiation    729 Radiosity    729\nSpectral Quantities    729",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/50' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=633.8900141601562, r=204.622, b=596.8470141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 99))]",
+          "self_ref='#/texts/51' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=593.8900141601562, r=169.054, b=586.8470141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]"
+        ],
+        "headings": [
+          "12-3 Blackbody Radiation    719 12-4 Radiation Intensity    726"
+        ]
+      },
+      "tokens": 16
+    },
+    {
+      "text": "Emissivity    732 Absorptivity, Reflectivity, and Transmissivity    736 Kirchhoff's Law    739 The Greenhouse Effect    742",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/53' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=563.8900141601562, r=252.582, b=526.8470141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 123))]"
+        ],
+        "headings": [
+          "12-5 Radiative Properties    732"
+        ]
+      },
+      "tokens": 14
+    },
+    {
+      "text": "Topic of Special Interest: Solar Heat Gain through Windows    747\nSummary    754 References and Suggested Reading    755\nProblems    756",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/55' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.145, t=505.4110141601562, r=256.209, b=484.0020141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 65))]",
+          "self_ref='#/texts/56' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=475.89001416015617, r=226.406, b=458.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 54))]",
+          "self_ref='#/texts/57' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=455.89001416015617, r=137.478, b=448.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 15))]"
+        ],
+        "headings": [
+          "12-6 Atmospheric and Solar Radiation    742"
+        ]
+      },
+      "tokens": 19
+    },
+    {
+      "text": "- 1  The Reciprocity Relation    772\n- 2  The Summation Rule    775\n- 3  The Superposition Rule    777\n- 4  The Symmetry Rule    778\nView Factors between Infinitely Long Surfaces:\n- The Crossed-Strings Method    780",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/62' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=348.89001416015617, r=197.062, b=341.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 34))]",
+          "self_ref='#/texts/63' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=338.89001416015617, r=185.958, b=331.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 28))]",
+          "self_ref='#/texts/64' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=328.89001416015617, r=193.518, b=321.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 32))]",
+          "self_ref='#/texts/65' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=318.89001416015617, r=181.054, b=311.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 27))]",
+          "self_ref='#/texts/66' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=308.89001416015617, r=240.622, b=301.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 46))]",
+          "self_ref='#/texts/67' parent=RefItem(cref='#/groups/2') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=96.142, t=298.89001416015617, r=213.494, b=291.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 33))]"
+        ],
+        "headings": [
+          "13-2 View Factor Relations    771"
+        ]
+      },
+      "tokens": 35
+    },
+    {
+      "text": "Radiosity    784\nNet Radiation Heat Transfer to or from a Surface    785 Net Radiation Heat Transfer between Any Two Surfaces    786 Methods of Solving Radiation Problems    787 Radiation Heat Transfer in Two-Surface Enclosures    788 Radiation Heat Transfer in Three-Surface Enclosures    790",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/70' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=229.89001416015617, r=136.15, b=222.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 16))]",
+          "self_ref='#/texts/71' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=219.89001416015617, r=283.734, b=162.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 276))]"
+        ],
+        "headings": [
+          "13-4 Radiation Heat Transfer: Diffuse, Gray Surfaces    784"
+        ]
+      },
+      "tokens": 41
+    },
+    {
+      "text": "Radiation Effect on Temperature Measurements    798",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/73' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=127.89001416015617, r=267.734, b=120.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 51))]"
+        ],
+        "headings": [
+          "13-5 Radiation Shields and the Radiation Effects    796"
+        ]
+      },
+      "tokens": 6
+    },
+    {
+      "text": "Radiation Properties of a Participating Medium    802 Emissivity and Absorptivity of Gases and Gas Mixtures    803",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/75' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=84.142, t=85.89001416015617, r=287.254, b=68.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 114))]"
+        ],
+        "headings": [
+          "13-6 Radiation Exchange with Emitting and Absorbing Gases    801"
+        ]
+      },
+      "tokens": 16
+    },
+    {
+      "text": "Summary    814 References and Suggested Reading    815\nProblems    816",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/77' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=339.142, t=636.6600141601562, r=481.406, b=619.6170141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 54))]",
+          "self_ref='#/texts/78' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=339.142, t=616.6600141601562, r=392.478, b=609.6170141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 15))]"
+        ],
+        "headings": [
+          "Topic of Special Interest: Heat Transfer from the Human Body    810"
+        ]
+      },
+      "tokens": 9
+    },
+    {
+      "text": "Temperature    838 Conduction    838 Heat Generation    838 Convection    839",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/83' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=339.142, t=491.6600141601562, r=415.606, b=454.6170141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 77))]"
+        ],
+        "headings": [
+          "14-2 Analogy Between Heat and Mass Transfer    837"
+        ]
+      },
+      "tokens": 9
+    },
+    {
+      "text": "1  Mass Basis    839 2  Mole Basis    840 Special Case: Ideal Gas Mixtures    841 Fick's Law of Diffusion: Stationary Medium Consisting of Two Species    841",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/85' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=339.142, t=431.6600141601562, r=521.83, b=384.6170141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 157))]"
+        ],
+        "headings": [
+          "14-3 Mass Diffusion    839"
+        ]
+      },
+      "tokens": 25
+    },
+    {
+      "text": "- 14-5 Steady Mass Diffusion Through a Wall    850\n- 14-6 Water Vapor Migration in Buildings    854",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/87' parent=RefItem(cref='#/groups/3') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=309.142, t=363.8370141601562, r=474.175, b=341.7760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 48))]",
+          "self_ref='#/texts/88' parent=RefItem(cref='#/groups/3') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=309.142, t=336.8370141601562, r=449.08, b=314.7760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 46))]"
+        ],
+        "headings": [
+          "14-4 Boundary Conditions    845"
+        ]
+      },
+      "tokens": 17
+    },
+    {
+      "text": "Special Case: Gas Mixtures at Constant Pressure and Temperature    865 Diffusion of Vapor through a Stationary Gas: Stefan Flow    866\nEquimolar Counterdiffusion    868",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/91' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=339.142, t=277.6600141601562, r=520.486, b=240.61701416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 134))]",
+          "self_ref='#/texts/92' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=339.142, t=237.66001416015615, r=452.502, b=230.61701416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 33))]"
+        ],
+        "headings": [
+          "14-8 Diffusion in a Moving Medium    861"
+        ]
+      },
+      "tokens": 23
+    },
+    {
+      "text": "Analogy Between Friction, Heat Transfer, and Mass Transfer Coefficients    877 Special Case: Pr < Sc < 1 (Reynolds Analogy)    877 General Case: Pr \u00de Sc \u00de 1 (Chilton-Colburn Analogy)    878 Limitation on the Heat-Mass Convection Analogy    879\nMass Convection Relations    879",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/94' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=339.142, t=207.66001416015615, r=515.166, b=130.61701416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 243))]",
+          "self_ref='#/texts/95' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=339.142, t=127.66001416015615, r=451.15, b=120.61701416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 32))]"
+        ],
+        "headings": [
+          "14-9 Mass Convection    873"
+        ]
+      },
+      "tokens": 41
+    },
+    {
+      "text": "Summary    888 References and Suggested Reading    890\nProblems    890\nc h, 1 = a p t e r f i f t e e n. (web, 1 = c h a p t e r ). COOLING OF ELECTRONIC EQUIPMENT, 1 = COOLING OF ELECTRONIC EQUIPMENT. 15-1, 1 = Introduction and History. 15-2, 1 = Manufacturing of Electronic Equipment. 15-3, 1 = Cooling Load of Electronic Equipment. 15-4, 1 = Thermal Environment. 15-5, 1 = Electronics Cooling in Different Applications. 15-6, 1 = Conduction Cooling. 15-7, 1 = Air Cooling: Natural Convection and Radiation. 15-8, 1 = Air Cooling: Forced Convection. 15-19, 1 = Liquid Cooling. 15-10, 1 = Immersion Cooling. , 1 = Summary References and. , 1 = Suggested Reading Problems. c h, 1 = a p t e r s i x t e e n. (web, 1 = c h a p t e r ). HEATING AND COOLING OF BUILDINGS, 1 = HEATING AND COOLING OF BUILDINGS. 16-1, 1 = A Brief History. 16-2, 1 = Human Body and Thermal Comfort. 16-3, 1 = Heat Transfer from the Human Body. 16-4, 1 = Design Conditions for Heating and Cooling. 16-5, 1 = Heat Gain from People, Lights, and Appliances. 16-6, 1 = Heat Transfer through Walls and Roofs. 16-7, 1 = Heat Loss from Basement Walls and Floors. 16-8, 1 = Heat Transfer through Windows. 16-9, 1 = Solar Heat Gain through Windows. 16-10, 1 = Infiltration Heat Load and Weatherizing. 16-11, 1 = Annual Energy Consumption Summary. c h a, 1 = p t e r s e v e n t e e n. (web c h a p t e r ) REFRIGERATION AND FREEZING OF FOODS, 1 = (web c h a p t e r ) REFRIGERATION AND FREEZING OF FOODS. 17-1, 1 = Control of Microorganisms in Foods. 17-2, 1 = Refrigeration and Freezing of Foods\n- 17-3 Thermal Properties of Food\n- 17-4 Refrigeration of Fruits and Vegetables\n- 17-5 Refrigeration of Meats, Poultry, and Fish\n- 17-6 Refrigeration of Eggs, Milk, and Bakery Products\n- 17-7 Refrigeration Load of Cold Storage Rooms\n- 17-8 Transportation of Refrigerated Foods\nSummary References and Suggested Reading Problems",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/97' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=339.142, t=96.66001416015615, r=481.406, b=79.61701416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 54))]",
+          "self_ref='#/texts/98' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=339.142, t=76.66001416015615, r=392.478, b=69.61701416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 15))]",
+          "self_ref='#/tables/0' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.DOCUMENT_INDEX: 'document_index'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=28.857105255126953, t=666.058349609375, r=256.85113525390625, b=53.02020263671875, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]",
+          "self_ref='#/texts/100' parent=RefItem(cref='#/groups/4') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=285.142, t=666.0670141601562, r=431.506, b=656.0080141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 31))]",
+          "self_ref='#/texts/101' parent=RefItem(cref='#/groups/4') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=285.142, t=651.0670141601562, r=476.698, b=641.0080141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 43))]",
+          "self_ref='#/texts/102' parent=RefItem(cref='#/groups/4') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=285.142, t=636.0670141601562, r=488.09, b=626.0080141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 46))]",
+          "self_ref='#/texts/103' parent=RefItem(cref='#/groups/4') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=285.142, t=621.0670141601562, r=522.068, b=611.0080141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 53))]",
+          "self_ref='#/texts/104' parent=RefItem(cref='#/groups/4') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=285.142, t=606.0670141601562, r=496.837, b=596.0080141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 45))]",
+          "self_ref='#/texts/105' parent=RefItem(cref='#/groups/4') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=285.142, t=591.0670141601562, r=471.742, b=581.0080141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 41))]",
+          "self_ref='#/texts/106' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=315.142, t=572.8900141601562, r=436.062, b=545.8470141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 49))]"
+        ],
+        "headings": [
+          "14-10 Simultaneous Heat and Mass Transfer    882"
+        ]
+      },
+      "tokens": 367
+    },
+    {
+      "text": "Table A-1, 1 = Molar mass, gas constant, and ideal-gas specific heats of some substances 908. Table A-2, 1 = Boiling and freezing point properties 909. Table A-3, 1 = Properties of solid metals 910-912. Table A-4, 1 = Properties of solid nonmetals 913. Table A-5, 1 = Properties of building materials 914-915. Table A-6, 1 = Properties of insulating materials 916. Table A-7, 1 = Properties of common foods 917-918. Table A-8, 1 = Properties of miscellaneous materials 919. Table A-9, 1 = Properties of saturated water 920. Table A-10, 1 = Properties of saturated refrigerant-134a 921. Table A-11, 1 = Properties of saturated ammonia 922. Table A-12, 1 = Properties of saturated propane 923. Table A-13, 1 = Properties of liquids 924. Table A-14, 1 = Properties of liquid metals 925. Table A-15, 1 = Properties of air at 1 atm pressure 926. Table A-16, 1 = Properties of gases at 1 atm pressure 927-928. Table A-17, 1 = Properties of the atmosphere at high altitude 929. Table A-18, 1 = Emissivities of surfaces 930-931. Table A-19, 1 = Solar radiative properties of materials 932. FIGURE A-20, 1 = The Moody chart for the friction factor for fully developed flow in circular pipes 933\nxiii",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/tables/1' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=283.06671142578125, t=470.1763000488281, r=523.5537109375, b=53.7933349609375, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]",
+          "self_ref='#/texts/108' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=462.78, t=690.6860141601562, r=473.004, b=683.5400141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 4))]"
+        ],
+        "headings": [
+          "A p p e n d i x   1 PROPERTY TABLES AND CHARTS (SI UNITS)    907"
+        ]
+      },
+      "tokens": 207
+    },
+    {
+      "text": "A p p e n d i x 2 PROPERTY TABLES AND CHARTS, 1 = A p p e n d i x 2 PROPERTY TABLES AND CHARTS. A p p e n d i x 2 PROPERTY TABLES AND CHARTS, 2 = Table A-8E. A p p e n d i x 2 PROPERTY TABLES AND CHARTS, 3 = Properties of miscellaneous materials 946. (ENGLISH UNITS) 935, 1 = (ENGLISH UNITS) 935. (ENGLISH UNITS) 935, 2 = Table A-9E. (ENGLISH UNITS) 935, 3 = Properties of saturated water 947. Table A-1E, 1 = Molar mass, gas constant, and ideal-gas specific heats of some substances 936. Table A-1E, 2 = Table A-11E Table A-12E. Table A-1E, 3 = refrigerant-134a 948 Properties of saturated ammonia 949 Properties of saturated propane 950. Table A-2E, 1 = Boiling and freezing point properties 937. Table A-2E, 2 = Table A-3E Table A-14E. Table A-2E, 3 = Properties of liquids 951 Properties of liquid metals 952. Table A-3E, 1 = Properties of solid metals 938-939. Table A-3E, 2 = Table A-15E. Table A-3E, 3 = Properties of air at 1 atm pressure 953. Table A-4E, 1 = Properties of solid nonmentals 940. Table A-4E, 2 = Table A-16E. Table A-4E, 3 = Properties of gases at 1 atm. Table A-5E Table A-6E, 1 = Properties of building materials 941-942 Properties of insulating materials 943. Table A-5E Table A-6E, 2 = Table A-17E. Table A-5E Table A-6E, 3 = pressure 954-955 Properties of the atmosphere at high altitude 956. Table A-7E, 1 = Properties of common foods 944-945. Table A-7E, 2 = INDEX. Table A-7E, 3 = 957",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/tables/2' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=51.50483322143555, t=667.3045883178711, r=548.5586547851562, b=435.29156494140625, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]"
+        ],
+        "headings": [
+          "CONTENTS"
+        ]
+      },
+      "tokens": 272
+    },
+    {
+      "text": "H eat  and  mass  transfer  is  a  basic  science  that  deals  with  the  rate  of transfer  of  thermal  energy.  It  has  a  broad  application  area  ranging from biological systems to common household appliances, residential and commercial buildings, industrial processes, electronic devices, and food processing. Students are assumed to have an adequate background in calculus and physics. The completion of first courses in thermodynamics, fluid mechanics, and differential equations prior to taking heat transfer is desirable. However, relevant concepts from these topics are introduced and reviewed as needed.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/112' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=535.8670141601561, r=524.794, b=430.3860141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 618))]"
+        ],
+        "headings": [
+          "BACKGROUND"
+        ]
+      },
+      "tokens": 87
+    },
+    {
+      "text": "This book is intended for undergraduate engineering students in their sophomore or junior year, and as a reference book for practicing engineers. The objectives of this text are\n- To cover the basic principles of heat transfer.\n- To present a wealth of real-world engineering examples to give students a feel for how heat transfer is applied in engineering practice.\n- To develop an intuitive understanding of heat transfer by emphasizing the physics and physical arguments.\nIt is our hope that this book, through its careful explanations of concepts and its use of numerous practical examples and figures, helps the students develop the necessary skills to bridge the gap between knowledge and the confidence for proper application of that knowledge.\nIn engineering practice, an understanding of the mechanisms of heat transfer is becoming increasingly important since heat transfer plays a crucial role in the design of vehicles, power plants, refrigerators, electronic devices, buildings, and bridges, among other things. Even a chef needs to have an intuitive understanding of the heat transfer mechanism in order to cook the food 'right' by adjusting the rate of heat transfer. We may not be aware of it, but we already use the principles of heat transfer when seeking thermal comfort. We insulate our bodies by putting on heavy coats in winter, and we minimize heat gain by radiation by staying in shady places in summer. We speed up the cooling of hot food by blowing on it and keep warm in cold weather by cuddling up and thus minimizing the exposed surface area. That is, we already use heat transfer whether we realize it or not.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/114' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=387.81601416015616, r=524.776, b=354.3940141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 177))]",
+          "self_ref='#/texts/115' parent=RefItem(cref='#/groups/5') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=210.144, t=341.8150141601562, r=413.434, b=332.3970141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 49))]",
+          "self_ref='#/texts/116' parent=RefItem(cref='#/groups/5') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=210.144, t=326.81101416015616, r=524.77, b=305.3910141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 138))]",
+          "self_ref='#/texts/117' parent=RefItem(cref='#/groups/5') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=210.144, t=299.8050141601562, r=524.803, b=278.3850141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 107))]",
+          "self_ref='#/texts/118' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.132, t=265.80601416015617, r=524.769, b=220.38301416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 276))]",
+          "self_ref='#/texts/119' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.132, t=217.8000141601562, r=524.783, b=76.36501416015619, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 887))]"
+        ],
+        "headings": [
+          "OBJECTIVES"
+        ]
+      },
+      "tokens": 272
+    },
+    {
+      "text": "This text is the outcome of an attempt to have a textbook for a practically oriented heat transfer course for engineering students. The text covers the standard topics of heat transfer with an emphasis on physics and real-world applications. This approach is more in line with students' intuition, and makes learning the subject matter enjoyable.\nThe philosophy that contributed to the overwhelming popularity of the prior editions of this book has remained unchanged in this edition. Namely, our goal has been to offer an engineering textbook that\n- Communicates directly to the minds of tomorrow's engineers in a simple yet precise manner.\n- Leads students toward a clear understanding and firm grasp of the basic principles of heat transfer.\n- Encourages creative thinking and development of a deeper understanding and intuitive feel for heat transfer.\n- Is read by students with interest and enthusiasm rather than being used as an aid to solve problems.\nSpecial effort has been made to appeal to students' natural curiosity and to help them explore the various facets of the exciting subject area of heat transfer. The enthusiastic response we received from the users of prior editionsfrom small colleges to large universities all over the world-indicates that our objectives have largely been achieved. It is our philosophy that the best way to learn is by practice. Therefore, special effort is made throughout the book to reinforce material that was presented earlier.\nYesterday's engineer spent a major portion of his or her time substituting values into the formulas and obtaining numerical results. However, now formula manipulations and number crunching are being left mainly to the computers. Tomorrow's engineer will have to have a clear understanding and a firm grasp of the basic principles so that he or she can understand even the most complex problems, formulate them, and interpret the results. A conscious effort is made to emphasize these basic principles while also providing students with a perspective at how computational tools are used in engineering practice.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/123' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=649.8160141601562, r=380.756, b=592.3920141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 346))]",
+          "self_ref='#/texts/124' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=589.8090141601562, r=380.799, b=556.3870141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 201))]",
+          "self_ref='#/texts/125' parent=RefItem(cref='#/groups/6') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=66.143, t=545.8030141601562, r=378.142, b=524.3830141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 92))]",
+          "self_ref='#/texts/126' parent=RefItem(cref='#/groups/6') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=66.143, t=518.7970141601562, r=380.772, b=497.3770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 102))]",
+          "self_ref='#/texts/127' parent=RefItem(cref='#/groups/6') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=66.143, t=491.7910141601562, r=378.148, b=470.37101416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 110))]",
+          "self_ref='#/texts/128' parent=RefItem(cref='#/groups/6') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=66.143, t=467.7880141601562, r=380.765, b=446.3680141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 102))]",
+          "self_ref='#/texts/129' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=435.7840141601562, r=380.791, b=354.3570141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 517))]",
+          "self_ref='#/texts/130' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=351.7740141601562, r=380.779, b=258.3450141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 610))]"
+        ],
+        "headings": [
+          "GENERAL APPROACH"
+        ]
+      },
+      "tokens": 331
+    },
+    {
+      "text": "Some of the primary changes in this fifth edition of the text include new and expanded coverage of heat transfer in biological systems, a new section on the general solutions to selected differential equations, and inclusion of example problems and end of chapter problems which incorporate the new Prevention through Design (PtD) concept. The concept of PtD involves proper use of design to promote safety and reduce accidents and injuries. We also have incorporated over 350 new problems. Each chapter, with the exception of Chapters 5 and 6, now contains one new solved example problem based on the concept of PtD, and a significant part of existing problems were modified. All the popular features of the previous editions are retained. The main body of all chapters, the organization of the text, and the tables and charts in the appendices remain mostly unchanged.\nThe fifth edition also includes McGraw-Hill's Connect \u00ae Engineering. This  online  homework  management  tool  allows  assignment  of  algorithmic problems for homework, quizzes and tests. It connects students with the tools and resources they'll need to achieve success. To learn more, visit www.mcgrawhillconnect.com\nMcGraw-Hill LearnSmart\u2122 is  also  available  as  an  integrated  feature of  McGraw-Hill Connect \u00ae  Engineering. It is  an  adaptive  learning  system designed to help students learn faster, study more efficiently, and retain more knowledge for greater success. LearnSmart assesses a student's knowledge of course content through a series of adaptive questions. It pinpoints concepts the student does not understand and maps out a personalized study plan for success. Visit the following site for a demonstration: www.mhlearnsmart.com",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/132' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=217.81601416015621, r=380.858, b=76.38101416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 870))]",
+          "self_ref='#/texts/134' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.145, t=667.1000141601562, r=524.783, b=608.7720141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 318))]",
+          "self_ref='#/texts/135' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.143, t=606.1890141601561, r=524.808, b=524.7700141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 534))]"
+        ],
+        "headings": [
+          "NEW IN THIS EDITION"
+        ]
+      },
+      "tokens": 259
+    },
+    {
+      "text": "To prepare students for the Fundamentals of Engineering Exam and to facilitate multiple-choice tests, over 200 multiple-choice problems are included in  the  end-of-chapter  problem  sets  of  this  edition  also.  They  are  placed under the title 'Fundamentals of Engineering (FE) Exam Problems' for easy recognition. These problems are intended to check the understanding of fundamentals and to help readers avoid common pitfalls. The EES solutions of these problems are available for instructors for ease of facilitation and easy modification.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/137' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=497.6960141601562, r=524.78, b=404.2670141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 547))]"
+        ],
+        "headings": [
+          "FUNDAMENTALS OF ENGINEERING (FE) EXAM PROBLEMS"
+        ]
+      },
+      "tokens": 78
+    },
+    {
+      "text": "In 2007, the National Institute for Occupational Safety and Health launched the National Prevention through Design (PtD) initiative, with the mission to prevent or reduce work-related injuries, illnesses, and fatalities by including prevention considerations in all circumstances that impact individuals in the workplace. As such, the concept of PtD involves applying the means of reducing risks and preventing hazards in the design of equipment, tools, processes, and work facilities. The PtD concept is first introduced in Chapter 1. The idea of having example problems and end of chapter problems throughout the different chapters in the text is not only to simply provide discussions of interesting real world applications, but also to introduce the concepts of PtD to the minds of tomorrow's engineers whereby they may influence a change in culture toward more emphasis on safety designs.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/139' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=377.1960141601562, r=524.811, b=235.76101416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 893))]"
+        ],
+        "headings": [
+          "PREVENTION THROUGH DESIGN (PtD) PROBLEMS"
+        ]
+      },
+      "tokens": 136
+    },
+    {
+      "text": "Thermal Comfort is presented as a Topic of Special Interest in Chapter 1. This section is expanded and the term thermoregulation is introduced in this section. Thermoregulation means the body has mechanisms to act as a thermostat, when the core body temperature deviates from the normal resting value. Thermoregulation in the human body is achieved by keeping a tight balance between heat gain and heat loss. The 'Bioheat Transfer Equation' introduced in Chapter 3 is used to calculate the heat transfer between a human body and its surroundings. Thermoregulation can be adjusted by both behavioral changes and physiological changes. Behavioral changes could be relocating to a more desirable environment within the structure or putting on more clothing. Physiological changes include blood vessel diameter changes and the production of sweat. However, under normal conditions, few of these changes\nare needed because of the efficient organization of arteries and veins; they are arranged as a counter-current heat exchanger. This concept is presented in Chapter 11 as a Topic of Special Interest 'The Human Cardiovascular System as a Counter-Current Heat Exchanger'.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/141' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=209.1960141601562, r=524.82, b=67.76101416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 898))]",
+          "self_ref='#/texts/144' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=666.1960141601562, r=380.776, b=620.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 268))]"
+        ],
+        "headings": [
+          "NEW COVERAGE OF HEAT TRANSFER IN BIOLOGICAL SYSTEMS"
+        ]
+      },
+      "tokens": 178
+    },
+    {
+      "text": "Owing to the rapid advancement in fabrication techniques, the use of the miniaturized devices and components is ever increasing. Whether it is in the application of miniature heat exchangers, fuel cells, pumps, compressors, turbines, sensors, or artificial blood vessels, a sound understanding of fluid flow in micro-scale channels and tubes is essential. Microscale Heat Transfer is presented as a Topic of Special Interest in Chapter 6. This edition expands the coverage of plain mini and micro tubes to spiral micro-fin tubes in Chapter 8.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/146' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=592.6960141601562, r=380.81, b=511.2690141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 542))]"
+        ],
+        "headings": [
+          "EXPANDED COVERAGE OF MINI AND MICRO TUBES"
+        ]
+      },
+      "tokens": 84
+    },
+    {
+      "text": "The application chapters 'Cooling of Electronic Equipment' (Chapter 15), 'Heating and Cooling of Buildings' (Chapter 16), and 'Refrigeration and Freezing of Foods' (Chapter 17) are available for download via the text website; go to www.mhhe.com/cengel for detailed coverage of these topics.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/148' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=483.1960141601562, r=380.803, b=437.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 290))]"
+        ],
+        "headings": [
+          "THREE ONLINE APPLICATION CHAPTERS"
+        ]
+      },
+      "tokens": 41
+    },
+    {
+      "text": "With the exception of the changes already mentioned, minor changes are made in the main body of the text. Over 350 new problems are added, and a significant number of the existing problems are revised. The noteworthy changes in various chapters are summarized here for those who are familiar with the previous edition.\n- In Chapter 1, the concept of Prevention through Design (PtD) has been introduced by Dr. Clement C. Tang of University of North Dakota. In  addition,  the  coverage of Thermal Comfort presented as a Topic of Special Interest has been expanded by Dr. David A. Rubenstein of Stony Brook University.\n- In Chapter 2, a new section 'General Solution to Selected Differential Equations' is added.\n- In Chapter 3, a new section 'Bioheat Transfer Equation' is added.\n- In Chapter 5, the section on 'Interactive SS-T-CONDUCT Software' which introduced the software and demonstrated its use has been deleted and moved to text website. This information and the software are available from the online learning center (www.mhhe.com/cengel) to the instructors and students. The software can be used to solve or to check the solutions of many of the one- and two-dimensional heat conduction problems with uniform energy generation in rectangular geometries.\n- In Chapter 8, a new subsection 'Fully Developed Transitional Flow Heat Transfer' is added. Also, the coverage of subsections on 'Pressure Drop in the Transition Region' and 'Heat Transfer in the Transition Region' of the Topic of Special Interest on Transitional Flow in Tubes has been expanded.\n- In Chapter 10, the coverage of the Topic of Special Interest on 'NonBoiling Two-Phase Flow Heat Transfer' has been expanded and a new\nsubsection on 'Application of Reynolds Analogy to Non-Boiling TwoPhase Flow' has been added.\n- In Chapter 11, the coverage of Heat Exchangers has been expanded and this chapter now has the Topic of Special Interest 'The Human Cardiovascular System as a Counter-Current Heat Exchanger' contributed by Dr. David A. Rubenstein of Stony Brook University.\n- In Chapter 14, the section on Water Vapor Migration in Buildings has been expanded.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/150' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=410.1960141601562, r=380.793, b=352.7710141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 318))]",
+          "self_ref='#/texts/151' parent=RefItem(cref='#/groups/7') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=66.143, t=344.19301416015617, r=380.793, b=286.76801416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 297))]",
+          "self_ref='#/texts/152' parent=RefItem(cref='#/groups/7') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=66.143, t=281.1820141601562, r=380.743, b=259.7620141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 93))]",
+          "self_ref='#/texts/153' parent=RefItem(cref='#/groups/7') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=66.143, t=254.17601416015617, r=356.332, b=244.75801416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 67))]",
+          "self_ref='#/texts/154' parent=RefItem(cref='#/groups/7') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=66.143, t=239.1720141601562, r=380.788, b=157.7440141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 483))]",
+          "self_ref='#/texts/155' parent=RefItem(cref='#/groups/7') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=66.143, t=152.1580141601562, r=380.776, b=94.73401416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 297))]",
+          "self_ref='#/texts/156' parent=RefItem(cref='#/groups/7') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=66.143, t=89.14801416015621, r=380.755, b=67.72801416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 135))]",
+          "self_ref='#/texts/158' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=222.142, t=666.1960141601562, r=522.137, b=644.7760141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 92))]",
+          "self_ref='#/texts/159' parent=RefItem(cref='#/groups/8') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=210.14, t=639.1900141601562, r=524.793, b=593.7670141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 257))]",
+          "self_ref='#/texts/160' parent=RefItem(cref='#/groups/8') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=210.14, t=588.1810141601562, r=524.744, b=566.7610141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 85))]"
+        ],
+        "headings": [
+          "CONTENT CHANGES AND REORGANIZATION"
+        ]
+      },
+      "tokens": 344
+    },
+    {
+      "text": "The authors believe that the emphasis in undergraduate education should re  main on developing a sense of un  der  lying physical mechanisms and a mastery of solving practical problems that an engineer is likely to face in the real world.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/163' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=512.3960141601561, r=524.767, b=466.9730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 238))]"
+        ],
+        "headings": [
+          "EMPHASIS ON PHYSICS"
+        ]
+      },
+      "tokens": 40
+    },
+    {
+      "text": "An observant  mind  should  have  no  difficulty  understanding  engineering sciences. After all, the principles of engineering sciences are based on our everyday experiences and experimental observations . The process of cooking, for example, serves as an excellent vehicle to demonstrate the basic principles of heat transfer.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/165' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=437.3960141601562, r=524.791, b=379.9710141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 328))]"
+        ],
+        "headings": [
+          "EFFECTIVE USE OF ASSOCIATION"
+        ]
+      },
+      "tokens": 46
+    },
+    {
+      "text": "The material in the text is introduced at a level that an average student can follow comfortably. It speaks to students, not over students. In fact, it is selfinstructive . The order of coverage is from simple to general .",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/167' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=350.3960141601562, r=524.779, b=316.9740141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 222))]"
+        ],
+        "headings": [
+          "SELF-INSTRUCTING"
+        ]
+      },
+      "tokens": 40
+    },
+    {
+      "text": "Art is an important learning tool that helps students 'get the picture.' The fifth edition of Heat and Mass Transfer: Fundamentals & Applications contains more figures and illustrations than any other book in this category.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/169' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=287.3960141601562, r=524.755, b=253.97401416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 223))]"
+        ],
+        "headings": [
+          "EXTENSIVE USE OF ARTWORK"
+        ]
+      },
+      "tokens": 35
+    },
+    {
+      "text": "Each chapter begins with an Overview of  the  material  to  be  covered  and chapter-specific Learning Objectives . A Summary is included at the end of each chapter, providing a quick review of basic concepts and important relations, and pointing out the relevance of the material.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/171' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=224.39601416015614, r=524.78, b=178.97301416015625, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 281))]"
+        ],
+        "headings": [
+          "LEARNING OBJECTIVES AND SUMMARIES"
+        ]
+      },
+      "tokens": 45
+    },
+    {
+      "text": "Each chapter contains several worked-out examples that  clarify the material and illustrate the use of the basic principles. An intuitive and systematic approach is used in the solution of the example problems, while maintaining an informal conversational style. The problem is first stated, and the objectives are iden  ti  fied. The assumptions are then stated, together with their justi  fi  ca  tions. The properties needed to solve the problem are listed separately,\nif appropriate. This approach is also used consistently in the solutions presented in the instructor's solutions manual.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/173' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=137.39601416015614, r=524.778, b=67.97001416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 471))]",
+          "self_ref='#/texts/176' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=666.1960141601562, r=378.128, b=644.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 120))]"
+        ],
+        "headings": [
+          "NUMEROUS WORKED-OUT EXAMPLES WITH A SYSTEMATIC SOLUTIONS PROCEDURE"
+        ]
+      },
+      "tokens": 89
+    },
+    {
+      "text": "The end-of-chapter problems are grouped under specific topics to make problem selection easier for both instructors and students. Within each group of problems are:\n- Concept Questions , indicated by 'C,' to check the students' level of understanding of basic concepts.\n- Review Problems are more comprehensive in nature and are not directly tied to any specific section of a chapter-in some cases they require review of material learned in previous chapters.\n- Fundamentals of Engineering (FE) Exam Problems are designed to help students prepare for the Fundamentals of Engineering exam, as they prepare for their Professional Engineering license.\nThese problems are 'Prevention through Design' related problems.\nThese  problems  are  solved  using  EES,  and  complete  solutions together  with  parametric  studies  are  included  on  the  textbook's website.\nThese problems are comprehensive in nature and are intended to be solved with a computer, possibly using the EES software.\n- Design and Essay are intended to encourage students to make engineering judgments, to conduct independent exploration of topics of interest, and to communicate their findings in a professional manner.\nSeveral economics- and safety-related problems are incorporated throughout to enhance cost and safety awareness among engineering students. Answers to selected problems are listed immediately following the problem for convenience to students.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/178' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=614.6960141601562, r=380.781, b=581.2780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 164))]",
+          "self_ref='#/texts/179' parent=RefItem(cref='#/groups/9') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=66.142, t=565.6960141601562, r=380.789, b=544.2680141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 104))]",
+          "self_ref='#/texts/180' parent=RefItem(cref='#/groups/9') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=66.142, t=538.6860141601562, r=380.785, b=505.26801416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 189))]",
+          "self_ref='#/texts/181' parent=RefItem(cref='#/groups/9') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=66.142, t=499.67601416015617, r=380.768, b=466.25801416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 188))]",
+          "self_ref='#/texts/182' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=85.102, t=460.6960141601562, r=370.586, b=451.2780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 64))]",
+          "self_ref='#/texts/183' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=86.551, t=438.6960141601562, r=380.785, b=405.27701416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 148))]",
+          "self_ref='#/texts/184' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=87.142, t=399.6960141601562, r=380.745, b=378.2780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 122))]",
+          "self_ref='#/texts/185' parent=RefItem(cref='#/groups/10') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=66.142, t=372.68601416015616, r=380.764, b=339.26801416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 202))]",
+          "self_ref='#/texts/186' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=323.68601416015616, r=380.803, b=278.25801416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 242))]"
+        ],
+        "headings": [
+          "A WEALTH OF REAL-WORLD END-OF-CHAPTER PROBLEMS"
+        ]
+      },
+      "tokens": 207
+    },
+    {
+      "text": "In recognition of the fact that English units are still widely used in some industries, both SI and English units are used in this text, with an emphasis on SI. The material in this text can be covered using combined SI/English units or SI units alone, depending on the preference of the instructor. The property tables and charts in the appendices are presented in both units, except the ones that involve dimensionless quantities. Problems, tables, and charts in English units are designated by ' E ' after the number for easy recognition, and they can be ignored by SI users.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/188' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=248.1960141601562, r=380.81, b=154.76701416015612, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 578))]"
+        ],
+        "headings": [
+          "A CHOICE OF SI ALONE OR SI/ENGLISH UNITS"
+        ]
+      },
+      "tokens": 100
+    },
+    {
+      "text": "Most chapters contain a real world application, end-of-chapter optional section called 'Topic of Special Interest' where interesting applications of heat transfer are discussed such as Thermal Comfort in Chapter 1, Heat Transfer through the Walls and Roofs in Chapter 3, Microscale Heat Transfer in Chapter 6, Transitional Flow in Tubes in Chapter 8, Heat Transfer through Windows in",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "2/100",
+        "doc_items": [
+          "self_ref='#/texts/190' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.142, t=125.19601416015621, r=380.782, b=67.76701416015612, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 383))]"
+        ],
+        "headings": [
+          "TOPICS OF SPECIAL INTEREST"
+        ]
+      },
+      "tokens": 58
+    }
+  ],
+  "total_chunks": 47,
+  "original_document": "file8973.pdf",
+  "pdf_chunk": "file8973_chunk002_p11-20",
+  "config": {
+    "max_tokens": 2048,
+    "merge_peers": true,
+    "enable_picture_description": true,
+    "picture_description_max_tokens": 800,
+    "vision_model": "gemini-2.0-flash",
+    "enable_formula": true,
+    "enable_ocr": true,
+    "enable_table_structure": true
+  }
+}

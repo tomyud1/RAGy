@@ -1,0 +1,464 @@
+{
+  "method": "docling-hybrid",
+  "chunks": [
+    {
+      "text": "5-153 What is the correct steady-state finite-difference heat conduction equation of node 6 of the rectangular solid shown in Fig. P5-153?\n$$\\begin{array} { r l } & ( a ) \\, T _ { 6 } = ( T _ { 1 } + T _ { 3 } + T _ { 9 } + T _ { 1 1 } ) / 2 \\\\ & ( b ) \\, T _ { 6 } = ( T _ { 5 } + T _ { 7 } + T _ { 2 } + T _ { 1 0 } ) / 2 \\\\ & ( c ) \\, T _ { 6 } = ( T _ { 1 } + T _ { 3 } + T _ { 6 } + T _ { 1 1 } ) / 4 \\\\ & ( d ) \\, T _ { 6 } = ( T _ { 2 } + T _ { 5 } + T _ { 7 } + T _ { 1 0 } ) / 4 \\\\ & ( e ) \\, T _ { 6 } = ( T _ { 2 } + T _ { 5 } + T _ { 7 } + T _ { 1 0 } ) / 2 \\end{array}$$\n5-154 The height of the cells for a finite-difference solution of the temperature in the rectangular solid shown in Fig. P5-154 is one-half the cell width to improve the accuracy of the solution. The correct steady-state finite-difference heat conduction equation for cell 6 is\n5-155 The  height  of  the  cells  for  a  finite-difference  solution  of  the  temperature  in  the  rectangular  solid  shown  in Fig. P5-155 is one-half the cell width to improve the accuracy of the solution. If the left surface is exposed to air at T 0 with a\nheat transfer coefficient of h , the correct finite-difference heat conduction energy balance for node 5 is\n$$\\begin{array} { r l } & { ( a ) \\, 2 T _ { 1 } + 2 T _ { 9 } + T _ { 6 } - T _ { 3 } + h \\Delta / k \\, ( T _ { 0 } - T _ { 3 } ) = 0 } \\\\ & { ( b ) \\, 2 T _ { 1 } + 2 T _ { 9 } + T _ { 6 } - 2 T _ { 5 } + h \\Delta / k \\, ( T _ { 0 } - T _ { 5 } ) = 0 } \\\\ & { ( c ) \\, 2 T _ { 1 } + 2 T _ { 9 } + T _ { 6 } - 3 T _ { 3 } + h \\Delta / k \\, ( T _ { 0 } - T _ { 3 } ) \\equiv 0 } \\\\ & { ( d ) \\, 2 T _ { 1 } + 2 T _ { 9 } + T _ { 6 } - 4 T _ { 5 } + h \\Delta / k \\, ( T _ { 0 } - T _ { 5 } ) = 0 } \\\\ & { ( e ) \\, 2 T _ { 1 } + 2 T _ { 9 } + T _ { 6 } - 5 T _ { 5 } + h \\Delta / k \\, ( T _ { 0 } - T _ { 5 } ) = 0 } \\end{array}$$\n$$( e ) \\, 2 I _ { 1 } + 2 I _ { 9 } + I _ { 6 } = 5 I _ { 5 } + 1 1 \\Delta k \\, ( 1 _ { 0 } ) ^ { - 1 } I _ { 5 } ) = 0$$",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/2' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=30.142, t=666.1880141601562, r=269.565, b=635.6650141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 138))]",
+          "self_ref='#/texts/3' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=39.141, t=629.1880141601562, r=161.896, b=575.4610141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 204))]",
+          "self_ref='#/texts/24' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=30.142, t=455.4980141601562, r=269.497, b=402.9730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 277))]",
+          "self_ref='#/texts/48' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=30.142, t=225.17801416015618, r=269.526, b=182.4510141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 264))]",
+          "self_ref='#/texts/75' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=285.142, t=666.1880141601562, r=524.509, b=646.6660141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 107))]",
+          "self_ref='#/texts/76' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=294.142, t=640.1880141601562, r=479.439, b=587.6660141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 295))]",
+          "self_ref='#/texts/77' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=317.092, t=592.0000141601562, r=458.33, b=586.4610141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 11))]"
+        ],
+        "headings": [
+          "NUMERICAL METHODS"
+        ]
+      },
+      "tokens": 668
+    },
+    {
+      "text": "5-156 Write a two-page essay on the finite element method, and explain why it is used in most commercial engineering software packages. Also explain how it compares to the finite difference method.\n5-157 Numerous professional software packages are available in the market for performing heat transfer analysis, and they are widely advertised in professional magazines such as the Mechanical Engineering magazine published by the American Society of Mechanical Engineers (ASME). Your company decides to purchase such a software package and asks you to prepare a report on the available packages, their costs, capabilities, ease of use, and compatibility with the available hardware, and other software as well as the reputation of the software company, their history, financial health, customer support, training, and future prospects, among other things. After a preliminary investigation, select the top three packages and prepare a full report on them.\n5-158 Design a defrosting plate to speed up defrosting of flat food items such as frozen steaks and packaged vegetables and evaluate its performance using the finite difference method. Compare your design to the defrosting plates currently available on the market. The plate must perform well, and it must be suitable for purchase and use as a household utensil, durable, easy to clean, easy to manufacture, and affordable. The frozen food is expected to be at an initial temperature of 2 18\u00b0C at the beginning of the thawing process and 0\u00b0C at the end with all the ice melted. Specify the material, shape, size, and thickness of the proposed plate. Justify your recommendations by calculations. Take the ambient and surrounding surface temperatures to be 20\u00b0C and the convection heat transfer coefficient to be 15 W/m 2 \u00b7K in your analysis. For a typical case, determine the defrosting time with and without the plate.\n5-159 Design a fire-resistant safety box whose outer dimensions are 0.5 m 3 0.5 m 3 0.5 m that will protect its combustible contents from fire which may last up to 2 h. Assume the box will be exposed to an environment at an average temperature of 700\u00b0C with a combined heat transfer coefficient of 70 W/m 2 \u00b7K and the temperature inside the box must be below 150\u00b0C at the end of 2 h. The cavity of the box must be as large as possible while meeting the design constraints, and the insulation material selected must withstand the high temperatures to which it will be exposed. Cost, durability, and strength are also important considerations in the selection of insulation materials.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/79' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=285.142, t=561.1880141601562, r=524.544, b=519.6640141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 197))]",
+          "self_ref='#/texts/80' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=285.141, t=513.1850141601561, r=524.531, b=372.65501416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 756))]",
+          "self_ref='#/texts/81' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=285.143, t=366.17601416015617, r=524.541, b=203.66601416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 919))]",
+          "self_ref='#/texts/82' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=285.142, t=197.1870141601562, r=524.535, b=78.66001416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 682))]"
+        ],
+        "headings": [
+          "Design and Essay Problems"
+        ]
+      },
+      "tokens": 417
+    },
+    {
+      "text": "S o far, we have considered conduction, which is the mechanism of heat transfer through a solid or a quiescent fluid. We now consider convection, which is the mechanism of heat transfer through a fluid in the presence of bulk fluid motion.\nConvection is classified as natural (or free ) and forced convection, depending on how the fluid motion is initiated. In forced convection, the fluid is forced to flow over a surface or in a pipe by external means such as a pump or a fan. In natural convection, any fluid motion is caused by natural means such as the buoyancy effect, which manifests itself as the rise of warmer fluid and the fall of the cooler fluid. Convection is also classified as external and internal, depending on whether the fluid is forced to flow over a surface or in a pipe.\nWe start this chapter with a general physical description of the convection mechanism. We then discuss the velocity and thermal boundary layers, and laminar and turbulent flows. We continue with the discussion of the dimensionless Reynolds, Prandtl, and Nusselt numbers, and their physical significance. Next we derive the convection equations on the basis of mass, momentum, and energy conservation, and obtain solutions for flow over a flat plate. We then nondimensionalize the convection equations, and obtain functional forms of friction and convection coefficients. Finally, we present analogies between momentum and heat transfer.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/84' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=52.562, t=540.2080141601562, r=380.775, b=488.7880141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 239))]",
+          "self_ref='#/texts/85' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.138, t=484.21001416015616, r=380.832, b=376.81601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 553))]",
+          "self_ref='#/texts/86' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.138, t=372.2380141601562, r=380.807, b=250.84701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 636))]"
+        ],
+        "headings": [
+          "F U N D A M E N T A L S   O F CONVECTION"
+        ]
+      },
+      "tokens": 235
+    },
+    {
+      "text": "When you fi  nish studying this chapter, you should be able to:\n- \u25a0 Understand the physical mechanism of convection, and its classifi  cation,\n- \u25a0 Visualize the development of velocity and thermal boundary layers during fl  ow over surfaces,\n- \u25a0 Gain a working knowledge of the dimensionless Reynolds, Prandtl, and Nusselt numbers,\n- \u25a0 Distinguish between laminar and turbulent fl  ows, and gain an understanding of the mechanisms of momentum and heat transfer in turbulent fl  ow,\n- \u25a0 Derive the differential equations that govern convection on the basis of mass, momentum, and energy balances, and solve these equations for some simple cases such as laminar fl  ow over a fl  at plate,\n- \u25a0 Nondimensionalize the convection equations and obtain the functional forms of friction and heat transfer coeffi  cients, and\n- \u25a0 Use analogies between momentum and heat transfer, and determine heat transfer coeffi  cient from knowledge of friction coeffi  cient.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/89' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=400.642, t=514.6020141601562, r=535.572, b=493.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 63))]",
+          "self_ref='#/texts/90' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=400.642, t=484.60201416015616, r=538.112, b=451.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 76))]",
+          "self_ref='#/texts/91' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=400.642, t=445.60201416015616, r=542.002, b=412.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 96))]",
+          "self_ref='#/texts/92' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=400.642, t=406.60201416015616, r=546.982, b=373.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 87))]",
+          "self_ref='#/texts/93' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=400.642, t=367.60201416015616, r=545.842, b=310.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 147))]",
+          "self_ref='#/texts/94' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=400.642, t=304.60201416015616, r=546.982, b=223.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 203))]",
+          "self_ref='#/texts/95' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=400.642, t=217.60201416015616, r=540.892, b=172.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 126))]",
+          "self_ref='#/texts/96' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=400.642, t=166.60201416015616, r=540.342, b=109.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 135))]"
+        ],
+        "headings": [
+          "OBJECTIVES"
+        ]
+      },
+      "tokens": 155
+    },
+    {
+      "text": "Heat transfer from a hot surface to the surrounding fluid by convection and conduction.\nFIGURE 6-2 sandwiched between two parallel\nHeat transfer through a fluid plates.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/129' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=30.142, t=404.8720141601562, r=185.092, b=372.90201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 87))]",
+          "self_ref='#/texts/130' parent=RefItem(cref='#/pictures/4') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=30.142, t=113.77201416015623, r=165.662, b=81.53201416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 42))]",
+          "self_ref='#/texts/138' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=30.142, t=102.00201416015614, r=146.502, b=70.03201416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 37))]"
+        ],
+        "headings": [
+          "FIGURE 6-1"
+        ]
+      },
+      "tokens": 26
+    },
+    {
+      "text": "We mentioned in Chapter 1 that there are three basic mechanisms of heat transfer: conduction, convection, and radiation. Conduction and convection are similar in that both mechanisms require the presence of a material medium. But they are different in that convection requires the presence of fluid motion.\nHeat transfer through a solid is always by conduction, since the molecules of a solid remain at relatively fixed positions. Heat transfer through a liquid or gas, however, can be by conduction or convection, depending on the presence of any bulk fluid motion. Heat transfer through a fluid is by convection in the presence of bulk fluid motion and by conduction in the absence of it. Therefore, conduction in a fluid can be viewed as the limiting case of convection, corresponding to the case of quiescent fluid (Fig. 6-1).\nConvection heat transfer is complicated by the fact that it involves fluid motion as well as heat conduction. The fluid motion enhances heat transfer, since it brings warmer and cooler chunks of fluid into contact, initiating higher rates of conduction at a greater number of sites in a fluid. Therefore, the rate of heat transfer through a fluid is much higher by convection than it is by conduction. In fact, the higher the fluid velocity, the higher the rate of heat transfer.\nTo clarify this point further, consider steady heat transfer through a fluid contained between two parallel plates maintained at different temperatures, as  shown  in  Figure  6-2.  The  temperatures  of  the  fluid  and  the  plate  are the same at the points of contact because of the continuity of temperature. Assuming no fluid motion, the energy of the hotter fluid molecules near the hot plate is transferred to the adjacent cooler fluid molecules. This energy is then transferred to the next layer of the cooler fluid molecules. This energy is then transferred to the next layer of the cooler fluid, and so on, until it is finally transferred to the other plate. This is what happens during conduction through a fluid. Now let us use a syringe to draw some fluid near the hot plate and inject it next to the cold plate repeatedly. You can imagine that this will speed up the heat transfer process considerably, since some energy is carried to the other side as a result of fluid motion.\nConsider the cooling of a hot block with a fan blowing air over its top surface. We know that heat is transferred from the hot block to the surrounding cooler air, and the block eventually cools. We also know that the block cools faster if the fan is switched to a higher speed. Replacing air by water enhances the convection heat transfer even more.\nExperience shows that convection heat transfer strongly depends on the fluid properties dynamic viscosity m , thermal conductivity k, density r , and specific heat c p , as well as the fluid velocity V . It also depends on the geometry and the roughness of the solid surface, in addition to the type of fluid flow (such as being streamlined or turbulent). Thus, we expect the convection heat transfer relations to be rather complex because of the dependence of convection on so many variables. This is not surprising, since convection is the most complex mechanism of heat transfer.\nDespite the complexity of convection, the rate of convection heat transfer is observed to be proportional to the temperature difference and is conveniently expressed by Newton's law of cooling as\n$$\\dot { q } _ { \\text {conv} } = h ( T _ { s } - T _ { \\infty } ) \\quad ( W / m ^ { 2 } )$$\nwhere\nh 5 convection heat transfer coefficient, W/m 2 \u00b7K\nAs 5 heat transfer surface area, m 2\nTs 5 temperature of the surface, \u00b0C\nT ` 5 temperature of the fluid sufficiently far from the surface, \u00b0C\nJudging from its units, the convection heat transfer coefficient h can be defined as the rate of heat transfer between a solid surface and a fluid per unit surface area per unit temperature difference.\nYou should not be deceived by the simple appearance of this relation, because the convection heat transfer coefficient h depends on the several of the mentioned variables, and thus is difficult to determine.\nFluid flow is often confined by solid surfaces, and it is important to understand how the presence of solid surfaces affects fluid flow. Consider the flow of a fluid in a stationary pipe or over a solid surface that is nonporous (i.e., impermeable to the fluid). All experimental observations indicate that a fluid in motion comes to a complete stop at the surface and assumes a zero velocity relative to the surface. That is, a fluid in direct contact with a solid 'sticks' to the surface due to viscous effects, and there is no slip. This is known as the no-slip condition .\nThe photo in Fig. 6-3 obtained from a video clip clearly shows the evolution of a velocity gradient as a result of the fluid sticking to the surface of a blunt nose. The layer that sticks to the surface slows the adjacent fluid layer because of viscous forces between the fluid layers, which slows the next layer, and so on. Therefore, the no-slip condition is responsible for the development of the velocity profile. The flow region adjacent to the wall in which the viscous effects (and thus the velocity gradients) are significant is called the boundary layer . The fluid property responsible for the no-slip condition and the development of the boundary layer is viscosity and is discussed briefly in Section 6-2.\nA fluid layer adjacent to a moving surface has the same velocity as the surface. A consequence of the no-slip condition is that all velocity profiles must have zero values with respect to the surface at the points of contact between a fluid and a solid surface (Fig. 6-4). Another consequence of the no-slip condition is the surface drag , which is the force a fluid exerts on a surface in the flow direction.\nAn implication of the no-slip condition is that heat transfer from the solid surface to the fluid layer adjacent to the surface is by pure conduction, since the fluid layer is motionless, and can be expressed as\n$$\\dot { q } _ { \\text {conv} } = \\dot { q } _ { \\text {cond} } = - k _ { \\text {fluid} } \\frac { \\partial T } { \\partial y } \\Big | _ { y = 0 } \\quad ( W / m ^ { 2 } ) \\quad \\stackrel { \\longrightarrow } { \\longrightarrow } \\quad \\begin{array} { c c } \\longrightarrow & \\longrightarrow \\\\ \\longrightarrow & \\longrightarrow \\end{array}$$\nwhere T represents the temperature distribution in the fluid and ( -T / -y ) y 5 0 is the temperature gradient at the surface. Heat is then convected away from the surface as a result of fluid motion. Note that convection heat transfer from a solid surface to a fluid is merely the conduction heat transfer from the solid surface to the fluid layer adjacent to the surface. Therefore, we can equate Eqs. 6-1 and 6-3 for the heat flux to obtain\n$$h = \\frac { - \\ k _ { \\text {fluid} } ( \\partial T / \\partial y ) _ { y = 0 } } { T _ { s } - T _ { \\infty } } \\quad ( W / m ^ { 2 } \\cdot K )$$\n$$\\dot { Q } _ { c o n v } = h A _ { s } ( T _ { s } - T _ { s a } ) \\quad ( \\text {W} )$$\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (1 images):\n==================================================\n\n**[Image: page4_img1.jpeg - Page 4]**\nThe image shows a series of vertical lines that curve to the right and converge to form a rounded shape at the bottom. The lines are closely spaced and appear to be of uniform thickness. The overall effect is a visual representation of a flow pattern or a contour map.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/140' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.142, t=644.3660141601562, r=524.786, b=598.9430141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 306))]",
+          "self_ref='#/texts/141' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.142, t=596.3600141601562, r=524.803, b=514.9330141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 523))]",
+          "self_ref='#/texts/142' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.142, t=512.3500141601562, r=524.711, b=442.92401416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 479))]",
+          "self_ref='#/texts/143' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.142, t=440.3410141601562, r=524.809, b=286.9040141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 993))]",
+          "self_ref='#/texts/144' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.142, t=284.3210141601562, r=524.816, b=226.89701416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 350))]",
+          "self_ref='#/texts/145' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.14, t=224.31401416015615, r=524.777, b=130.94001416015612, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 582))]",
+          "self_ref='#/texts/146' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=198.14, t=128.35701416015615, r=524.764, b=94.93601416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 195))]",
+          "self_ref='#/texts/147' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=305.812, t=86.30901416015615, r=522.146, b=69.9510141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 43))]",
+          "self_ref='#/texts/152' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.142, t=631.1960141601562, r=79.794, b=621.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 5))]",
+          "self_ref='#/texts/153' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=96.28, t=620.3500141601562, r=284.036, b=610.9870141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 50))]",
+          "self_ref='#/texts/154' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=92.827, t=606.3500141601562, r=224.129, b=595.8230141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 36))]",
+          "self_ref='#/texts/155' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=93.346, t=591.5080141601562, r=228.028, b=581.8230141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 35))]",
+          "self_ref='#/texts/156' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=91.627, t=577.5080141601562, r=341.743, b=567.8180141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 68))]",
+          "self_ref='#/texts/157' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.132, t=560.1960141601562, r=380.759, b=526.8450141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 201))]",
+          "self_ref='#/texts/158' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.132, t=524.1920141601562, r=380.755, b=490.77001416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 207))]",
+          "self_ref='#/texts/159' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.132, t=488.1870141601562, r=380.797, b=406.7600141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 576))]",
+          "self_ref='#/texts/160' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.132, t=404.1770141601562, r=380.814, b=298.74601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 717))]",
+          "self_ref='#/texts/161' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.132, t=296.1630141601562, r=380.791, b=238.73801416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 409))]",
+          "self_ref='#/texts/162' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.132, t=236.15501416015616, r=380.761, b=202.73401416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 211))]",
+          "self_ref='#/texts/163' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=136.811, t=195.0470141601562, r=378.146, b=174.0810141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 62))]",
+          "self_ref='#/texts/164' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.142, t=167.1960141601562, r=380.808, b=97.77001416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 443))]",
+          "self_ref='#/texts/165' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=145.58, t=93.64001416015617, r=378.141, b=67.05901416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 59))]",
+          "self_ref='#/texts/166' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=158.718, t=648.5080141601562, r=378.146, b=638.7810141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 35))]"
+        ],
+        "headings": [
+          "6-1 \u25a0 PHYSICAL MECHANISM OF CONVECTION"
+        ]
+      },
+      "tokens": 1367
+    },
+    {
+      "text": "The development of a velocity profile due to the no-slip condition as a fluid flows over a blunt nose.\n'Hunter Rouse: Laminar and Turbulent Flow Film.' Copyright IIHR-Hydroscience & Engineering, The University of Iowa. Used by permission.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/168' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=394.782, t=330.2120141601562, r=548.642, b=298.2420141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 102))]",
+          "self_ref='#/texts/169' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=390.142, t=293.48401416015616, r=548.02, b=268.8150141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 135))]"
+        ],
+        "headings": [
+          "FIGURE 6-3"
+        ]
+      },
+      "tokens": 37
+    },
+    {
+      "text": "A fluid flowing over a stationary surface comes to a complete stop at the surface because of the no-slip condition.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/185' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=403.952, t=112.14201416015612, r=548.642, b=68.67201416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 115))]"
+        ],
+        "headings": [
+          "FIGURE 6-4"
+        ]
+      },
+      "tokens": 20
+    },
+    {
+      "text": "Wilhelm Nusselt (1882-1957), was a German engineer, born in   Nuremberg, Germany. He studied machinery at the Technical Universities of Berlin-Charlottenburg and Munchen and conducted advanced studies in mathematics and physics. His doctoral thesis was on the 'Conductivity of Insulating Materials' which he completed in 1907. In 1915, Nusselt published his pioneering paper: The Basic Laws of Heat Transfer, in which he first proposed the dimensionless groups now known as the principal parameters in the similarity theory of heat transfer. His other famous works were concerned with the film condensation of steam on vertical surfaces, the combustion of pulverized coal and the analogy between heat and mass transfer in evaporation. Among his well known mathematical works are the solutions for laminar heat transfer in the entrance region of tubes and for heat exchange in cross-flow, and the basic theory of regenerators.\n\u00a9 KIT-Archiv, Foto: 28010, I / 2678\nfor the determination of the convection heat transfer coefficient when the temperature distribution within the fluid is known.\nThe convection heat transfer coefficient, in general, varies along the flow (or x -) direction. The average or mean convection heat transfer coefficient for a surface in such cases is determined by properly averaging the local convection heat transfer coefficients over the entire surface.\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (1 images):\n==================================================\n\n**[Image: page5_img1.jpeg - Page 5]**\nThe image is a black and white portrait of a man with glasses, a beard, and a tie. The image appears to be inverted, with the darker areas appearing lighter and vice versa. The man is wearing round glasses, and the reflection in the lenses is visible. He has a neatly trimmed beard and is wearing a tie with a pattern of small squares or circles. His hair is neatly combed. He is wearing a collared shirt and a jacket or suit.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/192' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=30.142, t=419.34201416015617, r=187.332, b=122.87201416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 925))]",
+          "self_ref='#/texts/193' parent=RefItem(cref='#/groups/2') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=30.142, t=118.11401416015622, r=140.002, b=111.44501416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 35))]",
+          "self_ref='#/texts/194' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.131, t=666.1960141601562, r=524.763, b=644.7760141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 126))]",
+          "self_ref='#/texts/195' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.131, t=642.1930141601562, r=524.728, b=596.7700141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 289))]"
+        ],
+        "headings": [
+          "FIGURE 6-5"
+        ]
+      },
+      "tokens": 305
+    },
+    {
+      "text": "In convection studies, it is common practice to nondimensionalize the governing equations and combine the variables, which group together into dimensionless numbers in order to reduce the number of total variables. It is also common practice to nondimensionalize the heat transfer coefficient h with the Nusselt number, defined as\n$$N u = \\frac { h L _ { c } } { k }$$\nwhere k is the thermal conductivity of the fluid and Lc is the characteristic length. The Nusselt number is named after Wilhelm Nusselt (Fig. 6-5), who made significant contributions to convective heat transfer in the first half of the twentieth century, and it is viewed as the dimensionless convection heat transfer coefficient.\nTo understand the physical significance of the Nusselt number, consider a fluid layer of thickness L and temperature difference D T 5 T2 2 T1 , as shown in Fig. 6-6. Heat transfer through the fluid layer is by convection when the fluid involves some motion and by conduction when the fluid layer is motionless. Heat flux (the rate of heat transfer per unit surface area) in either case is\n$$\\text {is doctoral} \\quad \\text {less. treat it as } \\, ( \\text {the rate of heat transfer} \\, \\text {per unit surface area} ) \\, \\text {in either case} \\, \\text {is} \\\\ \\text {activity} & & \\dot { q } _ { \\text {conv} } = & h \\Delta T & & ( 6 - 6 ) \\\\ \\text {ich} \\, \\text {he} & & \\text {and} & & \\\\ \\text {per. The} & & & & & \\\\ \\text {per. In which} & & & & & \\dot { q } _ { \\text {cond} } = & \\frac { \\Delta T } { L } & & ( 6 - 7 )$$\nTaking their ratio gives\n$$\\dot { q } _ { c o n d } = k \\, \\frac { \\Delta T } { L }$$\n$$\\frac { \\dot { q } _ { \\text {conv} } } { \\dot { q } _ { \\text {cond} } } = \\frac { h \\Delta T } { k \\Delta T / L } = \\frac { h L } { k } = N u$$\nwhich is the Nusselt number. Therefore, the Nusselt number represents the enhancement of heat transfer through a fluid layer as a result of convection relative to conduction across the same fluid layer. The larger the Nusselt number, the more effective the convection. A Nusselt number of Nu 5 1 for a fluid layer represents heat transfer across the layer by pure conduction.\nWe use forced convection in daily life more often than you might think (Fig. 6-7). We resort to forced convection whenever we want to increase the rate of heat transfer from a hot object. For example, we turn on the fan on hot summer days to help our body cool more effectively. The higher the fan speed, the better we feel. We stir our soup and blow on a hot slice of pizza to make them cool faster. The air on windy winter days feels much colder than it actually is. The simplest solution to heating problems in electronics packaging is to use a large enough fan.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/197' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=567.1960141601562, r=524.838, b=509.7720141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 330))]",
+          "self_ref='#/texts/198' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=340.148, t=500.2600141601562, r=522.146, b=477.40001416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 17))]",
+          "self_ref='#/texts/199' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=466.1960141601562, r=524.798, b=408.84201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 330))]",
+          "self_ref='#/texts/200' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.146, t=406.1880141601562, r=524.77, b=348.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 388))]",
+          "self_ref='#/texts/201' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=343.8850141601562, r=522.142, b=287.5460141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 32))]",
+          "self_ref='#/texts/202' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=272.1960141601562, r=296.422, b=262.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 24))]",
+          "self_ref='#/texts/203' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=335.275, t=301.7780141601562, r=384.514, b=281.8200141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 18))]",
+          "self_ref='#/texts/204' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=305.452, t=260.1470141601562, r=522.148, b=230.1510141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 53))]",
+          "self_ref='#/texts/205' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=222.1960141601562, r=524.788, b=164.77101416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 375))]",
+          "self_ref='#/texts/206' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=162.18801416015617, r=524.796, b=68.76001416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 565))]"
+        ],
+        "headings": [
+          "Nusselt Number"
+        ]
+      },
+      "tokens": 546
+    },
+    {
+      "text": "During the flow of air at T ` 5 20\u00b0C over a plate surface maintained at a constant temperature of Ts 5 160\u00b0C, the dimensionless temperature profile within the air layer over the plate is determined to be\n$$\\frac { T ( y ) - T _ { \\infty } } { T _ { s } - T _ { \\infty } } = e ^ { - a y }$$\nwhere a 5 3200 m 2 1  and y is the vertical distance measured from the plate surface in m (Fig. 6-8). Determine the heat flux on the plate surface and the convection heat transfer coefficient.\nSOLUTION Airflow over a flat plate has a given temperature profile. The heat flux on the plate surface and the convection heat transfer coefficient are to be determined.\nAssumptions 1 The given nondimensional temperature profile is representative of the variation of temperature over the entire plate. 2 Heat transfer by radiation is negligible.\nProperties The thermal conductivity of air at the film temperature of Tf 5 ( Ts 1 T ` )/2 5 (160\u00b0C 1 20\u00b0C)/2 5 90\u00b0C is k 5 0.03024 W/m \u00b7 K (Table A-15).\nAnalysis Noting that heat transfer from the plate to air at the surface is by conduction, heat flux from the solid surface to the fluid layer adjacent to the surface is determined from\n$$\\dot { q } = \\dot { q } _ { c o n d } = - k _ { f l u i d } \\frac { \\partial T } { \\partial y } \\Big | _ { y = 0 }$$\nwhere the temperature gradient at the plate surface is\n$$\\frac { \\partial T } { \\partial y } \\Big | _ { y = 0 } & = ( T _ { s } - T _ { \\infty } ) a [ e ^ { - a y } ] _ { y = 0 } = ( T _ { s } - T _ { \\infty } ) ( - a ) \\\\ & = ( 1 6 0 ^ { \\circ } C - 2 0 ^ { \\circ } C ) ( - 3 2 0 0 \\, \\mathbf m ^ { - 1 } ) = - 4 . 4 8 \\times 1 0 ^ { 5 } \\circ C / m$$\nSubstituting, the heat flux is determined to be\n$$\\dot { q } = - ( 0 . 0 3 0 2 4 \\, W / m \\cdot K ) ( - 4 . 4 8 \\times 1 0 ^ { 5 } \\, \\mathcal { C } / m ) = 1 . 3 5 \\times 1 0 ^ { 4 } \\, W / m ^ { 2 }$$\nThen the convection heat transfer coefficient becomes\n$$h & = \\frac { - \\, \\kappa _ { f l u i d \\, ( \\partial T / \\partial y ) _ { y = 0 } } } { T _ { s } - T _ { \\infty } } \\\\ & = \\frac { - ( 0 . 3 0 2 4 \\, W / m \\cdot K ) ( - 4 . 4 8 \\times 1 0 ^ { 5 } \\, ^ { C / m } ) } { ( 1 6 0 ^ { C } - 2 0 ^ { C } ) } = 9 6 . 8 \\, W / m ^ { 2 } \\, K$$\n$$\\frac { ( 1 6 0 ^ { \\circ } C - 2 0 ^ { \\circ } C ) } { ( 1 6 0 ^ { \\circ } C - 2 0 ^ { \\circ } C ) } = 9 6 . 8 \\, W / m ^ { 2 } \\cdot K$$\nDiscussion The convection heat transfer coefficient could also be determined from Newton's law of cooling, q # 5 h ( Ts 2 T ` ).",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/210' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=64.955, t=625.9140141601562, r=373.669, b=595.8340141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 203))]",
+          "self_ref='#/texts/211' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=181.862, t=580.2980141601562, r=254.531, b=556.0490141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 31))]",
+          "self_ref='#/texts/212' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=64.957, t=542.6220141601561, r=373.72, b=511.8360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 192))]",
+          "self_ref='#/texts/213' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=64.961, t=497.60201416015616, r=373.711, b=466.8360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 169))]",
+          "self_ref='#/texts/214' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=64.952, t=462.9210141601562, r=373.706, b=432.8340141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 175))]",
+          "self_ref='#/texts/215' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=64.961, t=428.9210141601562, r=373.213, b=408.4640141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 152))]",
+          "self_ref='#/texts/216' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=64.963, t=405.91701416015616, r=373.712, b=375.8390141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 184))]",
+          "self_ref='#/texts/217' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=168.342, t=363.52701416015617, r=267.599, b=342.56101416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 42))]",
+          "self_ref='#/texts/218' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=64.962, t=331.91401416015617, r=276.417, b=323.8320141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 54))]",
+          "self_ref='#/texts/219' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=104.653, t=302.52701416015617, r=341.051, b=271.4620141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 126))]",
+          "self_ref='#/texts/220' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=64.962, t=250.91401416015617, r=246.933, b=242.83201416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 47))]",
+          "self_ref='#/texts/221' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=92.042, t=230.3650141601562, r=343.98, b=216.46701416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 66))]",
+          "self_ref='#/texts/222' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=73.962, t=198.91401416015617, r=287.433, b=190.83201416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 53))]",
+          "self_ref='#/texts/223' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=115.232, t=173.1200141601562, r=342.382, b=125.25301416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 100))]",
+          "self_ref='#/texts/224' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=178.592, t=133.33801416015615, r=349.384, b=118.54601416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 20))]",
+          "self_ref='#/texts/225' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=73.966, t=100.64101416015615, r=361.939, b=80.19401416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 128))]"
+        ],
+        "headings": [
+          "EXAMPLE 6-1 Heat Transfer Calculation from Temperature Profile"
+        ]
+      },
+      "tokens": 677
+    },
+    {
+      "text": "Heat transfer through a fluid layer of thickness L and temperature difference D T .",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/243' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=399.042, t=552.2720141601562, r=548.722, b=520.3020141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 83))]"
+        ],
+        "headings": [
+          "FIGURE 6-6"
+        ]
+      },
+      "tokens": 15
+    },
+    {
+      "text": "We resort to forced convection whenever we need to increase the rate\u00a0of heat transfer.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/247' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=411.552, t=337.91201416015616, r=548.722, b=305.9420141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 86))]"
+        ],
+        "headings": [
+          "FIGURE 6-7"
+        ]
+      },
+      "tokens": 15
+    },
+    {
+      "text": "Schematic for Example 6-1.\nViscous flow\nTegIon\nInviscid flow region\nFIGURE 6-9 The flow of an originally uniform fluid stream over a flat plate, and the regions of viscous flow (next to the plate on both sides) and inviscid flow (away from the plate). Fundamentals of Boundary Layers, National\nCommittee from Fluid Mechanics Films, \u00a9 Education Development Center.\nFIGURE 6-10 External flow over a tennis ball, and the turbulent wake region behind. Courtesy NASA and Cislunar Aerospace, Inc.\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (1 images):\n==================================================\n\n**[Image: page7_img1.jpeg - Page 7]**\nThe image shows a black and white graphic depicting a symmetrical, abstract design. A horizontal line runs across the center of the image. Above and below this line are two dark, vertical shapes that curve inward toward the center line, creating a mirrored effect. The edges of these shapes are somewhat jagged or textured. The background is a plain white.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/263' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=434.022, t=171.8220141601562, r=546.222, b=162.85201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]",
+          "self_ref='#/texts/265' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=117.73561138238244, t=652.2432248001236, r=160.40127135575906, b=644.4274699096817, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 12))]",
+          "self_ref='#/texts/266' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=128.3946802335528, t=640.7603288620209, r=150.40760112085079, b=633.9103659917408, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 6))]",
+          "self_ref='#/texts/267' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=117.75059761378829, t=615.4867957663367, r=161.05168461975163, b=607.8505659333696, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 13)), ProvenanceItem(page_no=7, bbox=BoundingBox(l=128.40359346245646, t=606.053161065279, r=150.39868789231383, b=597.9508674149697, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(14, 20))]",
+          "self_ref='#/texts/274' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.142, t=458.09201416015617, r=182.632, b=379.9250141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 225))]",
+          "self_ref='#/texts/275' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.142, t=377.5950141601562, r=153.885, b=361.9250141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 69))]",
+          "self_ref='#/texts/276' parent=RefItem(cref='#/pictures/12') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.142, t=171.5420141601562, r=177.892, b=127.87501416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 126))]"
+        ],
+        "headings": [
+          "FIGURE 6-8"
+        ]
+      },
+      "tokens": 152
+    },
+    {
+      "text": "Convection heat transfer is closely tied with fluid mechanics, which is the science that deals with the behavior of fluids at rest or in motion, and the interaction of fluids with solids or other fluids at the boundaries. There is a wide variety of fluid flow problems encountered in practice, and it is usually convenient to classify them on the basis of some common characteristics to make it feasible to study them in groups. There are many ways to classify fluid flow problems, and here we present some general categories.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/278' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=644.3660141601562, r=524.777, b=562.9390141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 526))]"
+        ],
+        "headings": [
+          "6-2 \u25a0 CLASSIFICATION OF FLUID FLOWS"
+        ]
+      },
+      "tokens": 90
+    },
+    {
+      "text": "When two fluid layers move relative to each other, a friction force develops between them and the slower layer tries to slow down the faster layer. This internal resistance to flow is quantified by the fluid property viscosity , which is a measure of internal stickiness of the fluid. Viscosity is caused by cohesive forces between the molecules in liquids and by molecular collisions in gases. There is no fluid with zero viscosity, and thus all fluid flows involve viscous effects to some degree. Flows in which the frictional effects are significant are called viscous flows . However, in many flows of practical interest, there are regions (typically  regions  not  close  to  solid  surfaces)  where  viscous forces are negligibly small compared to inertial or pressure forces. Neglecting the viscous terms in such inviscid flow regions greatly simplifies the analysis without much loss in accuracy.\nThe development of viscous and inviscid regions of flow as a result of inserting a flat plate parallel into a fluid stream of uniform velocity is shown in Fig. 6-9. The fluid sticks to the plate on both sides because of the no-slip condition, and the thin boundary layer in which the viscous effects are significant near the plate surface is the viscous flow region . The region of flow on both sides away from the plate and unaffected by the presence of the plate is the inviscid flow region .",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/280' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=531.3660141601562, r=524.826, b=389.93101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 904))]",
+          "self_ref='#/texts/281' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=387.3480141601562, r=524.804, b=305.9200141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 494))]"
+        ],
+        "headings": [
+          "Viscous versus Inviscid Regions of Flow"
+        ]
+      },
+      "tokens": 235
+    },
+    {
+      "text": "A fluid flow is classified as being internal or external, depending on whether the fluid is forced to flow in a confined channel or over a surface. The flow of an unbounded fluid over a surface such as a plate, a wire, or a pipe is external flow . The flow in a pipe or duct is internal flow if the fluid is completely bounded by solid surfaces. Water flow in a pipe, for example, is internal flow, and airflow over a ball or over an exposed pipe during a windy day is external flow (Fig. 6-10). The flow of liquids in a duct is called open-channel flow if the duct is only partially filled with the liquid and there is a free surface. The flows of water in rivers and irrigation ditches are examples of such flows.\nInternal flows are dominated by the influence of viscosity throughout the flow field. In external flows the viscous effects are limited to boundary layers near solid surfaces and to wake regions downstream of bodies.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/283' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=274.36601416015617, r=524.799, b=168.93501416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 715))]",
+          "self_ref='#/texts/284' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=166.35201416015616, r=524.77, b=132.93101416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 216))]"
+        ],
+        "headings": [
+          "Internal versus External Flow"
+        ]
+      },
+      "tokens": 172
+    },
+    {
+      "text": "A  flow  is  classified  as  being compressible or incompressible, depending on the level of variation of density during flow. Incompressibility is an approximation, and a flow is said to be incompressible if the density remains\nL = 0.2 m nearly constant throughout. Therefore, the volume of every portion of fluid remains unchanged over the course of its motion when the flow (or the fluid) is   incompressible.\nThe densities of liquids are essentially constant, and thus the flow of liquids is typically incompressible. Therefore, liquids are usually referred to as incompressible substances. A pressure of 210 atm, for example, causes the density of liquid water at 1 atm to change by just 1 percent. Gases, on the other hand, are highly compressible. A pressure change of just 0.01 atm, for example, causes a change of 1 percent in the density of atmospheric air.\nLiquid flows are incompressible to a high level of accuracy, but the level of variation in density in gas flows and the consequent level of approximation made when modeling gas flows as incompressible depends on the Mach number defined as Ma 5 V / c , where c is the speed of sound whose value is 346 m/s in air at room temperature at sea level. Gas flows can often be approximated as incompressible if the density changes are under about 5 percent, which is usually the case when Ma , 0.3. Therefore, the compressibility effects of air can be neglected at speeds under about 100 m/s. Note that the flow of a gas is not necessarily a compressible flow.\nSmall density changes of liquids corresponding to large pressure changes can still have important consequences. The irritating 'water hammer' in a water pipe, for example, is caused by the vibrations of the pipe generated by the reflection of pressure waves following the sudden closing of the valves.\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (2 images):\n==================================================\n\n**[Image: page8_img1.jpeg - Page 8]**\nThe image shows three horizontal panels stacked vertically. Each panel displays a grayscale image. The top panel features several distinct, parallel horizontal lines. The middle panel shows a more textured surface with subtle, wavy patterns. The bottom panel exhibits a more pronounced wavy texture with darker and lighter areas, suggesting a three-dimensional surface.\n\n**[Image: page8_img2.jpeg - Page 8]**\nHere's a description of the image:\n\nThe image appears to be a photographic negative of a woman's portrait. The colors are inverted, so what would normally be dark is light, and vice versa.\n\nThe woman is shown in profile, facing left. She has light-colored (in the negative, so likely dark in the original) hair that is styled with volume. She is wearing earrings and what appears to be a necklace or a scarf tied around her neck. The background is a blurred, dark tone.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/286' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=102.06601416015621, r=524.784, b=68.64501416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 228))]",
+          "self_ref='#/texts/289' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=129.2631889461198, t=695.085054345794, r=161.4034782527604, b=687.7268558040681, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 9)), ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=666.1960141601562, r=380.754, b=632.7750141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(10, 183))]",
+          "self_ref='#/texts/290' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=630.1920141601562, r=380.826, b=560.7660141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 454))]",
+          "self_ref='#/texts/291' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=558.1830141601562, r=380.785, b=452.7520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 652))]",
+          "self_ref='#/texts/292' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=450.16901416015617, r=380.747, b=404.74601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 301))]"
+        ],
+        "headings": [
+          "Compressible versus Incompressible Flow"
+        ]
+      },
+      "tokens": 465
+    },
+    {
+      "text": "Some flows are smooth and orderly while others are rather chaotic. The highly ordered fluid motion characterized by smooth layers of fluid is called laminar . The word laminar comes from the movement of adjacent fluid particles together in 'laminates.' The flow of high-viscosity fluids such as oils at low velocities is typically laminar. The highly disordered fluid motion that typically occurs at high velocities and is characterized by velocity fluctuations is called turbulent (Fig. 6-11). The flow of low-viscosity fluids such as air at high velocities is typically turbulent. The flow regime greatly influences the required power for pumping. A flow that alternates between being laminar and turbulent is called transitional .",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/294' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=374.1960141601562, r=380.804, b=256.7640141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 733))]"
+        ],
+        "headings": [
+          "Laminar versus Turbulent Flow"
+        ]
+      },
+      "tokens": 113
+    },
+    {
+      "text": "A fluid flow is said to be natural or forced, depending on how the fluid motion is initiated. In forced flow , a fluid is forced to flow over a surface or in a pipe by external means such as a pump or a fan. In natural flows , any fluid motion is due to natural means such as the buoyancy effect, which manifests itself as the rise of the warmer (and thus lighter) fluid and the fall of cooler (and thus denser) fluid (Fig. 6-12). In solar hot-water systems, for example, the thermosiphoning effect is commonly used to replace pumps by placing the water tank sufficiently above the solar collectors.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/296' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=226.1960141601562, r=380.813, b=132.76701416015612, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 599))]"
+        ],
+        "headings": [
+          "Natural (or Unforced) versus Forced Flow"
+        ]
+      },
+      "tokens": 111
+    },
+    {
+      "text": "The terms steady and uniform are used frequently in engineering, and thus it is important to have a clear understanding of their meanings. The term steady implies no change at a point with time. The opposite of steady is unsteady .\nTransitional\nTurbulent\nFIGURE 6-11 Laminar, transitional,\nand turbulent flows. Courtesy ONERA, photograph by Werl\u00e9.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/298' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.142, t=102.19601416015621, r=380.797, b=68.77501416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 231))]",
+          "self_ref='#/texts/299' parent=RefItem(cref='#/pictures/13') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=507.07, t=444.54201416015616, r=545.454, b=437.60201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 12))]",
+          "self_ref='#/texts/301' parent=RefItem(cref='#/pictures/15') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=514.15, t=378.4540141601562, r=545.182, b=371.5140141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 9))]",
+          "self_ref='#/texts/302' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=459.762, t=361.2720141601562, r=548.642, b=337.53201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 34))]",
+          "self_ref='#/texts/303' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=423.652, t=335.0020141601562, r=546.142, b=314.6050141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 57))]"
+        ],
+        "headings": [
+          "Steady versus Unsteady Flow"
+        ]
+      },
+      "tokens": 55
+    },
+    {
+      "text": "In this schlieren image of a girl, the rise of lighter, warmer air adjacent to her body indicates that humans and warm-blooded animals are surrounded by thermal plumes of rising warm air.\nG. S. Settles, Gas Dynamics Lab, Penn State University. Used by permission.\nThe term uniform implies no change with location over a specified region. These meanings are consistent with their everyday use (steady girlfriend, uniform distribution, etc.).\nThe terms unsteady and transient are often used interchangeably, but these terms are not synonyms. In fluid mechanics, unsteady is  the most general term that applies to any flow that is not steady, but transient is typically used for developing flows. When a rocket engine is fired up, for example, there are transient effects (the pressure builds up inside the rocket engine, the flow accelerates, etc.) until the engine settles down and operates steadily. The term periodic refers to the kind of unsteady flow in which the flow oscillates about a steady mean.\nMany devices such as turbines, compressors, boilers, condensers, and heat exchangers operate for long periods of time under the same conditions, and they are classified as steady-flow devices. (Note that the flow field near the rotating blades of a turbomachine is of course unsteady, but we consider the overall flow field rather than the details at some localities when we classify devices.) During steady flow, the fluid properties can change from point to point within a device, but at any fixed point they remain constant. Therefore, the volume, the mass, and the total energy content of a steady-flow device or flow section remain constant in steady operation.\nSteady-flow conditions can be closely approximated by devices that are intended for continuous operation such as turbines, pumps, boilers, condensers,  and  heat  exchangers  of  power  plants  or  refrigeration  systems.  Some cyclic devices, such as reciprocating engines or compressors, do not   satisfy the steady-flow conditions since the flow at the inlets and the exits is   pulsating and not steady. However, the fluid properties vary with time in a periodic manner, and the flow through these devices can still be analyzed as a steadyflow process by using time-averaged values for the properties.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/311' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=391.992, t=144.12201416015614, r=548.622, b=89.15201416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 187))]",
+          "self_ref='#/texts/312' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=412.592, t=84.39501416015617, r=547.997, b=68.7250141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 75))]",
+          "self_ref='#/texts/314' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=666.1960141601562, r=524.758, b=632.7750141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 176))]",
+          "self_ref='#/texts/315' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=630.1920141601562, r=524.793, b=536.7630141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 562))]",
+          "self_ref='#/texts/316' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=534.1800141601561, r=524.8, b=428.7490141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 666))]",
+          "self_ref='#/texts/317' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=426.1660141601562, r=524.79, b=332.7370141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 605))]"
+        ],
+        "headings": [
+          "FIGURE 6-12"
+        ]
+      },
+      "tokens": 359
+    },
+    {
+      "text": "A flow field is best characterized by the velocity distribution, and thus a flow is said to be one-, two-, or three-dimensional if the flow velocity varies in one, two, or three primary dimensions, respectively. A typical fluid flow involves a three-dimensional geometry, and the velocity may vary in all three dimensions, rendering the flow three-dimensional [ V S ( x , y , z ) in rectangular or V S ( r , u , z ) in cylindrical coordinates]. However, the variation of velocity in certain directions can be small relative to the variation in other directions and can be ignored with negligible error. In such cases, the flow can be modeled conveniently as being one- or two-dimensional, which is easier to analyze.\nConsider steady flow of a fluid through a circular pipe attached to a large tank. The fluid velocity everywhere on the pipe surface is zero because of the no-slip condition, and the flow is two-dimensional in the entrance region of the pipe since the velocity changes in both the r - and z -directions. The   velocity profile develops fully and remains unchanged after some distance from the inlet (about 10 pipe diameters in turbulent flow, and less in laminar pipe flow, as in Fig. 6-13), and the flow in this region is said to be fully developed . The fully developed flow in a circular pipe is one-dimensional since the velocity varies in the radial rdirection but not in the angular u - or axial z -directions, as shown in Fig. 6-13. That is, the velocity profile is the same at any axial z -location, and it is symmetric about the axis of the pipe.\nNote that the dimensionality of the flow also depends on the choice of coordinate system and its orientation. The pipe flow discussed, for example, is one-dimensional in cylindrical coordinates, but two-dimensional in Cartesian coordinates-illustrating the importance of choosing the most appropriate coordinate system. Also note that even in this simple flow, the velocity cannot be uniform across the cross section of the pipe because of the no-slip condition. However, at a well-rounded entrance to the pipe, the velocity profile may be approximated as being nearly uniform across the pipe, since the velocity is nearly constant at all radii except very close to the pipe wall.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/319' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=305.8560141601562, r=524.794, b=200.43101416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 716))]",
+          "self_ref='#/texts/320' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.147, t=197.84801416015625, r=524.806, b=68.41501416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 854))]",
+          "self_ref='#/texts/337' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.143, t=539.1960141601562, r=380.793, b=421.7640141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 680))]"
+        ],
+        "headings": [
+          "One-, Two-, and Three-Dimensional Flows"
+        ]
+      },
+      "tokens": 385
+    },
+    {
+      "text": "Consider the parallel flow of a fluid over a flat plate, as shown in Fig. 6-14. Surfaces that are slightly contoured such as turbine blades can also be approximated as flat plates with reasonable accuracy. The x -coordinate is measured along the plate surface from the leading edge of the plate in the direction of the flow, and y is measured from the surface in the normal direction. The fluid approaches the plate in the x -direction with a uniform velocity V , which is practically identical to the free-stream velocity over the plate away from the surface (this would not be the case for cross flow over blunt bodies such as a cylinder).\nFor the sake of discussion, we can consider the fluid to consist of adjacent layers piled on top of each other. The velocity of the particles in the first fluid\nFIGURE 6-14\nThe development of the boundary layer for flow over a flat plate, and the different flow regimes. Courtesy of University of Delaware.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/339' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.131, t=380.1960141601562, r=380.778, b=274.76501416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 641))]",
+          "self_ref='#/texts/340' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.131, t=272.1820141601562, r=380.778, b=250.76201416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 160))]",
+          "self_ref='#/texts/341' parent=RefItem(cref='#/pictures/18') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.112, t=101.0620141601562, r=108.022, b=92.1290141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 11))]",
+          "self_ref='#/texts/364' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.112, t=89.29201416015621, r=440.682, b=68.89501416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 133))]"
+        ],
+        "headings": [
+          "6-3 \u25a0 VELOCITY BOUNDARY LAYER"
+        ]
+      },
+      "tokens": 168
+    },
+    {
+      "text": "The development of the velocity profile in a circular pipe. V 5 V ( r , z ) and thus the flow is two-dimensional in the entrance region, and becomes one-dimensional downstream when the velocity profile fully develops and remains unchanged in the flow direction, V 5 V ( r ).",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "41/100",
+        "doc_items": [
+          "self_ref='#/texts/366' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=398.092, t=653.6020141601562, r=548.642, b=564.1320141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 274))]"
+        ],
+        "headings": [
+          "FIGURE 6-13"
+        ]
+      },
+      "tokens": 51
+    }
+  ],
+  "total_chunks": 25,
+  "original_document": "file8973.pdf",
+  "pdf_chunk": "file8973_chunk041_p401-410",
+  "config": {
+    "max_tokens": 2048,
+    "merge_peers": true,
+    "enable_picture_description": true,
+    "picture_description_max_tokens": 800,
+    "vision_model": "gemini-2.0-flash",
+    "enable_formula": true,
+    "enable_ocr": true,
+    "enable_table_structure": true
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "picture_num": 1,
+    "reference": "#/pictures/0",
+    "has_image": true,
+    "caption": "",
+    "meta": null,
+    "annotations": null,
+    "image_file": "picture_1.png",
+    "image_size": "80.0x80.0"
+  },
+  {
+    "picture_num": 2,
+    "reference": "#/pictures/1",
+    "has_image": true,
+    "caption": "",
+    "meta": null,
+    "annotations": null,
+    "image_file": "picture_2.png",
+    "image_size": "80.0x79.0"
+  }
+]

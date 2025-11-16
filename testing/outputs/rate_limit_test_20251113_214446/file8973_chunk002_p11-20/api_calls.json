@@ -1,0 +1,23 @@
+[
+  {
+    "image_ref": "#/pictures/0",
+    "timestamp": 1763063117.785679,
+    "duration": 1.7032740116119385,
+    "status": "success",
+    "description_length": 337
+  },
+  {
+    "image_ref": "#/pictures/1",
+    "timestamp": 1763063119.431658,
+    "duration": 1.6459310054779053,
+    "status": "success",
+    "description_length": 368
+  },
+  {
+    "image_ref": "#/pictures/2",
+    "timestamp": 1763063121.2298791,
+    "duration": 1.7981722354888916,
+    "status": "success",
+    "description_length": 779
+  }
+]

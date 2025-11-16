@@ -1,0 +1,540 @@
+{
+  "method": "docling-hybrid",
+  "chunks": [
+    {
+      "text": "Chapter 9, Non-Boiling Two-Phase Flow Heat Transfer in Chapter 10, Human Cardiovascular System as a Counter-Current Heat Exchanger in Chapter 11, and Heat Transfer from the Human Body in Chapter 13.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/1' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=666.1960141601562, r=524.765, b=632.7750141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 198))]"
+        ],
+        "headings": null
+      },
+      "tokens": 31
+    },
+    {
+      "text": "Frequently used conversion factors and physical constants are listed on the inner cover pages of the text for easy   reference.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/3' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=603.1960141601562, r=524.766, b=581.7760141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 127))]"
+        ],
+        "headings": [
+          "CONVERSION FACTORS"
+        ]
+      },
+      "tokens": 20
+    },
+    {
+      "text": "The following supplements are available to the users of the book.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/5' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=549.1960141601562, r=472.559, b=539.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 65))]"
+        ],
+        "headings": [
+          "SUPPLEMENTS"
+        ]
+      },
+      "tokens": 11
+    },
+    {
+      "text": "Developed by Sanford Klein and William Beckman from the University of Wisconsin-Madison, this software combines equation-solving capability and engineering property data. EES can do optimization, parametric analysis, and linear and nonlinear regression, and provides publication-quality plotting capabilities. Thermodynamics and transport properties for air, water, and many other fluids are built in, and EES allows the user to enter property data or functional relationships.\nEES is a powerful equation solver with built-in functions and property tables for thermodynamic and transport properties as well as automatic unit checking capability. It requires less time than a calculator for data entry and allows more time for thinking critically about modeling and solving engineering problems. Look for the EES icons in the homework problems sections of the text.\nThe Limited Academic Version of EES is available for departmental license upon adoption of the Fifth Edition of Heat and Mass Transfer: Fundamentals and Applications (meaning that the text is required for students in the course). You may load this software onto your institution's computer system, for use by students and faculty related to the course, as long as the arrangement between McGraw-Hill Education and F-Chart is in effect. There are minimum order requirements stipulated by F-Chart to qualify.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/7' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=510.1960141601562, r=524.792, b=428.7690141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 477))]",
+          "self_ref='#/texts/8' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=426.18601416015616, r=524.792, b=356.7590141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 386))]",
+          "self_ref='#/texts/9' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=354.17601416015617, r=524.811, b=272.7490141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 506))]"
+        ],
+        "headings": [
+          "ENGINEERING EQUATION SOLVER (EES)"
+        ]
+      },
+      "tokens": 202
+    },
+    {
+      "text": "Web  support  is  provided  for  the  text  on  the  text  specific  website  at www. mhhe.com/cengel\nVisit this website for general text information, errata, and author information. The site also includes resources for students including a list of helpful web links. The instructor side of the site includes the solutions manual, the text's images in PowerPoint form, and more!",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/11' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=243.1960141601562, r=522.125, b=221.7760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 101))]",
+          "self_ref='#/texts/12' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=219.19301416015617, r=524.767, b=173.77001416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 276))]"
+        ],
+        "headings": [
+          "TEXT WEBSITE"
+        ]
+      },
+      "tokens": 58
+    },
+    {
+      "text": "(Available to Instructors Only)\nMcGraw-Hill's COSMOS (Complete Online Solutions Manual Organization System) allows instructors to streamline the creation of assignments, quizzes, and texts by using problems and solutions from the textbook, as well as their own custom material. COSMOS is now available online at http://cosmos.mhhe.com",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/14' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=144.1960141601562, r=327.911, b=134.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 31))]",
+          "self_ref='#/texts/15' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=198.142, t=132.19501416015623, r=524.795, b=86.77201416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 302))]"
+        ],
+        "headings": [
+          "COSMOS"
+        ]
+      },
+      "tokens": 45
+    },
+    {
+      "text": "We would like to acknowledge with appreciation the contribution of new sections, problems, and the numerous and valuable comments, suggestions, constructive criticisms, and praise from the following contributors, evaluators and reviewers:",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/19' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.132, t=649.9360141601562, r=380.783, b=604.5130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 238))]"
+        ],
+        "headings": [
+          "ACKNOWLEDGMENTS"
+        ]
+      },
+      "tokens": 31
+    },
+    {
+      "text": "University of St. Thomas",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/21' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=66.142, t=570.9720141601562, r=152.324, b=563.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 24))]"
+        ],
+        "headings": [
+          "John P. Abraham"
+        ]
+      },
+      "tokens": 4
+    },
+    {
+      "text": "Syracuse University\nSwanand M. Bhagwat\nOklahoma State University",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/23' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=66.142, t=537.9720141601562, r=134.363, b=530.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 19))]",
+          "self_ref='#/texts/24' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=518.3560141601562, r=147.172, b=508.9380141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 18))]",
+          "self_ref='#/texts/25' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=66.142, t=504.97201416015616, r=158.214, b=497.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 25))]"
+        ],
+        "headings": [
+          "Jeongmin Ahn"
+        ]
+      },
+      "tokens": 8
+    },
+    {
+      "text": "Old Dominion University",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/27' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=66.142, t=471.97201416015616, r=152.553, b=464.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 23))]"
+        ],
+        "headings": [
+          "Ayodeji Demuren"
+        ]
+      },
+      "tokens": 3
+    },
+    {
+      "text": "Washington State University",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/29' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=66.142, t=438.97201416015616, r=163.416, b=431.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 27))]"
+        ],
+        "headings": [
+          "Prashanta Dutta"
+        ]
+      },
+      "tokens": 3
+    },
+    {
+      "text": "George Fox University",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/31' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=66.142, t=405.97201416015616, r=144.512, b=398.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 21))]"
+        ],
+        "headings": [
+          "Michael Foster"
+        ]
+      },
+      "tokens": 3
+    },
+    {
+      "text": "Auburn University",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/33' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=66.142, t=372.97201416015616, r=129.178, b=365.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 17))]"
+        ],
+        "headings": [
+          "William Josephson"
+        ]
+      },
+      "tokens": 2
+    },
+    {
+      "text": "University of Gaziantep, Turkey",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/35' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=234.142, t=570.9720141601562, r=343.214, b=563.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 31))]"
+        ],
+        "headings": [
+          "Mehmet Kanoglu"
+        ]
+      },
+      "tokens": 4
+    },
+    {
+      "text": "Oklahoma State University",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/37' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=234.142, t=537.9720141601562, r=326.214, b=530.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 25))]"
+        ],
+        "headings": [
+          "Matthew J. Klopfstein"
+        ]
+      },
+      "tokens": 3
+    },
+    {
+      "text": "University of Southern California",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/39' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=234.142, t=504.97201416015616, r=348.663, b=497.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 33))]"
+        ],
+        "headings": [
+          "Richard J. Martin"
+        ]
+      },
+      "tokens": 4
+    },
+    {
+      "text": "Stony Brook University",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/41' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=234.142, t=471.97201416015616, r=313.464, b=464.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 22))]"
+        ],
+        "headings": [
+          "David A. Rubenstein"
+        ]
+      },
+      "tokens": 3
+    },
+    {
+      "text": "Ferris State University\nHou Kuan Tam University of Macau",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/43' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=234.142, t=438.97201416015616, r=312.053, b=431.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 23))]",
+          "self_ref='#/texts/44' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=222.142, t=419.3560141601562, r=304.021, b=398.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 32))]"
+        ],
+        "headings": [
+          "Ali Siahpush"
+        ]
+      },
+      "tokens": 9
+    },
+    {
+      "text": "University of North Dakota\nTheir contributions and suggestions have greatly helped to improve the quality of this text.\nSpecial thanks are due to Dr. Clement C. Tang of University of North Dakota and Mr. Swanand Bhagwat (Ph.D. Candidate) of Oklahoma State University for their help with developing new problems for this edition.\nWe also would like to thank our students and instructors from all over the globe, who provided plenty of feedback from students' and users' perspectives. Finally, we would like to express our appreciation to our wives, Zehra \u00c7engel and Homa Ghajar, for their continued patience, understanding, and support throughout the preparation of the fifth edition of this text.\nYunus A. \u00c7engel Afshin J. Ghajar",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/46' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=234.142, t=372.97201416015616, r=327.404, b=365.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]",
+          "self_ref='#/texts/47' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=338.37601416015616, r=378.13, b=316.9560141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 92))]",
+          "self_ref='#/texts/48' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=302.37101416015616, r=380.766, b=268.9500141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 208))]",
+          "self_ref='#/texts/49' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.142, t=254.3650141601562, r=380.801, b=196.94101416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 367))]",
+          "self_ref='#/texts/50' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=310.902, t=182.3020141601562, r=378.142, b=161.3690141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 32))]"
+        ],
+        "headings": [
+          "Clement C. Tang"
+        ]
+      },
+      "tokens": 116
+    },
+    {
+      "text": "T he science of thermodynamics deals with the amount of heat transfer as a system undergoes a process from one equilibrium state to another, and makes no reference to how long the process will take. But in engineering, we are often interested in the rate of heat transfer, which is the topic of the science of heat transfer.\nWe start this chapter with a review of the fundamental concepts of thermodynamics that form the framework for heat transfer. We first present the relation of heat to other forms of energy and review the energy balance. We then present the three basic mechanisms of heat transfer, which are conduction, convection, and radiation, and discuss thermal conductivity. Conduction is the transfer of energy from the more energetic particles of a substance to the adjacent, less energetic ones as a result of interactions between the particles. Convection is  the  mode  of  heat  transfer  between  a  solid  surface  and  the adjacent liquid or gas that is in motion, and it involves the combined effects of conduction and fluid motion. Radiation is the energy emitted by matter in the form of electromagnetic waves (or photons) as a result of the changes in the electronic configurations of the atoms or molecules. We close this chapter with a discussion of simultaneous heat transfer.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/53' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=53.152, t=544.4780141601561, r=380.786, b=479.0620141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 324))]",
+          "self_ref='#/texts/54' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=54.146, t=474.48401416015616, r=380.816, b=297.1070141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 980))]"
+        ],
+        "headings": [
+          "I N T R O D U C T I O N   A N D BASIC CONCEPTS"
+        ]
+      },
+      "tokens": 216
+    },
+    {
+      "text": "When you finish studying this chapter, you should be able to:\n- \u25a0 Understand how thermodynamics and heat transfer are related to each other,\n- \u25a0 Distinguish thermal energy from other forms of energy, and heat transfer from other forms of energy transfer,\n- \u25a0 Perform general energy balances as well as surface energy balances,\n- \u25a0 Understand the basic mechanisms of heat transfer, which are conduction, convection, and radiation, and Fourier's law of heat conduction, Newton's law of cooling, and the StefanBoltzmann law of radiation,\n- \u25a0 Identify the mechanisms of heat transfer that occur simultaneously in practice,\n- \u25a0 Develop an awareness of the cost associated with heat losses, and\n- \u25a0 Solve various heat transfer problems encountered in practice.\n2",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/58' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=400.642, t=514.6020141601562, r=548.348, b=493.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 61))]",
+          "self_ref='#/texts/59' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=400.642, t=484.60201416015616, r=547.502, b=451.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 76))]",
+          "self_ref='#/texts/60' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=400.642, t=445.60201416015616, r=543.612, b=400.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 111))]",
+          "self_ref='#/texts/61' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=400.642, t=394.60201416015616, r=545.272, b=361.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 69))]",
+          "self_ref='#/texts/62' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=400.642, t=355.60201416015616, r=546.952, b=274.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 205))]",
+          "self_ref='#/texts/63' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=400.642, t=268.60201416015616, r=525.842, b=235.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 81))]",
+          "self_ref='#/texts/64' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=400.642, t=229.60201416015616, r=547.512, b=208.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 67))]",
+          "self_ref='#/texts/65' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=400.642, t=202.60201416015616, r=524.732, b=169.59201416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 63))]",
+          "self_ref='#/texts/68' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=105.922, t=691.0820141601562, r=110.37, b=683.9360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]"
+        ],
+        "headings": [
+          "OBJECTIVES"
+        ]
+      },
+      "tokens": 123
+    },
+    {
+      "text": "We are normally interested in how long it takes for the hot coffee in a thermos bottle to cool to a certain temperature, which cannot be determined from a thermodynamic analysis alone.\nFIGURE 1-2 Heat flows in the direction of decreasing temperature.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/75' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=30.725, t=428.2420141601562, r=172.365, b=361.7720141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 184))]",
+          "self_ref='#/texts/76' parent=RefItem(cref='#/pictures/2') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=30.565, t=174.8220141601562, r=150.545, b=142.08201416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 65))]"
+        ],
+        "headings": [
+          "FIGURE 1-1"
+        ]
+      },
+      "tokens": 42
+    },
+    {
+      "text": "We all know from experience that a cold canned drink left in a room warms up and a warm canned drink left in a refrigerator cools down. This is accomplished by the transfer of energy from the warm medium to the cold one. The energy transfer is always from the higher temperature medium to the lower temperature one, and the energy transfer stops when the two mediums reach the same temperature.\nYou will recall from thermodynamics that energy exists in various forms. In this text we are primarily interested in heat , which is the form of energy that can be transferred from one system to another as a result of temperature difference. The science that deals with the determination of the rates of such energy transfers is heat transfer .\nYou may be wondering why we need to undertake a detailed study on heat transfer. After all, we can determine the amount of heat transfer for any system undergoing any process using a thermodynamic analysis alone. The reason is that thermodynamics is concerned with the amount of heat transfer as a system undergoes a process from one equilibrium state to another, and it gives no indication about how long the process will take. A thermodynamic analysis simply tells us how much heat must be transferred to realize a specified change of state to satisfy the conservation of energy principle.\nIn practice we are more concerned about the rate of heat transfer (heat transfer per unit time) than we are with the amount of it. For example, we can determine the amount of heat transferred from a thermos bottle as the hot coffee inside cools from 90\u00b0C to 80\u00b0C by a thermodynamic analysis alone. But a typical user or designer of a thermos bottle is primarily interested in how long it will be before the hot coffee inside cools to 80\u00b0C, and a thermodynamic analysis cannot answer this question. Determining the rates of heat transfer to or from a system and thus the times of heating or cooling, as well as the variation of the temperature, is the subject of heat transfer (Fig.\u00a01-1).\nThermodynamics deals with equilibrium states and changes from one equilibrium state to another. Heat transfer, on the other hand, deals with systems that lack thermal equilibrium, and thus it is a nonequilibrium phenomenon. Therefore, the study of heat transfer cannot be based on the principles of thermodynamics alone. However, the laws of thermodynamics lay the framework for the science of heat transfer. The first law requires that the rate of energy transfer into a system be equal to the rate of increase of the energy of that system. The second law requires that heat be transferred in the direction of decreasing temperature (Fig.\u00a01-2). This is like a car parked on an inclined road must go downhill in the direction of decreasing elevation when its brakes are released. It is also analogous to the electric current flowing in the direction of decreasing voltage or the fluid flowing in the direction of decreasing total pressure.\nThe basic requirement for heat transfer is the presence of a temperature difference. There can be no net heat transfer between two bodies that are at the same temperature. The temperature difference is the driving force for heat transfer, just as the voltage difference is  the driving force for electric current flow and pressure difference is the driving force for fluid flow. The rate of heat transfer in a certain direction depends on the magnitude of the temperature gradient (the temperature difference per unit length or the rate of change of temperature) in that direction. The larger the temperature gradient, the higher the rate of heat transfer.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/85' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=644.3660141601562, r=524.796, b=574.9400141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 394))]",
+          "self_ref='#/texts/86' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=572.3570141601562, r=524.784, b=514.9330141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 344))]",
+          "self_ref='#/texts/87' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=512.3500141601562, r=524.768, b=418.9210141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 591))]",
+          "self_ref='#/texts/88' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=416.3380141601562, r=524.783, b=310.90701416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 687))]",
+          "self_ref='#/texts/89' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.152, t=308.3240141601562, r=524.805, b=166.8890141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 939))]",
+          "self_ref='#/texts/90' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=198.142, t=164.30601416015622, r=524.822, b=58.87601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 656))]"
+        ],
+        "headings": [
+          "1-1 \u25a0 THERMODYNAMICS AND HEAT TRANSFER"
+        ]
+      },
+      "tokens": 615
+    },
+    {
+      "text": "Heat transfer is commonly encountered in engineering systems and other aspects of life, and one does not need to go very far to see some application areas of heat transfer. In fact, one does not need to go anywhere. The human body is constantly rejecting heat to its surroundings, and human comfort is closely tied to the rate of this heat rejection. We try to control this heat transfer rate by adjusting our clothing to the environmental conditions.\nMany ordinary household appliances are designed, in whole or in part, by using the principles of heat transfer. Some examples include the electric or gas range, the heating and air-conditioning system, the refrigerator and freezer, the water heater, the iron, and even the computer, the TV, and the DVD player. Of course, energy-efficient homes are designed on the basis of minimizing heat loss in winter and heat gain in summer. Heat transfer plays a major role in the design of many other devices, such as car radiators, solar collectors, various components of power plants, and even spacecraft (Fig.\u00a01-3). The optimal insulation thickness in the walls and roofs of the houses, on hot water or steam pipes, or on water heaters is again determined on the basis of a heat transfer analysis with economic consideration.\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (5 images):\n==================================================\n\n**[Image: page6_img1.jpeg - Page 6]**\nThe image is a black and white negative of four children sitting on a bench. From left to right, the first child is wearing a long-sleeved shirt and shorts. The second child has bangs and is wearing a t-shirt and shorts. The third child is wearing a sleeveless shirt and shorts. The fourth child is wearing a plaid shirt and pants. All four children are wearing shoes. The bench is simple and appears to be made of wood. The background is blurry, but it appears to be a grassy area with trees.\n\n**[Image: page6_img2.jpeg - Page 6]**\nHere's a description of the image, focusing on the visual elements:\n\nThe image shows two outdoor air conditioning units on a flat roof. The main unit is in the center, featuring a cylindrical shape with vertical slats running along its sides. A circular fan guard covers the top. To the left, a smaller, similar unit is partially visible, also with a circular fan guard. A small, rectangular box is near the main unit. The image appears to be in black and white or grayscale, with inverted colors.\n\n**[Image: page6_img5.jpeg - Page 6]**\nHere's a description of the image:\n\nThe image shows a furnace and a water heater in what appears to be a basement or utility room. The furnace is on the left, with a metallic flue pipe extending upwards and connecting to ductwork near the ceiling. The furnace has a louvered front panel. To the right of the furnace is a cylindrical water heater, also metallic, with pipes connecting it to the ceiling. The background is a plain wall. The image is in black and white.\n\n**[Image: page6_img3.jpeg - Page 6]**\nHere's a description of the image, focusing on its visual elements:\n\nThe image shows a power plant and a transmission tower, rendered in a grayscale negative. The power plant features several large, hyperboloid cooling towers, emitting what appears to be steam or smoke. In the foreground, a tall, lattice-structured transmission tower stands prominently, with high-voltage power lines extending from it. The sky is overcast, and the overall scene has a stark, industrial feel due to the inverted grayscale.\n\n**[Image: page6_img4.jpeg - Page 6]**\nHere's a description of the image, focusing on the visible elements:\n\nThe image shows a stainless steel refrigerator with one door slightly ajar, revealing the interior. Inside, the refrigerator is well-lit and stocked with various items. There are multiple shelves containing bottles (likely beverages), jars, and containers. Below the shelves, there are drawers, which appear to be organized. The door itself also has shelves or compartments holding items. The overall impression is of a well-organized and stocked refrigerator.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/94' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=650.5360141601561, r=380.789, b=581.1100141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 451))]",
+          "self_ref='#/texts/95' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=578.5270141601562, r=380.803, b=449.0940141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 818))]"
+        ],
+        "headings": [
+          "Application Areas of Heat Transfer"
+        ]
+      },
+      "tokens": 667
+    },
+    {
+      "text": "Heat has always been perceived to be something that produces in us a sensation of warmth, and one would think that the nature of heat is one of the first\nThe human body \u00a9 Vol. 12/PhotoDisc/Getty Images RF\nElectronic equipment \u00a9 Alamy RF \u00a9 Brand X/Jupiter Images RF \u00a9 Punchstock RF\nAir conditioning systems \u00a9 McGraw-Hill Education/Jill Braaten\nPower plants \u00a9 Malcolm Fife/Getty Images RF\nHeating systems \u00a9 Comstock RF\nRefrigeration systems \u00a9 McGraw-Hill Eduction / Jill Braaten\nFIGURE 1-3\n4",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/97' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=54.142, t=422.5360141601562, r=380.753, b=401.11601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 153))]",
+          "self_ref='#/texts/98' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=147.192, t=264.9760141601562, r=260.165, b=247.8770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 50))]",
+          "self_ref='#/texts/99' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=147.192, t=123.85601416015618, r=236.168, b=87.93501416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 75))]",
+          "self_ref='#/texts/100' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=296.542, t=264.9760141601562, r=413.382, b=247.8770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 61))]",
+          "self_ref='#/texts/101' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=296.542, t=123.85601416015618, r=395.756, b=106.75701416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 43))]",
+          "self_ref='#/texts/102' parent=RefItem(cref='#/pictures/7') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=465.102, t=264.9760141601562, r=516.713, b=247.8770141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 29))]",
+          "self_ref='#/texts/103' parent=RefItem(cref='#/pictures/8') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=465.102, t=123.85601416015618, r=545.295, b=98.74501416015619, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 59))]",
+          "self_ref='#/texts/104' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=497.742, t=79.94201416015619, r=546.092, b=71.0090141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 10))]",
+          "self_ref='#/texts/107' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=105.922, t=691.0820141601562, r=110.37, b=683.9360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]"
+        ],
+        "headings": [
+          "Historical Background"
+        ]
+      },
+      "tokens": 81
+    },
+    {
+      "text": "In the early nineteenth century, heat was thought to be an invisible fluid called the caloric that flowed from warmer bodies to the cooler ones.\nthings understood by mankind. But it was only in the middle of the nineteenth century that we had a true physical understanding of the nature of heat, thanks to the development at that time of the kinetic theory , which treats molecules as tiny balls that are in motion and thus possess kinetic energy. Heat is then defined as the energy associated with the random motion of atoms and molecules. Although it was suggested in the eighteenth and early nineteenth centuries that heat is the manifestation of motion at the molecular level (called the live force ), the prevailing view of heat until the middle of the nineteenth century was based on the caloric theory proposed by the French chemist Antoine Lavoisier (1743-1794) in 1789. The caloric theory asserts that heat is a fluid-like substance called the caloric that is a massless, colorless, odorless, and tasteless substance that can be poured from one body into another (Fig.\u00a01-4). When caloric was added to a body, its temperature increased; and when caloric was removed from a body, its temperature decreased. When a body could not contain any more caloric, much the same way as when a glass of water could not dissolve any more salt or sugar, the body was said to be saturated with caloric. This interpretation gave rise to the terms saturated liquid and saturated vapor that are still in use today.\nThe caloric theory came under attack soon after its introduction. It maintained that heat is a substance that could not be created or destroyed. Yet it was known that heat can be generated indefinitely by rubbing one's hands together or rubbing two pieces of wood together. In 1798, the American Benjamin Thompson (Count Rumford) (1753-1814) showed in his papers that heat can be generated continuously through friction. The validity of the caloric theory was also challenged by several others. But it was the careful experiments of the Englishman James P. Joule (Fig.\u00a01-5) published in 1843 that finally convinced the skeptics that heat was not a substance after all, and thus put the caloric theory to rest. Although the caloric theory was totally abandoned in the middle of the nineteenth century, it contributed greatly to the development of thermodynamics and heat transfer.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/116' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.94, t=535.2420141601561, r=177.29, b=491.7720141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 144))]",
+          "self_ref='#/texts/117' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=666.1960141601562, r=524.82, b=452.7520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1359))]",
+          "self_ref='#/texts/118' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=450.16901416015617, r=524.789, b=308.73401416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 879))]"
+        ],
+        "headings": [
+          "FIGURE 1-4"
+        ]
+      },
+      "tokens": 400
+    },
+    {
+      "text": "Heat transfer equipment such as heat exchangers, boilers, condensers, radiators, heaters, furnaces, refrigerators, and solar collectors are designed primarily on the basis of heat transfer analysis. The heat transfer problems encountered in practice can be considered in two groups: (1) rating and (2) sizing problems. The rating problems deal with the determination of the heat transfer rate for an existing system at a specified temperature difference. The sizing problems deal with the determination of the size of a system in order to transfer heat at a specified rate for a specified temperature difference.\nAn engineering device or process can be studied either experimentally (testing and taking measurements) or analytically (by analysis or calculations). The experimental approach has the advantage that we deal with the actual physical system, and the desired quantity is determined by measurement, within the limits of experimental error. However, this approach is expensive, timeconsuming, and often impractical. Besides, the system we are analyzing may not even exist. For example, the entire heating and plumbing systems of a building must usually be sized before the building is actually built on the basis  of  the  specifications  given.  The  analytical  approach  (including  the\nnumerical approach) has the advantage that it is fast and inexpensive, but the results obtained are subject to the accuracy of the assumptions, approximations, and idealizations made in the analysis. In engineering studies, often a good compromise is reached by reducing the choices to just a few by analysis, and then verifying the findings experimentally.\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (1 images):\n==================================================\n\n**[Image: page8_img1.jpeg - Page 8]**\nThe image is a black and white photographic negative of a man in a suit. He has a full beard and receding hairline. He is wearing a suit jacket and a patterned tie.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/120' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.142, t=269.1960141601562, r=524.809, b=175.76701416015612, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 612))]",
+          "self_ref='#/texts/121' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=198.131, t=173.18401416015615, r=524.773, b=67.75301416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 685))]",
+          "self_ref='#/texts/124' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.242, t=666.1960141601562, r=380.862, b=608.7720141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 357))]"
+        ],
+        "headings": [
+          "1-2 \u25a0 ENGINEERING HEAT TRANSFER"
+        ]
+      },
+      "tokens": 295
+    },
+    {
+      "text": "The descriptions of most scientific problems involve equations that relate the changes in some key variables to each other. Usually the smaller the increment chosen in the changing variables, the more general and accurate the description. In the limiting case of infinitesimal or differential changes in variables, we obtain differential equations that provide precise mathematical formulations for the physical principles and laws by representing the rates of change as derivatives. Therefore, differential equations are used to investigate a wide variety of problems in sciences and engineering (Fig.\u00a01-6). However, many problems encountered in practice can be solved without resorting to differential equations and the complications associated with them.\nThe study of physical phenomena involves two important steps. In the first step, all the variables that affect the phenomena are identified, reasonable assumptions and approximations are made, and the interdependence of these variables is studied. The relevant physical laws and principles are invoked, and the problem is formulated mathematically. The equation itself is very instructive as it shows the degree of dependence of some variables on others, and the relative importance of various terms. In the second step, the problem is solved using an appropriate approach, and the results are interpreted.\nMany processes that seem to occur in nature randomly and without any order are, in fact, being governed by some visible or not-so-visible physical laws. Whether we notice them or not, these laws are there, governing consistently and predictably what seem to be ordinary events. Most of these laws are well defined and well understood by scientists. This makes it possible to predict the course of an event before it actually occurs, or to study various aspects of an event mathematically without actually running expensive and timeconsuming experiments. This is where the power of analysis lies. Very accurate results to meaningful practical problems can be obtained with relatively little effort by using a suitable and realistic mathematical model. The preparation of such models requires an adequate knowledge of the natural phenomena involved and the relevant laws, as well as a sound judgment. An unrealistic model will obviously give inaccurate and thus unacceptable results.\nAn analyst  working  on  an  engineering  problem  often  finds  himself  or herself in a position to make a choice between a very accurate but complex model, and a simple but not-so-accurate model. The right choice depends on the situation at hand. The right choice is usually the simplest model that yields adequate results. For example, the process of baking potatoes or roasting a round chunk of beef in an oven can be studied analytically in a simple way by modeling the potato or the roast as a spherical solid ball that has the properties of water (Fig.\u00a01-7). The model is quite simple, but the results obtained are sufficiently accurate for most practical purposes. As another example, when we analyze the heat losses from a building in order to select the right size for a heater, we determine the heat losses under anticipated worst conditions and select a furnace that will provide sufficient energy to make up for those\nFIGURE 1-5\nJames Prescott Joule (1818-1889) is a British physicist born in Salford, Lancashire, England. Joule is best known for his work on the conversion of electrical and mechanical energy into heat and the first law of thermodynamics. The energy unit joule (J) is named after him. The Joule's law of electric heating that he formulated states that the rate of heat production in a conducting wire is proportional to the product of the resistance of the wire and the square of the electric current. Through his experiments, Joule has demonstrated the mechanical equivalence of heat, i.e., the conversion of mechanical energy into an equivalent amount of thermal energy, which laid the foundation for the conservation of energy principle. Joule, together with William Thomson (later Lord Kelvin), discovered the temperature drop of a substance during free expansion, a phenomenon known as the JouleThomson effect, which forms the foundation of the operation of the common vapor-compression refrige  ration and air conditioning systems.\n\u00a9 AIP Emilio Segre Visual Archives\n6\nINTRODUCTION AND BASIC CONCEPTS\nFIGURE 1-6 Mathematical modeling of physical problems.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/126' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.242, t=581.1960141601562, r=380.915, b=463.7640141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 757))]",
+          "self_ref='#/texts/127' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.242, t=461.18101416015617, r=380.889, b=367.7520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 606))]",
+          "self_ref='#/texts/128' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.242, t=365.16901416015617, r=380.917, b=211.73201416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 981))]",
+          "self_ref='#/texts/129' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=54.242, t=209.14901416015618, r=380.912, b=67.71401416015624, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 931))]",
+          "self_ref='#/texts/130' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=497.792, t=423.4920141601562, r=546.142, b=414.5590141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 10))]",
+          "self_ref='#/texts/131' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=390.752, t=411.22201416015616, r=548.642, b=91.75201416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1026))]",
+          "self_ref='#/texts/132' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=436.912, t=86.99401416015621, r=546.142, b=80.32501416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 34))]",
+          "self_ref='#/texts/133' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=105.922, t=691.0820141601562, r=110.37, b=683.9360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]",
+          "self_ref='#/texts/134' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=36.266, t=682.1060141601562, r=180.034, b=674.9380141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 31))]",
+          "self_ref='#/texts/155' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=30.142, t=435.6320141601562, r=127.912, b=402.8920141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 54))]"
+        ],
+        "headings": [
+          "Modeling in Engineering"
+        ]
+      },
+      "tokens": 691
+    },
+    {
+      "text": "Modeling is a powerful engineering tool that provides great insight and simplicity at the expense of some accuracy.\nlosses. Often we tend to choose a larger furnace in anticipation of some future expansion, or just to provide a factor of safety. A very simple analysis is adequate in this case.\nWhen selecting heat transfer equipment, it is important to consider the actual operating conditions. For example, when purchasing a heat exchanger that will handle hard water, we must consider that some calcium deposits will form on the heat transfer surfaces over time, causing fouling and thus a gradual decline in performance. The heat exchanger must be selected on the basis of operation under these adverse conditions instead of under new conditions.\nPreparing very accurate but complex models is usually not so difficult. But such models are not much use to an analyst if they are very difficult and time-consuming to solve. At the minimum, the model should reflect the essential features of the physical problem it represents. There are many significant real-world problems that can be analyzed with a simple model. But it should always be kept in mind that the results obtained from an analysis are as accurate as the assumptions made in simplifying the problem. Therefore, the solution obtained should not be applied to situations for which the original assumptions do not hold.\nA solution that is not quite consistent with the observed nature of the problem indicates that the mathematical model used is too crude. In that case, a more realistic model should be prepared by eliminating one or more of the questionable assumptions. This will result in a more complex problem that, of course, is more difficult to solve. Thus any solution to a problem should be interpreted within the context of its formulation.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/163' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=29.932, t=216.70201416015618, r=177.412, b=173.23201416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 115))]",
+          "self_ref='#/texts/164' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=666.1960141601562, r=524.8, b=632.7750141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 178))]",
+          "self_ref='#/texts/165' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=630.1920141601562, r=524.786, b=560.7660141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 455))]",
+          "self_ref='#/texts/166' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=558.1830141601562, r=524.805, b=452.7520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 631))]",
+          "self_ref='#/texts/167' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=450.16901416015617, r=524.765, b=380.7430141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 432))]"
+        ],
+        "headings": [
+          "FIGURE 1-7"
+        ]
+      },
+      "tokens": 298
+    },
+    {
+      "text": "Energy can exist in numerous forms such as thermal, mechanical, kinetic, potential, electrical, magnetic, chemical, and nuclear, and their sum constitutes the total energy E (or e on a unit mass basis) of a system. The forms of energy related to the molecular structure of a system and the degree of the molecular activity are referred to as the microscopic energy. The sum of all microscopic forms of energy is called the internal energy of a system, and is denoted by U (or u on a unit mass basis).\nThe international unit of energy is joule (J) or kilojoule (1 kJ 5 1000 J). In the English system, the unit of energy is the British thermal unit (Btu), which is defined as the energy needed to raise the temperature of 1 lbm of water at 60\u00b0F by 1\u00b0F. The magnitudes of kJ and Btu are almost identical (1 Btu 5 1.055056 kJ). Another well known unit of energy is the calorie (1 cal 5 4.1868 J), which is defined as the energy needed to raise the temperature of 1 gram of water at 14.5\u00b0C by 1\u00b0C.\nInternal  energy may be viewed as the sum of the kinetic and potential energies of the molecules. The portion of the internal energy of a system associated with the kinetic energy of the molecules is called sensible energy or sensible heat . The average velocity and the degree of activity of the molecules are proportional to the temperature. Thus, at higher temperatures the molecules possess higher kinetic energy, and as a result, the system has a higher internal energy.\nThe internal energy is also associated with the intermolecular forces between the molecules of a system. These are the forces that bind the molecules to each\nother, and, as one would expect, they are strongest in solids and weakest in gases. If sufficient energy is added to the molecules of a solid or liquid, they will overcome these molecular forces and simply break away, turning the system to a gas. This is a phase change process and because of this added energy, a system in the gas phase is at a higher internal energy level than it is in the solid or the liquid phase. The internal energy associated with the phase of a system is called latent energy or latent heat .\nThe changes mentioned above can occur without a change in the chemical composition of a system. Most heat transfer problems fall into this category, and one does not need to pay any attention to the forces binding the atoms in a molecule together. The internal energy associated with the atomic bonds in a molecule is called chemical (or bond ) energy , whereas the internal energy associated  with  the  bonds  within  the  nucleus  of  the  atom  itself  is  called nuclear energy . The chemical and nuclear energies are absorbed or released during chemical or nuclear reactions, respectively.\nIn the analysis of systems that involve fluid flow, we frequently encounter the combination of properties u and P v . For the sake of simplicity and convenience, this combination is defined as enthalpy h. That is, h 5 u 1 P v where the term P v represents the flow energy of the fluid (also called the flow work ), which is the energy needed to push a fluid and to maintain flow. In the energy analysis of flowing fluids, it is convenient to treat the flow energy as part of the energy of the fluid and to represent the microscopic energy of a fluid stream by enthalpy h (Fig.\u00a01-8).\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (1 images):\n==================================================\n\n**[Image: page10_img1.png - Page 10]**\nThe image is a gradient of blue and white. The outer edges of the image are a solid, bright blue, which gradually fades into a lighter, almost white, shade of blue towards the center. The transition is smooth and blurred, creating a soft, diffused effect. There are no distinct lines, shapes, or text visible.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/169' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=342.1960141601562, r=524.792, b=260.76801416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 500))]",
+          "self_ref='#/texts/170' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=258.1850141601562, r=524.793, b=176.75801416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 491))]",
+          "self_ref='#/texts/171' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=174.17501416015625, r=524.797, b=92.74701416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 475))]",
+          "self_ref='#/texts/172' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=198.142, t=90.16401416015617, r=524.792, b=68.74401416015621, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 157))]",
+          "self_ref='#/texts/174' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.172, t=666.1960141601562, r=380.809, b=584.7680141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 518))]",
+          "self_ref='#/texts/175' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.172, t=582.1860141601562, r=380.855, b=488.75801416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 595))]",
+          "self_ref='#/texts/176' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.172, t=486.17601416015617, r=380.869, b=392.7480141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 582))]"
+        ],
+        "headings": [
+          "1-3 \u25a0 HEAT AND OTHER FORMS OF ENERGY"
+        ]
+      },
+      "tokens": 665
+    },
+    {
+      "text": "You may recall that an ideal gas is defined as a gas that obeys the relation\n$$P V = R T \\quad \\text {or} \\quad P = \\rho R T \\quad \\quad ( 1 - 1 )$$\nwhere P is the absolute pressure, v is the specific volume, T is the thermodynamic (or absolute) temperature, r is the density, and R is the gas constant. It has been experimentally observed that the ideal gas relation given above closely approximates the Pv -T behavior of real gases at low densities. At low pressures and high temperatures, the density of a gas decreases and the gas behaves like an ideal gas. In the range of practical interest, many familiar gases such as air, nitrogen, oxygen, hydrogen, helium, argon, neon, and krypton and even heavier gases such as carbon dioxide can be treated as ideal gases with negligible error (often less than one percent). Dense gases such as water vapor in steam power plants and refrigerant vapor in refrigerators, however, should not always be treated as ideal gases since they usually exist at a state near saturation.\nYou may also recall that specific heat is defined as the energy required to raise the temperature of a unit mass of a substance by one degree (Fig.\u00a01-9). In general, this energy depends on how the process is executed. We are usually interested in two kinds of specific heats: specific heat at constant volume c v and specific heat at constant pressure cp . The specific heat at constant volume c v can be viewed as the energy required to raise the temperature of a unit mass of a substance by one degree as the volume is held constant. The energy required to do the same as the pressure is held constant is the specific heat at constant pressure cp . The specific heat at constant pressure cp is greater\n7",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/178' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.172, t=355.1960141601562, r=365.92, b=345.7780141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 76))]",
+          "self_ref='#/texts/179' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=167.583, t=336.22701416015616, r=378.176, b=326.91401416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]",
+          "self_ref='#/texts/180' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.162, t=318.22701416015616, r=380.815, b=176.75801416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 871))]",
+          "self_ref='#/texts/181' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.162, t=174.17601416015623, r=380.817, b=67.49101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 703))]",
+          "self_ref='#/texts/182' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=465.922, t=691.0820141601562, r=470.37, b=683.9360141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1))]"
+        ],
+        "headings": [
+          "Specific Heats of Gases, Liquids, and Solids"
+        ]
+      },
+      "tokens": 316
+    },
+    {
+      "text": "The internal energy u represents the microscopic energy of a nonflowing fluid, whereas enthalpy h represents the microscopic energy of a flowing fluid.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/184' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=390.492, t=418.4220141601562, r=548.942, b=374.9520141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 151))]"
+        ],
+        "headings": [
+          "FIGURE 1-8"
+        ]
+      },
+      "tokens": 23
+    },
+    {
+      "text": "Specific heat is the energy required to raise the temperature of a unit mass of a substance by one degree in a specified way.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "3/100",
+        "doc_items": [
+          "self_ref='#/texts/186' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=394.566, t=110.90601416015625, r=548.696, b=67.43601416015622, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 125))]"
+        ],
+        "headings": [
+          "FIGURE 1-9"
+        ]
+      },
+      "tokens": 24
+    }
+  ],
+  "total_chunks": 33,
+  "original_document": "file8973.pdf",
+  "pdf_chunk": "file8973_chunk003_p21-30",
+  "config": {
+    "max_tokens": 2048,
+    "merge_peers": true,
+    "enable_picture_description": true,
+    "picture_description_max_tokens": 800,
+    "vision_model": "gemini-2.0-flash",
+    "enable_formula": true,
+    "enable_ocr": true,
+    "enable_table_structure": true
+  }
+}

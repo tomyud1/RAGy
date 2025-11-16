@@ -1,0 +1,272 @@
+{
+  "smolvlm_transformers": null,
+  "smolvlm_mlx": [
+    {
+      "image": "page1_img1.jpeg",
+      "description": "There is a van parked on the left of the frame and there are trees around it as well. The sky looks cloudy so we can see a fence behind the van and there are cars parked in front of it. The houses look to be two stories with one having a roof and the other has an attic space. There are trees in front of both houses so it looks like they have a lot of leaves on them. The ground is green and grassy with some bushes in front of the house. There are cars parked on one side as well so it looks like they have been recently moved or the house has a new roof. The weather seems to be overcast and cloudy so we can see that the sun is not shining on them. The cars are parked facing towards each other so it looks like they have been recently moved or the house has a new roof. The trees are bare and there is no longer any leaves on them so it looks like they have been recently moved or the house has a new roof. The sky is overcast and cloudy so we can see that it seems to be raining or the sun isn't shining on them. The cars are parked facing towards each other so it looks like they have been recently moved or the house has a new roof. The houses are two stories and one with an attic space so it looks like they have been recently moved or the house has a new roof. The trees are bare and there is no longer any leaves on them so it looks like they",
+      "metadata": {
+        "backend": "SmolVLM-MLX",
+        "device": "Apple Silicon (MLX)",
+        "max_tokens": 300,
+        "word_count": 284,
+        "unique_words": 87,
+        "repetition_ratio": 0.693661971830986,
+        "time_seconds": 3.4911739826202393
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page2_img1.jpeg",
+      "description": "The map shows various locations including cities, roads and highways. The title at the top center of the image reads \"Locations\" in a blue box with white text. The map itself is labeled as \"St Matthews\". There are several lines and arrows indicating different directions such as north, south. The map also includes a blue circle labeled \"Looks\" in the bottom left corner with white text. The map also includes a blue circle labeled \"Goole\" in the bottom center with white text. The map also includes a blue circle labeled \"Prairie Village\" in the bottom center with white text. The map includes a blue circle labeled \"150\" at the top left corner with white text. The map includes a blue circle labeled \"150\" at the top center, with white text. The map includes a blue circle labeled \"150\" at the top center, with white text. The map includes a blue circle labeled \"150\" at the top center, with white text. The map includes a blue circle labeled \"150\" at the top center, with white text. The map includes a blue circle labeled \"150\" at the top center, with white text. The map includes a blue circle labeled \"150\" at the top center, with white text. The map includes a blue circle labeled \"150\" at the top center, with white text. The map includes a blue circle labeled \"1",
+      "metadata": {
+        "backend": "SmolVLM-MLX",
+        "device": "Apple Silicon (MLX)",
+        "max_tokens": 300,
+        "word_count": 228,
+        "unique_words": 56,
+        "repetition_ratio": 0.7543859649122807,
+        "time_seconds": 2.875673294067383
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page2_img2.jpeg",
+      "description": "The map is of a street and shows some trees along the left side. There are 4 blue circles on one corner of a map. The circle labeled \"four stone mill\" is in the bottom left. There are trees and a sidewalk on one side of the street. The map is labeled with google in the bottom left corner and \"The National Electrical Contractors Association\" on one of its corners. There are 3 arrows in the bottom left corner and a circle labeled \"march\" on one of its corners. There are 2 trees in the bottom center and a circle labeled \"framer\" on one of its corners. There are 3 trees in the bottom right corner and a circle labeled \"trout\" on one of its corners. There are 2 arrows in the bottom center and a circle labeled \"water\" on one of its corners. There are 3 trees in the bottom left corner and a circle labeled \"water\" on one of its corners. There are 2 trees in the bottom right corner and a circle labeled \"water\" on one of its corners. There are 3 arrows in the bottom left corner and a circle labeled \"water\" on one of its corners. There are 2 trees in the bottom center and a circle labeled \"water\" on one of its corners. There are 3 trees in the bottom right corner and a circle labeled \"water\" on one of its corners. There are 2 trees in the bottom left corner and",
+      "metadata": {
+        "backend": "SmolVLM-MLX",
+        "device": "Apple Silicon (MLX)",
+        "max_tokens": 300,
+        "word_count": 248,
+        "unique_words": 52,
+        "repetition_ratio": 0.7903225806451613,
+        "time_seconds": 2.587651014328003
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page3_img1.jpeg",
+      "description": "The map is a 2-way street view of the city with West Buckeley and Buechman. The map is in Google\u2019s search tab. There are green markers with white text pointing to different locations on the map. The name of one location is Buechman, which has a green marker with white text pointing to it. The name of another location is IROQUOS PARK, which has a green marker with white text pointing to it. The map also includes the names of several other locations, including Buechman and newburg. There are arrows pointing to different places on the map. The name of one location is Buechman, which has an arrow pointing to it. There are arrows pointing back and forth on the map. The name of one location is newburg, which has an arrow pointing back and forth on it. There are arrows pointing to different places in the map, including Buechman and newburg. The name of one location is 1865, which has an arrow pointing back and forth on it. There are arrows pointing to different places in the map, including Buechman and newburg. The name of one location is 1865, which has an arrow pointing back and forth on it. There are arrows pointing to different places in the map, including Buechman and newburg. The name of one location is 1865, which has an arrow pointing",
+      "metadata": {
+        "backend": "SmolVLM-MLX",
+        "device": "Apple Silicon (MLX)",
+        "max_tokens": 300,
+        "word_count": 226,
+        "unique_words": 60,
+        "repetition_ratio": 0.7345132743362832,
+        "time_seconds": 2.4171535968780518
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page4_img1.jpeg",
+      "description": "There is a van parked on the left of the frame and there are trees around it as well. The sky looks cloudy so we can see a fence behind the van and there are cars parked in front of it. The houses look to be two stories with one having a roof and the other has an attic space. There are trees in front of both houses so it looks like they have a lot of leaves on them. The ground is green and grassy with some bushes in front of the house. There are cars parked on one side as well so it looks like they have been recently moved or the house has a new roof. The weather seems to be overcast and cloudy so we can see that the sun is not shining on them. The cars are parked facing towards each other so it looks like they have been recently moved or the house has a new roof. The trees are bare and there is no longer any leaves on them so it looks like they have been recently moved or the house has a new roof. The sky is overcast and cloudy so we can see that it seems to be raining or the sun isn't shining on them. The cars are parked facing towards each other so it looks like they have been recently moved or the house has a new roof. The houses are two stories and one with an attic space so it looks like they have been recently moved or the house has a new roof. The trees are bare and there is no longer any leaves on them so it looks like they",
+      "metadata": {
+        "backend": "SmolVLM-MLX",
+        "device": "Apple Silicon (MLX)",
+        "max_tokens": 300,
+        "word_count": 284,
+        "unique_words": 87,
+        "repetition_ratio": 0.693661971830986,
+        "time_seconds": 2.8885209560394287
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page4_img2.jpeg",
+      "description": "The room has a dark ceiling with wooden beams and metal shelves on the walls. There are boxes stacked inside of each other in all directions, with one being placed against a wall and another on the floor. The boxes are stacked vertically in all directions, with one being placed against a wall and another on the floor. There are items that look like toys or other objects in boxes against each other, and there is a blue container on the floor. There are cardboard boxes stacked inside of one another in all directions, with one being placed against a wall and another on the floor. There are items that look like food or other objects in boxes against each other, and there is a blue container on the floor. There are items that look like toys or other objects in boxes against each other, and there is a blue container on the floor. There are items that look like boxes or food in all directions, with one being placed against a wall and another on the floor. There are items that look like boxes or food in all directions, with one being placed against a wall and another on the floor. There are items that look like boxes or food in all directions, with one being placed against a wall and another on the floor. There are items that look like boxes or food in all directions, with one being placed against a wall and another on the floor. There are items that look like boxes or food in all directions, with one being placed against a wall and another on the floor. There are items",
+      "metadata": {
+        "backend": "SmolVLM-MLX",
+        "device": "Apple Silicon (MLX)",
+        "max_tokens": 300,
+        "word_count": 277,
+        "unique_words": 48,
+        "repetition_ratio": 0.8267148014440433,
+        "time_seconds": 2.5918991565704346
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page4_img3.jpeg",
+      "description": "The room looks like a small one-story house with boxes and other items all over it. The box on the far right has a red lid. There is an air conditioner under one of it's windows and there are other boxes stacked on top of eachother. There is a black object in the middle back left and there are other boxes stacked on top of eachother. There is a red object in the middle back right and there are other boxes stacked on top of eachother. There is a white door at the back left and there are other boxes stacked on top of eachother. There is a black object in the middle back left and there are other boxes stacked on top of eachother. There is a red object in the middle back right and there are other boxes stacked on top of eachother. There is a black object in the middle back left and there are other boxes stacked on top of eachother. There is a red object in the middle back right and there are other boxes stacked on top of eachother. There is a black object in the middle back left and there are other boxes stacked on top of eachother. There is a red object in the middle back right and there are other boxes stacked on top of eachother. There is a black object in the middle back left and there are other boxes stacked on top of eachother. There is a red object in the middle back right and there are other boxes stacked on top of eachother. There is a black object in",
+      "metadata": {
+        "backend": "SmolVLM-MLX",
+        "device": "Apple Silicon (MLX)",
+        "max_tokens": 300,
+        "word_count": 271,
+        "unique_words": 48,
+        "repetition_ratio": 0.8228782287822878,
+        "time_seconds": 2.54282283782959
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page4_img4.jpeg",
+      "description": "The room has a bathtub and toilet, the bathroom cabinets are grey with brown wooden doors, there is a shower head on top of one and two white cups sit next to each other. The floor has tile flooring in the room, there is a brown cabinet against one wall and on top of that are two white cups. The walls have grey trim, there is a light colored wall on one of the walls and it has an arrow pointing to the right. There is a white object in front of one wall, on top it's door and there are two brown objects. There is a grey object in the bottom right corner of the image that looks like it has something on top. The cabinets are all brown and wooden with tan doors, there is a white object in the bottom left corner of this image. The cabinets are all brown and wooden with tan doors, there is a white object in the bottom left corner of this image. There are two brown objects on one end, they appear to be a sink and there is an object in the top right corner of this image. There are two white objects on one end, they appear to be a sink and there is an object in the top right corner of this image. There are two white objects on one end, they appear to be a sink and there is an object in the top right corner of this image. There are two white objects on one end, they appear to be a sink and there is an object in the top right corner of this",
+      "metadata": {
+        "backend": "SmolVLM-MLX",
+        "device": "Apple Silicon (MLX)",
+        "max_tokens": 300,
+        "word_count": 278,
+        "unique_words": 78,
+        "repetition_ratio": 0.7194244604316546,
+        "time_seconds": 2.4227960109710693
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page4_img5.jpeg",
+      "description": "The room has a light blue wall and white fixtures such as the sink, telephone, mirror etc.. The door is grey. There are windows on one wall and a light blue ceiling with white trim..  The room has tiles. There are no people in the image and it seems to be a new home project.. The picture shows that there are no people in the image and it seems to be a new home project.. The picture shows that there are no people in the image and it seems to be a new home project. The picture shows that there are no people in the image and it seems to be a new home project. The picture shows that there are no people in the image and it seems to be a new home project. The picture shows that there are no people in the image and it seems to be a new home project. The picture shows that there are no people in the image and it seems to be a new home project. The picture shows that there are no people in the image and it seems to be a new home project. The picture shows that there are no people in the image and it seems to be a new home project. The picture shows that there are no people in the image and it seems to be a new home project. The picture shows that there are no people in the image and it seems to be a new home project. The picture shows that there are no people in the image and it seems to be a new home project. The picture shows that there are",
+      "metadata": {
+        "backend": "SmolVLM-MLX",
+        "device": "Apple Silicon (MLX)",
+        "max_tokens": 300,
+        "word_count": 281,
+        "unique_words": 45,
+        "repetition_ratio": 0.8398576512455516,
+        "time_seconds": 2.5256855487823486
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    }
+  ],
+c
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page2_img1.jpeg",
+      "description": "Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.",
+      "metadata": {
+        "error": "Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2."
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page2_img2.jpeg",
+      "description": "Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.",
+      "metadata": {
+        "error": "Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2."
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page3_img1.jpeg",
+      "description": "Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.",
+      "metadata": {
+        "error": "Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2."
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page4_img1.jpeg",
+      "description": "Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.",
+      "metadata": {
+        "error": "Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2."
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page4_img2.jpeg",
+      "description": "Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.",
+      "metadata": {
+        "error": "Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2."
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page4_img3.jpeg",
+      "description": "Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.",
+      "metadata": {
+        "error": "Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2."
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page4_img4.jpeg",
+      "description": "Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.",
+      "metadata": {
+        "error": "Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2."
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    },
+    {
+      "image": "page4_img5.jpeg",
+      "description": "Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.",
+      "metadata": {
+        "error": "Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2."
+      },
+      "repetition_analysis": {
+        "has_repetition": false,
+        "repeating_sequences": [],
+        "total_repetitions": 0
+      }
+    }
+  ]
+}

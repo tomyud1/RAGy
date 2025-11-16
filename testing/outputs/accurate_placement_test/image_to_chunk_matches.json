@@ -1,0 +1,16 @@
+[
+  {
+    "image_ref": "#/pictures/0",
+    "image_page": 4,
+    "chunk_num": 8,
+    "match_reason": "Proximity heuristic (chunk 8 \u2248 page 4)",
+    "description": "Here's a description of the image:\n\n**The image shows the McGraw Hill Education logo.**\n\n*   **Text:** The logo features the text \"McGraw Hill Education\" stacked vertically.\n*   **Font:** The text appears to be in a bold, sans-serif font.\n*   **Color:** The text is white.\n*   **Background:** The background is black."
+  },
+  {
+    "image_ref": "#/pictures/1",
+    "image_page": 5,
+    "chunk_num": 10,
+    "match_reason": "Proximity heuristic (chunk 10 \u2248 page 5)",
+    "description": "Here is a detailed description of the image:\n\n**Visual Description:**\n\nThe image features the McGraw Hill Education logo. It consists of white text on a black rectangular background. The text is arranged in three lines:\n\n*   **Mc** (Top Line)\n*   **Graw Hill** (Middle Line)\n*   **Education** (Bottom Line)\n\nThe text is written in a bold sans-serif font, giving it a clean and modern appearance. The contrast between the white text and black background makes the logo easily readable."
+  }
+]

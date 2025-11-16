@@ -1,0 +1,57 @@
+================================================================================
+CHUNK 8 - WITH IMAGE DESCRIPTIONS
+================================================================================
+Images: #/pictures/0
+Match Quality: Proximity heuristic (chunk 8 ≈ page 4)
+--------------------------------------------------------------------------------
+ISBN 978-0-07-339818-1 MHID 0-07-339818-7
+Senior Vice President, Products & Markets: Kurt L. Strand
+Vice President, General Manager: Marty Lange
+Vice President, Content Production & Technology Services: Kimberly Meriwether David
+Managing Director: Thomas Timp
+Global Publisher: Raghothaman Srinivasan
+Marketing Manager: Nick McFadden
+Director of Digital Content: Thomas M. Scaife
+Product Developer: Lorraine Buczek
+Director, Content Production: Terri Schiesl
+Content Project Manager: Jolynn Kilburg
+Buyer: Jennifer Pickel
+Cover Designer: Studio Montage, St. Louis, MO.
+Composition: RPK Editorial Services, Inc.
+Typeface:
+10.5/12 Times LT Std Roman
+Printer:
+R. R. Donnelley
+All credits appearing on page or at the end of the book are considered to be an extension of the copyright page.
+Library of Congress Cataloging-in-Publication Data on File
+The Internet addresses listed in the text were accurate at the time of publication. The inclusion of a website does not indicate an endorsement by the authors or McGraw-Hill, and McGraw-Hill does not guarantee the accuracy of the information presented at these sites.
+
+**[Image #/pictures/0 Description]:** Here's a description of the image:
+
+**The image shows the McGraw Hill Education logo.**
+
+*   **Text:** The logo features the text "McGraw Hill Education" stacked vertically.
+*   **Font:** The text appears to be in a bold, sans-serif font.
+*   **Color:** The text is white.
+*   **Background:** The background is black.
+
+================================================================================
+CHUNK 10 - WITH IMAGE DESCRIPTIONS
+================================================================================
+Images: #/pictures/1
+Match Quality: Proximity heuristic (chunk 10 ≈ page 5)
+--------------------------------------------------------------------------------
+Afshin J. Ghajar is Regents Professor and John Brammer Professor in the School of Mechanical and Aerospace Engineering at Oklahoma State University, Stillwater, Oklahoma, USA and a Honorary Professor of Xi'an Jiaotong University, Xi'an, China. He received his B.S., M.S., and Ph.D. all in Mechanical Engineering from Oklahoma State University. His expertise is in experimental heat transfer/ fluid mechanics and development of practical engineering correlations. Dr. Ghajar has made significant contributions to the field of thermal sciences through his experimental, empirical, and numerical works in heat transfer and stratification in sensible heat storage systems, heat transfer to non-Newtonian fluids, heat transfer in the transition region, and non-boiling heat transfer in two-phase flow. His current research is in two-phase flow heat transfer/pressure drop studies in pipes with different orientations, heat transfer/pressure drop in mini/micro tubes, and mixed convective heat transfer/pressure drop in the transition region (plain and enhanced tubes). Dr. Ghajar has been a Summer Research Fellow at Wright Patterson AFB (Dayton, Ohio) and Dow Chemical Company (Freeport, Texas). He and his co-workers have published over 200 reviewed research papers. He has delivered numerous keynote and invited lectures at major technical conferences and institutions. He has received several outstanding teaching, research, advising, and service awards from College of Engineering at Oklahoma State University. His latest award is the 75th Anniversary Medal of the ASME Heat Transfer Division ' in recognition of his service to the heat transfer community and contributions to the field '. Dr. Ghajar is a Fellow of the American Society of Mechanical Engineers (ASME), Heat Transfer Series Editor for CRC Press/Taylor & Francis and Editorin-Chief of Heat Transfer Engineering , an international journal aimed at practicing engineers and specialists in heat transfer published by Taylor and Francis .
+
+**[Image #/pictures/1 Description]:** Here is a detailed description of the image:
+
+**Visual Description:**
+
+The image features the McGraw Hill Education logo. It consists of white text on a black rectangular background. The text is arranged in three lines:
+
+*   **Mc** (Top Line)
+*   **Graw Hill** (Middle Line)
+*   **Education** (Bottom Line)
+
+The text is written in a bold sans-serif font, giving it a clean and modern appearance. The contrast between the white text and black background makes the logo easily readable.
+

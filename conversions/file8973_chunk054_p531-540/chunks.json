@@ -1,0 +1,427 @@
+{
+  "method": "docling-hybrid",
+  "chunks": [
+    {
+      "text": "Schematic of the three different inlet configurations.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/18' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=29.993, t=431.7420141601562, r=179.403, b=411.2720141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 54))]"
+        ],
+        "headings": [
+          "FIGURE 8-35"
+        ]
+      },
+      "tokens": 7
+    },
+    {
+      "text": "Pressure drops are measured in circular tubes for fully developed flows in the transition regime for three types of inlet configurations shown in Fig. 8-35: re-entrant  (tube  extends  beyond  tubesheet  face  into  head  of  distributor), square-edged (tube end is flush with tubesheet face), and bell-mouth (a tapered entrance of tube from tubesheet face) under isothermal and heating conditions, respectively. The widely used expressions for the friction factor f (also called the Darcy friction factor ) or the friction coefficient C f (also called the Fanning friction factor ) in laminar and turbulent flows with heating are\n$$f _ { l a m } = 4 C _ { f , l a m } = 4 ( \\frac { 1 6 } { R e } ) \\left ( \\frac { \\mu _ { b } } { \\mu _ { s } } \\right ) ^ { m }$$\n$$f _ { t u r b } = 4 C _ { f , t u r b } = 4 ( \\frac { 0 . 0 7 9 1 } { R e ^ { 0 . 2 5 } } ) ( \\frac { \\mu _ { b } } { \\mu _ { s } } ) ^ { m }$$\nwhere the factors at the end account for the wall temperature effect on viscosity. The exponent m for laminar flows depends on a number of factors, while for turbulent flows the most typically quoted value for heating is 2 0.25. The transition friction factor is given as [Tam and Ghajar, 1997]\n$$f _ { \\text {trans} } = 4 C _ { f , \\text {trans} } = 4 \\left [ 1 + \\left ( \\frac { \\text {Re} } { A } \\right ) ^ { B } \\right ] ^ { C } \\left ( \\frac { \\mu _ { b } } { \\mu _ { s } } \\right ) ^ { m }$$\nwhere\n$$m = m _ { 1 } - m _ { 2 } \\, G r ^ { m _ { 3 } } \\, \\Pr ^ { m _ { 4 } }$$\nand the Grashof number (Gr) which is a dimensionless number representing the ratio of the buoyancy force to the viscous force is defined as Gr 5 g b D 3 ( Ts 2 Tb )/ n 2 (see Chapter 9 for more details). All properties appearing in the dimensionless numbers Cf , f , Re, Pr, and Gr are evaluated at the bulk fluid temperature Tb . The values of the empirical constants in Eqs. 8-83 and 8-84 are listed in Table 8-5. The range of application of Eq. 8-83 for the transition friction factor is as follows:\nRe-entrant:\n2700 # Re # 5500, 16 # Pr # 35, 7410 # Gr # 158,300, 1.13 # m b / m s # 2.13\nSquare-edged:\n3500 # Re # 6900, 12 # Pr # 29, 6800 # Gr # 104,500, 1.11 # m b / m s # 1.89\nBell-mouth:\n5900 # Re # 9600, 8 # Pr # 15, 11,900 # Gr # 353,000, 1.05 # m b / m s # 1.47",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/20' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=205.239, t=642.3960141601561, r=519.906, b=548.9760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 630))]",
+          "self_ref='#/texts/21' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=286.99, t=540.1640141601562, r=512.244, b=516.2230141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 52))]",
+          "self_ref='#/texts/22' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=286.201, t=507.16401416015617, r=512.244, b=483.2230141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 63))]",
+          "self_ref='#/texts/23' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=205.242, t=474.17601416015617, r=519.886, b=428.75301416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 294))]",
+          "self_ref='#/texts/24' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=273.082, t=419.9440141601562, r=512.244, b=396.00301416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 68))]",
+          "self_ref='#/texts/25' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=205.242, t=387.9560141601562, r=230.894, b=378.53701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 5))]",
+          "self_ref='#/texts/26' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=309.039, t=371.29401416015617, r=512.244, b=360.5410141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 35))]",
+          "self_ref='#/texts/27' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=205.236, t=352.9560141601562, r=519.891, b=271.5340141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 502))]",
+          "self_ref='#/texts/28' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=205.242, t=263.25801416015616, r=249.037, b=254.8100141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 11))]",
+          "self_ref='#/texts/29' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=285.242, t=263.26801416015616, r=511.37, b=242.58301416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 76))]",
+          "self_ref='#/texts/30' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=205.248, t=235.25301416015617, r=261.174, b=226.8050141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 13))]",
+          "self_ref='#/texts/31' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=285.247, t=235.26301416015622, r=511.376, b=214.58301416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 76))]",
+          "self_ref='#/texts/32' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=205.248, t=207.25301416015623, r=250.629, b=198.80501416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 11))]",
+          "self_ref='#/texts/33' parent=RefItem(cref='#/groups/0') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=285.247, t=207.26301416015622, r=513.751, b=186.58301416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 77))]"
+        ],
+        "headings": [
+          "Pressure Drop in the Transition Region"
+        ]
+      },
+      "tokens": 541
+    },
+    {
+      "text": "Re-entrant, A = 5840. Re-entrant, B = -0.0145. Re-entrant, C = -6.23. Re-entrant, m 1 = -1.10. Re-entrant, m 2 = 0.460. Re-entrant, m 3 = -0.133. Re-entrant, m 4 = 4.10. Square-edged, A = 4230. Square-edged, B = -0.1600. Square-edged, C = -6.57. Square-edged, m 1 = -1.13. Square-edged, m 2 = 0.396. Square-edged, m 3 = -0.160. Square-edged, m 4 = 5.10. Bell-mouth, A = 5340. Bell-mouth, B = -0.0990. Bell-mouth, C = -6.32. Bell-mouth, m 1 = -2.58. Bell-mouth, m 2 = 0.420. Bell-mouth, m 3 = -0.410. Bell-mouth, m 4 = 2.46",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/tables/0' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=1, bbox=BoundingBox(l=201.21200561523438, t=119.27435302734375, r=518.3255615234375, b=62.2772216796875, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]"
+        ],
+        "headings": [
+          "Constants for transition friction coefficient correlation"
+        ]
+      },
+      "tokens": 96
+    },
+    {
+      "text": "Fully developed friction coeffficients for three different inlet configurations and heat fluxes (filled symbols designate the start and end of the transition region for each inlet).\nFrom Tam and Ghajar, 1997.\nThese correlations captured about 82% of measured data within an error band of 6 10%, and 98% of measured data with 6 20%. For laminar flows with heating, Tam and Ghajar give the following constants for determining the exponent m in Eq. 8-81: m 1 5 1.65, m 2 5 0.013, m 3 5 0.170, and m 4 5 0.840, which is applicable over the following range of parameters:\n$$1 1 0 0 \\leq & \\ \\Re \\leq 7 4 0 0 , 6 \\leq \\Pr \\leq 3 6 , \\, 1 7 , 1 0 0 \\leq \\text {Gr} \\leq 9 5 , 6 0 0 , \\\\ \\text {and } 1 . 2 5 \\leq \\mu _ { b } / \\mu _ { s } \\leq 2 . 4 0 .$$\nThe fully developed friction coefficient results for the three different inlet configurations shown in Fig. 8-36 clearly establish the influence of heating rate on the beginning and end of the transition regions, for each inlet configuration. In the laminar and transition regions, heating seems to have a significant influence on the value of the friction coefficient. However, in the turbulent region, heating did not affect the magnitude of the friction coefficient. The significant influence of heating on the values of friction coefficient in the laminar and transition regions is directly due to the effect of secondary flow.\nThe isothermal friction coefficients for the three inlet types showed that the range of the Reynolds number values at which transition flow exists is  strongly inlet-geometry dependent. Furthermore, heating caused an increase in the laminar and turbulent friction coefficients and an increase in the lower and upper limits of the isothermal transition regime boundaries. The friction coefficient transition Reynolds number ranges for the isothermal and nonisothermal (three different heating rates) and the three different inlets used in their study are summarized in Table 8-6.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/114' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.282, t=522.6620141601562, r=540.862, b=502.1920141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 181))]",
+          "self_ref='#/texts/115' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=54.282, t=497.4350141601562, r=145.324, b=490.76501416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]",
+          "self_ref='#/texts/116' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=63.141, t=471.99601416015616, r=371.77, b=413.24601416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 357))]",
+          "self_ref='#/texts/117' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=119.809, t=409.3080141601562, r=341.188, b=388.6230141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 81))]",
+          "self_ref='#/texts/118' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=63.142, t=383.99601416015616, r=371.819, b=278.5650141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 631))]",
+          "self_ref='#/texts/119' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=63.142, t=275.9820141601562, r=371.785, b=182.55301416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 578))]"
+        ],
+        "headings": [
+          "FIGURE 8-36"
+        ]
+      },
+      "tokens": 346
+    },
+    {
+      "text": "0 kW/m 2 (isothermal), Re-entrant = 2870 , Re , 3500. 0 kW/m 2 (isothermal), Square-Edged = 3100 , Re , 3700. 0 kW/m 2 (isothermal), Bell-Mouth = 5100 , Re , 6100. 3 kW/m 2, Re-entrant = 3060 , Re , 3890. 3 kW/m 2, Square-Edged = 3500 , Re , 4180. 3 kW/m 2, Bell-Mouth = 5930 , Re , 8730. 8 kW/m 2, Re-entrant = 3350 , Re , 4960. 8 kW/m 2, Square-Edged = 3860 , Re , 5200. 8 kW/m 2, Bell-Mouth = 6480 , Re , 9110. 16 kW/m 2, Re-entrant = 4090 , Re , 5940. 16 kW/m 2, Square-Edged = 4450 , Re , 6430. 16 kW/m 2, Bell-Mouth = 7320 , Re , 9560",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/tables/1' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=2, bbox=BoundingBox(l=55.572105407714844, t=131.06854248046875, r=443.8519592285156, b=59.53424072265625, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]"
+        ],
+        "headings": [
+          "Transition Reynolds numbers for friction coefficient"
+        ]
+      },
+      "tokens": 123
+    },
+    {
+      "text": "Influence of different inlet configurations on the isothermal fully developed friction coefficients (filled symbols designate the start and end of the transition region for each inlet).\nFrom Tam and Ghajar, 1997.\nFigure 8-37 shows the influence of inlet configuration on the beginning and end of the isothermal fully developed friction coefficients in the transition region.\nNote that the isothermal fully developed friction coefficients in the laminar, turbulent, and transition regions can be obtained easily from Eqs. 8-81, 8-82, and 8-83, respectively, by setting the viscosity ratio correction to unity (i.e., set m 5 0).\nThe results presented so far were based on the experimental work of Tam and Ghajar (1997) for fully developed isothermal and non-isothermal friction factors. Ghajar and coworkers conducted similar experiments in the entrance (developing) region for square-edged and re-entrant inlets for laminar and transitional flows [Tam et al. (2013)]. The developing friction factor is referred to as the apparent friction factor . The apparent friction factor accounts for the combined effects of flow acceleration (variation in momentum flux) and surface shear forces.\nFor laminar developing friction factor in tubes with square-edged and re-entrant inlets, they recommended the following correlation.\n$$f _ { a p , l a m } = \\frac { 1 } { R e } ( 6 4 + \\frac { 0 . 0 1 5 6 } { 4 . 8 3 6 \\times 1 0 ^ { - 5 } + 0 . 0 6 0 9 \\left ( \\frac { x / D } { R e } \\right ) ^ { 1 . 2 8 } } ) \\Big ) \\left [ \\frac { \\mu _ { b } } { \\mu _ { s } } \\right ) ^ { \\prime \\prime } ( 8 - 8 5 )$$\nwhere m 5 2 5.06 1 0.84 3 Pr 0.23 Gr 0.09 for  non-isothermal flow and m 5 0 for isothermal flow.\nThe range of application of Eq. 8-85 is: 897 # Re # 2189, 7141 # Gr # 18,224, 1.27 # m b / m s # 1.56, 39 # Pr # 47, and 3 # x  /D # 200.\nFor transitional developing friction factor in tubes they recommended the following correlation.\n$$f _ { a p , \\text {trans} } = \\left \\{ ( \\frac { ( 6 4 ) } { R e } ) [ ( 1 + ( 0 . 0 0 4 9 R e ^ { 0 . 7 5 } ) ^ { a } ) ^ { | A } + b ] [ 1 + \\left ( \\frac { c } { x / D } \\right ) ] \\right \\} \\left ( \\frac { \\mu _ { _ { h } } } { \\mu _ { _ { s } } } \\right ) ^ { m } ( 8 - 8 6 )$$\nwhere  the  exponent m is  obtained  separately  for  each  inlet  for  nonisothermal flow from Table 8-7 and is set to m 5 0 for isothermal flow. The constants in Eq. 8-86 and its range of application for each inlet are also given in Table 8-7.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/149' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=30.142, t=534.0420141601562, r=185.402, b=479.0720141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 185))]",
+          "self_ref='#/texts/150' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=30.142, t=474.3150141601562, r=119.309, b=467.64501416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]",
+          "self_ref='#/texts/151' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=204.812, t=656.1960141601562, r=519.436, b=622.7750141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 161))]",
+          "self_ref='#/texts/152' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=204.812, t=620.1920141601562, r=519.441, b=574.7690141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 251))]",
+          "self_ref='#/texts/153' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=204.812, t=572.1860141601562, r=519.47, b=478.7570141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 558))]",
+          "self_ref='#/texts/154' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=204.812, t=476.17401416015616, r=519.413, b=454.7540141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 132))]",
+          "self_ref='#/texts/155' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=218.322, t=439.3140141601562, r=516.814, b=402.72701416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 100))]",
+          "self_ref='#/texts/156' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=204.812, t=391.12801416015617, r=519.441, b=368.7760141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 97))]",
+          "self_ref='#/texts/157' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=204.813, t=366.19301416015617, r=516.815, b=343.49101416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 137))]",
+          "self_ref='#/texts/158' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=204.81, t=342.1940141601562, r=519.456, b=320.7740141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 96))]",
+          "self_ref='#/texts/159' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=211.312, t=311.9640141601562, r=516.814, b=288.0230141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 106))]",
+          "self_ref='#/texts/160' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=204.802, t=278.1960141601562, r=519.447, b=232.7730141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 245))]"
+        ],
+        "headings": [
+          "FIGURE 8-37"
+        ]
+      },
+      "tokens": 532
+    },
+    {
+      "text": "Constants and ranges of independent variables for transition friction factor correlation\nRe-entrant, Constants and ranges of independent variables = a 5 0.52, b 5 2 3.47, c 5 4.8, m 5 2 1.8 1 0.46 Gr 2 0.13 Pr 0.41 1883 , Re , 3262, 19.1 , Pr , 46.5, 4560 , Gr , 24,339, 1.12 , m b / m s , 1.54, 3 , x/D , 200. Square-edged, Constants and ranges of independent variables = a 5 0.50, b 5 2 4.0, c 5 3.0, m 5 2 1.13 1 0.48 Gr 2 0.15 Pr 0.55 2084 , Re , 3980, 19.6 , Pr , 47.3, 6169 , Gr , 35,892, 1.10 , m b / m s , 1.54, 3 , x/D , 200",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/162' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=174.142, t=180.58401416015613, r=510.589, b=172.50201416015625, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 88))]",
+          "self_ref='#/tables/2' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=3, bbox=BoundingBox(l=172.39349365234375, t=169.55670166015625, r=516.594482421875, b=75.91937255859375, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]"
+        ],
+        "headings": [
+          "TABLE 8-7"
+        ]
+      },
+      "tokens": 127
+    },
+    {
+      "text": "A tube with a bell-mouth inlet configuration is subjected to 8 kW/m 2  uniform wall heat flux. The tube has an inside diameter of 0.0158 m and a flow rate of 1.32 3 10 -4  m 3 /s. The liquid flowing inside the tube is ethylene glycoldistilled water mixture with a mass fraction of 0.34. The properties of the ethylene glycol-distilled water mixture at the location of interest are Pr 5 11.6, n 5 1.39 3 10 -6 m 2 /s, and m b / m s 5 1.14. Determine the fully developed friction coefficient at a location along the tube where the Grashof number is Gr 5 60,800. What would the answer be if a square-edged inlet is used instead?\nSOLUTION A liquid mixture flowing in a tube is subjected to uniform wall heat flux. The friction coefficients are to be determined for the bell-mouth and square-edged inlet cases.\nAssumptions Steady operating conditions exist.\nProperties The properties of the ethylene giycol-distilled water mixture are given to be Pr 5 11.6, n 5 1.39 3 10 -6 m 2 /s, and m b / m s 5 1.14.\nAnalysis For the calculation of the nonisothermal fully developed friction coefficient, it is necessary to determine the flow regime before making any decision regarding which friction coefficient relation to use. The Reynolds number at the specified location is\n$$\\text {Re} = \\frac { ( \\dot { \\vee } / A _ { c } ) D } { \\nu } = \\frac { [ ( 1 . 3 2 \\times 1 0 ^ { - 4 } \\, m ^ { 3 } / s ) / ( 1 . 9 6 1 \\times 1 0 ^ { - 4 } \\, m ^ { 2 } ) [ ( 0 . 0 1 5 8 \\, m ) } { 1 . 3 9 \\times 1 0 ^ { - 6 } \\, m ^ { 2 } / s } = 7 6 5 1$$\nsince\n$$A _ { c } = \\pi D ^ { 2 } / 4 = \\pi ( 0 . 0 1 5 8 \\pm ) ^ { 2 } / 4 = 1 . 9 6 1 \\times 1 0 ^ { - 4 } m ^ { 2 }$$\nFrom Table 8-6, we see that for a bell-mouth inlet and a heat flux of 8 kW/m 2 the flow is in the transition region. Therefore, Eq. 8-83 applies. Reading the constants A, B , and C and m 1 , m 2 , m 3 , and m 4 from Table 8-5, the friction coefficient is determined to be\n$$C _ { f , \\, \\text {trans} } & = \\left [ 1 + \\left ( \\frac { R e } { A } \\right ) ^ { B } \\right ] ^ { C } \\left ( \\frac { \\mu _ { b } } { \\mu _ { s } } \\right ) ^ { m } \\\\ & = \\left [ 1 + \\left ( \\frac { 7 6 5 1 } { 5 3 4 0 } \\right ) ^ { - 0 . 0 9 9 } \\right ] ^ { - 6 . 3 2 } ( 1 1 4 ) ^ { - 2 . 5 8 - 0 . 4 2 \\times 6 . 8 0 0 - 0 . 4 1 \\times 1 1 1 2 \\times 6 } = 0 . 0 1 0$$\nSquare-Edged Inlet Case For this inlet shape, the Reynolds number of the flow is the same as that of the bell-mouth inlet (Re 5 7651). However, it is necessary to check the type of flow regime for this particular inlet with 8 kW/m 2  of heating. From Table 8-6, the transition Reynolds number range for this case is 3860 , Re , 5200, which means that the flow in this case is turbulent and Eq. 8-82 is the appropriate equation to use. It gives\n$$C _ { f , t u r b } = \\left ( \\frac { 0 . 0 7 9 1 } { R e ^ { 0 . 2 5 } } \\right ) \\left ( \\frac { \\mu _ { b } } { \\mu _ { s } } \\right ) ^ { m } = \\left ( \\frac { 0 . 0 7 9 1 } { 7 6 5 1 ^ { 0 . 2 5 } } \\right ) ( 1 . 1 4 ) ^ { - 0 . 2 5 } = 0 . 0 0 8 2$$\nDiscussion Note that the friction factors f can be determined by multiplying the friction coefficient values by 4.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/165' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=65.14, t=625.3840141601562, r=373.931, b=540.3060141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 625))]",
+          "self_ref='#/texts/166' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=65.142, t=525.0720141601562, r=373.911, b=494.30601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 179))]",
+          "self_ref='#/texts/167' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=65.144, t=490.3910141601562, r=253.118, b=482.3090141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 46))]",
+          "self_ref='#/texts/168' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=65.144, t=478.3940141601562, r=373.911, b=458.0690141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 146))]",
+          "self_ref='#/texts/169' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=65.141, t=455.3870141601562, r=373.899, b=414.3080141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 262))]",
+          "self_ref='#/texts/170' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=65.312, t=410.0820141601562, r=370.996, b=379.2860141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 113))]",
+          "self_ref='#/texts/171' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=65.142, t=369.4940141601562, r=85.644, b=361.41201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 5))]",
+          "self_ref='#/texts/172' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=114.352, t=351.6100141601562, r=313.46, b=340.4130141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 55))]",
+          "self_ref='#/texts/173' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=65.142, t=330.4940141601562, r=373.887, b=289.41401416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 271))]",
+          "self_ref='#/texts/174' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=78.366, t=278.0340141601562, r=363.611, b=222.17601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 145))]",
+          "self_ref='#/texts/175' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=65.142, t=210.27401416015618, r=373.903, b=147.19801416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 443))]",
+          "self_ref='#/texts/176' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=100.812, t=135.60401416015623, r=335.571, b=111.86301416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 88))]",
+          "self_ref='#/texts/177' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=4, bbox=BoundingBox(l=65.142, t=102.05401416015616, r=373.897, b=82.97401416015623, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 114))]"
+        ],
+        "headings": [
+          "EXAMPLE 8-8 Nonisothermal Fully Developed Friction Coefficient in the Transition Region"
+        ]
+      },
+      "tokens": 799
+    },
+    {
+      "text": "Re-entrant, a = 1766. Re-entrant, b = 276. Re-entrant, c = -0.955. Square-edged, a = 2617. Square-edged, b = 207. Square-edged, c = -0.950. Bell-mouth, a = 6628. Bell-mouth, b = 237. Bell-mouth, c = -0.980",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/tables/3' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=30.40570068359375, t=325.2882995605469, r=185.16722106933594, b=264.00006103515625, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]"
+        ],
+        "headings": [
+          "Constants for transition heat transfer correlation"
+        ]
+      },
+      "tokens": 36
+    },
+    {
+      "text": "Ghajar and coworkers also experimentally investigated the inlet configuration effects on heat transfer in the transition region between laminar and turbulent flows in tubes for the same three inlet configurations shown in Fig. 8-35. They proposed some prediction methods for this regime to bridge between laminar methods and turbulent methods, applicable to forced and mixed convection in the entrance and fully developed regions for the three types of inlet configurations, which are presented next. For a detailed discussion on this topic refer to Tam and Ghajar (2006). The local heat transfer coefficient in transition flow is obtained from the transition Nusselt number, Nu trans , which is calculated as follows at a distance x from the entrance:\n$$N _ { \\text {trans} } = N u _ { \\text {lam} } + \\{ \\exp [ ( a - R e ) / b ] + N u _ { \\text {turb} } ^ { c } \\} ^ { c }$$\nwhere Nulam is the laminar flow Nusselt number for entrance region laminar flows with natural convection effects,\n$$N _ { l a m } = 1 . 2 4 \\left [ \\left ( \\frac { \\text {RePrD} } { x } \\right ) + 0 . 0 2 5 ( \\text {Gr} \\Pr ) ^ { 0 . 7 5 } \\right ] ^ { 1 / 3 } \\left ( \\frac { \\mu _ { b } } { \\mu _ { s } } \\right ) ^ { 0 . 1 4 } \\quad ( 8 - 8 8 )$$\nand Nuturb is the turbulent flow Nusselt number with developing flow effects,\n$$N _ { t u r b } = 0 0 2 3 R e ^ { 0 . 8 } \\Pr ^ { 0 . 3 8 s } \\left ( \\frac { x } { D } \\right ) ^ { - 0 . 0 0 5 4 } \\left ( \\frac { \\mu _ { b } } { \\mu _ { s } } \\right ) ^ { 0 . 1 4 }$$\nThe physical properties appearing in the dimensionless numbers Nu, Re, Pr, and Gr all are evaluated at the bulk fluid temperature Tb . The values of the empirical constants a, b , and c in Eq. 8-87 depend on the inlet configuration and are given in Table 8-8. The viscosity ratio accounts for the temperature effect on the process. The range of application of the heat transfer method based on their database of 1290 points (441 points for re-entrant inlet, 416 for square-edged inlet, and 433 points for bell-mouth inlet) is as follows:\nRe-entrant:\n3 # x / D # 192, 1700 # Re # 9100, 5 # Pr # 51, 4000 # Gr , 210,000, 1.2 , m b / m s , 2.2\nSquare-edged:\n3 # x / D # 192, 1600 # Re # 10,700, 5 # Pr # 55,\n4000 # Gr # 250,000, 1.2 # m b / m s # 2.6\nBell-mouth:\n3 # x / D # 192, 3300 # Re # 11,100, 13 # Pr # 77, 6000 # Gr # 110,000, 1.2 # m / m # 3.1\nb s\nThese correlations capture about 70 percent of measured data within an error band of 6 10%, and 97% of measured data with 6 20%, which is remarkable for transition flows. The individual expressions above for Nu lam and Nuturb can be used alone for developing flows in those respective regimes. The lower and upper limits of the heat transfer transition Reynolds number ranges for the three different inlets are summarized in Table 8-9. The results shown in this table indicate that the re-entrant inlet configuration causes the earliest transition from laminar flow into the transition regime (at about 2000) while the bell-mouth entrance retards this regime change (at about 3500). The square-edged entrance falls in between (at about 2400), which is close to the often quoted value of 2300 in most textbooks.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/182' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=204.142, t=644.5360141601561, r=518.804, b=525.7860141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 752))]",
+          "self_ref='#/texts/183' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=266.427, t=518.8840141601562, r=516.144, b=507.6510141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 60))]",
+          "self_ref='#/texts/184' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=204.142, t=500.5360141601562, r=516.152, b=479.11601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 113))]",
+          "self_ref='#/texts/185' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=252.787, t=470.3200141601562, r=516.144, b=446.3630141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 78))]",
+          "self_ref='#/texts/186' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=204.142, t=436.5360141601562, r=516.115, b=425.7860141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 77))]",
+          "self_ref='#/texts/187' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=272.701, t=418.3200141601562, r=515.644, b=394.3630141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 71))]",
+          "self_ref='#/texts/188' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=204.141, t=384.5360141601562, r=518.788, b=303.1100141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 537))]",
+          "self_ref='#/texts/189' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=204.142, t=290.8390141601562, r=247.937, b=282.39001416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 11))]",
+          "self_ref='#/texts/190' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=286.545, t=290.8480141601562, r=480.744, b=270.1630141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 90))]",
+          "self_ref='#/texts/191' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=204.139, t=265.8360141601562, r=260.066, b=257.3870141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 13))]",
+          "self_ref='#/texts/192' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=286.542, t=265.8450141601562, r=487.867, b=257.3240141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 49))]",
+          "self_ref='#/texts/193' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=286.542, t=254.8480141601562, r=446.941, b=245.1630141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 42))]",
+          "self_ref='#/texts/194' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=204.139, t=240.8360141601562, r=249.521, b=232.38701416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 11))]",
+          "self_ref='#/texts/195' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=286.542, t=240.8450141601562, r=492.617, b=221.32301416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 89))]",
+          "self_ref='#/texts/196' parent=RefItem(cref='#/groups/1') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=407.282, t=225.65401416015618, r=422.404, b=220.1630141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 3))]",
+          "self_ref='#/texts/197' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=5, bbox=BoundingBox(l=204.142, t=208.53601416015618, r=518.811, b=79.10601416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 810))]"
+        ],
+        "headings": [
+          "Heat Transfer in the Transition Region"
+        ]
+      },
+      "tokens": 673
+    },
+    {
+      "text": "Re-entrant Square-edged Bell-mouth, Lower Limit = Re lower 5 2157 2 0.65[192 2 ( x / D )] Re lower 5 2524 2 0.82[192 2 ( x / D )] Re lower 5 3787 2 1.80[192 2 ( x / D )]. Re-entrant Square-edged Bell-mouth, Upper Limit = Re upper 5 8475 2 9.28[192 2 ( x / D )] Re upper 5 8791 2 7.69[192 2 ( x / D )] Re upper 5 10,481 2 5.47[192 2 ( x / D )]\nFigure  8-38  clearly  shows  the  influence  of  inlet  configuration  on  the beginning and end of the heat transfer transition region. This figure plots the local average peripheral heat transfer coefficients in terms of the Colburn j factor (  j H 5 St Pr 0.67 ) versus local Reynolds number for all flow regimes at the length-to-diameter ratio of 192, and St is the Stanton number, which is also a dimensionless heat transfer coefficient (see Chapter 6 for more details), defined as St 5 Nu/(Re Pr). The filled symbols in Fig. 8-38 represent the start and end of the heat transfer transition region for each inlet configuration. Note the large influence of natural convection superimposed on the forced convective laminar-flow heat transfer process (Nu 5 4.364 for a fully developed laminar flow with a uniform heat-flux boundary condition without buoyancy effects), yielding a mixed convection value of about Nu 5 14.5. Equation 8-88 includes this buoyancy effect through the Grashof number.\nIn a subsequent study, Tam and Ghajar (1998) experimentally investigated the behavior of local heat transfer coefficients in the transition region for a tube with a bell-mouth inlet. This type of inlet is used in some heat exchangers mainly to avoid the presence of eddies, which are believed to be one of the causes for erosion in the tube inlet region. For the bell-mouth inlet, the variation of the local heat transfer coefficient with length in the transition and turbulent flow regions is very unusual. For this inlet geometry, the boundary layer along the tube wall is at first laminar and then changes through a transition to the turbulent condition, causing a dip in the Nu versus x / D curve. In their experiments with a fixed inside diameter of 15.84 mm, the length of the dip in the transition region was much longer (100 , x / D , 175) than in the turbulent region ( x / D , 25). The presence of the dip in the transition region causes a significant influence in both the local and the average heat transfer coefficients. This is particularly important for heat transfer calculations in short tube heat exchangers with a bell-mouth inlet. Figure 8-39 on the next page shows the variation of local Nusselt number along the tube length in the transition region for the three inlet configurations at comparable Reynolds numbers.\nAs mentioned earlier finned tubes (Fig. 8-30) enhance convection heat transfer. Single-phase liquid flow in internally enhanced tubes is becoming more important in commercial heating, ventilating, and air conditioning (HVAC) applications. One kind of internally enhanced tube is the spiral micro-fin tube (Fig. 8-40 on the next page). The tube side roughening increases heat transfer surface area, resulting in high-efficiency heat exchangers. The increase in the surface area causes low flow rates in the heat exchanger tubes, resulting in the flow to be at Reynolds numbers that are between laminar and turbulent, that is, in the transition region. Owing to the high efficiency requirements, it is likely that more HVAC units will",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/tables/4' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=55.84356689453125, t=637.3318710327148, r=445.62921142578125, b=577.6287689208984, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]",
+          "self_ref='#/texts/201' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=60.142, t=556.1960141601562, r=374.794, b=402.7640141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 997))]",
+          "self_ref='#/texts/202' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=60.124, t=400.18101416015617, r=374.8, b=198.73801416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1337))]",
+          "self_ref='#/texts/203' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=60.124, t=196.15501416015616, r=374.777, b=78.72301416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 732))]"
+        ],
+        "headings": [
+          "The lower and upper limits of the heat transfer transition Reynolds numbers"
+        ]
+      },
+      "tokens": 588
+    },
+    {
+      "text": "Influence of different inlets on the heat transfer transition region at x / D 5 192 (filled symbols designate the start and end of the transition region for each inlet) between limits of Dittus-Boelter correlation (Nu 5 0.023 Re 0.8 Pr n ) for fully developed turbulent flow (using n 5 1/3 for heating) and Nu 5 4.364 for fully developed laminar flow with a uniform heat flux boundary condition. Note buoyancy effect on the laminar flow data, giving the much larger mixed convection heat transfer coefficient.\nFrom Ghajar and Tam, 1994.\nRe",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/227' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=390.142, t=393.6920141601562, r=548.646, b=223.72201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 509))]",
+          "self_ref='#/texts/228' parent=RefItem(cref='#/groups/2') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=456.972, t=218.96501416015622, r=548.015, b=212.29501416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]",
+          "self_ref='#/texts/229' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=6, bbox=BoundingBox(l=472.872, t=422.9400141601562, r=479.538, b=417.5580141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 2))]"
+        ],
+        "headings": [
+          "FIGURE 8-38"
+        ]
+      },
+      "tokens": 93
+    },
+    {
+      "text": "Variation of local Nusselt number with length for the re-entrant, squareedged, and bell-mouth inlets in the transition region.\nFrom Tam and Ghajar, 1998.\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (1 images):\n==================================================\n\n**[Image: page7_img1.jpeg - Page 7]**\nThe image shows two cylindrical objects, possibly tubes or rods, lying side-by-side. The object on the left is cut at an angle, revealing a smooth, circular interior. A dark line runs along its length. The object on the right is cut straight across, showing a circular interior with a textured or corrugated edge. Both objects appear to have a textured surface along their length. The image is in black and white.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/267' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.142, t=349.6320141601562, r=180.102, b=306.16201416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 126))]",
+          "self_ref='#/texts/268' parent=RefItem(cref='#/groups/3') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=30.142, t=301.40501416015616, r=119.309, b=294.7350141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 26))]"
+        ],
+        "headings": [
+          "FIGURE 8-39"
+        ]
+      },
+      "tokens": 108
+    },
+    {
+      "text": "( a ) Sectional view of the micro-fin tube; ( b ) The plain and microfin tubes.\nReprinted from 'Experimental Investigation of Heat Transfer, Friction Factor, and Optimal Fin Geometries For The Internally Microfin Tubes In The Transition and Turbulent Regions' by :  H. K. Tam, L. M. Tam, A. J. Ghajar, S. C. Tam, and T. Zhang in Journal of Enhanced Heat Transfer , Vol. 19, No. 5 (2012), pp. 457-476 with permission from Begell House, Inc.\noperate in the transition region where the understanding of the pressure drop and heat transfer is limited. To respond to some of these challenges, Ghajar and coworkers extended their plain tube studies presented earlier to finned tubes. They conducted pressure drop (friction factor) and heat transfer experiments in the transition region in three different micro-fin tubes and a plain  tube with square-edged and re-entrant inlets [Tam et al. (2012)]. Table 8-10 shows the specifications of the plain and micro-fin tubes used in the studies of Tam et al. (2012).\nFigure 8-41 represents the fully developed friction factor characteristics for the plain and different spiral-angle micro-fin tubes and different inlet configurations under the isothermal boundary condition. The plain tube behavior is similar to what was presented earlier (Fig. 8-37). However, for all the micro-fin tubes a parallel shift from the classical laminar equation ( Cf ,  lam 5 16/Re) is observed regardless of the fin geometry and the type of inlet. In the transition region, it can be observed that the transition range of the micro-fin tubes is much wider than the plain tube transition range. The friction factor for all the micro-fin tubes goes through a steep increase followed by a relatively constant Cf section and then a parallel shift from the classical Blasius turbulent friction factor correlation ( Cf ,  turb 5 0.0791 Re 2 0.25 ). For the end of the transition for micro-fin tube, it is defined as the first point where the friction factor data become parallel to the Blasius correlation. Beyond",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/281' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=226.942, t=542.2020141601562, r=489.392, b=521.7320141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 79))]",
+          "self_ref='#/texts/282' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=226.942, t=516.9750141601562, r=492.667, b=483.2540141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 359))]",
+          "self_ref='#/texts/283' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=204.142, t=460.3860141601562, r=518.789, b=366.9570141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 564))]",
+          "self_ref='#/texts/284' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=204.138, t=364.3740141601562, r=518.802, b=210.96401416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1022))]"
+        ],
+        "headings": [
+          "FIGURE 8-40"
+        ]
+      },
+      "tokens": 334
+    },
+    {
+      "text": "Plain tube, Outer dia., D o (mm) = 15.9. Plain tube, Inner dia., D i (mm) = 14.9. Plain tube, Spiral angle, a = -. Plain tube, Fin height, e (mm) = -. Plain tube, Number of starts, N s = -. Micro-fin tube #1, Outer dia., D o (mm) = 15.9. Micro-fin tube #1, Inner dia., D i (mm) = 14.9. Micro-fin tube #1, Spiral angle, a = 18\u00b0. Micro-fin tube #1, Fin height, e (mm) = 0.5. Micro-fin tube #1, Number of starts, N s = 25. Micro-fin tube #2, Outer dia., D o (mm) = 15.9. Micro-fin tube #2, Inner dia., D i (mm) = 14.9. Micro-fin tube #2, Spiral angle, a = 25\u00b0. Micro-fin tube #2, Fin height, e (mm) = 0.5. Micro-fin tube #2, Number of starts, N s = 25. Micro-fin tube #3, Outer dia., D o (mm) = 15.9. Micro-fin tube #3, Inner dia., D i (mm) = 14.9. Micro-fin tube #3, Spiral angle, a = 35\u00b0. Micro-fin tube #3, Fin height, e (mm) = 0.5. Micro-fin tube #3, Number of starts, N s = 25\nthis point, the flow is considered turbulent. With a higher spiral angle in the micro-fin tube, the increase of friction factor can be observed in the transition and turbulent regions. The increase in the friction factor is caused by the stronger drag due to the larger spiral angle on the tube wall. From Fig. 8-41, it can be observed that the start of transition is inlet and spiral angle dependent. For all the micro-fin tubes, the square-edged inlet delays the start of transition. The micro-fin tube #3 with a larger spiral angle has an earlier start of transition. Moreover, it is also observed that a larger spiral angle in the micro-fin tube advances the end of transition for both inlet configurations.\nFigure 8-42 shows the heat transfer behavior in the upper transition region for the plain and micro-fin tubes is very different. For the plain tube, the heat transfer initially experienced an abrupt change in the lower transition region; this was followed by a moderate change in the upper transition and finally the transition ended and the heat transfer data followed the Sieder and Tate correlation (1936) at Reynolds number around 8000. The plain tube behavior is similar to what was presented earlier (Fig. 8-38). However, for the micro-fin tube, such characteristic cannot be seen and the abrupt change was observed in the entire transition region. When Reynolds number is around 8000, a parallel shift of heat transfer data from the Sieder and Tate equation was observed. This increase in the Colburn j factor (j H 5 St Pr 0.67 ) and the parallel shift from the Sieder and Tate correlation in the turbulent region is due to the swirling motion induced by the micro-fin. The larger spiral angle leads to a higher Colburn j factor. It is because the larger spiral angle increases the fluid mixing between the bulk fluid and the tube wall and therefore the heat transfer is enhanced. Regarding to the start and end of transition of heat transfer, it can be observed from Fig. 8-42 that the start of transition is defined as the critical point for the sudden change from the laminar region (the line parallel to Nu 5 4.364) to the transition region. For the end of the transition for micro-fin tube, it is defined as the first point where the heat transfer data landed on a line parallel to the correlation proposed by Sieder and Tate (1936). As seen from Fig. 8-42, for the heat transfer, the transition is inlet dependent and the start and end of transition is spiral angle dependent. The delay of transition is obvious for smaller spiral angles while the early transition occurred when larger spiral angle tubes were used.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/tables/5' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=7, bbox=BoundingBox(l=138.8546905517578, t=157.78485107421875, r=518.2217407226562, b=59.17718505859375, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]",
+          "self_ref='#/texts/289' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=60.142, t=660.1960141601562, r=374.799, b=554.7660141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 711))]",
+          "self_ref='#/texts/290' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=60.142, t=552.1830141601562, r=374.796, b=266.75801416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1928))]"
+        ],
+        "headings": [
+          "Specifications of the test tubes"
+        ]
+      },
+      "tokens": 635
+    },
+    {
+      "text": "Ethylene  glycol-distilled  water  mixture  with  a  mass  fraction  of  0.6  and  a flow rate of 2.6 3 10 2 4  m 3 /s flows inside a tube with an inside diameter of 0.0158 m subjected to uniform wall heat flux. For this flow, determine the Nusselt number at the location x / D 5 90 if  the  inlet  configuration of the tube is: ( a ) re-entrant, ( b ) square-edged, and ( c ) bell-mouth. At this location, the local Grashof number is Gr 5 51,770. The properties of ethylene glycoldistilled water mixture at the location of interest are Pr 5 29.2, n 5 3.12 3 10 2 6  m 2 /s and m b / m s 5 1.77.\nSOLUTION A liquid mixture flowing in a tube is subjected to uniform wall heat flux. The Nusselt number at a specified location is to be determined for three different tube inlet configurations.\nAssumptions\nSteady operating conditions exist.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/292' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=65.14, t=209.78401416015618, r=373.908, b=123.46901416015612, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 595))]",
+          "self_ref='#/texts/293' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=65.142, t=109.47201416015616, r=373.927, b=78.7060141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 193))]",
+          "self_ref='#/texts/294' parent=RefItem(cref='#/groups/4') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=65.147, t=74.7640141601562, r=114.143, b=66.7250141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 11))]",
+          "self_ref='#/texts/295' parent=RefItem(cref='#/groups/4') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=120.641, t=74.79101416015624, r=253.121, b=66.70901416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 34))]"
+        ],
+        "headings": [
+          "EXAMPLE 8-9 Heat Transfer in the Transition Region"
+        ]
+      },
+      "tokens": 158
+    },
+    {
+      "text": "Fully developed friction factor characteristics for the plain and micro-fin tubes under isothermal boundary condition. From Tam et al., 2012.\nRe",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/312' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=414.772, t=504.8320141601562, r=548.642, b=449.9350141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 141))]",
+          "self_ref='#/texts/332' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=473.942, t=242.4800141601562, r=480.608, b=237.0980141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 2))]"
+        ],
+        "headings": [
+          "FIGURE 8-41"
+        ]
+      },
+      "tokens": 21
+    },
+    {
+      "text": "Fully developed heat transfer characteristics for the plain and micro-fin tubes under uniform wall heat flux boundary condition.\nFrom Tam et al., 2012.\nProperties The properties of the ethylene glycol-distilled water mixture are given to be Pr 5 29.2, n 5 3.12 3 10 -6 m 2 /s, and m b / m s 5 1.77.\nAnalysis For a tube with a known diameter and volume flow rate, the type of flow regime is determined before making any decision regarding which Nusselt number correlation to use. The Reynolds number at the specified location is\n$$R e = \\frac { ( \\dot { V } A _ { e } ) D } { v } = \\frac { [ ( 2 . 6 \\times 1 0 ^ { - 4 } \\, m ^ { 3 } / s ) ( 1 9 6 1 \\times 1 0 ^ { - 4 } \\, m ^ { 2 } ) ] ( 0 . 0 1 5 8 \\, m ) } { 3 . 1 2 \\times 1 0 ^ { - 6 } \\, m ^ { 2 } / s } = 6 7 1 4$$\nsince\n$$A _ { c } = \\pi D ^ { 2 } / 4 = \\pi ( 0 . 0 1 5 8 \\, \\pm ) ^ { 2 } / 4 = 1 . 9 6 1 \\times 1 0 ^ { - 4 } \\, \\pm ^ { 2 }$$\nTherefore, the flow regime is in the transition region for all three inlet configurations (thus use the information given in Table 8-9 with x / D 5 90), and therefore Eq. 8-87 should be used with the constants a, b, c found in Table 8-8. However, Nulam and Nuturb are the inputs to Eq. 8-87, and they need to be evaluated first from Eqs. 8-88 and 8-89, respectively. It should be mentioned that the correlations for Nu lam and Nuturb have no inlet dependency. From Eq. 8-88:\n$$N _ { l a m } & = 1 . 2 4 \\left [ \\frac { \\text {RePrD} } { x } \\right ) + 0 . 0 2 5 ( \\text {GrP} ) ^ { 0 . 7 5 } \\right ] ^ { 1 / 3 } \\left ( \\frac { \\mu _ { b } } { \\mu _ { s } } \\right ) ^ { 0 . 1 4 } \\\\ & = 1 . 2 4 \\left [ \\frac { ( 6 7 1 4 ) ( 2 9 . 2 ) } { 9 0 } \\right ) + 0 . 0 2 5 \\left [ ( 5 1 , 7 7 0 ) ( 2 9 . 2 ) ^ { 0 . 7 5 } \\right ] ^ { 1 / 3 } ( 1 . 7 7 ) ^ { 0 . 1 4 } = 1 9 . 9$$\nFrom Eq. 8-89:\n$$N u _ { t u r b } & = 0 . 0 2 3 R e ^ { 0 . 8 } \\Pr ^ { 0 . 3 8 5 } \\left ( \\frac { x } { D } \\right ) ^ { - 0 . 0 0 5 4 } \\left ( \\frac { \\mu _ { b } } { \\mu _ { s } } \\right ) ^ { 0 . 1 4 } \\\\ & = 0 . 0 2 3 ( 6 7 1 4 ) ^ { 0 . 8 } ( 2 9 . 2 ) ^ { 0 . 3 8 5 } ( 9 0 ) ^ { - 0 . 0 0 5 4 } ( 1 . 7 7 ) ^ { 0 . 1 4 } = 1 0 2 . 7$$\nThen the transition Nusselt number can be determined from Eq. 8-87,\n$$N u _ { _ { t r a n s } } = N u _ { _ { l a m } } + \\{ \\exp [ ( a - R e ) / b ] + N u _ { _ { t r b } } ^ { c } \\} ^ { c }$$\nCase 1: For re-entrant inlet:\n$$N u _ { _ { \\text {trans} } } = 1 9 9 + \\{ \\exp [ ( 1 7 6 6 - 6 7 1 4 ) / 2 7 6 ] + 1 0 2 . 7 ^ { - 0 . 9 5 5 } \\} ^ { - 0 . 9 5 5 } = 8 8 . 2$$\nCase 2: For square-edged inlet:\n$$N u _ { _ { \\text {trans} } } = 1 9 9 + \\{ \\exp [ ( 2 6 1 7 - 6 7 1 4 ) / 2 0 7 ] + 1 0 2 . 7 ^ { - 0 . 9 5 0 } \\} ^ { - 0 . 9 5 0 } = 8 5 . 3$$\nCase 3: For bell-mouth inlet:\n$$N u _ { _ { \\text {trans} } } = 1 9 9 + \\{ \\exp [ ( 6 6 2 8 - 6 7 1 4 ) / 2 3 7 ] + 1 0 2 . 7 ^ { - 0 . 9 8 0 } \\} ^ { - 0 . 9 8 0 } = 2 1 . 3$$\nDiscussion It is worth mentioning that, for the re-entrant and square-edged inlets, the flow behaves normally. For the bell-mouth inlet, the Nusselt number is low in comparison to the other two inlets. This is because of the unusual behavior of the bell-mouth inlet noted earlier (see Fig. 8-39); i.e., the boundary layer along the tube wall is at first laminar and then changes through a transition region to the turbulent condition.\n: 88\n2083, Transition range = 1500 , Re , 4000. 2083, Tube I.D. [ m m] = 732. 2083, Transition range = 2200 , Re , 3000. 1600, Transition range = 1700 , Re , 4000. 1600, Tube I.D. [ m m] = 667. 1600, Transition range = 2200 , Re , 3000. 1372, Transition range = 1900 , Re , 4000. 1372, Tube I.D. [ m m] = 559. 1372, Transition range = 1900 , Re , 2500. 1067, Transition range = 2000 , Re , 4000. 1067, Tube I.D. [ m m] = 508. 1067, Transition range = 1700 , Re , 2100. 991, Transition range = 2000 , Re , 4000. 991, Tube I.D. [ m m] = 413. 991, Transition range = 1500 , Re , 1900. 838, Transition range = 2200 , Re , 4000. 838, Tube I.D. [ m m] = 337. 838, Transition range = 1300 , Re , 1700\n\n==================================================\n\ud83d\udcf7 IMAGES IN THIS SECTION (1 images):\n==================================================\n\n**[Image: page10_img1.png - Page 10]**\nHere's a description of the image:\n\nThe image shows a series of thin, dark-colored tubes arranged in a row, decreasing in diameter from left to right. To the right of the tubes is a US dime, positioned on its edge. A thin line points from the dime to the text \"One dime\" that is written in a simple, sans-serif font. The background is a solid, light blue color, and the objects are casting reflections on the surface they are resting on.\n\n",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/334' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=405.072, t=214.70201416015618, r=548.662, b=171.23201416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 128))]",
+          "self_ref='#/texts/335' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=8, bbox=BoundingBox(l=476.782, t=166.4750141601562, r=546.157, b=159.80501416015613, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 22))]",
+          "self_ref='#/texts/338' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=207.392, t=658.1040141601562, r=516.153, b=637.7890141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 146))]",
+          "self_ref='#/texts/339' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=207.394, t=635.1070141601562, r=516.159, b=605.0290141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 228))]",
+          "self_ref='#/texts/340' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=211.352, t=600.8120141601562, r=509.447, b=570.0160141601561, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 111))]",
+          "self_ref='#/texts/341' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=207.392, t=561.1040141601562, r=227.894, b=553.0220141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 5))]",
+          "self_ref='#/texts/342' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=260.112, t=543.2200141601562, r=461.2, b=532.0230141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 55))]",
+          "self_ref='#/texts/343' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=207.385, t=523.1040141601562, r=516.141, b=449.0240141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 474))]",
+          "self_ref='#/texts/344' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=208.232, t=439.65001416015616, r=512.659, b=382.67601416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 164))]",
+          "self_ref='#/texts/345' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=207.392, t=372.8840141601562, r=269.87, b=364.8020141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 14))]",
+          "self_ref='#/texts/346' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=243.022, t=355.4300141601562, r=477.874, b=313.2160141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 136))]",
+          "self_ref='#/texts/347' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=207.392, t=302.7740141601562, r=486.347, b=294.6920141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 67))]",
+          "self_ref='#/texts/348' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=266.712, t=284.8840141601562, r=454.064, b=273.6510141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 53))]",
+          "self_ref='#/texts/349' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=207.392, t=264.7740141601562, r=316.355, b=256.6920141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 29))]",
+          "self_ref='#/texts/350' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=214.165, t=247.7640141601562, r=497.629, b=236.5310141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 77))]",
+          "self_ref='#/texts/351' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=207.392, t=224.77401416015618, r=330.368, b=216.6920141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 31))]",
+          "self_ref='#/texts/352' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=214.165, t=206.7640141601562, r=497.629, b=195.53101416015625, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 77))]",
+          "self_ref='#/texts/353' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=207.392, t=183.77401416015618, r=320.369, b=175.6920141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 29))]",
+          "self_ref='#/texts/354' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.FORMULA: 'formula'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=214.165, t=165.8840141601562, r=497.629, b=154.65101416015614, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 77))]",
+          "self_ref='#/texts/355' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=9, bbox=BoundingBox(l=207.388, t=144.77401416015618, r=516.142, b=81.70201416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 434))]",
+          "self_ref='#/texts/357' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=41.917322981023624, t=636.0020141934896, r=56.55511825661417, b=627.3353475268229, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 4))]",
+          "self_ref='#/tables/6' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TABLE: 'table'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=54.678260803222656, t=616.3110504150391, r=352.66619873046875, b=523.00146484375, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 0))]"
+        ],
+        "headings": [
+          "FIGURE 8-42"
+        ]
+      },
+      "tokens": 1251
+    },
+    {
+      "text": "One dime\nSummary of transition Reynolds number ranges for various stainless steel tube sizes ( From Ghajar et al., 2010. )",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/359' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=128.34545670730006, t=659.6447799327545, r=160.41832281671256, b=651.6925819041901, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 8))]",
+          "self_ref='#/texts/360' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.242, t=645.6840141601562, r=350.663, b=637.6020141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 72)), ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.242, t=634.6840141601562, r=170.194, b=615.6020141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(73, 113))]"
+        ],
+        "headings": [
+          "TABLE 8-11"
+        ]
+      },
+      "tokens": 21
+    },
+    {
+      "text": "Due to rapid advancement in fabrication techniques, the miniaturization of devices and components is ever increasing in many applications. Whether it is in the application of miniature heat exchangers, fuel cells, pumps, compressors, turbines, sensors, or artificial blood vessels, a sound understanding of fluid flow in micro-scale channels and tubes is required. To better understand the flow behavior in small tubes, Ghajar and coworkers extended their isothermal transitional pressure drop studies in standard size tubes to mini and microtubes. They performed a systematic and careful experimental study of friction factor in the transition region for single-phase water flow in 12 stainless steel tubes with diameters ranging from 2083 m m to 337 m m (Fig.\u00a08-43).The pressuredrop measurements were carefully performed by paying particular attention to the sensitivity of the pressure-sensing diaphragms used in the pressure transducer. Experimental results indicated that the start and end of the transition region were influenced by the tube diameter (Table 8-11). The friction factor profile was not significantly affected for the tube diameters between 2083 m m and 1372 m m (Fig. 8-44). However, the influence of the tube diameter on the friction factor profile became noticeable as the diameter decreased from 838 m m to 337 m m (Fig. 8-45). The Reynolds number range for transition flow became narrower with decreasing tube diameter (Table\u00a08-11). The\u00a0results show that decrease in tube diameter and increase in relative roughness ( e / D ), which is approximately within the range of 0.01 , e / D , 0.04, influence the friction factor, even in the laminar region. In\u00a0addition, these factors cause the onset of transition from laminar flow to occur at lower Reynolds numbers.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/362' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.142, t=470.93601416015616, r=374.795, b=197.48701416015615, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 1785))]"
+        ],
+        "headings": [
+          "Pressure Drop in the Transition Region in Mini and Micro Tubes"
+        ]
+      },
+      "tokens": 281
+    },
+    {
+      "text": "1. A. J. Ghajar and K. F. Madon. 'Pressure Drop Measurements in the Transition Region for a Circular Tube with Three Different Inlet Configurations.' Experimental Thermal and Fluid Science , Vol. 5 (1992), pp. 129-135.\n2. A. J. Ghajar and L. M. Tam. 'Heat Transfer Measurements and Correlations in the Transition Region for a Circular Tube with Three Different Inlet Configurations.' Experimental Thermal and Fluid Science , Vol. 8 (1994), pp. 79-90.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/364' parent=RefItem(cref='#/groups/5') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.142, t=146.24801416015612, r=372.951, b=115.72601416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 218))]",
+          "self_ref='#/texts/365' parent=RefItem(cref='#/groups/5') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.LIST_ITEM: 'list_item'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=60.142, t=109.24801416015623, r=372.948, b=78.72601416015618, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 231))]"
+        ],
+        "headings": [
+          "REFERENCES"
+        ]
+      },
+      "tokens": 72
+    },
+    {
+      "text": "Representative mini/micro stainless steel tubes used in the experiments of Ghajar et al. (2010) .\nFrom Ghajar et al, 2010.\nFIGURE 8-44 Transition region of stainless steel tubes with diameters from 2083 to 1372 m m.\nFrom Ghajar et al., 2010.\nFIGURE 8-45 Transition region of stainless steel tubes with diameters from\n838 to 337 m m.\nFrom Ghajar et al., 2010.",
+      "metadata": {
+        "source": "file8973.pdf",
+        "chunk_part": "54/100",
+        "doc_items": [
+          "self_ref='#/texts/368' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=396.162, t=531.1520141601562, r=548.642, b=499.1820141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 97))]",
+          "self_ref='#/texts/369' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=470.312, t=494.4250141601562, r=546.145, b=487.7550141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 24))]",
+          "self_ref='#/texts/392' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=408.647, t=349.79401416015617, r=548.637, b=305.55401416015616, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 92))]",
+          "self_ref='#/texts/393' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=468.427, t=300.7970141601562, r=546.135, b=294.1270141601562, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 25))]",
+          "self_ref='#/texts/394' parent=RefItem(cref='#/pictures/10') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.CAPTION: 'caption'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=408.921, t=141.3070141601562, r=548.631, b=108.56701416015619, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 74))]",
+          "self_ref='#/texts/425' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=483.901, t=106.03701416015622, r=546.131, b=97.06701416015619, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 15))]",
+          "self_ref='#/texts/426' parent=RefItem(cref='#/body') children=[] content_layer=<ContentLayer.BODY: 'body'> meta=None label=<DocItemLabel.TEXT: 'text'> prov=[ProvenanceItem(page_no=10, bbox=BoundingBox(l=468.421, t=92.31001416015624, r=546.128, b=85.64001416015617, coord_origin=<CoordOrigin.BOTTOMLEFT: 'BOTTOMLEFT'>), charspan=(0, 25))]"
+        ],
+        "headings": [
+          "FIGURE 8-43"
+        ]
+      },
+      "tokens": 62
+    }
+  ],
+  "total_chunks": 22,
+  "original_document": "file8973.pdf",
+  "pdf_chunk": "file8973_chunk054_p531-540",
+  "config": {
+    "max_tokens": 2048,
+    "merge_peers": true,
+    "enable_picture_description": true,
+    "picture_description_max_tokens": 800,
+    "vision_model": "gemini-2.0-flash",
+    "enable_formula": true,
+    "enable_ocr": true,
+    "enable_table_structure": true
+  }
+}
