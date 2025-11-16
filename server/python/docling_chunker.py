@@ -714,6 +714,7 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
                             extracted_images, image_descriptions = process_document_with_images(
                                 chunk_path,
                                 conversion_output_folder,
+                                doc=doc,  # Pass docling document for figure extraction
                                 enable_description=enable_picture_description,
                                 max_tokens=picture_description_max_tokens,
                                 vision_backend=vision_backend,
