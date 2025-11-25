@@ -1,0 +1,77 @@
+@keyframes floatToMachine {
+  0% {
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  50% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8) rotate(180deg);
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.3) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes floatToPile {
+  0% {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  50% {
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  85% {
+    opacity: 0.5;
+  }
+  100% {
+    left: 85%;
+    top: 70%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+}
+
+@keyframes pileAppear {
+  0% {
+    transform: translateY(-10px) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.1); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}

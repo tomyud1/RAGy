@@ -2,6 +2,7 @@ import express from 'express';
 import { exec } from 'child_process';
 import path from 'path';
 import multer from 'multer';
+import fs from 'fs/promises';
 import { ProjectService } from '../services/project.service.js';
 
 const router = express.Router();
@@ -162,6 +163,72 @@ router.get('/:projectId/open-chunks-file', async (req, res) => {
     res.status(500).json({
       success: false,
       error: 'Failed to open chunks file'
+    });
+  }
+});
+
+// Open chunks folder in file system
+router.get('/:projectId/open-chunks-folder', async (req, res) => {
+  try {
+    const { projectId } = req.params;
+
+    // Get the project to find conversion folder and method
+    const project = await ProjectService.getProject(projectId);
+    const conversionOutputFolder = project.conversionOutputFolder || 'conversions/';
+
+    // Get the last chunking job to determine which method was used
+    const chunkingJob = await ProjectService.getChunkingJob(projectId);
+    const method = chunkingJob?.method || 'docling-hybrid';
+
+    // Determine the method-specific subfolder
+    let folderToOpen;
+    if (method === 'docling-hybrid') {
+      folderToOpen = path.join(conversionOutputFolder, 'docling');
+    } else if (method === 'paddleocr-vl') {
+      folderToOpen = path.join(conversionOutputFolder, 'paddleocr');
+    } else {
+      // Fallback to base conversion folder
+      folderToOpen = conversionOutputFolder;
+    }
+
+    // Check if folder exists, fallback to conversion folder if not
+    try {
+      await fs.access(folderToOpen);
+    } catch {
+      // Method folder doesn't exist, open base conversion folder
+      folderToOpen = conversionOutputFolder;
+    }
+
+    // Open folder based on OS
+    const platform = process.platform;
+    let command;
+
+    if (platform === 'darwin') {
+      // macOS - open in Finder
+      command = `open "${folderToOpen}"`;
+    } else if (platform === 'win32') {
+      // Windows - open in Explorer
+      command = `explorer "${folderToOpen}"`;
+    } else {
+      // Linux - open with default file manager
+      command = `xdg-open "${folderToOpen}"`;
+    }
+
+    exec(command, (error) => {
+      if (error) {
+        console.error('Failed to open folder:', error);
+        return res.status(500).json({
+          success: false,
+          error: 'Failed to open folder in file system'
+        });
+      }
+      res.json({ success: true, message: 'Folder opened in file system', path: folderToOpen });
+    });
+  } catch (error) {
+    console.error('Failed to open chunks folder:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to open chunks folder'
     });
   }
 });

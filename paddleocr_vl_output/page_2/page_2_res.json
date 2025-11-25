@@ -1,0 +1,73 @@
+{
+    "input_path": "/Users/tomeryud/projects/RAGy/paddleocr_vl_output/page_2.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": false
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "doc_title",
+            "block_content": "HEAT AND MASS TRANSFER",
+            "block_bbox": [
+                313,
+                209,
+                1426,
+                387
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "FUNDAMENTALS & APPLICATIONS",
+            "block_bbox": [
+                599,
+                560,
+                1169,
+                602
+            ],
+            "block_id": 1,
+            "block_order": 2
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 6,
+                "label": "doc_title",
+                "score": 0.6269552111625671,
+                "coordinate": [
+                    313.4197998046875,
+                    209.8671417236328,
+                    1426.6519775390625,
+                    387.45269775390625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9191198348999023,
+                "coordinate": [
+                    599.655517578125,
+                    560.0437622070312,
+                    1169.91455078125,
+                    602.4692993164062
+                ]
+            }
+        ]
+    }
+}

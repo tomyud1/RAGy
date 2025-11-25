@@ -1,0 +1,302 @@
+{
+    "input_path": "conversions/paddleocr/file8973/pages/page_5.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header_image",
+            "block_content": "",
+            "block_bbox": [
+                41,
+                59,
+                173,
+                192
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "doc_title",
+            "block_content": "# HEAT AND MASS TRANSFER: FUNDAMENTALS & APPLICATIONS, FIFTH EDITION",
+            "block_bbox": [
+                41,
+                263,
+                1005,
+                316
+            ],
+            "block_id": 1,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "Published by McGraw-Hill Education, 2 Penn Plaza, New York, NY 10121. Copyright  $ \\copyright $  2015 by McGraw-Hill Education. All rights reserved. Printed in the United States of America. Previous editions  $ \\copyright $  2011, 2007, and 2003. No part of this publication may be reproduced or distributed in any form or by any means, or stored in a database or retrieval system, without the prior written consent of McGraw-Hill Education, including, but not limited to, in any network or other electronic storage or transmission, or broadcast for distance learning.",
+            "block_bbox": [
+                40,
+                328,
+                1161,
+                535
+            ],
+            "block_id": 2,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "Some ancillaries, including electronic and print components, may not be available to customers outside the United States.",
+            "block_bbox": [
+                43,
+                546,
+                1143,
+                617
+            ],
+            "block_id": 3,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "This book is printed on acid-free paper.",
+            "block_bbox": [
+                45,
+                633,
+                482,
+                678
+            ],
+            "block_id": 4,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "1234567890 DOW/DOW 10987654",
+            "block_bbox": [
+                48,
+                688,
+                552,
+                729
+            ],
+            "block_id": 5,
+            "block_order": 5
+        },
+        {
+            "block_label": "text",
+            "block_content": "ISBN 978-0-07-339818-1\n\nMHID 0-07-339818-7",
+            "block_bbox": [
+                49,
+                743,
+                339,
+                813
+            ],
+            "block_id": 6,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "Senior Vice President, Products & Markets: Kurt L. Strand  \n\nVice President, General Manager: Marty Lange  \n\nVice President, Content Production & Technology Services: Kimberly Meriwether David  \n\nManaging Director: Thomas Timp  \n\nGlobal Publisher: Raghothaman Srinivasan  \n\nMarketing Manager: Nick McFadden  \n\nDirector of Digital Content: Thomas M. Scaife  \n\nProduct Developer: Lorraine Buczek  \n\nDirector, Content Production: Terri Schiesl  \n\nContent Project Manager: Jolynn Kilburg  \n\nBuyer: Jennifer Pickel  \n\nCover Designer: Studio Montage, St. Louis, MO.  \n\nComposition: RPK Editorial Services, Inc.  \n\nTypeface: 10.5/12 Times LT Std Roman  \n\nPrinter: R. R. Donnelley",
+            "block_bbox": [
+                52,
+                834,
+                934,
+                1292
+            ],
+            "block_id": 7,
+            "block_order": 7
+        },
+        {
+            "block_label": "text",
+            "block_content": "All credits appearing on page or at the end of the book are considered to be an extension of the copyright page.\n\nLibrary of Congress Cataloging-in-Publication Data on File",
+            "block_bbox": [
+                65,
+                1313,
+                1138,
+                1410
+            ],
+            "block_id": 8,
+            "block_order": 8
+        },
+        {
+            "block_label": "footer",
+            "block_content": "The Internet addresses listed in the text were accurate at the time of publication. The inclusion of a website does not indicate an endorsement by the authors or McGraw-Hill, and McGraw-Hill does not guarantee the accuracy of the information presented at these sites.",
+            "block_bbox": [
+                61,
+                1844,
+                1133,
+                1932
+            ],
+            "block_id": 9,
+            "block_order": null
+        },
+        {
+            "block_label": "footer",
+            "block_content": "www.mhhe.com",
+            "block_bbox": [
+                65,
+                1950,
+                232,
+                1978
+            ],
+            "block_id": 10,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.9149343967437744,
+                "coordinate": [
+                    41.87278747558594,
+                    59.045127868652344,
+                    173.1237335205078,
+                    192.68756103515625
+                ]
+            },
+            {
+                "cls_id": 6,
+                "label": "doc_title",
+                "score": 0.7419670820236206,
+                "coordinate": [
+                    41.330291748046875,
+                    263.01080322265625,
+                    1005.6259765625,
+                    316.60186767578125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9756774306297302,
+                "coordinate": [
+                    40.3890380859375,
+                    328.84442138671875,
+                    1161.547607421875,
+                    535.2965087890625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9605798125267029,
+                "coordinate": [
+                    43.200439453125,
+                    546.4722900390625,
+                    1143.1177978515625,
+                    617.8924560546875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9443352818489075,
+                "coordinate": [
+                    45.815032958984375,
+                    633.282470703125,
+                    482.3067321777344,
+                    678.488037109375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9259373545646667,
+                "coordinate": [
+                    48.6031494140625,
+                    688.2586669921875,
+                    552.3237915039062,
+                    729.8634033203125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9319916367530823,
+                "coordinate": [
+                    49.33735656738281,
+                    743.0416259765625,
+                    339.70623779296875,
+                    813.3463134765625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9253644943237305,
+                "coordinate": [
+                    52.87322998046875,
+                    834.22802734375,
+                    934.5252685546875,
+                    1292.297119140625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6732538938522339,
+                "coordinate": [
+                    65.020263671875,
+                    1313.3670654296875,
+                    1138.39599609375,
+                    1410.0142822265625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4673912525177002,
+                "coordinate": [
+                    64.13116455078125,
+                    1313.28369140625,
+                    1138.385009765625,
+                    1363.37158203125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4545802175998688,
+                "coordinate": [
+                    300.27996826171875,
+                    1368.656005859375,
+                    915.4732055664062,
+                    1409.088623046875
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.7204332947731018,
+                "coordinate": [
+                    61.3243408203125,
+                    1844.27294921875,
+                    1133.5281982421875,
+                    1932.67236328125
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.7933389544487,
+                "coordinate": [
+                    65.61824798583984,
+                    1950.42626953125,
+                    232.27261352539062,
+                    1978.46728515625
+                ]
+            }
+        ]
+    }
+}

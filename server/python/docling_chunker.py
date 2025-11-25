@@ -59,7 +59,7 @@ class ProgressTracker:
             return (self.current_page / self.total_pages) * 100
 
 
-def send_conversion_heartbeat(idx, total_files, filename, total_pages, interval=2, enrichments_enabled=0, device_type='unknown'):
+def send_conversion_heartbeat(idx, total_files, filename, total_pages, interval=2, enrichments_enabled=0, device_type='unknown', process_start_time=None):
     """
     Send heartbeat updates during PDF conversion to show the process is active.
 
@@ -165,7 +165,8 @@ def send_conversion_heartbeat(idx, total_files, filename, total_pages, interval=
             "memory_mb": round(memory_mb, 1),
             "gpu_percent": round(gpu_percent, 1) if gpu_percent is not None else None,
             "is_active": cpu_percent > 0,  # If CPU > 0, process is actively working
-            "device": device_type  # Show what hardware is being used
+            "device": device_type,  # Show what hardware is being used
+            "total_elapsed": int(time.time() - process_start_time) if process_start_time else None
         }
         print(json.dumps(progress), file=sys.stderr, flush=True)
         sys.stderr.flush()
@@ -352,6 +353,14 @@ def append_chunks_to_file(output_file, chunks, is_first_write=False):
 
 
 def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, enable_formula=True, enable_picture_classification=False, enable_picture_description=False, enable_code_enrichment=False, enable_ocr=True, enable_table_structure=True, picture_description_max_tokens=800, resume=False, vision_batch_size=4, processing_batch_size=4, vision_backend='auto', conversion_output_folder='conversions/', vision_model='smolvlm'):
+    # Track PROCESS start time (never changes) - for total elapsed timer
+    process_start_time = time.time()
+
+    # Create docling subfolder for organized outputs (separate from paddleocr)
+    docling_output_base = Path(conversion_output_folder) / 'docling'
+    docling_output_base.mkdir(parents=True, exist_ok=True)
+    # Update conversion_output_folder to point to docling subfolder
+    conversion_output_folder = str(docling_output_base)
     """
     Process documents in input_dir and save chunks to output_file INCREMENTALLY
 
@@ -656,7 +665,8 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
                         "current_chunk": chunk_idx,
                         "total_chunks": total_chunks,
                         "chunk_pages": chunk_page_count or 0,
-                        "elapsed": 0
+                        "elapsed": 0,
+                        "total_elapsed": int(time.time() - process_start_time)
                     }
                     print(json.dumps(initial_progress), file=sys.stderr, flush=True)
                     sys.stderr.flush()
@@ -675,7 +685,7 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
                     heartbeat_thread = threading.Thread(
                         target=send_conversion_heartbeat,
                         args=(idx, total_files, f"{doc_path.name} (chunk {chunk_idx}/{total_chunks})",
-                              chunk_page_count or 0, 2, enrichments_count, detected_device),
+                              chunk_page_count or 0, 2, enrichments_count, detected_device, process_start_time),
                         daemon=True
                     )
                     heartbeat_thread.do_run = True
@@ -699,7 +709,8 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
                         "status": "converted",
                         "current_chunk": chunk_idx,
                         "total_chunks": total_chunks,
-                        "total_pages": page_count or 0
+                        "total_pages": page_count or 0,
+                        "total_elapsed": int(time.time() - process_start_time)
                     }
                     print(json.dumps(converted_progress), file=sys.stderr, flush=True)
                     sys.stderr.flush()
@@ -800,7 +811,8 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
                             "status": "chunking",
                             "current_chunk": chunk_idx,
                             "total_chunks": total_chunks,
-                            "chunks_so_far": chunk_count
+                            "chunks_so_far": chunk_count,
+                            "total_elapsed": int(time.time() - process_start_time)
                         }
                         print(json.dumps(chunking_progress), file=sys.stderr, flush=True)
                         sys.stderr.flush()
@@ -961,7 +973,8 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
                             "total_chunks": total_chunks,
                             "chunks_from_this_part": len(pdf_chunk_results),
                             "total_chunks_so_far": len(all_chunks),
-                            "completed_parts": len(completed_chunk_paths)
+                            "completed_parts": len(completed_chunk_paths),
+                            "total_elapsed": int(time.time() - process_start_time)
                         }
                         print(json.dumps(saved_progress), file=sys.stderr, flush=True)
                         sys.stderr.flush()
@@ -976,7 +989,8 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
                     "total": total_files,
                     "file": doc_path.name,
                     "status": "completed",
-                    "total_chunks_so_far": len(all_chunks)
+                    "total_chunks_so_far": len(all_chunks),
+                    "total_elapsed": int(time.time() - process_start_time)
                 }
                 print(json.dumps(progress), file=sys.stderr, flush=True)
                 sys.stderr.flush()
@@ -989,7 +1003,8 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
                     "total": total_files,
                     "file": doc_path.name,
                     "status": "error",
-                    "error": str(e)
+                    "error": str(e),
+                    "total_elapsed": int(time.time() - process_start_time)
                 }
                 print(json.dumps(progress), file=sys.stderr, flush=True)
                 # Continue with other files
@@ -1017,7 +1032,8 @@ def chunk_documents(input_dir, output_file, max_tokens=512, merge_peers=True, en
             "file": "All files processed",
             "status": "completed",
             "total_chunks": len(all_chunks),
-            "processing_stats": processing_stats
+            "processing_stats": processing_stats,
+            "total_elapsed": int(time.time() - process_start_time)
         }
         print(json.dumps(finalizing_progress), file=sys.stderr, flush=True)
         sys.stderr.flush()

@@ -5,16 +5,16 @@
 }
 
 html {
-  background: #1a1a1a;
+  background: #242424;
   min-height: 100vh;
 }
 
 :root {
   /* Modern Grey Theme */
-  --bg-primary: #1a1a1a;
-  --bg-secondary: #2d2d2d;
-  --bg-tertiary: #3a3a3a;
-  --bg-hover: #4a4a4a;
+  --bg-primary: #242424;
+  --bg-secondary: #333333;
+  --bg-tertiary: #404040;
+  --bg-hover: #4d4d4d;
   
   --text-primary: #ffffff;
   --text-secondary: #b0b0b0;
@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) fixed;
+  background: linear-gradient(135deg, #242424 0%, #333333 100%) fixed;
   color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;

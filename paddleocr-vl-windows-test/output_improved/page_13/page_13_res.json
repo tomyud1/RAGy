@@ -1,0 +1,654 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_13.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "to determine them. Therefore, it is tempting to ignore radiation exchange at a surface during a heat transfer analysis in order to avoid the complications associated with nonlinearity. This is especially the case when heat transfer at the surface is dominated by convection, and the role of radiation is minor.",
+            "block_bbox": [
+                115,
+                116,
+                1050,
+                256
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## 5 Interface Boundary Conditions",
+            "block_bbox": [
+                118,
+                289,
+                721,
+                334
+            ],
+            "block_id": 1,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "Some bodies are made up of layers of different materials, and the solution of a heat transfer problem in such a medium requires the solution of the heat transfer problem in each layer. This, in turn, requires the specification of the boundary conditions at each interface.",
+            "block_bbox": [
+                116,
+                334,
+                1051,
+                474
+            ],
+            "block_id": 2,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "The boundary conditions at an interface are based on the requirements that (1) two bodies in contact must have the same temperature at the area of contact and (2) an interface (which is a surface) cannot store any energy, and thus the heat flux on the two sides of an interface must be the same. The boundary conditions at the interface of two bodies A and B in perfect contact at  $ x = x_{0} $  can be expressed as (Fig. 2–36)",
+            "block_bbox": [
+                117,
+                473,
+                1055,
+                690
+            ],
+            "block_id": 3,
+            "block_order": 4
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T_{A}(x_{0},t)=T_{B}(x_{0},t) $$ ",
+            "block_bbox": [
+                481,
+                706,
+                695,
+                742
+            ],
+            "block_id": 4,
+            "block_order": 5
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2–53)",
+            "block_bbox": [
+                981,
+                708,
+                1050,
+                739
+            ],
+            "block_id": 5,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "and",
+            "block_bbox": [
+                121,
+                771,
+                180,
+                803
+            ],
+            "block_id": 6,
+            "block_order": 6
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ -k_{A}\\frac{\\partial T_{A}(x_{0},t)}{\\partial x}=-k_{B}\\frac{\\partial T_{B}(x_{0},t)}{\\partial x} $$ ",
+            "block_bbox": [
+                414,
+                812,
+                764,
+                883
+            ],
+            "block_id": 7,
+            "block_order": 7
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2–54)",
+            "block_bbox": [
+                982,
+                835,
+                1052,
+                865
+            ],
+            "block_id": 8,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "where  $ k_{A} $  and  $ k_{B} $  are the thermal conductivities of the layers A and B, respectively. The case of imperfect contact results in thermal contact resistance, which is considered in the next chapter.",
+            "block_bbox": [
+                121,
+                897,
+                1058,
+                1005
+            ],
+            "block_id": 9,
+            "block_order": 8
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## 6 Generalized Boundary Conditions",
+            "block_bbox": [
+                125,
+                1037,
+                780,
+                1081
+            ],
+            "block_id": 10,
+            "block_order": 9
+        },
+        {
+            "block_label": "text",
+            "block_content": "So far we have considered surfaces subjected to single mode heat transfer, such as the specified heat flux, convection, or radiation for simplicity. In general, however, a surface may involve convection, radiation, and specified heat flux simultaneously. The boundary condition in such cases is again obtained from a surface energy balance, expressed as",
+            "block_bbox": [
+                123,
+                1084,
+                1063,
+                1259
+            ],
+            "block_id": 11,
+            "block_order": 10
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\begin{pmatrix}Heat transfer\\\\to the surface\\\\in all modes\\end{pmatrix}=\\begin{pmatrix}Heat transfer\\\\from the surface\\\\in all modes\\end{pmatrix} $$ ",
+            "block_bbox": [
+                363,
+                1282,
+                819,
+                1392
+            ],
+            "block_id": 12,
+            "block_order": 11
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2–55)",
+            "block_bbox": [
+                992,
+                1328,
+                1060,
+                1359
+            ],
+            "block_id": 13,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "This is illustrated in Examples 2–8 and 2–9.",
+            "block_bbox": [
+                122,
+                1421,
+                659,
+                1458
+            ],
+            "block_id": 14,
+            "block_order": 12
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## EXAMPLE 2–8 Combined Convection and Radiation Condition",
+            "block_bbox": [
+                153,
+                1521,
+                999,
+                1557
+            ],
+            "block_id": 15,
+            "block_order": 13
+        },
+        {
+            "block_label": "text",
+            "block_content": "A spherical metal ball of radius  $ r_{o} $  is heated in an oven to a temperature of  $ 600^{\\circ}F $  throughout and is then taken out of the oven and allowed to cool in ambient air at  $ T_{\\infty} = 78^{\\circ}F $ , as shown in Fig. 2–37. The thermal conductivity of the ball material is  $ k = 8.3\\ Btu/h\\cdotft\\cdotR $ , and the average convection heat transfer coefficient on the outer surface of the ball is evaluated to be  $ h = 4.5\\ Btu/h\\cdotft^{2}\\cdotR $ . The emissivity of the outer surface of the ball is  $ \\varepsilon = 0.6 $ , and the average temperature of the surrounding surfaces is  $ T_{surr} = 525\\ R $ . Assuming the ball is cooled uniformly from the entire outer surface, express the initial and boundary conditions for the cooling process of the ball.",
+            "block_bbox": [
+                140,
+                1575,
+                1050,
+                1873
+            ],
+            "block_id": 16,
+            "block_order": 14
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1095_18_1543_562.jpg\" alt=\"Image\" width=\"27%\" /></div>\n",
+            "block_bbox": [
+                1095,
+                18,
+                1543,
+                562
+            ],
+            "block_id": 17,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–36</div>\n",
+            "block_bbox": [
+                1375,
+                576,
+                1544,
+                611
+            ],
+            "block_id": 18,
+            "block_order": null
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "Boundary conditions at the interface of two bodies in perfect contact.",
+            "block_bbox": [
+                1105,
+                617,
+                1546,
+                689
+            ],
+            "block_id": 19,
+            "block_order": null
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1135_1322_1560_1822.jpg\" alt=\"Image\" width=\"26%\" /></div>\n",
+            "block_bbox": [
+                1135,
+                1322,
+                1560,
+                1822
+            ],
+            "block_id": 20,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">Schematic for Example 2–8.</div>\n",
+            "block_bbox": [
+                1210,
+                1878,
+                1562,
+                1919
+            ],
+            "block_id": 21,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9839249849319458,
+                "coordinate": [
+                    115.1456298828125,
+                    116.23614501953125,
+                    1050.655517578125,
+                    256.85174560546875
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9592479467391968,
+                "coordinate": [
+                    118.72817993164062,
+                    289.3100891113281,
+                    721.3919677734375,
+                    334.7268981933594
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9856429696083069,
+                "coordinate": [
+                    116.8260498046875,
+                    334.993408203125,
+                    1051.3544921875,
+                    474.7110595703125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9869093298912048,
+                "coordinate": [
+                    117.49365234375,
+                    473.2778015136719,
+                    1055.1064453125,
+                    690.835693359375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7940619587898254,
+                "coordinate": [
+                    965.7825927734375,
+                    615.2965698242188,
+                    1049.3348388671875,
+                    644.8494262695312
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9406121969223022,
+                "coordinate": [
+                    481.0075378417969,
+                    706.505615234375,
+                    695.253662109375,
+                    742.94091796875
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9204428791999817,
+                "coordinate": [
+                    981.4432373046875,
+                    708.919677734375,
+                    1050.6502685546875,
+                    739.1470947265625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9103336334228516,
+                "coordinate": [
+                    121.89813232421875,
+                    771.825439453125,
+                    180.80679321289062,
+                    803.701171875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9626822471618652,
+                "coordinate": [
+                    414.0948486328125,
+                    812.0543212890625,
+                    764.561279296875,
+                    883.8292236328125
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9221162796020508,
+                "coordinate": [
+                    982.7542724609375,
+                    835.9848022460938,
+                    1052.467529296875,
+                    865.9749145507812
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8785735368728638,
+                "coordinate": [
+                    209.24264526367188,
+                    903.5565185546875,
+                    239.47732543945312,
+                    934.2745361328125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8930690884590149,
+                "coordinate": [
+                    294.23565673828125,
+                    902.1934814453125,
+                    325.53033447265625,
+                    933.7740478515625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9789775609970093,
+                "coordinate": [
+                    121.9930419921875,
+                    897.4242553710938,
+                    1058.203857421875,
+                    1005.9451293945312
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9594200849533081,
+                "coordinate": [
+                    125.03106689453125,
+                    1037.8255615234375,
+                    780.5001831054688,
+                    1081.9688720703125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9865344762802124,
+                "coordinate": [
+                    123.23318481445312,
+                    1084.945068359375,
+                    1063.36669921875,
+                    1259.172119140625
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9476948380470276,
+                "coordinate": [
+                    363.9691467285156,
+                    1282.1798095703125,
+                    819.6502685546875,
+                    1392.3702392578125
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9178276658058167,
+                "coordinate": [
+                    992.1152954101562,
+                    1328.9638671875,
+                    1060.31494140625,
+                    1359.166015625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9347158074378967,
+                "coordinate": [
+                    122.71652221679688,
+                    1421.0772705078125,
+                    659.6829833984375,
+                    1458.1531982421875
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9475424885749817,
+                "coordinate": [
+                    153.10015869140625,
+                    1521.457275390625,
+                    999.8759155273438,
+                    1557.477294921875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.4345325231552124,
+                "coordinate": [
+                    154.89573669433594,
+                    1608.0201416015625,
+                    234.84129333496094,
+                    1639.8541259765625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8202086091041565,
+                "coordinate": [
+                    531.6474609375,
+                    1582.9686279296875,
+                    555.720947265625,
+                    1609.2757568359375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.906042218208313,
+                "coordinate": [
+                    330.56768798828125,
+                    1642.00927734375,
+                    453.74786376953125,
+                    1671.9541015625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.49627071619033813,
+                "coordinate": [
+                    149.203369140625,
+                    1737.95849609375,
+                    280.0678405761719,
+                    1769.1044921875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.46232226490974426,
+                "coordinate": [
+                    417.60174560546875,
+                    1674.22216796875,
+                    635.9601440429688,
+                    1704.515625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9861832857131958,
+                "coordinate": [
+                    140.197265625,
+                    1575.44921875,
+                    1050.3204345703125,
+                    1873.734375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8876339793205261,
+                "coordinate": [
+                    745.7039794921875,
+                    1772.284423828125,
+                    915.2493896484375,
+                    1805.969482421875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6153531074523926,
+                "coordinate": [
+                    842.147705078125,
+                    1741.610595703125,
+                    940.517822265625,
+                    1769.680419921875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5242633819580078,
+                "coordinate": [
+                    947.3929443359375,
+                    1709.00341796875,
+                    1042.0347900390625,
+                    1738.108154296875
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.8921982049942017,
+                "coordinate": [
+                    1095.8380126953125,
+                    18.726470947265625,
+                    1543.8128662109375,
+                    562.75439453125
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.5883730053901672,
+                "coordinate": [
+                    1375.662109375,
+                    576.7962646484375,
+                    1544.673828125,
+                    611.101318359375
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.6087807416915894,
+                "coordinate": [
+                    1105.847900390625,
+                    617.3001708984375,
+                    1546.870361328125,
+                    689.2205810546875
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9225124716758728,
+                "coordinate": [
+                    1135.678955078125,
+                    1322.8388671875,
+                    1560.181396484375,
+                    1822.86962890625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.6633329391479492,
+                "coordinate": [
+                    1210.6063232421875,
+                    1878.67236328125,
+                    1562.6485595703125,
+                    1919.466796875
+                ]
+            }
+        ]
+    }
+}

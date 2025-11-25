@@ -1,0 +1,113 @@
+================================================================================
+PADDLEOCR-VL WINDOWS TEST PACKAGE - TRANSFER INSTRUCTIONS
+================================================================================
+
+PACKAGE CONTENTS:
+-----------------
+paddleocr-vl-windows-test/
+  ├── test_paddleocr_vl.py     - Main script (auto-logs to console_log.txt)
+  ├── run.bat                   - Windows launcher (double-click to run)
+  ├── test_python.bat           - Diagnostic tool (run if having issues)
+  ├── test_document.pdf         - Sample PDF (10 pages, heat transfer book)
+  ├── README.md                 - Full documentation
+  └── TRANSFER_INSTRUCTIONS.txt - This file
+
+
+HOW TO TRANSFER TO WINDOWS PC:
+-------------------------------
+1. Copy the entire "paddleocr-vl-windows-test" folder to a USB drive, cloud storage, or network share
+2. Move it to your Windows PC (anywhere you like, e.g., Desktop or Documents)
+3. No installation needed - just run it!
+
+
+HOW TO RUN ON WINDOWS:
+----------------------
+Option 1 (Easiest):
+  - Double-click "run.bat"
+
+Option 2 (Command line):
+  - Open Command Prompt in the folder
+  - Run: python test_paddleocr_vl.py
+
+The script automatically:
+  - Shows real-time output on screen
+  - Saves everything to console_log.txt
+
+
+WHAT WILL HAPPEN:
+-----------------
+FIRST RUN (one-time setup, ~3-5 minutes):
+  1. Creates isolated Python environment in "venv/" folder (~1.5GB)
+  2. Installs all packages into venv (stays in script folder)
+  3. Downloads AI models to E: drive (~2GB)
+  4. Processes the 10-page PDF
+  5. Saves results to "output/" folder
+
+SUBSEQUENT RUNS (~1-2 minutes):
+  1. Uses existing venv (no downloads needed)
+  2. Processes PDF
+  3. Saves results
+
+DISK SPACE BREAKDOWN:
+---------------------
+In script folder:
+  - venv/: ~1.5GB (all Python packages)
+  - output/: varies (your results)
+
+On E: drive (or configured drive):
+  - E:\PaddleOCR_Cache\: ~2GB (AI models)
+
+Total: ~3.5-4GB
+
+FULLY SELF-CONTAINED:
+---------------------
+Everything is isolated in the script folder!
+- No system-wide Python packages installed
+- No conflicts with other Python projects
+- Delete the folder = completely removed
+- Copy the folder = portable to other PCs (just need Python installed)
+
+To change model cache drive:
+  1. Open test_paddleocr_vl.py in Notepad
+  2. Line 10: Change CACHE_DRIVE = "E:" to your preferred drive
+  3. Can use "D:", "F:", or None for C: drive
+
+
+REQUIREMENTS:
+-------------
+- Python 3.8 or newer (download from python.org if needed)
+- NVIDIA drivers for RTX 4070
+- Internet connection (for first run only)
+
+
+GPU PERFORMANCE:
+----------------
+With RTX 4070:  2-5 seconds per page (FAST!)
+With CPU only:  30-120 seconds per page (SLOW)
+
+The script will automatically use GPU if available.
+
+
+OUTPUT FILES:
+-------------
+After running, check the "output/" folder for:
+  - document.md     (combined readable text)
+  - summary.json    (processing statistics)
+  - page_N/         (individual page results)
+
+
+TROUBLESHOOTING:
+----------------
+If GPU not detected:
+  - Install NVIDIA drivers from nvidia.com
+  - Install CUDA 12.6 from developer.nvidia.com
+  - Restart Windows
+
+If Python not found:
+  - Install Python from python.org
+  - Check "Add Python to PATH" during installation
+
+
+QUESTIONS?
+----------
+See README.md for detailed documentation.

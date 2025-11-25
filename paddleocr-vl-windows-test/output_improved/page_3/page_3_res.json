@@ -1,0 +1,540 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_3.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## EXAMPLE 2–4 Cooling of a Hot Metal Ball in Air",
+            "block_bbox": [
+                100,
+                83,
+                798,
+                133
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "A spherical metal ball of radius R is heated in an oven to a temperature of  $ 600^{\\circ} $ F throughout and is then taken out of the oven and allowed to cool in ambient air at  $ T_{\\infty} = 75^{\\circ} $ F by convection and radiation (Fig. 2–19). The thermal conductivity of the ball material is known to vary linearly with temperature. Assuming the ball is cooled uniformly from the entire outer surface, obtain the differential equation that describes the variation of the temperature in the ball during cooling.",
+            "block_bbox": [
+                101,
+                148,
+                1020,
+                387
+            ],
+            "block_id": 1,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "SOLUTION A hot metal ball is allowed to cool in ambient air. The differential equation for the variation of temperature within the ball is to be obtained.\n\nAnalysis The ball is initially at a uniform temperature and is cooled uniformly from the entire outer surface. Also, the temperature at any point in the ball changes with time during cooling. Therefore, this is a one-dimensional transient heat conduction problem since the temperature within the ball changes with the radial distance r and the time t. That is,  $  T = T(r, t)  $ .",
+            "block_bbox": [
+                109,
+                417,
+                1020,
+                485
+            ],
+            "block_id": 2,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                110,
+                487,
+                1026,
+                655
+            ],
+            "block_id": 3,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "The thermal conductivity is given to be variable, and there is no heat generation in the ball. Therefore, the differential equation that governs the variation of temperature in the ball in this case is obtained from Eq. 2–30 by setting the heat generation term equal to zero. We obtain",
+            "block_bbox": [
+                116,
+                654,
+                1031,
+                792
+            ],
+            "block_id": 4,
+            "block_order": 5
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{1}{r^{2}}\\frac{\\partial}{\\partial r}\\bigg(r^{2}k\\frac{\\partial T}{\\partial r}\\bigg)=\\rho c\\frac{\\partial T}{\\partial t} $$ ",
+            "block_bbox": [
+                423,
+                796,
+                717,
+                871
+            ],
+            "block_id": 5,
+            "block_order": 6
+        },
+        {
+            "block_label": "chart",
+            "block_content": "<table border=1 style='margin: auto; width: max-content;'>\n  <thead><tr><th style='text-align: center;'>Component</th><th style='text-align: center;'>Temperature (°F)</th></tr></thead>\n  <tbody>\n    <tr><td style='text-align: center;'>Metal ball</td><td style='text-align: center;'>600</td></tr>\n    <tr><td style='text-align: center;'>ẏ</td><td style='text-align: center;'>75</td></tr>\n  </tbody>\n</table>",
+            "block_bbox": [
+                1207,
+                66,
+                1574,
+                320
+            ],
+            "block_id": 6,
+            "block_order": null
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "Schematic for Example 2–4.",
+            "block_bbox": [
+                1199,
+                371,
+                1560,
+                412
+            ],
+            "block_id": 7,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "which is the one-dimensional transient heat conduction equation in spherical coordinates under the conditions of variable thermal conductivity and no heat generation.",
+            "block_bbox": [
+                122,
+                876,
+                1032,
+                981
+            ],
+            "block_id": 8,
+            "block_order": 7
+        },
+        {
+            "block_label": "text",
+            "block_content": "Discussion Note again that the conditions at the outer surface of the ball have no effect on the differential equation.",
+            "block_bbox": [
+                126,
+                979,
+                1031,
+                1052
+            ],
+            "block_id": 9,
+            "block_order": 8
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## 2 –3 GENERAL HEAT CONDUCTION EQUATION",
+            "block_bbox": [
+                105,
+                1126,
+                949,
+                1174
+            ],
+            "block_id": 10,
+            "block_order": 9
+        },
+        {
+            "block_label": "text",
+            "block_content": "In the last section we considered one-dimensional heat conduction and assumed heat conduction in other directions to be negligible. Most heat transfer problems encountered in practice can be approximated as being one-dimensional, and we mostly deal with such problems in this text. However, this is not always the case, and sometimes we need to consider heat transfer in other directions as well. In such cases heat conduction is said to be multidimensional, and in this section we develop the governing differential equation in such systems in rectangular, cylindrical, and spherical coordinate systems.",
+            "block_bbox": [
+                106,
+                1192,
+                1063,
+                1485
+            ],
+            "block_id": 11,
+            "block_order": 10
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## Rectangular Coordinates",
+            "block_bbox": [
+                113,
+                1514,
+                557,
+                1558
+            ],
+            "block_id": 12,
+            "block_order": 11
+        },
+        {
+            "block_label": "text",
+            "block_content": "Consider a small rectangular element of length  $ \\Delta x $ , width  $ \\Delta y $ , and height  $ \\Delta z $ , as shown in Fig. 2–20. Assume the density of the body is  $ \\rho $  and the specific heat is c. An energy balance on this element during a small time interval  $ \\Delta t $  can be expressed as",
+            "block_bbox": [
+                111,
+                1557,
+                1063,
+                1703
+            ],
+            "block_id": 13,
+            "block_order": 12
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\begin{pmatrix}\\text{Rate of heat}\\\\ \\text{conduction at}\\\\ x,y,\\text{and}z\\end{pmatrix}-\\begin{pmatrix}\\text{Rate of heat}\\\\ \\text{conduction}\\\\ \\text{at}x+\\Delta x\\\\ y+\\Delta y\\text{and}z+\\Delta z\\end{pmatrix}+\\begin{pmatrix}\\text{Rate of heat}\\\\ \\text{generation}\\\\ \\text{inside the}\\\\ \\text{element}\\end{pmatrix}=\\begin{pmatrix}\\text{Rate of change}\\\\ \\text{of the energy}\\\\ \\text{content of the}\\\\ \\text{element}\\end{pmatrix} $$ ",
+            "block_bbox": [
+                127,
+                1727,
+                1047,
+                1866
+            ],
+            "block_id": 14,
+            "block_order": 13
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1084_1363_1563_1741.jpg\" alt=\"Image\" width=\"29%\" /></div>\n",
+            "block_bbox": [
+                1084,
+                1363,
+                1563,
+                1741
+            ],
+            "block_id": 15,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–20</div>\n",
+            "block_bbox": [
+                1391,
+                1766,
+                1562,
+                1803
+            ],
+            "block_id": 16,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "Three-dimensional heat conduction through a rectangular volume element.",
+            "block_bbox": [
+                1090,
+                1801,
+                1566,
+                1876
+            ],
+            "block_id": 17,
+            "block_order": 14
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.948701024055481,
+                "coordinate": [
+                    100.07492065429688,
+                    83.89883422851562,
+                    798.5887451171875,
+                    133.17788696289062
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7388119697570801,
+                "coordinate": [
+                    106.04818725585938,
+                    176.6284637451172,
+                    191.47152709960938,
+                    209.6588592529297
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.912115216255188,
+                "coordinate": [
+                    284.69403076171875,
+                    214.45700073242188,
+                    403.30218505859375,
+                    246.58505249023438
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9832368493080139,
+                "coordinate": [
+                    101.63592529296875,
+                    148.61048889160156,
+                    1020.8880004882812,
+                    387.1158447265625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9664806127548218,
+                "coordinate": [
+                    109.27523803710938,
+                    417.9430847167969,
+                    1020.760498046875,
+                    485.8547668457031
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9857041835784912,
+                "coordinate": [
+                    110.89102172851562,
+                    487.5792236328125,
+                    1026.5123291015625,
+                    655.022705078125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7576970458030701,
+                "coordinate": [
+                    685.108154296875,
+                    618.6346435546875,
+                    812.3359375,
+                    649.0657958984375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9835233092308044,
+                "coordinate": [
+                    116.19088745117188,
+                    654.3204345703125,
+                    1031.389892578125,
+                    792.6226806640625
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9630205631256104,
+                "coordinate": [
+                    423.36322021484375,
+                    796.6568603515625,
+                    717.8825073242188,
+                    871.478759765625
+                ]
+            },
+            {
+                "cls_id": 3,
+                "label": "chart",
+                "score": 0.7031332850456238,
+                "coordinate": [
+                    1207.6962890625,
+                    66.453857421875,
+                    1574.68505859375,
+                    320.0417175292969
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.5457042455673218,
+                "coordinate": [
+                    1199.0484619140625,
+                    371.9580993652344,
+                    1560.6260986328125,
+                    412.0136413574219
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9795066118240356,
+                "coordinate": [
+                    122.38577270507812,
+                    876.6370239257812,
+                    1032.122314453125,
+                    981.1196899414062
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.965323269367218,
+                "coordinate": [
+                    126.15383911132812,
+                    979.8818359375,
+                    1031.312744140625,
+                    1052.1875
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9539671540260315,
+                "coordinate": [
+                    105.32528686523438,
+                    1126.2406005859375,
+                    949.36376953125,
+                    1174.2808837890625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9885013103485107,
+                "coordinate": [
+                    106.84130859375,
+                    1192.154541015625,
+                    1063.5377197265625,
+                    1485.66357421875
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9584214687347412,
+                "coordinate": [
+                    113.05278015136719,
+                    1514.5894775390625,
+                    557.833740234375,
+                    1558.9000244140625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6969555020332336,
+                "coordinate": [
+                    695.853271484375,
+                    1559.4647216796875,
+                    736.9482421875,
+                    1591.2432861328125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7414670586585999,
+                "coordinate": [
+                    824.22509765625,
+                    1558.760009765625,
+                    861.2568359375,
+                    1592.616455078125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.48580169677734375,
+                "coordinate": [
+                    205.34719848632812,
+                    1636.2646484375,
+                    230.62509155273438,
+                    1663.53515625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9833731651306152,
+                "coordinate": [
+                    111.99560546875,
+                    1557.96435546875,
+                    1063.1649169921875,
+                    1703.72216796875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6586355566978455,
+                "coordinate": [
+                    828.3936767578125,
+                    1599.4046630859375,
+                    854.0106201171875,
+                    1628.9268798828125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8023235201835632,
+                "coordinate": [
+                    1015.70751953125,
+                    1560.324951171875,
+                    1054.263916015625,
+                    1592.615966796875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9617554545402527,
+                "coordinate": [
+                    127.5704345703125,
+                    1727.705322265625,
+                    1047.5413818359375,
+                    1866.930419921875
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9524474143981934,
+                "coordinate": [
+                    1084.40966796875,
+                    1363.015380859375,
+                    1563.837890625,
+                    1741.387939453125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7637368440628052,
+                "coordinate": [
+                    1025.6097412109375,
+                    1630.618408203125,
+                    1059.6802978515625,
+                    1663.086181640625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.640535295009613,
+                "coordinate": [
+                    1391.220703125,
+                    1766.3685302734375,
+                    1562.63330078125,
+                    1803.0614013671875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9021649956703186,
+                "coordinate": [
+                    1090.953125,
+                    1801.35107421875,
+                    1566.197509765625,
+                    1876.82666015625
+                ]
+            }
+        ]
+    }
+}

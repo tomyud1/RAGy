@@ -1,0 +1,632 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_4.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "HEAT CONDUCTION EQUATION",
+            "block_bbox": [
+                42,
+                15,
+                406,
+                57
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "or",
+            "block_bbox": [
+                493,
+                86,
+                532,
+                111
+            ],
+            "block_id": 1,
+            "block_order": 1
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\dot{Q}_{x}+\\dot{Q}_{y}+\\dot{Q}_{z}-\\dot{Q}_{x+\\Delta x}-\\dot{Q}_{y+\\Delta y}-\\dot{Q}_{z+\\Delta z}+\\dot{E}_{gen,element}=\\frac{\\Delta E_{element}}{\\Delta t} $$ ",
+            "block_bbox": [
+                540,
+                143,
+                1374,
+                216
+            ],
+            "block_id": 2,
+            "block_order": 2
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2−36)",
+            "block_bbox": [
+                1417,
+                166,
+                1493,
+                196
+            ],
+            "block_id": 3,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "Noting that the volume of the element is  $ V_{element} = \\Delta x \\Delta y \\Delta z $ , the change in the energy content of the element and the rate of heat generation within the element can be expressed as",
+            "block_bbox": [
+                480,
+                239,
+                1496,
+                347
+            ],
+            "block_id": 4,
+            "block_order": 3
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\begin{aligned}\\Delta E_{element}&=E_{t+\\Delta t}-E_{t}=mc(T_{t+\\Delta t}-T_{t})=\\rho c\\Delta x\\Delta y\\Delta z(T_{t+\\Delta t}-T_{t})\\\\\\dot{E}_{gen,element}&=\\dot{e}_{gen}V_{element}=\\dot{e}_{gen}\\Delta x\\Delta y\\Delta z\\end{aligned} $$ ",
+            "block_bbox": [
+                553,
+                367,
+                1386,
+                450
+            ],
+            "block_id": 5,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "Substituting into Eq. 2–36, we get",
+            "block_bbox": [
+                470,
+                480,
+                930,
+                518
+            ],
+            "block_id": 6,
+            "block_order": 5
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\dot{Q}_{x}+\\dot{Q}_{y}+\\dot{Q}_{z}-\\dot{Q}_{x+\\Delta x}-\\dot{Q}_{y+\\Delta y}-\\dot{Q}_{z+\\Delta z}+\\dot{e}_{\\mathrm{g e n}}\\Delta x\\Delta y\\Delta z=\\rho c\\Delta x\\Delta y\\Delta z\\frac{T_{t+\\Delta t}-T_{t}}{\\Delta t} $$ ",
+            "block_bbox": [
+                466,
+                546,
+                1495,
+                620
+            ],
+            "block_id": 7,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "Dividing by  $ \\Delta x\\Delta y\\Delta z $  gives",
+            "block_bbox": [
+                463,
+                640,
+                830,
+                680
+            ],
+            "block_id": 8,
+            "block_order": 7
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\begin{aligned}-\\frac{1}{\\Delta y\\Delta z}\\frac{\\dot{Q}_{x+\\Delta x}-\\dot{Q}_{x}}{\\Delta x}-\\frac{1}{\\Delta x\\Delta z}\\frac{\\dot{Q}_{y+\\Delta y}-\\dot{Q}_{y}}{\\Delta y}-\\frac{1}{\\Delta x\\Delta y}\\frac{\\dot{Q}_{z+\\Delta z}-\\dot{Q}_{z}}{\\Delta z}+\\dot{e}_{gen}=\\\\ \\rho c\\frac{T_{t+\\Delta t}-T_{t}}{\\Delta t}\\end{aligned} $$ ",
+            "block_bbox": [
+                463,
+                703,
+                1388,
+                882
+            ],
+            "block_id": 9,
+            "block_order": 8
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2–37)",
+            "block_bbox": [
+                1419,
+                841,
+                1495,
+                872
+            ],
+            "block_id": 10,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "Noting that the heat transfer areas of the element for heat conduction in the x, y, and z directions are  $ A_{x} = \\Delta y \\Delta z $ ,  $ A_{y} = \\Delta x \\Delta z $ , and  $ A_{z} = \\Delta x \\Delta y $ , respectively, and taking the limit as  $ \\Delta x $ ,  $ \\Delta y $ ,  $ \\Delta z $  and  $ \\Delta t \\rightarrow 0 $  yields",
+            "block_bbox": [
+                452,
+                902,
+                1499,
+                1016
+            ],
+            "block_id": 11,
+            "block_order": 9
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{\\partial}{\\partial x}\\left(k\\frac{\\partial T}{\\partial x}\\right)+\\frac{\\partial}{\\partial y}\\left(k\\frac{\\partial T}{\\partial y}\\right)+\\frac{\\partial}{\\partial z}\\left(k\\frac{\\partial T}{\\partial z}\\right)+\\dot{e}_{gen}=\\rho c\\frac{\\partial T}{\\partial t} $$ ",
+            "block_bbox": [
+                630,
+                1044,
+                1323,
+                1122
+            ],
+            "block_id": 12,
+            "block_order": 10
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2−38)",
+            "block_bbox": [
+                1419,
+                1075,
+                1495,
+                1107
+            ],
+            "block_id": 13,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "since, from the definition of the derivative and Fourier’s law of heat conduction,",
+            "block_bbox": [
+                446,
+                1154,
+                1498,
+                1226
+            ],
+            "block_id": 14,
+            "block_order": 11
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\lim_{\\Delta x\\to0}\\frac{1}{\\Delta y\\Delta z}\\frac{\\dot{Q}_{x+\\Delta x}-\\dot{Q}_{x}}{\\Delta x}=\\frac{1}{\\Delta y\\Delta z}\\frac{\\partial Q_{x}}{\\partial x}=\\frac{1}{\\Delta y\\Delta z}\\frac{\\partial}{\\partial x}\\left(-k\\Delta y\\Delta z\\frac{\\partial T}{\\partial x}\\right)=-\\frac{\\partial}{\\partial x}\\left(k\\frac{\\partial T}{\\partial x}\\right) $$ ",
+            "block_bbox": [
+                445,
+                1253,
+                1493,
+                1338
+            ],
+            "block_id": 15,
+            "block_order": 12
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\lim_{\\Delta y\\rightarrow0}\\frac{1}{\\Delta x\\Delta z}\\frac{\\dot{Q}_{y+\\Delta y}-\\dot{Q}_{y}}{\\Delta y}=\\frac{1}{\\Delta x\\Delta z}\\frac{\\partial Q_{y}}{\\partial y}=\\frac{1}{\\Delta x\\Delta z}\\frac{\\partial}{\\partial y}\\left(-k\\Delta x\\Delta z\\frac{\\partial T}{\\partial y}\\right)=-\\frac{\\partial}{\\partial y}\\left(k\\frac{\\partial T}{\\partial y}\\right) $$ ",
+            "block_bbox": [
+                444,
+                1356,
+                1492,
+                1443
+            ],
+            "block_id": 16,
+            "block_order": 13
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\lim_{\\Delta z\\rightarrow0}\\frac{1}{\\Delta x\\Delta y}\\frac{\\dot{Q}_{z+\\Delta z}-\\dot{Q}_{z}}{\\Delta z}=\\frac{1}{\\Delta x\\Delta y}\\frac{\\partial Q_{z}}{\\partial z}=\\frac{1}{\\Delta x\\Delta y}\\frac{\\partial}{\\partial z}\\left(-k\\Delta x\\Delta y\\frac{\\partial T}{\\partial z}\\right)=-\\frac{\\partial}{\\partial z}\\left(k\\frac{\\partial T}{\\partial z}\\right) $$ ",
+            "block_bbox": [
+                443,
+                1468,
+                1495,
+                1552
+            ],
+            "block_id": 17,
+            "block_order": 14
+        },
+        {
+            "block_label": "text",
+            "block_content": "Eq. 2–38 is the general heat conduction equation in rectangular coordinates. In the case of constant thermal conductivity, it reduces to",
+            "block_bbox": [
+                440,
+                1584,
+                1494,
+                1657
+            ],
+            "block_id": 18,
+            "block_order": 15
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{\\partial^{2}T}{\\partial x^{2}}+\\frac{\\partial^{2}T}{\\partial y^{2}}+\\frac{\\partial^{2}T}{\\partial z^{2}}+\\frac{\\dot{e}_{\\mathrm{gen}}}{k}=\\frac{1}{\\alpha}\\frac{\\partial T}{\\partial t} $$ ",
+            "block_bbox": [
+                756,
+                1668,
+                1180,
+                1748
+            ],
+            "block_id": 19,
+            "block_order": 16
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2−39)",
+            "block_bbox": [
+                1415,
+                1701,
+                1493,
+                1733
+            ],
+            "block_id": 20,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "where the property  $ \\alpha = k/\\rho c $  is again the thermal diffusivity of the material. Eq. 2–39 is known as the Fourier-Biot equation, and it reduces to these forms under specified conditions:",
+            "block_bbox": [
+                442,
+                1765,
+                1499,
+                1874
+            ],
+            "block_id": 21,
+            "block_order": 17
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8901212811470032,
+                "coordinate": [
+                    42.461669921875,
+                    15.989025115966797,
+                    406.53912353515625,
+                    57.1212272644043
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.825904369354248,
+                "coordinate": [
+                    493.7835998535156,
+                    86.73609924316406,
+                    532.5596923828125,
+                    111.81986999511719
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9612186551094055,
+                "coordinate": [
+                    540.55419921875,
+                    143.58062744140625,
+                    1374.35302734375,
+                    216.4427490234375
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9296395182609558,
+                "coordinate": [
+                    1417.8466796875,
+                    166.05715942382812,
+                    1493.541259765625,
+                    196.30020141601562
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9780122637748718,
+                "coordinate": [
+                    480.777587890625,
+                    239.93873596191406,
+                    1496.131103515625,
+                    347.1083984375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9482680559158325,
+                "coordinate": [
+                    1013.750732421875,
+                    243.92356872558594,
+                    1253.96875,
+                    277.198486328125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9416084289550781,
+                "coordinate": [
+                    553.375244140625,
+                    367.3427734375,
+                    1386.413330078125,
+                    450.06390380859375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9503586888313293,
+                "coordinate": [
+                    470.3323974609375,
+                    480.83990478515625,
+                    930.0189208984375,
+                    518.5787963867188
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9549630284309387,
+                "coordinate": [
+                    466.44915771484375,
+                    546.074462890625,
+                    1495.682861328125,
+                    620.418212890625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9434983730316162,
+                "coordinate": [
+                    463.0906982421875,
+                    640.9632568359375,
+                    830.4327392578125,
+                    680.9422607421875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6006233096122742,
+                "coordinate": [
+                    635.7218017578125,
+                    644.48486328125,
+                    745.0748291015625,
+                    678.167724609375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9727613925933838,
+                "coordinate": [
+                    463.753662109375,
+                    703.8915405273438,
+                    1388.1156005859375,
+                    882.8279418945312
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.930188775062561,
+                "coordinate": [
+                    1419.591064453125,
+                    841.1011352539062,
+                    1495.784423828125,
+                    872.6929321289062
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5231836438179016,
+                "coordinate": [
+                    457.42852783203125,
+                    943.0411376953125,
+                    510.30889892578125,
+                    974.7845458984375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9783374667167664,
+                "coordinate": [
+                    452.1619873046875,
+                    902.6168212890625,
+                    1499.23291015625,
+                    1016.6346435546875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9302030205726624,
+                "coordinate": [
+                    781.856201171875,
+                    939.888916015625,
+                    1095.779296875,
+                    973.927734375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5787180066108704,
+                "coordinate": [
+                    764.209228515625,
+                    977.498046875,
+                    858.7061767578125,
+                    1010.468994140625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.45700040459632874,
+                "coordinate": [
+                    872.4036865234375,
+                    976.732421875,
+                    912.0772705078125,
+                    1009.545654296875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7700352072715759,
+                "coordinate": [
+                    974.2100830078125,
+                    978.727783203125,
+                    1069.636962890625,
+                    1009.7562255859375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9274876117706299,
+                "coordinate": [
+                    1160.0927734375,
+                    945.6103515625,
+                    1306.47412109375,
+                    979.6004638671875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9661874771118164,
+                "coordinate": [
+                    630.3466796875,
+                    1044.4256591796875,
+                    1323.9713134765625,
+                    1122.6849365234375
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.929153323173523,
+                "coordinate": [
+                    1419.0616455078125,
+                    1075.974365234375,
+                    1495.3631591796875,
+                    1107.315673828125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9686316847801208,
+                "coordinate": [
+                    446.55926513671875,
+                    1154.3408203125,
+                    1498.564697265625,
+                    1226.642333984375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.863409698009491,
+                "coordinate": [
+                    445.6182861328125,
+                    1253.6429443359375,
+                    1493.5643310546875,
+                    1338.5655517578125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.811360239982605,
+                "coordinate": [
+                    444.1240234375,
+                    1356.88427734375,
+                    1492.67333984375,
+                    1443.73193359375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.8938159942626953,
+                "coordinate": [
+                    443.57806396484375,
+                    1468.82080078125,
+                    1495.5029296875,
+                    1552.89892578125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9717488288879395,
+                "coordinate": [
+                    440.65716552734375,
+                    1584.8414306640625,
+                    1494.633544921875,
+                    1657.7366943359375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.963604748249054,
+                "coordinate": [
+                    756.099365234375,
+                    1668.81640625,
+                    1180.153076171875,
+                    1748.04248046875
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9299579858779907,
+                "coordinate": [
+                    1415.1942138671875,
+                    1701.3546142578125,
+                    1493.8973388671875,
+                    1733.2244873046875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8219262957572937,
+                "coordinate": [
+                    714.737060546875,
+                    1765.97216796875,
+                    842.567138671875,
+                    1798.23828125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9777001738548279,
+                "coordinate": [
+                    442.2152099609375,
+                    1765.4168701171875,
+                    1499.7000732421875,
+                    1874.2247314453125
+                ]
+            }
+        ]
+    }
+}

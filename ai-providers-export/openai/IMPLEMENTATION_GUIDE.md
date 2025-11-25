@@ -168,21 +168,21 @@ POST https://api.openai.com/v1/responses
 ```javascript
 {
   "type": "function",
-  "function": {
-    "name": "get_weather",
-    "description": "Get weather for a location",
-    "parameters": {
-      "type": "object",
-      "properties": {
-        "location": { "type": "string", "description": "City name" }
-      },
-      "required": ["location"],
-      "additionalProperties": false
+  "name": "get_weather",
+  "description": "Get weather for a location",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "location": { "type": "string", "description": "City name" }
     },
-    "strict": false
-  }
+    "required": ["location"],
+    "additionalProperties": false
+  },
+  "strict": false
 }
 ```
+
+**IMPORTANT:** Unlike Chat Completions API, the Responses API does NOT nest function details inside a "function" object. The name, description, and parameters are at the root level of the tool object.
 
 **Tool Call in Output:**
 ```javascript

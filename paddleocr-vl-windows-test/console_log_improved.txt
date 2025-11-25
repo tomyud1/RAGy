@@ -1,0 +1,424 @@
+================================================================================
+PaddleOCR-VL Improved Test Script
+================================================================================
+
+Script directory: E:\Downloads\paddleocr-vl-windows-test
+Looking for PDF at: E:\Downloads\paddleocr-vl-windows-test\test_document_pages100-130.pdf
+Logging to: E:\Downloads\paddleocr-vl-windows-test\console_log_improved.txt
+
+[OK] Running in virtual environment
+
+Detecting hardware...
+
+E:\Downloads\paddleocr-vl-windows-test\venv\lib\site-packages\paddle\utils\cpp_extension\extension_utils.py:718: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+[OK] PaddlePaddle compiled with CUDA support
+Starting batch processing...
+
+================================================================================
+PaddleOCR-VL Improved Test - Batch Processing
+================================================================================
+PDF: E:\Downloads\paddleocr-vl-windows-test\test_document_pages100-130.pdf
+Output: E:\Downloads\paddleocr-vl-windows-test\output_improved
+Device: gpu:0
+Precision: fp16
+Batch size: 5 pages
+
+Converting PDF to images...
+[OK] Converted 31 pages
+
+Processing in 7 batches of up to 5 pages each
+
+================================================================================
+BATCH 1/7: Pages 1-5
+================================================================================
+Initializing PaddleOCR-VL with improved settings...
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-LCNet_x1_0_doc_ori`.[0m
+[32mCreating model: ('UVDoc', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\UVDoc`.[0m
+[32mCreating model: ('PP-DocLayoutV2', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-DocLayoutV2`.[0m
+[32mCreating model: ('PaddleOCR-VL-0.9B', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL`.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\config.json[0m
+[32mLoading weights file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\model.safetensors[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+E:\Downloads\paddleocr-vl-windows-test\venv\lib\site-packages\paddle\utils\decorator_utils.py:420: Warning: 
+Non compatible API. Please refer to https://www.paddlepaddle.org.cn/documentation/docs/en/develop/guides/model_convert/convert_from_pytorch/api_difference/torch/torch.split.html first.
+  warnings.warn(
+[32mLoaded weights file from disk, setting weights to model.[0m
+[32mAll model checkpoint weights were used when initializing PaddleOCRVLForConditionalGeneration.
+[0m
+[32mAll the weights of PaddleOCRVLForConditionalGeneration were initialized from the model checkpoint at C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use PaddleOCRVLForConditionalGeneration for predictions without further training.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\generation_config.json[0m
+[33mCurrently, the PaddleOCR-VL-0.9B local model only supports batch size of 1. The batch size will be updated to 1.[0m
+[OK] Initialized: 11.19s
+
+Page 1/31... E:\Downloads\paddleocr-vl-windows-test\venv\lib\site-packages\paddle\tensor\creation.py:1088: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach(), rather than paddle.to_tensor(sourceTensor).
+  return tensor(
+E:\Downloads\paddleocr-vl-windows-test\venv\lib\site-packages\paddle\utils\decorator_utils.py:420: Warning: 
+Non compatible API. Please refer to https://www.paddlepaddle.org.cn/documentation/docs/en/develop/guides/model_convert/convert_from_pytorch/api_difference/torch/torch.max.html first.
+  warnings.warn(
+29.91s (avg: 29.91s)
+Page 2/31... 22.00s (avg: 25.96s)
+Page 3/31... 27.42s (avg: 26.44s)
+Page 4/31... 43.70s (avg: 30.76s)
+Page 5/31... 30.38s (avg: 30.68s)
+[CLEANUP] GPU memory cleared
+[CLEANUP] Python garbage collection completed
+
+[OK] Batch 1 complete
+[INFO] Starting next batch in 2 seconds...
+
+================================================================================
+BATCH 2/7: Pages 6-10
+================================================================================
+Initializing PaddleOCR-VL with improved settings...
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-LCNet_x1_0_doc_ori`.[0m
+[32mCreating model: ('UVDoc', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\UVDoc`.[0m
+[32mCreating model: ('PP-DocLayoutV2', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-DocLayoutV2`.[0m
+[32mCreating model: ('PaddleOCR-VL-0.9B', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL`.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\config.json[0m
+[32mLoading weights file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\model.safetensors[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32mLoaded weights file from disk, setting weights to model.[0m
+[32mAll model checkpoint weights were used when initializing PaddleOCRVLForConditionalGeneration.
+[0m
+[32mAll the weights of PaddleOCRVLForConditionalGeneration were initialized from the model checkpoint at C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use PaddleOCRVLForConditionalGeneration for predictions without further training.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\generation_config.json[0m
+[33mCurrently, the PaddleOCR-VL-0.9B local model only supports batch size of 1. The batch size will be updated to 1.[0m
+[OK] Initialized: 5.57s
+
+Page 6/31... 23.03s (avg: 29.41s)
+Page 7/31... 26.25s (avg: 28.96s)
+Page 8/31... 23.78s (avg: 28.31s)
+Page 9/31... 21.38s (avg: 27.54s)
+Page 10/31... 20.44s (avg: 26.83s)
+[CLEANUP] GPU memory cleared
+[CLEANUP] Python garbage collection completed
+
+[OK] Batch 2 complete
+[INFO] Starting next batch in 2 seconds...
+
+================================================================================
+BATCH 3/7: Pages 11-15
+================================================================================
+Initializing PaddleOCR-VL with improved settings...
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-LCNet_x1_0_doc_ori`.[0m
+[32mCreating model: ('UVDoc', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\UVDoc`.[0m
+[32mCreating model: ('PP-DocLayoutV2', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-DocLayoutV2`.[0m
+[32mCreating model: ('PaddleOCR-VL-0.9B', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL`.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\config.json[0m
+[32mLoading weights file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\model.safetensors[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32mLoaded weights file from disk, setting weights to model.[0m
+[32mAll model checkpoint weights were used when initializing PaddleOCRVLForConditionalGeneration.
+[0m
+[32mAll the weights of PaddleOCRVLForConditionalGeneration were initialized from the model checkpoint at C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use PaddleOCRVLForConditionalGeneration for predictions without further training.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\generation_config.json[0m
+[33mCurrently, the PaddleOCR-VL-0.9B local model only supports batch size of 1. The batch size will be updated to 1.[0m
+[OK] Initialized: 5.90s
+
+Page 11/31... 26.32s (avg: 26.78s)
+Page 12/31... 25.45s (avg: 26.67s)
+Page 13/31... 25.43s (avg: 26.58s)
+Page 14/31... 24.30s (avg: 26.41s)
+Page 15/31... 22.09s (avg: 26.13s)
+[CLEANUP] GPU memory cleared
+[CLEANUP] Python garbage collection completed
+
+[OK] Batch 3 complete
+[INFO] Starting next batch in 2 seconds...
+
+================================================================================
+BATCH 4/7: Pages 16-20
+================================================================================
+Initializing PaddleOCR-VL with improved settings...
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-LCNet_x1_0_doc_ori`.[0m
+[32mCreating model: ('UVDoc', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\UVDoc`.[0m
+[32mCreating model: ('PP-DocLayoutV2', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-DocLayoutV2`.[0m
+[32mCreating model: ('PaddleOCR-VL-0.9B', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL`.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\config.json[0m
+[32mLoading weights file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\model.safetensors[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32mLoaded weights file from disk, setting weights to model.[0m
+[32mAll model checkpoint weights were used when initializing PaddleOCRVLForConditionalGeneration.
+[0m
+[32mAll the weights of PaddleOCRVLForConditionalGeneration were initialized from the model checkpoint at C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use PaddleOCRVLForConditionalGeneration for predictions without further training.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\generation_config.json[0m
+[33mCurrently, the PaddleOCR-VL-0.9B local model only supports batch size of 1. The batch size will be updated to 1.[0m
+[OK] Initialized: 5.67s
+
+Page 16/31... 25.81s (avg: 26.11s)
+Page 17/31... 41.02s (avg: 26.98s)
+Page 18/31... 21.88s (avg: 26.70s)
+Page 19/31... 26.14s (avg: 26.67s)
+Page 20/31... 31.83s (avg: 26.93s)
+[CLEANUP] GPU memory cleared
+[CLEANUP] Python garbage collection completed
+
+[OK] Batch 4 complete
+[INFO] Starting next batch in 2 seconds...
+
+================================================================================
+BATCH 5/7: Pages 21-25
+================================================================================
+Initializing PaddleOCR-VL with improved settings...
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-LCNet_x1_0_doc_ori`.[0m
+[32mCreating model: ('UVDoc', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\UVDoc`.[0m
+[32mCreating model: ('PP-DocLayoutV2', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-DocLayoutV2`.[0m
+[32mCreating model: ('PaddleOCR-VL-0.9B', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL`.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\config.json[0m
+[32mLoading weights file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\model.safetensors[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32mLoaded weights file from disk, setting weights to model.[0m
+[32mAll model checkpoint weights were used when initializing PaddleOCRVLForConditionalGeneration.
+[0m
+[32mAll the weights of PaddleOCRVLForConditionalGeneration were initialized from the model checkpoint at C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use PaddleOCRVLForConditionalGeneration for predictions without further training.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\generation_config.json[0m
+[33mCurrently, the PaddleOCR-VL-0.9B local model only supports batch size of 1. The batch size will be updated to 1.[0m
+[OK] Initialized: 5.62s
+
+Page 21/31... 25.52s (avg: 26.86s)
+Page 22/31... 22.20s (avg: 26.65s)
+Page 23/31... 25.81s (avg: 26.61s)
+Page 24/31... 26.20s (avg: 26.60s)
+Page 25/31... 37.60s (avg: 27.04s)
+[CLEANUP] GPU memory cleared
+[CLEANUP] Python garbage collection completed
+
+[OK] Batch 5 complete
+[INFO] Starting next batch in 2 seconds...
+
+================================================================================
+BATCH 6/7: Pages 26-30
+================================================================================
+Initializing PaddleOCR-VL with improved settings...
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-LCNet_x1_0_doc_ori`.[0m
+[32mCreating model: ('UVDoc', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\UVDoc`.[0m
+[32mCreating model: ('PP-DocLayoutV2', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-DocLayoutV2`.[0m
+[32mCreating model: ('PaddleOCR-VL-0.9B', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL`.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\config.json[0m
+[32mLoading weights file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\model.safetensors[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32mLoaded weights file from disk, setting weights to model.[0m
+[32mAll model checkpoint weights were used when initializing PaddleOCRVLForConditionalGeneration.
+[0m
+[32mAll the weights of PaddleOCRVLForConditionalGeneration were initialized from the model checkpoint at C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use PaddleOCRVLForConditionalGeneration for predictions without further training.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\generation_config.json[0m
+[33mCurrently, the PaddleOCR-VL-0.9B local model only supports batch size of 1. The batch size will be updated to 1.[0m
+[OK] Initialized: 5.81s
+
+Page 26/31... 33.12s (avg: 27.27s)
+Page 27/31... 22.97s (avg: 27.11s)
+Page 28/31... 32.10s (avg: 27.29s)
+Page 29/31... 28.35s (avg: 27.32s)
+Page 30/31... 26.91s (avg: 27.31s)
+[CLEANUP] GPU memory cleared
+[CLEANUP] Python garbage collection completed
+
+[OK] Batch 6 complete
+[INFO] Starting next batch in 2 seconds...
+
+================================================================================
+BATCH 7/7: Pages 31-31
+================================================================================
+Initializing PaddleOCR-VL with improved settings...
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-LCNet_x1_0_doc_ori`.[0m
+[32mCreating model: ('UVDoc', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\UVDoc`.[0m
+[32mCreating model: ('PP-DocLayoutV2', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PP-DocLayoutV2`.[0m
+[32mCreating model: ('PaddleOCR-VL-0.9B', None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL`.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\config.json[0m
+[32mLoading weights file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\model.safetensors[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32muse GQA - num_heads: 16- num_key_value_heads: 2[0m
+[32mLoaded weights file from disk, setting weights to model.[0m
+[32mAll model checkpoint weights were used when initializing PaddleOCRVLForConditionalGeneration.
+[0m
+[32mAll the weights of PaddleOCRVLForConditionalGeneration were initialized from the model checkpoint at C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use PaddleOCRVLForConditionalGeneration for predictions without further training.[0m
+[32mLoading configuration file C:\Users\tomyu\.paddlex\official_models\PaddleOCR-VL\generation_config.json[0m
+[33mCurrently, the PaddleOCR-VL-0.9B local model only supports batch size of 1. The batch size will be updated to 1.[0m
+[OK] Initialized: 5.70s
+
+Page 31/31... 28.37s (avg: 27.35s)
+[CLEANUP] GPU memory cleared
+[CLEANUP] Python garbage collection completed
+
+[OK] Batch 7 complete
+
+
+================================================================================
+Complete!
+================================================================================
+Total time: 15m 6.51s
+Average per page: 29.24s
+
+Combining markdown files...
+[OK] Combined markdown: E:\Downloads\paddleocr-vl-windows-test\output_improved\document.md
+[OK] Summary: E:\Downloads\paddleocr-vl-windows-test\output_improved\summary.json
+
+Check the output folder for all results!
+
+Extracted images are in: output/page_N/imgs/
+
+================================================================================
+SUCCESS!
+================================================================================
+Output saved to: E:\Downloads\paddleocr-vl-windows-test\output_improved
+Log saved to: E:\Downloads\paddleocr-vl-windows-test\console_log_improved.txt
+
+Output files:
+  - document.md (combined markdown from all pages)
+  - summary.json (processing stats)
+  - page_N/ (individual page results)
+  - page_N/imgs/ (extracted images)

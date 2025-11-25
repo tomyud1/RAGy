@@ -1,0 +1,702 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_28.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "HEAT CONDUCTION EQUATION",
+            "block_bbox": [
+                123,
+                8,
+                469,
+                47
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_70_143_420_479.jpg\" alt=\"Image\" width=\"21%\" /></div>\n",
+            "block_bbox": [
+                70,
+                143,
+                420,
+                479
+            ],
+            "block_id": 1,
+            "block_order": null
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\dot{q}_{1}=\\frac{\\dot{Q}_{1}}{A_{1}}=\\frac{27.1\\ kW}{4\\pi(0.08\\ m)^{2}}=337\\ kW/m^{2} $$ ",
+            "block_bbox": [
+                46,
+                487,
+                431,
+                556
+            ],
+            "block_id": 2,
+            "block_order": 1
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\dot{q}_{2}=\\frac{\\dot{Q}_{2}}{A_{2}}=\\frac{27.1\\ kW}{4\\pi(0.10\\ m)^{2}}=216\\ kW/m^{2} $$ ",
+            "block_bbox": [
+                44,
+                559,
+                429,
+                626
+            ],
+            "block_id": 3,
+            "block_order": 2
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## FIGURE 2–53",
+            "block_bbox": [
+                40,
+                649,
+                230,
+                684
+            ],
+            "block_id": 4,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "During steady one-dimensional heat conduction in a spherical (or cylindrical) container, the total rate of heat transfer remains constant, but the heat flux decreases with increasing radius.\n\nwhich are two equations in two unknowns,  $ C_{1} $  and  $ C_{2} $ . Solving them simultaneously gives",
+            "block_bbox": [
+                29,
+                688,
+                479,
+                901
+            ],
+            "block_id": 5,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                568,
+                40,
+                1509,
+                144
+            ],
+            "block_id": 6,
+            "block_order": 5
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ C_{1}=-\\frac{r_{1}r_{2}}{r_{2}-r_{1}}(T_{1}-T_{2})\\quad and\\quad C_{2}=\\frac{r_{2}T_{2}-r_{1}T_{1}}{r_{2}-r_{1}} $$ ",
+            "block_bbox": [
+                723,
+                133,
+                1335,
+                228
+            ],
+            "block_id": 7,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "Heat generation in solids is commonly encountered in practice.\n\nSubstituting into Eq. (a), the variation of temperature within the spherical shell is determined to be",
+            "block_bbox": [
+                16,
+                1531,
+                459,
+                1608
+            ],
+            "block_id": 8,
+            "block_order": 7
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                567,
+                235,
+                1494,
+                322
+            ],
+            "block_id": 9,
+            "block_order": 8
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T(r)=\\frac{r_{1}r_{2}}{r(r_{2}-r_{1})}\\left(T_{1}-T_{2}\\right)+\\frac{r_{2}T_{2}-r_{1}T_{1}}{r_{2}-r_{1}} $$ ",
+            "block_bbox": [
+                764,
+                327,
+                1277,
+                413
+            ],
+            "block_id": 10,
+            "block_order": 9
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2–60)",
+            "block_bbox": [
+                1409,
+                346,
+                1482,
+                379
+            ],
+            "block_id": 11,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "The rate of heat loss from the container is simply the total rate of heat conduction through the container wall and is determined from Fourier's law",
+            "block_bbox": [
+                564,
+                428,
+                1484,
+                505
+            ],
+            "block_id": 12,
+            "block_order": 10
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\dot{Q}_{sphere}=-kA\\frac{dT}{dr}=-k(4\\pi r^{2})\\frac{C_{1}}{r^{2}}=-4\\pi kC_{1}=4\\pi kr_{1}r_{2}\\frac{T_{1}-T_{2}}{r_{2}-r_{1}} $$ ",
+            "block_bbox": [
+                600,
+                515,
+                1372,
+                596
+            ],
+            "block_id": 13,
+            "block_order": 11
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2–61)",
+            "block_bbox": [
+                1407,
+                537,
+                1478,
+                569
+            ],
+            "block_id": 14,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "The numerical value of the rate of heat conduction through the wall is determined by substituting the given values to be",
+            "block_bbox": [
+                562,
+                619,
+                1482,
+                691
+            ],
+            "block_id": 15,
+            "block_order": 12
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\dot{Q}=4\\pi(45\\mathrm{~W/m}\\cdot\\mathrm{K})(0.08\\mathrm{~m})(0.10\\mathrm{~m})\\frac{(200-80)^{\\circ}\\mathrm{C}}{(0.10-0.08)\\mathrm{~m}}=27.1\\mathrm{~kW} $$ ",
+            "block_bbox": [
+                628,
+                698,
+                1411,
+                777
+            ],
+            "block_id": 16,
+            "block_order": 13
+        },
+        {
+            "block_label": "text",
+            "block_content": "Discussion Note that the total rate of heat transfer through a spherical shell is constant, but the heat flux  $ \\dot{q} = \\dot{Q}/4\\pi r^{2} $  is not since it decreases in the direction of heat transfer with increasing radius as shown in Fig. 2–53.",
+            "block_bbox": [
+                557,
+                803,
+                1479,
+                910
+            ],
+            "block_id": 17,
+            "block_order": 14
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_15_1021_486_1472.jpg\" alt=\"Image\" width=\"29%\" /></div>\n",
+            "block_bbox": [
+                15,
+                1021,
+                486,
+                1472
+            ],
+            "block_id": 18,
+            "block_order": null
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## 2 –6 HEAT GENERATION IN A SOLID",
+            "block_bbox": [
+                534,
+                1023,
+                1217,
+                1075
+            ],
+            "block_id": 19,
+            "block_order": 15
+        },
+        {
+            "block_label": "text",
+            "block_content": "Many practical heat transfer applications involve the conversion of some form of energy into thermal energy in the medium. Such mediums are said to involve internal heat generation, which manifests itself as a rise in temperature throughout the medium. Some examples of heat generation are resistance heating in wires, exothermic chemical reactions in a solid, and nuclear reactions in nuclear fuel rods where electrical, chemical, and nuclear energies are converted to heat, respectively (Fig. 2–54). The absorption of radiation throughout the volume of a semitransparent medium such as water can also be considered as heat generation within the medium, as explained earlier.",
+            "block_bbox": [
+                528,
+                1092,
+                1505,
+                1423
+            ],
+            "block_id": 20,
+            "block_order": 16
+        },
+        {
+            "block_label": "text",
+            "block_content": "Heat generation is usually expressed per unit volume of the medium, and is denoted by  $ \\dot{e}_{gen} $ , whose unit is W/m $ ^{3} $ . For example, heat generation in an electrical wire of outer radius  $ r_{o} $  and length L can be expressed as",
+            "block_bbox": [
+                526,
+                1422,
+                1501,
+                1535
+            ],
+            "block_id": 21,
+            "block_order": 17
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\dot{e}_{gen}=\\frac{\\dot{E}_{gen,electric}}{V_{wire}}=\\frac{I^{2}R_{e}}{\\pi r_{o}^{2}L}\\qquad(W/m^{3}) $$ ",
+            "block_bbox": [
+                793,
+                1561,
+                1233,
+                1655
+            ],
+            "block_id": 22,
+            "block_order": 18
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2–62)",
+            "block_bbox": [
+                1422,
+                1596,
+                1495,
+                1627
+            ],
+            "block_id": 23,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "where I is the electric current and  $ R_{e} $  is the electrical resistance of the wire.",
+            "block_bbox": [
+                528,
+                1670,
+                1465,
+                1708
+            ],
+            "block_id": 24,
+            "block_order": 19
+        },
+        {
+            "block_label": "text",
+            "block_content": "The temperature of a medium rises during heat generation as a result of the absorption of the generated heat by the medium during transient start-up period. As the temperature of the medium increases, so does the heat transfer from the medium to its surroundings. This continues until steady operating",
+            "block_bbox": [
+                527,
+                1709,
+                1502,
+                1859
+            ],
+            "block_id": 25,
+            "block_order": 20
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.6190109848976135,
+                "coordinate": [
+                    123.18043518066406,
+                    8.587165832519531,
+                    469.6846923828125,
+                    47.997596740722656
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9752375483512878,
+                "coordinate": [
+                    70.36054992675781,
+                    143.80294799804688,
+                    420.1893310546875,
+                    479.5496520996094
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9472955465316772,
+                "coordinate": [
+                    46.75067138671875,
+                    487.51031494140625,
+                    431.22283935546875,
+                    556.8643188476562
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9425712823867798,
+                "coordinate": [
+                    44.048797607421875,
+                    559.9754638671875,
+                    429.9635314941406,
+                    626.991943359375
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8581067323684692,
+                "coordinate": [
+                    40.281578063964844,
+                    649.2557373046875,
+                    230.49783325195312,
+                    684.2529296875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9762247800827026,
+                "coordinate": [
+                    29.846221923828125,
+                    688.1964111328125,
+                    479.6479187011719,
+                    901.1666259765625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9705779552459717,
+                "coordinate": [
+                    568.4192504882812,
+                    40.48602294921875,
+                    1509.785888671875,
+                    144.42178344726562
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8826088905334473,
+                "coordinate": [
+                    1078.3818359375,
+                    54.8292236328125,
+                    1107.75830078125,
+                    86.6549072265625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.885572612285614,
+                "coordinate": [
+                    1164.540283203125,
+                    50.78069305419922,
+                    1198.59521484375,
+                    81.91417694091797
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9705058336257935,
+                "coordinate": [
+                    723.92724609375,
+                    133.51553344726562,
+                    1335.452392578125,
+                    228.18356323242188
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6554396152496338,
+                "coordinate": [
+                    16.767364501953125,
+                    1531.6131591796875,
+                    459.42999267578125,
+                    1608.1890869140625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9699184894561768,
+                "coordinate": [
+                    567.068603515625,
+                    235.00128173828125,
+                    1494.644287109375,
+                    322.0811767578125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9688044190406799,
+                "coordinate": [
+                    764.34765625,
+                    327.6925964355469,
+                    1277.2244873046875,
+                    413.0982360839844
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9246257543563843,
+                "coordinate": [
+                    1409.6656494140625,
+                    346.772705078125,
+                    1482.1285400390625,
+                    379.248046875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9710382223129272,
+                "coordinate": [
+                    564.7259521484375,
+                    428.6781005859375,
+                    1484.4454345703125,
+                    505.6248779296875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9704241156578064,
+                "coordinate": [
+                    600.26904296875,
+                    515.1677856445312,
+                    1372.75634765625,
+                    596.5026245117188
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9234717488288879,
+                "coordinate": [
+                    1407.623779296875,
+                    537.5509033203125,
+                    1478.965576171875,
+                    569.8897705078125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9692263007164001,
+                "coordinate": [
+                    562.3218994140625,
+                    619.388427734375,
+                    1482.9652099609375,
+                    691.3857421875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9684651494026184,
+                "coordinate": [
+                    628.8988037109375,
+                    698.6322021484375,
+                    1411.2989501953125,
+                    777.7340087890625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9756268262863159,
+                "coordinate": [
+                    557.9737548828125,
+                    803.4844970703125,
+                    1479.8369140625,
+                    910.688232421875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9284797310829163,
+                "coordinate": [
+                    880.682373046875,
+                    839.0385131835938,
+                    1031.415283203125,
+                    873.6575317382812
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9416801333427429,
+                "coordinate": [
+                    15.723678588867188,
+                    1021.291015625,
+                    486.6700439453125,
+                    1472.349609375
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9501370787620544,
+                "coordinate": [
+                    534.216064453125,
+                    1023.81982421875,
+                    1217.848388671875,
+                    1075.177734375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9887657761573792,
+                "coordinate": [
+                    528.1529541015625,
+                    1092.6746826171875,
+                    1505.1187744140625,
+                    1423.6021728515625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9804800748825073,
+                "coordinate": [
+                    526.870361328125,
+                    1422.498779296875,
+                    1501.580810546875,
+                    1535.402099609375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.900526225566864,
+                "coordinate": [
+                    714.921630859375,
+                    1461.9207763671875,
+                    767.903564453125,
+                    1497.2303466796875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6657094359397888,
+                "coordinate": [
+                    956.98828125,
+                    1456.376220703125,
+                    1036.32080078125,
+                    1490.828369140625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8514693379402161,
+                "coordinate": [
+                    907.681640625,
+                    1502.179931640625,
+                    936.5225830078125,
+                    1531.451904296875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9682733416557312,
+                "coordinate": [
+                    793.4144287109375,
+                    1561.6368408203125,
+                    1233.4080810546875,
+                    1655.1126708984375
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9300932884216309,
+                "coordinate": [
+                    1422.802490234375,
+                    1596.2177734375,
+                    1495.642333984375,
+                    1627.7705078125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9485422372817993,
+                "coordinate": [
+                    528.989013671875,
+                    1670.4444580078125,
+                    1465.43212890625,
+                    1708.5577392578125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8695346713066101,
+                "coordinate": [
+                    955.873779296875,
+                    1674.4718017578125,
+                    987.943115234375,
+                    1707.0364990234375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.981812596321106,
+                "coordinate": [
+                    527.9171142578125,
+                    1709.841796875,
+                    1502.6241455078125,
+                    1859.6630859375
+                ]
+            }
+        ]
+    }
+}

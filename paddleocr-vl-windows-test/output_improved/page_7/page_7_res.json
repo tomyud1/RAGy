@@ -1,0 +1,462 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_7.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "From a mathematical point of view, solving a differential equation is essentially a process of removing derivatives, or an integration process, and thus the solution of a differential equation typically involves arbitrary constants (Fig. 2–25). It follows that to obtain a unique solution to a problem, we need to specify more than just the governing differential equation. We need to specify some conditions (such as the value of the function or its derivatives at some value of the independent variable) so that forcing the solution to satisfy these conditions at specified points will result in unique values for the arbitrary constants and thus a unique solution. But since the differential equation has no place for the additional information or conditions, we need to supply them separately in the form of boundary or initial conditions.",
+            "block_bbox": [
+                115,
+                121,
+                1060,
+                514
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "Consider the variation of temperature along the wall of a brick house in winter. The temperature at any point in the wall depends on, among other things, the conditions at the two surfaces of the wall such as the air temperature of the house, the velocity and direction of the winds, and the solar energy incident on the outer surface. That is, the temperature distribution in a medium depends on the conditions at the boundaries of the medium as well as the heat transfer mechanism inside the medium. To describe a heat transfer problem completely, two boundary conditions must be given for each direction of the coordinate system along which heat transfer is significant (Fig. 2–26). Therefore, we need to specify two boundary conditions for one-dimensional problems, four boundary conditions for two-dimensional problems, and six boundary conditions for three-dimensional problems. In the case of the wall of a house, for example, we need to specify the conditions at two locations (the inner and the outer surfaces) of the wall since heat transfer in this case is one-dimensional. But in the case of a parallelepiped, we need to specify six boundary conditions (one at each face) when heat transfer in all three dimensions is significant.",
+            "block_bbox": [
+                113,
+                513,
+                1058,
+                1103
+            ],
+            "block_id": 1,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "The physical argument presented above is consistent with the mathematical nature of the problem since the heat conduction equation is second order (i.e., involves second derivatives with respect to the space variables) in all directions along which heat conduction is significant, and the general solution of a second-order linear differential equation involves two arbitrary constants for each direction. That is, the number of boundary conditions that needs to be specified in a direction is equal to the order of the differential equation in that direction.",
+            "block_bbox": [
+                114,
+                1101,
+                1056,
+                1344
+            ],
+            "block_id": 2,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "Reconsider the brick wall already discussed. The temperature at any point on the wall at a specified time also depends on the condition of the wall at the beginning of the heat conduction process. Such a condition, which is usually specified at time t = 0, is called the initial condition, which is a mathematical expression for the temperature distribution of the medium initially. Note that we need only one initial condition for a heat conduction problem regardless of the dimension since the conduction equation is first order in time (it involves the first derivative of temperature with respect to time).",
+            "block_bbox": [
+                115,
+                1344,
+                1056,
+                1620
+            ],
+            "block_id": 3,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "In rectangular coordinates, the initial condition can be specified in the general form as",
+            "block_bbox": [
+                114,
+                1619,
+                1053,
+                1688
+            ],
+            "block_id": 4,
+            "block_order": 5
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T(x,y,z,0)=f(x,y,z) $$ ",
+            "block_bbox": [
+                458,
+                1716,
+                712,
+                1750
+            ],
+            "block_id": 5,
+            "block_order": 6
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2−45)",
+            "block_bbox": [
+                977,
+                1720,
+                1050,
+                1750
+            ],
+            "block_id": 6,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "where the function  $  f(x, y, z)  $  represents the temperature distribution throughout the medium at time t = 0. When the medium is initially at a uniform",
+            "block_bbox": [
+                113,
+                1791,
+                1053,
+                1861
+            ],
+            "block_id": 7,
+            "block_order": 7
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## 83 CHAPTER 2",
+            "block_bbox": [
+                1256,
+                8,
+                1401,
+                77
+            ],
+            "block_id": 8,
+            "block_order": 8
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1095_84_1566_663.jpg\" alt=\"Image\" width=\"29%\" /></div>\n",
+            "block_bbox": [
+                1095,
+                84,
+                1566,
+                663
+            ],
+            "block_id": 9,
+            "block_order": null
+        },
+        {
+            "block_label": "inline_formula",
+            "block_content": " $$ \\frac{d^{2}T}{dx^{2}}=0 $$ ",
+            "block_bbox": [
+                1343,
+                190,
+                1447,
+                257
+            ],
+            "block_id": 10,
+            "block_order": 9
+        },
+        {
+            "block_label": "inline_formula",
+            "block_content": " $$ T(x)=C_{1}x+C_{2} $$ ",
+            "block_bbox": [
+                1290,
+                295,
+                1454,
+                329
+            ],
+            "block_id": 11,
+            "block_order": 10
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–25</div>\n",
+            "block_bbox": [
+                1381,
+                677,
+                1554,
+                711
+            ],
+            "block_id": 12,
+            "block_order": null
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "The general solution of a typical differential equation involves arbitrary constants, and thus an infinite number of solutions.",
+            "block_bbox": [
+                1152,
+                717,
+                1554,
+                855
+            ],
+            "block_id": 13,
+            "block_order": null
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1083_942_1554_1381.jpg\" alt=\"Image\" width=\"29%\" /></div>\n",
+            "block_bbox": [
+                1083,
+                942,
+                1554,
+                1381
+            ],
+            "block_id": 14,
+            "block_order": null
+        },
+        {
+            "block_label": "inline_formula",
+            "block_content": " $$ T(L)=15^{\\circ}C. $$ ",
+            "block_bbox": [
+                1416,
+                1347,
+                1543,
+                1377
+            ],
+            "block_id": 15,
+            "block_order": 11
+        },
+        {
+            "block_label": "text",
+            "block_content": "To describe a heat transfer problem completely, two boundary conditions must be given for each direction along which heat transfer is significant.",
+            "block_bbox": [
+                1082,
+                1431,
+                1557,
+                1572
+            ],
+            "block_id": 16,
+            "block_order": 12
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9885321855545044,
+                "coordinate": [
+                    115.75613403320312,
+                    121.74114990234375,
+                    1060.7451171875,
+                    514.8838500976562
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.988532304763794,
+                "coordinate": [
+                    113.953857421875,
+                    513.0302734375,
+                    1058.6983642578125,
+                    1103.72607421875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9870140552520752,
+                "coordinate": [
+                    114.83544921875,
+                    1101.775146484375,
+                    1056.8221435546875,
+                    1344.669677734375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9874541759490967,
+                "coordinate": [
+                    115.5382080078125,
+                    1344.78662109375,
+                    1056.8546142578125,
+                    1620.356201171875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7172853350639343,
+                "coordinate": [
+                    323.38861083984375,
+                    1450.6448974609375,
+                    388.96942138671875,
+                    1479.1888427734375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9663100242614746,
+                "coordinate": [
+                    114.7064208984375,
+                    1619.505126953125,
+                    1053.6253662109375,
+                    1688.886962890625
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9378350377082825,
+                "coordinate": [
+                    458.07208251953125,
+                    1716.072509765625,
+                    712.5775756835938,
+                    1750.041259765625
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9184013605117798,
+                "coordinate": [
+                    977.1268310546875,
+                    1720.100830078125,
+                    1050.6639404296875,
+                    1750.763671875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8412370681762695,
+                "coordinate": [
+                    355.8975524902344,
+                    1793.591064453125,
+                    459.8906555175781,
+                    1824.996826171875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7104552984237671,
+                "coordinate": [
+                    423.831298828125,
+                    1826.64599609375,
+                    500.704345703125,
+                    1853.29638671875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9635735154151917,
+                "coordinate": [
+                    113.85873413085938,
+                    1791.4508056640625,
+                    1053.6380615234375,
+                    1861.1307373046875
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.4265214800834656,
+                "coordinate": [
+                    1256.417236328125,
+                    8.698265075683594,
+                    1401.742919921875,
+                    77.93359375
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.7689391374588013,
+                "coordinate": [
+                    1095.7557373046875,
+                    84.748779296875,
+                    1566.0897216796875,
+                    663.311767578125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.4370916187763214,
+                "coordinate": [
+                    1343.481201171875,
+                    190.37838745117188,
+                    1447.604248046875,
+                    257.6286315917969
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.41105934977531433,
+                "coordinate": [
+                    1290.111328125,
+                    295.78399658203125,
+                    1454.673828125,
+                    329.74273681640625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.6151967644691467,
+                "coordinate": [
+                    1381.4765625,
+                    677.2164306640625,
+                    1554.24462890625,
+                    711.1090087890625
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.5361983776092529,
+                "coordinate": [
+                    1152.865478515625,
+                    717.1036376953125,
+                    1554.841064453125,
+                    855.506591796875
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.8642476201057434,
+                "coordinate": [
+                    1083.703857421875,
+                    942.55859375,
+                    1554.820068359375,
+                    1381.070556640625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5443912744522095,
+                "coordinate": [
+                    1416.3670654296875,
+                    1347.4482421875,
+                    1543.6956787109375,
+                    1377.10595703125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4307739734649658,
+                "coordinate": [
+                    1082.052734375,
+                    1431.930908203125,
+                    1557.1884765625,
+                    1572.695068359375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4601505398750305,
+                "coordinate": [
+                    1140.166259765625,
+                    1536.05712890625,
+                    1555.210693359375,
+                    1572.1240234375
+                ]
+            }
+        ]
+    }
+}

@@ -55,10 +55,25 @@ class ChatService {
     try {
       const threads = await this.loadChatThreads(projectId);
 
+      // Find the highest chat number and increment it
+      let nextChatNumber = 1;
+      if (!name) {
+        const chatNumbers = threads
+          .map(t => {
+            const match = t.name.match(/^Chat (\d+)$/);
+            return match ? parseInt(match[1], 10) : 0;
+          })
+          .filter(n => n > 0);
+
+        if (chatNumbers.length > 0) {
+          nextChatNumber = Math.max(...chatNumbers) + 1;
+        }
+      }
+
       const newThread = {
         id: uuidv4(),
         projectId,
-        name: name || `Chat ${threads.length + 1}`,
+        name: name || `Chat ${nextChatNumber}`,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
         messageCount: 0,

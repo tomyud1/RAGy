@@ -1,0 +1,584 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_11.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "For one-dimensional heat transfer in the x-direction in a plate of thickness L, the convection boundary conditions on both surfaces can be expressed as",
+            "block_bbox": [
+                109,
+                72,
+                1058,
+                153
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ -k\\frac{\\partial T(0,t)}{\\partial x}=h_{1}[T_{\\infty1}-T(0,t)] $$ ",
+            "block_bbox": [
+                408,
+                173,
+                759,
+                245
+            ],
+            "block_id": 1,
+            "block_order": 2
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2–51a)",
+            "block_bbox": [
+                971,
+                195,
+                1053,
+                227
+            ],
+            "block_id": 2,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "and",
+            "block_bbox": [
+                114,
+                271,
+                175,
+                304
+            ],
+            "block_id": 3,
+            "block_order": 3
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ -k\\frac{\\partial T(L,t)}{\\partial x}=h_{2}[T(L,t)-T_{\\infty2}] $$ ",
+            "block_bbox": [
+                409,
+                332,
+                762,
+                404
+            ],
+            "block_id": 4,
+            "block_order": 4
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2–51b)",
+            "block_bbox": [
+                971,
+                353,
+                1052,
+                384
+            ],
+            "block_id": 5,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "where  $ h_{1} $  and  $ h_{2} $  are the convection heat transfer coefficients and  $ T_{\\infty1} $  and  $ T_{\\infty2} $  are the temperatures of the surrounding mediums on the two sides of the plate, as shown in Fig. 2–32.\n\nIn writing Eqs. 2–51 for convection boundary conditions, we have selected the direction of heat transfer to be the positive x-direction at both surfaces. But those expressions are equally applicable when heat transfer is in the opposite direction at one or both surfaces since reversing the direction of heat transfer at a surface simply reverses the signs of both conduction and convection terms at that surface. This is equivalent to multiplying an equation by -1, which has no effect on the equality (Fig. 2–33). Being able to select either direction as the direction of heat transfer is certainly a relief since often we do not know the surface temperature and thus the direction of heat transfer at a surface in advance. This argument is also valid for other boundary conditions such as the radiation and combined boundary conditions discussed shortly.",
+            "block_bbox": [
+                113,
+                428,
+                1054,
+                535
+            ],
+            "block_id": 6,
+            "block_order": 5
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                110,
+                534,
+                1060,
+                929
+            ],
+            "block_id": 7,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "Note that a surface has zero thickness and thus no mass, and it cannot store any energy. Therefore, the entire net heat entering the surface from one side must leave the surface from the other side. The convection boundary condition simply states that heat continues to flow from a body to the surrounding medium at the same rate, and it just changes vehicles at the surface from conduction to convection (or vice versa in the other direction). This is analogous to people traveling on buses on land and transferring to the ships at the shore. If the passengers are not allowed to wander around at the shore, then the rate at which the people are unloaded at the shore from the buses must equal the rate at which they board the ships. We may call this the conservation of “people” principle.",
+            "block_bbox": [
+                112,
+                929,
+                1061,
+                1323
+            ],
+            "block_id": 8,
+            "block_order": 7
+        },
+        {
+            "block_label": "text",
+            "block_content": "Also note that the surface temperatures  $ T(0, t) $  and  $ T(L, t) $  are not known (if they were known, we would simply use them as the specified temperature boundary condition and not bother with convection). But a surface temperature can be determined once the solution  $ T(x, t) $  is obtained by substituting the value of x at that surface into the solution.",
+            "block_bbox": [
+                115,
+                1322,
+                1059,
+                1505
+            ],
+            "block_id": 9,
+            "block_order": 8
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## EXAMPLE 2–7 Convection and Insulation Boundary Conditions",
+            "block_bbox": [
+                147,
+                1573,
+                1006,
+                1613
+            ],
+            "block_id": 10,
+            "block_order": 9
+        },
+        {
+            "block_label": "text",
+            "block_content": "Steam flows through a pipe shown in Fig. 2–34 at an average temperature of  $ T_{\\infty} = 200^{\\circ}C $ . The inner and outer radii of the pipe are  $ r_{1} = 8  cm $  and  $ r_{2} = 8.5  cm $ , respectively, and the outer surface of the pipe is heavily insulated. If the convection heat transfer coefficient on the inner surface of the pipe is  $ h = 65  W/m^{2} \\cdot K $ , express the boundary conditions on the inner and outer surfaces of the pipe during transient periods.",
+            "block_bbox": [
+                138,
+                1630,
+                1038,
+                1837
+            ],
+            "block_id": 11,
+            "block_order": 10
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1086_2_1545_462.jpg\" alt=\"Image\" width=\"28%\" /></div>\n",
+            "block_bbox": [
+                1086,
+                2,
+                1545,
+                462
+            ],
+            "block_id": 12,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–32</div>\n",
+            "block_bbox": [
+                1375,
+                477,
+                1545,
+                512
+            ],
+            "block_id": 13,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">Convection boundary conditions on the two surfaces of a plane wall.</div>\n",
+            "block_bbox": [
+                1113,
+                518,
+                1548,
+                589
+            ],
+            "block_id": 14,
+            "block_order": null
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1171_795_1556_1234.jpg\" alt=\"Image\" width=\"23%\" /></div>\n",
+            "block_bbox": [
+                1171,
+                795,
+                1556,
+                1234
+            ],
+            "block_id": 15,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–33</div>\n",
+            "block_bbox": [
+                1382,
+                1252,
+                1557,
+                1287
+            ],
+            "block_id": 16,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">The assumed direction of heat transfer at a boundary has no effect on the boundary condition expression.</div>\n",
+            "block_bbox": [
+                1091,
+                1290,
+                1560,
+                1400
+            ],
+            "block_id": 17,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9608756899833679,
+                "coordinate": [
+                    109.46945190429688,
+                    72.97000122070312,
+                    1058.417724609375,
+                    153.15309143066406
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.4445292353630066,
+                "coordinate": [
+                    1026.813720703125,
+                    81.36396789550781,
+                    1053.40771484375,
+                    113.66413879394531
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9605088829994202,
+                "coordinate": [
+                    408.92926025390625,
+                    173.18597412109375,
+                    759.5175170898438,
+                    245.525146484375
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9263461232185364,
+                "coordinate": [
+                    971.8802490234375,
+                    195.56491088867188,
+                    1053.473876953125,
+                    227.19973754882812
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9103997349739075,
+                "coordinate": [
+                    114.57252502441406,
+                    271.0280456542969,
+                    175.5955047607422,
+                    304.6911315917969
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9590620398521423,
+                "coordinate": [
+                    409.0124206542969,
+                    332.86212158203125,
+                    762.145751953125,
+                    404.23016357421875
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9254245758056641,
+                "coordinate": [
+                    971.0146484375,
+                    353.56170654296875,
+                    1052.2939453125,
+                    384.45330810546875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8848969340324402,
+                "coordinate": [
+                    200.41943359375,
+                    432.10382080078125,
+                    231.1221923828125,
+                    463.29962158203125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8788753151893616,
+                "coordinate": [
+                    286.77581787109375,
+                    434.8359375,
+                    315.94158935546875,
+                    466.21630859375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9779738783836365,
+                "coordinate": [
+                    113.8092041015625,
+                    428.46044921875,
+                    1054.98046875,
+                    535.3607177734375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8945602178573608,
+                "coordinate": [
+                    908.384033203125,
+                    431.8375549316406,
+                    948.96337890625,
+                    463.7938537597656
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8917320370674133,
+                "coordinate": [
+                    1008.8787841796875,
+                    433.64599609375,
+                    1049.8321533203125,
+                    466.0830078125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9887169599533081,
+                "coordinate": [
+                    110.80859375,
+                    534.2169189453125,
+                    1060.182373046875,
+                    929.6395263671875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9888827204704285,
+                "coordinate": [
+                    112.86956787109375,
+                    929.0728759765625,
+                    1061.553466796875,
+                    1323.2032470703125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6343869566917419,
+                "coordinate": [
+                    640.0158081054688,
+                    1323.588623046875,
+                    720.4082641601562,
+                    1356.366455078125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7140987515449524,
+                "coordinate": [
+                    782.02294921875,
+                    1323.010009765625,
+                    864.7490234375,
+                    1355.567626953125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.983234167098999,
+                "coordinate": [
+                    115.44329833984375,
+                    1322.044677734375,
+                    1059.411865234375,
+                    1505.244873046875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7532022595405579,
+                "coordinate": [
+                    611.2164306640625,
+                    1429.9185791015625,
+                    685.3089599609375,
+                    1464.5614013671875
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9429436922073364,
+                "coordinate": [
+                    147.450927734375,
+                    1573.71826171875,
+                    1006.712158203125,
+                    1613.7607421875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9321269989013672,
+                "coordinate": [
+                    181.32540893554688,
+                    1668.051513671875,
+                    323.5053405761719,
+                    1699.761474609375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5182130932807922,
+                "coordinate": [
+                    186.31423950195312,
+                    1765.25537109375,
+                    280.7781066894531,
+                    1799.03955078125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8655484318733215,
+                "coordinate": [
+                    805.0659790039062,
+                    1662.4775390625,
+                    883.4210815429688,
+                    1693.08447265625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9799162149429321,
+                "coordinate": [
+                    138.06494140625,
+                    1630.392822265625,
+                    1038.4561767578125,
+                    1837.796875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.857075035572052,
+                "coordinate": [
+                    982.2552490234375,
+                    1665.6170654296875,
+                    1033.0970458984375,
+                    1693.3284912109375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.540532648563385,
+                "coordinate": [
+                    987.634765625,
+                    1729.6396484375,
+                    1032.262939453125,
+                    1757.16162109375
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.8897537589073181,
+                "coordinate": [
+                    1086.7613525390625,
+                    2.1667022705078125,
+                    1545.3890380859375,
+                    462.37579345703125
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.5654413104057312,
+                "coordinate": [
+                    1375.6097412109375,
+                    477.22412109375,
+                    1545.8463134765625,
+                    512.2078857421875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.7101863622665405,
+                "coordinate": [
+                    1113.0406494140625,
+                    518.5738525390625,
+                    1548.5721435546875,
+                    589.7550048828125
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9497631192207336,
+                "coordinate": [
+                    1171.964111328125,
+                    795.5343017578125,
+                    1556.839111328125,
+                    1234.3475341796875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.6137484312057495,
+                "coordinate": [
+                    1382.728759765625,
+                    1252.6746826171875,
+                    1557.071044921875,
+                    1287.8660888671875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.7541186809539795,
+                "coordinate": [
+                    1091.031005859375,
+                    1290.630615234375,
+                    1560.584716796875,
+                    1400.858642578125
+                ]
+            }
+        ]
+    }
+}

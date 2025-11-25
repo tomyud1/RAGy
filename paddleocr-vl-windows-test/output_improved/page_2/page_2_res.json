@@ -1,0 +1,473 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_2.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "HEAT CONDUCTION EQUATION",
+            "block_bbox": [
+                116,
+                10,
+                482,
+                55
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_0_710_428_1046.jpg\" alt=\"Image\" width=\"26%\" /></div>\n",
+            "block_bbox": [
+                0,
+                710,
+                428,
+                1046
+            ],
+            "block_id": 1,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–18  chematic for Example 2–3.</div>\n",
+            "block_bbox": [
+                0,
+                1062,
+                378,
+                1152
+            ],
+            "block_id": 2,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "The thermal conductivity is given to be constant, and there is no heat generation in the medium (within the bottom section of the pan). Therefore, the differential equation governing the variation of temperature in the bottom section of the pan in this case is simply Eq. 2–17,",
+            "block_bbox": [
+                589,
+                100,
+                1543,
+                236
+            ],
+            "block_id": 3,
+            "block_order": 1
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{d^{2}T}{dx^{2}}=0 $$ ",
+            "block_bbox": [
+                1004,
+                249,
+                1120,
+                322
+            ],
+            "block_id": 4,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "which is the steady one-dimensional heat conduction equation in rectangular coordinates under the conditions of constant thermal conductivity and no heat generation.",
+            "block_bbox": [
+                578,
+                343,
+                1536,
+                443
+            ],
+            "block_id": 5,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "Discussion Note that the conditions at the surface of the medium have no effect on the differential equation.",
+            "block_bbox": [
+                578,
+                442,
+                1533,
+                512
+            ],
+            "block_id": 6,
+            "block_order": 4
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## EXAMPLE 2–3 Heat Conduction in a Resistance Heater",
+            "block_bbox": [
+                568,
+                715,
+                1384,
+                762
+            ],
+            "block_id": 7,
+            "block_order": 5
+        },
+        {
+            "block_label": "text",
+            "block_content": "A 2-kW resistance heater wire with thermal conductivity  $ k = 15 \\, W/m \\cdot K $ , diameter D = 0.4 cm, and length L = 50 cm is used to boil water by immersing it in water (Fig. 2–18). Assuming the variation of the thermal conductivity of the wire with temperature to be negligible, obtain the differential equation that describes the variation of the temperature in the wire during steady operation.",
+            "block_bbox": [
+                562,
+                775,
+                1522,
+                953
+            ],
+            "block_id": 8,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "SOLUTION The resistance wire of a water heater is considered. The differential equation for the variation of temperature in the wire is to be obtained.",
+            "block_bbox": [
+                557,
+                980,
+                1519,
+                1057
+            ],
+            "block_id": 9,
+            "block_order": 7
+        },
+        {
+            "block_label": "text",
+            "block_content": "Analysis The resistance wire can be considered to be a very long cylinder since its length is more than 100 times its diameter. Also, heat is generated uniformly in the wire and the conditions on the outer surface of the wire are uniform. Therefore, it is reasonable to expect the temperature in the wire to vary in the radial r direction only and thus the heat transfer to be one-dimensional. Then we have  $ T = T(r) $  during steady operation since the temperature in this case depends on r only.",
+            "block_bbox": [
+                553,
+                1057,
+                1521,
+                1294
+            ],
+            "block_id": 10,
+            "block_order": 8
+        },
+        {
+            "block_label": "text",
+            "block_content": "The rate of heat generation in the wire per unit volume can be determined from",
+            "block_bbox": [
+                551,
+                1295,
+                1519,
+                1363
+            ],
+            "block_id": 11,
+            "block_order": 9
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\dot{e}_{gen}=\\frac{\\dot{E}_{gen}}{V_{wire}}=\\frac{\\dot{E}_{gen}}{(\\pi D^{2}/4)L}=\\frac{2000W}{[\\pi(0.004m)^{2}/4](0.5m)}=0.318\\times10^{9}W/m^{3} $$ ",
+            "block_bbox": [
+                586,
+                1376,
+                1480,
+                1469
+            ],
+            "block_id": 12,
+            "block_order": 10
+        },
+        {
+            "block_label": "text",
+            "block_content": "Noting that the thermal conductivity is given to be constant, the differential equation that governs the variation of temperature in the wire is simply Eq. 2–27,",
+            "block_bbox": [
+                549,
+                1487,
+                1516,
+                1590
+            ],
+            "block_id": 13,
+            "block_order": 11
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{1}{r}\\frac{d}{d r}\\bigg(r\\frac{d T}{d r}\\bigg)+\\frac{\\dot{e}_{\\mathrm{g e n}}}{k}=0 $$ ",
+            "block_bbox": [
+                875,
+                1615,
+                1182,
+                1696
+            ],
+            "block_id": 14,
+            "block_order": 12
+        },
+        {
+            "block_label": "text",
+            "block_content": "which is the steady one-dimensional heat conduction equation in cylindrical coordinates for the case of constant thermal conductivity.",
+            "block_bbox": [
+                550,
+                1717,
+                1509,
+                1786
+            ],
+            "block_id": 15,
+            "block_order": 13
+        },
+        {
+            "block_label": "text",
+            "block_content": "Discussion Note again that the conditions at the surface of the wire have no effect on the differential equation.",
+            "block_bbox": [
+                552,
+                1786,
+                1510,
+                1852
+            ],
+            "block_id": 16,
+            "block_order": 14
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.7691018581390381,
+                "coordinate": [
+                    116.39833068847656,
+                    10.557689666748047,
+                    482.05023193359375,
+                    55.804752349853516
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9694696068763733,
+                "coordinate": [
+                    0,
+                    710.732666015625,
+                    428.1781005859375,
+                    1046.716552734375
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.5907900333404541,
+                "coordinate": [
+                    0,
+                    1062.99951171875,
+                    378.2561340332031,
+                    1152.4697265625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.5217995643615723,
+                "coordinate": [
+                    0,
+                    1106.660400390625,
+                    377.0968322753906,
+                    1151.110595703125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9827354550361633,
+                "coordinate": [
+                    589.4218139648438,
+                    100.13617706298828,
+                    1543.73486328125,
+                    236.9716796875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.954217791557312,
+                "coordinate": [
+                    1004.4447021484375,
+                    249.56243896484375,
+                    1120.3936767578125,
+                    322.3663330078125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9785711169242859,
+                "coordinate": [
+                    578.7962646484375,
+                    343.3466491699219,
+                    1536.6793212890625,
+                    443.6468200683594
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9671468138694763,
+                "coordinate": [
+                    578.0549926757812,
+                    442.817626953125,
+                    1533.733154296875,
+                    512.7413330078125
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9497190117835999,
+                "coordinate": [
+                    568.6949462890625,
+                    715.585693359375,
+                    1384.3575439453125,
+                    762.4588623046875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.4582476317882538,
+                "coordinate": [
+                    626.40478515625,
+                    806.8968505859375,
+                    737.210205078125,
+                    837.7008056640625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.41404294967651367,
+                "coordinate": [
+                    940.861083984375,
+                    812.583740234375,
+                    1036.67138671875,
+                    844.049560546875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9801822900772095,
+                "coordinate": [
+                    562.073486328125,
+                    775.7310791015625,
+                    1522.483642578125,
+                    953.1737060546875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.4248753488063812,
+                "coordinate": [
+                    1250.9873046875,
+                    784.138427734375,
+                    1433.057861328125,
+                    816.273193359375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9597712755203247,
+                "coordinate": [
+                    557.8770751953125,
+                    980.605712890625,
+                    1519.5821533203125,
+                    1057.70654296875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9796316027641296,
+                "coordinate": [
+                    553.2673950195312,
+                    1057.1116943359375,
+                    1521.781982421875,
+                    1294.3673095703125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.44391337037086487,
+                "coordinate": [
+                    739.8990478515625,
+                    1222.0673828125,
+                    847.3980712890625,
+                    1256.43359375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9716010093688965,
+                "coordinate": [
+                    551.426513671875,
+                    1295.696044921875,
+                    1519.21533203125,
+                    1363.643798828125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9657473564147949,
+                "coordinate": [
+                    586.8397216796875,
+                    1376.6103515625,
+                    1480.4305419921875,
+                    1469.37841796875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9765346050262451,
+                "coordinate": [
+                    549.1524047851562,
+                    1487.8681640625,
+                    1516.626953125,
+                    1590.16943359375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9624261260032654,
+                "coordinate": [
+                    875.484619140625,
+                    1615.1719970703125,
+                    1182.892333984375,
+                    1696.9842529296875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9709241390228271,
+                "coordinate": [
+                    550.2139892578125,
+                    1717.5869140625,
+                    1509.4229736328125,
+                    1786.21337890625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9662523865699768,
+                "coordinate": [
+                    552.7120361328125,
+                    1786.276123046875,
+                    1510.7611083984375,
+                    1852.543212890625
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,392 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_15.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "Analysis We take the direction normal to the wall surfaces as the x-axis with the origin at the inner surface of the wall, as shown in Fig. 2–38. The heat transfer through the wall is given to be steady and one-dimensional, and thus the temperature depends on x only and not on time. That is,  $  T = T(x)  $ .",
+            "block_bbox": [
+                103,
+                105,
+                1037,
+                249
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "The boundary condition on the inner surface of the wall at x = 0 is a typical convection condition since it does not involve any radiation or specified heat flux. Taking the direction of heat transfer to be the positive x-direction, the boundary condition on the inner surface can be expressed as",
+            "block_bbox": [
+                111,
+                249,
+                1034,
+                398
+            ],
+            "block_id": 1,
+            "block_order": 2
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ -k\\frac{d T(0)}{d x}=h_{1}[T_{\\infty1}-T(0)] $$ ",
+            "block_bbox": [
+                414,
+                402,
+                725,
+                469
+            ],
+            "block_id": 2,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "The boundary condition on the outer surface at x = 0 is quite general as it involves conduction, convection, radiation, and specified heat flux. Again taking the direction of heat transfer to be the positive x-direction, the boundary condition on the outer surface can be expressed as",
+            "block_bbox": [
+                122,
+                473,
+                1028,
+                611
+            ],
+            "block_id": 3,
+            "block_order": 4
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ -k\\frac{d T(L)}{d x}=h_{2}[T(L)-T_{\\infty2}]+\\varepsilon_{2}\\sigma[T(L)^{4}-T_{\\mathrm{s k y}}^{4}]-\\alpha\\dot{q}_{\\mathrm{s o l a r}} $$ ",
+            "block_bbox": [
+                253,
+                621,
+                905,
+                692
+            ],
+            "block_id": 4,
+            "block_order": 5
+        },
+        {
+            "block_label": "text",
+            "block_content": "where  $ \\dot{q}_{solar} $  is the incident solar heat flux.",
+            "block_bbox": [
+                129,
+                694,
+                606,
+                732
+            ],
+            "block_id": 5,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "Discussion Assuming the opposite direction for heat transfer would give the same result multiplied by -1, which is equivalent to the relation here. All the quantities in these relations are known except the temperatures and their derivatives at the two boundaries.",
+            "block_bbox": [
+                130,
+                723,
+                1032,
+                861
+            ],
+            "block_id": 6,
+            "block_order": 7
+        },
+        {
+            "block_label": "text",
+            "block_content": "Note that a heat transfer problem may involve different kinds of boundary conditions on different surfaces. For example, a plate may be subject to heat flux on one surface while losing or gaining heat by convection from the other surface. Also, the two boundary conditions in a direction may be specified at the same boundary, while no condition is imposed on the other boundary. For example, specifying the temperature and heat flux at x = 0 of a plate of thickness L will result in a unique solution for the one-dimensional steady temperature distribution in the plate, including the value of temperature at the surface x = L. Although not necessary, there is nothing wrong with specifying more than two boundary conditions in a specified direction, provided that there is no contradiction. The extra conditions in this case can be used to verify the results.",
+            "block_bbox": [
+                106,
+                976,
+                1056,
+                1394
+            ],
+            "block_id": 7,
+            "block_order": 8
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## 2 –5 SOLUTION OF STEADY ONE-DIMENSIONAL HEAT CONDUCTION PROBLEMS",
+            "block_bbox": [
+                113,
+                1427,
+                970,
+                1520
+            ],
+            "block_id": 8,
+            "block_order": 9
+        },
+        {
+            "block_label": "text",
+            "block_content": "So far we have derived the differential equations for heat conduction in various coordinate systems and discussed the possible boundary conditions. A heat conduction problem can be formulated by specifying the applicable differential equation and a set of proper boundary conditions.",
+            "block_bbox": [
+                113,
+                1533,
+                1049,
+                1673
+            ],
+            "block_id": 9,
+            "block_order": 10
+        },
+        {
+            "block_label": "text",
+            "block_content": "In this section we will solve a wide range of heat conduction problems in rectangular, cylindrical, and spherical geometries. We will limit our attention to problems that result in ordinary differential equations such as the steady one-dimensional heat conduction problems. We will also assume constant thermal conductivity, but will consider variable conductivity later in this",
+            "block_bbox": [
+                112,
+                1670,
+                1050,
+                1845
+            ],
+            "block_id": 10,
+            "block_order": 11
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1075_0_1575_731.jpg\" alt=\"Image\" width=\"31%\" /></div>\n",
+            "block_bbox": [
+                1075,
+                0,
+                1575,
+                731
+            ],
+            "block_id": 11,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">Schematic for Example 2–9.</div>\n",
+            "block_bbox": [
+                1201,
+                785,
+                1569,
+                826
+            ],
+            "block_id": 12,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9835143089294434,
+                "coordinate": [
+                    103.4632568359375,
+                    105.98362731933594,
+                    1037.51904296875,
+                    249.3092803955078
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5251596570014954,
+                "coordinate": [
+                    826.23486328125,
+                    214.54986572265625,
+                    930.2938232421875,
+                    244.66070556640625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5349248051643372,
+                "coordinate": [
+                    823.2218627929688,
+                    251.54376220703125,
+                    894.7693481445312,
+                    279.9100341796875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.982368528842926,
+                "coordinate": [
+                    111.50729370117188,
+                    249.0803985595703,
+                    1034.0614013671875,
+                    398.65570068359375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9541583061218262,
+                "coordinate": [
+                    414.40167236328125,
+                    402.47808837890625,
+                    725.7434692382812,
+                    469.96636962890625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9801508188247681,
+                "coordinate": [
+                    122.17599487304688,
+                    473.7213134765625,
+                    1028.5006103515625,
+                    611.4493408203125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5240897536277771,
+                "coordinate": [
+                    696.191650390625,
+                    475.9908447265625,
+                    771.47216796875,
+                    504.36114501953125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9640421271324158,
+                "coordinate": [
+                    253.18267822265625,
+                    621.567626953125,
+                    905.1371459960938,
+                    692.8870849609375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8602361083030701,
+                "coordinate": [
+                    213.74563598632812,
+                    699.5989990234375,
+                    268.7495422363281,
+                    734.4910888671875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8214824199676514,
+                "coordinate": [
+                    129.67738342285156,
+                    694.8717041015625,
+                    606.8243408203125,
+                    732.6156005859375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9581981301307678,
+                "coordinate": [
+                    130.8680419921875,
+                    723.2767333984375,
+                    1032.0025634765625,
+                    861.73681640625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5246514678001404,
+                "coordinate": [
+                    115.42999267578125,
+                    1254.871337890625,
+                    195.65744018554688,
+                    1284.66259765625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9886964559555054,
+                "coordinate": [
+                    106.8399658203125,
+                    976.3253173828125,
+                    1056.634521484375,
+                    1394.3831787109375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.537741482257843,
+                "coordinate": [
+                    739.686767578125,
+                    1151.150146484375,
+                    813.852783203125,
+                    1179.853271484375
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9719443917274475,
+                "coordinate": [
+                    113.85671997070312,
+                    1427.674072265625,
+                    970.99365234375,
+                    1520.622314453125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9839497208595276,
+                "coordinate": [
+                    113.65670776367188,
+                    1533.5177001953125,
+                    1049.5579833984375,
+                    1673.6697998046875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9861102104187012,
+                "coordinate": [
+                    112.42147827148438,
+                    1670.989501953125,
+                    1050.300048828125,
+                    1845.141357421875
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.828558087348938,
+                "coordinate": [
+                    1075.3746337890625,
+                    0.1412353515625,
+                    1575.0272216796875,
+                    731.0383911132812
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.7274845242500305,
+                "coordinate": [
+                    1201.832763671875,
+                    785.4478149414062,
+                    1569.201416015625,
+                    826.9036254882812
+                ]
+            }
+        ]
+    }
+}

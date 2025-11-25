@@ -1,0 +1,717 @@
+{
+    "input_path": "conversions/paddleocr/file8973/pages/page_3.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "—Thomas B. Macaulay\n\nnever would be found out.",
+            "block_bbox": [
+                130,
+                313,
+                450,
+                350
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                134,
+                366,
+                476,
+                403
+            ],
+            "block_id": 1,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "The measure of a man's character is what he would do if he knew the",
+            "block_bbox": [
+                132,
+                397,
+                1012,
+                454
+            ],
+            "block_id": 2,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "—Ralph W. Emerson\n\nThe true test of civilization is, not the census, nor the size of the cities,\n\nnot the corps, but the kind of man that the country turns out.",
+            "block_bbox": [
+                132,
+                491,
+                410,
+                523
+            ],
+            "block_id": 3,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                133,
+                522,
+                907,
+                568
+            ],
+            "block_id": 4,
+            "block_order": 5
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                133,
+                566,
+                1039,
+                618
+            ],
+            "block_id": 5,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "—Said Nuri",
+            "block_bbox": [
+                131,
+                653,
+                305,
+                684
+            ],
+            "block_id": 6,
+            "block_order": 7
+        },
+        {
+            "block_label": "text",
+            "block_content": "Politics with revolves around benefit is savagery.",
+            "block_bbox": [
+                135,
+                690,
+                762,
+                726
+            ],
+            "block_id": 7,
+            "block_order": 8
+        },
+        {
+            "block_label": "text",
+            "block_content": "—Theodore Roosevelt",
+            "block_bbox": [
+                134,
+                764,
+                437,
+                793
+            ],
+            "block_id": 8,
+            "block_order": 9
+        },
+        {
+            "block_label": "text",
+            "block_content": "to society.",
+            "block_bbox": [
+                137,
+                809,
+                275,
+                840
+            ],
+            "block_id": 9,
+            "block_order": 10
+        },
+        {
+            "block_label": "text",
+            "block_content": "To educate a man in mind and not in morals is to educate a memace",
+            "block_bbox": [
+                136,
+                852,
+                1002,
+                885
+            ],
+            "block_id": 10,
+            "block_order": 11
+        },
+        {
+            "block_label": "text",
+            "block_content": "—Martin Lunder King, Jr",
+            "block_bbox": [
+                135,
+                923,
+                460,
+                955
+            ],
+            "block_id": 11,
+            "block_order": 12
+        },
+        {
+            "block_label": "text",
+            "block_content": "take it because one's conscience tells one that it is right.",
+            "block_bbox": [
+                137,
+                966,
+                861,
+                999
+            ],
+            "block_id": 12,
+            "block_order": 13
+        },
+        {
+            "block_label": "text",
+            "block_content": "take a position that is neither safe, nor politic, nor popular but one must",
+            "block_bbox": [
+                136,
+                1015,
+                1058,
+                1049
+            ],
+            "block_id": 13,
+            "block_order": 14
+        },
+        {
+            "block_label": "text",
+            "block_content": "asks the question, is it right, And there comes a time when one must",
+            "block_bbox": [
+                136,
+                1065,
+                1040,
+                1098
+            ],
+            "block_id": 14,
+            "block_order": 15
+        },
+        {
+            "block_label": "text",
+            "block_content": ", is it politic, Variety asks the question, is it popular, but, conscience",
+            "block_bbox": [
+                136,
+                1114,
+                1037,
+                1149
+            ],
+            "block_id": 15,
+            "block_order": 16
+        },
+        {
+            "block_label": "text",
+            "block_content": "Conwardice asks the question, is it safe? Expediently asks the question,",
+            "block_bbox": [
+                138,
+                1162,
+                1050,
+                1197
+            ],
+            "block_id": 16,
+            "block_order": 17
+        },
+        {
+            "block_label": "text",
+            "block_content": "—Albert Einstein",
+            "block_bbox": [
+                135,
+                1230,
+                366,
+                1261
+            ],
+            "block_id": 17,
+            "block_order": 18
+        },
+        {
+            "block_label": "text",
+            "block_content": "all technical effort. Never forget it among your diagrams and equations.",
+            "block_bbox": [
+                136,
+                1275,
+                1048,
+                1314
+            ],
+            "block_id": 18,
+            "block_order": 19
+        },
+        {
+            "block_label": "text",
+            "block_content": "The concern for man and his destiny must always be the chief interest of",
+            "block_bbox": [
+                132,
+                1327,
+                1060,
+                1366
+            ],
+            "block_id": 19,
+            "block_order": 20
+        },
+        {
+            "block_label": "text",
+            "block_content": "—Manny Hall",
+            "block_bbox": [
+                134,
+                1393,
+                314,
+                1425
+            ],
+            "block_id": 20,
+            "block_order": 21
+        },
+        {
+            "block_label": "text",
+            "block_content": "A man without ethics is a wild beast loosed upon this world.",
+            "block_bbox": [
+                138,
+                1442,
+                906,
+                1477
+            ],
+            "block_id": 21,
+            "block_order": 22
+        },
+        {
+            "block_label": "text",
+            "block_content": "—Laura Schleissinger",
+            "block_bbox": [
+                135,
+                1508,
+                434,
+                1545
+            ],
+            "block_id": 22,
+            "block_order": 23
+        },
+        {
+            "block_label": "text",
+            "block_content": "doen't mean it's right to do it.",
+            "block_bbox": [
+                137,
+                1558,
+                548,
+                1593
+            ],
+            "block_id": 23,
+            "block_order": 24
+        },
+        {
+            "block_label": "text",
+            "block_content": "Because you're able to do it and because you have the right to do it",
+            "block_bbox": [
+                134,
+                1608,
+                991,
+                1646
+            ],
+            "block_id": 24,
+            "block_order": 25
+        },
+        {
+            "block_label": "text",
+            "block_content": "—Jacques Cousteau",
+            "block_bbox": [
+                133,
+                1676,
+                425,
+                1708
+            ],
+            "block_id": 25,
+            "block_order": 26
+        },
+        {
+            "block_label": "text",
+            "block_content": "on a big machinery and nobody is driving the machinery. And it's going faster and faster, but we don't know whether.",
+            "block_bbox": [
+                135,
+                1723,
+                690,
+                1756
+            ],
+            "block_id": 26,
+            "block_order": 27
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                132,
+                1766,
+                1031,
+                1815
+            ],
+            "block_id": 27,
+            "block_order": 28
+        },
+        {
+            "block_label": "text",
+            "block_content": "Without ethics, everything happens as if we were all five billion passengers",
+            "block_bbox": [
+                133,
+                1813,
+                1061,
+                1868
+            ],
+            "block_id": 28,
+            "block_order": 29
+        },
+        {
+            "block_label": "footer",
+            "block_content": "ouches on Ethis",
+            "block_bbox": [
+                802,
+                1890,
+                1060,
+                1930
+            ],
+            "block_id": 29,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 180
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8393335938453674,
+                "coordinate": [
+                    130.52532958984375,
+                    313.3810729980469,
+                    450.12945556640625,
+                    350.5242614746094
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8387063145637512,
+                "coordinate": [
+                    134.46466064453125,
+                    366.99639892578125,
+                    476.25494384765625,
+                    403.28436279296875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8801512718200684,
+                "coordinate": [
+                    132.7718505859375,
+                    397.83221435546875,
+                    1012.0374755859375,
+                    454.9251708984375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8525846004486084,
+                "coordinate": [
+                    132.09234619140625,
+                    491.19036865234375,
+                    410.50531005859375,
+                    523.2044067382812
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8560106158256531,
+                "coordinate": [
+                    133.69046020507812,
+                    522.6328125,
+                    907.534912109375,
+                    568.142822265625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8787474036216736,
+                "coordinate": [
+                    133.687255859375,
+                    566.3688354492188,
+                    1039.74658203125,
+                    618.5901489257812
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8306996822357178,
+                "coordinate": [
+                    131.70565795898438,
+                    653.8929443359375,
+                    305.55126953125,
+                    684.239013671875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8622034788131714,
+                "coordinate": [
+                    135.41168212890625,
+                    690.916259765625,
+                    762.301025390625,
+                    726.0157470703125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8868491649627686,
+                "coordinate": [
+                    134.14617919921875,
+                    764.0222778320312,
+                    437.42376708984375,
+                    793.7433471679688
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8834579586982727,
+                "coordinate": [
+                    137.87844848632812,
+                    809.4888305664062,
+                    275.4770202636719,
+                    840.1194458007812
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8938779234886169,
+                "coordinate": [
+                    136.50897216796875,
+                    852.4774169921875,
+                    1002.2472534179688,
+                    885.8948974609375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8822802901268005,
+                "coordinate": [
+                    135.62615966796875,
+                    923.620849609375,
+                    460.12579345703125,
+                    955.666259765625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8891859650611877,
+                "coordinate": [
+                    137.949951171875,
+                    966.7728271484375,
+                    861.1424560546875,
+                    999.4564208984375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8541846871376038,
+                "coordinate": [
+                    136.1634521484375,
+                    1015.3302001953125,
+                    1058.3311767578125,
+                    1049.1475830078125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8071310520172119,
+                "coordinate": [
+                    136.6268310546875,
+                    1065.7861328125,
+                    1040.572265625,
+                    1098.7177734375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7606373429298401,
+                "coordinate": [
+                    136.59579467773438,
+                    1114.799560546875,
+                    1037.6143798828125,
+                    1149.916748046875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7040448188781738,
+                "coordinate": [
+                    138.066162109375,
+                    1162.472900390625,
+                    1050.6146240234375,
+                    1197.742919921875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8964513540267944,
+                "coordinate": [
+                    135.62820434570312,
+                    1230.658203125,
+                    366.162109375,
+                    1261.64892578125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8092488646507263,
+                "coordinate": [
+                    136.63919067382812,
+                    1275.947509765625,
+                    1048.506591796875,
+                    1314.720458984375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7880892753601074,
+                "coordinate": [
+                    132.58712768554688,
+                    1327.042724609375,
+                    1060.84912109375,
+                    1366.180908203125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8945080637931824,
+                "coordinate": [
+                    134.5948486328125,
+                    1393.526611328125,
+                    314.39849853515625,
+                    1425.883056640625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9161809682846069,
+                "coordinate": [
+                    138.37982177734375,
+                    1442.886962890625,
+                    906.8628540039062,
+                    1477.327880859375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9040136933326721,
+                "coordinate": [
+                    135.66217041015625,
+                    1508.0283203125,
+                    434.15582275390625,
+                    1545.833984375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8872872591018677,
+                "coordinate": [
+                    137.21875,
+                    1558.6181640625,
+                    548.994873046875,
+                    1593.147705078125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.90456622838974,
+                "coordinate": [
+                    134.09954833984375,
+                    1608.5775146484375,
+                    991.9705200195312,
+                    1646.9444580078125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8903013467788696,
+                "coordinate": [
+                    133.42745971679688,
+                    1676.2216796875,
+                    425.5450744628906,
+                    1708.7255859375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8309839963912964,
+                "coordinate": [
+                    135.0933837890625,
+                    1723.098388671875,
+                    690.8521728515625,
+                    1756.364013671875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7723642587661743,
+                "coordinate": [
+                    132.9239501953125,
+                    1766.363037109375,
+                    1031.0570068359375,
+                    1815.107666015625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6719040274620056,
+                "coordinate": [
+                    133.44711303710938,
+                    1813.70947265625,
+                    1061.8892822265625,
+                    1868.82470703125
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.7856777906417847,
+                "coordinate": [
+                    802.509765625,
+                    1890.4476318359375,
+                    1060.33740234375,
+                    1930.3612060546875
+                ]
+            }
+        ]
+    }
+}

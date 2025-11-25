@@ -66,30 +66,14 @@ router.post('/message', async (req, res) => {
   try {
     const { projectId, threadId, message, model, vectorDbId } = req.body;
 
-    if (!projectId || !threadId || !message || !model || !vectorDbId) {
+    if (!projectId || !threadId || !message || !model) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
-    // 1. Generate semantic query from user input
-    const query = await aiService.generateQueryFromInput(message);
+    // No automatic querying - just chat naturally
+    const context = [];
 
-    // 2. Query the vector database
-    const ragResults = await RAGService.querySingleVectorDb(
-      projectId,
-      vectorDbId,
-      query,
-      5, // topK
-      0.55 // minSimilarity
-    );
-
-    // 3. Prepare context from RAG results
-    const context = ragResults.documents.map(doc => ({
-      text: doc.text,
-      source: doc.metadata?.source || 'Unknown',
-      similarity: doc.similarity,
-    }));
-
-    // 4. Generate AI response using context
+    // Generate AI response
     const aiResponse = await aiService.generateResponse(message, context, model);
 
     // 5. Save user message
@@ -141,43 +125,11 @@ router.post('/message/stream', async (req, res) => {
     res.setHeader('Cache-Control', 'no-cache');
     res.setHeader('Connection', 'keep-alive');
 
-    let context = [];
+    // No automatic querying - just chat naturally
+    const context = [];
+    res.write(`data: ${JSON.stringify({ type: 'context', context: [] })}\n\n`);
 
-    // Only query vector database if vectorDbId is provided
-    if (vectorDbId) {
-      try {
-        // 1. Generate semantic query from user input
-        const query = await aiService.generateQueryFromInput(message);
-
-        // 2. Query the vector database
-        const ragResults = await RAGService.querySingleVectorDb(
-          projectId,
-          vectorDbId,
-          query,
-          5, // topK
-          0.55 // minSimilarity
-        );
-
-        // 3. Prepare context from RAG results
-        context = ragResults.documents.map(doc => ({
-          text: doc.text,
-          source: doc.metadata?.source || 'Unknown',
-          similarity: doc.similarity,
-        }));
-
-        // Send context
-        res.write(`data: ${JSON.stringify({ type: 'context', context })}\n\n`);
-      } catch (error) {
-        console.error('Failed to query vector database:', error);
-        // Continue without context if vector DB query fails
-        res.write(`data: ${JSON.stringify({ type: 'context', context: [] })}\n\n`);
-      }
-    } else {
-      // No vector database, send empty context
-      res.write(`data: ${JSON.stringify({ type: 'context', context: [] })}\n\n`);
-    }
-
-    // 4. Stream AI response
+    // Stream AI response
     let fullResponse = '';
 
     await aiService.generateResponseStream(

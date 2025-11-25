@@ -1,0 +1,119 @@
+{
+    "input_path": "/Users/tomeryud/projects/RAGy/paddleocr_vl_output/page_1.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": false
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "Fifth Edition",
+            "block_bbox": [
+                12,
+                0,
+                217,
+                39
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "doc_title",
+            "block_content": "Heat and Mass Transfer",
+            "block_bbox": [
+                0,
+                139,
+                792,
+                367
+            ],
+            "block_id": 1,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "Fundamentals & Applications",
+            "block_bbox": [
+                6,
+                407,
+                386,
+                524
+            ],
+            "block_id": 2,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "Yunus A. Çengel\nAfshin J. Ghajar",
+            "block_bbox": [
+                36,
+                877,
+                339,
+                975
+            ],
+            "block_id": 3,
+            "block_order": 3
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.6205167174339294,
+                "coordinate": [
+                    12.385704040527344,
+                    0.11418724060058594,
+                    217.50930786132812,
+                    39.106971740722656
+                ]
+            },
+            {
+                "cls_id": 6,
+                "label": "doc_title",
+                "score": 0.5991846323013306,
+                "coordinate": [
+                    0.269561767578125,
+                    139.91806030273438,
+                    792.873779296875,
+                    367.1231384277344
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9290904402732849,
+                "coordinate": [
+                    6.499969482421875,
+                    407.67462158203125,
+                    386.69769287109375,
+                    524.2034301757812
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9215060472488403,
+                "coordinate": [
+                    36.78736877441406,
+                    877.7723999023438,
+                    339.625244140625,
+                    975.9961547851562
+                ]
+            }
+        ]
+    }
+}

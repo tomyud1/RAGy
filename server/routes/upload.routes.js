@@ -115,27 +115,44 @@ router.delete('/:fileId', async (req, res) => {
   try {
     const { fileId } = req.params;
     const { projectId } = req.query;
-    
+
     if (!projectId) {
-      return res.status(400).json({ 
+      return res.status(400).json({
         success: false,
-        error: 'Project ID is required' 
+        error: 'Project ID is required'
       });
     }
-    
+
+    // Don't allow deleting hidden files/directories (internal processing artifacts)
+    if (fileId.startsWith('.')) {
+      return res.status(400).json({
+        success: false,
+        error: 'Cannot delete internal processing files. Please contact support if you need to clean up.'
+      });
+    }
+
     // Get the file path
     const filePath = path.join(ProjectService.getRawFilesPath(projectId), fileId);
-    
-    // Delete the file
-    await fs.unlink(filePath);
-    
-    console.log(`Deleted file ${fileId} from project ${projectId}`);
+
+    // Check if it's a file or directory
+    const stats = await fs.stat(filePath);
+
+    if (stats.isDirectory()) {
+      // Recursive directory deletion
+      await fs.rm(filePath, { recursive: true, force: true });
+      console.log(`Deleted directory ${fileId} from project ${projectId}`);
+    } else {
+      // Regular file deletion
+      await fs.unlink(filePath);
+      console.log(`Deleted file ${fileId} from project ${projectId}`);
+    }
+
     res.json({ success: true });
   } catch (error) {
     console.error('Delete failed:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       success: false,
-      error: error.message || 'Delete failed' 
+      error: error.message || 'Delete failed'
     });
   }
 });

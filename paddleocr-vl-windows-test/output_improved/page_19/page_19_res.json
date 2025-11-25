@@ -1,0 +1,518 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_19.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "CHAPTER 2",
+            "block_bbox": [
+                1247,
+                0,
+                1393,
+                31
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "chart",
+            "block_content": "<table border=1 style='margin: auto; width: max-content;'>\n  <thead><tr><th style='text-align: center;'>Feature</th><th style='text-align: center;'>Description</th></tr></thead>\n  <tbody>\n    <tr><td style='text-align: center;'>T (x)</td><td style='text-align: center;'>The level of the plane wall</td></tr>\n    <tr><td style='text-align: center;'>L</td><td style='text-align: center;'>The length of the plane wall</td></tr>\n    <tr><td style='text-align: center;'>L (at x=0)</td><td style='text-align: center;'>The level of the plane wall</td></tr>\n    <tr><td style='text-align: center;'>40 W/cm²</td><td style='text-align: center;'>The level of the plane wall</td></tr>\n    <tr><td style='text-align: center;'>15°C</td><td style='text-align: center;'>The level of the plane wall</td></tr>\n    <tr><td style='text-align: center;'>40 W/cm²</td><td style='text-align: center;'>The level of the plane wall</td></tr>\n    <tr><td style='text-align: center;'>15°C</td><td style='text-align: center;'>The level of the plane wall</td></tr>\n  </tbody>\n</table>",
+            "block_bbox": [
+                198,
+                56,
+                610,
+                457
+            ],
+            "block_id": 1,
+            "block_order": null
+        },
+        {
+            "block_label": "chart",
+            "block_content": "<table border=1 style='margin: auto; width: max-content;'>\n  <thead><tr><th style='text-align: center;'>Feature</th><th style='text-align: center;'>Description</th></tr></thead>\n  <tbody>\n    <tr><td style='text-align: center;'>Top Surface</td><td style='text-align: center;'>Plane wall</td></tr>\n    <tr><td style='text-align: center;'>Bottom Surface</td><td style='text-align: center;'>T(x)</td></tr>\n    <tr><td style='text-align: center;'>Top Surface</td><td style='text-align: center;'>L</td></tr>\n    <tr><td style='text-align: center;'>Bottom Surface</td><td style='text-align: center;'>L</td></tr>\n    <tr><td style='text-align: center;'>Top Surface</td><td style='text-align: center;'>40 W/cm²</td></tr>\n    <tr><td style='text-align: center;'>Bottom Surface</td><td style='text-align: center;'>40 W/cm²</td></tr>\n    <tr><td style='text-align: center;'>Top Surface</td><td style='text-align: center;'>25 W/cm²</td></tr>\n    <tr><td style='text-align: center;'>Bottom Surface</td><td style='text-align: center;'>25 W/cm²</td></tr>\n    <tr><td style='text-align: center;'>Top Surface</td><td style='text-align: center;'>0</td></tr>\n    <tr><td style='text-align: center;'>Bottom Surface</td><td style='text-align: center;'>0</td></tr>\n  </tbody>\n</table>",
+            "block_bbox": [
+                636,
+                84,
+                1122,
+                458
+            ],
+            "block_id": 2,
+            "block_order": null
+        },
+        {
+            "block_label": "chart",
+            "block_content": "<table border=1 style='margin: auto; width: max-content;'>\n  <thead><tr><th style='text-align: center;'>Feature</th><th style='text-align: center;'>Description</th></tr></thead>\n  <tbody>\n    <tr><td style='text-align: center;'>Wavenumber</td><td style='text-align: center;'>0 W/cm²</td></tr>\n    <tr><td style='text-align: center;'>T(x)</td><td style='text-align: center;'>40 W/cm²</td></tr>\n    <tr><td style='text-align: center;'>Planet</td><td style='text-align: center;'>Plane wall</td></tr>\n    <tr><td style='text-align: center;'>L</td><td style='text-align: center;'>x</td></tr>\n  </tbody>\n</table>",
+            "block_bbox": [
+                1103,
+                76,
+                1580,
+                448
+            ],
+            "block_id": 3,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–43 Schematic for Example 2–11.</div>\n",
+            "block_bbox": [
+                1195,
+                456,
+                1598,
+                542
+            ],
+            "block_id": 4,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "Therefore, the two boundary conditions can be specified at the same boundary, and it is not necessary to specify them at different locations. In fact, the fundamental theorem of linear ordinary differential equations guarantees that a unique solution exists when both conditions are specified at the same location. But no such guarantee exists when the two conditions are specified at different boundaries, as you will see below.",
+            "block_bbox": [
+                43,
+                639,
+                1037,
+                847
+            ],
+            "block_id": 5,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "(b) In this case different heat fluxes are specified at the two boundaries. The application of the boundary conditions gives",
+            "block_bbox": [
+                32,
+                860,
+                1034,
+                935
+            ],
+            "block_id": 6,
+            "block_order": 2
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ -k\\frac{dT(0)}{dx}=\\dot{q}_{0}\\quad\\rightarrow\\quad-kC_{1}=\\dot{q}_{0}\\quad\\rightarrow\\quad C_{1}=-\\frac{\\dot{q}_{0}}{k} $$ ",
+            "block_bbox": [
+                223,
+                942,
+                860,
+                1024
+            ],
+            "block_id": 7,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "and",
+            "block_bbox": [
+                23,
+                1058,
+                94,
+                1091
+            ],
+            "block_id": 8,
+            "block_order": 4
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ -k\\frac{dT(L)}{dx}=\\dot{q}_{L}\\quad\\rightarrow\\quad-kC_{1}=\\dot{q}_{L}\\quad\\rightarrow\\quad C_{1}=-\\frac{\\dot{q}_{L}}{k} $$ ",
+            "block_bbox": [
+                215,
+                1086,
+                860,
+                1165
+            ],
+            "block_id": 9,
+            "block_order": 5
+        },
+        {
+            "block_label": "text",
+            "block_content": "Since  $ \\dot{q}_{0} \\neq \\dot{q}_{L} $  and the constant  $ C_{1} $  cannot be equal to two different things at the same time, there is no solution in this case. This is not surprising since this case corresponds to supplying heat to the plane wall from both sides and expecting the temperature of the wall to remain steady (not to change with time). This is impossible.",
+            "block_bbox": [
+                13,
+                1179,
+                1032,
+                1358
+            ],
+            "block_id": 10,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "(c) In this case, the same values for heat flux are specified at the two boundaries. The application of the boundary conditions gives",
+            "block_bbox": [
+                12,
+                1366,
+                1029,
+                1442
+            ],
+            "block_id": 11,
+            "block_order": 7
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ -k\\frac{dT(0)}{dx}=\\dot{q}_{0}\\quad\\rightarrow\\quad-kC_{1}=\\dot{q}_{0}\\quad\\rightarrow\\quad C_{1}=-\\frac{\\dot{q}_{0}}{k} $$ ",
+            "block_bbox": [
+                216,
+                1440,
+                856,
+                1526
+            ],
+            "block_id": 12,
+            "block_order": 8
+        },
+        {
+            "block_label": "text",
+            "block_content": "and",
+            "block_bbox": [
+                12,
+                1542,
+                85,
+                1576
+            ],
+            "block_id": 13,
+            "block_order": 9
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ -k\\frac{dT(L)}{dx}=\\dot{q}_{0}\\quad\\rightarrow\\quad-kC_{1}=\\dot{q}_{0}\\quad\\rightarrow\\quad C_{1}=-\\frac{\\dot{q}_{0}}{k} $$ ",
+            "block_bbox": [
+                216,
+                1567,
+                858,
+                1657
+            ],
+            "block_id": 14,
+            "block_order": 10
+        },
+        {
+            "block_label": "text",
+            "block_content": "Thus, both conditions result in the same value for the constant  $ C_{1} $ , but no value for  $ C_{2} $ . Substituting, the specific solution in this case is determined to be",
+            "block_bbox": [
+                13,
+                1656,
+                1034,
+                1740
+            ],
+            "block_id": 15,
+            "block_order": 11
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T(x)=-\\frac{\\dot{q}_{0}}{k}x+C_{2} $$ ",
+            "block_bbox": [
+                415,
+                1745,
+                671,
+                1821
+            ],
+            "block_id": 16,
+            "block_order": 12
+        },
+        {
+            "block_label": "text",
+            "block_content": "which is not a unique solution since  $ C_{2} $  is arbitrary.",
+            "block_bbox": [
+                24,
+                1830,
+                701,
+                1870
+            ],
+            "block_id": 17,
+            "block_order": 13
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.501002311706543,
+                "coordinate": [
+                    1247.482177734375,
+                    0.25443267822265625,
+                    1393.62060546875,
+                    31.231098175048828
+                ]
+            },
+            {
+                "cls_id": 3,
+                "label": "chart",
+                "score": 0.7583611011505127,
+                "coordinate": [
+                    198.93841552734375,
+                    56.3878173828125,
+                    610.8757934570312,
+                    457.189453125
+                ]
+            },
+            {
+                "cls_id": 3,
+                "label": "chart",
+                "score": 0.871258556842804,
+                "coordinate": [
+                    636.701904296875,
+                    84.945068359375,
+                    1122.53759765625,
+                    458.04779052734375
+                ]
+            },
+            {
+                "cls_id": 3,
+                "label": "chart",
+                "score": 0.8619011640548706,
+                "coordinate": [
+                    1103.34228515625,
+                    76.8599853515625,
+                    1580.619140625,
+                    448.362548828125
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.5707919001579285,
+                "coordinate": [
+                    1403.2908935546875,
+                    456.7513427734375,
+                    1593.3468017578125,
+                    494.4158935546875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.6737943887710571,
+                "coordinate": [
+                    1195.86328125,
+                    456.307373046875,
+                    1598.349609375,
+                    542.7232666015625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.5325670838356018,
+                "coordinate": [
+                    1196.632080078125,
+                    496.58990478515625,
+                    1595.884033203125,
+                    541.3661499023438
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9853238463401794,
+                "coordinate": [
+                    43.5758056640625,
+                    639.563232421875,
+                    1037.8748779296875,
+                    847.854736328125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9703935980796814,
+                "coordinate": [
+                    32.8587646484375,
+                    860.189697265625,
+                    1034.6053466796875,
+                    935.1612548828125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9627460837364197,
+                "coordinate": [
+                    223.9736328125,
+                    942.5772705078125,
+                    860.344482421875,
+                    1024.1270751953125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9007667899131775,
+                "coordinate": [
+                    23.709991455078125,
+                    1058.993408203125,
+                    94.51048278808594,
+                    1091.117919921875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9629068970680237,
+                "coordinate": [
+                    215.392822265625,
+                    1086.0103759765625,
+                    860.11181640625,
+                    1165.4158935546875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9208514094352722,
+                "coordinate": [
+                    116.564453125,
+                    1189.4580078125,
+                    224.33328247070312,
+                    1219.512451171875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8539735674858093,
+                "coordinate": [
+                    463.254150390625,
+                    1183.656005859375,
+                    495.3931884765625,
+                    1214.363037109375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9835294485092163,
+                "coordinate": [
+                    13.7894287109375,
+                    1179.533447265625,
+                    1032.7623291015625,
+                    1358.3056640625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9693729281425476,
+                "coordinate": [
+                    12.836639404296875,
+                    1366.34033203125,
+                    1029.829345703125,
+                    1442.51220703125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9628049731254578,
+                "coordinate": [
+                    216.90081787109375,
+                    1440.33251953125,
+                    856.1985473632812,
+                    1526.140380859375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9053187966346741,
+                "coordinate": [
+                    12.556682586669922,
+                    1542.72314453125,
+                    85.16390991210938,
+                    1576.5380859375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.965055525302887,
+                "coordinate": [
+                    216.78018188476562,
+                    1567.870849609375,
+                    858.4381103515625,
+                    1657.660400390625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8727414011955261,
+                "coordinate": [
+                    153.93373107910156,
+                    1705.402099609375,
+                    188.84739685058594,
+                    1736.462158203125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.971359133720398,
+                "coordinate": [
+                    13.322906494140625,
+                    1656.54052734375,
+                    1034.3828125,
+                    1740.607421875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8488286733627319,
+                "coordinate": [
+                    893.1390380859375,
+                    1656.5965576171875,
+                    926.5003662109375,
+                    1688.8807373046875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9600943326950073,
+                "coordinate": [
+                    415.348876953125,
+                    1745.929931640625,
+                    671.5477294921875,
+                    1821.077392578125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9468373656272888,
+                "coordinate": [
+                    24.378509521484375,
+                    1830.661376953125,
+                    701.8614501953125,
+                    1870.219970703125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8719250559806824,
+                "coordinate": [
+                    517.2455444335938,
+                    1833.248291015625,
+                    550.2929077148438,
+                    1861.920654296875
+                ]
+            }
+        ]
+    }
+}

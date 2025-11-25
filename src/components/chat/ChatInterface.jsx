@@ -1,9 +1,18 @@
 import { useState, useEffect, useRef } from 'react';
 import { Settings, Send, Database, ChevronDown, Plus, Trash2 } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 import SettingsModal from './SettingsModal';
 import ChatThreadSelector from './ChatThreadSelector';
 import VectorDbSelector from './VectorDbSelector';
 import './ChatInterface.css';
+
+// Helper to format thinking text - add line breaks before bold titles (except first one)
+const formatThinkingText = (text) => {
+  if (!text) return '';
+  // Add newline before opening ** (followed by word char) that appears after text
+  // This avoids breaking closing ** markers
+  return text.replace(/([^\n])\*\*(\w)/g, '$1\n\n**$2');
+};
 
 const ChatInterface = ({ project, onProjectUpdate }) => {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
@@ -172,14 +181,12 @@ const ChatInterface = ({ project, onProjectUpdate }) => {
       const response = await fetch(`http://localhost:3001/api/chat/threads/${project.id}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: `Chat ${chatThreads.length + 1}`,
-        }),
+        body: JSON.stringify({}), // Let backend handle naming
       });
 
       if (response.ok) {
         const newThread = await response.json();
-        setChatThreads([...chatThreads, newThread]);
+        setChatThreads(prevThreads => [...prevThreads, newThread]);
         setCurrentThreadId(newThread.id);
         setMessages([]);
       }
@@ -195,18 +202,26 @@ const ChatInterface = ({ project, onProjectUpdate }) => {
       });
 
       if (response.ok) {
-        const updatedThreads = chatThreads.filter(t => t.id !== threadId);
-        setChatThreads(updatedThreads);
+        setChatThreads(prevThreads => {
+          const updatedThreads = prevThreads.filter(t => t.id !== threadId);
 
-        if (currentThreadId === threadId) {
-          if (updatedThreads.length > 0) {
-            const newThread = updatedThreads[updatedThreads.length - 1];
-            setCurrentThreadId(newThread.id);
-            loadChatHistory(newThread.id);
-          } else {
-            createNewThread();
+          // Handle current thread deletion
+          if (currentThreadId === threadId) {
+            if (updatedThreads.length > 0) {
+              const newThread = updatedThreads[updatedThreads.length - 1];
+              setCurrentThreadId(newThread.id);
+              loadChatHistory(newThread.id);
+            } else {
+              // No threads left, create a new one
+              setCurrentThreadId(null);
+              setMessages([]);
+              // Create new thread after state is cleared
+              setTimeout(() => createNewThread(), 0);
+            }
           }
-        }
+
+          return updatedThreads;
+        });
       } else {
         const error = await response.json();
         console.error('Failed to delete thread:', error);
@@ -315,8 +330,8 @@ const ChatInterface = ({ project, onProjectUpdate }) => {
       id: assistantMessageId,
       role: 'assistant',
       content: '',
-      thinking: '',  // For GPT-5 reasoning
-      thinkingSummary: '',  // For GPT-5 reasoning summary
+      contentBlocks: [],  // Ordered array of content blocks (reasoning, text, etc.)
+      currentReasoningBlock: null,  // Track active reasoning block for timing
       context: null,
       timestamp: new Date().toISOString(),
       isStreaming: true,
@@ -325,8 +340,8 @@ const ChatInterface = ({ project, onProjectUpdate }) => {
     setMessages(prev => [...prev, assistantMessage]);
 
     try {
-      // Send message to backend for streaming
-      const response = await fetch('http://localhost:3001/api/chat/message/stream', {
+      // Send message to backend for streaming WITH TOOLS
+      const response = await fetch('http://localhost:3001/api/chat-tools/message/stream', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -373,43 +388,124 @@ const ChatInterface = ({ project, onProjectUpdate }) => {
                   ? { ...msg, context: data.context }
                   : msg
               ));
+            } else if (data.type === 'tool_call') {
+              // AI is calling a tool
+              console.log('Tool call:', data.tool_name, data.tool_args);
+              setMessages(prev => prev.map(msg =>
+                msg.id === assistantMessageId
+                  ? {
+                      ...msg,
+                      toolCalls: [...(msg.toolCalls || []), {
+                        name: data.tool_name,
+                        args: data.tool_args
+                      }]
+                    }
+                  : msg
+              ));
+            } else if (data.type === 'tool_result') {
+              // Tool execution result
+              console.log('Tool result:', data.tool_name, data.result);
             } else if (data.type === 'content') {
-              // Append content chunk (regular text)
+              // Append content chunk (regular text, reasoning, or reasoning summary)
               const content = data.content || '';
               const metadata = data.metadata || {};
 
-              if (metadata.type === 'thinking') {
-                // GPT-5 thinking/reasoning
-                setMessages(prev => prev.map(msg =>
-                  msg.id === assistantMessageId
-                    ? { ...msg, thinking: msg.thinking + content }
-                    : msg
-                ));
-              } else if (metadata.type === 'thinking_summary') {
-                // GPT-5 reasoning summary
-                setMessages(prev => prev.map(msg =>
-                  msg.id === assistantMessageId
-                    ? { ...msg, thinkingSummary: msg.thinkingSummary + content }
-                    : msg
-                ));
-              } else {
-                // Regular content
-                setMessages(prev => prev.map(msg =>
-                  msg.id === assistantMessageId
-                    ? { ...msg, content: msg.content + content }
-                    : msg
-                ));
-              }
+              setMessages(prev => prev.map(msg => {
+                if (msg.id !== assistantMessageId) return msg;
+
+                const blocks = [...msg.contentBlocks];
+                let currentReasoning = msg.currentReasoningBlock;
+
+                if (metadata.type === 'thinking') {
+                  // Start or continue reasoning block
+                  if (!currentReasoning) {
+                    currentReasoning = {
+                      type: 'reasoning',
+                      content: content,
+                      startTime: Date.now()
+                    };
+                    blocks.push(currentReasoning);
+                  } else {
+                    const lastBlock = blocks[blocks.length - 1];
+                    if (lastBlock.type === 'reasoning') {
+                      // Create new block object instead of mutating
+                      blocks[blocks.length - 1] = {
+                        ...lastBlock,
+                        content: lastBlock.content + content
+                      };
+                    }
+                  }
+                  return { ...msg, contentBlocks: blocks, currentReasoningBlock: currentReasoning };
+                } else if (metadata.type === 'thinking_summary') {
+                  // Reasoning summary
+                  const lastBlock = blocks[blocks.length - 1];
+                  if (lastBlock && lastBlock.type === 'reasoning_summary') {
+                    // Create new block object instead of mutating
+                    blocks[blocks.length - 1] = {
+                      ...lastBlock,
+                      content: lastBlock.content + content
+                    };
+                  } else {
+                    blocks.push({ type: 'reasoning_summary', content });
+                  }
+                  return { ...msg, contentBlocks: blocks };
+                } else {
+                  // Regular text content
+                  // Close current reasoning block if any
+                  if (currentReasoning) {
+                    const lastBlock = blocks[blocks.length - 1];
+                    if (lastBlock.type === 'reasoning') {
+                      // Create new block object instead of mutating
+                      blocks[blocks.length - 1] = {
+                        ...lastBlock,
+                        endTime: Date.now()
+                      };
+                    }
+                    currentReasoning = null;
+                  }
+
+                  const lastBlock = blocks[blocks.length - 1];
+                  if (lastBlock && lastBlock.type === 'text') {
+                    // Create new block object instead of mutating
+                    blocks[blocks.length - 1] = {
+                      ...lastBlock,
+                      content: lastBlock.content + content
+                    };
+                  } else {
+                    blocks.push({ type: 'text', content });
+                  }
+
+                  // Also update legacy content field for backward compatibility
+                  return {
+                    ...msg,
+                    content: msg.content + content,
+                    contentBlocks: blocks,
+                    currentReasoningBlock: currentReasoning
+                  };
+                }
+              }));
             } else if (data.type === 'rate_limit_wait') {
               // Show rate limit info (optional: display to user)
               console.log(`Rate limited. Waiting ${data.waitTimeSec}s (attempt ${data.attemptNumber}/${data.maxRetries})...`);
             } else if (data.type === 'done') {
-              // Mark streaming as complete
-              setMessages(prev => prev.map(msg =>
-                msg.id === assistantMessageId
-                  ? { ...msg, isStreaming: false }
-                  : msg
-              ));
+              // Mark streaming as complete and finalize any open reasoning blocks
+              setMessages(prev => prev.map(msg => {
+                if (msg.id !== assistantMessageId) return msg;
+
+                const blocks = [...msg.contentBlocks];
+                if (msg.currentReasoningBlock) {
+                  const lastBlock = blocks[blocks.length - 1];
+                  if (lastBlock && lastBlock.type === 'reasoning' && !lastBlock.endTime) {
+                    // Create new block object instead of mutating
+                    blocks[blocks.length - 1] = {
+                      ...lastBlock,
+                      endTime: Date.now()
+                    };
+                  }
+                }
+
+                return { ...msg, isStreaming: false, currentReasoningBlock: null, contentBlocks: blocks };
+              }));
             } else if (data.type === 'error') {
               throw new Error(data.error);
             }
@@ -518,42 +614,91 @@ const ChatInterface = ({ project, onProjectUpdate }) => {
           </div>
         )}
 
-        {messages.map(message => (
+        {messages.map(message => {
+          // Use new contentBlocks structure or fall back to legacy fields
+          const hasContentBlocks = message.contentBlocks && message.contentBlocks.length > 0;
+
+          return (
           <div
             key={message.id}
             className={`chat-message ${message.role}`}
             data-streaming={message.isStreaming ? 'true' : 'false'}
           >
-            {/* GPT-5 Thinking/Reasoning Block */}
-            {message.thinking && (
-              <div className="message-thinking">
-                <details open={message.isStreaming}>
-                  <summary>
-                    <span className="thinking-icon">🧠</span>
-                    <span>Reasoning</span>
-                  </summary>
-                  <div className="thinking-content">
-                    {message.thinking}
+            {message.role === 'user' ? (
+              /* User messages */
+              <div className="message-content">
+                {message.content}
+              </div>
+            ) : hasContentBlocks ? (
+              /* New structured content blocks */
+              message.contentBlocks.map((block, idx) => {
+                if (block.type === 'reasoning') {
+                  const isStreaming = message.isStreaming && idx === message.contentBlocks.length - 1 && !block.endTime;
+
+                  if (isStreaming) {
+                    // While streaming: show as plain grey text with "Thinking" label
+                    return (
+                      <div key={idx} className="message-thinking streaming">
+                        <div className="thinking-label">Thinking</div>
+                        <div className="thinking-text">
+                          <ReactMarkdown>{formatThinkingText(block.content)}</ReactMarkdown>
+                          <span className="streaming-cursor">▊</span>
+                        </div>
+                      </div>
+                    );
+                  } else {
+                    // When complete: show collapsed with chevron
+                    return (
+                      <div key={idx} className="message-thinking">
+                        <details>
+                          <summary>
+                            <span>Thinking</span>
+                            <span className="thinking-chevron">▾</span>
+                          </summary>
+                          <div className="thinking-content">
+                            <ReactMarkdown>{formatThinkingText(block.content)}</ReactMarkdown>
+                          </div>
+                        </details>
+                      </div>
+                    );
+                  }
+                } else if (block.type === 'reasoning_summary') {
+                  // Don't render summary blocks - hide them
+                  return null;
+                } else if (block.type === 'text') {
+                  return (
+                    <div key={idx} className="message-content">
+                      <ReactMarkdown>{block.content}</ReactMarkdown>
+                    </div>
+                  );
+                }
+                return null;
+              })
+            ) : (
+              /* Legacy fallback for old messages */
+              <>
+                {message.thinking && (
+                  <div className="message-thinking">
+                    <details>
+                      <summary>
+                        <span>Thinking</span>
+                        <span className="thinking-chevron">▾</span>
+                      </summary>
+                      <div className="thinking-content">
+                        {message.thinking}
+                      </div>
+                    </details>
                   </div>
-                </details>
-              </div>
+                )}
+
+                <div className="message-content">
+                  <ReactMarkdown>{message.content || ''}</ReactMarkdown>
+                </div>
+              </>
             )}
 
-            {/* GPT-5 Reasoning Summary */}
-            {message.thinkingSummary && (
-              <div className="message-thinking-summary">
-                <span className="thinking-summary-label">Summary:</span>
-                <span className="thinking-summary-text">{message.thinkingSummary}</span>
-              </div>
-            )}
-
-            {/* Main Content */}
-            <div className="message-content">
-              {message.content || (message.isStreaming ? 'Thinking...' : '')}
-            </div>
-
-            {/* RAG Context */}
-            {message.context && (
+            {/* RAG Context - Only show if context exists (for future tool-based search) */}
+            {message.context && message.context.length > 0 && (
               <div className="message-context">
                 <details>
                   <summary>View source context ({message.context.length} chunks)</summary>
@@ -577,7 +722,8 @@ const ChatInterface = ({ project, onProjectUpdate }) => {
               {new Date(message.timestamp).toLocaleTimeString()}
             </div>
           </div>
-        ))}
+          );
+        })}
 
         {/* Loading dots removed - streaming message shows progress */}
 

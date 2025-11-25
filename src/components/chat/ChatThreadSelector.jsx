@@ -42,10 +42,7 @@ const ChatThreadSelector = ({
             <span>Chat Threads</span>
             <button
               className="new-thread-btn"
-              onClick={() => {
-                onNewThread();
-                setIsOpen(false);
-              }}
+              onClick={onNewThread}
               title="New Thread"
             >
               <Plus size={16} />

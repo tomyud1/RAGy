@@ -1,0 +1,531 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_18.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "HEAT CONDUCTION EQUATION",
+            "block_bbox": [
+                75,
+                5,
+                441,
+                47
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## EXAMPLE 2–11 A Wall with Various Sets of Boundary Conditions",
+            "block_bbox": [
+                549,
+                61,
+                1364,
+                153
+            ],
+            "block_id": 1,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "Consider steady one-dimensional heat conduction in a large plane wall of thickness L and constant thermal conductivity k with no heat generation. Obtain expressions for the variation of temperature within the wall for the following pairs of boundary conditions (Fig. 2–43):",
+            "block_bbox": [
+                542,
+                151,
+                1534,
+                314
+            ],
+            "block_id": 2,
+            "block_order": 2
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ (a)-k\\frac{dT(0)}{dx}=\\dot{q}_{0}=40\\ W/cm^{2}\\qquad and\\qquad T(0)=T_{0}=15^{\\circ}C $$ ",
+            "block_bbox": [
+                553,
+                314,
+                1346,
+                389
+            ],
+            "block_id": 3,
+            "block_order": 3
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ (b)-k\\frac{dT(0)}{dx}=\\dot{q}_{0}=40\\ W/cm^{2}\\qquad and\\qquad-k\\frac{dT(L)}{dx}=\\dot{q}_{L}=-25\\ W/cm^{2} $$ ",
+            "block_bbox": [
+                550,
+                380,
+                1507,
+                466
+            ],
+            "block_id": 4,
+            "block_order": 4
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ (c)-k\\frac{dT(0)}{dx}=\\dot{q}_{0}=40\\ W/cm^{2}\\qquad and\\qquad-k\\frac{dT(L)}{dx}=\\dot{q}_{L}=\\dot{q}_{0}=40\\ W/cm^{2} $$ ",
+            "block_bbox": [
+                548,
+                463,
+                1537,
+                546
+            ],
+            "block_id": 5,
+            "block_order": 5
+        },
+        {
+            "block_label": "text",
+            "block_content": "SOLUTION Steady one-dimensional heat conduction in a large plane wall is considered. The variation of temperature is to be determined for different sets of boundary conditions.",
+            "block_bbox": [
+                528,
+                596,
+                1544,
+                704
+            ],
+            "block_id": 6,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "Analysis This is a steady one-dimensional heat conduction problem with constant thermal conductivity and no heat generation in the medium, and the heat conduction equation in this case can be expressed as (Eq. 2–17)",
+            "block_bbox": [
+                526,
+                704,
+                1551,
+                815
+            ],
+            "block_id": 7,
+            "block_order": 7
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{d^{2}T}{dx^{2}}=0 $$ ",
+            "block_bbox": [
+                969,
+                848,
+                1091,
+                926
+            ],
+            "block_id": 8,
+            "block_order": 8
+        },
+        {
+            "block_label": "text",
+            "block_content": "whose general solution was determined in the previous example by direct integration to be",
+            "block_bbox": [
+                518,
+                963,
+                1562,
+                1039
+            ],
+            "block_id": 9,
+            "block_order": 9
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T(x)=C_{1}x+C_{2} $$ ",
+            "block_bbox": [
+                919,
+                1060,
+                1148,
+                1099
+            ],
+            "block_id": 10,
+            "block_order": 10
+        },
+        {
+            "block_label": "text",
+            "block_content": "where  $ C_{1} $  and  $ C_{2} $  are two arbitrary integration constants. The specific solutions corresponding to each specified pair of boundary conditions are determined as follows.",
+            "block_bbox": [
+                510,
+                1121,
+                1575,
+                1231
+            ],
+            "block_id": 11,
+            "block_order": 11
+        },
+        {
+            "block_label": "text",
+            "block_content": "(a) In this case, both boundary conditions are specified at the same boundary at x = 0, and no boundary condition is specified at the other boundary at x = L. Noting that",
+            "block_bbox": [
+                507,
+                1250,
+                1582,
+                1361
+            ],
+            "block_id": 12,
+            "block_order": 12
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{dT}{dx}=C_{1} $$ ",
+            "block_bbox": [
+                973,
+                1384,
+                1101,
+                1461
+            ],
+            "block_id": 13,
+            "block_order": 13
+        },
+        {
+            "block_label": "text",
+            "block_content": "the application of the boundary conditions gives",
+            "block_bbox": [
+                507,
+                1489,
+                1171,
+                1530
+            ],
+            "block_id": 14,
+            "block_order": 14
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ -k\\frac{dT(0)}{dx}=\\dot{q}_{0}\\quad\\rightarrow\\quad-kC_{1}=\\dot{q}_{0}\\quad\\rightarrow\\quad C_{1}=-\\frac{\\dot{q}_{0}}{k} $$ ",
+            "block_bbox": [
+                706,
+                1545,
+                1396,
+                1637
+            ],
+            "block_id": 15,
+            "block_order": 15
+        },
+        {
+            "block_label": "text",
+            "block_content": "and",
+            "block_bbox": [
+                512,
+                1644,
+                575,
+                1678
+            ],
+            "block_id": 16,
+            "block_order": 16
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T(0)=T_{0}\\quad\\rightarrow\\quad T_{0}=C_{1}\\times0+C_{2}\\quad\\rightarrow\\quad C_{2}=T_{0} $$ ",
+            "block_bbox": [
+                709,
+                1721,
+                1396,
+                1779
+            ],
+            "block_id": 17,
+            "block_order": 17
+        },
+        {
+            "block_label": "text",
+            "block_content": "Substituting, the specific solution in this case is determined to be",
+            "block_bbox": [
+                515,
+                1780,
+                1429,
+                1843
+            ],
+            "block_id": 18,
+            "block_order": 18
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T(x)=-\\frac{\\dot{q}_{0}}{k}x+T_{0} $$ ",
+            "block_bbox": [
+                920,
+                1852,
+                1183,
+                1936
+            ],
+            "block_id": 19,
+            "block_order": 19
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8904868364334106,
+                "coordinate": [
+                    75.06013488769531,
+                    5.420103073120117,
+                    441.5518798828125,
+                    47.19976043701172
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9647929072380066,
+                "coordinate": [
+                    549.8275146484375,
+                    61.65373992919922,
+                    1364.4666748046875,
+                    153.05517578125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9816032648086548,
+                "coordinate": [
+                    542.4049072265625,
+                    151.0091552734375,
+                    1534.2342529296875,
+                    314.23992919921875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9519544243812561,
+                "coordinate": [
+                    553.4122314453125,
+                    314.169189453125,
+                    1346.4056396484375,
+                    389.114013671875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9302663803100586,
+                "coordinate": [
+                    550.9616088867188,
+                    380.8162536621094,
+                    1507.807861328125,
+                    466.2303771972656
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.935688853263855,
+                "coordinate": [
+                    548.980712890625,
+                    463.630126953125,
+                    1537.429931640625,
+                    546.656982421875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9802808165550232,
+                "coordinate": [
+                    528.57470703125,
+                    596.19580078125,
+                    1544.52880859375,
+                    704.132568359375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9795582890510559,
+                "coordinate": [
+                    526.4482421875,
+                    704.4873046875,
+                    1551.15234375,
+                    815.804443359375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9551736116409302,
+                "coordinate": [
+                    969.2841186523438,
+                    848.335205078125,
+                    1091.96435546875,
+                    926.157470703125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9679774641990662,
+                "coordinate": [
+                    518.8077392578125,
+                    963.28125,
+                    1562.9342041015625,
+                    1039.80126953125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9370039105415344,
+                "coordinate": [
+                    919.00048828125,
+                    1060.8892822265625,
+                    1148.43505859375,
+                    1099.9329833984375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8780460357666016,
+                "coordinate": [
+                    607.5821533203125,
+                    1124.298828125,
+                    640.5489501953125,
+                    1158.01318359375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8818163871765137,
+                "coordinate": [
+                    706.2169189453125,
+                    1124.311767578125,
+                    740.281005859375,
+                    1157.554443359375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9771669507026672,
+                "coordinate": [
+                    510.17523193359375,
+                    1121.08642578125,
+                    1575.709228515625,
+                    1231.74658203125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9780728220939636,
+                "coordinate": [
+                    507.0443115234375,
+                    1250.030029296875,
+                    1582.2747802734375,
+                    1361.520751953125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7588144540786743,
+                "coordinate": [
+                    512.8965454101562,
+                    1289.1552734375,
+                    596.2794799804688,
+                    1320.390625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7321662306785583,
+                "coordinate": [
+                    1487.380859375,
+                    1288.5576171875,
+                    1574.32275390625,
+                    1321.329345703125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9563108682632446,
+                "coordinate": [
+                    973.799072265625,
+                    1384.3421630859375,
+                    1101.24951171875,
+                    1461.4981689453125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9550857543945312,
+                "coordinate": [
+                    507.5251770019531,
+                    1489.71630859375,
+                    1171.320556640625,
+                    1530.0693359375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9675130248069763,
+                "coordinate": [
+                    706.15185546875,
+                    1545.29150390625,
+                    1396.7763671875,
+                    1637.34912109375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9102941155433655,
+                "coordinate": [
+                    512.2055053710938,
+                    1644.960205078125,
+                    575.5692749023438,
+                    1678.057861328125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9527693390846252,
+                "coordinate": [
+                    709.5869140625,
+                    1721.4593505859375,
+                    1396.558349609375,
+                    1779.6864013671875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9515528082847595,
+                "coordinate": [
+                    515.4957275390625,
+                    1780.09814453125,
+                    1429.4801025390625,
+                    1843.7373046875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9657118916511536,
+                "coordinate": [
+                    920.4551391601562,
+                    1852.7421875,
+                    1183.22216796875,
+                    1936.423828125
+                ]
+            }
+        ]
+    }
+}

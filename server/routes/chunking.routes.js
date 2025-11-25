@@ -246,22 +246,52 @@ router.post('/upload', upload.single('chunkedFile'), async (req, res) => {
 router.delete('/delete/:projectId', async (req, res) => {
   try {
     const { projectId } = req.params;
-    
+
     if (!projectId) {
       return res.status(400).json({ error: 'Project ID is required' });
     }
-    
+
     await ChunkingService.deleteChunks(projectId);
-    
-    res.json({ 
-      success: true, 
-      message: 'Chunked data deleted successfully' 
+
+    res.json({
+      success: true,
+      message: 'Chunked data deleted successfully'
     });
   } catch (error) {
     console.error('Delete failed:', error);
-    res.status(500).json({ 
-      success: false, 
-      error: error.message || 'Delete failed' 
+    res.status(500).json({
+      success: false,
+      error: error.message || 'Delete failed'
+    });
+  }
+});
+
+// Clear method-specific results (for re-chunking)
+router.post('/clear-method-results/:projectId', async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const { method } = req.body;
+
+    if (!projectId) {
+      return res.status(400).json({ error: 'Project ID is required' });
+    }
+
+    if (!method) {
+      return res.status(400).json({ error: 'Method is required' });
+    }
+
+    const result = await ChunkingService.clearMethodResults(projectId, method);
+
+    res.json({
+      success: true,
+      message: `Cleared ${method} results successfully`,
+      deletedFolder: result.deletedFolder
+    });
+  } catch (error) {
+    console.error('Clear method results failed:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message || 'Clear method results failed'
     });
   }
 });

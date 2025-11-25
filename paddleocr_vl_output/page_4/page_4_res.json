@@ -1,0 +1,96 @@
+{
+    "input_path": "/Users/tomeryud/projects/RAGy/paddleocr_vl_output/page_4.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": false
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "paragraph_title",
+            "block_content": "HEAT AND MASS TRANSFER",
+            "block_bbox": [
+                334,
+                205,
+                1431,
+                378
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "FUNDAMENTALS & APPLICATIONS",
+            "block_bbox": [
+                609,
+                555,
+                1177,
+                598
+            ],
+            "block_id": 1,
+            "block_order": 2
+        },
+        {
+            "block_label": "footer_image",
+            "block_content": "",
+            "block_bbox": [
+                939,
+                1754,
+                1081,
+                1860
+            ],
+            "block_id": 2,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.6182388067245483,
+                "coordinate": [
+                    334.12103271484375,
+                    205.845458984375,
+                    1431.263671875,
+                    378.65167236328125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9307037591934204,
+                "coordinate": [
+                    609.1466064453125,
+                    555.4535522460938,
+                    1177.458984375,
+                    598.5481567382812
+                ]
+            },
+            {
+                "cls_id": 9,
+                "label": "footer_image",
+                "score": 0.9116436243057251,
+                "coordinate": [
+                    939.160888671875,
+                    1754.621826171875,
+                    1081.101806640625,
+                    1860.545166015625
+                ]
+            }
+        ]
+    }
+}

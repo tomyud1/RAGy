@@ -13,6 +13,7 @@ import embeddingRoutes, { setBroadcastFunction as setEmbeddingBroadcast } from '
 import ragRoutes from './routes/rag.routes.js';
 import settingsRoutes from './routes/settings.routes.js';
 import chatRoutes from './routes/chat.routes.js';
+import chatWithToolsRoutes from './routes/chat-with-tools.routes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -130,6 +131,7 @@ app.use('/api/embedding', embeddingRoutes);
 app.use('/api/rag', ragRoutes);
 app.use('/api/settings', settingsRoutes);
 app.use('/api/chat', chatRoutes);
+app.use('/api/chat-tools', chatWithToolsRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

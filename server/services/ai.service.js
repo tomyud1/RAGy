@@ -100,15 +100,9 @@ class AIService {
   }
 
   async callOpenAI(userInput, context, model, apiKey) {
-    const contextPrompt = this.buildContextPrompt(context);
+    const systemPrompt = `You are a helpful AI assistant.`;
 
-    const systemPrompt = `You are a helpful AI assistant that answers questions based on the provided context from a knowledge base.
-If the context doesn't contain relevant information to answer the question, you should say so clearly.
-Always cite which source you're using when answering.`;
-
-    const userPrompt = contextPrompt
-      ? `${contextPrompt}\n\nUser Question: ${userInput}\n\nPlease answer based on the context above.`
-      : userInput;
+    const userPrompt = userInput;
 
     // Check if this is a Responses API model (gpt-5 family)
     if (this.isResponsesModel(model)) {
@@ -186,15 +180,9 @@ Always cite which source you're using when answering.`;
   }
 
   async callAnthropic(userInput, context, model, apiKey) {
-    const contextPrompt = this.buildContextPrompt(context);
+    const systemPrompt = `You are a helpful AI assistant.`;
 
-    const systemPrompt = `You are a helpful AI assistant that answers questions based on the provided context from a knowledge base.
-If the context doesn't contain relevant information to answer the question, you should say so clearly.
-Always cite which source you're using when answering.`;
-
-    const userPrompt = contextPrompt
-      ? `${contextPrompt}\n\nUser Question: ${userInput}\n\nPlease answer based on the context above.`
-      : userInput;
+    const userPrompt = userInput;
 
     // Map our model IDs to Anthropic's actual model names
     const modelMap = {
@@ -231,21 +219,33 @@ Always cite which source you're using when answering.`;
     return data.content[0].text;
   }
 
+  resolveMoonshotModel(modelId) {
+    // Map friendly names to actual Moonshot API model IDs
+    const modelMap = {
+      'kimi-k2': 'kimi-k2-thinking-turbo',  // Kimi K2 thinking model
+      'kimi-k2-thinking-turbo': 'kimi-k2-thinking-turbo',
+      'kimi-32k': 'moonshot-v1-32k',
+      'kimi-8k': 'moonshot-v1-8k',
+      'moonshot-v1-8k': 'moonshot-v1-8k',
+      'moonshot-v1-32k': 'moonshot-v1-32k',
+      'moonshot-v1-128k': 'moonshot-v1-128k',
+    };
+
+    return modelMap[modelId] || 'moonshot-v1-8k';  // Default to 8k model
+  }
+
   async callMoonshot(userInput, context, model, apiKey) {
-    const contextPrompt = this.buildContextPrompt(context);
+    const systemPrompt = `You are a helpful AI assistant.`;
 
-    const systemPrompt = `You are a helpful AI assistant that answers questions based on the provided context from a knowledge base.
-If the context doesn't contain relevant information to answer the question, you should say so clearly.
-Always cite which source you're using when answering.`;
-
-    const userPrompt = contextPrompt
-      ? `${contextPrompt}\n\nUser Question: ${userInput}\n\nPlease answer based on the context above.`
-      : userInput;
+    const userPrompt = userInput;
 
     // Moonshot uses OpenAI-compatible API with strict rate limits
     const endpoint = 'https://api.moonshot.ai/v1/chat/completions';
     const maxRetries = 10;
     const initialBackoffMs = 2000;
+
+    // Resolve the model name to actual Moonshot API model ID
+    const moonshotModel = this.resolveMoonshotModel(model);
 
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
       try {
@@ -256,7 +256,7 @@ Always cite which source you're using when answering.`;
             'Authorization': `Bearer ${apiKey}`,
           },
           body: JSON.stringify({
-            model: 'kimi-k2-turbo-preview',
+            model: moonshotModel,
             messages: [
               { role: 'system', content: systemPrompt },
               { role: 'user', content: userPrompt },
@@ -322,20 +322,17 @@ Always cite which source you're using when answering.`;
   }
 
   async callMoonshotStream(userInput, context, model, apiKey, onChunk) {
-    const contextPrompt = this.buildContextPrompt(context);
+    const systemPrompt = `You are a helpful AI assistant.`;
 
-    const systemPrompt = `You are a helpful AI assistant that answers questions based on the provided context from a knowledge base.
-If the context doesn't contain relevant information to answer the question, you should say so clearly.
-Always cite which source you're using when answering.`;
-
-    const userPrompt = contextPrompt
-      ? `${contextPrompt}\n\nUser Question: ${userInput}\n\nPlease answer based on the context above.`
-      : userInput;
+    const userPrompt = userInput;
 
     // Moonshot uses OpenAI-compatible API with strict rate limits
     const endpoint = 'https://api.moonshot.ai/v1/chat/completions';
     const maxRetries = 10;
     const initialBackoffMs = 2000;
+
+    // Resolve the model name to actual Moonshot API model ID
+    const moonshotModel = this.resolveMoonshotModel(model);
 
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
       try {
@@ -346,7 +343,7 @@ Always cite which source you're using when answering.`;
             'Authorization': `Bearer ${apiKey}`,
           },
           body: JSON.stringify({
-            model: 'kimi-k2-turbo-preview',
+            model: moonshotModel,
             messages: [
               { role: 'system', content: systemPrompt },
               { role: 'user', content: userPrompt },
@@ -463,15 +460,102 @@ Always cite which source you're using when answering.`;
   }
 
   async callOpenAIStream(userInput, context, model, apiKey, onChunk) {
-    const contextPrompt = this.buildContextPrompt(context);
+    const systemPrompt = `You are a helpful AI assistant.`;
 
-    const systemPrompt = `You are a helpful AI assistant that answers questions based on the provided context from a knowledge base.
-If the context doesn't contain relevant information to answer the question, you should say so clearly.
-Always cite which source you're using when answering.`;
+    const userPrompt = userInput;
 
-    const userPrompt = contextPrompt
-      ? `${contextPrompt}\n\nUser Question: ${userInput}\n\nPlease answer based on the context above.`
-      : userInput;
+    // Check if this is a Responses API model (gpt-5 family)
+    if (this.isResponsesModel(model)) {
+      return await this.callOpenAIResponsesStream(userInput, context, model, apiKey, onChunk);
+    }
+
+    // Use Chat Completions API for non-gpt-5 models
+    try {
+      const response = await fetch('https://api.openai.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+          model: model,
+          messages: [
+            { role: 'system', content: systemPrompt },
+            { role: 'user', content: userPrompt },
+          ],
+          temperature: 0.7,
+          max_tokens: 1000,
+          stream: true,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        let errorMessage = errorText;
+
+        try {
+          const errorJson = JSON.parse(errorText);
+          errorMessage = errorJson.error?.message || errorText;
+        } catch (e) {
+          // Use raw text if not JSON
+        }
+
+        throw new Error(`OpenAI API error (${response.status}): ${errorMessage}`);
+      }
+
+      // Process streaming response for Chat Completions API
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder('utf-8');
+      let buffer = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || '';
+
+        for (const line of lines) {
+          const trimmed = line.trim();
+          if (!trimmed || trimmed === 'data: [DONE]') continue;
+          if (!trimmed.startsWith('data: ')) continue;
+
+          const dataStr = trimmed.slice(6);
+
+          try {
+            const evt = JSON.parse(dataStr);
+            const delta = evt?.choices?.[0]?.delta;
+            const finishReason = evt?.choices?.[0]?.finish_reason;
+
+            if (delta?.content) {
+              onChunk(delta.content);
+            }
+
+            // Check finish_reason to detect completion
+            if (finishReason && finishReason !== 'null') {
+              console.log('OpenAI stream complete:', finishReason);
+              return;
+            }
+          } catch (e) {
+            // Skip malformed JSON
+            console.warn('Failed to parse SSE data:', dataStr);
+          }
+        }
+      }
+
+      return; // Success
+
+    } catch (error) {
+      console.error('OpenAI streaming error:', error);
+      throw error;
+    }
+  }
+
+  async callOpenAIResponsesStream(userInput, context, model, apiKey, onChunk) {
+    const systemPrompt = `You are a helpful AI assistant.`;
+
+    const userPrompt = userInput;
 
     const resolvedModel = this.resolveOpenAIModel(model);
     const endpoint = 'https://api.openai.com/v1/responses';
@@ -512,7 +596,7 @@ Always cite which source you're using when answering.`;
         throw new Error(`OpenAI API error (${response.status}): ${errorMessage}`);
       }
 
-      // Process streaming response
+      // Process streaming response for Responses API
       const reader = response.body.getReader();
       const decoder = new TextDecoder('utf-8');
       let buffer = '';
@@ -586,7 +670,7 @@ Always cite which source you're using when answering.`;
       return; // Success
 
     } catch (error) {
-      console.error('OpenAI streaming error:', error);
+      console.error('OpenAI Responses API streaming error:', error);
       throw error;
     }
   }
@@ -606,15 +690,9 @@ Always cite which source you're using when answering.`;
   }
 
   async callGemini(userInput, context, model, apiKey) {
-    const contextPrompt = this.buildContextPrompt(context);
+    const systemPrompt = `You are a helpful AI assistant.`;
 
-    const systemPrompt = `You are a helpful AI assistant that answers questions based on the provided context from a knowledge base.
-If the context doesn't contain relevant information to answer the question, you should say so clearly.
-Always cite which source you're using when answering.`;
-
-    const userPrompt = contextPrompt
-      ? `${systemPrompt}\n\n${contextPrompt}\n\nUser Question: ${userInput}\n\nPlease answer based on the context above.`
-      : `${systemPrompt}\n\nUser Question: ${userInput}`;
+    const userPrompt = `${systemPrompt}\n\n${userInput}`;
 
     const resolvedModel = this.resolveGeminiModel(model);
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${resolvedModel}:generateContent?key=${apiKey}`;
@@ -670,15 +748,9 @@ Always cite which source you're using when answering.`;
   }
 
   async callGeminiStream(userInput, context, model, apiKey, onChunk) {
-    const contextPrompt = this.buildContextPrompt(context);
+    const systemPrompt = `You are a helpful AI assistant.`;
 
-    const systemPrompt = `You are a helpful AI assistant that answers questions based on the provided context from a knowledge base.
-If the context doesn't contain relevant information to answer the question, you should say so clearly.
-Always cite which source you're using when answering.`;
-
-    const userPrompt = contextPrompt
-      ? `${systemPrompt}\n\n${contextPrompt}\n\nUser Question: ${userInput}\n\nPlease answer based on the context above.`
-      : `${systemPrompt}\n\nUser Question: ${userInput}`;
+    const userPrompt = `${systemPrompt}\n\n${userInput}`;
 
     const resolvedModel = this.resolveGeminiModel(model);
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${resolvedModel}:streamGenerateContent?key=${apiKey}`;

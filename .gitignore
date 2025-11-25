@@ -51,6 +51,13 @@ tmp/
 temp/
 *.tmp
 
+# Test outputs (keep directories, ignore large output files)
+testing/outputs/*/
+!testing/outputs/.gitkeep
+*.test.log
+*.test.json
+
+
 
 
 

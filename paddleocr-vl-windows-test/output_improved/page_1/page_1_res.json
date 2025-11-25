@@ -1,0 +1,519 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_1.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "where again the property  $ \\alpha = k/\\rho c $  is the thermal diffusivity of the material. It reduces to the following forms under specified conditions:",
+            "block_bbox": [
+                117,
+                85,
+                1067,
+                162
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\begin{array}{c}(1)Steady-state:\\\\\\left(\\frac{\\partial}{\\partial t}=0\\right)\\end{array}\\quad\\frac{1}{r^{2}}\\frac{d}{dr}\\left(r^{2}\\frac{dT}{dr}\\right)+\\frac{\\dot{e}_{gen}}{k}=0 $$ ",
+            "block_bbox": [
+                120,
+                172,
+                757,
+                248
+            ],
+            "block_id": 1,
+            "block_order": 2
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2−32)",
+            "block_bbox": [
+                993,
+                193,
+                1063,
+                224
+            ],
+            "block_id": 2,
+            "block_order": null
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\begin{array}{c}(2)Transient,\\\\\\quad no heat generation:\\\\\\quad(\\dot{e}_{gen}=0)\\end{array}\\quad\\frac{1}{r^{2}}\\frac{\\partial}{\\partial r}\\left(r^{2}\\frac{\\partial T}{\\partial r}\\right)=\\frac{1}{\\alpha}\\frac{\\partial T}{\\partial t} $$ ",
+            "block_bbox": [
+                123,
+                259,
+                721,
+                368
+            ],
+            "block_id": 3,
+            "block_order": 3
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2-33)",
+            "block_bbox": [
+                996,
+                298,
+                1065,
+                328
+            ],
+            "block_id": 4,
+            "block_order": null
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\begin{array}{l}(3)Steady-state,\\\\ \\quad no heat generation:\\\\ \\quad(\\partial/\\partial t=0and\\dot{e}_{gen}=0)\\end{array}\\quad\\frac{d}{dr}\\left(r^{2}\\frac{dT}{dr}\\right)=0\\quad or\\quad r\\frac{d^{2}T}{dr^{2}}+2\\frac{dT}{dr}=0 $$ ",
+            "block_bbox": [
+                124,
+                377,
+                929,
+                483
+            ],
+            "block_id": 5,
+            "block_order": 4
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2−34)",
+            "block_bbox": [
+                997,
+                414,
+                1066,
+                445
+            ],
+            "block_id": 6,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "where again we replaced the partial derivatives by ordinary derivatives in the one-dimensional steady heat conduction case. For the general solution of Eqs. 2–32 and 2–34 refer to the TOPIC OF SPECIAL INTEREST (A Brief Review of Differential Equations) at the end of this chapter.",
+            "block_bbox": [
+                118,
+                499,
+                1072,
+                646
+            ],
+            "block_id": 7,
+            "block_order": 5
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## Combined One-Dimensional Heat Conduction Equation",
+            "block_bbox": [
+                118,
+                673,
+                1069,
+                719
+            ],
+            "block_id": 8,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "An examination of the one-dimensional transient heat conduction equations for the plane wall, cylinder, and sphere reveals that all three equations can be expressed in a compact form as",
+            "block_bbox": [
+                117,
+                722,
+                1070,
+                831
+            ],
+            "block_id": 9,
+            "block_order": 7
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{1}{r^{n}}\\frac{\\partial}{\\partial r}\\left(r^{n}k\\frac{\\partial T}{\\partial r}\\right)+\\dot{e}_{\\mathrm{g e n}}=\\rho c\\frac{\\partial T}{\\partial t} $$ ",
+            "block_bbox": [
+                409,
+                830,
+                774,
+                905
+            ],
+            "block_id": 10,
+            "block_order": 8
+        },
+        {
+            "block_label": "formula_number",
+            "block_content": "(2−35)",
+            "block_bbox": [
+                993,
+                856,
+                1064,
+                887
+            ],
+            "block_id": 11,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "where n = 0 for a plane wall, n = 1 for a cylinder, and n = 2 for a sphere. In the case of a plane wall, it is customary to replace the variable r by x. This equation can be simplified for steady-state or no heat generation cases as described before.",
+            "block_bbox": [
+                117,
+                914,
+                1066,
+                1064
+            ],
+            "block_id": 12,
+            "block_order": 9
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## EXAMPLE 2–2 Heat Conduction through the Bottom of a Pan",
+            "block_bbox": [
+                152,
+                1115,
+                983,
+                1154
+            ],
+            "block_id": 13,
+            "block_order": 10
+        },
+        {
+            "block_label": "text",
+            "block_content": "Consider a steel pan placed on top of an electric range to cook spaghetti (Fig. 2–17). The bottom section of the pan is 0.4 cm thick and has a diameter of 18 cm. The electric heating unit on the range top consumes 800 W of power during cooking, and 80 percent of the heat generated in the heating element is transferred uniformly to the pan. Assuming constant thermal conductivity, obtain the differential equation that describes the variation of the temperature in the bottom section of the pan during steady operation.",
+            "block_bbox": [
+                143,
+                1171,
+                1048,
+                1405
+            ],
+            "block_id": 14,
+            "block_order": 11
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1120_1087_1596_1466.jpg\" alt=\"Image\" width=\"29%\" /></div>\n",
+            "block_bbox": [
+                1120,
+                1087,
+                1596,
+                1466
+            ],
+            "block_id": 15,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "SOLUTION A steel pan placed on top of an electric range is considered. The differential equation for the variation of temperature in the bottom of the pan is to be obtained.",
+            "block_bbox": [
+                140,
+                1431,
+                1046,
+                1533
+            ],
+            "block_id": 16,
+            "block_order": 12
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–17 Schematic for Example 2–2.</div>\n",
+            "block_bbox": [
+                1209,
+                1488,
+                1573,
+                1563
+            ],
+            "block_id": 17,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "Analysis The bottom section of the pan has a large surface area relative to its thickness and can be approximated as a large plane wall. Heat flux is applied to the bottom surface of the pan uniformly, and the conditions on the inner surface are also uniform. Therefore, we expect the heat transfer through the bottom section of the pan to be from the bottom surface toward the top, and heat transfer in this case can reasonably be approximated as being one-dimensional. Taking the direction normal to the bottom surface of the pan to be the x-axis, we will have  $ T = T(x) $  during steady operation since the temperature in this case will depend on x only.",
+            "block_bbox": [
+                119,
+                1534,
+                1048,
+                1839
+            ],
+            "block_id": 18,
+            "block_order": 13
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7197327613830566,
+                "coordinate": [
+                    433.9671630859375,
+                    93.7454833984375,
+                    543.656005859375,
+                    124.4407958984375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9758780002593994,
+                "coordinate": [
+                    117.23239135742188,
+                    85.25593566894531,
+                    1067.963623046875,
+                    162.7120819091797
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.956916093826294,
+                "coordinate": [
+                    120.71044921875,
+                    172.54287719726562,
+                    757.0047607421875,
+                    248.37417602539062
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9227353930473328,
+                "coordinate": [
+                    993.2654418945312,
+                    193.66156005859375,
+                    1063.129638671875,
+                    224.63787841796875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9248684048652649,
+                "coordinate": [
+                    123.78768920898438,
+                    259.40350341796875,
+                    721.3406982421875,
+                    368.29351806640625
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9230328798294067,
+                "coordinate": [
+                    996.012939453125,
+                    298.31329345703125,
+                    1065.179443359375,
+                    328.63763427734375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.887890636920929,
+                "coordinate": [
+                    124.70352172851562,
+                    377.4042053222656,
+                    929.5902099609375,
+                    483.2316589355469
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9207100868225098,
+                "coordinate": [
+                    997.1293334960938,
+                    414.74346923828125,
+                    1066.6357421875,
+                    445.02117919921875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9845770001411438,
+                "coordinate": [
+                    118.958251953125,
+                    499.95721435546875,
+                    1072.57861328125,
+                    646.3192749023438
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9623642563819885,
+                "coordinate": [
+                    118.9842529296875,
+                    673.6776123046875,
+                    1069.2442626953125,
+                    719.9954833984375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9786264896392822,
+                "coordinate": [
+                    117.63931274414062,
+                    722.3440551757812,
+                    1070.3399658203125,
+                    831.4873657226562
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9651656746864319,
+                "coordinate": [
+                    409.41302490234375,
+                    830.5643310546875,
+                    774.1015014648438,
+                    905.7386474609375
+                ]
+            },
+            {
+                "cls_id": 11,
+                "label": "formula_number",
+                "score": 0.9212930202484131,
+                "coordinate": [
+                    993.8428344726562,
+                    856.1409912109375,
+                    1064.23388671875,
+                    887.0565185546875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6277177929878235,
+                "coordinate": [
+                    206.62713623046875,
+                    921.1453857421875,
+                    287.742431640625,
+                    951.2926025390625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5791226625442505,
+                "coordinate": [
+                    501.2005615234375,
+                    917.85888671875,
+                    576.9510498046875,
+                    947.1431884765625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5177345871925354,
+                "coordinate": [
+                    816.706298828125,
+                    916.3204345703125,
+                    895.9365234375,
+                    944.9068603515625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9819918274879456,
+                "coordinate": [
+                    117.31787109375,
+                    914.8935546875,
+                    1066.8782958984375,
+                    1064.34130859375
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9495995044708252,
+                "coordinate": [
+                    152.23074340820312,
+                    1115.92822265625,
+                    983.88232421875,
+                    1154.33935546875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.986885666847229,
+                "coordinate": [
+                    143.969482421875,
+                    1171.253173828125,
+                    1048.00146484375,
+                    1405.890625
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9636823534965515,
+                "coordinate": [
+                    1120.9649658203125,
+                    1087.3946533203125,
+                    1596.9451904296875,
+                    1466.6143798828125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.98008131980896,
+                "coordinate": [
+                    140.37924194335938,
+                    1431.391357421875,
+                    1046.5311279296875,
+                    1533.591064453125
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8813451528549194,
+                "coordinate": [
+                    1209.039794921875,
+                    1488.828857421875,
+                    1573.89599609375,
+                    1563.660400390625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9874632358551025,
+                "coordinate": [
+                    119.05093383789062,
+                    1534.065673828125,
+                    1048.0911865234375,
+                    1839.775390625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5428218841552734,
+                "coordinate": [
+                    288.85028076171875,
+                    1769.2861328125,
+                    395.27490234375,
+                    1801.273193359375
+                ]
+            }
+        ]
+    }
+}

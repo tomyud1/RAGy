@@ -1,0 +1,538 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_22.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_0_87_487_397.jpg\" alt=\"Image\" width=\"30%\" /></div>\n",
+            "block_bbox": [
+                0,
+                87,
+                487,
+                397
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–47</div>\n",
+            "block_bbox": [
+                0,
+                413,
+                187,
+                449
+            ],
+            "block_id": 1,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">Schematic for Example 2–13.</div>\n",
+            "block_bbox": [
+                0,
+                453,
+                384,
+                492
+            ],
+            "block_id": 2,
+            "block_order": null
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_548_91_608_147.jpg\" alt=\"Image\" width=\"3%\" /></div>\n",
+            "block_bbox": [
+                548,
+                91,
+                608,
+                147
+            ],
+            "block_id": 3,
+            "block_order": null
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## EXAMPLE 2–13 Thermal Burn Prevention in Metal Processing Plant",
+            "block_bbox": [
+                604,
+                55,
+                1364,
+                145
+            ],
+            "block_id": 4,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "In metal processing plants, workers often operate near hot metal surfaces. Exposed hot surfaces are hazards that can potentially cause thermal burns on human skin tissue. Metallic surface with a temperature above  $ 70^{\\circ} $ C is considered extremely hot. Damage to skin tissue can occur instantaneously upon contact with metallic surface at that temperature. In a plant that processes metal plates, a plate is conveyed through a series of fans to cool its surface in an ambient temperature of  $ 30^{\\circ} $ C, as shown in Figure 2-47. The plate is 25 mm thick and has a thermal conductivity of  $ 13.5 \\, W/m \\cdot K $ . Temperature at the bottom surface of the plate is monitored by an infrared (IR) thermometer. Obtain an expression for the variation of temperature in the metal plate. The IR thermometer measures the bottom surface of the plate to be  $ 60^{\\circ} $ C. Determine the minimum value of the convection heat transfer coefficient necessary to keep the top surface below  $ 47^{\\circ} $ C to avoid instantaneous thermal burn upon accidental contact of hot metal surface with skin tissue.\n\nSOLUTION In this example, the concepts of Prevention through Design (PtD) are applied in conjunction with the solution of steady one-dimensional heat conduction problem. The top surface of the plate is cooled by convection, and temperature at the bottom surface is measured by an IR thermometer. The variation of temperature in the metal plate and the convection heat transfer coefficient necessary to keep the top surface below  $ 47^{\\circ} $ C are to be determined.\n\nAssumptions 1 Heat conduction is steady and one-dimensional. 2 Thermal conductivity is constant. 3 There is no heat generation in the plate. 4 The bottom surface at x = 0 is at constant temperature while the top surface at x = L is subjected to convection.\n\nProperties The thermal conductivity of the metal plate is given to be k = 13.5 W/m·K.\n\nAnalysis Taking the direction normal to the surface of the wall to be the x direction with x = 0 at the lower surface, the mathematical formulation can be expressed as",
+            "block_bbox": [
+                542,
+                157,
+                1524,
+                638
+            ],
+            "block_id": 5,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                544,
+                669,
+                1540,
+                1015
+            ],
+            "block_id": 6,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                549,
+                1013,
+                1546,
+                1086
+            ],
+            "block_id": 7,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                546,
+                1085,
+                1555,
+                1193
+            ],
+            "block_id": 8,
+            "block_order": 5
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{d^{2}T}{dx^{2}}=0 $$ ",
+            "block_bbox": [
+                978,
+                1211,
+                1104,
+                1287
+            ],
+            "block_id": 9,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "with boundary conditions",
+            "block_bbox": [
+                547,
+                1317,
+                874,
+                1353
+            ],
+            "block_id": 10,
+            "block_order": 7
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\begin{aligned}T(0)&=T_{0}\\\\-k\\frac{dT(L)}{dx}&=h[T(L)-T_{\\infty}]\\end{aligned} $$ ",
+            "block_bbox": [
+                872,
+                1373,
+                1221,
+                1493
+            ],
+            "block_id": 11,
+            "block_order": 8
+        },
+        {
+            "block_label": "text",
+            "block_content": "Integrating the differential equation twice with respect to x yields",
+            "block_bbox": [
+                546,
+                1515,
+                1399,
+                1553
+            ],
+            "block_id": 12,
+            "block_order": 9
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\begin{aligned}\\frac{dT}{dx}&=C_{1}\\\\T(x)&=C_{1}x+C_{2}\\end{aligned} $$ ",
+            "block_bbox": [
+                929,
+                1568,
+                1160,
+                1690
+            ],
+            "block_id": 13,
+            "block_order": 10
+        },
+        {
+            "block_label": "text",
+            "block_content": "where  $ C_{1} $  and  $ C_{2} $  are arbitrary constants. Applying the first boundary condition yields",
+            "block_bbox": [
+                543,
+                1716,
+                1567,
+                1782
+            ],
+            "block_id": 14,
+            "block_order": 11
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T(0)=C_{1}\\times0+C_{2}=T_{0}\\rightarrow C_{2}=T_{0} $$ ",
+            "block_bbox": [
+                801,
+                1812,
+                1296,
+                1858
+            ],
+            "block_id": 15,
+            "block_order": 12
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9390581250190735,
+                "coordinate": [
+                    0.9069061279296875,
+                    87.16731262207031,
+                    487.64306640625,
+                    397.229248046875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.6466056704521179,
+                "coordinate": [
+                    0.35051727294921875,
+                    413.6189270019531,
+                    187.81735229492188,
+                    449.1019592285156
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.7515034675598145,
+                "coordinate": [
+                    0,
+                    453.76690673828125,
+                    384.9388427734375,
+                    492.32159423828125
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.5356078743934631,
+                "coordinate": [
+                    548.9928588867188,
+                    91.20486450195312,
+                    608.6124877929688,
+                    147.75686645507812
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.918570876121521,
+                "coordinate": [
+                    604.9364013671875,
+                    55.525367736816406,
+                    1364.7156982421875,
+                    145.63336181640625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8464120626449585,
+                "coordinate": [
+                    1346.948486328125,
+                    222.5346221923828,
+                    1415.549560546875,
+                    255.1940155029297
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.886358380317688,
+                "coordinate": [
+                    933.121826171875,
+                    368.45782470703125,
+                    1003.677490234375,
+                    399.96820068359375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9870972633361816,
+                "coordinate": [
+                    542.5682373046875,
+                    157.7444305419922,
+                    1524.1541748046875,
+                    638.8182983398438
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8529912233352661,
+                "coordinate": [
+                    921.5128173828125,
+                    565.6400146484375,
+                    988.7183837890625,
+                    597.2469482421875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.852497935295105,
+                "coordinate": [
+                    1355.8818359375,
+                    493.53204345703125,
+                    1423.47119140625,
+                    525.7223510742188
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8506999015808105,
+                "coordinate": [
+                    544.7723388671875,
+                    669.0045166015625,
+                    1540.9439697265625,
+                    1015.3822021484375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8434664011001587,
+                "coordinate": [
+                    1185.188232421875,
+                    836.31591796875,
+                    1255.122802734375,
+                    867.828125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.45239171385765076,
+                "coordinate": [
+                    546.3786010742188,
+                    874.51025390625,
+                    1543.930908203125,
+                    1013.190185546875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6676501631736755,
+                "coordinate": [
+                    735.669677734375,
+                    945.7742919921875,
+                    809.8560791015625,
+                    975.2144775390625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.691139280796051,
+                "coordinate": [
+                    1463.9676513671875,
+                    942.5799560546875,
+                    1539.9539794921875,
+                    972.262939453125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9685748815536499,
+                "coordinate": [
+                    549.1310424804688,
+                    1013.2987060546875,
+                    1546.344970703125,
+                    1086.0516357421875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.4461691379547119,
+                "coordinate": [
+                    554.7020263671875,
+                    1052.501708984375,
+                    707.8734130859375,
+                    1085.607421875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6851655840873718,
+                "coordinate": [
+                    1486.18603515625,
+                    1014.6304321289062,
+                    1541.87109375,
+                    1044.8203125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9766106605529785,
+                "coordinate": [
+                    546.9031982421875,
+                    1085.158447265625,
+                    1555.8155517578125,
+                    1193.522216796875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5659404993057251,
+                "coordinate": [
+                    734.622802734375,
+                    1123.8656005859375,
+                    814.5130615234375,
+                    1153.5928955078125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9476007223129272,
+                "coordinate": [
+                    978.31005859375,
+                    1211.321044921875,
+                    1104.318603515625,
+                    1287.642333984375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9446088075637817,
+                "coordinate": [
+                    547.309814453125,
+                    1317.8082275390625,
+                    874.261474609375,
+                    1353.3990478515625
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9494131207466125,
+                "coordinate": [
+                    872.0578002929688,
+                    1373.1834716796875,
+                    1221.961181640625,
+                    1493.7862548828125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9545751810073853,
+                "coordinate": [
+                    546.2576904296875,
+                    1515.021728515625,
+                    1399.5020751953125,
+                    1553.754150390625
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.7410718202590942,
+                "coordinate": [
+                    929.26220703125,
+                    1568.683349609375,
+                    1160.71240234375,
+                    1690.653564453125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8910400867462158,
+                "coordinate": [
+                    635.969970703125,
+                    1718.38232421875,
+                    669.088623046875,
+                    1749.333984375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8867427706718445,
+                "coordinate": [
+                    731.6573486328125,
+                    1719.3836669921875,
+                    763.1575927734375,
+                    1750.1292724609375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9637407660484314,
+                "coordinate": [
+                    543.5986328125,
+                    1716.14697265625,
+                    1567.250244140625,
+                    1782.22705078125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9458703398704529,
+                "coordinate": [
+                    801.706298828125,
+                    1812.3350830078125,
+                    1296.259033203125,
+                    1858.9136962890625
+                ]
+            }
+        ]
+    }
+}

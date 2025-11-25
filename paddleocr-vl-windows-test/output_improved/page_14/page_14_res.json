@@ -1,0 +1,457 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_14.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "HEAT CONDUCTION EQUATION",
+            "block_bbox": [
+                75,
+                9,
+                435,
+                52
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "text",
+            "block_content": "SOLUTION The cooling of a hot spherical metal ball is considered. The initial and boundary conditions are to be obtained.",
+            "block_bbox": [
+                547,
+                85,
+                1521,
+                165
+            ],
+            "block_id": 1,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "Analysis The ball is initially at a uniform temperature and is cooled uniformly from the entire outer surface. Therefore, this is a one-dimensional transient heat transfer problem since the temperature within the ball changes with the radial distance r and the time t. That is,  $ T = T(r, t) $ . Taking the moment the ball is removed from the oven to be t = 0, the initial condition can be expressed as",
+            "block_bbox": [
+                538,
+                157,
+                1521,
+                362
+            ],
+            "block_id": 2,
+            "block_order": 2
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T(r,0)=T_{i}=600^{\\circ}\\mathrm{F} $$ ",
+            "block_bbox": [
+                889,
+                378,
+                1154,
+                413
+            ],
+            "block_id": 3,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "The problem possesses symmetry about the midpoint  $ (r = 0) $  since the isotherms in this case are concentric spheres, and thus no heat is crossing the midpoint of the ball. Then the boundary condition at the midpoint can be expressed as",
+            "block_bbox": [
+                528,
+                430,
+                1517,
+                561
+            ],
+            "block_id": 4,
+            "block_order": 4
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{\\partial T(0,t)}{\\partial r}=0 $$ ",
+            "block_bbox": [
+                935,
+                570,
+                1096,
+                639
+            ],
+            "block_id": 5,
+            "block_order": 5
+        },
+        {
+            "block_label": "text",
+            "block_content": "The heat conducted to the outer surface of the ball is lost to the environment by convection and radiation. Then taking the direction of heat transfer to be the positive r direction, the boundary condition on the outer surface can be expressed as",
+            "block_bbox": [
+                521,
+                649,
+                1516,
+                784
+            ],
+            "block_id": 6,
+            "block_order": 6
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ -k\\frac{\\partial T(r_{o},t)}{\\partial r}=h[T(r_{o})-T_{\\infty}]+\\varepsilon\\sigma[T(r_{o})^{4}-T_{\\mathrm{s u r r}}^{4}] $$ ",
+            "block_bbox": [
+                705,
+                793,
+                1326,
+                866
+            ],
+            "block_id": 7,
+            "block_order": 7
+        },
+        {
+            "block_label": "text",
+            "block_content": "Discussion All the quantities in the above relations are known except the temperatures and their derivatives at r = 0 and  $ r_{o} $ . Also, the radiation part of the boundary condition is often ignored for simplicity by modifying the convection heat transfer coefficient to account for the contribution of radiation. The convection coefficient h in that case becomes the combined heat transfer coefficient.",
+            "block_bbox": [
+                514,
+                882,
+                1517,
+                1057
+            ],
+            "block_id": 8,
+            "block_order": 8
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## EXAMPLE 2–9 Combined Convection, Radiation, and Heat Flux",
+            "block_bbox": [
+                505,
+                1169,
+                1475,
+                1213
+            ],
+            "block_id": 9,
+            "block_order": 9
+        },
+        {
+            "block_label": "text",
+            "block_content": "Consider the south wall of a house that is L = 0.2 m thick. The outer surface of the wall is exposed to solar radiation and has an absorptivity of  $ \\alpha = 0.5 $  for solar energy. The interior of the house is maintained at  $ T_{\\infty1} = 20^{\\circ}C $ , while the ambient air temperature outside remains at  $ T_{\\infty2} = 5^{\\circ}C $ . The sky, the ground, and the surfaces of the surrounding structures at this location can be modeled as a surface at an effective temperature of  $ T_{sky} = 255 $  K for radiation exchange on the outer surface. The radiation exchange between the inner surface of the wall and the surfaces of the walls, floor, and ceiling it faces is negligible. The convection heat transfer coefficients on the inner and the outer surfaces of the wall are  $ h_{1} = 6 \\, W/m^{2} \\cdot K $  and  $ h_{2} = 25 \\, W/m^{2} \\cdot K $ , respectively. The thermal conductivity of the wall material is  $ k = 0.7 \\, W/m \\cdot K $ , and the emissivity of the outer surface is  $ \\varepsilon_{2} = 0.9 $ . Assuming the heat transfer through the wall to be steady and one-dimensional, express the boundary conditions on the inner and the outer surfaces of the wall.",
+            "block_bbox": [
+                494,
+                1229,
+                1512,
+                1711
+            ],
+            "block_id": 10,
+            "block_order": 10
+        },
+        {
+            "block_label": "text",
+            "block_content": "SOLUTION The wall of a house subjected to solar radiation is considered. The boundary conditions on the inner and outer surfaces of the wall are to be obtained.",
+            "block_bbox": [
+                494,
+                1736,
+                1510,
+                1843
+            ],
+            "block_id": 11,
+            "block_order": 11
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8362332582473755,
+                "coordinate": [
+                    75.77841186523438,
+                    9.296131134033203,
+                    435.8462829589844,
+                    52.71120834350586
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9690743684768677,
+                "coordinate": [
+                    547.534423828125,
+                    85.53868103027344,
+                    1521.618896484375,
+                    165.34986877441406
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9844702482223511,
+                "coordinate": [
+                    538.8235473632812,
+                    157.13267517089844,
+                    1521.628173828125,
+                    362.8623046875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7447212338447571,
+                "coordinate": [
+                    1058.251708984375,
+                    292.06170654296875,
+                    1134.788330078125,
+                    320.72418212890625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.847176194190979,
+                "coordinate": [
+                    1105.871826171875,
+                    257.6278076171875,
+                    1222.562744140625,
+                    287.80267333984375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9386507272720337,
+                "coordinate": [
+                    889.1175537109375,
+                    378.7767333984375,
+                    1154.1207275390625,
+                    413.2802734375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9801416397094727,
+                "coordinate": [
+                    528.587158203125,
+                    430.593017578125,
+                    1517.768310546875,
+                    561.7208251953125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.633064866065979,
+                "coordinate": [
+                    1228.130126953125,
+                    430.4569091796875,
+                    1322.060302734375,
+                    459.7086181640625
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9581755995750427,
+                "coordinate": [
+                    935.9212646484375,
+                    570.3421020507812,
+                    1096.3502197265625,
+                    639.4680786132812
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9836660623550415,
+                "coordinate": [
+                    521.991455078125,
+                    649.5189208984375,
+                    1516.7060546875,
+                    784.523193359375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9708707928657532,
+                "coordinate": [
+                    705.2861328125,
+                    793.327392578125,
+                    1326.088623046875,
+                    866.9649658203125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9847564101219177,
+                "coordinate": [
+                    514.8946533203125,
+                    882.3179931640625,
+                    1517.1754150390625,
+                    1057.880126953125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7131133675575256,
+                "coordinate": [
+                    942.0179443359375,
+                    917.89990234375,
+                    1017.8511962890625,
+                    945.83154296875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7086938619613647,
+                "coordinate": [
+                    1082.9443359375,
+                    921.7551879882812,
+                    1111.7783203125,
+                    950.6134643554688
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.946709156036377,
+                "coordinate": [
+                    505.4672546386719,
+                    1169.888916015625,
+                    1475.825439453125,
+                    1213.216552734375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7173635363578796,
+                "coordinate": [
+                    1041.4776611328125,
+                    1233.14794921875,
+                    1147.7281494140625,
+                    1264.42724609375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8158019781112671,
+                "coordinate": [
+                    1351.813232421875,
+                    1270.577880859375,
+                    1462.14306640625,
+                    1299.853759765625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9435103535652161,
+                "coordinate": [
+                    1213.660888671875,
+                    1301.8743896484375,
+                    1367.31884765625,
+                    1334.5848388671875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9881014823913574,
+                "coordinate": [
+                    494.3198547363281,
+                    1229.8931884765625,
+                    1512.77734375,
+                    1711.9415283203125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9370965361595154,
+                "coordinate": [
+                    1076.129150390625,
+                    1335.5667724609375,
+                    1213.045654296875,
+                    1367.7061767578125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9246359467506409,
+                "coordinate": [
+                    1042.215087890625,
+                    1402.1505126953125,
+                    1183.960693359375,
+                    1436.0369873046875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9325979948043823,
+                "coordinate": [
+                    689.6632080078125,
+                    1533.496826171875,
+                    884.6322021484375,
+                    1565.500732421875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.937199056148529,
+                "coordinate": [
+                    946.3435668945312,
+                    1535.6953125,
+                    1157.760986328125,
+                    1569.607421875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8647257685661316,
+                "coordinate": [
+                    955.4642333984375,
+                    1572.19873046875,
+                    1157.8382568359375,
+                    1604.595947265625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9089322090148926,
+                "coordinate": [
+                    710.60498046875,
+                    1603.6962890625,
+                    829.571044921875,
+                    1634.41455078125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9756647944450378,
+                "coordinate": [
+                    494.7102355957031,
+                    1736.619140625,
+                    1510.788818359375,
+                    1843.77880859375
+                ]
+            }
+        ]
+    }
+}

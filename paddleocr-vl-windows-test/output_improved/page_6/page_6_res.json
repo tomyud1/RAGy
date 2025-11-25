@@ -1,0 +1,382 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_6.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_23_75_458_490.jpg\" alt=\"Image\" width=\"27%\" /></div>\n",
+            "block_bbox": [
+                23,
+                75,
+                458,
+                490
+            ],
+            "block_id": 0,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–24 Schematic for Example 2–5.</div>\n",
+            "block_bbox": [
+                8,
+                509,
+                382,
+                593
+            ],
+            "block_id": 1,
+            "block_order": null
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## EXAMPLE 2–5 Heat Conduction in a Short Cylinder",
+            "block_bbox": [
+                568,
+                94,
+                1325,
+                133
+            ],
+            "block_id": 2,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "A short cylindrical metal billet of radius R and height h is heated in an oven to a temperature of  $ 600^{\\circ}F $  throughout and is then taken out of the oven and allowed to cool in ambient air at  $ T_{\\infty} = 65^{\\circ}F $  by convection and radiation. Assuming the billet is cooled uniformly from all outer surfaces and the variation of the thermal conductivity of the material with temperature is negligible, obtain the differential equation that describes the variation of the temperature in the billet during this cooling process.",
+            "block_bbox": [
+                558,
+                149,
+                1523,
+                389
+            ],
+            "block_id": 3,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "SOLUTION A short cylindrical billet is cooled in ambient air. The differential equation for the variation of temperature is to be obtained.",
+            "block_bbox": [
+                553,
+                419,
+                1514,
+                487
+            ],
+            "block_id": 4,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "Analysis The billet shown in Fig. 2–24 is initially at a uniform temperature and is cooled uniformly from the top and bottom surfaces in the z-direction as well as the lateral surface in the radial r-direction. Also, the temperature at any point in the ball changes with time during cooling. Therefore, this is a two-dimensional transient heat conduction problem since the temperature within the billet changes with the radial and axial distances r and z and with time t. That is,  $  T = T(r, z, t)  $ .",
+            "block_bbox": [
+                548,
+                488,
+                1515,
+                720
+            ],
+            "block_id": 5,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "The thermal conductivity is given to be constant, and there is no heat generation in the billet. Therefore, the differential equation that governs the variation of temperature in the billet in this case is obtained from Eq. 2–43 by setting the heat generation term and the derivatives with respect to  $ \\phi $  equal to zero. We obtain",
+            "block_bbox": [
+                544,
+                720,
+                1514,
+                887
+            ],
+            "block_id": 6,
+            "block_order": 5
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{1}{r}\\frac{\\partial}{\\partial r}\\bigg(k r\\frac{\\partial T}{\\partial r}\\bigg)+\\frac{\\partial}{\\partial z}\\bigg(k\\frac{\\partial T}{\\partial z}\\bigg)=\\rho c\\frac{\\partial T}{\\partial t} $$ ",
+            "block_bbox": [
+                795,
+                914,
+                1250,
+                994
+            ],
+            "block_id": 7,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "In the case of constant thermal conductivity, it reduces to",
+            "block_bbox": [
+                544,
+                1018,
+                1256,
+                1056
+            ],
+            "block_id": 8,
+            "block_order": 7
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{1}{r}\\frac{\\partial}{\\partial r}\\left(r\\frac{\\partial T}{\\partial r}\\right)+\\frac{\\partial^{2}T}{\\partial z^{2}}=\\frac{1}{\\alpha}\\frac{\\partial T}{\\partial t} $$ ",
+            "block_bbox": [
+                845,
+                1080,
+                1192,
+                1158
+            ],
+            "block_id": 9,
+            "block_order": 8
+        },
+        {
+            "block_label": "text",
+            "block_content": "which is the desired equation.",
+            "block_bbox": [
+                543,
+                1179,
+                912,
+                1213
+            ],
+            "block_id": 10,
+            "block_order": 9
+        },
+        {
+            "block_label": "text",
+            "block_content": "Discussion Note that the boundary and initial conditions have no effect on the differential equation.",
+            "block_bbox": [
+                542,
+                1216,
+                1495,
+                1284
+            ],
+            "block_id": 11,
+            "block_order": 10
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## 2 –4 - BOUNDARY AND INITIAL CONDITIONS",
+            "block_bbox": [
+                516,
+                1404,
+                1351,
+                1452
+            ],
+            "block_id": 12,
+            "block_order": 11
+        },
+        {
+            "block_label": "text",
+            "block_content": "The heat conduction equations above were developed using an energy balance on a differential element inside the medium, and they remain the same regardless of the thermal conditions on the surfaces of the medium. That is, the differential equations do not incorporate any information related to the conditions on the surfaces such as the surface temperature or a specified heat flux. Yet we know that the heat flux and the temperature distribution in a medium depend on the conditions at the surfaces, and the description of a heat transfer problem in a medium is not complete without a full description of the thermal conditions at the bounding surfaces of the medium. The mathematical expressions of the thermal conditions at the boundaries are called the boundary conditions.",
+            "block_bbox": [
+                507,
+                1471,
+                1516,
+                1867
+            ],
+            "block_id": 13,
+            "block_order": 12
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9651161432266235,
+                "coordinate": [
+                    23.242645263671875,
+                    75.763427734375,
+                    458.32012939453125,
+                    490.6412353515625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.5772214531898499,
+                "coordinate": [
+                    8.215835571289062,
+                    509.492431640625,
+                    382.28350830078125,
+                    593.1029052734375
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9459856152534485,
+                "coordinate": [
+                    568.35107421875,
+                    94.32757568359375,
+                    1325.5042724609375,
+                    133.29989624023438
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.7236176133155823,
+                "coordinate": [
+                    778.4617309570312,
+                    183.7867431640625,
+                    860.0617065429688,
+                    215.65716552734375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9858831763267517,
+                "coordinate": [
+                    558.7083740234375,
+                    149.61419677734375,
+                    1523.5745849609375,
+                    389.32769775390625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8773502707481384,
+                "coordinate": [
+                    940.0948486328125,
+                    218.4219512939453,
+                    1067.0406494140625,
+                    249.7342987060547
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9632592797279358,
+                "coordinate": [
+                    553.30517578125,
+                    419.79156494140625,
+                    1514.7568359375,
+                    487.83477783203125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9840846061706543,
+                "coordinate": [
+                    548.7967529296875,
+                    488.8101501464844,
+                    1515.4381103515625,
+                    720.5506591796875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.69142085313797,
+                "coordinate": [
+                    653.5026245117188,
+                    686.691162109375,
+                    812.5707397460938,
+                    717.391845703125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9824088215827942,
+                "coordinate": [
+                    544.9411010742188,
+                    720.8961181640625,
+                    1514.410400390625,
+                    887.5196533203125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9670705795288086,
+                "coordinate": [
+                    795.029541015625,
+                    914.5956420898438,
+                    1250.3427734375,
+                    994.6563110351562
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9497993588447571,
+                "coordinate": [
+                    544.473876953125,
+                    1018.5606079101562,
+                    1256.988525390625,
+                    1056.95068359375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9629033803939819,
+                "coordinate": [
+                    845.0411376953125,
+                    1080.0706787109375,
+                    1192.0860595703125,
+                    1158.3497314453125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9297308325767517,
+                "coordinate": [
+                    543.3707275390625,
+                    1179.362060546875,
+                    912.7010498046875,
+                    1213.909912109375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9601485729217529,
+                "coordinate": [
+                    542.0032958984375,
+                    1216.65380859375,
+                    1495.9527587890625,
+                    1284.473388671875
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9471759796142578,
+                "coordinate": [
+                    516.7308349609375,
+                    1404.26953125,
+                    1351.0428466796875,
+                    1452.75634765625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.988953709602356,
+                "coordinate": [
+                    507.823486328125,
+                    1471.250732421875,
+                    1516.424072265625,
+                    1867.49609375
+                ]
+            }
+        ]
+    }
+}

@@ -8,6 +8,7 @@ import settingsService from './settings.service.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PYTHON_SCRIPT = path.join(__dirname, '../python/docling_chunker.py');
+const PADDLEOCR_SCRIPT = path.join(__dirname, '../python/paddleocr_chunker.py');
 
 export class ChunkingService {
   static broadcastFunction = null;
@@ -20,6 +21,8 @@ export class ChunkingService {
   static async chunkDocuments(projectId, method, config, jobId = null, resume = false) {
     if (method === 'docling-hybrid') {
       return this.chunkWithDocling(projectId, config, jobId, resume);
+    } else if (method === 'paddleocr-vl') {
+      return this.chunkWithPaddleOCR(projectId, config, jobId);
     } else {
       throw new Error(`Unsupported chunking method: ${method}`);
     }
@@ -260,6 +263,147 @@ export class ChunkingService {
     });
   }
 
+  static async chunkWithPaddleOCR(projectId, config, jobId = null) {
+    const inputDir = ProjectService.getRawFilesPath(projectId);
+    const outputDir = ProjectService.getChunkedDataPath(projectId);
+    const outputFile = path.join(outputDir, 'chunks.json');
+
+    // Ensure output directory exists
+    await fs.mkdir(outputDir, { recursive: true });
+
+    const conversionOutputFolder = config.conversionOutputFolder || 'conversions/';
+    const batchSize = config.batchSize || 5; // Default 5 pages per batch
+
+    console.log('[Chunking] PaddleOCR-VL settings:', {
+      batchSize: batchSize,
+      conversionOutputFolder: conversionOutputFolder
+    });
+
+    return new Promise((resolve, reject) => {
+      const pythonProcess = spawn('python3', [
+        '-u',  // Unbuffered output
+        PADDLEOCR_SCRIPT,
+        inputDir,
+        outputFile,
+        batchSize.toString(),
+        conversionOutputFolder
+      ], {
+        env: {
+          ...process.env,
+          PYTHONUNBUFFERED: '1'
+        },
+        detached: true
+      });
+
+      // Track running process
+      this.runningProcesses.set(projectId, {
+        process: pythonProcess,
+        jobId: jobId,
+        startTime: Date.now()
+      });
+
+      let output = '';
+      let errorOutput = '';
+
+      pythonProcess.stdout.on('data', (data) => {
+        output += data.toString();
+      });
+
+      pythonProcess.stderr.on('data', (data) => {
+        const lines = data.toString().split('\n');
+
+        for (const line of lines) {
+          if (!line.trim()) continue;
+
+          try {
+            // Try to parse as JSON progress update
+            const progress = JSON.parse(line);
+            console.log('[Chunking] Progress update from PaddleOCR-VL:', progress);
+
+            // Broadcast all updates (progress, hardware_info, file_validation)
+            if (jobId && this.broadcastFunction) {
+              this.broadcastFunction(jobId, {
+                type: 'chunking-progress',
+                data: progress
+              });
+            }
+
+            // Save important progress milestones
+            if (progress.type === 'progress') {
+              const isImportantMilestone = progress.status === 'completed' ||
+                                          progress.status === 'error';
+
+              if (isImportantMilestone) {
+                try {
+                  this.saveProgress(projectId, progress);
+                } catch (err) {
+                  console.error('Failed to save progress (non-fatal):', err.message);
+                }
+              }
+            }
+          } catch (e) {
+            // Not JSON, regular log message
+            errorOutput += line + '\n';
+            console.log('[PaddleOCR-VL]:', line);
+          }
+        }
+      });
+
+      pythonProcess.on('close', async (code) => {
+        // Clean up process tracking
+        this.runningProcesses.delete(projectId);
+
+        if (code !== 0) {
+          console.error('PaddleOCR-VL stderr:', errorOutput);
+          reject(new Error(`PaddleOCR-VL process exited with code ${code}`));
+          return;
+        }
+
+        try {
+          const result = JSON.parse(output);
+
+          if (!result.success) {
+            reject(new Error(result.error || 'PaddleOCR-VL chunking failed'));
+            return;
+          }
+
+          // Load the generated chunks
+          const chunksData = JSON.parse(await fs.readFile(outputFile, 'utf-8'));
+
+          // Save to project - preserve processing_summary if present
+          const { chunks, processing_summary, ...otherMetadata } = chunksData;
+
+          // Save conversion output folder first to avoid race condition
+          await ProjectService.updateProject(projectId, {
+            conversionOutputFolder: result.conversion_output_folder
+          });
+
+          // Then save chunks and summary
+          await ProjectService.saveProjectChunks(
+            projectId,
+            chunks,
+            'paddleocr-vl',
+            { processing_summary, ...otherMetadata }
+          );
+
+          console.log(`PaddleOCR-VL chunking complete: ${chunks.length} chunks generated`);
+          console.log(`Conversion output folder: ${result.conversion_output_folder}`);
+
+          resolve({
+            success: true,
+            chunks: chunksData,
+          });
+        } catch (error) {
+          reject(new Error(`Failed to parse PaddleOCR-VL result: ${error.message}`));
+        }
+      });
+
+      pythonProcess.on('error', (error) => {
+        reject(new Error(`Failed to start PaddleOCR-VL process: ${error.message}`));
+      });
+    });
+  }
+
   static async uploadPreChunked(projectId, chunksData) {
     try {
       // Validate chunks format
@@ -303,20 +447,66 @@ export class ChunkingService {
   static async deleteChunks(projectId) {
     try {
       const chunkedDataPath = ProjectService.getChunkedDataPath(projectId);
-      
+
       // Delete the entire chunked-data directory
       await fs.rm(chunkedDataPath, { recursive: true, force: true });
-      
+
       // Clear chunking job from project metadata
       await ProjectService.clearChunkingJob(projectId);
-      
+
       console.log(`Deleted chunked data for project ${projectId}`);
-      
+
       return {
         success: true,
       };
     } catch (error) {
       throw new Error(`Failed to delete chunks: ${error.message}`);
+    }
+  }
+
+  static async clearMethodResults(projectId, method) {
+    try {
+      // Get the project's conversion output folder
+      const project = await ProjectService.getProject(projectId);
+      const conversionOutputFolder = project.conversionOutputFolder || 'conversions/';
+
+      // Determine method-specific subfolder
+      let methodFolder;
+      if (method === 'docling-hybrid') {
+        methodFolder = path.join(conversionOutputFolder, 'docling');
+      } else if (method === 'paddleocr-vl') {
+        methodFolder = path.join(conversionOutputFolder, 'paddleocr');
+      } else {
+        throw new Error(`Unsupported method: ${method}`);
+      }
+
+      // Check if folder exists and delete it
+      try {
+        await fs.access(methodFolder);
+        await fs.rm(methodFolder, { recursive: true, force: true });
+        console.log(`Deleted method-specific folder: ${methodFolder}`);
+      } catch (error) {
+        // Folder doesn't exist, that's okay
+        console.log(`Method folder doesn't exist (skipping): ${methodFolder}`);
+      }
+
+      // Also clear the main chunks.json file
+      const chunkedDataPath = ProjectService.getChunkedDataPath(projectId);
+      const chunksFile = path.join(chunkedDataPath, 'chunks.json');
+      try {
+        await fs.unlink(chunksFile);
+        console.log(`Deleted chunks file: ${chunksFile}`);
+      } catch (error) {
+        // File doesn't exist, that's okay
+        console.log(`Chunks file doesn't exist (skipping): ${chunksFile}`);
+      }
+
+      return {
+        success: true,
+        deletedFolder: methodFolder
+      };
+    } catch (error) {
+      throw new Error(`Failed to clear method results: ${error.message}`);
     }
   }
 }

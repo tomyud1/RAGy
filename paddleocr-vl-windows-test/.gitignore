@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+
+# Output files
+output/
+console_log.txt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Temporary files
+*.tmp
+.DS_Store

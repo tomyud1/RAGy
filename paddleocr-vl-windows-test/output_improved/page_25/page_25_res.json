@@ -1,0 +1,916 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_25.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "which is an implicit relation for the outer surface temperature  $ T_{L} $ . Substituting the given values, we get",
+            "block_bbox": [
+                35,
+                53,
+                1025,
+                129
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T_{L}=\\frac{0.26\\times(800\\mathrm{~W}/\\mathrm{m}^{2})-0.85\\times(5.67\\times10^{-8}\\mathrm{~W}/\\mathrm{m}^{2}\\cdot\\mathrm{K}^{4})T_{L}^{4}}{1.2\\mathrm{~W}/\\mathrm{m}\\cdot\\mathrm{K}}(0.06\\mathrm{~m})+300\\mathrm{~K} $$ ",
+            "block_bbox": [
+                39,
+                152,
+                1013,
+                239
+            ],
+            "block_id": 1,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "which simplifies to",
+            "block_bbox": [
+                28,
+                254,
+                289,
+                294
+            ],
+            "block_id": 2,
+            "block_order": 3
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T_{L}=310.4-0.240975\\bigg(\\frac{T_{L}}{100}\\bigg)^{4} $$ ",
+            "block_bbox": [
+                330,
+                317,
+                733,
+                397
+            ],
+            "block_id": 3,
+            "block_order": 4
+        },
+        {
+            "block_label": "text",
+            "block_content": "This equation can be solved by one of the several nonlinear equation solvers available (or by the old fashioned trial-and-error method) to give (Fig. 2–49)",
+            "block_bbox": [
+                16,
+                403,
+                1015,
+                483
+            ],
+            "block_id": 4,
+            "block_order": 5
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T_{L}=292.7\\textbf{K} $$ ",
+            "block_bbox": [
+                433,
+                497,
+                620,
+                536
+            ],
+            "block_id": 5,
+            "block_order": 6
+        },
+        {
+            "block_label": "text",
+            "block_content": "Knowing the outer surface temperature and knowing that it must remain constant under steady conditions, the temperature distribution in the wall can be determined by substituting the  $ T_{L} $  value above into Eq. (c):",
+            "block_bbox": [
+                12,
+                553,
+                1013,
+                662
+            ],
+            "block_id": 6,
+            "block_order": 7
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T(x)=\\frac{0.26\\times(800\\mathrm{~W}/\\mathrm{m}^{2})-0.85\\times(5.67\\times10^{-8}\\mathrm{~W}/\\mathrm{m}^{2}\\cdot\\mathrm{K}^{4})(292.7\\mathrm{~K})^{4}}{1.2\\mathrm{~W}/\\mathrm{m}\\cdot\\mathrm{K}}x+300\\mathrm{~K} $$ ",
+            "block_bbox": [
+                25,
+                673,
+                999,
+                747
+            ],
+            "block_id": 7,
+            "block_order": 8
+        },
+        {
+            "block_label": "text",
+            "block_content": "which simplifies to",
+            "block_bbox": [
+                14,
+                765,
+                280,
+                802
+            ],
+            "block_id": 8,
+            "block_order": 9
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T(x)=(-121.5\\mathrm{~K/m})x+300\\mathrm{~K} $$ ",
+            "block_bbox": [
+                318,
+                816,
+                724,
+                852
+            ],
+            "block_id": 9,
+            "block_order": 10
+        },
+        {
+            "block_label": "text",
+            "block_content": "Note that the outer surface temperature turned out to be lower than the inner surface temperature. Therefore, the heat transfer through the wall is toward the outside despite the absorption of solar radiation by the outer surface. Knowing both the inner and outer surface temperatures of the wall, the steady rate of heat conduction through the wall can be determined from",
+            "block_bbox": [
+                13,
+                866,
+                1007,
+                1044
+            ],
+            "block_id": 10,
+            "block_order": 11
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\dot{q}=k\\frac{T_{1}-T_{L}}{L}=(1.2\\ W/m\\cdot K)\\frac{(300-292.7)\\ K}{0.06\\ m}=146\\ W/m^{2} $$ ",
+            "block_bbox": [
+                128,
+                1059,
+                902,
+                1139
+            ],
+            "block_id": 11,
+            "block_order": 12
+        },
+        {
+            "block_label": "text",
+            "block_content": "Discussion In the case of no incident solar radiation, the outer surface temperature, determined from Eq. (d) by setting  $ \\dot{q}_{solar} = 0 $ , is  $ T_{L} = 284.3 K $ . It is interesting to note that the solar energy incident on the surface causes the surface temperature to increase by about 8 K only when the inner surface temperature of the wall is maintained at 300 K.",
+            "block_bbox": [
+                15,
+                1167,
+                1004,
+                1342
+            ],
+            "block_id": 12,
+            "block_order": 13
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## EXAMPLE 2–15 Heat Loss through a Steam Pipe",
+            "block_bbox": [
+                28,
+                1454,
+                766,
+                1493
+            ],
+            "block_id": 13,
+            "block_order": 14
+        },
+        {
+            "block_label": "text",
+            "block_content": "Consider a steam pipe of length L = 20 m, inner radius  $ r_{1} = 6 $  cm, outer radius  $ r_{2} = 8 $  cm, and thermal conductivity k = 20 W/m·K, as shown in Fig. 2–50. The inner and outer surfaces of the pipe are maintained at average temperatures of  $ T_{1} = 150^{\\circ}C $  and  $ T_{2} = 60^{\\circ}C $ , respectively. Obtain a general relation for the temperature distribution inside the pipe under steady conditions, and determine the rate of heat loss from the steam through the pipe.",
+            "block_bbox": [
+                27,
+                1509,
+                1000,
+                1715
+            ],
+            "block_id": 14,
+            "block_order": 15
+        },
+        {
+            "block_label": "text",
+            "block_content": "SOLUTION A steam pipe is subjected to specified temperatures on its surfaces. The variation of temperature and the rate of heat transfer are to be determined.",
+            "block_bbox": [
+                36,
+                1745,
+                1000,
+                1850
+            ],
+            "block_id": 15,
+            "block_order": 16
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## CHAPTER 2",
+            "block_bbox": [
+                1246,
+                3,
+                1392,
+                35
+            ],
+            "block_id": 16,
+            "block_order": 17
+        },
+        {
+            "block_label": "text",
+            "block_content": "(1) Rearrange the equation to be solved:",
+            "block_bbox": [
+                1093,
+                113,
+                1513,
+                145
+            ],
+            "block_id": 17,
+            "block_order": 18
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T_{L}=310.4-0.240975\\left(\\frac{T_{L}}{100}\\right)^{4} $$ ",
+            "block_bbox": [
+                1128,
+                150,
+                1447,
+                208
+            ],
+            "block_id": 18,
+            "block_order": 19
+        },
+        {
+            "block_label": "text",
+            "block_content": "The equation is in the proper form since the left side consists of  $ T_{L} $  only.",
+            "block_bbox": [
+                1089,
+                212,
+                1544,
+                274
+            ],
+            "block_id": 19,
+            "block_order": 20
+        },
+        {
+            "block_label": "text",
+            "block_content": "(2) Guess the value of  $ T_{L} $ , say 300 K, and substitute into the right side of the equation. It gives",
+            "block_bbox": [
+                1088,
+                285,
+                1545,
+                377
+            ],
+            "block_id": 20,
+            "block_order": 21
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T_{L}=290.2K $$ ",
+            "block_bbox": [
+                1235,
+                370,
+                1383,
+                403
+            ],
+            "block_id": 21,
+            "block_order": 22
+        },
+        {
+            "block_label": "text",
+            "block_content": "(3) Now substitute this value of  $ T_{L} $  into the right side of the equation and get",
+            "block_bbox": [
+                1086,
+                407,
+                1531,
+                469
+            ],
+            "block_id": 22,
+            "block_order": 23
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T_{L}=293.1K $$ ",
+            "block_bbox": [
+                1233,
+                472,
+                1380,
+                504
+            ],
+            "block_id": 23,
+            "block_order": 24
+        },
+        {
+            "block_label": "text",
+            "block_content": "(4) Repeat step (3) until convergence to desired accuracy is achieved. The subsequent iterations give",
+            "block_bbox": [
+                1083,
+                509,
+                1504,
+                599
+            ],
+            "block_id": 24,
+            "block_order": 25
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\begin{array}{l}T_{L}=292.6K\\\\T_{L}=292.7K\\\\T_{L}=292.7K\\end{array} $$ ",
+            "block_bbox": [
+                1227,
+                599,
+                1382,
+                694
+            ],
+            "block_id": 25,
+            "block_order": 26
+        },
+        {
+            "block_label": "text",
+            "block_content": "Therefore, the solution is  $ T_{L}=292.7 $  K. The result is independent of the initial guess.",
+            "block_bbox": [
+                1079,
+                699,
+                1545,
+                764
+            ],
+            "block_id": 26,
+            "block_order": 27
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## FIGURE 2–49",
+            "block_bbox": [
+                1376,
+                925,
+                1560,
+                959
+            ],
+            "block_id": 27,
+            "block_order": 28
+        },
+        {
+            "block_label": "text",
+            "block_content": "A simple method of solving a nonlinear equation is to arrange the equation such that the unknown is alone on the left side while everything else is on the right side, and to iterate after an initial guess until convergence.",
+            "block_bbox": [
+                1058,
+                965,
+                1562,
+                1215
+            ],
+            "block_id": 28,
+            "block_order": 29
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1089_1405_1556_1795.jpg\" alt=\"Image\" width=\"29%\" /></div>\n",
+            "block_bbox": [
+                1089,
+                1405,
+                1556,
+                1795
+            ],
+            "block_id": 29,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–50 Schematic for Example 2–14.</div>\n",
+            "block_bbox": [
+                1156,
+                1817,
+                1557,
+                1894
+            ],
+            "block_id": 30,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9646250605583191,
+                "coordinate": [
+                    35.248138427734375,
+                    53.255516052246094,
+                    1025.5980224609375,
+                    129.31753540039062
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8447398543357849,
+                "coordinate": [
+                    829.3201904296875,
+                    83.01366424560547,
+                    860.3524169921875,
+                    115.09510040283203
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9641855359077454,
+                "coordinate": [
+                    39.906585693359375,
+                    152.5071563720703,
+                    1013.5721435546875,
+                    239.6061248779297
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9442127346992493,
+                "coordinate": [
+                    28.041488647460938,
+                    254.8556671142578,
+                    289.961669921875,
+                    294.03546142578125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9637726545333862,
+                "coordinate": [
+                    330.0227355957031,
+                    317.8582458496094,
+                    733.048828125,
+                    397.1655578613281
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9642956852912903,
+                "coordinate": [
+                    16.646148681640625,
+                    403.945068359375,
+                    1015.9515380859375,
+                    483.116943359375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9295512437820435,
+                "coordinate": [
+                    433.364501953125,
+                    497.71875,
+                    620.1014404296875,
+                    536.111083984375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9760923385620117,
+                "coordinate": [
+                    12.42315673828125,
+                    553.3714599609375,
+                    1013.6963500976562,
+                    662.8568115234375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8676726222038269,
+                "coordinate": [
+                    468.40679931640625,
+                    625.4556884765625,
+                    498.28436279296875,
+                    658.56201171875
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.961273193359375,
+                "coordinate": [
+                    25.58868408203125,
+                    673.6075439453125,
+                    999.6088256835938,
+                    747.092529296875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9435315728187561,
+                "coordinate": [
+                    14.495208740234375,
+                    765.66943359375,
+                    280.75970458984375,
+                    802.40771484375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9414631724357605,
+                "coordinate": [
+                    318.52001953125,
+                    816.5194091796875,
+                    724.8707275390625,
+                    852.7373046875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9846521615982056,
+                "coordinate": [
+                    13.096099853515625,
+                    866.8056640625,
+                    1007.092529296875,
+                    1044.7327880859375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9694029092788696,
+                "coordinate": [
+                    128.51885986328125,
+                    1059.859375,
+                    902.0751342773438,
+                    1139.40283203125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9827621579170227,
+                "coordinate": [
+                    15.018280029296875,
+                    1167.4130859375,
+                    1004.24853515625,
+                    1342.43505859375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8910824060440063,
+                "coordinate": [
+                    599.079833984375,
+                    1201.131103515625,
+                    721.18994140625,
+                    1235.417724609375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8045105934143066,
+                "coordinate": [
+                    763.849853515625,
+                    1201.905029296875,
+                    931.0084228515625,
+                    1235.181396484375
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9509809613227844,
+                "coordinate": [
+                    28.5751953125,
+                    1454.031005859375,
+                    766.0826416015625,
+                    1493.247314453125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6823447346687317,
+                "coordinate": [
+                    34.4879035949707,
+                    1546.836181640625,
+                    127.01506042480469,
+                    1578.462158203125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.4193227291107178,
+                "coordinate": [
+                    430.861083984375,
+                    1512.7142333984375,
+                    555.058837890625,
+                    1542.8236083984375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6984744668006897,
+                "coordinate": [
+                    713.8895263671875,
+                    1512.4942626953125,
+                    837.05029296875,
+                    1542.3162841796875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6407618522644043,
+                "coordinate": [
+                    507.37408447265625,
+                    1543.453857421875,
+                    695.2822875976562,
+                    1575.088134765625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9337217807769775,
+                "coordinate": [
+                    152.53494262695312,
+                    1609.781982421875,
+                    308.3232727050781,
+                    1642.693115234375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9304824471473694,
+                "coordinate": [
+                    371.068115234375,
+                    1610.869140625,
+                    507.64208984375,
+                    1643.3603515625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9826340079307556,
+                "coordinate": [
+                    27.475860595703125,
+                    1509.6617431640625,
+                    1000.883056640625,
+                    1715.6112060546875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9737309217453003,
+                "coordinate": [
+                    36.704071044921875,
+                    1745.87841796875,
+                    1000.0919189453125,
+                    1850.5771484375
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.86091548204422,
+                "coordinate": [
+                    1246.591796875,
+                    3.0326709747314453,
+                    1392.6318359375,
+                    35.79761505126953
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9020957946777344,
+                "coordinate": [
+                    1093.032470703125,
+                    113.66729736328125,
+                    1513.318115234375,
+                    145.6448974609375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9471616148948669,
+                "coordinate": [
+                    1128.8055419921875,
+                    150.20742797851562,
+                    1447.6182861328125,
+                    208.70819091796875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9615324139595032,
+                "coordinate": [
+                    1089.4263916015625,
+                    212.25558471679688,
+                    1544.4678955078125,
+                    274.7547302246094
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8337905406951904,
+                "coordinate": [
+                    1296.3065185546875,
+                    244.47244262695312,
+                    1326.1241455078125,
+                    272.0810852050781
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8169713616371155,
+                "coordinate": [
+                    1323.501220703125,
+                    289.54376220703125,
+                    1358.200439453125,
+                    318.75042724609375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9521551728248596,
+                "coordinate": [
+                    1088.6463623046875,
+                    285.8948059082031,
+                    1545.3819580078125,
+                    377.7771301269531
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.8732273578643799,
+                "coordinate": [
+                    1235.4700927734375,
+                    370.4415283203125,
+                    1383.1466064453125,
+                    403.3758544921875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.796073317527771,
+                "coordinate": [
+                    1415.375732421875,
+                    409.67547607421875,
+                    1445.57421875,
+                    439.0147705078125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9504633545875549,
+                "coordinate": [
+                    1086.715087890625,
+                    407.1800537109375,
+                    1531.306396484375,
+                    469.0205078125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.8992806673049927,
+                "coordinate": [
+                    1233.154296875,
+                    472.1884765625,
+                    1380.95849609375,
+                    504.9228515625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9449318647384644,
+                "coordinate": [
+                    1083.9166259765625,
+                    509.6663818359375,
+                    1504.1544189453125,
+                    599.61865234375
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.5679593086242676,
+                "coordinate": [
+                    1227.295654296875,
+                    599.50537109375,
+                    1382.197998046875,
+                    694.115966796875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9399135112762451,
+                "coordinate": [
+                    1079.06005859375,
+                    699.36962890625,
+                    1545.7041015625,
+                    764.79931640625
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.856576681137085,
+                "coordinate": [
+                    1351.2081298828125,
+                    700.56787109375,
+                    1492.4942626953125,
+                    731.8507080078125
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9243113398551941,
+                "coordinate": [
+                    1376.28955078125,
+                    925.0833740234375,
+                    1560.589111328125,
+                    959.919189453125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9678725004196167,
+                "coordinate": [
+                    1058.77294921875,
+                    965.3155517578125,
+                    1562.08447265625,
+                    1215.8104248046875
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9735305309295654,
+                "coordinate": [
+                    1089.25830078125,
+                    1405.841796875,
+                    1556.619140625,
+                    1795.625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.5651978850364685,
+                "coordinate": [
+                    1156.125732421875,
+                    1817.9205322265625,
+                    1557.141845703125,
+                    1894.0692138671875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.5893104672431946,
+                "coordinate": [
+                    1365.252197265625,
+                    1818.724853515625,
+                    1555.458984375,
+                    1853.50390625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.661514163017273,
+                "coordinate": [
+                    1158.063720703125,
+                    1854.0810546875,
+                    1554.363037109375,
+                    1892.693115234375
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,655 @@
+{
+    "input_path": "E:\\Downloads\\paddleocr-vl-windows-test\\output_improved\\page_31.png",
+    "page_index": null,
+    "model_settings": {
+        "use_doc_preprocessor": true,
+        "use_layout_detection": true,
+        "use_chart_recognition": true,
+        "format_block_content": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "SOLUTION The center temperature of a resistance heater submerged in water is to be determined.",
+            "block_bbox": [
+                84,
+                61,
+                1020,
+                140
+            ],
+            "block_id": 0,
+            "block_order": 1
+        },
+        {
+            "block_label": "text",
+            "block_content": "Assumptions 1 Heat transfer is steady since there is no change with time. 2 Heat transfer is one-dimensional since there is thermal symmetry about the centerline and no change in the axial direction. 3 Thermal conductivity is constant. 4 Heat generation in the heater is uniform.\n\nProperties The thermal conductivity is given to be  $ k = 15 \\, W/m \\cdot K $ .\n\nAnalysis The 2-kW resistance heater converts electric energy into heat at a rate of 2 kW. The heat generation per unit volume of the wire is",
+            "block_bbox": [
+                81,
+                143,
+                1018,
+                280
+            ],
+            "block_id": 1,
+            "block_order": 2
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                82,
+                278,
+                887,
+                319
+            ],
+            "block_id": 2,
+            "block_order": 3
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                78,
+                317,
+                1018,
+                392
+            ],
+            "block_id": 3,
+            "block_order": 4
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\dot{e}_{gen}=\\frac{\\dot{E}_{gen}}{V_{wire}}=\\frac{\\dot{E}_{gen}}{\\pi r_{o}^{2}L}=\\frac{2000W}{\\pi(0.002m)^{2}(0.5m)}=0.318\\times10^{9}W/m^{3} $$ ",
+            "block_bbox": [
+                166,
+                415,
+                935,
+                505
+            ],
+            "block_id": 4,
+            "block_order": 5
+        },
+        {
+            "block_label": "text",
+            "block_content": "Then the center temperature of the wire is determined from Eq. 2–71 to be",
+            "block_bbox": [
+                74,
+                522,
+                988,
+                562
+            ],
+            "block_id": 5,
+            "block_order": 6
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ T_{0}=T_{s}+\\frac{\\dot{e}_{gen}r_{o}^{2}}{4k}=105^{\\circ}\\mathrm{C}+\\frac{(0.318\\times10^{9}\\mathrm{W/m^{3}})(0.002\\mathrm{m})^{2}}{4\\times(15\\mathrm{W/m^{\\cdot}C})}=126^{\\circ}\\mathrm{C} $$ ",
+            "block_bbox": [
+                128,
+                589,
+                966,
+                675
+            ],
+            "block_id": 6,
+            "block_order": 7
+        },
+        {
+            "block_label": "text",
+            "block_content": "Discussion Note that the temperature difference between the center and the surface of the wire is  $ 21^{\\circ} $ C. Also, the thermal conductivity units W/m·°C and W/m·K are equivalent.",
+            "block_bbox": [
+                66,
+                699,
+                1018,
+                807
+            ],
+            "block_id": 7,
+            "block_order": 8
+        },
+        {
+            "block_label": "text",
+            "block_content": "We have developed these relations using the intuitive energy balance approach. However, we could have obtained the same relations by setting up the appropriate differential equations and solving them, as illustrated in Examples 2–18 and 2–19.",
+            "block_bbox": [
+                27,
+                874,
+                1037,
+                1033
+            ],
+            "block_id": 8,
+            "block_order": 9
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## EXAMPLE 2–18 Variation of Temperature in a Resistance Heater",
+            "block_bbox": [
+                64,
+                1088,
+                1016,
+                1129
+            ],
+            "block_id": 9,
+            "block_order": 10
+        },
+        {
+            "block_label": "text",
+            "block_content": "A long homogeneous resistance wire of radius  $ r_{o}=0.2 $  in and thermal conductivity  $ k=7.8\\ Btu/h\\cdotft\\cdot^{\\circ}F $  is being used to boil water at atmospheric pressure by the passage of electric current, as shown in Fig. 2–59. Heat is generated in the wire uniformly as a result of resistance heating at a rate of  $ \\dot{e}_{gen}=2400\\ Btu/h\\cdotin^{3} $ . If the outer surface temperature of the wire is measured to be  $ T_{s}=226^{\\circ}F $ , obtain a relation for the temperature distribution, and determine the temperature at the centerline of the wire when steady operating conditions are reached.",
+            "block_bbox": [
+                52,
+                1146,
+                1021,
+                1397
+            ],
+            "block_id": 10,
+            "block_order": 11
+        },
+        {
+            "block_label": "text",
+            "block_content": "SOLUTION This heat transfer problem is similar to the problem in Example 2–17, except that we need to obtain a relation for the variation of temperature within the wire with r. Differential equations are well suited for this purpose.\n\nAssumptions 1 Heat transfer is steady since there is no change with time. 2 Heat transfer is one-dimensional since there is no thermal symmetry about the centerline and no change in the axial direction. 3 Thermal conductivity is constant. 4 Heat generation in the wire is uniform.\n\nProperties The thermal conductivity is given to be  $ k = 7.8  Btu/h\\cdotft\\cdot^{\\circ}F $ .",
+            "block_bbox": [
+                42,
+                1420,
+                1020,
+                1528
+            ],
+            "block_id": 11,
+            "block_order": 12
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                37,
+                1528,
+                1021,
+                1671
+            ],
+            "block_id": 12,
+            "block_order": 13
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                36,
+                1670,
+                938,
+                1709
+            ],
+            "block_id": 13,
+            "block_order": 14
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "## CHAPTER 2",
+            "block_bbox": [
+                1236,
+                8,
+                1376,
+                40
+            ],
+            "block_id": 14,
+            "block_order": 15
+        },
+        {
+            "block_label": "text",
+            "block_content": "Analysis The differential equation which governs the variation of temperature in the wire is simply Eq. 2–27,",
+            "block_bbox": [
+                34,
+                1709,
+                1019,
+                1787
+            ],
+            "block_id": 15,
+            "block_order": 16
+        },
+        {
+            "block_label": "display_formula",
+            "block_content": " $$ \\frac{1}{r}\\frac{d}{d r}\\left(r\\frac{d T}{d r}\\right)+\\frac{\\dot{e}_{\\mathrm{g e n}}}{k}=0 $$ ",
+            "block_bbox": [
+                384,
+                1801,
+                696,
+                1886
+            ],
+            "block_id": 16,
+            "block_order": 17
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–58</div>\n",
+            "block_bbox": [
+                1374,
+                461,
+                1547,
+                496
+            ],
+            "block_id": 17,
+            "block_order": null
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1099_60_1542_438.jpg\" alt=\"Image\" width=\"27%\" /></div>\n",
+            "block_bbox": [
+                1099,
+                60,
+                1542,
+                438
+            ],
+            "block_id": 18,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">Schematic for Example 2–17.</div>\n",
+            "block_bbox": [
+                1174,
+                500,
+                1548,
+                538
+            ],
+            "block_id": 19,
+            "block_order": null
+        },
+        {
+            "block_label": "image",
+            "block_content": "<div style=\"text-align: center;\"><img src=\"imgs/img_in_image_box_1227_1318_1584_1816.jpg\" alt=\"Image\" width=\"22%\" /></div>\n",
+            "block_bbox": [
+                1227,
+                1318,
+                1584,
+                1816
+            ],
+            "block_id": 20,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">FIGURE 2–59</div>\n",
+            "block_bbox": [
+                1404,
+                1845,
+                1592,
+                1881
+            ],
+            "block_id": 21,
+            "block_order": null
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "<div style=\"text-align: center;\">Schematic for Example 2–18.</div>\n",
+            "block_bbox": [
+                1189,
+                1882,
+                1590,
+                1924
+            ],
+            "block_id": 22,
+            "block_order": null
+        }
+    ],
+    "doc_preprocessor_res": {
+        "input_path": null,
+        "page_index": null,
+        "model_settings": {
+            "use_doc_orientation_classify": true,
+            "use_doc_unwarping": true
+        },
+        "angle": 0
+    },
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9446402192115784,
+                "coordinate": [
+                    84.893310546875,
+                    61.10075378417969,
+                    1020.5162353515625,
+                    140.99075317382812
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9699817895889282,
+                "coordinate": [
+                    81.77633666992188,
+                    143.87930297851562,
+                    1018.827392578125,
+                    280.6701354980469
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8885447382926941,
+                "coordinate": [
+                    82.06344604492188,
+                    278.6847229003906,
+                    887.60498046875,
+                    319.1849670410156
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6600555777549744,
+                "coordinate": [
+                    699.470458984375,
+                    286.8545837402344,
+                    879.255615234375,
+                    318.1045837402344
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.4404275119304657,
+                "coordinate": [
+                    172.99754333496094,
+                    347.37457275390625,
+                    241.2756805419922,
+                    381.84307861328125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9508850574493408,
+                "coordinate": [
+                    78.79623413085938,
+                    317.6664123535156,
+                    1018.6187744140625,
+                    392.0835876464844
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9737816452980042,
+                "coordinate": [
+                    166.1739501953125,
+                    415.3293151855469,
+                    935.0272216796875,
+                    505.5108947753906
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9521412253379822,
+                "coordinate": [
+                    74.10043334960938,
+                    522.8643798828125,
+                    988.1597900390625,
+                    562.9366455078125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9718857407569885,
+                "coordinate": [
+                    128.35720825195312,
+                    589.233642578125,
+                    966.51416015625,
+                    675.1939697265625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9750242233276367,
+                "coordinate": [
+                    66.63668823242188,
+                    699.5995483398438,
+                    1018.4468994140625,
+                    807.4705200195312
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5493726134300232,
+                "coordinate": [
+                    348.61199951171875,
+                    735.5640258789062,
+                    415.73822021484375,
+                    768.2932739257812
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.6621266007423401,
+                "coordinate": [
+                    865.56005859375,
+                    738.0799560546875,
+                    961.00439453125,
+                    771.5704345703125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9843770265579224,
+                "coordinate": [
+                    27.78466796875,
+                    874.498291015625,
+                    1037.3260498046875,
+                    1033.54638671875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.8426735401153564,
+                "coordinate": [
+                    608.1448974609375,
+                    1147.600341796875,
+                    707.9002685546875,
+                    1178.8447265625
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.9508016109466553,
+                "coordinate": [
+                    64.77426147460938,
+                    1088.0819091796875,
+                    1016.2237548828125,
+                    1129.3018798828125
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.4874987304210663,
+                "coordinate": [
+                    102.73025512695312,
+                    1185.138427734375,
+                    203.4866943359375,
+                    1215.960205078125
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9837860465049744,
+                "coordinate": [
+                    52.479705810546875,
+                    1146.1533203125,
+                    1021.109130859375,
+                    1397.435546875
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5083151459693909,
+                "coordinate": [
+                    714.546142578125,
+                    1248.933837890625,
+                    981.2626953125,
+                    1285.488037109375
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.9353697299957275,
+                "coordinate": [
+                    783.411865234375,
+                    1285.135986328125,
+                    922.413818359375,
+                    1319.586181640625
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9799268841743469,
+                "coordinate": [
+                    42.584716796875,
+                    1420.297119140625,
+                    1020.9664306640625,
+                    1528.2294921875
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9823070168495178,
+                "coordinate": [
+                    37.04644775390625,
+                    1528.3121337890625,
+                    1021.4645385742188,
+                    1671.1751708984375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.893508791923523,
+                "coordinate": [
+                    36.767486572265625,
+                    1670.740966796875,
+                    938.454345703125,
+                    1709.880126953125
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.4868205189704895,
+                "coordinate": [
+                    1236.291748046875,
+                    8.053155899047852,
+                    1376.800048828125,
+                    40.913551330566406
+                ]
+            },
+            {
+                "cls_id": 15,
+                "label": "inline_formula",
+                "score": 0.5064148902893066,
+                "coordinate": [
+                    690.264892578125,
+                    1670.7420654296875,
+                    928.061279296875,
+                    1703.2415771484375
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9646956920623779,
+                "coordinate": [
+                    34.443328857421875,
+                    1709.76171875,
+                    1019.02978515625,
+                    1787.267578125
+                ]
+            },
+            {
+                "cls_id": 5,
+                "label": "display_formula",
+                "score": 0.9668601155281067,
+                "coordinate": [
+                    384.0576171875,
+                    1801.8280029296875,
+                    696.8992919921875,
+                    1886.6138916015625
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.7766336798667908,
+                "coordinate": [
+                    1374.5986328125,
+                    461.37890625,
+                    1547.77880859375,
+                    496.769287109375
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.977895200252533,
+                "coordinate": [
+                    1099.8209228515625,
+                    60.25355529785156,
+                    1542.7982177734375,
+                    438.145751953125
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.6056511998176575,
+                "coordinate": [
+                    1174.4384765625,
+                    500.77215576171875,
+                    1548.4775390625,
+                    538.8034057617188
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9770157933235168,
+                "coordinate": [
+                    1227.1507568359375,
+                    1318.689697265625,
+                    1584.4356689453125,
+                    1816.873046875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.857379674911499,
+                "coordinate": [
+                    1404.67626953125,
+                    1845.514892578125,
+                    1592.27294921875,
+                    1881.920654296875
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.7655410766601562,
+                "coordinate": [
+                    1189.94873046875,
+                    1882.936767578125,
+                    1590.135498046875,
+                    1924.281005859375
+                ]
+            }
+        ]
+    }
+}
