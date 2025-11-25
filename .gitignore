@@ -11,6 +11,15 @@ dist/
 build/
 *.egg-info/
 
+# Electron build outputs
+release/
+out/
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.snap
+
 # Data directories
 data/projects/
 *.hnsw
