@@ -1,9 +1,17 @@
 # RAGy - Modern RAG System
 
-A powerful, user-friendly RAG (Retrieval-Augmented Generation) system that allows you to create, manage, and test multiple vector databases with different embedding models.
+![Electron](https://img.shields.io/badge/Electron-v28.0-47848F?logo=electron&logoColor=white)
+![Version](https://img.shields.io/badge/version-0.1.0-blue)
+![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey)
+
+A powerful, user-friendly **desktop application** for RAG (Retrieval-Augmented Generation) that allows you to create, manage, and test multiple vector databases with different embedding models.
+
+> **Built with Electron** - Native desktop app for macOS, Windows, and Linux
 
 ## 🎯 Features
 
+- **🖥️ Native Desktop App**: Built with Electron for macOS, Windows, and Linux
+- **📦 Easy Distribution**: Single installer with everything included
 - **Multi-Project Support**: Create and manage multiple RAG projects
 - **Flexible Document Processing**: Upload PDFs, DOCX, XLSX, TXT, MD, and more
 - **Advanced Chunking**: Uses Docling for intelligent document chunking
@@ -15,76 +23,100 @@ A powerful, user-friendly RAG (Retrieval-Augmented Generation) system that allow
 
 ## 🏗️ Architecture
 
+Built as an Electron desktop application with embedded backend:
+
 ```
-┌─────────────────────┐
-│   React Frontend    │  ← Vite + React + Modern UI
-│   (Port 5173)       │
-└─────────┬───────────┘
-          │ HTTP/WebSocket
-┌─────────▼───────────────────────────────────┐
-│   Node.js/Express Backend (Port 3001)       │
-│   - Project management                      │
-│   - File upload (multer)                    │
-│   - Chunking orchestration                  │
-│   - Embedding generation (@xenova)          │
-│   - Vector DB (hnswlib)                     │
-│   - RAG queries                             │
-└─────────┬──────────┬────────────────────────┘
-          │          │
-          │    ┌─────▼──────────┐
-          │    │ Python Service │  ← Docling chunking
-          │    │  (subprocess)  │
-          │    └────────────────┘
-          │
-    ┌─────▼──────┐
-    │ Vector DBs │  ← HNSW indices
-    └────────────┘
+┌──────────────────────────────────────────────┐
+│         Electron Desktop App                 │
+│                                              │
+│  ┌────────────────────────────────────────┐ │
+│  │   React Frontend (Chromium)            │ │
+│  │   - Beautiful UI                       │ │
+│  │   - Real-time updates                  │ │
+│  └────────────┬───────────────────────────┘ │
+│               │ IPC / HTTP                   │
+│  ┌────────────▼───────────────────────────┐ │
+│  │   Node.js Backend (Embedded)           │ │
+│  │   - Express API (Port 3001)            │ │
+│  │   - Project management                 │ │
+│  │   - File upload (multer)               │ │
+│  │   - Chunking orchestration             │ │
+│  │   - Embedding generation (@xenova)     │ │
+│  │   - Vector DB (hnswlib)                │ │
+│  │   - RAG queries                        │ │
+│  └────────────┬───────────────────────────┘ │
+│               │                              │
+│  ┌────────────▼───────────┐                 │
+│  │   Python Service       │                 │
+│  │   - Docling chunking   │                 │
+│  │   - Document parsing   │                 │
+│  └────────────────────────┘                 │
+│                                              │
+└──────────────────────────────────────────────┘
+         │
+    ┌────▼────────┐
+    │ Vector DBs  │  ← HNSW indices in user data
+    └─────────────┘
 ```
 
 ## 📦 Installation
 
-### Prerequisites
+### For End Users (Recommended)
 
+Download the installer for your platform from the [Releases](https://github.com/tomyud1/RAGy/releases) page:
+
+- **Windows**: `RAGy-Setup-0.1.0.exe`
+- **macOS**: `RAGy-0.1.0.dmg`
+- **Linux**: `RAGy-0.1.0.AppImage` or `ragy_0.1.0_amd64.deb`
+
+Double-click to install and run!
+
+### For Developers
+
+**Prerequisites:**
 - Node.js 18+ and npm
 - Python 3.9+
-- macOS (for M3 Neural Engine) or Linux
+- macOS, Windows, or Linux
 
-### Setup
-
-1. **Install Node dependencies:**
+**Setup:**
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/tomyud1/RAGy.git
+cd RAGy
+
+# 2. Install all dependencies (Node + Python)
 npm run setup
-```
 
-This will:
-- Install Node.js dependencies
-- Install Python dependencies (Docling, transformers, torch)
-
-2. **Alternative manual setup:**
-
-```bash
-# Install Node packages
+# Or manually:
 npm install
-
-# Install Python packages
-cd server/python
-pip3 install -r requirements.txt
+cd server/python && pip3 install -r requirements.txt
 ```
 
 ## 🚀 Usage
 
-### Start Development Server
-
-Run both frontend and backend:
+### Running the Desktop App (Development)
 
 ```bash
-npm run dev:all
+# Launch the Electron desktop app
+npm run electron:dev
 ```
 
-Or run separately:
+This will:
+- Start the Vite dev server (React frontend)
+- Launch the Electron window with your app
+- Auto-start the backend server
+- Open DevTools for debugging
+
+### Alternative: Web Development Mode
+
+If you prefer to develop in your browser (without Electron):
 
 ```bash
+# Run frontend and backend together
+npm run dev:all
+
+# Or run separately:
 # Terminal 1 - Frontend
 npm run dev
 
@@ -92,9 +124,23 @@ npm run dev
 npm run server
 ```
 
-The application will be available at:
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:3001
+Then open: http://localhost:5173
+
+### Building for Production
+
+```bash
+# Build for your current platform
+npm run electron:build
+
+# Or build for specific platforms:
+npm run electron:build:win    # Windows installer
+npm run electron:build:mac    # macOS app
+npm run electron:build:linux  # Linux packages
+```
+
+Built apps will be in the `release/` directory.
+
+📖 **For more details**, see [ELECTRON_GUIDE.md](ELECTRON_GUIDE.md)
 
 ### Workflow
 
