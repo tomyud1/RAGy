@@ -5,6 +5,9 @@ import http from 'http';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+// Import middleware
+import { errorHandler, notFoundHandler } from './middleware/index.js';
+
 // Import routes
 import projectRoutes from './routes/project.routes.js';
 import uploadRoutes from './routes/upload.routes.js';
@@ -185,6 +188,10 @@ app.post('/api/open-folder', async (req, res) => {
     res.status(500).json({ success: false, error: error.message });
   }
 });
+
+// Error handling - MUST be last
+app.use(notFoundHandler);
+app.use(errorHandler);
 
 // Start server
 server.listen(PORT, () => {

@@ -37,9 +37,11 @@ export function ProgressDisplay({ chunking, progress, filesInfo, conversionStart
   useEffect(() => {
     if (!progress) return;
 
-    // Check if we're on a new page
+    // Check if we're on a new page (ONLY during actual processing, not pdf_to_images conversion)
     const currentPage = progress.page;
-    if (currentPage && currentPage !== lastPageRef.current && (progress.status === 'processing' || progress.status === 'converting')) {
+    const isActualProcessing = progress.status === 'processing' && !progress.phase;
+
+    if (currentPage && currentPage !== lastPageRef.current && isActualProcessing) {
       // New page started
       lastPageRef.current = currentPage;
       setCurrentPageStartTime(Date.now());
@@ -57,7 +59,7 @@ export function ProgressDisplay({ chunking, progress, filesInfo, conversionStart
           time: 0,
           inProgress: true,
           startTime: Date.now()
-        }];
+        }].sort((a, b) => a.page - b.page); // Sort by page number ascending
       });
     }
 
@@ -72,7 +74,7 @@ export function ProgressDisplay({ chunking, progress, filesInfo, conversionStart
           file: progress.file,
           time: progress.page_time_seconds,
           inProgress: false
-        }].sort((a, b) => b.time - a.time); // Sort by time descending (slowest first)
+        }].sort((a, b) => a.page - b.page); // Sort by page number ascending
       });
 
       // Clear current processing page if it matches
@@ -259,13 +261,13 @@ export function ProgressDisplay({ chunking, progress, filesInfo, conversionStart
                       justifyContent: 'space-between',
                       alignItems: 'center'
                     }}>
-                      <span>Page Conversion Times (slowest first):</span>
+                      <span>Page Conversion Times:</span>
                       <span style={{ fontSize: '0.65rem', fontWeight: '400' }}>
-                        🔵 In Progress • ⚠️ Slow (&gt;15s)
+                        🔵 In Progress • ⚠️ Slow (&gt;60s)
                       </span>
                     </div>
                     {pageTimings.map((timing, idx) => {
-                      const isSlow = timing.time > 15; // Flag pages taking >15 seconds
+                      const isSlow = timing.time > 60; // Flag pages taking >60 seconds
                       const isInProgress = timing.inProgress;
                       const currentTime = isInProgress ? Math.floor((Date.now() - timing.startTime) / 1000) : timing.time;
 
