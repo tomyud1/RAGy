@@ -9,8 +9,17 @@ import { paths } from '../config/paths.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// DEBUG: Log paths during module initialization
+console.log('[Chunking Service] Initializing...');
+console.log('[Chunking Service] __dirname:', __dirname);
+console.log('[Chunking Service] paths.pythonScripts():', paths.pythonScripts());
+
 const PYTHON_SCRIPT = path.join(paths.pythonScripts(), 'docling_chunker.py');
 const PADDLEOCR_SCRIPT = path.join(paths.pythonScripts(), 'paddleocr_chunker.py');
+
+console.log('[Chunking Service] PYTHON_SCRIPT:', PYTHON_SCRIPT);
+console.log('[Chunking Service] PADDLEOCR_SCRIPT:', PADDLEOCR_SCRIPT);
 
 export class ChunkingService {
   static broadcastFunction = null;
@@ -280,6 +289,11 @@ export class ChunkingService {
       batchSize: batchSize,
       conversionOutputFolder: conversionOutputFolder
     });
+
+    // DEBUG: Log the exact script path being used
+    console.log('[Chunking] Python path:', pythonPath);
+    console.log('[Chunking] Script path:', PADDLEOCR_SCRIPT);
+    console.log('[Chunking] paths.pythonScripts():', paths.pythonScripts());
 
     return new Promise((resolve, reject) => {
       const pythonProcess = spawn(pythonPath, [
