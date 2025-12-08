@@ -1,14 +1,9 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import { v4 as uuidv4 } from 'uuid';
+import paths from '../config/paths.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const DATA_DIR = path.join(__dirname, '../../data/projects');
-
-// Ensure data directory exists
-await fs.mkdir(DATA_DIR, { recursive: true });
+const DATA_DIR = paths.projects();
 
 // File write queue to prevent race conditions
 const writeQueues = new Map();

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { API_BASE, WS_BASE } from '../../../../constants/api';
 
 export function useChunkingJob({
   project,
@@ -42,7 +43,7 @@ export function useChunkingJob({
     try {
       setJobStatus('checking');
 
-      const response = await fetch(`/api/chunking/status/${project.id}`);
+      const response = await fetch(`${API_BASE}/api/chunking/status/${project.id}`);
       const data = await response.json();
 
       if (data.success && data.job) {
@@ -103,7 +104,7 @@ export function useChunkingJob({
 
   const checkResumable = async () => {
     try {
-      const response = await fetch(`/api/chunking/check-resumable/${project.id}`);
+      const response = await fetch(`${API_BASE}/api/chunking/check-resumable/${project.id}`);
       const data = await response.json();
 
       if (data.success && data.resumable) {
@@ -235,7 +236,7 @@ export function useChunkingJob({
 
     setStopping(true);
     try {
-      const response = await fetch(`/api/chunking/stop/${project.id}`, {
+      const response = await fetch(`${API_BASE}/api/chunking/stop/${project.id}`, {
         method: 'POST'
       });
       const data = await response.json();
@@ -285,8 +286,8 @@ export function useChunkingJob({
     });
 
     try {
-      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-      const ws = new WebSocket(`${protocol}//${window.location.host}/ws`);
+      // Use hardcoded WebSocket URL for Electron compatibility (file:// protocol has no host)
+      const ws = new WebSocket(`${WS_BASE}/ws`);
 
       await new Promise((resolve, reject) => {
         ws.onopen = () => {
@@ -319,7 +320,7 @@ export function useChunkingJob({
       };
 
       console.log('[Frontend] Sending chunking request to server...', { resume });
-      const response = await fetch('/api/chunking/start', {
+      const response = await fetch(`${API_BASE}/api/chunking/start`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -376,7 +377,7 @@ export function useChunkingJob({
     formData.append('projectId', project.id);
 
     try {
-      const response = await fetch('/api/chunking/upload', {
+      const response = await fetch(`${API_BASE}/api/chunking/upload`, {
         method: 'POST',
         body: formData,
       });
@@ -414,7 +415,7 @@ export function useChunkingJob({
 
     try {
       // Clear the method-specific results
-      const response = await fetch(`/api/chunking/clear-method-results/${project.id}`, {
+      const response = await fetch(`${API_BASE}/api/chunking/clear-method-results/${project.id}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ method: selectedMethod })
@@ -454,7 +455,7 @@ export function useChunkingJob({
         setProcessingSummary(project.lastChunkingSummary);
       } else {
         try {
-          const response = await fetch(`/api/projects/${project.id}/chunks`);
+          const response = await fetch(`${API_BASE}/api/projects/${project.id}/chunks`);
           const data = await response.json();
           if (data && data.processing_summary) {
             setProcessingSummary(data.processing_summary);
@@ -473,7 +474,7 @@ export function useChunkingJob({
     const loadProcessingSummary = async () => {
       if (state.jobStatus === 'completed') {
         try {
-          const response = await fetch(`/api/projects/${project.id}/chunks`);
+          const response = await fetch(`${API_BASE}/api/projects/${project.id}/chunks`);
           const data = await response.json();
           if (data && data.processing_summary) {
             setProcessingSummary(data.processing_summary);

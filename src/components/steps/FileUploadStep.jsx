@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Upload, File, X, AlertCircle } from 'lucide-react';
 import { TEXT_SIZES, FONT_WEIGHTS } from '../../constants/ui';
+import { API_BASE } from '../../constants/api';
 
 function FileUploadStep({ project, files, onComplete }) {
   const [uploadedFiles, setUploadedFiles] = useState(files || []);
@@ -51,7 +52,7 @@ function FileUploadStep({ project, files, onComplete }) {
 
     try {
       // Pass projectId as URL parameter for reliability
-      const response = await fetch(`/api/upload?projectId=${project.id}`, {
+      const response = await fetch(`${API_BASE}/api/upload?projectId=${project.id}`, {
         method: 'POST',
         body: formData,
       });
@@ -78,7 +79,7 @@ function FileUploadStep({ project, files, onComplete }) {
 
   const handleRemoveFile = async (fileId) => {
     try {
-      const response = await fetch(`/api/upload/${fileId}?projectId=${project.id}`, { 
+      const response = await fetch(`${API_BASE}/api/upload/${fileId}?projectId=${project.id}`, { 
         method: 'DELETE' 
       });
       

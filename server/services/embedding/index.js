@@ -5,8 +5,23 @@
  */
 
 import { v4 as uuidv4 } from 'uuid';
-import { pipeline } from '@xenova/transformers';
 import path from 'path';
+
+// Lazy load transformers to avoid sharp loading issues on Windows
+let transformersPipeline = null;
+async function getPipeline() {
+  if (!transformersPipeline) {
+    try {
+      const transformers = await import('@xenova/transformers');
+      transformersPipeline = transformers.pipeline;
+    } catch (error) {
+      console.error('[Embedding] Failed to load transformers:', error.message);
+      console.error('[Embedding] CPU-based embeddings will not be available. Use GPU mode instead.');
+      throw new Error('Transformers library not available. Please use GPU mode for embeddings.');
+    }
+  }
+  return transformersPipeline;
+}
 
 import { detectHardware, getAvailableDevices } from './hardware-detector.js';
 import { generateEmbeddingsStreaming, generateEmbeddingsPython } from './python-bridge.js';
@@ -137,7 +152,7 @@ export class EmbeddingService {
     // Create HNSW index
     const dimensions = modelConfig.dimensions;
     const maxElements = totalChunks + 1000;
-    const index = createIndex(dimensions, maxElements);
+    const index = await createIndex(dimensions, maxElements);
 
     const startTime = Date.now();
     const allMetadata = [];
@@ -206,7 +221,8 @@ export class EmbeddingService {
       }
     } else {
       // CPU path
-      const extractor = await pipeline('feature-extraction', modelConfig.name);
+      const pipelineFn = await getPipeline();
+      const extractor = await pipelineFn('feature-extraction', modelConfig.name);
       let processedChunks = 0;
       const processingBatchSize = 5;
 

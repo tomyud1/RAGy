@@ -1,12 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
-import { fileURLToPath } from 'url';
+import paths from '../config/paths.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const DATA_DIR = path.join(__dirname, '../../data/projects');
+const DATA_DIR = paths.projects();
 
 class ChatService {
   getChatThreadsPath(projectId) {

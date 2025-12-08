@@ -3,9 +3,29 @@
  * Handles vector index creation, saving, and loading
  */
 
-import hnswlib from 'hnswlib-node';
 import fs from 'fs/promises';
 import path from 'path';
+
+// Lazy load hnswlib-node to handle cross-platform issues
+let hnswlib = null;
+let hnswlibLoadError = null;
+
+async function getHnswlib() {
+  if (hnswlibLoadError) {
+    throw hnswlibLoadError;
+  }
+  if (!hnswlib) {
+    try {
+      const module = await import('hnswlib-node');
+      hnswlib = module.default || module;
+    } catch (error) {
+      hnswlibLoadError = new Error(`Vector database library not available: ${error.message}. Embedding and RAG features will not work.`);
+      console.error('[HNSW] Failed to load hnswlib-node:', error.message);
+      throw hnswlibLoadError;
+    }
+  }
+  return hnswlib;
+}
 
 /**
  * Create a new HNSW index
@@ -13,8 +33,9 @@ import path from 'path';
  * @param {number} maxElements - Maximum number of elements
  * @returns {Object} HNSW index
  */
-export function createIndex(dimensions, maxElements) {
-  const index = new hnswlib.HierarchicalNSW('cosine', dimensions);
+export async function createIndex(dimensions, maxElements) {
+  const hnsw = await getHnswlib();
+  const index = new hnsw.HierarchicalNSW('cosine', dimensions);
   index.initIndex(maxElements);
   return index;
 }
@@ -62,13 +83,15 @@ export async function saveVectorDb(index, metadata, config, vectorDbDir) {
  * @returns {Object} { index, metadata, config }
  */
 export async function loadVectorDb(vectorDbDir) {
+  const hnsw = await getHnswlib();
+  
   // Load config first to get dimensions
   const configPath = path.join(vectorDbDir, 'config.json');
   const configData = await fs.readFile(configPath, 'utf-8');
   const config = JSON.parse(configData);
 
   // Load index
-  const index = new hnswlib.HierarchicalNSW('cosine', config.dimensions);
+  const index = new hnsw.HierarchicalNSW('cosine', config.dimensions);
   index.readIndexSync(path.join(vectorDbDir, 'index.hnsw'));
 
   // Load metadata

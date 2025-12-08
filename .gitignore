@@ -55,6 +55,10 @@ yarn-error.log*
 # Model cache (Hugging Face)
 .cache/huggingface/
 
+# Python bundled packages (installed via setup-python.ps1 at build time)
+build-resources/python-win/Lib/site-packages/
+build-resources/python-mac/lib/python*/site-packages/
+
 # Temporary files
 tmp/
 temp/

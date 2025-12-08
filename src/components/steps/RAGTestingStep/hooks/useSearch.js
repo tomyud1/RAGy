@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react';
+import { API_BASE } from '../../../../constants/api';
 
 /**
  * Custom hook for managing RAG search operations
@@ -20,7 +21,7 @@ export function useSearch(projectId) {
     setSearching(true);
     
     try {
-      const response = await fetch('/api/rag/query', {
+      const response = await fetch(`${API_BASE}/api/rag/query`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

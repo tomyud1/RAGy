@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FileText, ChevronDown, ChevronUp, RefreshCw, CheckCircle, Trash2, AlertTriangle } from 'lucide-react';
 import { TEXT_SIZES, FONT_WEIGHTS } from '../../constants/ui';
+import { API_BASE } from '../../constants/api';
 
 function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
   const [chunkData, setChunkData] = useState(null);
@@ -17,7 +18,7 @@ function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
 
   const loadChunks = async () => {
     try {
-      const response = await fetch(`/api/projects/${project.id}/chunks`);
+      const response = await fetch(`${API_BASE}/api/projects/${project.id}/chunks`);
 
       // If chunks don't exist (404), go back to chunking step
       if (response.status === 404) {
@@ -61,7 +62,7 @@ function ChunkPreviewStep({ project, chunks, onComplete, onBack }) {
   const handleDeleteChunks = async () => {
     setDeleting(true);
     try {
-      const response = await fetch(`/api/chunking/delete/${project.id}`, {
+      const response = await fetch(`${API_BASE}/api/chunking/delete/${project.id}`, {
         method: 'DELETE',
       });
       

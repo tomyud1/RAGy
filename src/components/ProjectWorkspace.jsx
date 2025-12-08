@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { API_BASE } from '../constants/api';
 import StepIndicator from './StepIndicator';
 import FileUploadStep from './steps/FileUploadStep';
 import ChunkingMethodStep from './steps/ChunkingMethodStep';
@@ -51,7 +52,7 @@ function ProjectWorkspace({ project, onProjectUpdate }) {
 
   const loadProjectData = async () => {
     try {
-      const response = await fetch(`/api/projects/${project.id}`);
+      const response = await fetch(`${API_BASE}/api/projects/${project.id}`);
       const data = await response.json();
       setProjectData(data);
 

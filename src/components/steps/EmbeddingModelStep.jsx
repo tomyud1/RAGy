@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Cpu, Info, ArrowRight, Zap, Monitor, Sparkles } from 'lucide-react';
 import { TEXT_SIZES, FONT_WEIGHTS } from '../../constants/ui';
+import { API_BASE } from '../../constants/api';
 
 const EMBEDDING_MODELS = [
   {
@@ -44,7 +45,7 @@ function EmbeddingModelStep({ project, chunks, hasExistingVectorDbs, onComplete,
 
   const fetchAvailableDevices = async () => {
     try {
-      const response = await fetch('/api/embedding/devices');
+      const response = await fetch(`${API_BASE}/api/embedding/devices`);
       const data = await response.json();
 
       if (data.success) {

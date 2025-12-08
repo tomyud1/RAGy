@@ -1,12 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
-import { fileURLToPath } from 'url';
+import paths from '../config/paths.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const SETTINGS_DIR = path.join(__dirname, '../../data/settings');
+const SETTINGS_DIR = paths.settings();
 const API_KEYS_FILE = path.join(SETTINGS_DIR, 'api-keys.enc');
 const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY || 'ragy-default-encryption-key-change-in-production';
 

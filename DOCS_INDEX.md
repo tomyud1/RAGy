@@ -25,6 +25,16 @@ In-depth technical documentation:
 - [MCP Integration](docs/guides/MCP-INTEGRATION.md) - Model Context Protocol integration guide
 - [MCP Servers Roadmap](docs/guides/MCP_SERVERS_ROADMAP.md) - Roadmap for MCP server development
 
+## Build & Release
+
+Documentation for building and releasing the app:
+
+- [Release Guide](docs/RELEASE_GUIDE.md) - **How to publish new versions & auto-updates**
+- [Python Bundling](docs/PYTHON_BUNDLING.md) - Bundling Python for Windows builds
+- [Git LFS Setup](docs/GIT_LFS_SETUP.md) - Managing large Python files with Git LFS
+- [Icon Guide](docs/ICON_GUIDE.md) - App icon requirements
+- [Windows Build Guide](WINDOWS_BUILD.md) - Building on Windows via GitHub sync
+
 ## Research Documents
 
 Research findings and comparisons:

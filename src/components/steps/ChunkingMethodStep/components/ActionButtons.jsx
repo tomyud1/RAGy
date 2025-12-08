@@ -1,6 +1,7 @@
 import React from 'react';
 import { Loader, AlertTriangle } from 'lucide-react';
 import { TEXT_SIZES, FONT_WEIGHTS } from '../../../../constants/ui';
+import { API_BASE } from '../../../../constants/api';
 
 export function ActionButtons({
   onBack,
@@ -89,7 +90,7 @@ export function ActionButtons({
             <button
               onClick={async () => {
                 try {
-                  const response = await fetch(`/api/projects/${project.id}/open-chunks-folder`);
+                  const response = await fetch(`${API_BASE}/api/projects/${project.id}/open-chunks-folder`);
                   const data = await response.json();
                   if (!data.success) {
                     alert('Failed to open folder: ' + data.error);

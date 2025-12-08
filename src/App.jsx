@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ProjectSelector from './components/ProjectSelector';
 import MainLayout from './components/MainLayout';
+import UpdateNotification from './components/UpdateNotification';
+import { API_BASE } from './constants/api';
 
 function App() {
   const [currentProject, setCurrentProject] = useState(null);
@@ -14,7 +16,7 @@ function App() {
 
   const loadProjects = async () => {
     try {
-      const response = await fetch('/api/projects');
+      const response = await fetch(`${API_BASE}/api/projects`);
       
       if (!response.ok) {
         console.error('Failed to load projects:', response.status);
@@ -35,7 +37,7 @@ function App() {
       
       if (savedProjectId) {
         console.log('Restoring project:', savedProjectId);
-        const response = await fetch(`/api/projects/${savedProjectId}`);
+        const response = await fetch(`${API_BASE}/api/projects/${savedProjectId}`);
         
         if (response.ok) {
           const project = await response.json();
@@ -57,7 +59,7 @@ function App() {
 
   const createProject = async (projectName) => {
     try {
-      const response = await fetch('/api/projects', {
+      const response = await fetch(`${API_BASE}/api/projects`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: projectName }),
@@ -103,6 +105,9 @@ function App() {
 
   return (
     <div style={{ minHeight: '100vh' }}>
+      {/* Auto-update notification */}
+      <UpdateNotification />
+      
       {isLoadingProject ? (
         <div style={{
           display: 'flex',

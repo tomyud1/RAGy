@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { API_BASE } from '../../../../constants/api';
 
 /**
  * Custom hook for managing vector database operations
@@ -10,7 +11,7 @@ export function useVectorDbs(projectId) {
 
   const loadVectorDbs = useCallback(async () => {
     try {
-      const response = await fetch(`/api/projects/${projectId}/vector-dbs`);
+      const response = await fetch(`${API_BASE}/api/projects/${projectId}/vector-dbs`);
       const data = await response.json();
       setAvailableDbs(data.vectorDbs || []);
       
@@ -41,7 +42,7 @@ export function useVectorDbs(projectId) {
     formData.append('projectId', projectId);
 
     try {
-      const response = await fetch('/api/vector-db/import', {
+      const response = await fetch(`${API_BASE}/api/vector-db/import`, {
         method: 'POST',
         body: formData,
       });
@@ -62,7 +63,7 @@ export function useVectorDbs(projectId) {
 
   const handleDeleteDb = useCallback(async (dbId) => {
     try {
-      const response = await fetch(`/api/projects/${projectId}/vector-dbs/${dbId}`, {
+      const response = await fetch(`${API_BASE}/api/projects/${projectId}/vector-dbs/${dbId}`, {
         method: 'DELETE',
       });
 

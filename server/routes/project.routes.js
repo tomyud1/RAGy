@@ -4,12 +4,13 @@ import path from 'path';
 import multer from 'multer';
 import fs from 'fs/promises';
 import { ProjectService } from '../services/project.service.js';
+import paths from '../config/paths.js';
 
 const router = express.Router();
 
-// Configure multer for file uploads
+// Configure multer for file uploads - use proper data directory
 const upload = multer({
-  dest: 'uploads/',
+  dest: paths.uploads(),
   limits: { fileSize: 100 * 1024 * 1024 }, // 100MB limit
 });
 

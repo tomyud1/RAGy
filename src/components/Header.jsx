@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft } from 'lucide-react';
+import { API_BASE } from '../constants/api';
 
 function Header({ currentProject, onBackToProjects }) {
   const [serverStatus, setServerStatus] = useState('checking'); // 'online', 'offline', 'checking'
@@ -16,7 +17,7 @@ function Header({ currentProject, onBackToProjects }) {
 
   const checkServerStatus = async () => {
     try {
-      const response = await fetch('/api/health', { 
+      const response = await fetch(`${API_BASE}/api/health`, { 
         method: 'GET',
         // Timeout after 3 seconds
         signal: AbortSignal.timeout(3000)

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, FolderOpen, Calendar, Trash2 } from 'lucide-react';
+import { API_BASE } from '../constants/api';
 
 function ProjectSelector({ projects, onSelectProject, onCreateProject }) {
   const [showCreateForm, setShowCreateForm] = useState(false);
@@ -24,7 +25,7 @@ function ProjectSelector({ projects, onSelectProject, onCreateProject }) {
     setDeletingProjectId(projectId);
     
     try {
-      const response = await fetch(`/api/projects/${projectId}`, {
+      const response = await fetch(`${API_BASE}/api/projects/${projectId}`, {
         method: 'DELETE',
       });
       

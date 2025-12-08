@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import fs from 'fs/promises';
 import { ProjectService } from './project.service.js';
 import settingsService from './settings.service.js';
+import { pythonPath } from '../config/python-path.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -113,7 +114,7 @@ export class ChunkingService {
         resume: resume
       });
       
-      const pythonProcess = spawn('python3', [
+      const pythonProcess = spawn(pythonPath, [
         '-u',  // Unbuffered output
         PYTHON_SCRIPT,
         inputDir,
@@ -280,7 +281,7 @@ export class ChunkingService {
     });
 
     return new Promise((resolve, reject) => {
-      const pythonProcess = spawn('python3', [
+      const pythonProcess = spawn(pythonPath, [
         '-u',  // Unbuffered output
         PADDLEOCR_SCRIPT,
         inputDir,

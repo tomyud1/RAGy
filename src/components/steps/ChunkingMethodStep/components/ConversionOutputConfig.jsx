@@ -1,9 +1,10 @@
 import React from 'react';
+import { API_BASE } from '../../../../constants/api';
 
 export function ConversionOutputConfig({ conversionOutputFolder, setConversionOutputFolder }) {
   const handleOpenFolder = async () => {
     try {
-      const response = await fetch('/api/open-folder', {
+      const response = await fetch(`${API_BASE}/api/open-folder`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ folderPath: conversionOutputFolder })

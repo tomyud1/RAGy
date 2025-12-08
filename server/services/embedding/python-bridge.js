@@ -7,6 +7,7 @@ import { spawn } from 'child_process';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import { pythonPath } from '../../config/python-path.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -33,7 +34,7 @@ export async function generateEmbeddingsPython(texts, modelId, devicePreference 
   ];
 
   return new Promise((resolve, reject) => {
-    const python = spawn('python3', [pythonScript, ...args]);
+    const python = spawn(pythonPath, [pythonScript, ...args]);
     let stdout = '';
     let stderr = '';
 
@@ -122,7 +123,7 @@ export async function generateEmbeddingsStreaming(chunks, modelId, devicePrefere
       '--batch-size', batchSize.toString()
     ];
 
-    const python = spawn('python3', [pythonScript, ...args]);
+    const python = spawn(pythonPath, [pythonScript, ...args]);
     let ready = false;
     let processedEmbeddings = [];
     let stdoutBuffer = '';

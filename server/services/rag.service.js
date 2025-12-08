@@ -1,5 +1,3 @@
-import { pipeline } from '@xenova/transformers';
-import hnswlib from 'hnswlib-node';
 import fs from 'fs/promises';
 import path from 'path';
 import { ProjectService } from './project.service.js';
@@ -9,6 +7,36 @@ const EMBEDDING_MODELS = {
   'bge-base-en-v1.5': 'Xenova/bge-base-en-v1.5',
   'all-mpnet-base-v2': 'Xenova/all-mpnet-base-v2',
 };
+
+// Lazy load hnswlib to handle cross-platform native module issues
+let hnswlib = null;
+async function getHnswlib() {
+  if (!hnswlib) {
+    try {
+      const module = await import('hnswlib-node');
+      hnswlib = module.default || module;
+    } catch (error) {
+      console.error('[RAG] Failed to load hnswlib-node:', error.message);
+      throw new Error('Vector database library not available for RAG queries.');
+    }
+  }
+  return hnswlib;
+}
+
+// Lazy load transformers to avoid sharp loading issues on Windows
+let transformersPipeline = null;
+async function getPipeline() {
+  if (!transformersPipeline) {
+    try {
+      const transformers = await import('@xenova/transformers');
+      transformersPipeline = transformers.pipeline;
+    } catch (error) {
+      console.error('[RAG] Failed to load transformers:', error.message);
+      throw new Error('Transformers library not available for RAG queries.');
+    }
+  }
+  return transformersPipeline;
+}
 
 export class RAGService {
   static vectorDbCache = new Map();
@@ -50,7 +78,8 @@ export class RAGService {
       if (!modelName) {
         throw new Error(`Unknown model: ${config.modelId}`);
       }
-      extractor = await pipeline('feature-extraction', modelName);
+      const pipelineFn = await getPipeline();
+      extractor = await pipelineFn('feature-extraction', modelName);
       this.vectorDbCache.set(cacheKey, extractor);
     }
     
@@ -59,7 +88,8 @@ export class RAGService {
     const queryVector = Array.from(queryEmbedding.data);
     
     // Load index
-    const index = new hnswlib.HierarchicalNSW('cosine', config.dimensions);
+    const hnsw = await getHnswlib();
+    const index = new hnsw.HierarchicalNSW('cosine', config.dimensions);
     index.readIndexSync(path.join(vectorDbDir, 'index.hnsw'));
     
     // Search - fetch more results initially to ensure we get enough after filtering

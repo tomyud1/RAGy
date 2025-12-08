@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Loader, CheckCircle, AlertCircle, Zap, X } from 'lucide-react';
 import { TEXT_SIZES, FONT_WEIGHTS } from '../../constants/ui';
+import { API_BASE } from '../../constants/api';
 
 function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'auto', onComplete, onBack }) {
   const [status, setStatus] = useState('starting'); // starting, processing, completed, error
@@ -21,15 +22,15 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
 
   useEffect(() => {
     startEmbedding();
-    
+
     return () => {
       // Cancel job when component unmounts (user navigates away or refreshes)
       if (jobIdRef.current) {
         console.log('[EmbeddingProgress] Cancelling job on unmount:', jobIdRef.current);
-        fetch(`/api/embedding/cancel/${jobIdRef.current}`, { method: 'POST' })
+        fetch(`${API_BASE}/api/embedding/cancel/${jobIdRef.current}`, { method: 'POST' })
           .catch(err => console.warn('Failed to cancel job:', err));
       }
-      
+
       if (wsRef.current) {
         wsRef.current.close();
       }
@@ -39,7 +40,7 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
   const startEmbedding = async () => {
     try {
       // Start the embedding process
-      const response = await fetch('/api/embedding/start', {
+      const response = await fetch(`${API_BASE}/api/embedding/start`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -48,9 +49,9 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
           devicePreference: devicePreference,
         }),
       });
-      
+
       const data = await response.json();
-      
+
       if (!data.success) {
         setStatus('error');
         setError(data.error);
@@ -58,7 +59,7 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
       }
 
       jobIdRef.current = data.jobId;
-      
+
       // Connect to WebSocket for progress updates
       connectWebSocket(data.jobId);
     } catch (error) {
@@ -71,15 +72,15 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
   const connectWebSocket = (jobId) => {
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     const ws = new WebSocket(`${protocol}//${window.location.hostname}:3001/ws`);
-    
+
     ws.onopen = () => {
       ws.send(JSON.stringify({ type: 'subscribe', jobId }));
       setStatus('processing');
     };
-    
+
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);
-      
+
       if (data.type === 'progress') {
         setProgress(data.progress);
         setStats({
@@ -91,7 +92,7 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
           speed: data.speed,
           avgTimePerChunk: data.avgTimePerChunk,
         });
-        
+
         // Update hardware info if provided
         if (data.hardware) {
           setHardware(data.hardware);
@@ -101,7 +102,7 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
         setProgress(100);
         ws.close();
         jobIdRef.current = null; // Clear job ID
-        
+
         // Wait a moment before transitioning
         setTimeout(() => {
           onComplete({ vectorDb: data.vectorDb });
@@ -118,13 +119,13 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
         jobIdRef.current = null;
       }
     };
-    
+
     ws.onerror = (error) => {
       console.error('WebSocket error:', error);
       setStatus('error');
       setError('Connection error');
     };
-    
+
     wsRef.current = ws;
   };
 
@@ -140,7 +141,7 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
 
     try {
       setStatus('cancelling');
-      const response = await fetch(`/api/embedding/cancel/${jobIdRef.current}`, {
+      const response = await fetch(`${API_BASE}/api/embedding/cancel/${jobIdRef.current}`, {
         method: 'POST'
       });
 
@@ -186,7 +187,7 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
             <p style={{ color: 'var(--text-secondary)' }}>Preparing embedding model</p>
           </>
         )}
-        
+
         {status === 'processing' && (
           <>
             <Zap size={48} style={{ color: 'var(--accent-primary)', margin: '0 auto 1rem' }} />
@@ -228,7 +229,7 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
                 </span>
               </div>
             )}
-            
+
             {/* Segmented Progress Bar - group batches for visual clarity */}
             <div style={{
               width: '100%',
@@ -240,13 +241,13 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
                 // Group every 4 batches into one visual segment (represents ~20 chunks)
                 const segmentGrouping = 4;
                 const visualSegments = Math.ceil((stats.totalBatches || 1) / segmentGrouping);
-                
+
                 return Array.from({ length: visualSegments }).map((_, index) => {
                   const segmentStartBatch = index * segmentGrouping + 1;
                   const segmentEndBatch = Math.min((index + 1) * segmentGrouping, stats.totalBatches);
                   const isCompleted = stats.currentBatch > segmentEndBatch;
                   const isActive = stats.currentBatch >= segmentStartBatch && stats.currentBatch <= segmentEndBatch;
-                  
+
                   return (
                     <div
                       key={index}
@@ -259,8 +260,8 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
                         borderRadius: '3px',
                         opacity: isCompleted ? 1 : isActive ? 0.8 : 0.3,
                         transition: 'all 0.2s ease',
-                        boxShadow: isActive 
-                          ? '0 0 8px var(--accent-primary)' 
+                        boxShadow: isActive
+                          ? '0 0 8px var(--accent-primary)'
                           : 'none',
                       }}
                     />
@@ -268,10 +269,10 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
                 });
               })()}
             </div>
-            
+
             {/* Progress percentage and Time Remaining on same line */}
-            <div style={{ 
-              display: 'flex', 
+            <div style={{
+              display: 'flex',
               alignItems: 'baseline',
               justifyContent: 'center',
               gap: '1rem',
@@ -286,7 +287,7 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
             </div>
           </>
         )}
-        
+
         {status === 'completed' && (
           <>
             <CheckCircle size={48} style={{ color: 'var(--success)', margin: '0 auto 1rem' }} />
@@ -298,7 +299,7 @@ function EmbeddingProgressStep({ project, embeddingModel, devicePreference = 'au
             </p>
           </>
         )}
-        
+
         {status === 'error' && (
           <>
             <AlertCircle size={48} style={{ color: 'var(--error)', margin: '0 auto 1rem' }} />
