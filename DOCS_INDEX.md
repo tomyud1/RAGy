@@ -31,6 +31,7 @@ Documentation for building and releasing the app:
 
 - [Release Guide](docs/RELEASE_GUIDE.md) - **How to publish new versions & auto-updates**
 - [Python Bundling](docs/PYTHON_BUNDLING.md) - Bundling Python for Windows builds
+- [Python Setup (Windows)](docs/PYTHON_SETUP_WINDOWS.md) - **Install PaddleOCR and dependencies**
 - [Git LFS Setup](docs/GIT_LFS_SETUP.md) - Managing large Python files with Git LFS
 - [Icon Guide](docs/ICON_GUIDE.md) - App icon requirements
 - [Windows Build Guide](WINDOWS_BUILD.md) - Building on Windows via GitHub sync

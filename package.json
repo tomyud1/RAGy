@@ -1,6 +1,6 @@
 {
   "name": "ragy",
-  "version": "0.1.0-dev.32",
+  "version": "0.1.0-dev.33",
   "description": "Modern RAG System with Multi-Project Support",
   "main": "electron/main.js",
   "type": "module",
