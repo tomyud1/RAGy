@@ -4,56 +4,71 @@
 
 The bundled Python environment (`build-resources/python-win/`) needs to have all required packages installed before building the Windows installer.
 
-## One-Time Setup (Windows Build Machine)
+## ✅ Automatic Setup (Recommended)
+
+**Just run the build script - it handles everything automatically!**
+
+```batch
+update-and-build.bat
+```
+
+The script automatically:
+1. Checks if Python packages are installed (looks for `.setup-complete` marker)
+2. If not found, runs the setup script automatically
+3. Installs all required packages (one-time, 5-10 minutes)
+4. Creates `.setup-complete` marker
+5. Proceeds with the build
+
+**First run:** Python setup runs automatically (takes 5-10 minutes)
+**Subsequent runs:** Setup is skipped (builds immediately)
+
+## Manual Setup (Optional)
+
+If you want to run the setup manually or force a re-setup:
 
 ### Step 1: Install Python Packages
-
-Navigate to the python-win folder and run the setup script:
 
 ```powershell
 cd build-resources\python-win
 .\setup-python.ps1
 ```
 
-This script will:
-1. Install pip
-2. Install all requirements from `server/python/requirements.txt`:
-   - docling (document processing)
-   - transformers (ML models)
-   - torch (PyTorch)
-   - sentence-transformers (embeddings)
-   - **paddleocr** (OCR engine)
-   - **paddlepaddle** (PaddleOCR backend)
-   - **pymupdf** (PDF processing)
+This installs all requirements from `server/python/requirements.txt`:
+- docling (document processing)
+- transformers (ML models)
+- torch (PyTorch)
+- sentence-transformers (embeddings)
+- **paddleocr** (OCR engine)
+- **paddlepaddle** (PaddleOCR backend)
+- **pymupdf** (PDF processing)
 
-**Installation time:** 5-10 minutes (downloads ~2GB of dependencies)
+**Installation time:** 5-10 minutes (downloads ~500MB of dependencies)
 
 ### Step 2: Verify Installation
 
-Check that PaddleOCR was installed:
-
 ```powershell
-.\python.exe -c "import paddleocr; print('PaddleOCR version:', paddleocr.__version__)"
+.\python.exe -c "import paddleocr; print('PaddleOCR OK')"
 ```
 
-Should output: `PaddleOCR version: 2.x.x`
-
-### Step 3: Commit the Updated Python Bundle
-
-After installing packages, the `python-win` folder will have grown significantly. **Do NOT commit this to the main RAGy repository.**
-
-The `python-win` folder is:
-- Tracked by Git LFS in the `RAGy-Windows-Build` repository
-- Excluded from the main `RAGy` repository (too large)
-
-The setup script creates a `.setup-complete` marker file to indicate setup is done.
+Should output: `PaddleOCR OK`
 
 ## When to Re-run Setup
 
-Re-run the setup script when:
+Re-run the setup when:
 - You add new Python dependencies to `server/python/requirements.txt`
 - You update Python package versions
 - The bundled Python is corrupted or incomplete
+
+### Force Re-setup
+
+To force the setup to run again:
+
+```batch
+del build-resources\python-win\.setup-complete
+update-and-build.bat
+```
+
+The script will detect the missing marker and run setup automatically.
 
 ## Current Requirements
 

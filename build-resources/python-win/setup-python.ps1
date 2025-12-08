@@ -53,6 +53,12 @@ Write-Host ""
 
 # Create a marker file to indicate setup is complete
 $MarkerFile = Join-Path $ScriptDir ".setup-complete"
-New-Item -Path $MarkerFile -ItemType File -Force | Out-Null
+$Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+"Setup completed: $Timestamp" | Out-File -FilePath $MarkerFile -Force
+Write-Host "Created marker file: .setup-complete" -ForegroundColor Green
+Write-Host ""
+Write-Host "NOTE: To force a re-setup (if requirements.txt changes)," -ForegroundColor Yellow
+Write-Host "      delete this file: build-resources\python-win\.setup-complete" -ForegroundColor Yellow
+Write-Host ""
 
 pause

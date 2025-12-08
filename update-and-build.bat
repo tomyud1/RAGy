@@ -34,7 +34,7 @@ if errorlevel 1 (
 )
 echo.
 
-echo [2/3] Installing Dependencies...
+echo [2/4] Installing Dependencies...
 call npm install
 if errorlevel 1 (
     echo ERROR: npm install failed
@@ -43,7 +43,28 @@ if errorlevel 1 (
 )
 echo.
 
-echo [3/3] Building and Publishing...
+echo [3/4] Checking Python Setup...
+if not exist "build-resources\python-win\.setup-complete" (
+    echo Python packages not installed yet. Running setup...
+    echo This is a one-time setup and will take 5-10 minutes.
+    echo.
+    cd build-resources\python-win
+    PowerShell -ExecutionPolicy Bypass -File .\setup-python.ps1
+    if errorlevel 1 (
+        echo ERROR: Python setup failed
+        cd ..\..
+        pause
+        exit /b 1
+    )
+    cd ..\..
+    echo Python setup complete!
+    echo.
+) else (
+    echo Python packages already installed (skipping setup)
+    echo.
+)
+
+echo [4/4] Building and Publishing...
 call npm run electron:build:win
 if errorlevel 1 (
     echo ERROR: Build failed
