@@ -104,21 +104,22 @@ const DATA_DIR = getDataDirectory();
  * In production: E:\program files\RAGy\resources\app\server
  */
 function getServerRoot() {
-  const isDev = process.env.NODE_ENV !== 'production';
+  // Check if we're in a packaged Electron app
+  // In packaged mode: process.resourcesPath exists and points to resources/
+  // In dev mode: process.resourcesPath is undefined or process.env.NODE_ENV !== 'production'
+  const isPackaged = !!process.resourcesPath;
 
-  if (isDev) {
-    // In development, server root is server/config -> server
-    return path.join(__dirname, '..');
+  console.log('[Paths] Detecting mode - isPackaged:', isPackaged, 'resourcesPath:', process.resourcesPath, 'NODE_ENV:', process.env.NODE_ENV);
+
+  if (!isPackaged) {
+    // Development mode: server/config -> server
+    const devRoot = path.join(__dirname, '..');
+    console.log('[Paths] Development mode - server root:', devRoot);
+    return devRoot;
   } else {
-    // In production, server files are at resources/app/server
-    // Bundled file is at: resources/app/dist/server.mjs
-    // So __dirname is: resources/app/dist
-    // We need: resources/app/server
-    const serverRoot = process.resourcesPath
-      ? path.join(process.resourcesPath, 'app', 'server')
-      : path.join(__dirname, '..', 'server');  // From dist/ go to app/server
-
-    console.log('[Paths] Server root:', serverRoot);
+    // Production/Packaged mode: resources/app/server
+    const serverRoot = path.join(process.resourcesPath, 'app', 'server');
+    console.log('[Paths] Packaged mode - server root:', serverRoot);
     return serverRoot;
   }
 }
