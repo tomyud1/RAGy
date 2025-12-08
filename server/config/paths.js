@@ -107,16 +107,19 @@ function getServerRoot() {
   const isDev = process.env.NODE_ENV !== 'production';
 
   if (isDev) {
-    // In development, server root is __dirname/../.. (config -> server -> root)
+    // In development, server root is server/config -> server
     return path.join(__dirname, '..');
   } else {
     // In production, server files are at resources/app/server
-    if (process.resourcesPath) {
-      return path.join(process.resourcesPath, 'app', 'server');
-    } else {
-      // Fallback: assume we're in dist/, so server is ../server
-      return path.join(__dirname, '..', '..', 'server');
-    }
+    // Bundled file is at: resources/app/dist/server.mjs
+    // So __dirname is: resources/app/dist
+    // We need: resources/app/server
+    const serverRoot = process.resourcesPath
+      ? path.join(process.resourcesPath, 'app', 'server')
+      : path.join(__dirname, '..', 'server');  // From dist/ go to app/server
+
+    console.log('[Paths] Server root:', serverRoot);
+    return serverRoot;
   }
 }
 
