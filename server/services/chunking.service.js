@@ -5,11 +5,12 @@ import fs from 'fs/promises';
 import { ProjectService } from './project.service.js';
 import settingsService from './settings.service.js';
 import { pythonPath } from '../config/python-path.js';
+import { paths } from '../config/paths.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const PYTHON_SCRIPT = path.join(__dirname, '../python/docling_chunker.py');
-const PADDLEOCR_SCRIPT = path.join(__dirname, '../python/paddleocr_chunker.py');
+const PYTHON_SCRIPT = path.join(paths.pythonScripts(), 'docling_chunker.py');
+const PADDLEOCR_SCRIPT = path.join(paths.pythonScripts(), 'paddleocr_chunker.py');
 
 export class ChunkingService {
   static broadcastFunction = null;

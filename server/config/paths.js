@@ -98,6 +98,28 @@ function getDataDirectory() {
 // Initialize data directory
 const DATA_DIR = getDataDirectory();
 
+/**
+ * Get the server root directory (where server files are located)
+ * In development: /path/to/RAGy/server
+ * In production: E:\program files\RAGy\resources\app\server
+ */
+function getServerRoot() {
+  const isDev = process.env.NODE_ENV !== 'production';
+
+  if (isDev) {
+    // In development, server root is __dirname/../.. (config -> server -> root)
+    return path.join(__dirname, '..');
+  } else {
+    // In production, server files are at resources/app/server
+    if (process.resourcesPath) {
+      return path.join(process.resourcesPath, 'app', 'server');
+    } else {
+      // Fallback: assume we're in dist/, so server is ../server
+      return path.join(__dirname, '..', '..', 'server');
+    }
+  }
+}
+
 // Export path getters
 export const paths = {
   // Root data directory
@@ -109,6 +131,10 @@ export const paths = {
   uploads: () => path.join(DATA_DIR, 'uploads'),
   temp: () => path.join(DATA_DIR, 'temp'),
   memory: () => path.join(DATA_DIR, 'memory'),
+
+  // Server directories
+  serverRoot: () => getServerRoot(),
+  pythonScripts: () => path.join(getServerRoot(), 'python'),
 
   // Helper to ensure a directory exists
   ensure: (dirPath) => {

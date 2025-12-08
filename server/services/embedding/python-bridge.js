@@ -8,6 +8,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { pythonPath } from '../../config/python-path.js';
+import { paths } from '../../config/paths.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -22,9 +23,9 @@ const __dirname = dirname(__filename);
  * @param {Map} activePythonProcesses - Process tracking map
  * @returns {Promise<Array>} Embeddings
  */
-export async function generateEmbeddingsPython(texts, modelId, devicePreference = 'auto', 
+export async function generateEmbeddingsPython(texts, modelId, devicePreference = 'auto',
                                                 batchSize = 32, jobId = null, activePythonProcesses = null) {
-  const pythonScript = path.join(__dirname, '../../python/embedding_service.py');
+  const pythonScript = path.join(paths.pythonScripts(), 'embedding_service.py');
 
   const args = [
     'embed',
@@ -115,7 +116,7 @@ export async function generateEmbeddingsStreaming(chunks, modelId, devicePrefere
                                                    batchSize = 32, jobId, onProgress,
                                                    activePythonProcesses, activeJobs) {
   return new Promise((resolve, reject) => {
-    const pythonScript = path.join(__dirname, '../../python/embedding_service.py');
+    const pythonScript = path.join(paths.pythonScripts(), 'embedding_service.py');
     const args = [
       'stream',
       '--model', modelId,

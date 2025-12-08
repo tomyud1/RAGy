@@ -1,6 +1,6 @@
 {
   "name": "ragy",
-  "version": "0.1.0-dev.28",
+  "version": "0.1.0-dev.29",
   "description": "Modern RAG System with Multi-Project Support",
   "main": "electron/main.js",
   "type": "module",
@@ -73,7 +73,9 @@
     "files": [
       "dist/**/*",
       "electron/**/*",
-      "!server/**/*",
+      "server/python/**/*",
+      "server/config/**/*",
+      "!server/**/*.js",
       "node_modules/**/*",
       "package.json",
       "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
