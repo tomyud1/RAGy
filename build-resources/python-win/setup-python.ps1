@@ -42,13 +42,17 @@ Write-Host "  Cleaning up any existing PaddlePaddle installations..." -Foregroun
 
 # Try to install PaddlePaddle GPU version first (Windows-specific optimization)
 Write-Host "  Attempting to install PaddlePaddle with GPU support..." -ForegroundColor Yellow
-& $PythonExe -m pip install "paddlepaddle-gpu>=3.0.0" --no-warn-script-location 2>&1 | Out-Null
+$gpuInstallOutput = & $PythonExe -m pip install "paddlepaddle-gpu>=3.0.0" --no-warn-script-location 2>&1
 $gpuInstallSuccess = $LASTEXITCODE -eq 0
 
 if ($gpuInstallSuccess) {
     Write-Host "  [√] PaddlePaddle GPU version installed!" -ForegroundColor Green
 } else {
-    Write-Host "  [!] GPU version failed (CUDA may not be installed)" -ForegroundColor Yellow
+    Write-Host "  [!] GPU version installation failed" -ForegroundColor Yellow
+    Write-Host ""
+    Write-Host "  Error details:" -ForegroundColor Yellow
+    Write-Host "  $gpuInstallOutput" -ForegroundColor White
+    Write-Host ""
     Write-Host "  Installing CPU version instead..." -ForegroundColor Yellow
 
     # Clean up failed GPU install
