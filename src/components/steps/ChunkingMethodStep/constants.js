@@ -32,7 +32,7 @@ export const DEFAULT_VALUES = {
   visionBatchSize: 4,
   processingBatchSize: 4,
   pictureDescriptionMaxTokens: 100,
-  conversionOutputFolder: 'conversions/',
+  conversionOutputFolder: '', // Empty = use default app data location
   enableFormula: true,
   enableOcr: true,
   enableTableStructure: true,

@@ -175,7 +175,9 @@ router.get('/:projectId/open-chunks-folder', async (req, res) => {
 
     // Get the project to find conversion folder and method
     const project = await ProjectService.getProject(projectId);
-    const conversionOutputFolder = project.conversionOutputFolder || 'conversions/';
+    // Use absolute path in user's data directory (not relative path)
+    // Empty string or whitespace also uses default location
+    const conversionOutputFolder = project.conversionOutputFolder?.trim() || paths.conversions();
 
     // Get the last chunking job to determine which method was used
     const chunkingJob = await ProjectService.getChunkingJob(projectId);

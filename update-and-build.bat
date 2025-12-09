@@ -61,6 +61,7 @@ if not exist "build-resources\python-win\.setup-complete" (
     echo.
 ) else (
     echo Python packages already installed (skipping setup)
+    echo   TIP: To enable GPU support, see docs\GPU_SETUP_WINDOWS.md
     echo.
 )
 

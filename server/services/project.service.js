@@ -39,24 +39,45 @@ export class ProjectService {
     try {
       const dirs = await fs.readdir(DATA_DIR);
       const projects = [];
-      
+
       for (const dir of dirs) {
-        const configPath = path.join(DATA_DIR, dir, 'project-config.json');
+        // Skip hidden files (like .DS_Store) and non-project directories
+        if (dir.startsWith('.') || dir === 'chat-histories') {
+          continue;
+        }
+
+        const dirPath = path.join(DATA_DIR, dir);
+
+        // Check if it's actually a directory
+        try {
+          const stat = await fs.stat(dirPath);
+          if (!stat.isDirectory()) {
+            continue;
+          }
+        } catch {
+          continue;
+        }
+
+        const configPath = path.join(dirPath, 'project-config.json');
         try {
           const config = JSON.parse(await fs.readFile(configPath, 'utf-8'));
-          
+
           // Get project stats
           const stats = await this.getProjectStats(dir);
-          
+
           projects.push({
             ...config,
             stats,
           });
         } catch (error) {
-          console.error(`Failed to load project ${dir}:`, error);
+          // Silently skip directories without valid project-config.json
+          // Only log actual errors, not missing configs
+          if (error.code !== 'ENOENT') {
+            console.error(`Failed to load project ${dir}:`, error);
+          }
         }
       }
-      
+
       return projects.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
     } catch (error) {
       console.error('Failed to get projects:', error);

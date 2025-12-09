@@ -88,6 +88,14 @@ export class ChunkingService {
 
     console.log('[Chunking] Gemini API key loaded:', geminiApiKey ? `${geminiApiKey.substring(0, 10)}...` : 'NOT FOUND');
 
+    // Prepare conversion output folder path (before Promise)
+    // Use absolute path in user's data directory (not relative path that would be in Program Files)
+    // Empty string or whitespace also uses default location
+    const conversionOutputFolder = config.conversionOutputFolder?.trim() || paths.conversions();
+
+    // Ensure conversion output directory exists (before Promise)
+    await fs.mkdir(conversionOutputFolder, { recursive: true });
+
     return new Promise((resolve, reject) => {
       const maxTokens = config.maxTokens || 512;
       const mergePeers = config.mergePeers !== undefined ? config.mergePeers : true;
@@ -99,7 +107,6 @@ export class ChunkingService {
       const pictureDescriptionMaxTokens = config.pictureDescriptionMaxTokens || 100; // Default 100 tokens per image
       const visionModel = config.visionModel || 'smolvlm'; // 'smolvlm' or 'gemini-2.0-flash'
       const visionBackend = config.visionBackend || 'auto'; // 'auto', 'transformers', 'mlx' (for SmolVLM only)
-      const conversionOutputFolder = config.conversionOutputFolder || 'conversions/'; // Default folder
       const enableCodeEnrichment = config.enableCodeEnrichment || false;
       const enableOcr = config.enableOcr !== undefined ? config.enableOcr : true; // Default to true
       const enableTableStructure = config.enableTableStructure !== undefined ? config.enableTableStructure : true; // Default to true
@@ -282,8 +289,13 @@ export class ChunkingService {
     // Ensure output directory exists
     await fs.mkdir(outputDir, { recursive: true });
 
-    const conversionOutputFolder = config.conversionOutputFolder || 'conversions/';
+    // Use absolute path in user's data directory (not relative path that would be in Program Files)
+    // Empty string or whitespace also uses default location
+    const conversionOutputFolder = config.conversionOutputFolder?.trim() || paths.conversions();
     const batchSize = config.batchSize || 5; // Default 5 pages per batch
+
+    // Ensure conversion output directory exists
+    await fs.mkdir(conversionOutputFolder, { recursive: true });
 
     console.log('[Chunking] PaddleOCR-VL settings:', {
       batchSize: batchSize,

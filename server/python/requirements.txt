@@ -1,9 +1,10 @@
-docling>=1.0.0
+docling>=2.60.0
 transformers>=4.30.0
 torch>=2.0.0
 sentence-transformers>=2.2.0
-paddleocr>=2.7.0
-paddlepaddle>=2.6.0
+paddleocr>=3.0.0
+paddlepaddle>=3.0.0
+paddlex[ocr]>=3.0.0
 pymupdf>=1.23.0
 
 

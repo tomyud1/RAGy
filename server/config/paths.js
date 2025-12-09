@@ -105,11 +105,11 @@ const DATA_DIR = getDataDirectory();
  */
 function getServerRoot() {
   // Check if we're in a packaged Electron app
-  // In packaged mode: process.resourcesPath exists and points to resources/
-  // In dev mode: process.resourcesPath is undefined or process.env.NODE_ENV !== 'production'
-  const isPackaged = !!process.resourcesPath;
+  // The key insight: in dev mode, __dirname will be in the project folder
+  // In packaged mode, __dirname will be inside process.resourcesPath
+  const isPackaged = process.resourcesPath && __dirname.includes(process.resourcesPath);
 
-  console.log('[Paths] Detecting mode - isPackaged:', isPackaged, 'resourcesPath:', process.resourcesPath, 'NODE_ENV:', process.env.NODE_ENV);
+  console.log('[Paths] Detecting mode - isPackaged:', isPackaged, 'resourcesPath:', process.resourcesPath, '__dirname:', __dirname);
 
   if (!isPackaged) {
     // Development mode: server/config -> server
@@ -135,6 +135,7 @@ export const paths = {
   uploads: () => path.join(DATA_DIR, 'uploads'),
   temp: () => path.join(DATA_DIR, 'temp'),
   memory: () => path.join(DATA_DIR, 'memory'),
+  conversions: () => path.join(DATA_DIR, 'conversions'),  // All conversion outputs
 
   // Server directories
   serverRoot: () => getServerRoot(),
@@ -154,6 +155,7 @@ paths.ensure(paths.projects());
 paths.ensure(paths.settings());
 paths.ensure(paths.uploads());
 paths.ensure(paths.temp());
+paths.ensure(paths.conversions());
 
 console.log('[Paths] Configuration initialized');
 console.log('[Paths] Data directory:', paths.data());
